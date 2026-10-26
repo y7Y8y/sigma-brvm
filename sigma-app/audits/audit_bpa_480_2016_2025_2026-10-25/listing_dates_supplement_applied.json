@@ -1,0 +1,421 @@
+{
+  "schema_version": "sigma-audit-bpa-480-listing-supplement-applied-v1",
+  "generated_at": "2026-10-26T00:36:25Z",
+  "dry_run": false,
+  "verified_count": 12,
+  "refused_count": 0,
+  "checks": [
+    {
+      "ticker": "BBGC",
+      "expected_listing_date": "2026-09-24",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/bridge-bank-group-cote-divoire-fait-son-entree-la-brvm",
+      "http_status": 200,
+      "source_sha256": "e67e19d9d48635452432a2695323f8257db30f4f7ce5bce898c78f5a4baae009",
+      "basis": "Communiqué officiel BRVM de première cotation.",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "BRIDGE BANK GROUP CÔTE D’IVOIRE": true,
+        "première cotation": true
+      },
+      "date_variant_checks": {
+        "24/09/2026": false,
+        "24/9/2026": false,
+        "24 septembre 2026": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "BRIDGE BANK GROUP CÔTE D’IVOIRE",
+          "excerpt": "BRIDGE BANK GROUP CÔTE D’IVOIRE FAIT SON ENTRÉE À LA BRVM | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR EN PO Lundi, 26 octobre, 2026 - 00:36 Séance fermée ABJC 3 150 0,65% BBGC 10 000 2,04% BICB 8 500 1"
+        },
+        {
+          "phrase": "première cotation",
+          "excerpt": "nts BRIDGE BANK GROUP CÔTE D’IVOIRE FAIT SON ENTRÉE À LA BRVM Une nouvelle étape pour la banque. Un pas de plus pour le marché financier régional. Ce jeudi 24 septembre 2026, la Bourse Régionale des Valeurs Mobilières (BRVM) a accueilli la première cotation de BRIDGE BANK GROUP CÔTE D’IVOIRE (BBG CI) sur son Compartiment Prestige. Au-delà de l’entrée d’une nouvelle valeur à la cote, cette admission traduit une évolution majeure du marché : la BRVM devient progressivement un véritable marché d"
+        },
+        {
+          "phrase": "24 septembre 2026",
+          "excerpt": "VM-30 256,35 1,38% BRVM-PRES 196,59 1,60% Actualités Photothèque Vidéothèque Evénements BRIDGE BANK GROUP CÔTE D’IVOIRE FAIT SON ENTRÉE À LA BRVM Une nouvelle étape pour la banque. Un pas de plus pour le marché financier régional. Ce jeudi 24 septembre 2026, la Bourse Régionale des Valeurs Mobilières (BRVM) a accueilli la première cotation de BRIDGE BANK GROUP CÔTE D’IVOIRE (BBG CI) sur son Compartiment Prestige. Au-delà de l’entrée d’une nouvelle valeur à la cote, cette admission traduit une"
+        }
+      ]
+    },
+    {
+      "ticker": "BICB",
+      "expected_listing_date": "2025-04-28",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/la-banque-internationale-pour-lindustrie-et-le-commerce-du-benin-biic-admise",
+      "http_status": 200,
+      "source_sha256": "ddf44595bbc440ae3b69a9916597a1573aaef4c957805fe448fec204c38b2a10",
+      "basis": "Communiqué officiel BRVM d'admission à la cote.",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "Banque Internationale pour l’Industrie et le Commerce du Bénin": true,
+        "symbole BICB": true
+      },
+      "date_variant_checks": {
+        "28/04/2025": false,
+        "28/4/2025": false,
+        "28 avril 2025": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Banque Internationale pour l’Industrie et le Commerce du Bénin",
+          "excerpt": "e Vidéothèque Evénements LA BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN (BIIC) ADMISE A LA COTE DE LA BRVM La Bourse Régionale des Valeurs Mobilières (BRVM) a officiellement admis à sa cote, sur le marché des actions, la Banque Internationale pour l’Industrie et le Commerce du Bénin (BIIC), sous le symbole BICB, au cours d’une cérémonie solennelle tenue ce lundi 28 avril 2025, à Cotonou, au Bénin. Quatre mois seulement après l’introduction de la Loterie Nationale du Bénin (LNB), la BIIC devient la troisième société bé"
+        },
+        {
+          "phrase": "symbole BICB",
+          "excerpt": "CE DU BENIN (BIIC) ADMISE A LA COTE DE LA BRVM La Bourse Régionale des Valeurs Mobilières (BRVM) a officiellement admis à sa cote, sur le marché des actions, la Banque Internationale pour l’Industrie et le Commerce du Bénin (BIIC), sous le symbole BICB, au cours d’une cérémonie solennelle tenue ce lundi 28 avril 2025, à Cotonou, au Bénin. Quatre mois seulement après l’introduction de la Loterie Nationale du Bénin (LNB), la BIIC devient la troisième société béninoise à se faire coter à la"
+        },
+        {
+          "phrase": "28 avril 2025",
+          "excerpt": "e des Valeurs Mobilières (BRVM) a officiellement admis à sa cote, sur le marché des actions, la Banque Internationale pour l’Industrie et le Commerce du Bénin (BIIC), sous le symbole BICB, au cours d’une cérémonie solennelle tenue ce lundi 28 avril 2025, à Cotonou, au Bénin. Quatre mois seulement après l’introduction de la Loterie Nationale du Bénin (LNB), la BIIC devient la troisième société béninoise à se faire coter à la BRVM, renforçant ainsi la représentation du Bénin sur ce marché c"
+        }
+      ]
+    },
+    {
+      "ticker": "CABC",
+      "expected_listing_date": "1998-09-16",
+      "source_kind": "profile",
+      "source_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-ivoirienne-de-cables-sicable",
+      "http_status": 200,
+      "source_sha256": "588bcedece822cf6c12850ae16c4cdac46ee8fae728d71458d6b9c9ea2c2fccf",
+      "basis": "Profil officiel BRVM ; champ Symbole vide dans le texte, rattachement par le titre officiel.",
+      "verified": true,
+      "profile": {
+        "profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-ivoirienne-de-cables-sicable",
+        "profile_title": "Société Ivoirienne de Câbles (SICABLE) | BRVM - Bourse Régionale des Valeurs Mobilières",
+        "profile_heading": "Société Ivoirienne de Câbles (SICABLE)",
+        "symbol": null,
+        "symbol_normalized": null,
+        "listing_date_raw": "16/09/1998",
+        "listing_date": "1998-09-16",
+        "listing_year": 1998,
+        "listing_status": "LU_SUR_PROFIL_OFFICIEL_BRVM"
+      },
+      "issuer_phrase_checks": {
+        "Société Ivoirienne de Câbles": true,
+        "SICABLE": true
+      },
+      "date_variant_checks": {
+        "16/09/1998": true,
+        "16/9/1998": false,
+        "16 septembre 1998": false
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Société Ivoirienne de Câbles",
+          "excerpt": "Société Ivoirienne de Câbles (SICABLE) | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR EN PO Lundi, 26 octobre, 2026 - 00:36 Séance fermée ABJC 3 150 0,65% BBGC 10 000 2,04% BICB 8 500 1,06% BICC 31 100"
+        },
+        {
+          "phrase": "SICABLE",
+          "excerpt": "Société Ivoirienne de Câbles (SICABLE) | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR EN PO Lundi, 26 octobre, 2026 - 00:36 Séance fermée ABJC 3 150 0,65% BBGC 10 000 2,04% BICB 8 500 1,06% BICC 31 100 0,97% BN"
+        },
+        {
+          "phrase": "16/09/1998",
+          "excerpt": "196,59 1,60% Toutes Bénin Burkina Faso Côte d'Ivoire Guinée Bissau Mali Niger Sénégal Togo Société Ivoirienne de Câbles (SICABLE) Raison sociale : SOCIETE IVOIRIENNE DE CABLES Secteur d’activités : INDUSTRIE Date d’introduction à la BRVM : 16/09/1998 Capital social (2025) : 740 000 000 FCFA Symbole : Conseil d’administration (2025) : Nom et Prénoms Fonction Structure PRYSMIAN CALES ET SYSTEME FRANCE Administrateur Marcelo DEL BRENNA Administrateur Frédéric TAILHEURET Administrateur Fré"
+        }
+      ]
+    },
+    {
+      "ticker": "CBIBF",
+      "expected_listing_date": "2016-12-23",
+      "source_kind": "profile",
+      "source_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/coris-bank-international",
+      "http_status": 200,
+      "source_sha256": "b27b3315bc416fff7072b01ba873d09edd0c5513e2cefc418b1b87a712071f74",
+      "basis": "Profil officiel BRVM ; symbole affiché CBI SA, rattachement par raison sociale et adresse au Burkina Faso.",
+      "verified": true,
+      "profile": {
+        "profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/coris-bank-international",
+        "profile_title": "CORIS Bank International | BRVM - Bourse Régionale des Valeurs Mobilières",
+        "profile_heading": "CORIS Bank International",
+        "symbol": "CBI SA",
+        "symbol_normalized": "CBISA",
+        "listing_date_raw": "23 décembre 2016",
+        "listing_date": "2016-12-23",
+        "listing_year": 2016,
+        "listing_status": "LU_SUR_PROFIL_OFFICIEL_BRVM"
+      },
+      "issuer_phrase_checks": {
+        "CORIS Bank International": true,
+        "Coris Bank International SA": true
+      },
+      "date_variant_checks": {
+        "23/12/2016": false,
+        "23 décembre 2016": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "CORIS Bank International",
+          "excerpt": "CORIS Bank International | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR EN PO Lundi, 26 octobre, 2026 - 00:36 Séance fermée ABJC 3 150 0,65% BBGC 10 000 2,04% BICB 8 500 1,06% BICC 31 100 0,97% BNB"
+        },
+        {
+          "phrase": "Coris Bank International SA",
+          "excerpt": " Capitalisation des obligations 13 467 470 170 401 FCFA BRVM-C 529,14 1,37% BRVM-30 256,35 1,38% BRVM-PRES 196,59 1,60% Toutes Bénin Burkina Faso Côte d'Ivoire Guinée Bissau Mali Niger Sénégal Togo CORIS Bank International Raison sociale : Coris Bank International SA Secteur d’activités : Banque Date d’introduction à la BRVM : 23 décembre 2016 Capital social (2025) : 32 000 000 000 Symbole : CBI SA Conseil d’administration (2025) : Nom et Prénoms Fonction Structure M. Emmanuel SAWADOGO Président du Con"
+        },
+        {
+          "phrase": "23 décembre 2016",
+          "excerpt": "5 1,38% BRVM-PRES 196,59 1,60% Toutes Bénin Burkina Faso Côte d'Ivoire Guinée Bissau Mali Niger Sénégal Togo CORIS Bank International Raison sociale : Coris Bank International SA Secteur d’activités : Banque Date d’introduction à la BRVM : 23 décembre 2016 Capital social (2025) : 32 000 000 000 Symbole : CBI SA Conseil d’administration (2025) : Nom et Prénoms Fonction Structure M. Emmanuel SAWADOGO Président du Conseil d’Administration Mme Laurentine ZIDA/KINDA Administrateur non exécutif M."
+        }
+      ]
+    },
+    {
+      "ticker": "CFAC",
+      "expected_listing_date": "1998-09-16",
+      "source_kind": "profile",
+      "source_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/compagnie-francaise-de-lafrique-occidentale-en-cote-divoire-cfao-ci",
+      "http_status": 200,
+      "source_sha256": "89a523be588fb7efca7339ccce325d0e4acdbedbe9248d78b5ac932ac52f099c",
+      "basis": "Profil officiel BRVM ; le corps affiche BNBC par erreur manifeste, rattachement par le titre et la raison sociale CFAO.",
+      "verified": true,
+      "profile": {
+        "profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/compagnie-francaise-de-lafrique-occidentale-en-cote-divoire-cfao-ci",
+        "profile_title": "Compagnie Française de l'Afrique Occidentale en Côte d'Ivoire (CFAO CI) | BRVM - Bourse Régionale des Valeurs Mobilières",
+        "profile_heading": "Compagnie Française de l'Afrique Occidentale en Côte d'Ivoire (CFAO CI)",
+        "symbol": "BNBC",
+        "symbol_normalized": "BNBC",
+        "listing_date_raw": "16/09/1998",
+        "listing_date": "1998-09-16",
+        "listing_year": 1998,
+        "listing_status": "LU_SUR_PROFIL_OFFICIEL_BRVM"
+      },
+      "issuer_phrase_checks": {
+        "Compagnie Française de l'Afrique Occidentale": true,
+        "CFAO MOTORS": true
+      },
+      "date_variant_checks": {
+        "16/09/1998": true,
+        "16/9/1998": false,
+        "16 septembre 1998": false
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Compagnie Française de l'Afrique Occidentale",
+          "excerpt": "Compagnie Française de l'Afrique Occidentale en Côte d'Ivoire (CFAO CI) | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR EN PO Lundi, 26 octobre, 2026 - 00:36 Séance fermée ABJC 3 150 0,65% BBGC 10 000 2,04% BICB 8 500 "
+        },
+        {
+          "phrase": "CFAO MOTORS",
+          "excerpt": "FA BRVM-C 529,14 1,37% BRVM-30 256,35 1,38% BRVM-PRES 196,59 1,60% Toutes Bénin Burkina Faso Côte d'Ivoire Guinée Bissau Mali Niger Sénégal Togo Compagnie Française de l'Afrique Occidentale en Côte d'Ivoire (CFAO CI) PROFIL DE L’ENTREPRISE CFAO MOTORS CI Raison sociale : CFAO MOTORS COTE D’IVOIRE Secteur d’activités : DISTRIBUTION Date d’introduction à la BRVM : 16/09/1998 Capital social (2019): 9 068 595 FCA Symbole : BNBC Conseil d’administration (2020): Nom et Prénoms Fonction Struct"
+        },
+        {
+          "phrase": "16/09/1998",
+          "excerpt": " Niger Sénégal Togo Compagnie Française de l'Afrique Occidentale en Côte d'Ivoire (CFAO CI) PROFIL DE L’ENTREPRISE CFAO MOTORS CI Raison sociale : CFAO MOTORS COTE D’IVOIRE Secteur d’activités : DISTRIBUTION Date d’introduction à la BRVM : 16/09/1998 Capital social (2019): 9 068 595 FCA Symbole : BNBC Conseil d’administration (2020): Nom et Prénoms Fonction Structure Edouard ROCHET Président Directeur Général Fabrice PARODAT Administrateur Erwan CONAN Administrateur Michaël RIOU Admini"
+        }
+      ]
+    },
+    {
+      "ticker": "ECOC",
+      "expected_listing_date": "2017-12-12",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/ecobank-cote-divoire-fait-son-entree-la-bourse-regionale-des-valeurs",
+      "http_status": 200,
+      "source_sha256": "56e79d3bd86ae6de958f5d4b2f8962908342b8531c1e1b163a6460009881c249",
+      "basis": "Communiqué officiel BRVM d'entrée à la cote.",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "Ecobank Côte d’Ivoire": true,
+        "Première Cotation": true
+      },
+      "date_variant_checks": {
+        "12/12/2017": false,
+        "12 décembre 2017": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Ecobank Côte d’Ivoire",
+          "excerpt": "Ecobank Côte d’Ivoire fait son entrée à la Bourse Régionale des Valeurs Mobilières (BRVM) | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR EN PO Lundi, 26 octobre, 2026 - 00:36 Séance fermée ABJC "
+        },
+        {
+          "phrase": "Première Cotation",
+          "excerpt": " entrée à la Bourse Régionale des Valeurs Mobilières (BRVM) Abidjan, le 12 décembre 2017- Ecobank Côte d’Ivoire, l’une des 36 filiales en Afrique du Groupe Ecobank, vient d’être cotée à la Bourse régionale de la zone UEMOA. La cérémonie de Première Cotation du titre Ecobank Côte d’Ivoire sur la BRVM s’est tenue à la Salle des Fêtes du Sofitel Hôtel Ivoire d’Abidjan. Ouvrant la cérémonie, le Directeur Général de la BRVM, Edoh Kossi Amenounvé a adressé ses félicitations à Ecobank Côte d’Ivoire "
+        },
+        {
+          "phrase": "12 décembre 2017",
+          "excerpt": "ons 13 467 470 170 401 FCFA BRVM-C 529,14 1,37% BRVM-30 256,35 1,38% BRVM-PRES 196,59 1,60% Actualités Photothèque Vidéothèque Evénements Ecobank Côte d’Ivoire fait son entrée à la Bourse Régionale des Valeurs Mobilières (BRVM) Abidjan, le 12 décembre 2017- Ecobank Côte d’Ivoire, l’une des 36 filiales en Afrique du Groupe Ecobank, vient d’être cotée à la Bourse régionale de la zone UEMOA. La cérémonie de Première Cotation du titre Ecobank Côte d’Ivoire sur la BRVM s’est tenue à la Salle des "
+        }
+      ]
+    },
+    {
+      "ticker": "LNBB",
+      "expected_listing_date": "2024-12-13",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/la-brvm-franchit-un-nouveau-cap-avec-une-capitalisation-record-de-plus-de-10",
+      "http_status": 200,
+      "source_sha256": "31b30d61b62f05b0ea7fb57cb369cc8874e08a2e98885897355f7ef448f22156",
+      "basis": "Communiqué officiel BRVM daté du 13 décembre 2024 indiquant la cotation ce jour.",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "Loterie Nationale du Bénin": true,
+        "cotation de la Loterie Nationale du Bénin ce jour": true
+      },
+      "date_variant_checks": {
+        "13/12/2024": false,
+        "13 décembre 2024": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Loterie Nationale du Bénin",
+          "excerpt": " de l’UEMOA (environ 5,8% en moyenne depuis plus de 20 ans), des réformes menées depuis plusieurs années et enfin du dynamisme de tous les acteurs du marché. Avec un gain de plus de 2 000 milliards de FCFA en une année et la cotation de la Loterie Nationale du Bénin ce jour (100,5 milliards de FCFA à l’introduction), la BRVM figure parmi les bourses africaines les plus performantes. L’histoire continue. Investissons pour un développement durable et une richesse mieux partagée Je suis un Débutant Je su"
+        },
+        {
+          "phrase": "cotation de la Loterie Nationale du Bénin ce jour",
+          "excerpt": "utenue des pays de l’UEMOA (environ 5,8% en moyenne depuis plus de 20 ans), des réformes menées depuis plusieurs années et enfin du dynamisme de tous les acteurs du marché. Avec un gain de plus de 2 000 milliards de FCFA en une année et la cotation de la Loterie Nationale du Bénin ce jour (100,5 milliards de FCFA à l’introduction), la BRVM figure parmi les bourses africaines les plus performantes. L’histoire continue. Investissons pour un développement durable et une richesse mieux partagée Je suis un Débutant Je suis un dé"
+        },
+        {
+          "phrase": "13 décembre 2024",
+          "excerpt": "La BRVM franchit un nouveau cap avec une capitalisation record de plus de 10 000 milliards de FCFA, ce 13 décembre 2024. | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR EN PO Lundi, 26 octobre, 2026 - 00:36 Séance fermée ABJC 3 150 0,65% BBGC 10 000 2,04% BICB 8 500 1,06% BICC 31 100 0,97% BN"
+        }
+      ]
+    },
+    {
+      "ticker": "NSBC",
+      "expected_listing_date": "2017-10-24",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/nsia-banque-ci-cotee-la-brvm",
+      "http_status": 200,
+      "source_sha256": "2af147d46a04bb904a83ef0f16a1ac18919b75be19abf80f04c29df47fcf8f03",
+      "basis": "Communiqué officiel BRVM d'admission et de première cotation.",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "NSIA Banque Côte d’Ivoire": true,
+        "1ère cotation": true
+      },
+      "date_variant_checks": {
+        "24/10/2017": false,
+        "24 octobre 2017": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "NSIA Banque Côte d’Ivoire",
+          "excerpt": "italisation Actions 20 750 418 439 803 FCFA Capitalisation des obligations 13 467 470 170 401 FCFA BRVM-C 529,14 1,37% BRVM-30 256,35 1,38% BRVM-PRES 196,59 1,60% Actualités Photothèque Vidéothèque Evénements NSIA BANQUE CI COTEE A LA BRVM NSIA Banque Côte d’Ivoire, filiale du Groupe NSIA a été admise à la cote de la BRVM, ce mardi 24 octobre 2017 au 1er compartiment du marché Actions. A l’occasion de cette 1ère cotation, 500 titres ont été échangés au cours de 9.675 FCFA à 09h45 (+7,5% par rapport a"
+        },
+        {
+          "phrase": "1ère cotation",
+          "excerpt": "és Photothèque Vidéothèque Evénements NSIA BANQUE CI COTEE A LA BRVM NSIA Banque Côte d’Ivoire, filiale du Groupe NSIA a été admise à la cote de la BRVM, ce mardi 24 octobre 2017 au 1er compartiment du marché Actions. A l’occasion de cette 1ère cotation, 500 titres ont été échangés au cours de 9.675 FCFA à 09h45 (+7,5% par rapport au cours de référence de 9.000FCFA) soit une valeur de transaction de 4.837.500FCFA pour une capitalisation boursière de 224,17 milliards de FCFA. Au cours de c"
+        },
+        {
+          "phrase": "24 octobre 2017",
+          "excerpt": "FCFA BRVM-C 529,14 1,37% BRVM-30 256,35 1,38% BRVM-PRES 196,59 1,60% Actualités Photothèque Vidéothèque Evénements NSIA BANQUE CI COTEE A LA BRVM NSIA Banque Côte d’Ivoire, filiale du Groupe NSIA a été admise à la cote de la BRVM, ce mardi 24 octobre 2017 au 1er compartiment du marché Actions. A l’occasion de cette 1ère cotation, 500 titres ont été échangés au cours de 9.675 FCFA à 09h45 (+7,5% par rapport au cours de référence de 9.000FCFA) soit une valeur de transaction de 4.837.500FCFA p"
+        }
+      ]
+    },
+    {
+      "ticker": "ORAC",
+      "expected_listing_date": "2022-12-30",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/orange-cote-divoire-admis-la-cote-de-la-brvm-cest-la-plus-importante",
+      "http_status": 200,
+      "source_sha256": "bd35d2be1fe5ec512534565effcb9655fb5a0f87f3f33d497e635e73448d0614",
+      "basis": "Communiqué officiel BRVM d'admission à la cote.",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "Orange Côte d’Ivoire": true,
+        "symbole ORAC": true
+      },
+      "date_variant_checks": {
+        "30/12/2022": false,
+        "30 décembre 2022": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Orange Côte d’Ivoire",
+          "excerpt": "ORANGE CÔTE D’IVOIRE ADMIS A LA COTE DE LA BRVM : C’EST LA PLUS IMPORTANTE CAPITALISATION BOURSIÈRE A L’INTRODUCTION DEPUIS LA CREATION DU MARCHÉ | BRVM - Bourse Régionale des Valeurs Mobilières Aller au contenu principal Se connecter Portefeuille boursier FR "
+        },
+        {
+          "phrase": "symbole ORAC",
+          "excerpt": " 2022 au Compartiment des actions de la BRVM avec 1 538,19 milliards de FCFA, avec un cours au premier fixing de 10 210 FCFA, portant à l’ouverture, la capitalisation boursière du marché actions à 7 487,051 milliards de FCFA. Cotée sous le symbole ORAC au cours de référence de 9 500 FCFA, l’action ORANGE Côte d’Ivoire a terminé la journée de bourse à 10 210 FCFA, soit une progression de 7,47 %. Cette nouvelle introduction par la cession d’une partie de sa participation au capital d’Orang"
+        },
+        {
+          "phrase": "30 décembre 2022",
+          "excerpt": "256,35 1,38% BRVM-PRES 196,59 1,60% Actualités Photothèque Vidéothèque Evénements ORANGE CÔTE D’IVOIRE ADMIS A LA COTE DE LA BRVM : C’EST LA PLUS IMPORTANTE CAPITALISATION BOURSIÈRE A L’INTRODUCTION DEPUIS LA CREATION DU MARCHÉ Abidjan, le 30 Décembre 2022 : La Bourse Régionale des Valeurs Mobilières (BRVM) a admis à sa cote ce vendredi 30 décembre 2022, Orange Côte d’Ivoire avec un record de capitalisation à l’introduction de 1 431,23 milliards FCFA depuis la création de la BRVM . En effet,"
+        }
+      ]
+    },
+    {
+      "ticker": "ORGT",
+      "expected_listing_date": "2019-04-16",
+      "source_kind": "pdf",
+      "source_url": "https://www.orabank.net/sites/default/files/190416_ipo_oragroup_cotation_fr.pdf",
+      "http_status": 200,
+      "source_sha256": "9bbfd02192cabd99f9e8b57d64d2c636b91ec9b32a93f903de2218e4b2188d9b",
+      "basis": "Communiqué officiel Oragroup daté du 16 avril 2019 annonçant l'entrée à la BRVM ce jour-là.",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "Oragroup fait son entrée": true,
+        "première cotation à Lomé": true
+      },
+      "date_variant_checks": {
+        "16/04/2019": false,
+        "16/4/2019": false,
+        "16 avril 2019": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Oragroup fait son entrée",
+          "excerpt": "Communiqué de presse Oragroup fait son entrée à la Bourse Régionale des Valeurs Mobilières (BRVM) et effectue la plus grosse introduction De gauche à droite : Binta Touré NDOYE, Directrice générale d’Oragroup ; Vincent Le Guennou, Président du Conseil d’Administration d’Oragroup et Co"
+        },
+        {
+          "phrase": "première cotation à Lomé",
+          "excerpt": " Son Excellence Monsieur le Président de la République, Monsieur Faure Essozimna Gnassingbé, le groupe bancaire panafricain Oragroup a fait son entrée aujourd’hui à la Bourse Régionale des Valeurs Mobilières (BRVM), lors de la cérémonie de première cotation à Lomé. Cette introduction – la plus importante depuis la création de la BRVM en 1998 – intervient après le succès de l’offre publique de vente souscrite à 100%, du 29 octobre au 22 novembre 2018. Cette offre publique de vente comprenait l’émissi"
+        },
+        {
+          "phrase": "16 avril 2019",
+          "excerpt": " Directrice générale d’Oragroup ; Vincent Le Guennou, Président du Conseil d’Administration d’Oragroup et Co-CEO de l’investisseur panafricain, Emerging Capital Partners ; Edoh Kossi Amenounve, Directeur Général de la BRVM. Lomé (Togo), le 16 avril 2019 – En présence du Ministre de l’Économie et des Finances de la République Togolaise, Monsieur Sani Yaya, représentant Son Excellence Monsieur le Président de la République, Monsieur Faure Essozimna Gnassingbé, le groupe bancaire panafricain"
+        }
+      ]
+    },
+    {
+      "ticker": "SCRC",
+      "expected_listing_date": "2016-12-29",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/2016-cru-exceptionnel-pour-la-brvm",
+      "http_status": 200,
+      "source_sha256": "2624b375c6b2a07044f525269f6ac60fd9e59b1c1ac747ada014a619e955a105",
+      "basis": "Bilan officiel BRVM des admissions de 2016 : Sucrivoire (29 décembre 2016).",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "SUCRIVOIRE": true
+      },
+      "date_variant_checks": {
+        "29/12/2016": false,
+        "29 décembre 2016": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "SUCRIVOIRE",
+          "excerpt": " 43, le nombre de sociétés cotées à la BRVM. Il s’agit plus particulièrement de l’admission de la Bank Of Africa Mali (31 mai 2016), de la Société Ivoirienne de Banque (27 octobre 2016), de Coris Bank International (23 décembre 2016) et de SUCRIVOIRE (29 décembre 2016). La BRVM remercie les principaux acteurs du marché (SGI, SGO etc.), les émetteurs et les sociétés cotées ainsi que tous les investisseurs (régionaux et internationaux) qui lui ont renouvelé leur confiance en 2016. Elle c"
+        },
+        {
+          "phrase": "29 décembre 2016",
+          "excerpt": "re de sociétés cotées à la BRVM. Il s’agit plus particulièrement de l’admission de la Bank Of Africa Mali (31 mai 2016), de la Société Ivoirienne de Banque (27 octobre 2016), de Coris Bank International (23 décembre 2016) et de SUCRIVOIRE (29 décembre 2016). La BRVM remercie les principaux acteurs du marché (SGI, SGO etc.), les émetteurs et les sociétés cotées ainsi que tous les investisseurs (régionaux et internationaux) qui lui ont renouvelé leur confiance en 2016. Elle compte poursuivre, "
+        }
+      ]
+    },
+    {
+      "ticker": "SIBC",
+      "expected_listing_date": "2016-10-27",
+      "source_kind": "html",
+      "source_url": "https://www.brvm.org/fr/mediacentre/actualites/2016-cru-exceptionnel-pour-la-brvm",
+      "http_status": 200,
+      "source_sha256": "2624b375c6b2a07044f525269f6ac60fd9e59b1c1ac747ada014a619e955a105",
+      "basis": "Bilan officiel BRVM des admissions de 2016 : Société Ivoirienne de Banque (27 octobre 2016).",
+      "verified": true,
+      "issuer_phrase_checks": {
+        "Société Ivoirienne de Banque": true
+      },
+      "date_variant_checks": {
+        "27/10/2016": false,
+        "27 octobre 2016": true
+      },
+      "evidence_excerpts": [
+        {
+          "phrase": "Société Ivoirienne de Banque",
+          "excerpt": " en termes de nouvelles admissions à la cote avec quatre (4) nouvelles sociétés portant ainsi de 39 à 43, le nombre de sociétés cotées à la BRVM. Il s’agit plus particulièrement de l’admission de la Bank Of Africa Mali (31 mai 2016), de la Société Ivoirienne de Banque (27 octobre 2016), de Coris Bank International (23 décembre 2016) et de SUCRIVOIRE (29 décembre 2016). La BRVM remercie les principaux acteurs du marché (SGI, SGO etc.), les émetteurs et les sociétés cotées ainsi que tous les investisseurs"
+        },
+        {
+          "phrase": "27 octobre 2016",
+          "excerpt": "ions à la cote avec quatre (4) nouvelles sociétés portant ainsi de 39 à 43, le nombre de sociétés cotées à la BRVM. Il s’agit plus particulièrement de l’admission de la Bank Of Africa Mali (31 mai 2016), de la Société Ivoirienne de Banque (27 octobre 2016), de Coris Bank International (23 décembre 2016) et de SUCRIVOIRE (29 décembre 2016). La BRVM remercie les principaux acteurs du marché (SGI, SGO etc.), les émetteurs et les sociétés cotées ainsi que tous les investisseurs (régionaux et in"
+        }
+      ]
+    }
+  ]
+}

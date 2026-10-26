@@ -1,0 +1,40 @@
+{
+  "candidate_id": "8f9cb50caa0387e4",
+  "ticker": "ETIT",
+  "url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+  "selection_rank_for_ticker": 3,
+  "target_years_from_filename": [
+    2024,
+    2023,
+    2022
+  ],
+  "classified_document": {
+    "filename": "20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+    "label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2024,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2025-03-28",
+    "url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/ecobank-tg",
+    "report_page_label": "ECOBANK TG",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/ecobank-tg",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/ecobank-tg"
+    ]
+  }
+}

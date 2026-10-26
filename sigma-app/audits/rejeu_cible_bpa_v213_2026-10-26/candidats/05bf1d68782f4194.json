@@ -1,0 +1,33 @@
+{
+  "candidate_id": "05bf1d68782f4194",
+  "ticker": "SIBC",
+  "url": "https://www.brvm.org/sites/default/files/20210712_-_rapport_des_commissaires_aux_comptes_-_etats_financiers_annuels_exercice_-_sib_ci.pdf",
+  "selection_rank_for_ticker": 12,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20210712_-_rapport_des_commissaires_aux_comptes_-_etats_financiers_annuels_exercice_-_sib_ci.pdf",
+    "label": "Rapport des commissaires aux comptes etats financiers annuels exercice sib ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2021-07-12",
+    "url": "https://www.brvm.org/sites/default/files/20210712_-_rapport_des_commissaires_aux_comptes_-_etats_financiers_annuels_exercice_-_sib_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sib",
+    "report_page_label": "SIB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sib?page=1"
+    ]
+  }
+}

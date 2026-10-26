@@ -1,0 +1,386 @@
+[
+  {
+    "ticker": "ABJC",
+    "name": "SERVAIR ABIDJAN COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "latest_boc": {
+      "name": "SERVAIR ABIDJAN CI"
+    }
+  },
+  {
+    "ticker": "BBGC",
+    "name": "BRIDGE BANK GROUP COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BRIDGE BANK GROUP CI"
+    }
+  },
+  {
+    "ticker": "BICB",
+    "name": "BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BIIC BN"
+    }
+  },
+  {
+    "ticker": "BICC",
+    "name": "BICI COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BICI CI"
+    }
+  },
+  {
+    "ticker": "BNBC",
+    "name": "BERNABE COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "latest_boc": {
+      "name": "BERNABE CI"
+    }
+  },
+  {
+    "ticker": "BOAB",
+    "name": "BANK OF AFRICA BENIN",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BANK OF AFRICA BN"
+    }
+  },
+  {
+    "ticker": "BOABF",
+    "name": "BANK OF AFRICA BURKINA FASO",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BANK OF AFRICA BF"
+    }
+  },
+  {
+    "ticker": "BOAC",
+    "name": "BANK OF AFRICA COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BANK OF AFRICA CI"
+    }
+  },
+  {
+    "ticker": "BOAM",
+    "name": "BANK OF AFRICA MALI",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BANK OF AFRICA ML"
+    }
+  },
+  {
+    "ticker": "BOAN",
+    "name": "BANK OF AFRICA NIGER",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BANK OF AFRICA NG"
+    }
+  },
+  {
+    "ticker": "BOAS",
+    "name": "BANK OF AFRICA SENEGAL",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "BANK OF AFRICA SENEGAL"
+    }
+  },
+  {
+    "ticker": "CABC",
+    "name": "SICABLE COTE D'IVOIRE",
+    "sector": "Industriels",
+    "latest_boc": {
+      "name": "SICABLE CI"
+    }
+  },
+  {
+    "ticker": "CBIBF",
+    "name": "CORIS BANK INTERNATIONAL BURKINA FASO",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "CORIS BANK INTERNATIONAL"
+    }
+  },
+  {
+    "ticker": "CFAC",
+    "name": "CFAO MOTORS COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "latest_boc": {
+      "name": "CFAO MOTORS CI"
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "name": "CIE COTE D'IVOIRE",
+    "sector": "Services publics",
+    "latest_boc": {
+      "name": "CIE CI"
+    }
+  },
+  {
+    "ticker": "ECOC",
+    "name": "ECOBANK COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "ECOBANK COTE D''IVOIRE"
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "name": "Ecobank Transnational Incorporated TOGO",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "ECOBANK TRANS. INCORP. TG"
+    }
+  },
+  {
+    "ticker": "FTSC",
+    "name": "FILTISAC COTE D'IVOIRE",
+    "sector": "Industriels",
+    "latest_boc": {
+      "name": "FILTISAC CI"
+    }
+  },
+  {
+    "ticker": "LNBB",
+    "name": "LOTERIE NATIONALE DU BENIN",
+    "sector": "Consommation discrétionnaire",
+    "latest_boc": {
+      "name": "LOTERIE NATIONALE DU BENIN"
+    }
+  },
+  {
+    "ticker": "NEIC",
+    "name": "NEI-CEDA COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "latest_boc": {
+      "name": "NEI-CEDA CI"
+    }
+  },
+  {
+    "ticker": "NSBC",
+    "name": "NSIA BANQUE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "NSIA BANQUE COTE D'IVOIRE"
+    }
+  },
+  {
+    "ticker": "NTLC",
+    "name": "NESTLE COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "NESTLE CI"
+    }
+  },
+  {
+    "ticker": "ONTBF",
+    "name": "ONATEL BURKINA FASO",
+    "sector": "Télécommunications",
+    "latest_boc": {
+      "name": "ONATEL BF"
+    }
+  },
+  {
+    "ticker": "ORAC",
+    "name": "ORANGE COTE D'IVOIRE",
+    "sector": "Télécommunications",
+    "latest_boc": {
+      "name": "ORANGE COTE D'IVOIRE"
+    }
+  },
+  {
+    "ticker": "ORGT",
+    "name": "ORAGROUP TOGO",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "ORAGROUP TOGO"
+    }
+  },
+  {
+    "ticker": "PALC",
+    "name": "PALM COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "PALM CI"
+    }
+  },
+  {
+    "ticker": "PRSC",
+    "name": "TRACTAFRIC MOTORS COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "latest_boc": {
+      "name": "TRACTAFRIC MOTORS CI"
+    }
+  },
+  {
+    "ticker": "SAFC",
+    "name": "SAFCA COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "SAFCA CI"
+    }
+  },
+  {
+    "ticker": "SCRC",
+    "name": "SUCRIVOIRE COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "SUCRIVOIRE"
+    }
+  },
+  {
+    "ticker": "SDCC",
+    "name": "SODE COTE D'IVOIRE",
+    "sector": "Services publics",
+    "latest_boc": {
+      "name": "SODE CI"
+    }
+  },
+  {
+    "ticker": "SDSC",
+    "name": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE",
+    "sector": "Industriels",
+    "latest_boc": {
+      "name": "AFRICA GLOBAL LOGISTICS CI"
+    }
+  },
+  {
+    "ticker": "SEMC",
+    "name": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
+    "sector": "Industriels",
+    "latest_boc": {
+      "name": "SONOCO METAL PACKAGING SIEM S."
+    }
+  },
+  {
+    "ticker": "SGBC",
+    "name": "SOCIETE GENERALE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "SOCIETE GENERALE COTE D'IVOIRE"
+    }
+  },
+  {
+    "ticker": "SHEC",
+    "name": "VIVO ENERGY COTE D'IVOIRE",
+    "sector": "Énergie",
+    "latest_boc": {
+      "name": "VIVO ENERGY CI"
+    }
+  },
+  {
+    "ticker": "SIBC",
+    "name": "SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "latest_boc": {
+      "name": "SOCIETE IVOIRIENNE DE BANQUE"
+    }
+  },
+  {
+    "ticker": "SICC",
+    "name": "SICOR COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "SICOR CI"
+    }
+  },
+  {
+    "ticker": "SIVC",
+    "name": "ERIUM COTE D’IVOIRE",
+    "sector": "Industriels",
+    "latest_boc": {
+      "name": "ERIUM CI (Ex AIR LIQUIDE CI)"
+    }
+  },
+  {
+    "ticker": "SLBC",
+    "name": "SOLIBRA COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "SOLIBRA CI"
+    }
+  },
+  {
+    "ticker": "SMBC",
+    "name": "SMB COTE D'IVOIRE",
+    "sector": "Énergie",
+    "latest_boc": {
+      "name": "SMB CI"
+    }
+  },
+  {
+    "ticker": "SNTS",
+    "name": "SONATEL SENEGAL",
+    "sector": "Télécommunications",
+    "latest_boc": {
+      "name": "SONATEL SN"
+    }
+  },
+  {
+    "ticker": "SOGC",
+    "name": "SOGB COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "SOGB CI"
+    }
+  },
+  {
+    "ticker": "SPHC",
+    "name": "SAPH COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "SAPH CI"
+    }
+  },
+  {
+    "ticker": "STAC",
+    "name": "SETAO COTE D'IVOIRE",
+    "sector": "Industriels",
+    "latest_boc": {
+      "name": "SETAO CI"
+    }
+  },
+  {
+    "ticker": "STBC",
+    "name": "SITAB COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "SITAB CI"
+    }
+  },
+  {
+    "ticker": "TTLC",
+    "name": "TOTALENERGIES MARKETING COTE D'IVOIRE",
+    "sector": "Énergie",
+    "latest_boc": {
+      "name": "TOTALENERGIES MARKETING CI"
+    }
+  },
+  {
+    "ticker": "TTLS",
+    "name": "TOTALENERGIES MARKETING SENEGAL",
+    "sector": "Énergie",
+    "latest_boc": {
+      "name": "TOTALENERGIES MARKETING SN"
+    }
+  },
+  {
+    "ticker": "UNLC",
+    "name": "UNILEVER COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "latest_boc": {
+      "name": "UNILEVER CI"
+    }
+  },
+  {
+    "ticker": "UNXC",
+    "name": "UNIWAX COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "latest_boc": {
+      "name": "UNIWAX CI"
+    }
+  }
+]

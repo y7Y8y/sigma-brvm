@@ -1,0 +1,1282 @@
+{
+  "schema_version": "sigma-audit-bpa-480-v1",
+  "generated_at": "2026-10-26T09:55:47Z",
+  "code_fingerprint": "0152e8ab5f69a5d3a650594d72a6686132097b4a38fa4df29f69c30d6c2a2c6e",
+  "dataset_published_modified": false,
+  "dataset_sha256_at_generation": "ed5ba551705cd6f9ddb5ecaa345ca22712cb41be2317310c235fbf8a36fd1efb",
+  "tickers_audites": [
+    "ABJC",
+    "BBGC",
+    "BICB",
+    "BICC",
+    "BNBC",
+    "BOAB",
+    "BOABF",
+    "BOAC",
+    "BOAM",
+    "BOAN",
+    "BOAS",
+    "CABC",
+    "CBIBF",
+    "CFAC",
+    "CIEC",
+    "ECOC",
+    "ETIT",
+    "FTSC",
+    "LNBB",
+    "NEIC",
+    "NSBC",
+    "NTLC",
+    "ONTBF",
+    "ORAC",
+    "ORGT",
+    "PALC",
+    "PRSC",
+    "SAFC",
+    "SCRC",
+    "SDCC",
+    "SDSC",
+    "SEMC",
+    "SGBC",
+    "SHEC",
+    "SIBC",
+    "SICC",
+    "SIVC",
+    "SLBC",
+    "SMBC",
+    "SNTS",
+    "SOGC",
+    "SPHC",
+    "STAC",
+    "STBC",
+    "TTLC",
+    "TTLS",
+    "UNLC",
+    "UNXC"
+  ],
+  "cellules_brutes_dans_le_perimetre_lance": 480,
+  "applicabilite": {
+    "applicables_confirmees": 442,
+    "non_applicables_avant_introduction": 38,
+    "non_verifiees_faute_date_introduction": 0
+  },
+  "denominateurs": {
+    "cellules_avec_document_primaire_lu_couvrant_exercice": 344,
+    "cellules_avec_serie_extraite": 290
+  },
+  "bpa_publie": {
+    "observations_retenues": 32,
+    "confirme_deux_documents": 7,
+    "extraction_unique_sans_controle_pondere": 21,
+    "taux_sur_cellules_brutes_pct": 6.667,
+    "taux_sur_applicables_confirmees_pct": 7.24,
+    "taux_sur_cellules_examinees_pct": 9.302,
+    "taux_confirme_sur_cellules_examinees_pct": 2.035
+  },
+  "bpa_recalcule_comparable_sans_publie": {
+    "observations": 0,
+    "taux_sur_cellules_examinees_pct": 0.0
+  },
+  "candidat_part_groupe_ponderee_hors_couverture": {
+    "observations": 0
+  },
+  "ratio_indicatif_fin_exercice_hors_couverture_bpa": {
+    "observations": 8
+  },
+  "statuts_bpa": {
+    "DOCUMENT_INTROUVABLE": 15,
+    "ILLISIBLE": 71,
+    "NON_APPLICABLE": 37,
+    "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 264,
+    "NON_RECHERCHE": 18,
+    "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 7,
+    "PUBLIE_EN_QUARANTAINE_COHERENCE": 1,
+    "PUBLIE_EXTRAIT": 24,
+    "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 34,
+    "PUBLIE_SOURCE_DIVERGENTE_RESOLUE_PAR_CONTROLE": 1,
+    "RATIO_INDICATIF_FIN_EXERCICE": 8
+  },
+  "statuts_documentaires": {
+    "CANDIDATS_INVENTORIES_NON_OUVERTS": 2,
+    "DOCUMENTS_OUVERTS_SANS_ETAT_PRIMAIRE_PROUVE": 12,
+    "DOCUMENTS_PRIMAIRES_EXAMINES": 336,
+    "DOCUMENT_INTROUVABLE": 15,
+    "ILLISIBLE": 71,
+    "NON_APPLICABLE": 38,
+    "NON_RECHERCHE": 6
+  },
+  "niveaux_validation": {
+    "AUCUNE_VALEUR_RETENUE": 405,
+    "CANDIDAT_PART_GROUPE_PONDEREE_A_VERIFIER": 1,
+    "CONTROLE_ARITHMETIQUE_CONCORDANT": 4,
+    "DEUX_DOCUMENTS_DISTINCTS": 7,
+    "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE": 21,
+    "PUBLICATION_DETECTEE_NON_RETENUE": 34,
+    "RATIO_INDICATIF_SEPARE": 8
+  },
+  "par_exercice": {
+    "2016": {
+      "cellules": 48,
+      "documents_primaires_lus": 34,
+      "bpa_publies_retenus": 0,
+      "non_recherches": 1
+    },
+    "2017": {
+      "cellules": 48,
+      "documents_primaires_lus": 36,
+      "bpa_publies_retenus": 0,
+      "non_recherches": 1
+    },
+    "2018": {
+      "cellules": 48,
+      "documents_primaires_lus": 38,
+      "bpa_publies_retenus": 3,
+      "non_recherches": 0
+    },
+    "2019": {
+      "cellules": 48,
+      "documents_primaires_lus": 31,
+      "bpa_publies_retenus": 4,
+      "non_recherches": 2
+    },
+    "2020": {
+      "cellules": 48,
+      "documents_primaires_lus": 32,
+      "bpa_publies_retenus": 2,
+      "non_recherches": 2
+    },
+    "2021": {
+      "cellules": 48,
+      "documents_primaires_lus": 33,
+      "bpa_publies_retenus": 2,
+      "non_recherches": 2
+    },
+    "2022": {
+      "cellules": 48,
+      "documents_primaires_lus": 35,
+      "bpa_publies_retenus": 5,
+      "non_recherches": 4
+    },
+    "2023": {
+      "cellules": 48,
+      "documents_primaires_lus": 38,
+      "bpa_publies_retenus": 5,
+      "non_recherches": 2
+    },
+    "2024": {
+      "cellules": 48,
+      "documents_primaires_lus": 36,
+      "bpa_publies_retenus": 6,
+      "non_recherches": 1
+    },
+    "2025": {
+      "cellules": 48,
+      "documents_primaires_lus": 31,
+      "bpa_publies_retenus": 5,
+      "non_recherches": 3
+    }
+  },
+  "documents": {
+    "inventories": 3500,
+    "candidats_selectionnes": 660,
+    "resultats_journalises": 660,
+    "erreurs_ou_timeouts": 3,
+    "avec_sha256": 657,
+    "rejetes_autre_emetteur": 3,
+    "rejetes_intermediaires": 26
+  },
+  "by_ticker": {
+    "ABJC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 88,
+      "documents_candidats_selectionnes": 18,
+      "documents_ouverts": 18,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Capitaux propres 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2022 — Total du bilan écarté par contrôle de plausibilité (poste de bilan supérieur au total du bilan)."
+      ],
+      "per_share_observations": 6
+    },
+    "BBGC": {
+      "series_exercices": [],
+      "documents_inventories": 2,
+      "documents_candidats_selectionnes": 0,
+      "documents_ouverts": 0,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "BICB": {
+      "series_exercices": [
+        2024,
+        2025
+      ],
+      "documents_inventories": 9,
+      "documents_candidats_selectionnes": 4,
+      "documents_ouverts": 4,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "BICC": {
+      "series_exercices": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 91,
+      "documents_candidats_selectionnes": 11,
+      "documents_ouverts": 11,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Produit net bancaire 2025 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2025 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Produit net bancaire 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "BNBC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 94,
+      "documents_candidats_selectionnes": 18,
+      "documents_ouverts": 18,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Résultat net 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2021 écarté : rupture d'échelle (×3.0) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 8
+    },
+    "BOAB": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2022,
+        2023
+      ],
+      "documents_inventories": 94,
+      "documents_candidats_selectionnes": 11,
+      "documents_ouverts": 11,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "https://www.brvm.org/sites/default/files/20220420_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_boa_benin.pdf : exercice effectif non prouvé, colonnes non agrégées."
+      ],
+      "per_share_observations": 3
+    },
+    "BOABF": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017
+      ],
+      "documents_inventories": 89,
+      "documents_candidats_selectionnes": 14,
+      "documents_ouverts": 14,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 3
+    },
+    "BOAC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024
+      ],
+      "documents_inventories": 78,
+      "documents_candidats_selectionnes": 10,
+      "documents_ouverts": 10,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Produit net bancaire 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Produit net bancaire 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "BOAM": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017
+      ],
+      "documents_inventories": 64,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 3
+    },
+    "BOAN": {
+      "series_exercices": [],
+      "documents_inventories": 93,
+      "documents_candidats_selectionnes": 9,
+      "documents_ouverts": 9,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "BOAS": {
+      "series_exercices": [
+        2015,
+        2016,
+        2018,
+        2019,
+        2020
+      ],
+      "documents_inventories": 65,
+      "documents_candidats_selectionnes": 13,
+      "documents_ouverts": 13,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 3
+    },
+    "CABC": {
+      "series_exercices": [
+        2018,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 95,
+      "documents_candidats_selectionnes": 16,
+      "documents_ouverts": 16,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Résultat net 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "CBIBF": {
+      "series_exercices": [
+        2021,
+        2022
+      ],
+      "documents_inventories": 20,
+      "documents_candidats_selectionnes": 4,
+      "documents_ouverts": 4,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "CFAC": {
+      "series_exercices": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ],
+      "documents_inventories": 117,
+      "documents_candidats_selectionnes": 17,
+      "documents_ouverts": 17,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "CIEC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 91,
+      "documents_candidats_selectionnes": 19,
+      "documents_ouverts": 19,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Total du bilan 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2016 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2019 écarté : rupture d'échelle (×3.1) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 36
+    },
+    "ECOC": {
+      "series_exercices": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2024,
+        2025
+      ],
+      "documents_inventories": 45,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "ETIT": {
+      "series_exercices": [
+        2022,
+        2023,
+        2024
+      ],
+      "documents_inventories": 105,
+      "documents_candidats_selectionnes": 14,
+      "documents_ouverts": 14,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 110
+    },
+    "FTSC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 95,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Trésorerie nette 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "LNBB": {
+      "series_exercices": [
+        2024,
+        2025
+      ],
+      "documents_inventories": 7,
+      "documents_candidats_selectionnes": 2,
+      "documents_ouverts": 2,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "NEIC": {
+      "series_exercices": [],
+      "documents_inventories": 113,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "NSBC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 44,
+      "documents_candidats_selectionnes": 11,
+      "documents_ouverts": 11,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Résultat net 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "NTLC": {
+      "series_exercices": [
+        2023,
+        2024
+      ],
+      "documents_inventories": 89,
+      "documents_candidats_selectionnes": 11,
+      "documents_ouverts": 11,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "ONTBF": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 102,
+      "documents_candidats_selectionnes": 26,
+      "documents_ouverts": 26,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Dettes financières non courantes 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "ORAC": {
+      "series_exercices": [
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "documents_inventories": 26,
+      "documents_candidats_selectionnes": 9,
+      "documents_ouverts": 9,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Total du bilan 2021 écarté : rupture d'échelle (×4.6) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 15
+    },
+    "ORGT": {
+      "series_exercices": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 39,
+      "documents_candidats_selectionnes": 13,
+      "documents_ouverts": 13,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Flux de trésorerie opérationnel 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 26
+    },
+    "PALC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 103,
+      "documents_candidats_selectionnes": 13,
+      "documents_ouverts": 13,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Total du bilan 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2018 — Capitaux propres écarté par contrôle de plausibilité (capitaux propres hors plage plausible du total du bilan).",
+        "Total du bilan 2018 écarté : rupture d'échelle (×7.9) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 3
+    },
+    "PRSC": {
+      "series_exercices": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "documents_inventories": 72,
+      "documents_candidats_selectionnes": 15,
+      "documents_ouverts": 15,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Résultat net 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2024 — Capitaux propres écarté par contrôle de plausibilité (capitaux propres hors plage plausible du total du bilan).",
+        "2023 — Total du bilan écarté par contrôle de plausibilité (capitaux propres hors plage plausible du total du bilan).",
+        "Total du bilan 2019 écarté : rupture d'échelle (×12.7) avec l'exercice voisin, extraction la moins recoupée.",
+        "Total du bilan 2024 écarté : rupture d'échelle (×12.6) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 14
+    },
+    "SAFC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2024,
+        2025
+      ],
+      "documents_inventories": 78,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Résultat net 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2020 — Résultat net écarté par contrôle de plausibilité (résultat net inférieur à 1 % des capitaux propres en extraction unique (échelle suspecte)).",
+        "2019 — Résultat net écarté par contrôle de plausibilité (résultat net inférieur à 1 % des capitaux propres en extraction unique (échelle suspecte))."
+      ],
+      "per_share_observations": 0
+    },
+    "SCRC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 49,
+      "documents_candidats_selectionnes": 22,
+      "documents_ouverts": 22,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Résultat net 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "SDCC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2022,
+        2024
+      ],
+      "documents_inventories": 94,
+      "documents_candidats_selectionnes": 22,
+      "documents_ouverts": 22,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Flux de trésorerie opérationnel 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières courantes 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2018 — Capitaux propres écarté par contrôle de plausibilité (capitaux propres hors plage plausible du total du bilan).",
+        "2018 — Total du bilan écarté par contrôle de plausibilité (poste de bilan supérieur au total du bilan).",
+        "2018 — Flux de trésorerie opérationnel écarté par contrôle de plausibilité (flux annuel sans rapport plausible avec la taille du bilan ou de l'activité).",
+        "2018 — Investissements en immobilisations (flux) écarté par contrôle de plausibilité (flux annuel sans rapport plausible avec la taille du bilan ou de l'activité).",
+        "Chiffre d'affaires 2018 écarté : rupture d'échelle (×45.2) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 20
+    },
+    "SDSC": {
+      "series_exercices": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "documents_inventories": 107,
+      "documents_candidats_selectionnes": 23,
+      "documents_ouverts": 23,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Bénéfice net par action publié 2022 : valeurs publiées divergentes entre documents/versions — groupes conservés, choix soumis au contrôle arithmétique et à la quarantaine, jamais au seul nombre d'occurrences.",
+        "Trésorerie et équivalents 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Bénéfice net par action publié 2021 : valeurs publiées divergentes entre documents/versions — groupes conservés, choix soumis au contrôle arithmétique et à la quarantaine, jamais au seul nombre d'occurrences.",
+        "Chiffre d'affaires 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dividendes versés (flux) 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2022 — Bénéfice net par action publié conservé comme preuve mais placé en quarantaine : écart de 3.3309 % avec le contrôle PART_GROUPE_PONDEREE."
+      ],
+      "per_share_observations": 88
+    },
+    "SEMC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2023
+      ],
+      "documents_inventories": 60,
+      "documents_candidats_selectionnes": 11,
+      "documents_ouverts": 11,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "SGBC": {
+      "series_exercices": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 99,
+      "documents_candidats_selectionnes": 14,
+      "documents_ouverts": 14,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Produit net bancaire 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Produit net bancaire 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "SHEC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 43,
+      "documents_candidats_selectionnes": 11,
+      "documents_ouverts": 11,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Trésorerie et équivalents 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "SIBC": {
+      "series_exercices": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "documents_inventories": 53,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "https://www.brvm.org/sites/default/files/20210712_-_rapport_des_commissaires_aux_comptes_-_etats_financiers_annuels_exercice_-_sib_ci.pdf : exercice effectif non prouvé, colonnes non agrégées.",
+        "Résultat net 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Produit net bancaire 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 4
+    },
+    "SICC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "documents_inventories": 37,
+      "documents_candidats_selectionnes": 11,
+      "documents_ouverts": 11,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "SIVC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 69,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "https://www.brvm.org/sites/default/files/20251205_-_rapport_des_cacs_sur_les_etats_financiers_-_air_liquide_ci.pdf : exercice effectif non prouvé, colonnes non agrégées.",
+        "Résultat net 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie-passif 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2025 écarté : rupture d'échelle (×4.1) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 0
+    },
+    "SLBC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "documents_inventories": 72,
+      "documents_candidats_selectionnes": 9,
+      "documents_ouverts": 9,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "SMBC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 107,
+      "documents_candidats_selectionnes": 22,
+      "documents_ouverts": 22,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "https://www.brvm.org/sites/default/files/20190712_-_etats_financiers_certifies_et_approuves_-_smb_ci.pdf : exercice effectif non prouvé, colonnes non agrégées.",
+        "https://www.brvm.org/sites/default/files/20220603_-_etats_financiers_valides_par_le_cac_non_approuves_en_ago_-_smb.pdf : exercice effectif non prouvé, colonnes non agrégées.",
+        "Capitaux propres 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "SNTS": {
+      "series_exercices": [
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 103,
+      "documents_candidats_selectionnes": 21,
+      "documents_ouverts": 21,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Capitaux propres 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Bénéfice net par action publié 2023 : valeurs publiées divergentes entre documents/versions — groupes conservés, choix soumis au contrôle arithmétique et à la quarantaine, jamais au seul nombre d'occurrences.",
+        "Dettes financières non courantes 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2023 — Bénéfice net par action publié conservé comme preuve mais placé en quarantaine : écart de 15.5836 % avec le contrôle PART_GROUPE_PONDEREE.",
+        "Chiffre d'affaires 2016 écarté : rupture d'échelle (×448.7) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 59
+    },
+    "SOGC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 107,
+      "documents_candidats_selectionnes": 17,
+      "documents_ouverts": 17,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Flux de trésorerie opérationnel 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "SPHC": {
+      "series_exercices": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 125,
+      "documents_candidats_selectionnes": 30,
+      "documents_ouverts": 30,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "https://www.brvm.org/sites/default/files/20220823_-_etats_financiers_certifies_et_approuves_-_saph_ci.pdf : exercice effectif non prouvé, colonnes non agrégées.",
+        "https://www.brvm.org/sites/default/files/20201216_-_rapport_des_cac_sur_les_etats_financiers_-_saph_ci.pdf : exercice effectif non prouvé, colonnes non agrégées.",
+        "Capitaux propres 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2016 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2016 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2015 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2022 — Résultat net écarté par contrôle de plausibilité (résultat net supérieur à 150 % des capitaux propres positifs).",
+        "2021 — Résultat net écarté par contrôle de plausibilité (résultat net supérieur à 150 % des capitaux propres positifs).",
+        "Capitaux propres 2014 écarté : rupture d'échelle (×7.7) avec l'exercice voisin, extraction la moins recoupée.",
+        "Capitaux propres 2020 écarté : rupture d'échelle (×9.7) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 9
+    },
+    "STAC": {
+      "series_exercices": [],
+      "documents_inventories": 54,
+      "documents_candidats_selectionnes": 12,
+      "documents_ouverts": 12,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    },
+    "STBC": {
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "documents_inventories": 96,
+      "documents_candidats_selectionnes": 27,
+      "documents_ouverts": 27,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Trésorerie et équivalents 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2022 écarté : rupture d'échelle (×4.5) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 1
+    },
+    "TTLC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "documents_inventories": 104,
+      "documents_candidats_selectionnes": 23,
+      "documents_ouverts": 23,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Chiffre d'affaires 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie nette 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "2017 — Résultat net écarté par contrôle de plausibilité (résultat net supérieur à 150 % des capitaux propres positifs).",
+        "Capitaux propres 2017 écarté : rupture d'échelle (×10.4) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 0
+    },
+    "TTLS": {
+      "series_exercices": [
+        2024,
+        2025
+      ],
+      "documents_inventories": 1,
+      "documents_candidats_selectionnes": 1,
+      "documents_ouverts": 1,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Total du bilan 2024 écarté : rupture d'échelle (×17.4) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 8
+    },
+    "UNLC": {
+      "series_exercices": [
+        2015,
+        2016,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "documents_inventories": 24,
+      "documents_candidats_selectionnes": 8,
+      "documents_ouverts": 8,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [
+        "Résultat net 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie-passif 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie-passif 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2023 écarté : rupture d'échelle (×3.8) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 0
+    },
+    "UNXC": {
+      "series_exercices": [
+        2024,
+        2025
+      ],
+      "documents_inventories": 88,
+      "documents_candidats_selectionnes": 14,
+      "documents_ouverts": 14,
+      "extraction_complete_pour_plan": true,
+      "inventory_exhaustive": true,
+      "aggregation_notes": [],
+      "per_share_observations": 0
+    }
+  },
+  "integration_dataset": "NON_AUTORISEE_PAR_CET_AUDIT",
+  "avertissement": "Audit en mode statuts et preuves. Les extractions uniques sans contrôle pondéré, les quarantaines et les cellules non recherchées doivent être revues avant toute intégration.",
+  "overlay_rejeu_cible_v212": {
+    "nature": "REAGREGATION_AVEC_REMPLACEMENT_CIBLE_PAS_REJEU_INTEGRAL_660",
+    "documents_journal_historique": 660,
+    "documents_remplaces": 88,
+    "documents_historiques_conserves": 572,
+    "sha256_concordants_sur_remplacements": 88,
+    "versions_parseur_dans_journal_combine": {
+      "NON_DISPONIBLE": 4,
+      "eps-evidence-v2.0.0": 568,
+      "eps-evidence-v2.1.2": 88
+    },
+    "empreintes_code_dans_journal_combine": {
+      "0152e8ab5f69a5d3a650594d72a6686132097b4a38fa4df29f69c30d6c2a2c6e": 88,
+      "c4d9376b936ba4322a9e5d837fc83cd31ef6ff3564d5f3bfdac2e5b342ccc729": 572
+    },
+    "journal_historique_modifie": false,
+    "dataset_published_sha256": "ed5ba551705cd6f9ddb5ecaa345ca22712cb41be2317310c235fbf8a36fd1efb",
+    "dataset_published_modified": false
+  }
+}

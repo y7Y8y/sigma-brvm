@@ -1,0 +1,35 @@
+{
+  "candidate_id": "3f3576ef7472f742",
+  "ticker": "SMBC",
+  "url": "https://www.brvm.org/sites/default/files/20190712_-_etats_financiers_certifies_et_approuves_-_smb_ci.pdf",
+  "selection_rank_for_ticker": 21,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20190712_-_etats_financiers_certifies_et_approuves_-_smb_ci.pdf",
+    "label": "Etats financiers certifies et approuves smb ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers_approuves",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2019-07-12",
+    "url": "https://www.brvm.org/sites/default/files/20190712_-_etats_financiers_certifies_et_approuves_-_smb_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/smb",
+    "report_page_label": "SMB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/smb?page=2"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "candidate_id": "a4db1c42c337a98f",
+  "ticker": "SOGC",
+  "url": "https://www.brvm.org/sites/default/files/20210706_-_etats_financiers_certifie_et_approuves_-_sogb_ci.pdf",
+  "selection_rank_for_ticker": 17,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20210706_-_etats_financiers_certifie_et_approuves_-_sogb_ci.pdf",
+    "label": "Etats financiers certifie et approuves sogb ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers_approuves",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2021-07-06",
+    "url": "https://www.brvm.org/sites/default/files/20210706_-_etats_financiers_certifie_et_approuves_-_sogb_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sogb",
+    "report_page_label": "SOGB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sogb?page=1"
+    ]
+  }
+}

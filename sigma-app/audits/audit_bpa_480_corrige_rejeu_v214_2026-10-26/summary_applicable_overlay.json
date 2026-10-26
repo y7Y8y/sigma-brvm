@@ -1,0 +1,68 @@
+{
+  "schema_version": "sigma-audit-bpa-480-overlay-v214-v1",
+  "cellules": {
+    "brutes_48x10": 480,
+    "applicables_confirmees": 442,
+    "non_applicables_avant_introduction": 38,
+    "applicables_avec_document_primaire_lu": 335,
+    "applicables_avec_serie_extraite": 288,
+    "taux_examen_primaire_sur_applicables_pct": 75.792
+  },
+  "bpa_publie": {
+    "applicables": 31,
+    "confirmes_deux_documents": 7,
+    "controle_arithmetique_concordant": 4,
+    "divergence_resolue_par_controle": 0,
+    "extraction_unique_sans_controle_pondere": 20,
+    "autres_niveaux": {},
+    "taux_sur_applicables_pct": 7.014,
+    "taux_sur_applicables_examinees_pct": 9.254
+  },
+  "bpa_recalcule_comparable_sans_publie_applicables": 0,
+  "publications_detectees_non_retenues_applicables": 32,
+  "quarantaines_applicables": 1,
+  "ratios_indicatifs_fin_exercice_applicables": 8,
+  "statuts_bpa_applicables": {
+    "DOCUMENT_INTROUVABLE": 15,
+    "ILLISIBLE": 72,
+    "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 265,
+    "NON_RECHERCHE": 18,
+    "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 7,
+    "PUBLIE_EN_QUARANTAINE_COHERENCE": 1,
+    "PUBLIE_EXTRAIT": 23,
+    "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 32,
+    "PUBLIE_SOURCE_DIVERGENTE_RESOLUE_PAR_CONTROLE": 1,
+    "RATIO_INDICATIF_FIN_EXERCICE": 8
+  },
+  "statuts_documentaires_applicables": {
+    "CANDIDATS_INVENTORIES_NON_OUVERTS": 2,
+    "DOCUMENTS_OUVERTS_SANS_ETAT_PRIMAIRE_PROUVE": 12,
+    "DOCUMENTS_PRIMAIRES_EXAMINES": 335,
+    "DOCUMENT_INTROUVABLE": 15,
+    "ILLISIBLE": 72,
+    "NON_RECHERCHE": 6
+  },
+  "dataset_published_modified": false,
+  "overlay_rejeu_cible_v214": {
+    "nature": "REAGREGATION_AVEC_REMPLACEMENT_CIBLE_PAS_REJEU_INTEGRAL_660",
+    "documents_journal_historique": 660,
+    "documents_remplaces": 123,
+    "remplacements_sans_parseur_par_action": [
+      "d9b1ec7ede71e8e0"
+    ],
+    "documents_historiques_conserves": 537,
+    "sha256_concordants_sur_remplacements": 123,
+    "versions_parseur_dans_journal_combine": {
+      "NON_DISPONIBLE": 4,
+      "eps-evidence-v2.0.0": 534,
+      "eps-evidence-v2.1.4": 122
+    },
+    "empreintes_code_dans_journal_combine": {
+      "ac308a405ff031a60c09a5fcb548022a58763a84d23dc2435a6abad504ac4a30": 123,
+      "c4d9376b936ba4322a9e5d837fc83cd31ef6ff3564d5f3bfdac2e5b342ccc729": 537
+    },
+    "journal_historique_modifie": false,
+    "dataset_published_sha256": "ed5ba551705cd6f9ddb5ecaa345ca22712cb41be2317310c235fbf8a36fd1efb",
+    "dataset_published_modified": false
+  }
+}

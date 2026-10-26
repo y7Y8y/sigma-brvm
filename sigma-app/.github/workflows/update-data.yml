@@ -1,0 +1,61 @@
+name: SIGMA — collecte BRVM quotidienne
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 18:20 UTC = 18:20 à Abidjan, après clôture. Lun–ven.
+    - cron: "20 18 * * 1-5"
+    # Seconde tentative si le BOC du jour paraît plus tard.
+    - cron: "20 21 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sigma-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Installer OCR de repli (PDF officiels scannés)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-fra poppler-utils imagemagick
+          tesseract --version
+          pdftoppm -v
+          magick -version
+      - name: Restaurer le cache OCR par empreinte PDF
+        uses: actions/cache@v4
+        with:
+          path: /tmp/sigma-boc-cache/reports/ocr
+          key: sigma-ocr-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            sigma-ocr-${{ runner.os }}-
+      - name: Installer les dépendances de collecte
+        run: pip install -r requirements.txt
+      - name: Tester les parseurs et calculs
+        run: python -m unittest discover -s tests -v
+      - name: Collecter les sources officielles BRVM
+        # Première exécution : backfill de l'archive BOC longue (objectif 260 séances).
+        # Ensuite, l'archive persistante du dépôt évite de relire tout l'historique :
+        # la collecte quotidienne fusionne surtout les 30 BOC récents.
+        run: python ingestion/collect.py --boc-count 30 --boc-archive-count 260
+      - name: Publier uniquement si les données ont changé
+        run: |
+          if git diff --quiet -- web/data/data.json web/data/boc_archive.json; then
+            echo "Aucun changement de données."
+            exit 0
+          fi
+          git config user.name "sigma-data-bot"
+          git config user.email "sigma-data-bot@users.noreply.github.com"
+          git add web/data/data.json web/data/boc_archive.json
+          git commit -m "data: collecte BRVM officielle"
+          git push

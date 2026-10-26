@@ -1,0 +1,211 @@
+{
+  "cells": 50,
+  "expected_retained_values": 18,
+  "concordant_retained_values": 18,
+  "missing_or_quarantined_expected_values": 0,
+  "divergent_values": 0,
+  "potential_false_positives": 0,
+  "negative_controls": {
+    "human_cells_without_retained_eps": 32,
+    "human_published_but_rejected": 8,
+    "human_rejected_concordant_demonstrated": 8,
+    "human_rejected_false_positives": 0,
+    "human_rejected_not_demonstrated_or_wrong_mechanism": 0,
+    "false_positives_on_absences_or_missing_documents": 0,
+    "rule": "Un rejet humain n'est concordant que si un candidat a été détecté puis non retenu ou mis en quarantaine pour une raison compatible ; une simple absence de sortie ne suffit pas."
+  },
+  "concordant_but_extraction_unique_without_weighted_check": 7,
+  "verdicts": {
+    "ABSENCE_DE_VALEUR_RETENUE_CONCORDANTE": 24,
+    "NON_RETENU_POUR_INCOHERENCE_CONCORDANT": 1,
+    "PUBLIE_NON_RETENU_CONCORDANT": 7,
+    "VALEUR_CONCORDANTE": 18
+  },
+  "actual_statuses": {
+    "None": 22,
+    "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 7,
+    "PUBLIE_EN_QUARANTAINE_COHERENCE": 1,
+    "PUBLIE_EXTRAIT": 10,
+    "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 7,
+    "PUBLIE_SOURCE_DIVERGENTE_RESOLUE_PAR_CONTROLE": 1,
+    "RATIO_INDICATIF_FIN_EXERCICE": 2
+  },
+  "documents": {
+    "documents_replayed": 73,
+    "documents_error": 0,
+    "documents_sha256_matches_pilot": 73,
+    "documents_aggregable_annual_candidates": 61,
+    "documents_rejected_other_issuer": 1,
+    "documents_rejected_intermediate": 3
+  },
+  "by_ticker": {
+    "BOAC": {
+      "cells": 10,
+      "expected_retained": 0,
+      "concordant_retained": 0,
+      "human_published_but_rejected": 0,
+      "human_rejected_concordant_demonstrated": 0,
+      "human_rejected_false_positives": 0,
+      "verdicts": {
+        "ABSENCE_DE_VALEUR_RETENUE_CONCORDANTE": 10
+      },
+      "series_exercices": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024
+      ],
+      "aggregation_notes": [
+        "Produit net bancaire 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Produit net bancaire 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue."
+      ],
+      "per_share_observations": 0
+    },
+    "CIEC": {
+      "cells": 10,
+      "expected_retained": 7,
+      "concordant_retained": 7,
+      "human_published_but_rejected": 0,
+      "human_rejected_concordant_demonstrated": 0,
+      "human_rejected_false_positives": 0,
+      "verdicts": {
+        "ABSENCE_DE_VALEUR_RETENUE_CONCORDANTE": 3,
+        "VALEUR_CONCORDANTE": 7
+      },
+      "series_exercices": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "aggregation_notes": [
+        "Trésorerie et équivalents 2016 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2017 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2020 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Total du bilan 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Flux de trésorerie opérationnel 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Chiffre d'affaires 2019 écarté : rupture d'échelle (×3.0) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 36
+    },
+    "ETIT": {
+      "cells": 10,
+      "expected_retained": 3,
+      "concordant_retained": 3,
+      "human_published_but_rejected": 7,
+      "human_rejected_concordant_demonstrated": 7,
+      "human_rejected_false_positives": 0,
+      "verdicts": {
+        "PUBLIE_NON_RETENU_CONCORDANT": 7,
+        "VALEUR_CONCORDANTE": 3
+      },
+      "series_exercices": [
+        2017,
+        2018,
+        2022,
+        2023,
+        2024
+      ],
+      "aggregation_notes": [],
+      "per_share_observations": 147
+    },
+    "SDSC": {
+      "cells": 10,
+      "expected_retained": 4,
+      "concordant_retained": 4,
+      "human_published_but_rejected": 1,
+      "human_rejected_concordant_demonstrated": 1,
+      "human_rejected_false_positives": 0,
+      "verdicts": {
+        "ABSENCE_DE_VALEUR_RETENUE_CONCORDANTE": 5,
+        "NON_RETENU_POUR_INCOHERENCE_CONCORDANT": 1,
+        "VALEUR_CONCORDANTE": 4
+      },
+      "series_exercices": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "aggregation_notes": [
+        "Chiffre d'affaires 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Résultat net 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dividendes versés (flux) 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2019 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2018 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Bénéfice net par action publié 2022 : valeurs publiées divergentes entre documents/versions — groupes conservés, choix soumis au contrôle arithmétique et à la quarantaine, jamais au seul nombre d'occurrences.",
+        "Trésorerie et équivalents 2021 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Bénéfice net par action publié 2021 : valeurs publiées divergentes entre documents/versions — groupes conservés, choix soumis au contrôle arithmétique et à la quarantaine, jamais au seul nombre d'occurrences.",
+        "2022 — Bénéfice net par action publié conservé comme preuve mais placé en quarantaine : écart de 3.3309 % avec le contrôle PART_GROUPE_PONDEREE."
+      ],
+      "per_share_observations": 88
+    },
+    "SNTS": {
+      "cells": 10,
+      "expected_retained": 4,
+      "concordant_retained": 4,
+      "human_published_but_rejected": 0,
+      "human_rejected_concordant_demonstrated": 0,
+      "human_rejected_false_positives": 0,
+      "verdicts": {
+        "ABSENCE_DE_VALEUR_RETENUE_CONCORDANTE": 6,
+        "VALEUR_CONCORDANTE": 4
+      },
+      "series_exercices": [
+        2017,
+        2018,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "aggregation_notes": [
+        "Capitaux propres 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2023 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2022 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Capitaux propres 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Trésorerie et équivalents 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Dettes financières non courantes 2024 : valeurs divergentes entre documents (retraitement possible) — valeur la mieux recoupée retenue.",
+        "Bénéfice net par action publié 2023 : valeurs publiées divergentes entre documents/versions — groupes conservés, choix soumis au contrôle arithmétique et à la quarantaine, jamais au seul nombre d'occurrences.",
+        "2023 — Bénéfice net par action publié conservé comme preuve mais placé en quarantaine : écart de 15.5836 % avec le contrôle PART_GROUPE_PONDEREE.",
+        "Chiffre d'affaires 2016 écarté : rupture d'échelle (×448.7) avec l'exercice voisin, extraction la moins recoupée."
+      ],
+      "per_share_observations": 49
+    }
+  },
+  "gate_480": "EXTENSION_480_REFUSEE_AVANT_REVUE_DES_EXTRACTIONS_UNIQUES",
+  "code_fingerprint": "8ced59ee6d15d8f66744e511f7d761575d5404425b8a7a508265d76940847e67",
+  "dataset_published_modified": false
+}

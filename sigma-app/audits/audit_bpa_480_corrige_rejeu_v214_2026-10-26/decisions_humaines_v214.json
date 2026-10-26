@@ -1,0 +1,180 @@
+{
+  "schema_version": "sigma-audit-bpa-480-decisions-humaines-v214-v1",
+  "date": "2026-10-26",
+  "parser_version": "eps-evidence-v2.1.4",
+  "base_artifacts": {
+    "historical_audit": "audits/audit_bpa_480_2016_2025_2026-10-25",
+    "targeted_replay": "audits/rejeu_cible_bpa_v214_2026-10-26",
+    "overlay": "audits/audit_bpa_480_corrige_rejeu_v214_2026-10-26",
+    "counter_reading": "audits/contre_lecture_extractions_uniques_2026-10-26/REVUE_CONTRE_LECTURE.md"
+  },
+  "dataset_published": {
+    "modified": false,
+    "generated_at": "2026-10-22T21:20:37+00:00",
+    "sha256": "ed5ba551705cd6f9ddb5ecaa345ca22712cb41be2317310c235fbf8a36fd1efb"
+  },
+  "rules": {
+    "comparable_eps_definition": "Résultat attribuable aux actionnaires ordinaires divisé par le nombre moyen pondéré d'actions ordinaires vérifié.",
+    "end_of_period_ratio": "Résultat divisé par les actions de fin d'exercice : ratio indicatif séparé, jamais un BPA recalculé comparable.",
+    "single_extraction": "Aucune extraction unique ne peut alimenter silencieusement le dataset publié ou un PER comparable.",
+    "scale_conversion": "Aucune conversion d'un montant par action sous échelle de page sans unité par action explicite."
+  },
+  "counts": {
+    "overlay_raw": {
+      "cells_total": 480,
+      "cells_applicable": 442,
+      "cells_with_primary_document_examined": 335,
+      "published_eps_applicable": 31,
+      "published_detected_not_retained_applicable": 32,
+      "quarantine_applicable": 1,
+      "indicative_end_of_period_ratios_applicable": 8,
+      "recalculated_comparable_eps_applicable": 0
+    },
+    "decision_layer": {
+      "printed_eps_transcriptions_applicable": 31,
+      "published_eps_not_excluded_by_ttls_decision": 29,
+      "printed_eps_transcribed_but_excluded_from_formal_comparability": 2,
+      "published_detected_not_retained_after_sphc_2022_2023_manual_correction": 34,
+      "non_published_after_sphc_2022_2023_manual_correction": 263,
+      "notes": "TTLS 2024/2025 sont transcrits mais exclus des BPA formellement comparables. Les 29 autres valeurs publiées ne sont pas autorisées en bloc pour l'intégration : leurs niveaux de validation restent distincts et toute intégration devra être décidée cellule par cellule. SPHC 2022/2023 passent, au niveau décisionnel seulement, de NON_PUBLIE à publication détectée non retenue ; les fichiers de matrice bruts ne sont pas réécrits."
+    }
+  },
+  "decisions": [
+    {
+      "ticker": "BOAS",
+      "cells": [
+        {
+          "exercice": 2017,
+          "overlay_status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+          "decision": "PUBLICATION_DETECTEE_NON_RETENUE",
+          "printed_candidate_fcfa": 421.0,
+          "reason": "Page 54 : résultat net par action ou part sociale, périmètre individuel, base de calcul non précisée. La valeur correspond arithmétiquement à un ratio sur actions de fin de période, pas à un BPA moyen pondéré démontré."
+        },
+        {
+          "exercice": 2018,
+          "overlay_status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+          "decision": "PUBLICATION_DETECTEE_NON_RETENUE",
+          "printed_candidate_fcfa": 355.0,
+          "reason": "Même ligne page 54 ; base non précisée et aucun nombre moyen pondéré vérifié."
+        },
+        {
+          "exercice": 2019,
+          "overlay_status": "RATIO_INDICATIF_FIN_EXERCICE",
+          "decision": "RATIO_INDICATIF_SEPARE_PAS_UN_BPA_COMPARABLE",
+          "printed_candidate_fcfa": 380.0,
+          "indicative_ratio_fcfa": 379.7916666666667,
+          "numerator_fcfa": 9115000000.0,
+          "end_of_period_shares": 24000000.0,
+          "reason": "Le document est désormais rattaché à 2019, non 2020. Le quotient de contrôle concorde avec le 380 imprimé, mais le dénominateur est un nombre d'actions de fin d'exercice."
+        },
+        {
+          "exercice": 2020,
+          "overlay_status": "ILLISIBLE",
+          "decision": "AUCUNE_CONCLUSION_DE_NON_PUBLICATION",
+          "reason": "La couverture autrefois attribuée à 2020 appartenait au document 2019. Après correction, aucun état primaire lisible ne couvre 2020 dans le périmètre journalisé."
+        }
+      ]
+    },
+    {
+      "ticker": "CIEC",
+      "scope": "CONSOLIDE",
+      "cells": [
+        {"exercice": 2019, "decision": "BPA_PUBLIE_RETENU_CONTRE_LU", "value_fcfa": 140.0, "validation": "EXTRACTION_UNIQUE_CONTRE_LUE_PILOTE"},
+        {"exercice": 2020, "decision": "BPA_PUBLIE_RETENU", "value_fcfa": 307.0, "validation": "DEUX_DOCUMENTS_DISTINCTS"},
+        {"exercice": 2021, "decision": "BPA_PUBLIE_RETENU", "value_fcfa": 188.0, "validation": "DEUX_DOCUMENTS_DISTINCTS"},
+        {"exercice": 2022, "decision": "BPA_PUBLIE_RETENU", "value_fcfa": 183.0, "validation": "DEUX_DOCUMENTS_DISTINCTS"},
+        {"exercice": 2023, "decision": "BPA_PUBLIE_RETENU", "value_fcfa": 205.0, "validation": "DEUX_DOCUMENTS_DISTINCTS"},
+        {"exercice": 2024, "decision": "BPA_PUBLIE_RETENU", "value_fcfa": 188.0, "validation": "DEUX_DOCUMENTS_DISTINCTS"},
+        {"exercice": 2025, "decision": "BPA_PUBLIE_RETENU_CONTRE_LU", "value_fcfa": 234.0, "validation": "EXTRACTION_UNIQUE_CONTRE_LUE_PILOTE"}
+      ],
+      "comparability_note": "Valeurs publiées retenues. Elles ne sont pas reclassées en BPA recalculés comparables faute de nombre moyen pondéré explicitement vérifié pour chaque exercice."
+    },
+    {
+      "ticker": "SDCC",
+      "scope": "CONSOLIDE",
+      "cells": [
+        {
+          "exercice": 2018,
+          "decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+          "value_fcfa": 325.0,
+          "validation": "DEUX_PDF_DISTINCTS_MEME_VINTAGE_2019",
+          "arithmetic_control": "2 921 M FCFA / 9 000 000 = 324,56",
+          "warning": "Le ratio interne de la matrice (0,333...) est un artefact d'unité et ne doit pas être utilisé."
+        },
+        {
+          "exercice": 2019,
+          "decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+          "value_fcfa": 353.0,
+          "validation": "DEUX_PDF_DISTINCTS_MEME_VINTAGE_2019",
+          "arithmetic_control": "3 181 M FCFA / 9 000 000 = 353,44"
+        }
+      ],
+      "comparability_note": "Le BPA individuel 2018 de 324 FCFA est un autre périmètre. Aucun BPA recalculé comparable n'est créé sans dénominateur moyen pondéré explicite."
+    },
+    {
+      "ticker": "SPHC",
+      "cells": [
+        {
+          "exercice": 2019,
+          "overlay_status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+          "decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+          "reason": "Valeurs sous échelle de page sans unité par action explicite ; aucune conversion autorisée."
+        },
+        {
+          "exercice": 2020,
+          "overlay_status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+          "decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+          "reason": "Valeurs brutes 1,695/0,666 conservées comme preuves, non promues en FCFA par action."
+        },
+        {
+          "exercice": 2021,
+          "overlay_status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+          "decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+          "reason": "Valeurs sous échelle de page et périmètre insuffisamment démontré pour une promotion comparable."
+        },
+        {
+          "exercice": 2022,
+          "overlay_status": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+          "decision": "CORRECTION_MANUELLE_PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+          "evidence": "États IFRS 2022, page 3 : section Compte de résultat par action et formule résultat net / actions en circulation ; rapport annuel 2023, page 27 : colonne comparative 2022 à 0,54 sous échelle.",
+          "arithmetic_control_not_retained": "13 696 993 milliers FCFA / 25 558 005 ≈ 535,9 FCFA",
+          "reason": "Il ne s'agit pas d'une absence. Le montant imprimé est sous échelle de page sans unité par action distincte ; la règle du chantier interdit de le convertir silencieusement. Le quotient de contrôle n'est pas substitué au BPA publié."
+        },
+        {
+          "exercice": 2023,
+          "overlay_status": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+          "decision": "CORRECTION_MANUELLE_PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+          "evidence": "Rapport annuel 2023, page 27 : Résultat par action, dilué et non dilué 0,24 pour 2023 sous échelle de présentation.",
+          "arithmetic_control_not_retained": "6 231 728 milliers FCFA / 25 558 005 ≈ 243,8 FCFA, sous réserve du nombre d'actions applicable",
+          "reason": "Publication présente mais non retenue pour la même ambiguïté d'échelle ; aucune valeur convertie n'est intégrée."
+        }
+      ],
+      "global_decision": "Aucun BPA SPHC retenu dans la couche comparable à ce stade."
+    },
+    {
+      "ticker": "TTLS",
+      "scope": "CONSOLIDE",
+      "cells": [
+        {
+          "exercice": 2024,
+          "overlay_status": "PUBLIE_EXTRAIT",
+          "decision": "TRANSCRIPTION_CONFIRMEE_EXCLUE_DES_BPA_FORMELLEMENT_COMPARABLES",
+          "printed_value_fcfa": 219.0,
+          "individual_value_not_substituted_fcfa": 128.0,
+          "reason": "Le quotient sur résultat net total est 219,1796 alors que le quotient sur la part du groupe est 140,5637. Sans note de calcul prouvant le numérateur attribuable aux actionnaires ordinaires, la comparabilité formelle n'est pas établie."
+        },
+        {
+          "exercice": 2025,
+          "overlay_status": "PUBLIE_EXTRAIT",
+          "decision": "TRANSCRIPTION_CONFIRMEE_EXCLUE_DES_BPA_FORMELLEMENT_COMPARABLES",
+          "printed_value_fcfa": 208.0,
+          "individual_value_not_substituted_fcfa": 205.0,
+          "reason": "Le quotient sur résultat net total est 208,0741 alors que le quotient sur la part du groupe est 143,2353. Même exclusion provisoire, malgré une segmentation individuel/consolidé désormais correcte."
+        }
+      ],
+      "inventory_warning": "Un seul PDF TTLS est journalisé pour ce bloc ; l'inventaire reste insuffisant pour conclure sur les exercices antérieurs."
+    }
+  ],
+  "integration_dataset": false,
+  "per_comparable_authorized_from_these_decisions": false
+}

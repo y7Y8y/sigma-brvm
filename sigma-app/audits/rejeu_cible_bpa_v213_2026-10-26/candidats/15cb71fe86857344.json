@@ -1,0 +1,34 @@
+{
+  "candidate_id": "15cb71fe86857344",
+  "ticker": "SIVC",
+  "url": "https://www.brvm.org/sites/default/files/20251205_-_rapport_des_cacs_sur_les_etats_financiers_-_air_liquide_ci.pdf",
+  "selection_rank_for_ticker": 11,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20251205_-_rapport_des_cacs_sur_les_etats_financiers_-_air_liquide_ci.pdf",
+    "label": "Rapport des cacs sur les etats financiers air liquide ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2025-12-05",
+    "url": "https://www.brvm.org/sites/default/files/20251205_-_rapport_des_cacs_sur_les_etats_financiers_-_air_liquide_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/air-liquide-ci",
+    "report_page_label": "AIR LIQUIDE CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/air-liquide-ci",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/air-liquide-ci"
+    ]
+  }
+}

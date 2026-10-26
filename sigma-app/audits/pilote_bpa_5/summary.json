@@ -1,0 +1,117 @@
+{
+  "cellules_brutes": 50,
+  "cellules_applicables_confirmees": 50,
+  "documents_indexes_pages_brvm": 485,
+  "documents_ouverts": 73,
+  "documents_ouverts_dont_autre_emetteur_exclu": 1,
+  "bpa_publie_fcfa_retenu": {
+    "observations": 18,
+    "denominateur": 50,
+    "taux_pct": 36.0,
+    "confirmes_deux_documents": 8,
+    "confirmes_deux_documents_pct": 16.0,
+    "un_document_valide_par_controle": 10
+  },
+  "bpa_recalcule_comparable_fcfa_retenu": {
+    "observations": 0,
+    "denominateur": 50,
+    "taux_pct": 0.0,
+    "note": "Aucun recalcul n'est substitué à un BPA publié ; les recalculs servent de contrôles indépendants."
+  },
+  "controles_numerateur_attribuable_ou_part_groupe_sur_pondere": {
+    "concordants_sur_bpa_retenus": 6,
+    "discordants_rejetes": 1
+  },
+  "ratios_indicatifs_fin_exercice_separes": {
+    "observations": 13,
+    "denominateur": 50,
+    "taux_pct": 26.0,
+    "note": "Hors couverture BPA comparable."
+  },
+  "publications_par_action_non_retenues": {
+    "cellules": 8,
+    "dont_devise_ou_composante": 7,
+    "dont_incoherence_source": 1,
+    "bpa_individuels_non_fusionnes_cellules": 5
+  },
+  "absences": {
+    "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 22,
+    "DOCUMENT_INTROUVABLE": 2,
+    "ILLISIBLE": 0,
+    "NON_RECHERCHE": 0,
+    "NON_APPLICABLE": 0
+  },
+  "statuts_bpa": {
+    "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 22,
+    "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 9,
+    "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 8,
+    "DOCUMENT_INTROUVABLE": 2,
+    "PUBLIE_SOURCE_DIVERGENTE_RESOLUE": 1,
+    "PUBLIE_INCOHERENT_NON_RETENU": 1,
+    "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE": 7
+  },
+  "par_societe": {
+    "CIEC": {
+      "cellules": 10,
+      "bpa_publie_fcfa_retenu": 7,
+      "bpa_publie_fcfa_retenu_pct": 70.0,
+      "confirmes_deux_documents": 5,
+      "ratios_indicatifs_separes": 1,
+      "statuts": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 3,
+        "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 2,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 5
+      }
+    },
+    "SNTS": {
+      "cellules": 10,
+      "bpa_publie_fcfa_retenu": 4,
+      "bpa_publie_fcfa_retenu_pct": 40.0,
+      "confirmes_deux_documents": 1,
+      "ratios_indicatifs_separes": 3,
+      "statuts": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 4,
+        "DOCUMENT_INTROUVABLE": 2,
+        "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 2,
+        "PUBLIE_SOURCE_DIVERGENTE_RESOLUE": 1,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1
+      }
+    },
+    "SDSC": {
+      "cellules": 10,
+      "bpa_publie_fcfa_retenu": 4,
+      "bpa_publie_fcfa_retenu_pct": 40.0,
+      "confirmes_deux_documents": 1,
+      "ratios_indicatifs_separes": 0,
+      "statuts": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 5,
+        "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 3,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1,
+        "PUBLIE_INCOHERENT_NON_RETENU": 1
+      }
+    },
+    "BOAC": {
+      "cellules": 10,
+      "bpa_publie_fcfa_retenu": 0,
+      "bpa_publie_fcfa_retenu_pct": 0.0,
+      "confirmes_deux_documents": 0,
+      "ratios_indicatifs_separes": 9,
+      "statuts": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "ETIT": {
+      "cellules": 10,
+      "bpa_publie_fcfa_retenu": 3,
+      "bpa_publie_fcfa_retenu_pct": 30.0,
+      "confirmes_deux_documents": 1,
+      "ratios_indicatifs_separes": 0,
+      "statuts": {
+        "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE": 7,
+        "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 2,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1
+      }
+    }
+  },
+  "porte_collecte_complete": "REFUSEE_AVANT_CORRECTIFS_ET_TEST_DE_NON_REGRESSION_SUR_LE_PILOTE"
+}

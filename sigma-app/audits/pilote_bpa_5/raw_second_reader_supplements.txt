@@ -1,0 +1,112 @@
+SECOND LECTEUR — DOCUMENTS AJOUTÉS APRÈS CONTRE-LECTURE
+Ces lignes complètent raw_second_reader.txt (63 documents initiaux).
+
+####################################################################################################
+CIEC CIE COTE D'IVOIRE
+
+DOC 2018 | rapport_annuel | Rapport annuel 2018 cie | pages=59 chars=118982
+Motif : rapport annuel non retenu par le premier tri
+ p30: Nombre d’actions
+
+####################################################################################################
+SNTS SONATEL SENEGAL
+
+DOC 2020 | autre | Sonatel rapport de gestion 2020 vf 25022021 | pages=9 chars=20661
+Motif : le libellé dit gestion 2020 ; l'inventaire avait lu 2021 dans la date du fichier
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2019 | autre | Synthese rapport de gestion 2019 250220 vf 4 | pages=16 chars=30479
+Motif : seul document annuel 2019 indexé
+ AUCUNE LIGNE BPA/ACTIONS
+
+####################################################################################################
+SDSC AFRICA GLOBAL LOGISTICS COTE D'IVOIRE
+
+DOC 2025 | etats_financiers | Attestation des commissaires aux comptes etats financiers exercice 2025 africa glogal logistics ci | pages=1 chars=0
+Motif : attestation et états 2025 non retenus par le premier tri
+Notes : Texte natif non extractible (document probablement numérisé en image).
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2025 | etats_financiers | Rapport des commissaires aux comptes sur les etats financiers africa global logistics ci | pages=10 chars=19723
+Motif : rapport CAC sans exercice dans le nom ; exercice à confirmer par le contenu
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2020 | autre | Btl ci 2020 comptes consolides ifrs rapport general des cac | pages=42 chars=101012
+Motif : comptes consolidés IFRS classés autre
+Notes : Bénéfice net par action publié écarté par contrôle de plausibilité (bénéfice par action incompatible avec résultat net / nombre d'actions du même exercice).
+ p3: Résultat par action (en francs CFA) : 9.2
+ p8: Note 9 - Capitaux propres et résultat par action ................................................................................................. 26
+ p8: 9.2 - Résultat par action .................................................................................................................................................................. 26
+ p26: Note 9 - Capitaux propres et résultat par action
+ p26: Au cours de l’exercice clos le 31 décembre 2020, le nombre moyen pondéré d'actions ordinaires en circulation s'est élevé à
+ p26: 54 420 286 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 420 286 actions.
+ p26: CFA par actions.
+ p26: Au 31 décembre 2020, le nombre d'actions d'autocontrôle détenues par la société Bolloré Transport Logistics Côte d’Ivoire SA
+ p26: 9.2 - Résultat par action
+ p26: Le tableau ci-dessous fournit le détail des éléments utilisés pour calculer les résultats par action de base et dilué présentés
+ p26: Résultat net part du Groupe, utilisé pour le calcul du résultat par action - de base 14 501 11 030
+ p26: Résultat net part du Groupe, utilisé pour le calcul du résultat par action - dilué 14 501 11 030
+ p26: Nombre moyen pondéré de titres en circulation - de base 54 420 286 54 435 300
+ p26: Nombre moyen pondéré de titres en circulation et potentiels - après dilution 54 420 286 54 435 300
+
+DOC 2020 | autre | Btl ci 2020 comptes individuels ifrs rapport general des cac | pages=45 chars=120227
+Motif : comptes individuels IFRS classés autre
+ p5: Résultat par action
+ p5: ● Résultat de base par action 349 232
+ p5: ● Résultat dilué par action 349 232
+ p23: Au cours de l’exercice clos le 31 décembre 2020, le nombre moyen pondéré d'actions ordinaires en circulation s'est élevé
+ p23: à 54 420 286 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 420 286 actions.
+ p24: CFA par actions.
+ p24: Au 31 décembre 2020, le nombre d'actions d'autocontrôle détenues par la société Bolloré Transport Logistics Côte d’Ivoire
+
+DOC 2019 | etats_financiers | Etats financiers exercice 2019 comptes individuels bollore transport logistics | pages=33 chars=98014
+Motif : comptes individuels 2019, contrôle de périmètre
+ p5: Résultat par action
+ p5: ● Résultat de base par action 232 266
+ p5: ● Résultat dilué par action 232 266
+ p23: Au cours de l’exercice clos le 31 décembre 2019, le nombre moyen pondéré d'actions ordinaires en circulation s'est élevé
+ p23: à 54 435 300 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 435 300 actions
+ p23: francs CFA par actions.
+
+####################################################################################################
+BOAC BANK OF AFRICA COTE D'IVOIRE
+
+DOC 2019 | etats_financiers | Etats financiers exercice 2019 bank of africa ci | pages=3 chars=3442
+Motif : seconde copie/libellé annuel 2019
+ AUCUNE LIGNE BPA/ACTIONS
+
+####################################################################################################
+ETIT Ecobank Transnational Incorporated TOGO
+
+DOC 2018 | rapport_annuel | Rapport annuel 2018 ecobank group | pages=324 chars=1157443
+Motif : rapport annuel du groupe non retenu par le premier tri ; second lecteur pdftotext car extracteur de production non terminé dans le budget temps du pilote
+Notes : Extracteur de production non terminé sur ce PDF de 324 pages pendant le pilote ; aucune valeur d'extracteur n'est donc revendiquée pour ce document. | Contre-lecture indépendante réalisée avec pdftotext -layout, lignes BPA/actions conservées ci-dessous.
+ p8: For the year ended 31 December (in millions of US dollars, except per share and ratio data) 2018 2017
+ p8: Profit attributable per share ($):
+ p9: Profit attributable to Earnings per share (Basic)2 Return on equity
+ p21: per share (EPS) of $0.0106 (1.06 US dollar cents), up long-term prospects of the company. This led
+ p62: maximum of two (2) seats per shareholder;
+ p144: Year ended 31 December (in thousands of US dollars, except per share data and ratios) 2018 2017
+ p175: Earnings per share from continuing operations attributable to owners of the parent
+ p175: during the year (expressed in United States cents per share)
+ p175: Earnings per share from discontinued operations attributable to owners of the
+ p175: parent during the year (expressed in United States cents per share)
+ p261: 16 Earnings per share
+ p261: Basic earnings per share is calculated by dividing the net profit attributable to equity holders of the company by the weighted
+ p261: Profit attributable to equity holders of the Company from continuing operations 261,214 178,071
+ p261: Profit attributable to equity holders of the Company from discontinued operations 433 514
+ p261: Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640
+ p261: Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72
+ p261: Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00
+ p261: Diluted earnings per share is calculated by adjusting the weighted average number of ordinary shares outstanding to assume
+ p261: computation of dilutive earnings per share.
+ p261: Profit attributable to equity holders of the company from continuing operations 261,214 178,071
+ p261: Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640
+ p261: Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176
+ p261: Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72
+ p261: Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00
+ p290: US$0.025 per share (December 2017: US$0.025 per share). Total issued shares as of 31 December 2018 were 24,730 billion shares.
+ p300: Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69
+ p300: Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6
+ p300: Dividend per share (US dollar cents) – — — 0.20 —
+ p310: Ordinary shares Authorised share capital of 50,000,000,000 at 2.5 US cents ($0.025) per share, out of

@@ -1,0 +1,4542 @@
+[
+  {
+    "ticker": "ETIT",
+    "exercice": 2016,
+    "expected": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "documentary_status": "RAPPORT_ANNUEL_2018_EXAMINE_PAR_SECOND_LECTEUR",
+      "retained_value_fcfa": null,
+      "confirmations_documents_distincts": 0,
+      "perimeter": "IFRS consolidé, résumé quinquennal",
+      "validation": "Rapport annuel 2018 du groupe, résumé quinquennal p. 300 : BPA de base 2016 de -1,01 cent USD et perte attribuable aux propriétaires de -249 898 milliers USD. Aucune traduction FCFA de ce BPA dans la source ; valeur conservée comme publication en devise, hors couverture FCFA.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": null,
+      "published_eps_fcfa": null,
+      "eligible_published_eps_fcfa": null,
+      "published_eps_candidate_before_quarantine_fcfa": null,
+      "published_eps_raw_figure_fcfa": null,
+      "published_candidate_groups": [],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "AUCUN_GROUPE_CANDIDAT_DETAILLE",
+        "value": null,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": null,
+      "published_currency": null,
+      "published_component": null,
+      "published_basis": null,
+      "nonretained_eps_observations": [],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [],
+    "eps_figure": null,
+    "actual_confirmations_documents_distincts": null,
+    "validation_level": "AUCUNE_VALEUR_RETENUE",
+    "comparison": {
+      "verdict": "REJET_NON_DEMONTRE_AUCUN_CANDIDAT_DETECTE",
+      "expected_value": null,
+      "actual_value": null,
+      "candidate_before_quarantine": null,
+      "human_rejected_publication": true,
+      "candidate_detected": false,
+      "candidate_detection_sources": [],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2017,
+    "expected": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "documentary_status": "DOCUMENT_AUTRE_EMETTEUR_EXCLU_ET_RAPPORT_2018_EXAMINE",
+      "retained_value_fcfa": null,
+      "confirmations_documents_distincts": 0,
+      "perimeter": "IFRS consolidé, composantes par activité",
+      "validation": "Le document « Etats financiers 2017 ecobank ci » est celui d'Ecobank Côte d’Ivoire, autre émetteur : exclu. Pour ETI, note 16 du rapport annuel 2018 p. 261 : profit attribuable poursuivi 178 071 milliers USD, arrêté 514, dénominateur pondéré 24 607 640 milliers d'actions ; BPA poursuivi 0,72 cent et arrêté 0,00. Le total implicite est 0,7257 cent, sans BPA total FCFA directement publié.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "published_eps_fcfa": null,
+      "eligible_published_eps_fcfa": null,
+      "published_eps_candidate_before_quarantine_fcfa": null,
+      "published_eps_raw_figure_fcfa": null,
+      "published_candidate_groups": [
+        {
+          "value": 5.9,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "NON_PROUVEE",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.72,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.72,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.0,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.0,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "AUCUN_CANDIDAT_ELIGIBLE",
+        "value": null,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": null,
+      "published_currency": null,
+      "published_component": null,
+      "published_basis": null,
+      "nonretained_eps_observations": [
+        {
+          "value": 5.9,
+          "currency": "NON_PROUVEE",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net par action (en cents 1 .06 5 .90 0 .72 4 .01 -47% -47%",
+            "raw_token": "5.90",
+            "context_lines": [
+              "Dépôts de la clientèle 1 5,935,999 9,129,546 1 5,203,271 8 ,315,427 5% 10%",
+              "Capitaux propres 1 ,812,491 1,038,355 2 ,172,083 1 ,188,021 -17% -13%",
+              "Résultat net par action (en cents 1 .06 5 .90 0 .72 4 .01 -47% -47%",
+              "$EU / FCFA)",
+              "Ade Ayeyemi, Directeur Général du Groupe, a déclaré : « Notre performance financière en 2018 a été"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.72,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 41,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1.06 0 .72",
+            "raw_token": "0.72",
+            "context_lines": [
+              "328,649 2 28,534",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1.06 0 .72",
+              "- Résultat dilué par action 1.06 0 .72",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par"
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.72,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 42,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1.06 0 .72",
+            "raw_token": "0.72",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1.06 0 .72",
+              "- Résultat dilué par action 1.06 0 .72",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):"
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.0,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 45,
+            "line_original": "Résultat de base par action 0.00 0 .00",
+            "raw_token": "0.00",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):",
+              "Résultat de base par action 0.00 0 .00",
+              "Résultat dilué par action 0.00 0 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.0,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 46,
+            "line_original": "Résultat dilué par action 0.00 0 .00",
+            "raw_token": "0.00",
+            "context_lines": [
+              "action):",
+              "Résultat de base par action 0.00 0 .00",
+              "Résultat dilué par action 0.00 0 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "4"
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [],
+    "eps_figure": null,
+    "actual_confirmations_documents_distincts": null,
+    "validation_level": "AUCUNE_VALEUR_RETENUE",
+    "comparison": {
+      "verdict": "PUBLIE_NON_RETENU_CONCORDANT",
+      "expected_value": null,
+      "actual_value": null,
+      "candidate_before_quarantine": null,
+      "human_rejected_publication": true,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2018,
+    "expected": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "documentary_status": "VERSIONS_2018_ET_RETRAITEE_2019_EXAMINEES",
+      "retained_value_fcfa": null,
+      "confirmations_documents_distincts": 0,
+      "perimeter": "IFRS consolidé, deux vintages",
+      "validation": "Version 2018 : BPA poursuivi 1,06 cent USD, arrêté 0,00 ; numérateur total 261 647 milliers USD et dénominateur 24 592 619 milliers, contrôle 1,0639 cent. Version retraitée dans les états 2019 : total attribuable 182 178 milliers, BPA poursuivi 0,74 cent et traduction FCFA 4,11. L'écart de vintage est matériel (-30,4 % sur le BPA) ; aucun choix silencieux n'est fait.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "published_eps_fcfa": null,
+      "eligible_published_eps_fcfa": null,
+      "published_eps_candidate_before_quarantine_fcfa": null,
+      "published_eps_raw_figure_fcfa": null,
+      "published_candidate_groups": [
+        {
+          "value": 1.06,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "NON_PROUVEE",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 1.06,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 1.06,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.0,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.0,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.74,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 4.11,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.74,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.74,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "AUCUN_CANDIDAT_ELIGIBLE",
+        "value": null,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": null,
+      "published_currency": null,
+      "published_component": null,
+      "published_basis": null,
+      "nonretained_eps_observations": [
+        {
+          "value": 1.06,
+          "currency": "NON_PROUVEE",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net par action (en cents 1 .06 5 .90 0 .72 4 .01 -47% -47%",
+            "raw_token": "1.06",
+            "context_lines": [
+              "Dépôts de la clientèle 1 5,935,999 9,129,546 1 5,203,271 8 ,315,427 5% 10%",
+              "Capitaux propres 1 ,812,491 1,038,355 2 ,172,083 1 ,188,021 -17% -13%",
+              "Résultat net par action (en cents 1 .06 5 .90 0 .72 4 .01 -47% -47%",
+              "$EU / FCFA)",
+              "Ade Ayeyemi, Directeur Général du Groupe, a déclaré : « Notre performance financière en 2018 a été"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.06,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 41,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1.06 0 .72",
+            "raw_token": "1.06",
+            "context_lines": [
+              "328,649 2 28,534",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1.06 0 .72",
+              "- Résultat dilué par action 1.06 0 .72",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par"
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.06,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 42,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1.06 0 .72",
+            "raw_token": "1.06",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1.06 0 .72",
+              "- Résultat dilué par action 1.06 0 .72",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):"
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.0,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 45,
+            "line_original": "Résultat de base par action 0.00 0 .00",
+            "raw_token": "0.00",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):",
+              "Résultat de base par action 0.00 0 .00",
+              "Résultat dilué par action 0.00 0 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.0,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 46,
+            "line_original": "Résultat dilué par action 0.00 0 .00",
+            "raw_token": "0.00",
+            "context_lines": [
+              "action):",
+              "Résultat de base par action 0.00 0 .00",
+              "Résultat dilué par action 0.00 0 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "4"
+            ],
+            "column_header": {
+              "years": [
+                2018,
+                2017
+              ],
+              "evidence_line": "2018 2017",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.74,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+            "raw_token": "0,74",
+            "context_lines": [
+              "Dépôts de la clientèle 1 6 246 120 9 486 164 1 5 935 999 9 129 546 2% 4%",
+              "Capitaux propres 1 885 777 1 101 111 1 733 022 9 92 828 9% 11%",
+              "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+              "/ FCFA)",
+              "Ade Ayeyemi, Directeur Général du Groupe, a déclaré : « Nos résultats 2019 reflètent la résilience de notre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 4.11,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_FCFA_DEDUITE_D_UN_MOTIF_NON_EXPLICITE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+            "raw_token": "4,11",
+            "context_lines": [
+              "Dépôts de la clientèle 1 6 246 120 9 486 164 1 5 935 999 9 129 546 2% 4%",
+              "Capitaux propres 1 885 777 1 101 111 1 733 022 9 92 828 9% 11%",
+              "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+              "/ FCFA)",
+              "Ade Ayeyemi, Directeur Général du Groupe, a déclaré : « Nos résultats 2019 reflètent la résilience de notre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.74,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 42,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 0,78 0 ,74",
+            "raw_token": "0,74",
+            "context_lines": [
+              "274 934 2 49 180",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 0,78 0 ,74",
+              "- Résultat dilué par action 0,78 0 ,74",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.74,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 43,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 0,78 0 ,74",
+            "raw_token": "0,74",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 0,78 0 ,74",
+              "- Résultat dilué par action 0,78 0 ,74",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.0,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 46,
+            "line_original": "Résultat de base par action 0,01 0 ,00",
+            "raw_token": "0,00",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):",
+              "Résultat de base par action 0,01 0 ,00",
+              "Résultat dilué par action 0,01 0 ,00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.0,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 47,
+            "line_original": "Résultat dilué par action 0,01 0 ,00",
+            "raw_token": "0,00",
+            "context_lines": [
+              "action):",
+              "Résultat de base par action 0,01 0 ,00",
+              "Résultat dilué par action 0,01 0 ,00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "4"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [],
+    "eps_figure": null,
+    "actual_confirmations_documents_distincts": null,
+    "validation_level": "AUCUNE_VALEUR_RETENUE",
+    "comparison": {
+      "verdict": "PUBLIE_NON_RETENU_CONCORDANT",
+      "expected_value": null,
+      "actual_value": null,
+      "candidate_before_quarantine": null,
+      "human_rejected_publication": true,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2019,
+    "expected": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "documentary_status": "DOCUMENT_ANNUEL_EXAMINE",
+      "retained_value_fcfa": null,
+      "confirmations_documents_distincts": 0,
+      "perimeter": "IFRS consolidé, composantes par activité",
+      "validation": "BPA de base publié par composante : 0,78 cent USD pour les activités poursuivies et 0,01 pour les activités arrêtées ; les chiffres clés traduisent la seule composante poursuivie à 4,56 FCFA. Numérateurs : 191 409 et 2 549 milliers USD. Aucun BPA total FCFA directement publié dans le document condensé.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "published_eps_fcfa": null,
+      "eligible_published_eps_fcfa": null,
+      "published_eps_candidate_before_quarantine_fcfa": null,
+      "published_eps_raw_figure_fcfa": null,
+      "published_candidate_groups": [
+        {
+          "value": 0.78,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 4.56,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.78,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.78,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.01,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 0.01,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "AUCUN_CANDIDAT_ELIGIBLE",
+        "value": null,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": null,
+      "published_currency": null,
+      "published_component": null,
+      "published_basis": null,
+      "nonretained_eps_observations": [
+        {
+          "value": 0.78,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+            "raw_token": "0,78",
+            "context_lines": [
+              "Dépôts de la clientèle 1 6 246 120 9 486 164 1 5 935 999 9 129 546 2% 4%",
+              "Capitaux propres 1 885 777 1 101 111 1 733 022 9 92 828 9% 11%",
+              "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+              "/ FCFA)",
+              "Ade Ayeyemi, Directeur Général du Groupe, a déclaré : « Nos résultats 2019 reflètent la résilience de notre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 4.56,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_FCFA_DEDUITE_D_UN_MOTIF_NON_EXPLICITE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+            "raw_token": "4,56",
+            "context_lines": [
+              "Dépôts de la clientèle 1 6 246 120 9 486 164 1 5 935 999 9 129 546 2% 4%",
+              "Capitaux propres 1 885 777 1 101 111 1 733 022 9 92 828 9% 11%",
+              "Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%",
+              "/ FCFA)",
+              "Ade Ayeyemi, Directeur Général du Groupe, a déclaré : « Nos résultats 2019 reflètent la résilience de notre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.78,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 42,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 0,78 0 ,74",
+            "raw_token": "0,78",
+            "context_lines": [
+              "274 934 2 49 180",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 0,78 0 ,74",
+              "- Résultat dilué par action 0,78 0 ,74",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.78,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 43,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 0,78 0 ,74",
+            "raw_token": "0,78",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 0,78 0 ,74",
+              "- Résultat dilué par action 0,78 0 ,74",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 46,
+            "line_original": "Résultat de base par action 0,01 0 ,00",
+            "raw_token": "0,01",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par",
+              "action):",
+              "Résultat de base par action 0,01 0 ,00",
+              "Résultat dilué par action 0,01 0 ,00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 11,
+            "line_index_on_page": 47,
+            "line_original": "Résultat dilué par action 0,01 0 ,00",
+            "raw_token": "0,01",
+            "context_lines": [
+              "action):",
+              "Résultat de base par action 0,01 0 ,00",
+              "Résultat dilué par action 0,01 0 ,00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "4"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2019 2018 Retraité",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [],
+    "eps_figure": null,
+    "actual_confirmations_documents_distincts": null,
+    "validation_level": "AUCUNE_VALEUR_RETENUE",
+    "comparison": {
+      "verdict": "PUBLIE_NON_RETENU_CONCORDANT",
+      "expected_value": null,
+      "actual_value": null,
+      "candidate_before_quarantine": null,
+      "human_rejected_publication": true,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2020,
+    "expected": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "documentary_status": "DOCUMENT_ANNUEL_PROPRE_ABSENT_COMPARATIF_AUDITE_2021_EXAMINE",
+      "retained_value_fcfa": null,
+      "confirmations_documents_distincts": 0,
+      "perimeter": "IFRS consolidé, composantes par activité",
+      "validation": "Comparatif audité 2021 : BPA poursuivi 0,010 cent USD et arrêté 0,007 ; numérateurs attribuables 2 400 et 1 801 milliers USD. Le total implicite est 0,017 cent, très différent de la seule composante poursuivie traduite à 0,056 FCFA. Aucun total FCFA publié.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "published_eps_fcfa": null,
+      "eligible_published_eps_fcfa": null,
+      "published_eps_candidate_before_quarantine_fcfa": null,
+      "published_eps_raw_figure_fcfa": null,
+      "published_candidate_groups": [
+        {
+          "value": 0.01,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 2,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 0.056,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 2,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 0.01,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 0.01,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 0.007,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 0.007,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 3
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "AUCUN_CANDIDAT_ELIGIBLE",
+        "value": null,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": null,
+      "published_currency": null,
+      "published_component": null,
+      "published_basis": null,
+      "nonretained_eps_observations": [
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 17,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+            "raw_token": "0,010",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 530 874 1 1 311 508 1 8 296 952 9 780 795 7% 16%",
+              "Capitaux propres 2 128 906 1 232 978 2 027 713 1 083 932 5% 14%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+              "1"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.056,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 17,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+            "raw_token": "0,056",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 530 874 1 1 311 508 1 8 296 952 9 780 795 7% 16%",
+              "Capitaux propres 2 128 906 1 232 978 2 027 713 1 083 932 5% 14%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+              "1"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 42,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1 ,041 0 ,010",
+            "raw_token": "0,010",
+            "context_lines": [
+              "3 49 504 8 8 319",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,041 0 ,010",
+              "- Résultat dilué par action 1 ,041 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 43,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1 ,041 0 ,010",
+            "raw_token": "0,010",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,041 0 ,010",
+              "- Résultat dilué par action 1 ,041 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.007,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 45,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat de base par action 0 ,004 0 ,007",
+            "raw_token": "0,007",
+            "context_lines": [
+              "- Résultat dilué par action 1 ,041 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés non audités ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.007,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 46,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat dilué par action 0 ,004 0 ,007",
+            "raw_token": "0,007",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés non audités ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "2"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 18,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+            "raw_token": "0,010",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 713 349 1 1 417 190 1 8 296 952 9 780 795 8% 17%",
+              "Capitaux propres 2 164 306 1 253 480 2 027 713 1 083 932 7% 16%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+              "Dividendes par action (en cents $EU ) 0,16",
+              "2021 a été l’année de toutes les transformations pour Ecobank, déclare Ade Ayeyemi, CEO du Groupe Ecobank."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.056,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 18,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+            "raw_token": "0,056",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 713 349 1 1 417 190 1 8 296 952 9 780 795 8% 17%",
+              "Capitaux propres 2 164 306 1 253 480 2 027 713 1 083 932 7% 16%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+              "Dividendes par action (en cents $EU ) 0,16",
+              "2021 a été l’année de toutes les transformations pour Ecobank, déclare Ade Ayeyemi, CEO du Groupe Ecobank."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 45,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1 ,063 0 ,010",
+            "raw_token": "0,010",
+            "context_lines": [
+              "3 57 366 8 8 319",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,063 0 ,010",
+              "- Résultat dilué par action 1 ,063 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.01,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 46,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1 ,063 0 ,010",
+            "raw_token": "0,010",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,063 0 ,010",
+              "- Résultat dilué par action 1 ,063 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.007,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 48,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat de base par action 0 ,004 0 ,007",
+            "raw_token": "0,007",
+            "context_lines": [
+              "- Résultat dilué par action 1 ,063 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.007,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 49,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat dilué par action 0 ,004 0 ,007",
+            "raw_token": "0,007",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 2"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [],
+    "eps_figure": null,
+    "actual_confirmations_documents_distincts": null,
+    "validation_level": "AUCUNE_VALEUR_RETENUE",
+    "comparison": {
+      "verdict": "PUBLIE_NON_RETENU_CONCORDANT",
+      "expected_value": null,
+      "actual_value": null,
+      "candidate_before_quarantine": null,
+      "human_rejected_publication": true,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2021,
+    "expected": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "documentary_status": "VERSIONS_NON_AUDITEE_ET_AUDITEE_EXAMINEES",
+      "retained_value_fcfa": null,
+      "confirmations_documents_distincts": 0,
+      "perimeter": "IFRS consolidé audité, composantes par activité",
+      "validation": "Version auditée du 30/03/2022 préférée à la version de janvier : BPA poursuivi 1,063 cent USD (5,892 FCFA dans les chiffres clés) et arrêté 0,004 ; la version antérieure donnait 1,041. Le total implicite audité est 1,067 cent, sans total FCFA directement publié.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "published_eps_fcfa": null,
+      "eligible_published_eps_fcfa": null,
+      "published_eps_candidate_before_quarantine_fcfa": null,
+      "published_eps_raw_figure_fcfa": null,
+      "published_candidate_groups": [
+        {
+          "value": 1.041,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 5.773,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 1.041,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 1.041,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 0.004,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 0.004,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 1.063,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 5.892,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 1.063,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        },
+        {
+          "value": 1.063,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 3
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "AUCUN_CANDIDAT_ELIGIBLE",
+        "value": null,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": null,
+      "published_currency": null,
+      "published_component": null,
+      "published_basis": null,
+      "nonretained_eps_observations": [
+        {
+          "value": 1.041,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 17,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+            "raw_token": "1,041",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 530 874 1 1 311 508 1 8 296 952 9 780 795 7% 16%",
+              "Capitaux propres 2 128 906 1 232 978 2 027 713 1 083 932 5% 14%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+              "1"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 5.773,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 17,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+            "raw_token": "5,773",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 530 874 1 1 311 508 1 8 296 952 9 780 795 7% 16%",
+              "Capitaux propres 2 128 906 1 232 978 2 027 713 1 083 932 5% 14%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%",
+              "1"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.041,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 42,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1 ,041 0 ,010",
+            "raw_token": "1,041",
+            "context_lines": [
+              "3 49 504 8 8 319",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,041 0 ,010",
+              "- Résultat dilué par action 1 ,041 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.041,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 43,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1 ,041 0 ,010",
+            "raw_token": "1,041",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,041 0 ,010",
+              "- Résultat dilué par action 1 ,041 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.004,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 45,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat de base par action 0 ,004 0 ,007",
+            "raw_token": "0,004",
+            "context_lines": [
+              "- Résultat dilué par action 1 ,041 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés non audités ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.004,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 46,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat dilué par action 0 ,004 0 ,007",
+            "raw_token": "0,004",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés non audités ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "2"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 6,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.063,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 18,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+            "raw_token": "1,063",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 713 349 1 1 417 190 1 8 296 952 9 780 795 8% 17%",
+              "Capitaux propres 2 164 306 1 253 480 2 027 713 1 083 932 7% 16%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+              "Dividendes par action (en cents $EU ) 0,16",
+              "2021 a été l’année de toutes les transformations pour Ecobank, déclare Ade Ayeyemi, CEO du Groupe Ecobank."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 5.892,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 18,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+            "raw_token": "5,892",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 713 349 1 1 417 190 1 8 296 952 9 780 795 8% 17%",
+              "Capitaux propres 2 164 306 1 253 480 2 027 713 1 083 932 7% 16%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%",
+              "Dividendes par action (en cents $EU ) 0,16",
+              "2021 a été l’année de toutes les transformations pour Ecobank, déclare Ade Ayeyemi, CEO du Groupe Ecobank."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.063,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 45,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1 ,063 0 ,010",
+            "raw_token": "1,063",
+            "context_lines": [
+              "3 57 366 8 8 319",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,063 0 ,010",
+              "- Résultat dilué par action 1 ,063 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.063,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 46,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1 ,063 0 ,010",
+            "raw_token": "1,063",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,063 0 ,010",
+              "- Résultat dilué par action 1 ,063 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.004,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 48,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat de base par action 0 ,004 0 ,007",
+            "raw_token": "0,004",
+            "context_lines": [
+              "- Résultat dilué par action 1 ,063 0 ,010",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 0.004,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 49,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action): | Résultat dilué par action 0 ,004 0 ,007",
+            "raw_token": "0,004",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action 0 ,004 0 ,007",
+              "Résultat dilué par action 0 ,004 0 ,007",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 2"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "2021 2020",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [],
+    "eps_figure": null,
+    "actual_confirmations_documents_distincts": null,
+    "validation_level": "AUCUNE_VALEUR_RETENUE",
+    "comparison": {
+      "verdict": "PUBLIE_NON_RETENU_CONCORDANT",
+      "expected_value": null,
+      "actual_value": null,
+      "candidate_before_quarantine": null,
+      "human_rejected_publication": true,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2022,
+    "expected": {
+      "status": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "documentary_status": "COMPARATIF_DU_DOCUMENT_2023_EXAMINE",
+      "retained_value_fcfa": 7.064,
+      "confirmations_documents_distincts": 1,
+      "perimeter": "IFRS consolidé ; activités arrêtées néant",
+      "validation": "Document 2023 : chiffres clés 1,165 cent USD / 7,064 FCFA et compte de résultat 1,165 cent, avec tirets pour les activités arrêtées. Le numérateur attribuable est 286 430 milliers USD ; le dénominateur implicite du BPA USD est cohérent avec l'ordre de grandeur publié en 2018 (environ 24,59 milliards), sans conversion effectuée par l'audit.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_EXTRAIT",
+      "published_eps_fcfa": 7.064,
+      "eligible_published_eps_fcfa": 7.064,
+      "published_eps_candidate_before_quarantine_fcfa": 7.064,
+      "published_eps_raw_figure_fcfa": 7.064,
+      "published_candidate_groups": [
+        {
+          "value": 7.064,
+          "value_kind": "fcfa_par_action",
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "documents_confirmants": 1,
+          "occurrences": 1,
+          "documents": [
+            {
+              "label": "Etats financiers exercice 2023 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_eti_tg.pdf",
+              "sha256": "374830d87a9d0f7e5bc8620195f8371069dfaf1f24cf148f4862b4519b36cc20",
+              "document_exercice": 2023,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2024-05-02"
+            }
+          ],
+          "eligible": true,
+          "selected": true
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "VALEUR_UNIQUE_OU_CONCORDANTE",
+        "value": 7.064,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": "CONSOLIDE",
+      "published_currency": "FCFA",
+      "published_component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+      "published_basis": "DE_BASE",
+      "nonretained_eps_observations": [
+        {
+          "value": 1.165,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+            "raw_token": "1,165",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 973 948 1 1 857 060 2 0 813 313 1 2 800 148 -4% -7%",
+              "Capitaux propres 1 734 455 1 029 618 2 027 015 1 246 610 -14% -17%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré :",
+              "« L’exercice 2023 a été marquée par une hausse de l'inflation, des taux d'intérêt, une dépréciation des monnaies et une incertitude sur l'évolution de"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.165,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 39,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1 ,170 1 ,165",
+            "raw_token": "1,165",
+            "context_lines": [
+              "4 06 923 3 66 691",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,170 1 ,165",
+              "- Résultat dilué par action 1 ,170 1 ,165",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):"
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "2023 2022",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.165,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 40,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1 ,170 1 ,165",
+            "raw_token": "1,165",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,170 1 ,165",
+              "- Résultat dilué par action 1 ,170 1 ,165",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action - -"
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "2023 2022",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [
+      "benefice_par_action"
+    ],
+    "eps_figure": {
+      "label": "Bénéfice net par action publié",
+      "value": 7.064,
+      "value_kind": "fcfa_par_action",
+      "unit_label": "FCFA par action",
+      "extraction_method": "texte_natif",
+      "ocr_confidence": null,
+      "confidence": "extraction_unique",
+      "occurrences": 1,
+      "documents_confirmants": 1,
+      "evidence": [
+        {
+          "page": 1,
+          "line": "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+          "raw_token": "7,064",
+          "context_lines": [
+            "Dépôts de la clientèle 1 9 973 948 1 1 857 060 2 0 813 313 1 2 800 148 -4% -7%",
+            "Capitaux propres 1 734 455 1 029 618 2 027 015 1 246 610 -14% -17%",
+            "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+            "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré :",
+            "« L’exercice 2023 a été marquée par une hausse de l'inflation, des taux d'intérêt, une dépréciation des monnaies et une incertitude sur l'évolution de"
+          ],
+          "column_header": null,
+          "unit_label": "FCFA par action",
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_version": "eps-evidence-v2.1.2",
+          "parser_rule": "fr_resultat_par_action",
+          "document_label": "Etats financiers exercice 2023 eti tg",
+          "document_url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_eti_tg.pdf",
+          "document_sha256": "374830d87a9d0f7e5bc8620195f8371069dfaf1f24cf148f4862b4519b36cc20",
+          "document_version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+          "document_published_date": "2024-05-02"
+        }
+      ],
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "COMPTE_DE_RESULTAT_DU_MEME_DOCUMENT",
+      "framework": "IFRS",
+      "currency": "FCFA",
+      "currency_source": "LIGNE_OU_EN_TETE",
+      "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+      "component_source": "COMPOSANTE_DU_BPA_DE_BASE_DU_MEME_DOCUMENT",
+      "basis": "DE_BASE",
+      "published_decimals": 3,
+      "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+      "source_multiplier": 1,
+      "eps_metadata": {
+        "kind": "BPA_PUBLIE",
+        "value": 7.064,
+        "raw_token": "7,064",
+        "token_repair": null,
+        "published_decimals": 3,
+        "is_dash": false,
+        "currency": "FCFA",
+        "currency_source": "LIGNE_OU_EN_TETE",
+        "unit_label": "FCFA par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+        "component_source": "COMPOSANTE_DU_BPA_DE_BASE_DU_MEME_DOCUMENT",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "COMPTE_DE_RESULTAT_DU_MEME_DOCUMENT",
+        "framework": "IFRS",
+        "target_exercice": 2022,
+        "year_offset_from_document": 1,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 3,
+        "trailing_slots_ignored": 0,
+        "source_kind": "CHIFFRES_CLES",
+        "eligible_fcfa_total_basic": true,
+        "ineligibility_reasons": [],
+        "basis_source": "VALEUR_COMPAGNE_EGALE_AU_BPA_DE_BASE_DU_MEME_DOCUMENT"
+      },
+      "candidate_groups": [
+        {
+          "value": 7.064,
+          "value_kind": "fcfa_par_action",
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "documents_confirmants": 1,
+          "occurrences": 1,
+          "documents": [
+            {
+              "label": "Etats financiers exercice 2023 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_eti_tg.pdf",
+              "sha256": "374830d87a9d0f7e5bc8620195f8371069dfaf1f24cf148f4862b4519b36cc20",
+              "document_exercice": 2023,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2024-05-02"
+            }
+          ],
+          "eligible": true,
+          "selected": true
+        }
+      ]
+    },
+    "actual_confirmations_documents_distincts": 1,
+    "validation_level": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+    "comparison": {
+      "verdict": "VALEUR_CONCORDANTE",
+      "expected_value": 7.064,
+      "actual_value": 7.064,
+      "candidate_before_quarantine": 7.064,
+      "human_rejected_publication": false,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "candidat_avant_quarantaine",
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2023,
+    "expected": {
+      "status": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "documentary_status": "DOCUMENT_2023_ET_COMPARATIF_CERTIFIE_2024_EXAMINES",
+      "retained_value_fcfa": 7.099,
+      "confirmations_documents_distincts": 2,
+      "perimeter": "IFRS consolidé ; activités arrêtées néant",
+      "validation": "Document 2023 : 1,170 cent USD / 7,099 FCFA ; document certifié 2024 en comparatif : 1,170 / 7,1. Activités arrêtées : tirets. Numérateur part du Groupe 287 824 milliers USD dans les deux comptes.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "published_eps_fcfa": 7.099,
+      "eligible_published_eps_fcfa": 7.099,
+      "published_eps_candidate_before_quarantine_fcfa": 7.099,
+      "published_eps_raw_figure_fcfa": 7.099,
+      "published_candidate_groups": [
+        {
+          "value": 7.099,
+          "value_kind": "fcfa_par_action",
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "documents_confirmants": 2,
+          "occurrences": 2,
+          "documents": [
+            {
+              "label": "Etats financiers exercice 2023 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_eti_tg.pdf",
+              "sha256": "374830d87a9d0f7e5bc8620195f8371069dfaf1f24cf148f4862b4519b36cc20",
+              "document_exercice": 2023,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2024-05-02"
+            },
+            {
+              "label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+              "sha256": "ebc521320c7bcc57131517e56611ff4a9d4985e0b85e51f2da5809d4c9a8bb3d",
+              "document_exercice": 2024,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2025-03-28"
+            }
+          ],
+          "eligible": true,
+          "selected": true
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "VALEUR_UNIQUE_OU_CONCORDANTE",
+        "value": 7.099,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": "CONSOLIDE",
+      "published_currency": "FCFA",
+      "published_component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+      "published_basis": "DE_BASE",
+      "nonretained_eps_observations": [
+        {
+          "value": 1.17,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+            "raw_token": "1,170",
+            "context_lines": [
+              "Dépôts de la clientèle 1 9 973 948 1 1 857 060 2 0 813 313 1 2 800 148 -4% -7%",
+              "Capitaux propres 1 734 455 1 029 618 2 027 015 1 246 610 -14% -17%",
+              "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré :",
+              "« L’exercice 2023 a été marquée par une hausse de l'inflation, des taux d'intérêt, une dépréciation des monnaies et une incertitude sur l'évolution de"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.17,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 39,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat de base par action 1 ,170 1 ,165",
+            "raw_token": "1,170",
+            "context_lines": [
+              "4 06 923 3 66 691",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,170 1 ,165",
+              "- Résultat dilué par action 1 ,170 1 ,165",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):"
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "2023 2022",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.17,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 40,
+            "line_original": "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action): | - Résultat dilué par action 1 ,170 1 ,165",
+            "raw_token": "1,170",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):",
+              "- Résultat de base par action 1 ,170 1 ,165",
+              "- Résultat dilué par action 1 ,170 1 ,165",
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):",
+              "Résultat de base par action - -"
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "2023 2022",
+              "line_index": 7,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.17,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+            "raw_token": "1,17",
+            "context_lines": [
+              "Dépôts de la clientèle 2 0 423 736 1 2 895 459 1 9 973 948 1 1 857 060 2% 9%",
+              "Capitaux propres 1 794 802 1 133 230 1 734 455 1 029 619 3% 10%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats financiers pour 2024 montrent qu'Ecobank peut accroître ses bénéfices et",
+              "sa rentabilité même dans des conditions de marché difficiles. Ce succès est dû à notre diversité géographique et à notre stratégie efficace de croissance, de"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 7.1,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+            "raw_token": "7,10",
+            "context_lines": [
+              "Dépôts de la clientèle 2 0 423 736 1 2 895 459 1 9 973 948 1 1 857 060 2% 9%",
+              "Capitaux propres 1 794 802 1 133 230 1 734 455 1 029 619 3% 10%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats financiers pour 2024 montrent qu'Ecobank peut accroître ses bénéfices et",
+              "sa rentabilité même dans des conditions de marché difficiles. Ce succès est dû à notre diversité géographique et à notre stratégie efficace de croissance, de"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.17,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 39,
+            "line_original": "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+            "raw_token": "1,170",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+              "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.17,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 40,
+            "line_original": "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+            "raw_token": "1,170",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+              "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 7.1,
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 40,
+            "line_original": "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+            "raw_token": "7,1",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+              "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [
+      "benefice_par_action"
+    ],
+    "eps_figure": {
+      "label": "Bénéfice net par action publié",
+      "value": 7.099,
+      "value_kind": "fcfa_par_action",
+      "unit_label": "FCFA par action",
+      "extraction_method": "texte_natif",
+      "ocr_confidence": null,
+      "confidence": "confirme_deux_documents",
+      "occurrences": 2,
+      "documents_confirmants": 2,
+      "evidence": [
+        {
+          "page": 1,
+          "line": "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+          "raw_token": "7,099",
+          "context_lines": [
+            "Dépôts de la clientèle 1 9 973 948 1 1 857 060 2 0 813 313 1 2 800 148 -4% -7%",
+            "Capitaux propres 1 734 455 1 029 618 2 027 015 1 246 610 -14% -17%",
+            "Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%",
+            "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré :",
+            "« L’exercice 2023 a été marquée par une hausse de l'inflation, des taux d'intérêt, une dépréciation des monnaies et une incertitude sur l'évolution de"
+          ],
+          "column_header": null,
+          "unit_label": "FCFA par action",
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_version": "eps-evidence-v2.1.2",
+          "parser_rule": "fr_resultat_par_action",
+          "document_label": "Etats financiers exercice 2023 eti tg",
+          "document_url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_eti_tg.pdf",
+          "document_sha256": "374830d87a9d0f7e5bc8620195f8371069dfaf1f24cf148f4862b4519b36cc20",
+          "document_version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+          "document_published_date": "2024-05-02"
+        },
+        {
+          "page": 4,
+          "line": "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+          "raw_token": "7,1",
+          "context_lines": [
+            "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+            "Franc CFA par action):",
+            "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+            "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+            "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+          ],
+          "column_header": null,
+          "unit_label": "FCFA par action",
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_version": "eps-evidence-v2.1.2",
+          "parser_rule": "fr_resultat_par_action",
+          "document_label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+          "document_url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+          "document_sha256": "ebc521320c7bcc57131517e56611ff4a9d4985e0b85e51f2da5809d4c9a8bb3d",
+          "document_version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+          "document_published_date": "2025-03-28"
+        }
+      ],
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "COMPTE_DE_RESULTAT_DU_MEME_DOCUMENT",
+      "framework": "IFRS",
+      "currency": "FCFA",
+      "currency_source": "LIGNE_OU_EN_TETE",
+      "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+      "component_source": "COMPOSANTE_DU_BPA_DE_BASE_DU_MEME_DOCUMENT",
+      "basis": "DE_BASE",
+      "published_decimals": 3,
+      "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+      "source_multiplier": 1,
+      "eps_metadata": {
+        "kind": "BPA_PUBLIE",
+        "value": 7.099,
+        "raw_token": "7,099",
+        "token_repair": null,
+        "published_decimals": 3,
+        "is_dash": false,
+        "currency": "FCFA",
+        "currency_source": "LIGNE_OU_EN_TETE",
+        "unit_label": "FCFA par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+        "component_source": "COMPOSANTE_DU_BPA_DE_BASE_DU_MEME_DOCUMENT",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "COMPTE_DE_RESULTAT_DU_MEME_DOCUMENT",
+        "framework": "IFRS",
+        "target_exercice": 2023,
+        "year_offset_from_document": 0,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "CHIFFRES_CLES",
+        "eligible_fcfa_total_basic": true,
+        "ineligibility_reasons": [],
+        "basis_source": "VALEUR_COMPAGNE_EGALE_AU_BPA_DE_BASE_DU_MEME_DOCUMENT"
+      },
+      "candidate_groups": [
+        {
+          "value": 7.099,
+          "value_kind": "fcfa_par_action",
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "documents_confirmants": 2,
+          "occurrences": 2,
+          "documents": [
+            {
+              "label": "Etats financiers exercice 2023 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_eti_tg.pdf",
+              "sha256": "374830d87a9d0f7e5bc8620195f8371069dfaf1f24cf148f4862b4519b36cc20",
+              "document_exercice": 2023,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2024-05-02"
+            },
+            {
+              "label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+              "sha256": "ebc521320c7bcc57131517e56611ff4a9d4985e0b85e51f2da5809d4c9a8bb3d",
+              "document_exercice": 2024,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2025-03-28"
+            }
+          ],
+          "eligible": true,
+          "selected": true
+        }
+      ]
+    },
+    "actual_confirmations_documents_distincts": 2,
+    "validation_level": "DEUX_DOCUMENTS_DISTINCTS",
+    "comparison": {
+      "verdict": "VALEUR_CONCORDANTE",
+      "expected_value": 7.099,
+      "actual_value": 7.099,
+      "candidate_before_quarantine": 7.099,
+      "human_rejected_publication": false,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "candidat_avant_quarantaine",
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2024,
+    "expected": {
+      "status": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "documentary_status": "DOCUMENT_CERTIFIE_2024_ET_COMPARATIF_RECLASSE_2025_EXAMINES",
+      "retained_value_fcfa": 8.23,
+      "confirmations_documents_distincts": 1,
+      "perimeter": "IFRS consolidé, vintage de l'exercice",
+      "validation": "Document certifié 2024 : chiffres clés 1,35 cent USD / 8,23 FCFA ; compte de résultat 1,355 / 8,2. Aucune ligne d'activités arrêtées n'est séparée dans cette vintage et le résultat part du Groupe est 333 175 milliers USD. En 2025, le comparatif reclasse une perte d'activités en cours de cession et présente un BPA poursuivi différent (1,37 / 8,00) ; il ne remplace pas le total de la vintage 2024 dans ce pilote.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_EXTRAIT",
+      "published_eps_fcfa": 8.2,
+      "eligible_published_eps_fcfa": 8.2,
+      "published_eps_candidate_before_quarantine_fcfa": 8.2,
+      "published_eps_raw_figure_fcfa": 8.2,
+      "published_candidate_groups": [
+        {
+          "value": 8.2,
+          "value_kind": "fcfa_par_action",
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "documents_confirmants": 1,
+          "occurrences": 1,
+          "documents": [
+            {
+              "label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+              "sha256": "ebc521320c7bcc57131517e56611ff4a9d4985e0b85e51f2da5809d4c9a8bb3d",
+              "document_exercice": 2024,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2025-03-28"
+            }
+          ],
+          "eligible": true,
+          "selected": true
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "VALEUR_UNIQUE_OU_CONCORDANTE",
+        "value": 8.2,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": "CONSOLIDE",
+      "published_currency": "FCFA",
+      "published_component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+      "published_basis": "DE_BASE",
+      "nonretained_eps_observations": [
+        {
+          "value": 1.35,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+            "raw_token": "1,35",
+            "context_lines": [
+              "Dépôts de la clientèle 2 0 423 736 1 2 895 459 1 9 973 948 1 1 857 060 2% 9%",
+              "Capitaux propres 1 794 802 1 133 230 1 734 455 1 029 619 3% 10%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats financiers pour 2024 montrent qu'Ecobank peut accroître ses bénéfices et",
+              "sa rentabilité même dans des conditions de marché difficiles. Ce succès est dû à notre diversité géographique et à notre stratégie efficace de croissance, de"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 8.23,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+            "raw_token": "8,23",
+            "context_lines": [
+              "Dépôts de la clientèle 2 0 423 736 1 2 895 459 1 9 973 948 1 1 857 060 2% 9%",
+              "Capitaux propres 1 794 802 1 133 230 1 734 455 1 029 619 3% 10%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats financiers pour 2024 montrent qu'Ecobank peut accroître ses bénéfices et",
+              "sa rentabilité même dans des conditions de marché difficiles. Ce succès est dû à notre diversité géographique et à notre stratégie efficace de croissance, de"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.355,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 39,
+            "line_original": "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+            "raw_token": "1,355",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+              "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.355,
+          "currency": "USD_CENT",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 40,
+            "line_original": "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+            "raw_token": "1,355",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+              "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 8.2,
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 40,
+            "line_original": "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+            "raw_token": "8,2",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+              "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.37,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+            "raw_token": "1.37",
+            "context_lines": [
+              "Dépôts de la clientèle 2 5,304,908 1 4,120,139 2 0,423,736 1 2,895,459 24% 9%",
+              "Capitaux propres 2 ,863,523 1 ,597,846 1 ,794,802 1 ,133,230 60% 41%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats pour 2025 ont une nouvelle fois démontré que notre stratégie de",
+              "croissance, de transformation et de rentabilité (GTR), associée à notre modèle économique géographiquement diversifié, porte ses fruits. Le chiffre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 8.0,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+            "raw_token": "8.00",
+            "context_lines": [
+              "Dépôts de la clientèle 2 5,304,908 1 4,120,139 2 0,423,736 1 2,895,459 24% 9%",
+              "Capitaux propres 2 ,863,523 1 ,597,846 1 ,794,802 1 ,133,230 60% 41%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats pour 2025 ont une nouvelle fois démontré que notre stratégie de",
+              "croissance, de transformation et de rentabilité (GTR), associée à notre modèle économique géographiquement diversifié, porte ses fruits. Le chiffre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.37,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 41,
+            "line_original": "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "1.37",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 8.0,
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 41,
+            "line_original": "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "8.00",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.37,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 42,
+            "line_original": "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "1.37",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 8.0,
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 42,
+            "line_original": "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "8.00",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.37,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+            "raw_token": "1.37",
+            "context_lines": [
+              "Dépôts de la clientèle 2 5,304,908 1 4,120,139 2 0,423,736 1 2,895,459 24% 9%",
+              "Capitaux propres 2 ,863,523 1 ,597,846 1 ,794,802 1 ,133,230 60% 41%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+              "#PUBLIC 1"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [
+      "benefice_par_action"
+    ],
+    "eps_figure": {
+      "label": "Bénéfice net par action publié",
+      "value": 8.2,
+      "value_kind": "fcfa_par_action",
+      "unit_label": "FCFA par action",
+      "extraction_method": "texte_natif",
+      "ocr_confidence": null,
+      "confidence": "extraction_unique",
+      "occurrences": 1,
+      "documents_confirmants": 1,
+      "evidence": [
+        {
+          "page": 4,
+          "line": "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+          "raw_token": "8,2",
+          "context_lines": [
+            "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+            "Franc CFA par action):",
+            "- Résultat de base par action 1,355 8 ,2 1,170 7,1",
+            "- Résultat dilué par action 1,355 8 ,2 1,170 7,1",
+            "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+          ],
+          "column_header": null,
+          "unit_label": "FCFA par action",
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_version": "eps-evidence-v2.1.2",
+          "parser_rule": "fr_resultat_par_action",
+          "document_label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+          "document_url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+          "document_sha256": "ebc521320c7bcc57131517e56611ff4a9d4985e0b85e51f2da5809d4c9a8bb3d",
+          "document_version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+          "document_published_date": "2025-03-28"
+        }
+      ],
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "framework": "IFRS",
+      "currency": "FCFA",
+      "currency_source": "LIGNE_OU_EN_TETE",
+      "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+      "component_source": "AUCUNE_COMPOSANTE_ARRETEE_DETECTEE_DANS_LE_DOCUMENT_COMPLET",
+      "basis": "DE_BASE",
+      "published_decimals": 1,
+      "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+      "source_multiplier": 1,
+      "eps_metadata": {
+        "kind": "BPA_PUBLIE",
+        "value": 8.2,
+        "raw_token": "8,2",
+        "token_repair": null,
+        "published_decimals": 1,
+        "is_dash": false,
+        "currency": "FCFA",
+        "currency_source": "LIGNE_OU_EN_TETE",
+        "unit_label": "FCFA par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "CONTEXTE_PROCHE",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+        "component_source": "AUCUNE_COMPOSANTE_ARRETEE_DETECTEE_DANS_LE_DOCUMENT_COMPLET",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "PAGE_OU_SECTION",
+        "framework": "IFRS",
+        "target_exercice": 2024,
+        "year_offset_from_document": 0,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "CHIFFRES_CLES",
+        "eligible_fcfa_total_basic": true,
+        "ineligibility_reasons": []
+      },
+      "candidate_groups": [
+        {
+          "value": 8.2,
+          "value_kind": "fcfa_par_action",
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO|DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+          "basis": "DE_BASE",
+          "documents_confirmants": 1,
+          "occurrences": 1,
+          "documents": [
+            {
+              "label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+              "url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+              "sha256": "ebc521320c7bcc57131517e56611ff4a9d4985e0b85e51f2da5809d4c9a8bb3d",
+              "document_exercice": 2024,
+              "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+              "published_date": "2025-03-28"
+            }
+          ],
+          "eligible": true,
+          "selected": true
+        }
+      ]
+    },
+    "actual_confirmations_documents_distincts": 1,
+    "validation_level": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+    "comparison": {
+      "verdict": "VALEUR_CONCORDANTE",
+      "expected_value": 8.23,
+      "actual_value": 8.2,
+      "candidate_before_quarantine": 8.2,
+      "human_rejected_publication": false,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "candidat_avant_quarantaine",
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  },
+  {
+    "ticker": "ETIT",
+    "exercice": 2025,
+    "expected": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "documentary_status": "DEUX_DOCUMENTS_2025_EXAMINES",
+      "retained_value_fcfa": null,
+      "confirmations_documents_distincts": 0,
+      "perimeter": "IFRS consolidé, composante activités poursuivies",
+      "validation": "Les deux documents 2025 publient le BPA des activités poursuivies : 1,68 cent USD / 10,00 FCFA. Le compte présente séparément des activités arrêtées ou en cours de cession de -6 159 milliers USD au niveau du groupe, sans ventilation attribuable ni BPA de cette composante ; le BPA total n'est donc pas retenu.",
+      "indicative_fcfa": null
+    },
+    "actual": {
+      "status": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "published_eps_fcfa": null,
+      "eligible_published_eps_fcfa": null,
+      "published_eps_candidate_before_quarantine_fcfa": null,
+      "published_eps_raw_figure_fcfa": null,
+      "published_candidate_groups": [
+        {
+          "value": 1.68,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 10.0,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "NON_PROUVE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 1.68,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 10.0,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 1.68,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 10.0,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "occurrences": 2,
+          "documents_confirmants": 2,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 1.68,
+          "value_kind": "autre_devise_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        },
+        {
+          "value": 10.0,
+          "value_kind": "fcfa_par_action",
+          "accounting_scope": "CONSOLIDE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "occurrences": 1,
+          "documents_confirmants": 1,
+          "eligible": false,
+          "published_decimals": 2
+        }
+      ],
+      "other_scope_candidate_groups": [],
+      "published_selection": {
+        "status": "AUCUN_CANDIDAT_ELIGIBLE",
+        "value": null,
+        "reasons": [],
+        "candidate_values": []
+      },
+      "published_scope": null,
+      "published_currency": null,
+      "published_component": null,
+      "published_basis": null,
+      "nonretained_eps_observations": [
+        {
+          "value": 1.68,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+            "raw_token": "1.68",
+            "context_lines": [
+              "Dépôts de la clientèle 2 5,304,908 1 4,120,139 2 0,423,736 1 2,895,459 24% 9%",
+              "Capitaux propres 2 ,863,523 1 ,597,846 1 ,794,802 1 ,133,230 60% 41%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats pour 2025 ont une nouvelle fois démontré que notre stratégie de",
+              "croissance, de transformation et de rentabilité (GTR), associée à notre modèle économique géographiquement diversifié, porte ses fruits. Le chiffre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 10.0,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "NON_PROUVE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+            "raw_token": "10.00",
+            "context_lines": [
+              "Dépôts de la clientèle 2 5,304,908 1 4,120,139 2 0,423,736 1 2,895,459 24% 9%",
+              "Capitaux propres 2 ,863,523 1 ,597,846 1 ,794,802 1 ,133,230 60% 41%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+              "Jeremy Awori, Directeur Général du Groupe Ecobank, a déclaré : « Nos résultats pour 2025 ont une nouvelle fois démontré que notre stratégie de",
+              "croissance, de transformation et de rentabilité (GTR), associée à notre modèle économique géographiquement diversifié, porte ses fruits. Le chiffre"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.68,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 41,
+            "line_original": "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "1.68",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 10.0,
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 41,
+            "line_original": "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "10.00",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.68,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 42,
+            "line_original": "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "1.68",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 10.0,
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 42,
+            "line_original": "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "10.00",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.68,
+          "currency": "USD_CENT",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+            "raw_token": "1.68",
+            "context_lines": [
+              "Dépôts de la clientèle 2 5,304,908 1 4,120,139 2 0,423,736 1 2,895,459 24% 9%",
+              "Capitaux propres 2 ,863,523 1 ,597,846 1 ,794,802 1 ,133,230 60% 41%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+              "#PUBLIC 1"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 10.0,
+          "currency": "FCFA",
+          "component": "NON_PRECISE",
+          "basis": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE",
+            "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+          ],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 16,
+            "line_original": "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+            "raw_token": "10.00",
+            "context_lines": [
+              "Dépôts de la clientèle 2 5,304,908 1 4,120,139 2 0,423,736 1 2,895,459 24% 9%",
+              "Capitaux propres 2 ,863,523 1 ,597,846 1 ,794,802 1 ,133,230 60% 41%",
+              "Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%",
+              "#PUBLIC 1"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.68,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 39,
+            "line_original": "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "1.68",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 10.0,
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DE_BASE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 39,
+            "line_original": "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "10.00",
+            "context_lines": [
+              "Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et",
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS)."
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 1.68,
+          "currency": "USD_CENT",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 40,
+            "line_original": "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "1.68",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        },
+        {
+          "value": 10.0,
+          "currency": "FCFA",
+          "component": "ACTIVITES_POURSUIVIES",
+          "basis": "DILUE",
+          "accounting_scope": "CONSOLIDE",
+          "ineligibility_reasons": [
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+            "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+          ],
+          "evidence": {
+            "page": 4,
+            "line_index_on_page": 40,
+            "line_original": "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+            "raw_token": "10.00",
+            "context_lines": [
+              "Franc CFA par action):",
+              "- Résultat de base par action 1.68 1 0.00 1.37 8 .00",
+              "- Résultat dilué par action 1.68 1 0.00 1.37 8 .00",
+              "Les états financiers consolidés ont été établis conformément aux Normes Internationales d'Information Financière (IFRS).",
+              "#PUBLIC 3"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.2"
+          }
+        }
+      ],
+      "recalculated_comparable_eps_fcfa": null,
+      "parent_weighted_candidate_fcfa": null,
+      "indicative_result_per_end_share_fcfa": null,
+      "numerator": {
+        "ordinary_key": null,
+        "ordinary_value_fcfa": null,
+        "ordinary_confirmation": null,
+        "ordinary_scope": null,
+        "parent_value_fcfa": null,
+        "parent_scope": null,
+        "indicative_key": null,
+        "indicative_value_fcfa": null
+      },
+      "denominator": {
+        "weighted_average_shares": null,
+        "weighted_average_confirmation": null,
+        "weighted_average_scope_source": null,
+        "end_of_period_shares": null,
+        "end_of_period_scope_source": null,
+        "treasury_shares": null
+      },
+      "inputs_confirmed_two_documents": false,
+      "capital_structure_flags": [],
+      "capital_structure": {
+        "flags": [],
+        "weighted_to_end_ratio": null,
+        "share_count_changes": [],
+        "verified_events_in_exercice": [],
+        "treasury_shares": null,
+        "indicative_ratio_chainable_with_previous_year": true,
+        "adjustment_policy": "AUCUN_AJUSTEMENT_SANS_EVENEMENT_SOURCE_ET_VINTAGE_DE_LA_VALEUR"
+      },
+      "arithmetic_checks": [],
+      "cross_check": null,
+      "quarantine": null
+    },
+    "figures_present": [],
+    "eps_figure": null,
+    "actual_confirmations_documents_distincts": null,
+    "validation_level": "AUCUNE_VALEUR_RETENUE",
+    "comparison": {
+      "verdict": "PUBLIE_NON_RETENU_CONCORDANT",
+      "expected_value": null,
+      "actual_value": null,
+      "candidate_before_quarantine": null,
+      "human_rejected_publication": true,
+      "candidate_detected": true,
+      "candidate_detection_sources": [
+        "groupes_candidats_du_perimetre_de_reference",
+        "observations_non_retenues"
+      ],
+      "indicative_verdict": "NON_ATTENDU",
+      "expected_indicative": null,
+      "actual_indicative": null
+    }
+  }
+]

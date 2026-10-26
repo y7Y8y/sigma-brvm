@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "registry_status": "Événements vérifiés dans le pilote BPA du 24/10/2026 ; registre volontairement non exhaustif.",
+  "rule": "Aucun événement n'est déduit d'un seul changement du nombre d'actions. Chaque facteur exige une source identifiable ; les augmentations de capital à termes non mécaniques ne sont pas converties automatiquement.",
+  "events": [
+    {
+      "id": "CIEC-2017-SPLIT-20-POUR-1",
+      "ticker": "CIEC",
+      "event_type": "FRACTIONNEMENT",
+      "factor_new_shares_per_old_share": 20,
+      "old_shares": 1,
+      "new_shares": 20,
+      "effective_date": "2017-10-19",
+      "accounting_effective_date": "2017-10-19",
+      "date_precision": "JOUR",
+      "source": {
+        "publisher": "BRVM",
+        "title": "Fractionnement d’actions — CIE CI",
+        "url": "https://www.brvm.org/fr/fractionnement-dactions-cie-ci",
+        "evidence": "Vingt actions nouvelles pour une ancienne ; 2 800 000 actions avant opération et 56 000 000 ensuite dans les documents du pilote."
+      },
+      "verification": {
+        "status": "VERIFIE_PILOTE_2026-10-24",
+        "method": "Source officielle BRVM recoupée avec le capital et le nombre d'actions des états annuels."
+      }
+    },
+    {
+      "id": "BOAC-2017-ACTIONS-GRATUITES-1-POUR-1",
+      "ticker": "BOAC",
+      "event_type": "ACTIONS_GRATUITES",
+      "factor_new_shares_per_old_share": 2,
+      "old_shares": 1,
+      "new_shares": 2,
+      "decision_date": "2017-04-05",
+      "accounting_effective_date": "2017-12-31",
+      "date_precision": "DECISION_ET_CLOTURE_ANNUELLE",
+      "source": {
+        "publisher": "Annonce légale recoupée par la fiche BRVM S1 2017",
+        "title": "Augmentation du capital de BOA Côte d’Ivoire par incorporation de primes et réserves",
+        "url": "https://www.brvm.org/sites/default/files/fiche_ci_0.pdf",
+        "evidence": "Incorporation de réserves portant le capital de 10 à 20 milliards FCFA en 2017, soit une action gratuite pour une ancienne avant le fractionnement du nominal."
+      },
+      "verification": {
+        "status": "VERIFIE_PILOTE_2026-10-24",
+        "method": "Fiche BRVM et annonce légale recoupées avec les états annuels 2017/2018 ; date comptable conservée à la clôture faute de date d'effet plus précise dans le registre."
+      }
+    },
+    {
+      "id": "BOAC-2017-SPLIT-10-POUR-1",
+      "ticker": "BOAC",
+      "event_type": "FRACTIONNEMENT",
+      "factor_new_shares_per_old_share": 10,
+      "old_shares": 1,
+      "new_shares": 10,
+      "effective_date": "2017-10-26",
+      "accounting_effective_date": "2017-10-26",
+      "date_precision": "JOUR",
+      "source": {
+        "publisher": "BRVM",
+        "title": "Fractionnement d’actions — Bank Of Africa Côte d’Ivoire",
+        "url": "https://www.brvm.org/fr/fractionnement-dactions-bank-africa-cote-divoire",
+        "evidence": "Dix actions nouvelles pour une ancienne ; l'opération aboutit à 20 000 000 actions de 1 000 FCFA après l'attribution gratuite de la même année."
+      },
+      "verification": {
+        "status": "VERIFIE_PILOTE_2026-10-24",
+        "method": "Page officielle BRVM et BOC du 19/10/2017 recoupés avec le rapport annuel 2018."
+      }
+    },
+    {
+      "id": "BOAC-2024-ACTIONS-GRATUITES-1-POUR-1",
+      "ticker": "BOAC",
+      "event_type": "ACTIONS_GRATUITES",
+      "factor_new_shares_per_old_share": 2,
+      "old_shares": 1,
+      "new_shares": 2,
+      "entitlement_date": "2024-01-01",
+      "accounting_effective_date": "2024-01-01",
+      "legal_meeting_date": "2024-10-10",
+      "date_precision": "JOUISSANCE_ET_ASSEMBLEE_DISTINCTES",
+      "source": {
+        "publisher": "BOA Côte d’Ivoire / Groupe BOA et BRVM",
+        "title": "Augmentation du capital des filiales cotées à la BRVM ; convocation à l’AGE BOA CI du 10/10/2024",
+        "url": "https://boacoteivoire.com/2024/08/26/augmentation-du-capital-des-filiales-cotees-a-la-brvm-et-de-boa-togo/",
+        "secondary_official_url": "https://www.brvm.org/sites/default/files/20240927_-_avis_de_convocation_-_assemblee_generale_extraordinaire_-_boa_ci.pdf",
+        "evidence": "20 000 000 actions gratuites de 1 000 FCFA, une pour une, jouissance au 1er janvier 2024 ; capital porté de 20 à 40 milliards FCFA et 40 000 000 actions dans les états 2024/2025."
+      },
+      "verification": {
+        "status": "VERIFIE_PILOTE_2026-10-24",
+        "method": "Annonce de l'émetteur, convocation officielle BRVM et capitaux des états annuels 2024/2025."
+      }
+    }
+  ]
+}

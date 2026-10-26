@@ -1,0 +1,2292 @@
+{
+  "created_at": "2026-10-26",
+  "parser_target": "eps-evidence-v2.1.3",
+  "source_journal": "audits/audit_bpa_480_2016_2025_2026-10-25/document_results.jsonl",
+  "documents_total": 125,
+  "documents_to_replay": 124,
+  "documents_excluded": 1,
+  "criteria": [
+    "Les 88 documents du rejeu v2.1.2 (observations par action historiques, plus tous SPHC/TTLS).",
+    "Tout document journalisé présentant un signal de risque d'exercice : effectif absent ou après 2025, nom/effectif différents, nom sans exercice, ou clôture stockée différente de l'effectif.",
+    "Le rapport annuel Ecobank Group 2018 du plan 480 est exclu du rejeu intégral car son extraction historique est un timeout ; il reste validé séparément par pages ciblées."
+  ],
+  "documents": [
+    {
+      "candidate_id": "563c7ab6859604a4",
+      "ticker": "ABJC",
+      "url": "https://www.brvm.org/sites/default/files/20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+      "label": "Etats financiers approuves exercice 2023 servair abidjan ci",
+      "old_document_sha256": "092b94a9670bdce08864f97a54ad37595e55a74cde2f94d92ac11684b35e4f08",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/563c7ab6859604a4.json",
+      "result_file": "resultats/563c7ab6859604a4.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "1fc0a95acc43fba9",
+      "ticker": "ABJC",
+      "url": "https://www.brvm.org/sites/default/files/20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2025 servair abidjan ci",
+      "old_document_sha256": "b462e7b0ec2ad1693feaca6b1f887a897854f523a51ae960226f011cd53ed8f0",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/1fc0a95acc43fba9.json",
+      "result_file": "resultats/1fc0a95acc43fba9.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "d9b1ec7ede71e8e0",
+      "ticker": "BICC",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_bicici.pdf",
+      "label": "Rapport annuel 2018 bicici",
+      "old_document_sha256": "b4b9c9d73f0901316c078733e08cb23de69c9f21a731767d30b1505654332f86",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE"
+      ],
+      "candidate_file": "candidats/d9b1ec7ede71e8e0.json",
+      "result_file": "resultats/d9b1ec7ede71e8e0.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "53295e8cc99cd028",
+      "ticker": "BNBC",
+      "url": "https://www.brvm.org/sites/default/files/bernabe_-_etats_financiers_annuels_ifrs_2019.pdf",
+      "label": "Bernabe etats financiers annuels ifrs 2019",
+      "old_document_sha256": "572512919a5a1b6046f058d377a3adf8984612172b554cb86e528ab780cd6082",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/53295e8cc99cd028.json",
+      "result_file": "resultats/53295e8cc99cd028.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "58f0ff1fe7a884e3",
+      "ticker": "BNBC",
+      "url": "https://www.brvm.org/sites/default/files/bernabe_-_etats_financiers_ifrs_2019.pdf",
+      "label": "Bernabe etats financiers ifrs 2019",
+      "old_document_sha256": "a2046320c14c4d9aa94bdec757c534868ad8cc3743810a9282e274116fe782fb",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/58f0ff1fe7a884e3.json",
+      "result_file": "resultats/58f0ff1fe7a884e3.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8532389fecd15c6a",
+      "ticker": "BNBC",
+      "url": "https://www.brvm.org/sites/default/files/20240507_-_etats_financiers_de_synthese_-_bernabe_ci.pdf",
+      "label": "Etats financiers de synthese bernabe ci",
+      "old_document_sha256": "e5f0565170ddbd0d7241a2cdaa017051a9388be326d901fc56a4787745418a1d",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/8532389fecd15c6a.json",
+      "result_file": "resultats/8532389fecd15c6a.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8c5393baa626192b",
+      "ticker": "BOAB",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_boa_benin.pdf",
+      "label": "Rapport annuel 2018 boa benin",
+      "old_document_sha256": "02cc9048bb0a371399d37fddf47414357c2d8582ee849c1b0520bf65cae12483",
+      "old_observation_counts": {
+        "eps": 3,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/8c5393baa626192b.json",
+      "result_file": "resultats/8c5393baa626192b.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "25e1d68332e319bb",
+      "ticker": "BOAB",
+      "url": "https://www.brvm.org/sites/default/files/20220420_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_boa_benin.pdf",
+      "label": "Rapport des commissaires aux comptes sur les etats financiers annuels boa benin",
+      "old_document_sha256": "ba2f3c6c850c85ff64d0f2b3aa0274122f203f377059dffd104fb1e62312d60a",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/25e1d68332e319bb.json",
+      "result_file": "resultats/25e1d68332e319bb.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "9479ef59f0ff36ce",
+      "ticker": "BOABF",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_boa_burkina_faso.pdf",
+      "label": "Rapport annuel 2018 boa burkina faso",
+      "old_document_sha256": "851bd9b8f282b0d43e556cc094b384a82ae4ef6a25520ac66cfb9e9c60858cd4",
+      "old_observation_counts": {
+        "eps": 3,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/9479ef59f0ff36ce.json",
+      "result_file": "resultats/9479ef59f0ff36ce.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "5a6f8e5dc6fc3a0c",
+      "ticker": "BOAC",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_boa_cote_divoire.pdf",
+      "label": "Rapport annuel 2018 boa cote divoire",
+      "old_document_sha256": "d26c4067d4b109730395269a57b567f41989a1870dad7a0f4ab71ea91f97da38",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/5a6f8e5dc6fc3a0c.json",
+      "result_file": "resultats/5a6f8e5dc6fc3a0c.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "68bd9ec5642b0c89",
+      "ticker": "BOAM",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_boa_mali.pdf",
+      "label": "Rapport annuel 2018 boa mali",
+      "old_document_sha256": "7404c445ee3ea087c2458edef46f4ebfdf2c798022902718cbba86d4249e2534",
+      "old_observation_counts": {
+        "eps": 3,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/68bd9ec5642b0c89.json",
+      "result_file": "resultats/68bd9ec5642b0c89.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "4c2572cca3ee5493",
+      "ticker": "BOAS",
+      "url": "https://www.brvm.org/sites/default/files/20200602_-_rapport_de_lassemblee_generale_ordinaire_et_etats_financiers_certifies_et_approuves_-_boa_sn.pdf",
+      "label": "Rapport de lassemblee generale ordinaire et etats financiers certifies et approuves boa sn",
+      "old_document_sha256": "77d68120e0bb971cf0003bc609b481efe81f1b2a8aa8ffa277e7dff8c3bad519",
+      "old_observation_counts": {
+        "eps": 3,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "RISQUE_NOM_SANS_EXERCICE",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/4c2572cca3ee5493.json",
+      "result_file": "resultats/4c2572cca3ee5493.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "a8c3f446df5b9edb",
+      "ticker": "CABC",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_exercice_2017_-_sicable.pdf",
+      "label": "Rapport annuel exercice 2017 sicable",
+      "old_document_sha256": "c86dcd403752d63f3512abd4a113e0aac25af0ba562b7e5c515fb7f0721466d1",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/a8c3f446df5b9edb.json",
+      "result_file": "resultats/a8c3f446df5b9edb.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "f2e1820af68828c1",
+      "ticker": "CABC",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_exercice_2020_-_sicable_ci.pdf",
+      "label": "Rapport annuel exercice 2020 sicable ci",
+      "old_document_sha256": "cf0754a0935b7bee99dfe57ab6c0e93aab76ed3a90f4fd590a87c57757bb0ba5",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/f2e1820af68828c1.json",
+      "result_file": "resultats/f2e1820af68828c1.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "dc26c04650b60576",
+      "ticker": "CABC",
+      "url": "https://www.brvm.org/sites/default/files/20240319_-_rapport_annuel_-_exercice_2023_-_sicable_ci.pdf",
+      "label": "Rapport annuel exercice 2023 sicable ci",
+      "old_document_sha256": "037c96d40786d1d90a433cf804ee5b13ec0d35971ddc30cc18c020218b07064b",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_APRES_2025",
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/dc26c04650b60576.json",
+      "result_file": "resultats/dc26c04650b60576.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "ab5d4631f55430ef",
+      "ticker": "CABC",
+      "url": "https://www.brvm.org/sites/default/files/20250314_-_rapport_dactivites_annuel_-_exercice_2024_-_sicable_ci.pdf",
+      "label": "Rapport dactivites annuel exercice 2024 sicable ci",
+      "old_document_sha256": "247a7381dfcef1faef7e13432d2358c0942788c5dd621d42da525a8f483927e6",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_APRES_2025",
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/ab5d4631f55430ef.json",
+      "result_file": "resultats/ab5d4631f55430ef.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "19d4750b5f0d6297",
+      "ticker": "CFAC",
+      "url": "https://www.brvm.org/sites/default/files/20190502_-_etats_financiers_exercice_2018_-_cfao_motors_ci.pdf",
+      "label": "Etats financiers exercice 2018 cfao motors ci",
+      "old_document_sha256": "9622db57dab077c7bc1bef15e0f96fc591310d6d430c08fd5ca777120db7b187",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/19d4750b5f0d6297.json",
+      "result_file": "resultats/19d4750b5f0d6297.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "3c46fcf3e32f53e0",
+      "ticker": "CIEC",
+      "url": "https://www.brvm.org/sites/default/files/20210604_-_etats_financiers_consolides_ifrs_exercice_2020_-_cie_ci_0.pdf",
+      "label": "Etats financiers consolides ifrs exercice 2020 cie ci 0",
+      "old_document_sha256": "95213e702675c08d712c4977fe8a91be2644b2b0883d6b4cf27c8f96eb1b2db5",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/3c46fcf3e32f53e0.json",
+      "result_file": "resultats/3c46fcf3e32f53e0.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "e4c19781db269892",
+      "ticker": "CIEC",
+      "url": "https://www.brvm.org/sites/default/files/20220429_-_etats_financiers_ifrs_exercice_2021_-_cie.pdf",
+      "label": "Etats financiers ifrs exercice 2021 cie",
+      "old_document_sha256": "b0bc8eb5a52c274fe1e6a312c8be14151ce8a32e0c566d75ab62c8756e2e6e32",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/e4c19781db269892.json",
+      "result_file": "resultats/e4c19781db269892.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "deb720626a2d6847",
+      "ticker": "CIEC",
+      "url": "https://www.brvm.org/sites/default/files/20230427_-_etats_financiers_ifrs_exercice_2022_-_cie_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2022 cie ci",
+      "old_document_sha256": "87d3cbdb8e972f269aaeb28f691d5c6b5676c583c7b2030b8305160e0ee0336a",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/deb720626a2d6847.json",
+      "result_file": "resultats/deb720626a2d6847.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "53e3c16120bc4291",
+      "ticker": "CIEC",
+      "url": "https://www.brvm.org/sites/default/files/20250430_-_etats_financiers_-_norme_syscohada_-_exercice_2024_-_cie_ci.pdf",
+      "label": "Etats financiers norme syscohada exercice 2024 cie ci",
+      "old_document_sha256": "3f65befea7c97079be468425b5898ebb5cca215b53c312a38363243cc5f5f652",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/53e3c16120bc4291.json",
+      "result_file": "resultats/53e3c16120bc4291.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "fe08bc3d1d132f2e",
+      "ticker": "CIEC",
+      "url": "https://www.brvm.org/sites/default/files/20260520_-_etats_financiers_syscohada_et_ifrs_-_exercice_2025_-_cie_ci.pdf",
+      "label": "Etats financiers syscohada et ifrs exercice 2025 cie ci",
+      "old_document_sha256": "567587d32dd6fc2b19d04fb0315022845f881215f89172d2566edc8e3941966c",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/fe08bc3d1d132f2e.json",
+      "result_file": "resultats/fe08bc3d1d132f2e.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "83c31f18c387829c",
+      "ticker": "CIEC",
+      "url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_syscohada_-_exercice_2023_-_cie_ci.pdf",
+      "label": "Etats financiers syscohada exercice 2023 cie ci",
+      "old_document_sha256": "794d76ecc4ce4a409798a0c11fc2dda1f3520837400a08e96363467ccc9bb961",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/83c31f18c387829c.json",
+      "result_file": "resultats/83c31f18c387829c.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "f48679e0198f8c90",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20240502_-_attestation_des_cac_sur_les_etats_financiers_consolides_-_eti_tg.pdf",
+      "label": "Attestation des cac sur les etats financiers consolides eti tg",
+      "old_document_sha256": "2fafc6c3ac840ec473a2deab97f832cf3161da52e82b7e7b93d8bc6f3829c9b2",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/f48679e0198f8c90.json",
+      "result_file": "resultats/f48679e0198f8c90.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "b6533a9b9f4e9f96",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20190409_-_communique_-_resultats_financiers_exercice_2018_-_ecobank_ci.pdf",
+      "label": "Communique resultats financiers exercice 2018 ecobank ci",
+      "old_document_sha256": "03d2b0492524ae9a32aa61dc2a717ad7038c5b606ed4268df3cd8f243399e354",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/b6533a9b9f4e9f96.json",
+      "result_file": "resultats/b6533a9b9f4e9f96.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "29e0a0bf0f897753",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20190329_-_etats_financiers_2018_-_ecobank_tg_1.pdf",
+      "label": "Etats financiers 2018 ecobank tg 1",
+      "old_document_sha256": "6236dde784b9648b4d96ddf26acea99bb506c31eb4c4807812e7f41a52bd4335",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/29e0a0bf0f897753.json",
+      "result_file": "resultats/29e0a0bf0f897753.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "cdd46a76471875ad",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20190329_-_etats_financiers_2018_-_ecobank_tg_2.pdf",
+      "label": "Etats financiers 2018 ecobank tg 2",
+      "old_document_sha256": "a44a497e074f5f1129a77809a36204e4fb19ef0c5bb6b7f24e052e0687495e6f",
+      "old_observation_counts": {
+        "eps": 8,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/cdd46a76471875ad.json",
+      "result_file": "resultats/cdd46a76471875ad.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "6d07cb18d62e67bd",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20220330_-_etats_financiers_audites_exercice_2021_-_etit.pdf",
+      "label": "Etats financiers audites exercice 2021 etit",
+      "old_document_sha256": "33180c064d291cfe00bd6b320f2587a20a86f1b231d73d758e9e1711ef3a515f",
+      "old_observation_counts": {
+        "eps": 12,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/6d07cb18d62e67bd.json",
+      "result_file": "resultats/6d07cb18d62e67bd.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8f9cb50caa0387e4",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20250328_-_etats_financiers_certifies_par_les_commissaires_aux_comptes_-_exercice_2024_-_eti_tg.pdf",
+      "label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+      "old_document_sha256": "ebc521320c7bcc57131517e56611ff4a9d4985e0b85e51f2da5809d4c9a8bb3d",
+      "old_observation_counts": {
+        "eps": 12,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/8f9cb50caa0387e4.json",
+      "result_file": "resultats/8f9cb50caa0387e4.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "2b05280a52267ad7",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20200323_-_etats_financiers_exercice_2019_-_eti_tg.pdf",
+      "label": "Etats financiers exercice 2019 eti tg",
+      "old_document_sha256": "aba0049a003d6f1e44405e0ffc5d5ea4c5e2068a8a734e0a8ad29424645f57e5",
+      "old_observation_counts": {
+        "eps": 12,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/2b05280a52267ad7.json",
+      "result_file": "resultats/2b05280a52267ad7.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "e84c180cb99268e9",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20220128_-_etats_financiers_exercice_2021_-_eti_tg.pdf",
+      "label": "Etats financiers exercice 2021 eti tg",
+      "old_document_sha256": "957e2341220b253d6643490821eec80bdae4bd3b4aa3ec62ef2ed58695e0c852",
+      "old_observation_counts": {
+        "eps": 12,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/e84c180cb99268e9.json",
+      "result_file": "resultats/e84c180cb99268e9.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "5cbc4497e3bf4158",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20240502_-_etats_financiers_-_exercice_2023_-_eti_tg.pdf",
+      "label": "Etats financiers exercice 2023 eti tg",
+      "old_document_sha256": "374830d87a9d0f7e5bc8620195f8371069dfaf1f24cf148f4862b4519b36cc20",
+      "old_observation_counts": {
+        "eps": 12,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/5cbc4497e3bf4158.json",
+      "result_file": "resultats/5cbc4497e3bf4158.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "e98c698f5812ed08",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20260413_-_etats_financiers_ifrs_-_exercice_2025_-_eti_tg.pdf",
+      "label": "Etats financiers ifrs exercice 2025 eti tg",
+      "old_document_sha256": "ec2d5388b18c579a283c52882ae40d6b77ac6dd462ae20c895a9f64aad52d0f6",
+      "old_observation_counts": {
+        "eps": 12,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/e98c698f5812ed08.json",
+      "result_file": "resultats/e98c698f5812ed08.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "4827ec7994a38ae1",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20171031_-_presentation_resultats_fin_sept_2017.pdf",
+      "label": "Presentation resultats fin sept 2017",
+      "old_document_sha256": "9ece9bfd6be7623d6188ab140e33f3833edcfc80b3acb3e7515296b99b567ac3",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS"
+      ],
+      "candidate_file": "candidats/4827ec7994a38ae1.json",
+      "result_file": "resultats/4827ec7994a38ae1.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "bd44e25bf30b2f5a",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/20260413_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_exercice_2025_-_eti_tg.pdf",
+      "label": "Rapport des commissaires aux comptes sur les etats financiers annuels exercice 2025 eti tg",
+      "old_document_sha256": "33675e33441d0c4b19beb6449ed863ee384523ba2a9029847d043a2dbb9f7257",
+      "old_observation_counts": {
+        "eps": 12,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/bd44e25bf30b2f5a.json",
+      "result_file": "resultats/bd44e25bf30b2f5a.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "bc2ba7e37883fc20",
+      "ticker": "LNBB",
+      "url": "https://www.brvm.org/sites/default/files/20250602_-_etats_financiers_-_exercice_2024_-_lnb_bn.pdf",
+      "label": "Etats financiers exercice 2024 lnb bn",
+      "old_document_sha256": "9935c5639c5ef59c3728b17ce60b6abf0e5e79957aa0a02a5b70f65d797580cb",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS"
+      ],
+      "candidate_file": "candidats/bc2ba7e37883fc20.json",
+      "result_file": "resultats/bc2ba7e37883fc20.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "1304f8e7a5cde982",
+      "ticker": "NSBC",
+      "url": "https://www.brvm.org/sites/default/files/20210507_-_etats_financiers_-_exercice_2020_-nsia_banque_ci.pdf",
+      "label": "Etats financiers exercice 2020 nsia banque ci",
+      "old_document_sha256": "a311aa7725604150abaf8b98aed58fd56b236f098b38e7ced53b549c3cab68fc",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/1304f8e7a5cde982.json",
+      "result_file": "resultats/1304f8e7a5cde982.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "f3ba2e9cb4083992",
+      "ticker": "NSBC",
+      "url": "https://www.brvm.org/sites/default/files/20230331_-_etats_financiers_exercice_2022_-_nsia_banque_ci.pdf",
+      "label": "Etats financiers exercice 2022 nsia banque ci",
+      "old_document_sha256": "9e0cb93b9f9fac279349770cf95d578fe8d105b624fd808ea25c17f361457188",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/f3ba2e9cb4083992.json",
+      "result_file": "resultats/f3ba2e9cb4083992.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "2578ae86b4cf624b",
+      "ticker": "ORAC",
+      "url": "https://www.brvm.org/sites/default/files/20260608_-_etats_financiers_approuves_-_exercice_2025_-_orange_ci.pdf",
+      "label": "Etats financiers approuves exercice 2025 orange ci",
+      "old_document_sha256": "29b2f803402875999a4b3d12a6cc0044976914c28aec5e184018e5844f5e703c",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 2,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/2578ae86b4cf624b.json",
+      "result_file": "resultats/2578ae86b4cf624b.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "c41a427a8dffe7c3",
+      "ticker": "ORAC",
+      "url": "https://www.brvm.org/sites/default/files/20230214_-_etats_financiers_consolides_exercice_2022_-_orange_ci.pdf",
+      "label": "Etats financiers consolides exercice 2022 orange ci",
+      "old_document_sha256": "e2a2eeb3db6fe2a94fe890d37021e1ad86355e839e22d1df16b2368573720691",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 1,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/c41a427a8dffe7c3.json",
+      "result_file": "resultats/c41a427a8dffe7c3.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "1bfdd8b9bd04be93",
+      "ticker": "ORAC",
+      "url": "https://www.brvm.org/sites/default/files/20260217_-_etats_financiers_-_exercice_2025_-_orange_ci.pdf",
+      "label": "Etats financiers exercice 2025 orange ci",
+      "old_document_sha256": "18fcace22a971a48186ea783a4ec5c5d42e4c96b73cf00493062bca6e005a377",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 2,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/1bfdd8b9bd04be93.json",
+      "result_file": "resultats/1bfdd8b9bd04be93.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "2db362c629787b8f",
+      "ticker": "ORAC",
+      "url": "https://www.brvm.org/sites/default/files/20240221_-_resultats_financiers_consolides_2023_-_orange_ci.pdf",
+      "label": "Resultats financiers consolides 2023 orange ci",
+      "old_document_sha256": "87666ebc525670272c36c8d9c0f831cfafe326c0536aa957e7da20e863ba105c",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/2db362c629787b8f.json",
+      "result_file": "resultats/2db362c629787b8f.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "ed974856911e40bc",
+      "ticker": "ORGT",
+      "url": "https://www.brvm.org/sites/default/files/20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf",
+      "label": "Etats financiers certifies et approuves exercice 2019 oragroup togo",
+      "old_document_sha256": "229771dec57e339efe298348b6aeaf2768ed81d0b6810adf791c80f25c0f63f5",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 4
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/ed974856911e40bc.json",
+      "result_file": "resultats/ed974856911e40bc.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "c4cd83912f401c3f",
+      "ticker": "ORGT",
+      "url": "https://www.brvm.org/sites/default/files/20210416_-_etats_financiers_-_exercice_2020_-_oragroup_sa.pdf",
+      "label": "Etats financiers exercice 2020 oragroup sa",
+      "old_document_sha256": "c0f822ce2d81f6eabc9607793aed470c3a60d173c796d96c5351132b5acd371f",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/c4cd83912f401c3f.json",
+      "result_file": "resultats/c4cd83912f401c3f.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "2486f35e4ce91241",
+      "ticker": "ORGT",
+      "url": "https://www.brvm.org/sites/default/files/20220426_-_etats_financiers_exercice_2021_-_oragroup_tg.pdf",
+      "label": "Etats financiers exercice 2021 oragroup tg",
+      "old_document_sha256": "da8b8128d14d23143826b7879035e9f972e6a3e8794970bca1252fa471de4a2a",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/2486f35e4ce91241.json",
+      "result_file": "resultats/2486f35e4ce91241.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "5384a37ae2577857",
+      "ticker": "ORGT",
+      "url": "https://www.brvm.org/sites/default/files/20230426_-_etats_financiers_exercice_2022_-_oragroup_tg.pdf",
+      "label": "Etats financiers exercice 2022 oragroup tg",
+      "old_document_sha256": "101fe5cb2143dcf19b3a4fad51518b7e7c949b9adae74206b356233e73bd1c66",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/5384a37ae2577857.json",
+      "result_file": "resultats/5384a37ae2577857.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "1fd710d83ad20eab",
+      "ticker": "ORGT",
+      "url": "https://www.brvm.org/sites/default/files/20240429_-_etats_financiers_-_exercice_2023_-_oragroup_togo.pdf",
+      "label": "Etats financiers exercice 2023 oragroup togo",
+      "old_document_sha256": "eaa3f88c4695206526eefc8d11f665164b2a46bc7e60d0128c65279aebedf736",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/1fd710d83ad20eab.json",
+      "result_file": "resultats/1fd710d83ad20eab.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "78daba1cd1d10564",
+      "ticker": "ORGT",
+      "url": "https://www.brvm.org/sites/default/files/20260504_-_etats_financiers_-_exercice_2025_-_oragroup_tg.pdf",
+      "label": "Etats financiers exercice 2025 oragroup tg",
+      "old_document_sha256": "bebd9594e2934acb02a9214933e8bbb0b4561997f3f10f857152630fb9e473b5",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/78daba1cd1d10564.json",
+      "result_file": "resultats/78daba1cd1d10564.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "e65290e4d0892329",
+      "ticker": "ORGT",
+      "url": "https://www.brvm.org/sites/default/files/20200618_-_etats_financiers_oragroup_tg_-_exercice_2019.pdf",
+      "label": "Etats financiers oragroup tg exercice 2019",
+      "old_document_sha256": "41ee4857db68ff14e875022064bbe4e6938c9d6095bd6bb64d8fa249b615d9cb",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/e65290e4d0892329.json",
+      "result_file": "resultats/e65290e4d0892329.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "670580f8bae9a37a",
+      "ticker": "PALC",
+      "url": "https://www.brvm.org/sites/default/files/20250626_-_rapport_annuel_-_exercice_2024_-_palm_ci.pdf",
+      "label": "Rapport annuel exercice 2024 palm ci",
+      "old_document_sha256": "1559daec73ddb9047a42015590881bcdfabd4c507fe89f5eebb7671fff032fe1",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 1,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/670580f8bae9a37a.json",
+      "result_file": "resultats/670580f8bae9a37a.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "460d0fce1203acf1",
+      "ticker": "PALC",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_palmci_2016.pdf",
+      "label": "Rapport annuel palmci 2016",
+      "old_document_sha256": "da43afed54cd3e3273271c604052fbe1abf758dda394bbb89b8567217d901631",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/460d0fce1203acf1.json",
+      "result_file": "resultats/460d0fce1203acf1.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "44004e3d7e43f92f",
+      "ticker": "PRSC",
+      "url": "https://www.brvm.org/sites/default/files/20250613_-_etats_financiers_-_exercices_2018-2023_-_tractafric_motors_ci.pdf",
+      "label": "Etats financiers exercices 2018 2023 tractafric motors ci",
+      "old_document_sha256": "e654d6b0c512661674e046b1f58d5308409d8d81ed0436485087bbd604c27d9d",
+      "old_observation_counts": {
+        "eps": 10,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/44004e3d7e43f92f.json",
+      "result_file": "resultats/44004e3d7e43f92f.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "49c6922113a1de52",
+      "ticker": "PRSC",
+      "url": "https://www.brvm.org/sites/default/files/20250613_-_etats_financiers_-_normes_ifrs_-_exercice_2024_-_tractafric_motors_ci.pdf",
+      "label": "Etats financiers normes ifrs exercice 2024 tractafric motors ci",
+      "old_document_sha256": "a8166b7149b5333948eaa8bf8562435605c7f0141614b9a12a5da26ed7902759",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/49c6922113a1de52.json",
+      "result_file": "resultats/49c6922113a1de52.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "136da3839d814ab5",
+      "ticker": "SCRC",
+      "url": "https://www.brvm.org/sites/default/files/20240510_-_etats_financiers_ifrs_-_exercice_2023_-_sucrivoire_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2023 sucrivoire ci",
+      "old_document_sha256": "7f7aa9f5aa33f5c6e6ab30424903ad574c7e9e0393221f858e1e4620860ecf40",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/136da3839d814ab5.json",
+      "result_file": "resultats/136da3839d814ab5.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "b1eec9184f0cb6ee",
+      "ticker": "SDCC",
+      "url": "https://www.brvm.org/sites/default/files/20200615_-_rapport_de_gestion_2019_-_sodeci.pdf",
+      "label": "Rapport de gestion 2019 sodeci",
+      "old_document_sha256": "c41f28e7e443a45e168a9d33b675f54220e16d17b94961e565baf365f0a99ff1",
+      "old_observation_counts": {
+        "eps": 8,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/b1eec9184f0cb6ee.json",
+      "result_file": "resultats/b1eec9184f0cb6ee.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "34a1fce6095b7716",
+      "ticker": "SDCC",
+      "url": "https://www.brvm.org/sites/default/files/sodeci_comptes_individuels_ifrs_2019.pdf",
+      "label": "Sodeci comptes individuels ifrs 2019",
+      "old_document_sha256": "a79fa7c7edeaaf0c4f4a51712b8331283eee9c425a157f64813d01613e3df980",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/34a1fce6095b7716.json",
+      "result_file": "resultats/34a1fce6095b7716.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "d9daf96750e5380d",
+      "ticker": "SDCC",
+      "url": "https://www.brvm.org/sites/default/files/sodeci_ifrs_comptes_consolides_2019.pdf",
+      "label": "Sodeci ifrs comptes consolides 2019",
+      "old_document_sha256": "10bc24285f1ca0d44d88286078b4e57f7505b264c0e01e2b43184e4c632720c5",
+      "old_observation_counts": {
+        "eps": 6,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/d9daf96750e5380d.json",
+      "result_file": "resultats/d9daf96750e5380d.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "9f50dc30e9a9b176",
+      "ticker": "SDSC",
+      "url": "https://www.brvm.org/sites/default/files/20210701_-_btl_ci_2020_-_comptes_consolides_ifrs_-_rapport_general_des_cac.pdf",
+      "label": "Btl ci 2020 comptes consolides ifrs rapport general des cac",
+      "old_document_sha256": "36b3d4cb50f280784f0acfb411811cf597ee23e539d2b18da123b4565c015f3c",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 8,
+        "numerators": 6
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/9f50dc30e9a9b176.json",
+      "result_file": "resultats/9f50dc30e9a9b176.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "0d9b3bf750a083eb",
+      "ticker": "SDSC",
+      "url": "https://www.brvm.org/sites/default/files/20210701_-_btl_ci_2020_-_comptes_individuels_ifrs_-_rapport_general_des_cac.pdf",
+      "label": "Btl ci 2020 comptes individuels ifrs rapport general des cac",
+      "old_document_sha256": "4df93e792a25db7b7e6fe69ae48baebf7f570da5dbff1c299fa7a81ecc2ee9a7",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 6,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/0d9b3bf750a083eb.json",
+      "result_file": "resultats/0d9b3bf750a083eb.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "7b6949f124283a40",
+      "ticker": "SDSC",
+      "url": "https://www.brvm.org/sites/default/files/20201028_-_etats_financiers_exercice_2019_-_comptes_consolides_-_bollore_transport_logistics.pdf",
+      "label": "Etats financiers exercice 2019 comptes consolides bollore transport logistics",
+      "old_document_sha256": "891aab36ac6622057c4b9fe94e5c18923ae8e27ec4fa22be13379da632574f78",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 5,
+        "numerators": 6
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/7b6949f124283a40.json",
+      "result_file": "resultats/7b6949f124283a40.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "3201206cadd21d93",
+      "ticker": "SDSC",
+      "url": "https://www.brvm.org/sites/default/files/20201028_-_etats_financiers_exercice_2019_-_comptes_individuels_-_bollore_transport_logistics.pdf",
+      "label": "Etats financiers exercice 2019 comptes individuels bollore transport logistics",
+      "old_document_sha256": "f1c98143ad2c815c0fb8ace7707114785b3e60a3b1279b48386edab9c7016153",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 3,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/3201206cadd21d93.json",
+      "result_file": "resultats/3201206cadd21d93.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "aa9705c8d6bcbebe",
+      "ticker": "SDSC",
+      "url": "https://www.brvm.org/sites/default/files/20231106_-_rapport_des_commissaires_aux_comptes_-_etats_financiers_consolides_exercice_2022_-_agl_cote_divoire.pdf",
+      "label": "Rapport des commissaires aux comptes etats financiers consolides exercice 2022 agl cote divoire",
+      "old_document_sha256": "7b6328fe5e9d256121a7d7adea19f3d447ca598753df0dc2bde76e5c3c693f4f",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 8,
+        "numerators": 6
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/aa9705c8d6bcbebe.json",
+      "result_file": "resultats/aa9705c8d6bcbebe.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "2f27fb5fc42bc60e",
+      "ticker": "SDSC",
+      "url": "https://www.brvm.org/sites/default/files/20231106_-_rapport_des_commissaires_aux_comptes_ifrs_-_etats_financiers_individuels_exercice_2022_-_agl_cote_divoire.pdf",
+      "label": "Rapport des commissaires aux comptes ifrs etats financiers individuels exercice 2022 agl cote divoire",
+      "old_document_sha256": "c145de1603147240f4d2f4a863379a594361d34d24052e2840432541836da58c",
+      "old_observation_counts": {
+        "eps": 8,
+        "shares": 5,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/2f27fb5fc42bc60e.json",
+      "result_file": "resultats/2f27fb5fc42bc60e.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "9d5039d952edebb1",
+      "ticker": "SDSC",
+      "url": "https://www.brvm.org/sites/default/files/20260917_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_-_africa_global_logistics_ci.pdf",
+      "label": "Rapport des commissaires aux comptes sur les etats financiers africa global logistics ci",
+      "old_document_sha256": "dba670b2293a76d464f2e05d7d54a78618f415a9b887eaf081f3e2ab4a978a29",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/9d5039d952edebb1.json",
+      "result_file": "resultats/9d5039d952edebb1.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "283ebdaa874467f2",
+      "ticker": "SEMC",
+      "url": "https://www.brvm.org/sites/default/files/20170606-etats_financiers_exercice_2017-_crown_siem_ci.pdf",
+      "label": "Etats financiers exercice 2017 crown siem ci",
+      "old_document_sha256": "2d2fa25b64f26d1d34df529c7af0ed5b8f7ff8534c9d775e261e82405ad830fb",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS"
+      ],
+      "candidate_file": "candidats/283ebdaa874467f2.json",
+      "result_file": "resultats/283ebdaa874467f2.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "cdb76c26e1ef1686",
+      "ticker": "SGBC",
+      "url": "https://www.brvm.org/sites/default/files/20200428_-_etats_financiers_exercice_2019_-_societe_generale_ci.pdf",
+      "label": "Etats financiers exercice 2019 societe generale ci",
+      "old_document_sha256": "d2a3d6c10e86902481c75a72ffd7b0e8e6875273c0c30212acb0c6a91e787aa1",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS"
+      ],
+      "candidate_file": "candidats/cdb76c26e1ef1686.json",
+      "result_file": "resultats/cdb76c26e1ef1686.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "6fa78d0b8eeb3586",
+      "ticker": "SIBC",
+      "url": "https://www.brvm.org/sites/default/files/20190415_-_etats_financiers_exercice_2018_-_sib_ci_annule_et_remplace_celui_du_12-04-2019.pdf",
+      "label": "Etats financiers exercice 2018 sib ci annule et remplace celui du 12 04 2019",
+      "old_document_sha256": "ce6d1a4d35c6aaa450ef99b6bcd4884bbd446e2c263c3d36a3898aea3bb80583",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/6fa78d0b8eeb3586.json",
+      "result_file": "resultats/6fa78d0b8eeb3586.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "970195f73f971c14",
+      "ticker": "SIBC",
+      "url": "https://www.brvm.org/sites/default/files/20190423_-_etats_financiers_exercice_2018_-_sib_ci_annule_et_remplace_les_precedents.pdf",
+      "label": "Etats financiers exercice 2018 sib ci annule et remplace les precedents",
+      "old_document_sha256": "8a7b69d418049ef80c0d31cb574e1950926f6a67c6e92dd2a8313895dbf6c7e6",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/970195f73f971c14.json",
+      "result_file": "resultats/970195f73f971c14.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "d769a578b66a86a8",
+      "ticker": "SIBC",
+      "url": "https://www.brvm.org/sites/default/files/20200424_-_etats_financiers_exercice_2019_-_sib_ci.pdf",
+      "label": "Etats financiers exercice 2019 sib ci",
+      "old_document_sha256": "12eedb3aabbc7d9651e0e1cd3e73d2dd2c9daae606ae2153c2fb8c0eb8f052f7",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/d769a578b66a86a8.json",
+      "result_file": "resultats/d769a578b66a86a8.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "05bf1d68782f4194",
+      "ticker": "SIBC",
+      "url": "https://www.brvm.org/sites/default/files/20210712_-_rapport_des_commissaires_aux_comptes_-_etats_financiers_annuels_exercice_-_sib_ci.pdf",
+      "label": "Rapport des commissaires aux comptes etats financiers annuels exercice sib ci",
+      "old_document_sha256": "b4af4e870956a1bcba9e4b73470348b80744caae31fcb8e7888aa6e9dfd6195f",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/05bf1d68782f4194.json",
+      "result_file": "resultats/05bf1d68782f4194.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "425159842d38f843",
+      "ticker": "SIVC",
+      "url": "https://www.brvm.org/sites/default/files/20240718_-_rapport_des_cac_sur_les_etats_financiers_annuels_-_air_liquide_ci.pdf",
+      "label": "Rapport des cac sur les etats financiers annuels air liquide ci",
+      "old_document_sha256": null,
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/425159842d38f843.json",
+      "result_file": "resultats/425159842d38f843.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "15cb71fe86857344",
+      "ticker": "SIVC",
+      "url": "https://www.brvm.org/sites/default/files/20251205_-_rapport_des_cacs_sur_les_etats_financiers_-_air_liquide_ci.pdf",
+      "label": "Rapport des cacs sur les etats financiers air liquide ci",
+      "old_document_sha256": "bdf10c31697af54108ff88def3c79d8767de2e2aadea799725ce1f3cbfb91621",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/15cb71fe86857344.json",
+      "result_file": "resultats/15cb71fe86857344.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "e78cdf4c9b4819b4",
+      "ticker": "SIVC",
+      "url": "https://www.brvm.org/sites/default/files/20251205_-_rapport_des_cacs_sur_les_etats_financiers_au_ca_-_air_liquide_ci.pdf",
+      "label": "Rapport des cacs sur les etats financiers au ca air liquide ci",
+      "old_document_sha256": "d271e0064a9cfea43a7bacdd179b5b8633af44b9193745f47f1e757386bca067",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/e78cdf4c9b4819b4.json",
+      "result_file": "resultats/e78cdf4c9b4819b4.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "3f3576ef7472f742",
+      "ticker": "SMBC",
+      "url": "https://www.brvm.org/sites/default/files/20190712_-_etats_financiers_certifies_et_approuves_-_smb_ci.pdf",
+      "label": "Etats financiers certifies et approuves smb ci",
+      "old_document_sha256": "8ed8ec6747b7090b334fc2e64884469d515abf22aed27b744616fdbb50abc9cf",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/3f3576ef7472f742.json",
+      "result_file": "resultats/3f3576ef7472f742.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "d33e03fe95727bb8",
+      "ticker": "SMBC",
+      "url": "https://www.brvm.org/sites/default/files/20220603_-_etats_financiers_valides_par_le_cac_non_approuves_en_ago_-_smb.pdf",
+      "label": "Etats financiers valides par le cac non approuves en ago smb",
+      "old_document_sha256": "0720d5cbcd33761ba300ceeaada9479f02779b61e425e36390bbac1a9459262f",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/d33e03fe95727bb8.json",
+      "result_file": "resultats/d33e03fe95727bb8.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "02f3ba157bbb8fba",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/comfi_groupe_sonatel_resultats_financiers_2022_fr_v_finale_brvm.pdf",
+      "label": "Comfi groupe sonatel resultats financiers 2022 fr v finale brvm",
+      "old_document_sha256": "c63007d2c0b0be25f46753ffaa7340b9bb13e78ed61cc682ca70efba62774349",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 2,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/02f3ba157bbb8fba.json",
+      "result_file": "resultats/02f3ba157bbb8fba.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8c31c7f2a6ff35fa",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/20260216_-_etats_financiers_2025_et_attestation_des_cac_-_sonatel_sn.pdf",
+      "label": "Etats financiers 2025 et attestation des cac sonatel sn",
+      "old_document_sha256": "7adcc2719664c8a1c2294e991fb568b1f23b9fffe0ca7afdb98496cf863306ca",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 2,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/8c31c7f2a6ff35fa.json",
+      "result_file": "resultats/8c31c7f2a6ff35fa.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "4b6837327f1209af",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/20240222_-_etats_financiers_-_exercice_2023_-_sonatel_sn.pdf",
+      "label": "Etats financiers exercice 2023 sonatel sn",
+      "old_document_sha256": "b687360df23964d97c5e912fa96598dbee06cb55ce62f284290633869dca656e",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 2,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/4b6837327f1209af.json",
+      "result_file": "resultats/4b6837327f1209af.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "69b22055c79a0ea6",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/20250221_-_etats_financiers_-_exercice_2024_-_sonatel_sn.pdf",
+      "label": "Etats financiers exercice 2024 sonatel sn",
+      "old_document_sha256": "105c1756580297199e82fb2dbfd8942644049e1e90dd6df51d2a37dd855e794e",
+      "old_observation_counts": {
+        "eps": 4,
+        "shares": 3,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/69b22055c79a0ea6.json",
+      "result_file": "resultats/69b22055c79a0ea6.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8e6924beb08f76cb",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/20250418_-_rapport_dactivites_annuel_-_exercice_2024_-_sonatel_sn.pdf",
+      "label": "Rapport dactivites annuel exercice 2024 sonatel sn",
+      "old_document_sha256": "2c21f90f234c9d4c8e4fddd8fce4bfdad5a31470264ec0ce67a4f7730bfa3586",
+      "old_observation_counts": {
+        "eps": 11,
+        "shares": 12,
+        "numerators": 3
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/8e6924beb08f76cb.json",
+      "result_file": "resultats/8e6924beb08f76cb.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "36c7719ec2d4584f",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/sonatel_presentation_resultats_2020_vf_25_02_2021.pdf",
+      "label": "Sonatel presentation resultats 2020 vf 25 02 2021",
+      "old_document_sha256": "5ed252c5bbd6cdaf01e67a8c3033bc52a1bfbd22405b245120c88c372d3c2fbc",
+      "old_observation_counts": {
+        "eps": 1,
+        "shares": 2,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/36c7719ec2d4584f.json",
+      "result_file": "resultats/36c7719ec2d4584f.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "cdee52e3850d964c",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/sonatel_presentation_resultats_2020_vf_26_02_2021_definitive.pdf",
+      "label": "Sonatel presentation resultats 2020 vf 26 02 2021 definitive",
+      "old_document_sha256": "7a38466d9e82fcc63e9b489bb1e8fbfc73430cab298d9bb90ee3f9cc0f560143",
+      "old_observation_counts": {
+        "eps": 1,
+        "shares": 2,
+        "numerators": 2
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/cdee52e3850d964c.json",
+      "result_file": "resultats/cdee52e3850d964c.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "01ece8e9390c44b7",
+      "ticker": "SNTS",
+      "url": "https://www.brvm.org/sites/default/files/sonatel_rapport_de_gestion_2020_vf_25022021.pdf",
+      "label": "Sonatel rapport de gestion 2020 vf 25022021",
+      "old_document_sha256": "7c6ac388ca4d7afbaa8f0ff07b6fbf0abb9fead4c446fbdcdf4064ed47e9d6ee",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS"
+      ],
+      "candidate_file": "candidats/01ece8e9390c44b7.json",
+      "result_file": "resultats/01ece8e9390c44b7.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "a4db1c42c337a98f",
+      "ticker": "SOGC",
+      "url": "https://www.brvm.org/sites/default/files/20210706_-_etats_financiers_certifie_et_approuves_-_sogb_ci.pdf",
+      "label": "Etats financiers certifie et approuves sogb ci",
+      "old_document_sha256": "d134e3dba0394ca019fc5b71d2c5bf361c79be4706327822093eeab5262d7cc5",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/a4db1c42c337a98f.json",
+      "result_file": "resultats/a4db1c42c337a98f.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "e1cb602d58886ae0",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20170522-etats_financiers_approuves_exercice_2016-_saph_ci.pdf",
+      "label": "Etats financiers approuves exercice 2016 saph ci",
+      "old_document_sha256": "a30ad9b0907d139a83fff47a0d44529dfc7811c158b43a4087dab76332d5e2ae",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/e1cb602d58886ae0.json",
+      "result_file": "resultats/e1cb602d58886ae0.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "57e56b69b7003af0",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20190614_-_etats_financiers_certifies_et_approuves_exercice_2018_-_saph_ci.pdf",
+      "label": "Etats financiers certifies et approuves exercice 2018 saph ci",
+      "old_document_sha256": "34b59379ee612e36a4efeb4fd1ea9d32f9c87d45133bb398781ff7402cdb35d8",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/57e56b69b7003af0.json",
+      "result_file": "resultats/57e56b69b7003af0.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "b9784329166fe606",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20230802_-_etats_financiers_certifies_et_approuves_-_exercice_2022_-_saph_ci.pdf",
+      "label": "Etats financiers certifies et approuves exercice 2022 saph ci",
+      "old_document_sha256": "f93b017bb7e6f7d35a64073fdf07a36ca90b0cd8c64ac473247e31c3784e219d",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/b9784329166fe606.json",
+      "result_file": "resultats/b9784329166fe606.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "68c02e5433a111a9",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20240718_-_etats_financiers_certifies_et_approuves_par_les_cac_-_exercice_2023_-_syscohada_-_saph_ci.pdf",
+      "label": "Etats financiers certifies et approuves par les cac exercice 2023 syscohada saph ci",
+      "old_document_sha256": "b1ae9286e288516b4f18e52809d04f06c18908579cc14da6fd5537b27b118433",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/68c02e5433a111a9.json",
+      "result_file": "resultats/68c02e5433a111a9.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "63994b43d16cbf6e",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20220823_-_etats_financiers_certifies_et_approuves_-_saph_ci.pdf",
+      "label": "Etats financiers certifies et approuves saph ci",
+      "old_document_sha256": "831804674687e5f3c7d2f0e628135e1b072d1bc59443bb7750a66f1da601c2ad",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF",
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/63994b43d16cbf6e.json",
+      "result_file": "resultats/63994b43d16cbf6e.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "01284c3216592d93",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20250319_-_etats_financiers_certifies_par_les_cacs_-_exercice_2024_-_saph_ci.pdf",
+      "label": "Etats financiers certifies par les cacs exercice 2024 saph ci",
+      "old_document_sha256": "dcdee1d9ad70c49d35933a165f8148708e7342a190499d36d7c9db4980034992",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/01284c3216592d93.json",
+      "result_file": "resultats/01284c3216592d93.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "b3aeaaec743211eb",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20201216_-_etats_financiers_de_synthese_31_12_2019_-_saph_ci.pdf",
+      "label": "Etats financiers de synthese 31 12 2019 saph ci",
+      "old_document_sha256": "9155ffa720617e1e270cf9123cd865bddfbb2e44d0eb740e793fb8f577161288",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/b3aeaaec743211eb.json",
+      "result_file": "resultats/b3aeaaec743211eb.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "c1116439a6f23453",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20180529_-_etats_financiers_de_synthese_-_saph_2017_approuves.pdf",
+      "label": "Etats financiers de synthese saph 2017 approuves",
+      "old_document_sha256": "3bbe7917ed33c723a4c79be03562cf4d59243ec5918b0910ccf75f5480e91131",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/c1116439a6f23453.json",
+      "result_file": "resultats/c1116439a6f23453.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "f4a7e7470f37682f",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/etats_financiers_de_synthese_-_saph_2017_provisoire.pdf",
+      "label": "Etats financiers de synthese saph 2017 provisoire",
+      "old_document_sha256": "57f086ddeaf0f4cbcd8b9a1befc1208244db150f8777f7d1bab5687577ab1c04",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/f4a7e7470f37682f.json",
+      "result_file": "resultats/f4a7e7470f37682f.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "746e22bbc7df0010",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20170413_-_etats_financiers_exercice_2016-_saph_ci.pdf",
+      "label": "Etats financiers exercice 2016 saph ci",
+      "old_document_sha256": "ffaeab5003c293463fbfd15bd2031b9b3795b690a42a2e776c33a2eaa2a9280e",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/746e22bbc7df0010.json",
+      "result_file": "resultats/746e22bbc7df0010.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "93b4662e9dc973dd",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20190415_-_etats_financiers_exercice_2018_-_saph_ci.pdf",
+      "label": "Etats financiers exercice 2018 saph ci",
+      "old_document_sha256": "065d32ead1a4b0b08b645d2f9febaaf83dccad433b7d52109da7e48fe9046ee4",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/93b4662e9dc973dd.json",
+      "result_file": "resultats/93b4662e9dc973dd.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "4cf4dadabefedce7",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20201012_-_etats_financiers_exercice_2019_-_saph_ci.pdf",
+      "label": "Etats financiers exercice 2019 saph ci",
+      "old_document_sha256": "866684e20cc5304e2b73c2fbdfd151d2feba53cae186f5c8bb09b6c994fedc64",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/4cf4dadabefedce7.json",
+      "result_file": "resultats/4cf4dadabefedce7.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "7c6624ecdb18a3a8",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20200430_-_etats_financiers_exercice_2019_-_saph_ci_0.pdf",
+      "label": "Etats financiers exercice 2019 saph ci 0",
+      "old_document_sha256": "a564ab3ebc36910fdeae49a071698727cfae73f08c86fb2510a3104fe5a3a523",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/7c6624ecdb18a3a8.json",
+      "result_file": "resultats/7c6624ecdb18a3a8.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "c984c9110633bdfa",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20210423_-_etats_financiers_-_exercice_2020_-_saph_ci.pdf",
+      "label": "Etats financiers exercice 2020 saph ci",
+      "old_document_sha256": "7193773e336f70b373d0b648c59ad9b37302162fb80aaab719a6e31237244df7",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF",
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/c984c9110633bdfa.json",
+      "result_file": "resultats/c984c9110633bdfa.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "3a22329e21374ad1",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20240411_-_etats_financiers_-_exercice_2023_-_ifrs_-_saph_ci.pdf",
+      "label": "Etats financiers exercice 2023 ifrs saph ci",
+      "old_document_sha256": "a59d0746c593cf8f24e550fa3c8ac106053c20f2de53dc302cf2515b8fac8dbd",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/3a22329e21374ad1.json",
+      "result_file": "resultats/3a22329e21374ad1.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "ffd76ae674a2c964",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20240411_-_etats_financiers_-_exercice_2023_-_syscohada_-_saph_ci.pdf",
+      "label": "Etats financiers exercice 2023 syscohada saph ci",
+      "old_document_sha256": "83377f564fb2bb5f31998bda3be15021bc588b0ac710fa67cc82d073a0b892b0",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/ffd76ae674a2c964.json",
+      "result_file": "resultats/ffd76ae674a2c964.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "6b182a3805fb5900",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20201216_-_etats_financiers_ifrs_au_31_12_2019_-_saph_ci.pdf",
+      "label": "Etats financiers ifrs au 31 12 2019 saph ci",
+      "old_document_sha256": "ee3ceb15e45a6364a4a159339e4d018b2a4f55bd566270920f7744bf652f0448",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/6b182a3805fb5900.json",
+      "result_file": "resultats/6b182a3805fb5900.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "abacebf26abd73f9",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20201012_-_etats_financiers_ifrs_exercice_2019_-_saph_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2019 saph ci",
+      "old_document_sha256": "b0cd96ee3b2d20e3e60b62d590425ee4d47834e2d47bbc25111ccaa967113f1f",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/abacebf26abd73f9.json",
+      "result_file": "resultats/abacebf26abd73f9.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "2e29710a9c773c19",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20220415_-_etats_financiers_ifrs_exercice_2021_-_saph_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2021 saph ci",
+      "old_document_sha256": "10a0449bb094a1cf76206334adaca606eb2c83cf5ab07d9d4c5f67d12e558084",
+      "old_observation_counts": {
+        "eps": 6,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/2e29710a9c773c19.json",
+      "result_file": "resultats/2e29710a9c773c19.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "fa93ae99aceec432",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20230427_-_etats_financiers_ifrs_exercice_2022_-_saph_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2022 saph ci",
+      "old_document_sha256": "4dc9415b7204233d50388d1aa9158b971b77116915de99c8cb5c693045f3e8cd",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/fa93ae99aceec432.json",
+      "result_file": "resultats/fa93ae99aceec432.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8d6403ea5d4cf484",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20220415_-_etats_financiers_ohada_exercice_2021_-_saph_ci.pdf",
+      "label": "Etats financiers ohada exercice 2021 saph ci",
+      "old_document_sha256": "c365544b79802ca6ae5ea23a3325fa4885ad31b821b4a3869ebaa895259d0dbe",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/8d6403ea5d4cf484.json",
+      "result_file": "resultats/8d6403ea5d4cf484.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "10d25338ae7e14d5",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20230427_-_etats_financiers_syscohada_exercice_2022_-_saph_ci.pdf",
+      "label": "Etats financiers syscohada exercice 2022 saph ci",
+      "old_document_sha256": "639d4eaee8db70697f6d5a5befaf8cf26f242ff0d441e730c5b71f5a487a84db",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/10d25338ae7e14d5.json",
+      "result_file": "resultats/10d25338ae7e14d5.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "4cfd55752e3ea8f2",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20260318_-_etats_financiers_syscohada_-_exercice_2025_-_saph_ci.pdf",
+      "label": "Etats financiers syscohada exercice 2025 saph ci",
+      "old_document_sha256": "4b5b335b1a153061854e16be615b3e43832a7354eb19aeca4493d83f9197c6c0",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/4cfd55752e3ea8f2.json",
+      "result_file": "resultats/4cfd55752e3ea8f2.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "84282e482b9f61c0",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_saph.pdf",
+      "label": "Rapport annuel 2018 saph",
+      "old_document_sha256": "198286b8869c168fca82d48fd648f51b1449c2ece6a63361df383579b0795b77",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/84282e482b9f61c0.json",
+      "result_file": "resultats/84282e482b9f61c0.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "ba5ed34af7abc9e1",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20240718_-_rapport_annuel_-_exercice_2023_-_saph_ci_vf.pdf",
+      "label": "Rapport annuel exercice 2023 saph ci vf",
+      "old_document_sha256": "82dfe4dea061e68f11b4e18201d42cef875488e2dc90f2be05e7b1f92037ed35",
+      "old_observation_counts": {
+        "eps": 2,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/ba5ed34af7abc9e1.json",
+      "result_file": "resultats/ba5ed34af7abc9e1.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "3430f6ca0c8204a6",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_saph_2016.pdf",
+      "label": "Rapport annuel saph 2016",
+      "old_document_sha256": "0a642a86aabd5db52dd292647c8936800df55e6fc4cd837b990b57847c9ee5ce",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 1,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/3430f6ca0c8204a6.json",
+      "result_file": "resultats/3430f6ca0c8204a6.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "be51ecd1d9ce29c7",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20180529_-_rapport_annuel_saph_2017.pdf",
+      "label": "Rapport annuel saph 2017",
+      "old_document_sha256": "9ccd0182e52434b8331056b6cc8819ea4de9acef1a5d3a05b3004702e7fbc243",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/be51ecd1d9ce29c7.json",
+      "result_file": "resultats/be51ecd1d9ce29c7.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "c60156a3bdd8e5de",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20230802_-_rapport_des_cac_sur_les_etats_financiers_annuels_-_syscohada_-_exercice_2022_-_saph_ci.pdf",
+      "label": "Rapport des cac sur les etats financiers annuels syscohada exercice 2022 saph ci",
+      "old_document_sha256": "d1e6d6dbcdaaab196652f6a3a3d5c0076376fada05bcc2f7293340ea25ff221d",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/c60156a3bdd8e5de.json",
+      "result_file": "resultats/c60156a3bdd8e5de.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8bcdef039301b550",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20240718_-_rapport_des_cac_sur_les_etats_financiers_annuels_-_syscohada_-_saph_ci.pdf",
+      "label": "Rapport des cac sur les etats financiers annuels syscohada saph ci",
+      "old_document_sha256": "12ac964a2adc873ed6ba2429a32dcf90f3fbf44a6d5d88d759eb0e3a6e144380",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/8bcdef039301b550.json",
+      "result_file": "resultats/8bcdef039301b550.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "292c8a0958eb1c60",
+      "ticker": "SPHC",
+      "url": "https://www.brvm.org/sites/default/files/20201216_-_rapport_des_cac_sur_les_etats_financiers_-_saph_ci.pdf",
+      "label": "Rapport des cac sur les etats financiers saph ci",
+      "old_document_sha256": "b4f71bdb672ccb80deb686da66b7fd01220c7f36e2b46207a9b30c695db8226c",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF",
+        "RISQUE_EXERCICE_EFFECTIF_NON_PROUVE",
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/292c8a0958eb1c60.json",
+      "result_file": "resultats/292c8a0958eb1c60.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "8d662fa8079866ae",
+      "ticker": "STBC",
+      "url": "https://www.brvm.org/sites/default/files/20230814_-_attestation_dexecution_de_la_mission_de_commissariat_aux_comptes_-_etats_financiers_exercice_2022_-_sitab_ci.pdf",
+      "label": "Attestation dexecution de la mission de commissariat aux comptes etats financiers exercice 2022 sitab ci",
+      "old_document_sha256": "ff80a5ce94a44424c3fc717ea24450835a0e256b6092c0392f6a1dbbc95f2b86",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS"
+      ],
+      "candidate_file": "candidats/8d662fa8079866ae.json",
+      "result_file": "resultats/8d662fa8079866ae.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "7b8c97b6ab896c40",
+      "ticker": "STBC",
+      "url": "https://www.brvm.org/sites/default/files/20230713_-_etats_financiers_consolides_-_exercice_2022_-_sitab_ci.pdf",
+      "label": "Etats financiers consolides exercice 2022 sitab ci",
+      "old_document_sha256": "f11289beab8328bc9ff555e94c7de11c769f61f8efd89530c84fddf231abedbc",
+      "old_observation_counts": {
+        "eps": 1,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL"
+      ],
+      "candidate_file": "candidats/7b8c97b6ab896c40.json",
+      "result_file": "resultats/7b8c97b6ab896c40.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "d990b74224288ac8",
+      "ticker": "STBC",
+      "url": "https://www.brvm.org/sites/default/files/20250707_-_etats_financiers_individuels_syscohada_-_sitab_ci_annule_remplace_le_precedent.pdf",
+      "label": "Etats financiers individuels syscohada sitab ci annule remplace le precedent",
+      "old_document_sha256": "aa86be9333433fcdbf372805dd8e2363c19e63da82dad213c58e8d6f4a64b425",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/d990b74224288ac8.json",
+      "result_file": "resultats/d990b74224288ac8.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "0a1eb895bd5fd3e2",
+      "ticker": "STBC",
+      "url": "https://www.brvm.org/sites/default/files/20250721_-_etats_financiers_individuels_syscohada_-_sitab_ci_annule_remplace_le_precedent.pdf",
+      "label": "Etats financiers individuels syscohada sitab ci annule remplace le precedent",
+      "old_document_sha256": "6d42f23f0d8cda899297f05fcfef97d70765c8e46fb8c6fb3d2457d971160636",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/0a1eb895bd5fd3e2.json",
+      "result_file": "resultats/0a1eb895bd5fd3e2.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "a780eaa73a297ed7",
+      "ticker": "STBC",
+      "url": "https://www.brvm.org/sites/default/files/20180731_-_rapport_annuel_exercice_2016_-_sitab_ago_du_18_mai_2017.compressed.pdf",
+      "label": "Rapport annuel exercice 2016 sitab ago du 18 mai 2017.compressed",
+      "old_document_sha256": "ef39618ce55e6f1894e47b93e5221a68f9c959df3d737ac7b250411cf811d449",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/a780eaa73a297ed7.json",
+      "result_file": "resultats/a780eaa73a297ed7.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "78cacaf82692027b",
+      "ticker": "STBC",
+      "url": "https://www.brvm.org/sites/default/files/20260715_-_rapport_annuel_-_exercice_2025_-_sitab_ci.pdf",
+      "label": "Rapport annuel exercice 2025 sitab ci",
+      "old_document_sha256": "f2e33d987e07c493df342cfe0aeebb37d65ac2438a9bbec159e60dc3a8dc7743",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_EXERCICE_EFFECTIF_APRES_2025",
+        "RISQUE_NOM_ET_EFFECTIF_DIFFERENTS",
+        "RISQUE_PREUVES_STOCKEES_CLOTURE_DIFFERENTE"
+      ],
+      "candidate_file": "candidats/78cacaf82692027b.json",
+      "result_file": "resultats/78cacaf82692027b.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "c4dde749cc95efcf",
+      "ticker": "TTLC",
+      "url": "https://www.brvm.org/sites/default/files/20190725-etats_financiers_certifies_et_approuves_-_total_ci.pdf",
+      "label": "Etats financiers certifies et approuves total ci",
+      "old_document_sha256": "c67f69aaac8d702433ffc45097c840e4a8d54e83b5137e7de58cc6303f793fbf",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/c4dde749cc95efcf.json",
+      "result_file": "resultats/c4dde749cc95efcf.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "b1453811d3244cc7",
+      "ticker": "TTLS",
+      "url": "https://www.brvm.org/sites/default/files/20260615_-_rapport_dactivites_annuel_-_exercice_2025_-_totalenergies_marketing_sn.pdf",
+      "label": "Rapport dactivites annuel exercice 2025 totalenergies marketing sn",
+      "old_document_sha256": "9b50beff23f55e43c18afb835f608675237e9ad8c9ba9ea8127a6371684fcf3a",
+      "old_observation_counts": {
+        "eps": 8,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "OBSERVATION_PAR_ACTION_DANS_ANCIEN_JOURNAL",
+        "TOUS_DOCUMENTS_TICKER_CORRECTIF"
+      ],
+      "candidate_file": "candidats/b1453811d3244cc7.json",
+      "result_file": "resultats/b1453811d3244cc7.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "31a7af2af7b0aeb6",
+      "ticker": "UNXC",
+      "url": "https://www.brvm.org/sites/default/files/20230606_-_etats_financiers_exercice_certifies_-_uniwax_ci.pdf",
+      "label": "Etats financiers exercice certifies uniwax ci",
+      "old_document_sha256": "222265faff386e8742a8e39e9495094c8c8266147cdca77ebdb090d2d47f8086",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/31a7af2af7b0aeb6.json",
+      "result_file": "resultats/31a7af2af7b0aeb6.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "4daba843883ed2ef",
+      "ticker": "UNXC",
+      "url": "https://www.brvm.org/sites/default/files/20180427_-_etats_financiers_provisoires_-_uniwax.pdf",
+      "label": "Etats financiers provisoires uniwax",
+      "old_document_sha256": "a7dfcd637711e81b47b7afb8acb5597c49cf53657599924a3917f44f31c56d06",
+      "old_observation_counts": {
+        "eps": 0,
+        "shares": 0,
+        "numerators": 0
+      },
+      "selection_reasons": [
+        "RISQUE_NOM_SANS_EXERCICE"
+      ],
+      "candidate_file": "candidats/4daba843883ed2ef.json",
+      "result_file": "resultats/4daba843883ed2ef.json",
+      "replay_status": "A_REJOUER"
+    },
+    {
+      "candidate_id": "f67fd4f860515787",
+      "ticker": "ETIT",
+      "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_ecobank_group.pdf",
+      "label": "Rapport annuel 2018 ecobank group",
+      "selection_reasons": [
+        "TIMEOUT_HISTORIQUE_EXTRACTION_480"
+      ],
+      "replay_status": "EXCLU_TIMEOUT_HISTORIQUE_PAGES_CIBLEES_SEPAREES"
+    }
+  ]
+}

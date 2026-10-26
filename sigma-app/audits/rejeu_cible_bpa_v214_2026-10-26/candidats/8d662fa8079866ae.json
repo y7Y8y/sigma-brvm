@@ -1,0 +1,38 @@
+{
+  "candidate_id": "8d662fa8079866ae",
+  "ticker": "STBC",
+  "url": "https://www.brvm.org/sites/default/files/20230814_-_attestation_dexecution_de_la_mission_de_commissariat_aux_comptes_-_etats_financiers_exercice_2022_-_sitab_ci.pdf",
+  "selection_rank_for_ticker": 11,
+  "target_years_from_filename": [
+    2022,
+    2021,
+    2020
+  ],
+  "classified_document": {
+    "filename": "20230814_-_attestation_dexecution_de_la_mission_de_commissariat_aux_comptes_-_etats_financiers_exercice_2022_-_sitab_ci.pdf",
+    "label": "Attestation dexecution de la mission de commissariat aux comptes etats financiers exercice 2022 sitab ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2022,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2023-08-14",
+    "url": "https://www.brvm.org/sites/default/files/20230814_-_attestation_dexecution_de_la_mission_de_commissariat_aux_comptes_-_etats_financiers_exercice_2022_-_sitab_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+    "report_page_label": "SITAB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/sitab"
+    ]
+  }
+}

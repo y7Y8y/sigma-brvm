@@ -1,0 +1,38 @@
+{
+  "candidate_id": "78cacaf82692027b",
+  "ticker": "STBC",
+  "url": "https://www.brvm.org/sites/default/files/20260715_-_rapport_annuel_-_exercice_2025_-_sitab_ci.pdf",
+  "selection_rank_for_ticker": 3,
+  "target_years_from_filename": [
+    2025,
+    2024,
+    2023
+  ],
+  "classified_document": {
+    "filename": "20260715_-_rapport_annuel_-_exercice_2025_-_sitab_ci.pdf",
+    "label": "Rapport annuel exercice 2025 sitab ci",
+    "link_text": "Télécharger",
+    "doc_type": "rapport_annuel",
+    "exercice": 2025,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2026-07-15",
+    "url": "https://www.brvm.org/sites/default/files/20260715_-_rapport_annuel_-_exercice_2025_-_sitab_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "RAPPORT_ANNUEL",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+    "report_page_label": "SITAB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/sitab"
+    ]
+  }
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "ticker": "BOAS",
+    "exercice": 2017,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "INDIVIDUEL"
+      }
+    }
+  },
+  {
+    "ticker": "BOAS",
+    "exercice": 2018,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "INDIVIDUEL"
+      }
+    }
+  },
+  {
+    "ticker": "BOAS",
+    "exercice": 2019,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "statut_bpa": {
+        "ancien": "RATIO_INDICATIF_FIN_EXERCICE",
+        "nouveau": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE"
+      },
+      "validation_level": {
+        "ancien": "RATIO_INDICATIF_SEPARE",
+        "nouveau": "PUBLICATION_DETECTEE_NON_RETENUE"
+      },
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "INDIVIDUEL"
+      },
+      "ratio_indicatif_fin_exercice_fcfa": {
+        "ancien": 354.5416666666667,
+        "nouveau": null
+      }
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "exercice": 2019,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "CONSOLIDE"
+      },
+      "ratio_indicatif_fin_exercice_fcfa": {
+        "ancien": 116.686125,
+        "nouveau": 139.75
+      }
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "exercice": 2020,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "CONSOLIDE"
+      }
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "exercice": 2021,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "CONSOLIDE"
+      }
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "exercice": 2022,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "CONSOLIDE"
+      }
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "exercice": 2023,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "CONSOLIDE"
+      }
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "exercice": 2024,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "CONSOLIDE"
+      }
+    }
+  },
+  {
+    "ticker": "CIEC",
+    "exercice": 2025,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "reference_scope": {
+        "ancien": null,
+        "nouveau": "CONSOLIDE"
+      }
+    }
+  },
+  {
+    "ticker": "SPHC",
+    "exercice": 2020,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "statut_bpa": {
+        "ancien": "PUBLIE_EXTRAIT",
+        "nouveau": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE"
+      },
+      "validation_level": {
+        "ancien": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+        "nouveau": "PUBLICATION_DETECTEE_NON_RETENUE"
+      },
+      "bpa_publie_fcfa": {
+        "ancien": -21.0,
+        "nouveau": null
+      },
+      "bpa_publie_candidat_avant_quarantaine_fcfa": {
+        "ancien": -21.0,
+        "nouveau": null
+      }
+    }
+  },
+  {
+    "ticker": "SPHC",
+    "exercice": 2021,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "statut_bpa": {
+        "ancien": "PUBLIE_EXTRAIT",
+        "nouveau": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE"
+      },
+      "validation_level": {
+        "ancien": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+        "nouveau": "PUBLICATION_DETECTEE_NON_RETENUE"
+      },
+      "bpa_publie_fcfa": {
+        "ancien": 31.0,
+        "nouveau": null
+      },
+      "bpa_publie_candidat_avant_quarantaine_fcfa": {
+        "ancien": 31.0,
+        "nouveau": null
+      }
+    }
+  },
+  {
+    "ticker": "SPHC",
+    "exercice": 2022,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "statut_bpa": {
+        "ancien": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+        "nouveau": "NON_PUBLIE_DANS_SOURCES_VERIFIEES"
+      },
+      "validation_level": {
+        "ancien": "PUBLICATION_DETECTEE_NON_RETENUE",
+        "nouveau": "AUCUNE_VALEUR_RETENUE"
+      },
+      "reference_scope": {
+        "ancien": "SOCIAL",
+        "nouveau": null
+      }
+    }
+  },
+  {
+    "ticker": "SPHC",
+    "exercice": 2023,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "statut_bpa": {
+        "ancien": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+        "nouveau": "NON_PUBLIE_DANS_SOURCES_VERIFIEES"
+      },
+      "validation_level": {
+        "ancien": "PUBLICATION_DETECTEE_NON_RETENUE",
+        "nouveau": "AUCUNE_VALEUR_RETENUE"
+      },
+      "reference_scope": {
+        "ancien": "SOCIAL",
+        "nouveau": null
+      }
+    }
+  },
+  {
+    "ticker": "TTLS",
+    "exercice": 2024,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "bpa_publie_fcfa": {
+        "ancien": 128.0,
+        "nouveau": 219.0
+      },
+      "bpa_publie_candidat_avant_quarantaine_fcfa": {
+        "ancien": 128.0,
+        "nouveau": 219.0
+      }
+    }
+  },
+  {
+    "ticker": "TTLS",
+    "exercice": 2025,
+    "applicabilite": "APPLICABLE",
+    "differences": {
+      "bpa_publie_fcfa": {
+        "ancien": 205.0,
+        "nouveau": 208.0
+      },
+      "bpa_publie_candidat_avant_quarantaine_fcfa": {
+        "ancien": 205.0,
+        "nouveau": 208.0
+      }
+    }
+  }
+]

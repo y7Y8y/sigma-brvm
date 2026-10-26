@@ -1,0 +1,40 @@
+{
+  "candidate_id": "7b8c97b6ab896c40",
+  "ticker": "STBC",
+  "url": "https://www.brvm.org/sites/default/files/20230713_-_etats_financiers_consolides_-_exercice_2022_-_sitab_ci.pdf",
+  "selection_rank_for_ticker": 8,
+  "target_years_from_filename": [
+    2022,
+    2021,
+    2020
+  ],
+  "classified_document": {
+    "filename": "20230713_-_etats_financiers_consolides_-_exercice_2022_-_sitab_ci.pdf",
+    "label": "Etats financiers consolides exercice 2022 sitab ci",
+    "link_text": "Télécharger",
+    "doc_type": "comptes_ifrs",
+    "exercice": 2022,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2023-07-13",
+    "url": "https://www.brvm.org/sites/default/files/20230713_-_etats_financiers_consolides_-_exercice_2022_-_sitab_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "CONSOLIDE",
+    "scope_hint_evidence": [
+      "consolide",
+      "consolides"
+    ],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+    "report_page_label": "SITAB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sitab?page=1"
+    ]
+  }
+}

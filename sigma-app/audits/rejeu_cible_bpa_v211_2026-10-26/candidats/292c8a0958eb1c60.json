@@ -1,0 +1,33 @@
+{
+  "candidate_id": "292c8a0958eb1c60",
+  "ticker": "SPHC",
+  "url": "https://www.brvm.org/sites/default/files/20201216_-_rapport_des_cac_sur_les_etats_financiers_-_saph_ci.pdf",
+  "selection_rank_for_ticker": 29,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20201216_-_rapport_des_cac_sur_les_etats_financiers_-_saph_ci.pdf",
+    "label": "Rapport des cac sur les etats financiers saph ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2020-12-16",
+    "url": "https://www.brvm.org/sites/default/files/20201216_-_rapport_des_cac_sur_les_etats_financiers_-_saph_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+    "report_page_label": "SAPH CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci?page=2"
+    ]
+  }
+}

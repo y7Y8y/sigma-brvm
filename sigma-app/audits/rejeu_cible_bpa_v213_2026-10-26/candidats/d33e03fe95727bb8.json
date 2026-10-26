@@ -1,0 +1,35 @@
+{
+  "candidate_id": "d33e03fe95727bb8",
+  "ticker": "SMBC",
+  "url": "https://www.brvm.org/sites/default/files/20220603_-_etats_financiers_valides_par_le_cac_non_approuves_en_ago_-_smb.pdf",
+  "selection_rank_for_ticker": 22,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20220603_-_etats_financiers_valides_par_le_cac_non_approuves_en_ago_-_smb.pdf",
+    "label": "Etats financiers valides par le cac non approuves en ago smb",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers_approuves",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2022-06-03",
+    "url": "https://www.brvm.org/sites/default/files/20220603_-_etats_financiers_valides_par_le_cac_non_approuves_en_ago_-_smb.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/smb",
+    "report_page_label": "SMB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/smb?page=1"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "candidate_id": "9d5039d952edebb1",
+  "ticker": "SDSC",
+  "url": "https://www.brvm.org/sites/default/files/20260917_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_-_africa_global_logistics_ci.pdf",
+  "selection_rank_for_ticker": 23,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20260917_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_-_africa_global_logistics_ci.pdf",
+    "label": "Rapport des commissaires aux comptes sur les etats financiers africa global logistics ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2026-09-17",
+    "url": "https://www.brvm.org/sites/default/files/20260917_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_-_africa_global_logistics_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics",
+    "report_page_label": "BOLLORE TRANSPORT & LOGISTICS",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics"
+    ]
+  }
+}

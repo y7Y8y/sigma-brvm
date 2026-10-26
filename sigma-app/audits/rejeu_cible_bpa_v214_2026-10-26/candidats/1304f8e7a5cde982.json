@@ -1,0 +1,37 @@
+{
+  "candidate_id": "1304f8e7a5cde982",
+  "ticker": "NSBC",
+  "url": "https://www.brvm.org/sites/default/files/20210507_-_etats_financiers_-_exercice_2020_-nsia_banque_ci.pdf",
+  "selection_rank_for_ticker": 7,
+  "target_years_from_filename": [
+    2020,
+    2019,
+    2018
+  ],
+  "classified_document": {
+    "filename": "20210507_-_etats_financiers_-_exercice_2020_-nsia_banque_ci.pdf",
+    "label": "Etats financiers exercice 2020 nsia banque ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2020,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2021-05-07",
+    "url": "https://www.brvm.org/sites/default/files/20210507_-_etats_financiers_-_exercice_2020_-nsia_banque_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/nsbc",
+    "report_page_label": "NSBC",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/nsbc?page=1"
+    ]
+  }
+}

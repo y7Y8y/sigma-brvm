@@ -1,0 +1,72 @@
+[1/10] ETIT extraction : Etats financiers 2017 ecobank ci
+[2/10] ETIT extraction : Etats financiers 2018 ecobank tg 1
+[3/10] ETIT extraction : Etats financiers 2018 ecobank tg 2
+[4/10] ETIT extraction : Etats financiers exercice 2019 eti tg
+[5/10] ETIT extraction : Etats financiers exercice 2021 eti tg
+[6/10] ETIT extraction : Etats financiers audites exercice 2021 etit
+[7/10] ETIT extraction : Etats financiers exercice 2023 eti tg
+[8/10] ETIT extraction : Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg
+[9/10] ETIT extraction : Etats financiers ifrs exercice 2025 eti tg
+[10/10] ETIT extraction : Rapport des commissaires aux comptes sur les etats financiers annuels exercice 2025 eti tg
+{
+  "cells": 10,
+  "expected_retained_values": 3,
+  "concordant_retained_values": 3,
+  "missing_or_quarantined_expected_values": 0,
+  "divergent_values": 0,
+  "potential_false_positives": 0,
+  "negative_controls": {
+    "human_cells_without_retained_eps": 7,
+    "human_published_but_rejected": 7,
+    "human_rejected_concordant_demonstrated": 6,
+    "human_rejected_false_positives": 0,
+    "human_rejected_not_demonstrated_or_wrong_mechanism": 1,
+    "false_positives_on_absences_or_missing_documents": 0,
+    "rule": "Un rejet humain n'est concordant que si un candidat a été détecté puis non retenu ou mis en quarantaine pour une raison compatible ; une simple absence de sortie ne suffit pas."
+  },
+  "concordant_but_extraction_unique_without_weighted_check": 2,
+  "verdicts": {
+    "PUBLIE_NON_RETENU_CONCORDANT": 6,
+    "REJET_NON_DEMONTRE_AUCUN_CANDIDAT_DETECTE": 1,
+    "VALEUR_CONCORDANTE": 3
+  },
+  "actual_statuses": {
+    "None": 1,
+    "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1,
+    "PUBLIE_EXTRAIT": 2,
+    "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 6
+  },
+  "documents": {
+    "documents_replayed": 10,
+    "documents_error": 0,
+    "documents_sha256_matches_pilot": 10,
+    "documents_aggregable_annual_candidates": 9,
+    "documents_rejected_other_issuer": 1,
+    "documents_rejected_intermediate": 0
+  },
+  "by_ticker": {
+    "ETIT": {
+      "cells": 10,
+      "expected_retained": 3,
+      "concordant_retained": 3,
+      "human_published_but_rejected": 7,
+      "human_rejected_concordant_demonstrated": 6,
+      "human_rejected_false_positives": 0,
+      "verdicts": {
+        "PUBLIE_NON_RETENU_CONCORDANT": 6,
+        "REJET_NON_DEMONTRE_AUCUN_CANDIDAT_DETECTE": 1,
+        "VALEUR_CONCORDANTE": 3
+      },
+      "series_exercices": [
+        2022,
+        2023,
+        2024
+      ],
+      "aggregation_notes": [],
+      "per_share_observations": 108
+    }
+  },
+  "gate_480": "EXTENSION_480_TOUJOURS_REFUSEE",
+  "code_fingerprint": "2bc7fbb4aa252ddde4ae07bf9884e11fe6e873acadd881d96c49166e32020672",
+  "dataset_published_modified": false
+}

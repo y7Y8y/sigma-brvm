@@ -1,0 +1,35 @@
+{
+  "candidate_id": "a780eaa73a297ed7",
+  "ticker": "STBC",
+  "url": "https://www.brvm.org/sites/default/files/20180731_-_rapport_annuel_exercice_2016_-_sitab_ago_du_18_mai_2017.compressed.pdf",
+  "selection_rank_for_ticker": 25,
+  "target_years_from_filename": [
+    2016
+  ],
+  "classified_document": {
+    "filename": "20180731_-_rapport_annuel_exercice_2016_-_sitab_ago_du_18_mai_2017.compressed.pdf",
+    "label": "Rapport annuel exercice 2016 sitab ago du 18 mai 2017.compressed",
+    "link_text": "Télécharger",
+    "doc_type": "rapport_annuel",
+    "exercice": 2016,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2018-07-31",
+    "url": "https://www.brvm.org/sites/default/files/20180731_-_rapport_annuel_exercice_2016_-_sitab_ago_du_18_mai_2017.compressed.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "RAPPORT_ANNUEL",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+    "report_page_label": "SITAB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sitab?page=2"
+    ]
+  }
+}

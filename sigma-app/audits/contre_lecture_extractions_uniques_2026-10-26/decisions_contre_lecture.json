@@ -1,0 +1,503 @@
+{
+  "schema_version": "contre-lecture-bpa-v1",
+  "date": "2026-10-26",
+  "parser_version": "eps-evidence-v2.1.1",
+  "scope": "18 cellules EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE de la revue 480, plus la quarantaine SDSC 2022",
+  "dataset_published_modified": false,
+  "integration_authorized": false,
+  "method": [
+    "Réextraction ciblée des PDF sources hors pilote avec le parseur final",
+    "Relecture directe des pages PDF : titre, périmètre, en-têtes de colonnes, ligne BPA, numérateur et nombre d'actions lorsqu'ils sont imprimés",
+    "Contrôle arithmétique séparé du BPA publié ; aucun ratio indicatif n'est substitué au BPA publié",
+    "Pour les 7 cellules du pilote, reconfirmation à partir des décisions humaines fermées et de la régression réelle rejouée"
+  ],
+  "records": [
+    {
+      "ticker": "ABJC",
+      "exercice": 2022,
+      "audit_raw_value_fcfa": 117.0,
+      "review_retained_value_fcfa": 117.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_CONTROLE_ARITHMETIQUE_FACE",
+      "scope": "INDIVIDUEL",
+      "framework": "IFRS",
+      "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+      "source_documents": [
+        {
+          "label": "Etats financiers approuves exercice 2023 servair abidjan ci",
+          "sha256": "092b94a9670bdce08864f97a54ad37595e55a74cde2f94d92ac11684b35e4f08",
+          "pages": "5, 8, 25",
+          "role": "comparatif 2022, périmètre individuel explicite et récit du résultat par action"
+        }
+      ],
+      "arithmetic_control": "1 272 millions FCFA / 10 912 000 actions = 116,57 FCFA, arrondi publié 117",
+      "caveats": [
+        "Le dénominateur imprimé est le nombre total/en circulation, non libellé moyen pondéré",
+        "La note capital mentionne 545 600 actions de 2 500 FCFA alors que la face et le récit BPA utilisent 10 912 000 actions ; l'opération de division correspondante reste à tracer séparément"
+      ]
+    },
+    {
+      "ticker": "ABJC",
+      "exercice": 2023,
+      "audit_raw_value_fcfa": 124.0,
+      "review_retained_value_fcfa": 124.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_CONTROLE_ARITHMETIQUE_FACE_ET_RECIT",
+      "scope": "INDIVIDUEL",
+      "framework": "IFRS",
+      "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+      "source_documents": [
+        {
+          "label": "Etats financiers approuves exercice 2023 servair abidjan ci",
+          "sha256": "092b94a9670bdce08864f97a54ad37595e55a74cde2f94d92ac11684b35e4f08",
+          "pages": "5, 8, 25",
+          "role": "face du résultat global et phrase explicite de résultat par action"
+        }
+      ],
+      "arithmetic_control": "1 358 millions FCFA / 10 912 000 actions = 124,45 FCFA, valeur publiée 124",
+      "caveats": [
+        "Dénominateur non libellé moyen pondéré",
+        "Incohérence de formulation du capital légal relevée pour 2022, sans effet sur la transcription du BPA"
+      ]
+    },
+    {
+      "ticker": "ABJC",
+      "exercice": 2024,
+      "audit_raw_value_fcfa": 139.0,
+      "review_retained_value_fcfa": 139.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_PROVISOIRE_CONTROLE_ARITHMETIQUE_FACE",
+      "scope": "INDIVIDUEL_PAR_CONTINUITE_DE_LA_SERIE_IFRS",
+      "framework": "IFRS",
+      "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+      "source_documents": [
+        {
+          "label": "Etats financiers ifrs exercice 2025 servair abidjan ci",
+          "sha256": "b462e7b0ec2ad1693feaca6b1f887a897854f523a51ae960226f011cd53ed8f0",
+          "pages": "1, 2",
+          "role": "comparatif 2024 dans les états provisoires 2025"
+        }
+      ],
+      "arithmetic_control": "1 515 millions FCFA / 10 912 000 actions = 138,84 FCFA, arrondi publié 139",
+      "caveats": [
+        "Document de trois pages explicitement provisoire",
+        "Les états ABJC 2024 inventoriés séparément sont scannés/illisibles dans l'audit",
+        "Dénominateur total des actions, non libellé moyen pondéré"
+      ]
+    },
+    {
+      "ticker": "ABJC",
+      "exercice": 2025,
+      "audit_raw_value_fcfa": 122.0,
+      "review_retained_value_fcfa": 122.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_PROVISOIRE_CONTROLE_ARITHMETIQUE_FACE",
+      "scope": "INDIVIDUEL_PAR_CONTINUITE_DE_LA_SERIE_IFRS",
+      "framework": "IFRS",
+      "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+      "source_documents": [
+        {
+          "label": "Etats financiers ifrs exercice 2025 servair abidjan ci",
+          "sha256": "b462e7b0ec2ad1693feaca6b1f887a897854f523a51ae960226f011cd53ed8f0",
+          "pages": "1, 2",
+          "role": "exercice courant des états provisoires 2025"
+        }
+      ],
+      "arithmetic_control": "1 331 millions FCFA / 10 912 000 actions = 121,98 FCFA, arrondi publié 122",
+      "caveats": [
+        "Vintage provisoire à reconfirmer sur version auditée/approuvée",
+        "Dénominateur total des actions, non libellé moyen pondéré"
+      ]
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2019,
+      "audit_raw_value_fcfa": 140.0,
+      "review_retained_value_fcfa": 140.0,
+      "decision": "PUBLIE_RETENU_DECISION_PILOTE_RECONFIRMEE",
+      "validation_after_review": "PILOTE_DOCUMENT_UNIQUE_CONTROLE_ARITHMETIQUE",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers consolides ifrs exercice 2020 cie ci 0",
+          "pages": "1",
+          "role": "comparatif 2019 relu dans le pilote"
+        }
+      ],
+      "arithmetic_control": "7 826 millions FCFA / 56 000 000 actions = 139,75 FCFA",
+      "caveats": [
+        "Dénominateur publié comme actions en circulation, non comme moyenne pondérée explicite"
+      ]
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2025,
+      "audit_raw_value_fcfa": 234.0,
+      "review_retained_value_fcfa": 234.0,
+      "decision": "PUBLIE_RETENU_DECISION_PILOTE_RECONFIRMEE",
+      "validation_after_review": "PILOTE_DOCUMENT_UNIQUE_CONTROLE_ARITHMETIQUE",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers syscohada et ifrs exercice 2025 cie ci",
+          "pages": "3",
+          "role": "page IFRS consolidée relue dans le pilote"
+        }
+      ],
+      "arithmetic_control": "13 100 millions FCFA / 56 000 000 actions = 233,93 FCFA",
+      "caveats": [
+        "Dénominateur publié comme actions en circulation"
+      ]
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2022,
+      "audit_raw_value_fcfa": 7.064,
+      "review_retained_value_fcfa": 7.064,
+      "decision": "PUBLIE_RETENU_DECISION_PILOTE_RECONFIRMEE",
+      "validation_after_review": "PILOTE_DOCUMENT_UNIQUE_DEUX_EMPLACEMENTS",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers exercice 2023 eti tg",
+          "pages": "1, 3",
+          "role": "chiffres clés et compte de résultat comparatif 2022"
+        }
+      ],
+      "arithmetic_control": "Concordance chiffres clés/compte de résultat à 1,165 cent USD et 7,064 FCFA ; activités arrêtées à néant dans cette vintage",
+      "caveats": [
+        "Aucun dénominateur moyen pondéré republié dans le condensé",
+        "Aucune conversion de devise effectuée par la revue"
+      ]
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2024,
+      "audit_raw_value_fcfa": 8.2,
+      "review_retained_value_fcfa": 8.23,
+      "decision": "PUBLIE_RETENU_DECISION_PILOTE_RECONFIRMEE_PRECISION_CHIFFRES_CLES",
+      "validation_after_review": "PILOTE_DOCUMENT_UNIQUE_DEUX_EMPLACEMENTS",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+          "pages": "2, 4",
+          "role": "chiffres clés 8,23 FCFA et compte de résultat 8,2 FCFA"
+        },
+        {
+          "label": "Etats financiers ifrs exercice 2025 eti tg",
+          "pages": "3",
+          "role": "comparatif reclassé, non substitué à la vintage 2024"
+        }
+      ],
+      "arithmetic_control": "Concordance 1,35/1,355 cent USD et 8,23/8,2 FCFA selon l'arrondi de présentation",
+      "caveats": [
+        "La valeur brute d'audit 8,2 est l'arrondi du compte de résultat ; la valeur humaine retenue est 8,23",
+        "Aucun dénominateur moyen pondéré republié dans le condensé"
+      ]
+    },
+    {
+      "ticker": "ORGT",
+      "exercice": 2019,
+      "audit_raw_value_fcfa": 142.0,
+      "review_retained_value_fcfa": 142.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_NOTE_BPA_CONTROLE_ARITHMETIQUE",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers certifies et approuves exercice 2019 oragroup togo",
+          "sha256": "229771dec57e339efe298348b6aeaf2768ed81d0b6810adf791c80f25c0f63f5",
+          "pages": "1, 13, 43",
+          "role": "rapport CAC consolidé IFRS, compte de résultat et note résultat par action"
+        }
+      ],
+      "arithmetic_control": "9 806 millions FCFA part du Groupe / 69 090 306 actions en circulation = 141,93 FCFA, publié 142",
+      "caveats": [
+        "La note libelle le dénominateur actions en circulation, non nombre moyen pondéré",
+        "La ligne d'années espacées 2 019 / 2 018 a motivé le correctif parseur v2.1.1"
+      ]
+    },
+    {
+      "ticker": "ORGT",
+      "exercice": 2022,
+      "audit_raw_value_fcfa": 126.0,
+      "review_retained_value_fcfa": 126.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_COMPARATIF_NUMERATEUR_COHERENT",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE_PAR_PAIRE_AVEC_DILUE",
+      "source_documents": [
+        {
+          "label": "Etats financiers exercice 2023 oragroup togo",
+          "sha256": "eaa3f88c4695206526eefc8d11f665164b2a46bc7e60d0128c65279aebedf736",
+          "pages": "1",
+          "role": "états consolidés provisoires, comparatif 2022"
+        },
+        {
+          "label": "Etats financiers exercice 2022 oragroup tg",
+          "sha256": "101fe5cb2143dcf19b3a4fad51518b7e7c949b9adae74206b356233e73bd1c66",
+          "pages": "1, 2",
+          "role": "document d'origine sans ligne BPA ; numérateur part du Groupe identique à 8 749 millions"
+        }
+      ],
+      "arithmetic_control": "Dénominateur implicite 8 749 millions / 126 = 69 436 508 actions, cohérent avec le capital émis de 69 733 831 000 FCFA et les actions en circulation historiques",
+      "caveats": [
+        "Aucun dénominateur pondéré imprimé dans le condensé",
+        "Valeur seulement comparative dans le document 2023 provisoire"
+      ]
+    },
+    {
+      "ticker": "ORGT",
+      "exercice": 2023,
+      "audit_raw_value_fcfa": -280.0,
+      "review_retained_value_fcfa": -280.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_PROVISOIRE_NUMERATEUR_COHERENT",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE_PAR_PAIRE_AVEC_DILUE",
+      "source_documents": [
+        {
+          "label": "Etats financiers exercice 2023 oragroup togo",
+          "sha256": "eaa3f88c4695206526eefc8d11f665164b2a46bc7e60d0128c65279aebedf736",
+          "pages": "1, 2",
+          "role": "compte de résultat consolidé provisoire et capital annuel"
+        }
+      ],
+      "arithmetic_control": "Dénominateur implicite -19 460 millions / -280 = 69 500 000 actions ; le dilué publié est -281",
+      "caveats": [
+        "Aucun dénominateur pondéré imprimé",
+        "Document explicitement provisoire"
+      ]
+    },
+    {
+      "ticker": "ORGT",
+      "exercice": 2024,
+      "audit_raw_value_fcfa": -545.0,
+      "review_retained_value_fcfa": -545.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_COMPARATIF_NUMERATEUR_COHERENT",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers exercice 2025 oragroup tg",
+          "sha256": "bebd9594e2934acb02a9214933e8bbb0b4561997f3f10f857152630fb9e473b5",
+          "pages": "1, 2, 4",
+          "role": "situation consolidée, attribution aux actionnaires de la holding et comparatif 2024"
+        },
+        {
+          "label": "Etats financiers exercice 2024 oragroup tg",
+          "sha256": "ec83763add9af4f8b4cb15707d5e559047928e1992252aa91064ba4861cfee28",
+          "pages": "1, 2",
+          "role": "document d'origine scanné sans texte natif ; non relu sans OCR"
+        }
+      ],
+      "arithmetic_control": "Dénominateur implicite -37 865 millions attribuables à la holding / -545 = 69 477 064 actions",
+      "caveats": [
+        "Aucun dénominateur pondéré imprimé dans le condensé",
+        "Le comparatif 2025 est la seule lecture directe disponible à ce stade"
+      ]
+    },
+    {
+      "ticker": "ORGT",
+      "exercice": 2025,
+      "audit_raw_value_fcfa": 264.0,
+      "review_retained_value_fcfa": 264.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DOCUMENT_UNIQUE_NUMERATEUR_COHERENT",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers exercice 2025 oragroup tg",
+          "sha256": "bebd9594e2934acb02a9214933e8bbb0b4561997f3f10f857152630fb9e473b5",
+          "pages": "1, 2, 4",
+          "role": "exercice courant consolidé et attribution aux actionnaires de la holding"
+        }
+      ],
+      "arithmetic_control": "Dénominateur implicite 18 355 millions / 264 = 69 526 515 actions ; dilué publié 241",
+      "caveats": [
+        "Aucun dénominateur pondéré imprimé dans le condensé",
+        "Version condensée sans rapport CAC dans le PDF relu"
+      ]
+    },
+    {
+      "ticker": "SDCC",
+      "exercice": 2018,
+      "audit_raw_value_fcfa": 325.0,
+      "review_retained_value_fcfa": 325.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DEUX_PDF_DISTINCTS_MEME_VINTAGE_CONTROLE_ARITHMETIQUE",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE_PAR_PAIRE_AVEC_DILUE",
+      "source_documents": [
+        {
+          "label": "Sodeci ifrs comptes consolides 2019",
+          "sha256": "10bc24285f1ca0d44d88286078b4e57f7505b264c0e01e2b43184e4c632720c5",
+          "pages": "1, 5, 23",
+          "role": "compte de résultat consolidé comparatif 2018 et capital"
+        },
+        {
+          "label": "Rapport de gestion 2019 sodeci",
+          "sha256": "c41f28e7e443a45e168a9d33b675f54220e16d17b94961e565baf365f0a99ff1",
+          "pages": "29, 89, 124",
+          "role": "même vintage ; distingue 324 en individuel p.29 et 325 en consolidé p.89"
+        }
+      ],
+      "arithmetic_control": "2 921 millions FCFA / 9 000 000 actions = 324,56 FCFA, arrondi consolidé publié 325 ; le bloc individuel donne 2 918 / 9 000 000 = 324,22, publié 324",
+      "caveats": [
+        "Les deux PDF sont distincts mais portent la même vintage 2019, non deux vintages indépendantes",
+        "Dénominateur libellé actions en circulation"
+      ]
+    },
+    {
+      "ticker": "SDCC",
+      "exercice": 2019,
+      "audit_raw_value_fcfa": 353.0,
+      "review_retained_value_fcfa": 353.0,
+      "decision": "PUBLIE_RETENU_APRES_CONTRE_LECTURE",
+      "validation_after_review": "DEUX_PDF_DISTINCTS_MEME_VINTAGE_CONTROLE_ARITHMETIQUE",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE_PAR_PAIRE_AVEC_DILUE",
+      "source_documents": [
+        {
+          "label": "Sodeci ifrs comptes consolides 2019",
+          "sha256": "10bc24285f1ca0d44d88286078b4e57f7505b264c0e01e2b43184e4c632720c5",
+          "pages": "1, 5, 23",
+          "role": "compte de résultat consolidé 2019 et capital"
+        },
+        {
+          "label": "Rapport de gestion 2019 sodeci",
+          "sha256": "c41f28e7e443a45e168a9d33b675f54220e16d17b94961e565baf365f0a99ff1",
+          "pages": "29, 89, 124",
+          "role": "section consolidée IFRS p.89, section individuelle séparée p.29"
+        }
+      ],
+      "arithmetic_control": "3 181 millions FCFA / 9 000 000 actions = 353,44 FCFA, publié 353",
+      "caveats": [
+        "Deux PDF distincts, même vintage",
+        "Dénominateur libellé actions en circulation"
+      ]
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2021,
+      "audit_raw_value_fcfa": 308.4,
+      "review_retained_value_fcfa": 308.4,
+      "decision": "PUBLIE_RETENU_DECISION_PILOTE_RECONFIRMEE",
+      "validation_after_review": "PILOTE_DOCUMENT_UNIQUE_CONTROLE_PONDERE_CONCORDANT",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Rapport des commissaires aux comptes etats financiers consolides exercice 2022 agl cote divoire",
+          "sha256": "7b6328fe5e9d256121a7d7adea19f3d447ca598753df0dc2bde76e5c3c693f4f",
+          "pages": "3, 27",
+          "role": "comparatif consolidé 2021 et note 8.2"
+        }
+      ],
+      "arithmetic_control": "16 780 millions FCFA part du Groupe / 54 418 250 actions moyennes pondérées = 308,35 FCFA, publié 308,4",
+      "caveats": [
+        "La colonne 2021 est cohérente ; la colonne 2022 du même tableau ne l'est pas et reste traitée séparément"
+      ]
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2022,
+      "audit_raw_value_fcfa": null,
+      "audit_candidate_before_quarantine_fcfa": 250.9,
+      "review_retained_value_fcfa": null,
+      "decision": "PUBLIE_NON_RETENU_QUARANTAINE_CONFIRMEE",
+      "validation_after_review": "INCOHERENCE_INTERNE_SOURCE_CONFIRMEE",
+      "scope": "CONSOLIDE_POUR_LE_CANDIDAT_REJETE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Rapport des commissaires aux comptes etats financiers consolides exercice 2022 agl cote divoire",
+          "sha256": "7b6328fe5e9d256121a7d7adea19f3d447ca598753df0dc2bde76e5c3c693f4f",
+          "pages": "3, 27",
+          "role": "BPA consolidé candidat et note 8.2 incohérente"
+        },
+        {
+          "label": "Rapport des commissaires aux comptes ifrs etats financiers individuels exercice 2022 agl cote divoire",
+          "sha256": "c145de1603147240f4d2f4a863379a594361d34d24052e2840432541836da58c",
+          "pages": "5, 22",
+          "role": "BPA individuel 318 séparé du périmètre consolidé"
+        }
+      ],
+      "arithmetic_control": "Face consolidée : 14 124 millions part du Groupe / 54 418 250 = 259,545 FCFA, contre 250,9 publié (écart 3,3309 %). La note 8.2 répète en outre 16 780 millions pour 2022 et 2021, ce qui donnerait 308,35 FCFA. Le BPA individuel 318 est cohérent mais hors périmètre retenu.",
+      "caveats": [
+        "Aucune substitution du recalcul 259,545 ni du BPA individuel 318 au BPA consolidé publié",
+        "La quarantaine ne Peut être levée que par une version corrigée ou une explication documentée de l'émetteur/auditeur"
+      ]
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2022,
+      "audit_raw_value_fcfa": 2359.0,
+      "review_retained_value_fcfa": 2359.0,
+      "decision": "PUBLIE_RETENU_DECISION_PILOTE_RECONFIRMEE",
+      "validation_after_review": "PILOTE_DOCUMENT_UNIQUE_CONTROLE_NUMERATEUR_ET_DENOMINATEUR_STABLE",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Rapport dactivites annuel exercice 2024 sonatel sn",
+          "pages": "34",
+          "role": "tableau consolidé à trois colonnes retenu dans le pilote"
+        },
+        {
+          "label": "Etats financiers exercice 2024 sonatel sn",
+          "pages": "25",
+          "role": "valeur divergente 2 110 rejetée comme décalage de ligne"
+        }
+      ],
+      "arithmetic_control": "235 974 millions FCFA attribuables aux propriétaires / 100 000 000 actions = 2 359,74 FCFA",
+      "caveats": [
+        "La note de dénominateur pondéré explicite n'est pas republiée pour 2022 dans la source retenue"
+      ]
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2025,
+      "audit_raw_value_fcfa": 3420.0,
+      "review_retained_value_fcfa": 3420.0,
+      "decision": "PUBLIE_RETENU_DECISION_PILOTE_RECONFIRMEE",
+      "validation_after_review": "PILOTE_DOCUMENT_UNIQUE_CONTROLE_NUMERATEUR_ET_DENOMINATEUR_STABLE",
+      "scope": "CONSOLIDE",
+      "framework": "IFRS",
+      "basis": "DE_BASE",
+      "source_documents": [
+        {
+          "label": "Etats financiers 2025 et attestation des cac sonatel sn",
+          "pages": "20",
+          "role": "BPA et numérateur attribuable 2025"
+        }
+      ],
+      "arithmetic_control": "341 963 millions FCFA / 100 000 000 actions = 3 419,63 FCFA, publié 3 420",
+      "caveats": [
+        "Le condensé 2025 ne répète pas la note de dénominateur ; le contrôle utilise le dénominateur stable documenté en 2024"
+      ]
+    }
+  ]
+}

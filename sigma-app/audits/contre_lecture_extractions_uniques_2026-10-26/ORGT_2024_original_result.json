@@ -1,0 +1,204 @@
+{
+  "candidate_id": "3e2ae5ac46b8dff1",
+  "ticker": "ORGT",
+  "url": "https://www.brvm.org/sites/default/files/20250430_-_etats_financiers_-_exercice_2024_-_oragroup_tg.pdf",
+  "code_fingerprint": "84a6653cbb667afc18b8437eda6a943be09a51678379212d1eb06e1e992590be",
+  "candidate": {
+    "target_years_from_filename": [
+      2024,
+      2023,
+      2022
+    ],
+    "selection_rank_for_ticker": 3
+  },
+  "classified_document": {
+    "filename": "20250430_-_etats_financiers_-_exercice_2024_-_oragroup_tg.pdf",
+    "label": "Etats financiers exercice 2024 oragroup tg",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2024,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2025-04-30",
+    "url": "https://www.brvm.org/sites/default/files/20250430_-_etats_financiers_-_exercice_2024_-_oragroup_tg.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/oragroup",
+    "report_page_label": "ORAGROUP",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/oragroup",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/oragroup"
+    ]
+  },
+  "extraction": {
+    "columns": {
+      "courant": {},
+      "precedent": {},
+      "colonnes": {
+        "0": {},
+        "1": {}
+      }
+    },
+    "per_share_observations": {
+      "parser_version": "eps-evidence-v2.1.1",
+      "eps": [],
+      "shares": [],
+      "numerators": [],
+      "ignored": []
+    },
+    "document": {
+      "url": "https://www.brvm.org/sites/default/files/20250430_-_etats_financiers_-_exercice_2024_-_oragroup_tg.pdf",
+      "filename": "20250430_-_etats_financiers_-_exercice_2024_-_oragroup_tg.pdf",
+      "label": "Etats financiers exercice 2024 oragroup tg",
+      "link_text": "Télécharger",
+      "doc_type_filename": "etats_financiers",
+      "published_date": "2025-04-30",
+      "filename_exercice": 2024,
+      "filename_exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+      "content_exercice": null,
+      "content_exercice_status": "NON_PROUVE_PAR_LE_CONTENU",
+      "content_exercice_evidence": [],
+      "effective_exercice": 2024,
+      "period": {
+        "period_kind": "ANNUEL_OU_NON_PROUVE",
+        "interim_markers": [],
+        "filename_markers": [],
+        "content_title_markers": [],
+        "selection_status": "CANDIDAT_ANNUEL_SOUS_RESERVE_DES_AUTRES_CONTROLES"
+      },
+      "identity": {
+        "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+        "expected_ticker": "ORGT",
+        "best_ticker": "ORGT",
+        "expected_score": 36,
+        "best_other_ticker": null,
+        "best_other_score": 0,
+        "scores": {
+          "ORGT": 36
+        },
+        "evidence": [
+          {
+            "phrase": "oragroup tg",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 12,
+            "zone": "nom_fichier",
+            "page": null,
+            "weight": 3,
+            "weighted_score": 36
+          }
+        ],
+        "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+        "classifier_version": "document-selection-v2.0.0"
+      },
+      "content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [],
+        "frameworks_present": [],
+        "has_primary_financial_statements": false,
+        "has_balance_sheet": false,
+        "has_income_statement": false,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 0,
+        "content_status": "CONTENU_FINANCIER_NON_PROUVE"
+      },
+      "scope_hint_filename": "NON_PROUVE",
+      "framework_hint_filename": "NON_PROUVE",
+      "selection_status_filename": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+      "selection_rejection": null,
+      "version_label": "NON_PRECISE",
+      "version_markers": [],
+      "filename_markers": [],
+      "content_markers_first_pages": [],
+      "sha256": "ec83763add9af4f8b4cb15707d5e559047928e1992252aa91064ba4861cfee28",
+      "bytes": 1553760,
+      "cache": {
+        "status": "hit_par_url_et_nom",
+        "key": "11ac49ce802017c7-20250430_-_etats_financiers_-_exercice_2024_-_oragroup_tg.pdf"
+      },
+      "page_selection": {
+        "pages_total": 2,
+        "pages_native_text_scanned": 2,
+        "pages_structured": 2,
+        "selected_pages": [
+          1,
+          2
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 0
+      },
+      "parser_versions": {
+        "eps_evidence": "eps-evidence-v2.1.1",
+        "document_classifier": "document-selection-v2.0.0"
+      }
+    },
+    "identity": {
+      "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "expected_ticker": "ORGT",
+      "best_ticker": "ORGT",
+      "expected_score": 36,
+      "best_other_ticker": null,
+      "best_other_score": 0,
+      "scores": {
+        "ORGT": 36
+      },
+      "evidence": [
+        {
+          "phrase": "oragroup tg",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 12,
+          "zone": "nom_fichier",
+          "page": null,
+          "weight": 3,
+          "weighted_score": 36
+        }
+      ],
+      "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+      "classifier_version": "document-selection-v2.0.0"
+    },
+    "content_exercice": null,
+    "effective_exercice": 2024,
+    "notes": [
+      "Texte natif non extractible (document probablement numérisé en image)."
+    ],
+    "sha256": "ec83763add9af4f8b4cb15707d5e559047928e1992252aa91064ba4861cfee28",
+    "extraction": {
+      "method": "aucun_agregat_retenu",
+      "native_text_characters": 0,
+      "page_selection": {
+        "pages_total": 2,
+        "pages_native_text_scanned": 2,
+        "pages_structured": 2,
+        "selected_pages": [
+          1,
+          2
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 0
+      },
+      "document_identity_status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "selection_rejection": null,
+      "ocr": {
+        "available": null,
+        "attempted": false,
+        "used": false,
+        "cache_status": "non_appele",
+        "pages_ocrees": 0,
+        "mean_confidence": null,
+        "truncated": false
+      }
+    }
+  },
+  "document_sha256": "ec83763add9af4f8b4cb15707d5e559047928e1992252aa91064ba4861cfee28",
+  "extraction_seconds": 3.554
+}

@@ -1,0 +1,3360 @@
+{
+  "candidate_id": "1fc0a95acc43fba9",
+  "ticker": "ABJC",
+  "url": "https://www.brvm.org/sites/default/files/20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf",
+  "code_fingerprint": "84a6653cbb667afc18b8437eda6a943be09a51678379212d1eb06e1e992590be",
+  "candidate": {
+    "target_years_from_filename": [
+      2025,
+      2024,
+      2023
+    ],
+    "selection_rank_for_ticker": 1
+  },
+  "classified_document": {
+    "filename": "20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf",
+    "label": "Etats financiers ifrs exercice 2025 servair abidjan ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2025,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2026-04-27",
+    "url": "https://www.brvm.org/sites/default/files/20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "IFRS",
+    "framework_hint_evidence": [
+      "ifrs"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci",
+    "report_page_label": "SERVAIR ABIDJAN CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci"
+    ]
+  },
+  "extraction": {
+    "columns": {
+      "courant": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 13298000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Chiffre d'affaires 17 13 298 12 467",
+              "raw_token": "13298.0",
+              "context_lines": [
+                "II. Etat du résultat global provisoire",
+                "(en millions FCFA) Note 2025 2024",
+                "Chiffre d'affaires 17 13 298 12 467",
+                "Produits des ventes 13 298 12 467",
+                "Achats consommés 18 (5 647) (4 794)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 13298000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 13298000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 1331000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 3,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Résultat de l'exercice 1 1 331 1 515",
+              "raw_token": "1331.0",
+              "context_lines": [
+                "Ecart de réévaluation 12 56 56",
+                "Réserves consolidés 12 2 762 1 247",
+                "Résultat de l'exercice 1 1 331 1 515",
+                "Total capitaux propres 5 512 4 182",
+                "Impôts différés passifs 8 8 16"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 2,
+              "line": "Résultat net de l'ensemble 12 1 331 1 515",
+              "raw_token": "1331.0",
+              "context_lines": [
+                "Résultat avant impôt 2 179 2 093",
+                "Charge d'impôt sur le résultat 8 (848) (578)",
+                "Résultat net de l'ensemble 12 1 331 1 515",
+                "Nombre total des actions 10 912 000 10 912 000",
+                "Résultat net par action (de base et dilué) 12 122 139"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 3,
+              "line": "Résultat net 1 331 1 515",
+              "raw_token": "1331.0",
+              "context_lines": [
+                "(en millions de FCFA) 2025 2024",
+                "Flux de trésorerie lié à l'activité",
+                "Résultat net 1 331 1 515",
+                "Dotation aux amortissements (y compris droit d'utilisation) 363 402",
+                "Provisions nettes pour risques et charges (33) (66)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1331000000,
+              "value_kind": "fcfa",
+              "occurrences": 3,
+              "pages": [
+                1,
+                2,
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 1331000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 5512000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Total capitaux propres 5 512 4 182",
+              "raw_token": "5512.0",
+              "context_lines": [
+                "Réserves consolidés 12 2 762 1 247",
+                "Résultat de l'exercice 1 1 331 1 515",
+                "Total capitaux propres 5 512 4 182",
+                "Impôts différés passifs 8 8 16",
+                "Emprunts et dettes financières non courants 13 66 79"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 2025000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 5512000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 5512000000,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 9632000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Total de l'actif 9 632 9 760",
+              "raw_token": "9632.0",
+              "context_lines": [
+                "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                "Total de l'actif courant 7 794 8 199",
+                "Total de l'actif 9 632 9 760",
+                "PASSIF ET CAPITAUX PROPRES (en millions de FCFA) Note 2025 2024",
+                "Capital social 12 1 364 1 364"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "Total du passif et des capitaux propres 9 632 9 760",
+              "raw_token": "9632.0",
+              "context_lines": [
+                "Autres créditeurs et dettes diverses 16 973 1 055",
+                "Total des passifs courants 3 107 4 428",
+                "Total du passif et des capitaux propres 9 632 9 760"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1838000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 7794000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 9632000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 9632000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 1431000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+              "raw_token": "1431.0",
+              "context_lines": [
+                "Variation nette des créances clients et débiteurs divers 1 127 (1 089)",
+                "Variation nette des fournisseurs et créditeurs divers (1 330) (1 148)",
+                "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1431000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 1431000000,
+          "confidence": "extraction_unique"
+        },
+        "investissements_immobilisations": {
+          "label": "Investissements en immobilisations (flux)",
+          "value": -681000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+              "raw_token": "-681.0",
+              "context_lines": [
+                "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+                "Encaissement sur cession d'immobilisations corporelles - 0",
+                "Décaissements liés aux acquisitions d'immobilisations financières (9) (12)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -681000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -681000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 4035000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+              "raw_token": "4035.0",
+              "context_lines": [
+                "Créances clients 10 2 554 3 034",
+                "Autres débiteurs 10 531 1 110",
+                "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                "Total de l'actif courant 7 794 8 199",
+                "Total de l'actif 9 632 9 760"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 3,
+              "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428",
+              "raw_token": "4035.0",
+              "context_lines": [
+                "Variation monétaire (e) = (a) + (b) + (c) 607 (4 249)",
+                "Disponibilités et quasi-disponibilités à l'ouverture (d) 3 428 7 677",
+                "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 4035000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1,
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 4035000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "benefice_par_action": {
+          "label": "Bénéfice net par action publié",
+          "value": 122.0,
+          "value_kind": "fcfa_par_action",
+          "unit_label": "FCFA par action",
+          "source_amount_count": 1,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Résultat net par action (de base et dilué) 12 122 139",
+              "raw_token": "122",
+              "context_lines": [
+                "Résultat net de l'ensemble 12 1 331 1 515",
+                "Nombre total des actions 10 912 000 10 912 000",
+                "Résultat net par action (de base et dilué) 12 122 139"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "FCFA par action",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": "eps-evidence-v2.1.1",
+              "parser_rule": "fr_resultat_par_action"
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "published_decimals": 0,
+          "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "eps_metadata": {
+            "kind": "BPA_PUBLIE",
+            "value": 122.0,
+            "raw_token": "122",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "target_exercice": 2025,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": []
+          },
+          "source_multiplier": 1,
+          "candidate_groups": [
+            {
+              "value": 122.0,
+              "value_kind": "fcfa_par_action",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": "FCFA",
+              "component": "TOTAL",
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "confidence": "extraction_unique"
+        }
+      },
+      "precedent": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 12467000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Chiffre d'affaires 17 13 298 12 467",
+              "raw_token": "12467.0",
+              "context_lines": [
+                "II. Etat du résultat global provisoire",
+                "(en millions FCFA) Note 2025 2024",
+                "Chiffre d'affaires 17 13 298 12 467",
+                "Produits des ventes 13 298 12 467",
+                "Achats consommés 18 (5 647) (4 794)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 12467000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 12467000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 1515000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 3,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Résultat de l'exercice 1 1 331 1 515",
+              "raw_token": "1515.0",
+              "context_lines": [
+                "Ecart de réévaluation 12 56 56",
+                "Réserves consolidés 12 2 762 1 247",
+                "Résultat de l'exercice 1 1 331 1 515",
+                "Total capitaux propres 5 512 4 182",
+                "Impôts différés passifs 8 8 16"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 2,
+              "line": "Résultat net de l'ensemble 12 1 331 1 515",
+              "raw_token": "1515.0",
+              "context_lines": [
+                "Résultat avant impôt 2 179 2 093",
+                "Charge d'impôt sur le résultat 8 (848) (578)",
+                "Résultat net de l'ensemble 12 1 331 1 515",
+                "Nombre total des actions 10 912 000 10 912 000",
+                "Résultat net par action (de base et dilué) 12 122 139"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 3,
+              "line": "Résultat net 1 331 1 515",
+              "raw_token": "1515.0",
+              "context_lines": [
+                "(en millions de FCFA) 2025 2024",
+                "Flux de trésorerie lié à l'activité",
+                "Résultat net 1 331 1 515",
+                "Dotation aux amortissements (y compris droit d'utilisation) 363 402",
+                "Provisions nettes pour risques et charges (33) (66)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1515000000,
+              "value_kind": "fcfa",
+              "occurrences": 3,
+              "pages": [
+                1,
+                2,
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 1515000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 4182000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Total capitaux propres 5 512 4 182",
+              "raw_token": "4182.0",
+              "context_lines": [
+                "Réserves consolidés 12 2 762 1 247",
+                "Résultat de l'exercice 1 1 331 1 515",
+                "Total capitaux propres 5 512 4 182",
+                "Impôts différés passifs 8 8 16",
+                "Emprunts et dettes financières non courants 13 66 79"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 2024000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 4182000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 4182000000,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 9760000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Total de l'actif 9 632 9 760",
+              "raw_token": "9760.0",
+              "context_lines": [
+                "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                "Total de l'actif courant 7 794 8 199",
+                "Total de l'actif 9 632 9 760",
+                "PASSIF ET CAPITAUX PROPRES (en millions de FCFA) Note 2025 2024",
+                "Capital social 12 1 364 1 364"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "Total du passif et des capitaux propres 9 632 9 760",
+              "raw_token": "9760.0",
+              "context_lines": [
+                "Autres créditeurs et dettes diverses 16 973 1 055",
+                "Total des passifs courants 3 107 4 428",
+                "Total du passif et des capitaux propres 9 632 9 760"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1561000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 8199000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 9760000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 9760000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": -429000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+              "raw_token": "-429.0",
+              "context_lines": [
+                "Variation nette des créances clients et débiteurs divers 1 127 (1 089)",
+                "Variation nette des fournisseurs et créditeurs divers (1 330) (1 148)",
+                "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -429000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -429000000,
+          "confidence": "extraction_unique"
+        },
+        "investissements_immobilisations": {
+          "label": "Investissements en immobilisations (flux)",
+          "value": -395000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+              "raw_token": "-395.0",
+              "context_lines": [
+                "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+                "Encaissement sur cession d'immobilisations corporelles - 0",
+                "Décaissements liés aux acquisitions d'immobilisations financières (9) (12)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -395000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -395000000,
+          "confidence": "extraction_unique"
+        },
+        "dividendes_verses": {
+          "label": "Dividendes versés (flux)",
+          "value": -3302000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 1,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Dividendes versés - (3 302)",
+              "raw_token": "-3302.0",
+              "context_lines": [
+                "Encaissements liés aux emprunts - -",
+                "Décaissements liés aux emprunts (135) (120)",
+                "Dividendes versés - (3 302)",
+                "Trésorerie générée par les activités de financement (c) (135) (3 422)",
+                "Variation monétaire (e) = (a) + (b) + (c) 607 (4 249)"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -3302000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -3302000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 3428000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+              "raw_token": "3428.0",
+              "context_lines": [
+                "Créances clients 10 2 554 3 034",
+                "Autres débiteurs 10 531 1 110",
+                "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                "Total de l'actif courant 7 794 8 199",
+                "Total de l'actif 9 632 9 760"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                "line_index": 6,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 3,
+              "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428",
+              "raw_token": "3428.0",
+              "context_lines": [
+                "Variation monétaire (e) = (a) + (b) + (c) 607 (4 249)",
+                "Disponibilités et quasi-disponibilités à l'ouverture (d) 3 428 7 677",
+                "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions de FCFA) 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 3428000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1,
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 3428000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "benefice_par_action": {
+          "label": "Bénéfice net par action publié",
+          "value": 139.0,
+          "value_kind": "fcfa_par_action",
+          "unit_label": "FCFA par action",
+          "source_amount_count": 1,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Résultat net par action (de base et dilué) 12 122 139",
+              "raw_token": "139",
+              "context_lines": [
+                "Résultat net de l'ensemble 12 1 331 1 515",
+                "Nombre total des actions 10 912 000 10 912 000",
+                "Résultat net par action (de base et dilué) 12 122 139"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "FCFA par action",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": "eps-evidence-v2.1.1",
+              "parser_rule": "fr_resultat_par_action"
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "published_decimals": 0,
+          "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "eps_metadata": {
+            "kind": "BPA_PUBLIE",
+            "value": 139.0,
+            "raw_token": "139",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "target_exercice": 2024,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": []
+          },
+          "source_multiplier": 1,
+          "candidate_groups": [
+            {
+              "value": 139.0,
+              "value_kind": "fcfa_par_action",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": "FCFA",
+              "component": "TOTAL",
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "confidence": "extraction_unique"
+        }
+      },
+      "colonnes": {
+        "0": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 13298000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Chiffre d'affaires 17 13 298 12 467",
+                "raw_token": "13298.0",
+                "context_lines": [
+                  "II. Etat du résultat global provisoire",
+                  "(en millions FCFA) Note 2025 2024",
+                  "Chiffre d'affaires 17 13 298 12 467",
+                  "Produits des ventes 13 298 12 467",
+                  "Achats consommés 18 (5 647) (4 794)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 13298000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 13298000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 1331000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 3,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Résultat de l'exercice 1 1 331 1 515",
+                "raw_token": "1331.0",
+                "context_lines": [
+                  "Ecart de réévaluation 12 56 56",
+                  "Réserves consolidés 12 2 762 1 247",
+                  "Résultat de l'exercice 1 1 331 1 515",
+                  "Total capitaux propres 5 512 4 182",
+                  "Impôts différés passifs 8 8 16"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 2,
+                "line": "Résultat net de l'ensemble 12 1 331 1 515",
+                "raw_token": "1331.0",
+                "context_lines": [
+                  "Résultat avant impôt 2 179 2 093",
+                  "Charge d'impôt sur le résultat 8 (848) (578)",
+                  "Résultat net de l'ensemble 12 1 331 1 515",
+                  "Nombre total des actions 10 912 000 10 912 000",
+                  "Résultat net par action (de base et dilué) 12 122 139"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 3,
+                "line": "Résultat net 1 331 1 515",
+                "raw_token": "1331.0",
+                "context_lines": [
+                  "(en millions de FCFA) 2025 2024",
+                  "Flux de trésorerie lié à l'activité",
+                  "Résultat net 1 331 1 515",
+                  "Dotation aux amortissements (y compris droit d'utilisation) 363 402",
+                  "Provisions nettes pour risques et charges (33) (66)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1331000000,
+                "value_kind": "fcfa",
+                "occurrences": 3,
+                "pages": [
+                  1,
+                  2,
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 1331000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 5512000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Total capitaux propres 5 512 4 182",
+                "raw_token": "5512.0",
+                "context_lines": [
+                  "Réserves consolidés 12 2 762 1 247",
+                  "Résultat de l'exercice 1 1 331 1 515",
+                  "Total capitaux propres 5 512 4 182",
+                  "Impôts différés passifs 8 8 16",
+                  "Emprunts et dettes financières non courants 13 66 79"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 2025000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 5512000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 5512000000,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 9632000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Total de l'actif 9 632 9 760",
+                "raw_token": "9632.0",
+                "context_lines": [
+                  "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                  "Total de l'actif courant 7 794 8 199",
+                  "Total de l'actif 9 632 9 760",
+                  "PASSIF ET CAPITAUX PROPRES (en millions de FCFA) Note 2025 2024",
+                  "Capital social 12 1 364 1 364"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "Total du passif et des capitaux propres 9 632 9 760",
+                "raw_token": "9632.0",
+                "context_lines": [
+                  "Autres créditeurs et dettes diverses 16 973 1 055",
+                  "Total des passifs courants 3 107 4 428",
+                  "Total du passif et des capitaux propres 9 632 9 760"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1838000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 7794000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 9632000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 9632000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 1431000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                "raw_token": "1431.0",
+                "context_lines": [
+                  "Variation nette des créances clients et débiteurs divers 1 127 (1 089)",
+                  "Variation nette des fournisseurs et créditeurs divers (1 330) (1 148)",
+                  "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1431000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 1431000000,
+            "confidence": "extraction_unique"
+          },
+          "investissements_immobilisations": {
+            "label": "Investissements en immobilisations (flux)",
+            "value": -681000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+                "raw_token": "-681.0",
+                "context_lines": [
+                  "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+                  "Encaissement sur cession d'immobilisations corporelles - 0",
+                  "Décaissements liés aux acquisitions d'immobilisations financières (9) (12)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -681000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -681000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 4035000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                "raw_token": "4035.0",
+                "context_lines": [
+                  "Créances clients 10 2 554 3 034",
+                  "Autres débiteurs 10 531 1 110",
+                  "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                  "Total de l'actif courant 7 794 8 199",
+                  "Total de l'actif 9 632 9 760"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 3,
+                "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428",
+                "raw_token": "4035.0",
+                "context_lines": [
+                  "Variation monétaire (e) = (a) + (b) + (c) 607 (4 249)",
+                  "Disponibilités et quasi-disponibilités à l'ouverture (d) 3 428 7 677",
+                  "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 4035000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1,
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 4035000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "benefice_par_action": {
+            "label": "Bénéfice net par action publié",
+            "value": 122.0,
+            "value_kind": "fcfa_par_action",
+            "unit_label": "FCFA par action",
+            "source_amount_count": 1,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Résultat net par action (de base et dilué) 12 122 139",
+                "raw_token": "122",
+                "context_lines": [
+                  "Résultat net de l'ensemble 12 1 331 1 515",
+                  "Nombre total des actions 10 912 000 10 912 000",
+                  "Résultat net par action (de base et dilué) 12 122 139"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "FCFA par action",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": "eps-evidence-v2.1.1",
+                "parser_rule": "fr_resultat_par_action"
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "published_decimals": 0,
+            "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "eps_metadata": {
+              "kind": "BPA_PUBLIE",
+              "value": 122.0,
+              "raw_token": "122",
+              "token_repair": null,
+              "published_decimals": 0,
+              "is_dash": false,
+              "currency": "FCFA",
+              "currency_source": "LIGNE_OU_CONTEXTE",
+              "unit_label": "FCFA par action",
+              "page_monetary_scale_multiplier": 1000000,
+              "page_monetary_scale_label": "millions",
+              "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+              "per_share_unit_explicit": false,
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "component": "TOTAL",
+              "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+              "accounting_scope": "NON_PROUVE",
+              "accounting_scope_source": "AUCUNE",
+              "framework": "NON_PROUVE",
+              "target_exercice": 2025,
+              "year_offset_from_document": 0,
+              "column_year_source": "EN_TETE_DE_COLONNES",
+              "physical_column_index": 0,
+              "trailing_slots_ignored": 0,
+              "source_kind": "ETAT_OU_NOTE",
+              "eligible_fcfa_total_basic": true,
+              "ineligibility_reasons": []
+            },
+            "source_multiplier": 1,
+            "candidate_groups": [
+              {
+                "value": 122.0,
+                "value_kind": "fcfa_par_action",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": "FCFA",
+                "component": "TOTAL",
+                "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "confidence": "extraction_unique"
+          }
+        },
+        "1": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 12467000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Chiffre d'affaires 17 13 298 12 467",
+                "raw_token": "12467.0",
+                "context_lines": [
+                  "II. Etat du résultat global provisoire",
+                  "(en millions FCFA) Note 2025 2024",
+                  "Chiffre d'affaires 17 13 298 12 467",
+                  "Produits des ventes 13 298 12 467",
+                  "Achats consommés 18 (5 647) (4 794)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 12467000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 12467000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 1515000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 3,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Résultat de l'exercice 1 1 331 1 515",
+                "raw_token": "1515.0",
+                "context_lines": [
+                  "Ecart de réévaluation 12 56 56",
+                  "Réserves consolidés 12 2 762 1 247",
+                  "Résultat de l'exercice 1 1 331 1 515",
+                  "Total capitaux propres 5 512 4 182",
+                  "Impôts différés passifs 8 8 16"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 2,
+                "line": "Résultat net de l'ensemble 12 1 331 1 515",
+                "raw_token": "1515.0",
+                "context_lines": [
+                  "Résultat avant impôt 2 179 2 093",
+                  "Charge d'impôt sur le résultat 8 (848) (578)",
+                  "Résultat net de l'ensemble 12 1 331 1 515",
+                  "Nombre total des actions 10 912 000 10 912 000",
+                  "Résultat net par action (de base et dilué) 12 122 139"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 3,
+                "line": "Résultat net 1 331 1 515",
+                "raw_token": "1515.0",
+                "context_lines": [
+                  "(en millions de FCFA) 2025 2024",
+                  "Flux de trésorerie lié à l'activité",
+                  "Résultat net 1 331 1 515",
+                  "Dotation aux amortissements (y compris droit d'utilisation) 363 402",
+                  "Provisions nettes pour risques et charges (33) (66)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1515000000,
+                "value_kind": "fcfa",
+                "occurrences": 3,
+                "pages": [
+                  1,
+                  2,
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 1515000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 4182000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Total capitaux propres 5 512 4 182",
+                "raw_token": "4182.0",
+                "context_lines": [
+                  "Réserves consolidés 12 2 762 1 247",
+                  "Résultat de l'exercice 1 1 331 1 515",
+                  "Total capitaux propres 5 512 4 182",
+                  "Impôts différés passifs 8 8 16",
+                  "Emprunts et dettes financières non courants 13 66 79"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 2024000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 4182000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 4182000000,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 9760000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Total de l'actif 9 632 9 760",
+                "raw_token": "9760.0",
+                "context_lines": [
+                  "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                  "Total de l'actif courant 7 794 8 199",
+                  "Total de l'actif 9 632 9 760",
+                  "PASSIF ET CAPITAUX PROPRES (en millions de FCFA) Note 2025 2024",
+                  "Capital social 12 1 364 1 364"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "Total du passif et des capitaux propres 9 632 9 760",
+                "raw_token": "9760.0",
+                "context_lines": [
+                  "Autres créditeurs et dettes diverses 16 973 1 055",
+                  "Total des passifs courants 3 107 4 428",
+                  "Total du passif et des capitaux propres 9 632 9 760"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1561000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 8199000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 9760000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 9760000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": -429000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                "raw_token": "-429.0",
+                "context_lines": [
+                  "Variation nette des créances clients et débiteurs divers 1 127 (1 089)",
+                  "Variation nette des fournisseurs et créditeurs divers (1 330) (1 148)",
+                  "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -429000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -429000000,
+            "confidence": "extraction_unique"
+          },
+          "investissements_immobilisations": {
+            "label": "Investissements en immobilisations (flux)",
+            "value": -395000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+                "raw_token": "-395.0",
+                "context_lines": [
+                  "Trésorerie générée par les activités d'exploitation (a) 1 431 (429)",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (681) (395)",
+                  "Encaissement sur cession d'immobilisations corporelles - 0",
+                  "Décaissements liés aux acquisitions d'immobilisations financières (9) (12)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -395000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -395000000,
+            "confidence": "extraction_unique"
+          },
+          "dividendes_verses": {
+            "label": "Dividendes versés (flux)",
+            "value": -3302000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 1,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Dividendes versés - (3 302)",
+                "raw_token": "-3302.0",
+                "context_lines": [
+                  "Encaissements liés aux emprunts - -",
+                  "Décaissements liés aux emprunts (135) (120)",
+                  "Dividendes versés - (3 302)",
+                  "Trésorerie générée par les activités de financement (c) (135) (3 422)",
+                  "Variation monétaire (e) = (a) + (b) + (c) 607 (4 249)"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -3302000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -3302000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 3428000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                "raw_token": "3428.0",
+                "context_lines": [
+                  "Créances clients 10 2 554 3 034",
+                  "Autres débiteurs 10 531 1 110",
+                  "Trésorerie et équivalents de trésorerie 11 4 035 3 428",
+                  "Total de l'actif courant 7 794 8 199",
+                  "Total de l'actif 9 632 9 760"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 2025 2024",
+                  "line_index": 6,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 3,
+                "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428",
+                "raw_token": "3428.0",
+                "context_lines": [
+                  "Variation monétaire (e) = (a) + (b) + (c) 607 (4 249)",
+                  "Disponibilités et quasi-disponibilités à l'ouverture (d) 3 428 7 677",
+                  "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 4 035 3 428"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions de FCFA) 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 3428000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1,
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 3428000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "benefice_par_action": {
+            "label": "Bénéfice net par action publié",
+            "value": 139.0,
+            "value_kind": "fcfa_par_action",
+            "unit_label": "FCFA par action",
+            "source_amount_count": 1,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Résultat net par action (de base et dilué) 12 122 139",
+                "raw_token": "139",
+                "context_lines": [
+                  "Résultat net de l'ensemble 12 1 331 1 515",
+                  "Nombre total des actions 10 912 000 10 912 000",
+                  "Résultat net par action (de base et dilué) 12 122 139"
+                ],
+                "column_header": {
+                  "years": [
+                    2025,
+                    2024
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 2025 2024",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "FCFA par action",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": "eps-evidence-v2.1.1",
+                "parser_rule": "fr_resultat_par_action"
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "published_decimals": 0,
+            "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "eps_metadata": {
+              "kind": "BPA_PUBLIE",
+              "value": 139.0,
+              "raw_token": "139",
+              "token_repair": null,
+              "published_decimals": 0,
+              "is_dash": false,
+              "currency": "FCFA",
+              "currency_source": "LIGNE_OU_CONTEXTE",
+              "unit_label": "FCFA par action",
+              "page_monetary_scale_multiplier": 1000000,
+              "page_monetary_scale_label": "millions",
+              "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+              "per_share_unit_explicit": false,
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "component": "TOTAL",
+              "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+              "accounting_scope": "NON_PROUVE",
+              "accounting_scope_source": "AUCUNE",
+              "framework": "NON_PROUVE",
+              "target_exercice": 2024,
+              "year_offset_from_document": 1,
+              "column_year_source": "EN_TETE_DE_COLONNES",
+              "physical_column_index": 1,
+              "trailing_slots_ignored": 0,
+              "source_kind": "ETAT_OU_NOTE",
+              "eligible_fcfa_total_basic": true,
+              "ineligibility_reasons": []
+            },
+            "source_multiplier": 1,
+            "candidate_groups": [
+              {
+                "value": 139.0,
+                "value_kind": "fcfa_par_action",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "NON_PROUVE|NON_PROUVE|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": "FCFA",
+                "component": "TOTAL",
+                "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "confidence": "extraction_unique"
+          }
+        }
+      },
+      "_per_share_observations": {
+        "parser_version": "eps-evidence-v2.1.1",
+        "eps": [
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 122.0,
+            "raw_token": "122",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "target_exercice": 2025,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": [],
+            "evidence": {
+              "page": 2,
+              "line_index_on_page": 24,
+              "line_original": "Résultat net par action (de base et dilué) 12 122 139",
+              "raw_token": "122",
+              "context_lines": [
+                "Résultat net de l'ensemble 12 1 331 1 515",
+                "Nombre total des actions 10 912 000 10 912 000",
+                "Résultat net par action (de base et dilué) 12 122 139"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 139.0,
+            "raw_token": "139",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "target_exercice": 2024,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": [],
+            "evidence": {
+              "page": 2,
+              "line_index_on_page": 24,
+              "line_original": "Résultat net par action (de base et dilué) 12 122 139",
+              "raw_token": "139",
+              "context_lines": [
+                "Résultat net de l'ensemble 12 1 331 1 515",
+                "Nombre total des actions 10 912 000 10 912 000",
+                "Résultat net par action (de base et dilué) 12 122 139"
+              ],
+              "column_header": {
+                "years": [
+                  2025,
+                  2024
+                ],
+                "evidence_line": "(en millions FCFA) Note 2025 2024",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "shares": [],
+        "numerators": [],
+        "ignored": []
+      },
+      "_content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [],
+        "frameworks_present": [],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 3,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "_page_contexts": [
+        {
+          "page": 1,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "NON_PROUVE",
+          "framework_source": "AUCUNE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "SERVAIR ABIDJAN Société anonyme au capital de 1 364 000 000 FCFA Siège social : Aéroport Felix Houphouet Boigny 07 BP 08 ABIDJAN 07 RCCM : CI-ABJ-1969-B-6360 I. Etat de la situation financière provisoire ACTIF (en millions de FCFA) Note 2025 2024 Immobilisations incorporelles 4 183 225 Droits d'usage des immobilisation"
+        },
+        {
+          "page": 2,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "NON_PROUVE",
+          "framework_source": "AUCUNE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "II. Etat du résultat global provisoire (en millions FCFA) Note 2025 2024 Chiffre d'affaires 17 13 298 12 467 Produits des ventes 13 298 12 467 Achats consommés 18 (5 647) (4 794) Charges externes 19 (2 350) (2 295) Charges de personnel 20 (2 544) (2 377) Impôts et taxes 8 (488) (408) Dotations aux amortissements et dép"
+        },
+        {
+          "page": 3,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "NON_PROUVE",
+          "framework_source": "AUCUNE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "III. Tableau des Flux de trésorerie provisoire (en millions de FCFA) 2025 2024 Flux de trésorerie lié à l'activité Résultat net 1 331 1 515 Dotation aux amortissements (y compris droit d'utilisation) 363 402 Provisions nettes pour risques et charges (33) (66) Impôts & Impôts différés 8 (17) Eléments calculés 339 319 Va"
+        }
+      ]
+    },
+    "per_share_observations": {
+      "parser_version": "eps-evidence-v2.1.1",
+      "eps": [
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 122.0,
+          "raw_token": "122",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1000000,
+          "page_monetary_scale_label": "millions",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "target_exercice": 2025,
+          "year_offset_from_document": 0,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": true,
+          "ineligibility_reasons": [],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 24,
+            "line_original": "Résultat net par action (de base et dilué) 12 122 139",
+            "raw_token": "122",
+            "context_lines": [
+              "Résultat net de l'ensemble 12 1 331 1 515",
+              "Nombre total des actions 10 912 000 10 912 000",
+              "Résultat net par action (de base et dilué) 12 122 139"
+            ],
+            "column_header": {
+              "years": [
+                2025,
+                2024
+              ],
+              "evidence_line": "(en millions FCFA) Note 2025 2024",
+              "line_index": 1,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 139.0,
+          "raw_token": "139",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1000000,
+          "page_monetary_scale_label": "millions",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "target_exercice": 2024,
+          "year_offset_from_document": 1,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": true,
+          "ineligibility_reasons": [],
+          "evidence": {
+            "page": 2,
+            "line_index_on_page": 24,
+            "line_original": "Résultat net par action (de base et dilué) 12 122 139",
+            "raw_token": "139",
+            "context_lines": [
+              "Résultat net de l'ensemble 12 1 331 1 515",
+              "Nombre total des actions 10 912 000 10 912 000",
+              "Résultat net par action (de base et dilué) 12 122 139"
+            ],
+            "column_header": {
+              "years": [
+                2025,
+                2024
+              ],
+              "evidence_line": "(en millions FCFA) Note 2025 2024",
+              "line_index": 1,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "shares": [],
+      "numerators": [],
+      "ignored": []
+    },
+    "document": {
+      "url": "https://www.brvm.org/sites/default/files/20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf",
+      "filename": "20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2025 servair abidjan ci",
+      "link_text": "Télécharger",
+      "doc_type_filename": "etats_financiers",
+      "published_date": "2026-04-27",
+      "filename_exercice": 2025,
+      "filename_exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+      "content_exercice": 2025,
+      "content_exercice_status": "DEDUIT_DES_EN_TETES_DE_COLONNES",
+      "content_exercice_evidence": [],
+      "effective_exercice": 2025,
+      "period": {
+        "period_kind": "ANNUEL_OU_NON_PROUVE",
+        "interim_markers": [],
+        "filename_markers": [],
+        "content_title_markers": [],
+        "selection_status": "CANDIDAT_ANNUEL_SOUS_RESERVE_DES_AUTRES_CONTROLES"
+      },
+      "identity": {
+        "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+        "expected_ticker": "ABJC",
+        "best_ticker": "ABJC",
+        "expected_score": 45,
+        "best_other_ticker": null,
+        "best_other_score": 0,
+        "scores": {
+          "ABJC": 45
+        },
+        "evidence": [
+          {
+            "phrase": "servair abidjan ci",
+            "ticker": "ABJC",
+            "occurrences_capped": 3,
+            "score": 15,
+            "zone": "nom_fichier",
+            "page": null,
+            "weight": 3,
+            "weighted_score": 45
+          }
+        ],
+        "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+        "classifier_version": "document-selection-v2.0.0"
+      },
+      "content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [],
+        "frameworks_present": [],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 3,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "scope_hint_filename": "NON_PROUVE",
+      "framework_hint_filename": "IFRS",
+      "selection_status_filename": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+      "selection_rejection": null,
+      "version_label": "NON_AUDITE_OU_PROVISOIRE",
+      "version_markers": [
+        "NON_AUDITE_OU_PROVISOIRE"
+      ],
+      "filename_markers": [],
+      "content_markers_first_pages": [
+        "NON_AUDITE_OU_PROVISOIRE"
+      ],
+      "sha256": "b462e7b0ec2ad1693feaca6b1f887a897854f523a51ae960226f011cd53ed8f0",
+      "bytes": 136490,
+      "cache": {
+        "status": "hit_par_url_et_nom",
+        "key": "a0cf8ecb15275fc4-20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf"
+      },
+      "page_selection": {
+        "pages_total": 3,
+        "pages_native_text_scanned": 3,
+        "pages_structured": 3,
+        "selected_pages": [
+          1,
+          2,
+          3
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 4049
+      },
+      "parser_versions": {
+        "eps_evidence": "eps-evidence-v2.1.1",
+        "document_classifier": "document-selection-v2.0.0"
+      }
+    },
+    "identity": {
+      "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "expected_ticker": "ABJC",
+      "best_ticker": "ABJC",
+      "expected_score": 45,
+      "best_other_ticker": null,
+      "best_other_score": 0,
+      "scores": {
+        "ABJC": 45
+      },
+      "evidence": [
+        {
+          "phrase": "servair abidjan ci",
+          "ticker": "ABJC",
+          "occurrences_capped": 3,
+          "score": 15,
+          "zone": "nom_fichier",
+          "page": null,
+          "weight": 3,
+          "weighted_score": 45
+        }
+      ],
+      "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+      "classifier_version": "document-selection-v2.0.0"
+    },
+    "content_exercice": 2025,
+    "effective_exercice": 2025,
+    "notes": [],
+    "sha256": "b462e7b0ec2ad1693feaca6b1f887a897854f523a51ae960226f011cd53ed8f0",
+    "extraction": {
+      "method": "texte_natif",
+      "native_text_characters": 4049,
+      "page_selection": {
+        "pages_total": 3,
+        "pages_native_text_scanned": 3,
+        "pages_structured": 3,
+        "selected_pages": [
+          1,
+          2,
+          3
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 4049
+      },
+      "document_identity_status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "selection_rejection": null,
+      "ocr": {
+        "available": null,
+        "attempted": false,
+        "used": false,
+        "cache_status": "non_appele",
+        "pages_ocrees": 0,
+        "mean_confidence": null,
+        "truncated": false
+      }
+    }
+  },
+  "document_sha256": "b462e7b0ec2ad1693feaca6b1f887a897854f523a51ae960226f011cd53ed8f0",
+  "extraction_seconds": 0.281
+}

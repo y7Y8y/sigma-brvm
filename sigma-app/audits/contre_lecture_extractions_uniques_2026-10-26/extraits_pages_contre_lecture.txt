@@ -1,0 +1,762 @@
+
+===== ABJC_2023_approuves :: c8a8277ac156d381-20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf =====
+pages=33
+
+--- PAGE 1 ---
+ETATS FINANCIERS ANNUELS IFRS
+Exercice de 12 mois clos le 31 décembre 2023
+1
+
+--- PAGE 5 ---
+II. Etat du résultat global
+(en millions FCFA) Note 31-déc-23 31-déc-22
+Chiffre d'affaires 17 11 254 10 804
+Produits des ventes 11 254 10 804
+Achats consommés 18 (4 071) (3 559)
+Charges externes 19 (1 944) (1 864)
+Charges de personnel 20 (2 381) (2 281)
+Impôts et taxes 8 (433) (643)
+Dotations aux amortissements et dépréciations 21 (391) (429)
+Dotations aux provisions nettes 22 (88) 15
+Charges provisionnées nettes (hors créances
+23 - -
+commerciales)
+Charges provisionnées nettes sur créances commerciales 22 62 6
+Autres produits d'exploitation 170 114
+Autres charges d'exploitation - (240)
+Résultat opérationnel courant 2 179 1 921
+Autres produits et charges opérationnels (212) (35)
+Résultat opérationnel 1 967 1 886
+Coût de l'endettement financier brut 13 (78) (36)
+Revenus des équivalents de trésorerie 11 36 104
+Autres produits et charges financiers 13 0 3
+Résultat financier (42) 70
+Résultat avant impôt 1 925 1 956
+Quote-part du résultat net des sociétés mises en équivalence - -
+Charge d'impôt sur le résultat 8 (568) (683)
+Résultat net de l'ensemble 12 1 358 1 272
+10 912 10 912
+Nombre total des actions
+000 000
+Résultat net par action (de base et dilué) 12 124 117
+Eléments recyclables en résultat 12 - -
+Eléments non recyclables en résultat 13 - -
+(Pertes) / gains actuariels 13 - -
+Impôts différés sur les écarts actuariels 12 - -
+Autres éléments du résultat global nets d'impôts - -
+Résultat global 12 1 358 1 272
+5
+
+--- PAGE 25 ---
+Le capital est 1 364 millions de FCFA réparti en 545 600 actions de 2 500 FCFA réparti comme
+suit :
+Servair Investissement Aéroportuaire 80%
+Divers Investisseurs UEMOA 20%
+Les capitaux propres ressortent ainsi :
+En millions de FCFA Au 31 déc 23 Au 31 déc 22
+Capital social 1 364 1 364
+Ecart de réévaluation 56 56
+Réserve légale 273 273
+Autres réserves 2 116 1 959
+Résultat de l'exercice 1 358 1 272
+Capitaux propres 5 167 4 924
+La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.
+Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions
+en circulation de 10 912 000 sur les deux exercices. Il faut noter que le cours de l’action SERVAIR
+ABIDJAN au 29 Décembre 2023 était de 1330 FCFA.
+Le Conseil d’Administration tenu le 17 avril 2024 pour l’arrêté des états financiers a décidé de
+soumettre à l’Assemblée Générale des actionnaires appelée à valider ces comptes la proposition
+de distribution de dividende brut d’un montant de 2 500 000 000 FCFA.
+NOTE 13 : Les emprunts et dettes financières
+Dette de droit d’utilisation
+SERVAIR ABIDJAN a signé un contrat d'occupation temporaire de l'espace public aéroportuaire avec
+AERIA le gestionnaire de l'aéroport. Par ce contrat AERIA autorise SERVAIR ABIDJAN à occuper
+temporairement des espaces délimités en vue d'exercer ses activités. Le preneur doit comptabiliser
+un actif (immobilisation) au titre du droit d'utilisation et une obligation locative. Cette dette
+initialement évaluée par la méthode d’actualisation des loyers futurs est évaluée au cout amorti.
+25
+
+Pages contenant un mot-clé BPA/actions : [4, 5, 25]
+
+--- PAGE 4 (extraits mot-clé) ---
+PASSIF ET CAPITAUX PROPRES (en millions de
+Note 31-déc-23 31-déc-22
+FCFA)
+Capital social 12 1 364 1 364
+Primes d’émission et de fusion - -
+Ecart de réévaluation 12 56 56
+Réserves consolidés 12 2 389 2 232
+Résultat de l'exercice 1 1 358 1 272
+
+===== ABJC_2025_ifrs :: a0cf8ecb15275fc4-20260427_-_etats_financiers_ifrs_-_exercice_2025_-_servair_abidjan_ci.pdf =====
+pages=3
+
+--- PAGE 1 ---
+SERVAIR ABIDJAN
+Société anonyme au capital de 1 364 000 000 FCFA
+Siège social : Aéroport Felix Houphouet Boigny
+07 BP 08 ABIDJAN 07
+RCCM : CI-ABJ-1969-B-6360
+I. Etat de la situation financière provisoire
+ACTIF (en millions de FCFA) Note 2025 2024
+Immobilisations incorporelles 4 183 225
+Droits d'usage des immobilisations louées 5 533 666
+Immobilisations corporelles 6 1 062 569
+Actifs financiers non courants 7 61 84
+Impôts différés actifs 8 - 17
+Total de l'actif non courant 1 838 1 561
+Stocks 9 675 627
+Créances clients 10 2 554 3 034
+Autres débiteurs 10 531 1 110
+Trésorerie et équivalents de trésorerie 11 4 035 3 428
+Total de l'actif courant 7 794 8 199
+Total de l'actif 9 632 9 760
+PASSIF ET CAPITAUX PROPRES (en millions de FCFA) Note 2025 2024
+Capital social 12 1 364 1 364
+Ecart de réévaluation 12 56 56
+Réserves consolidés 12 2 762 1 247
+Résultat de l'exercice 1 1 331 1 515
+Total capitaux propres 5 512 4 182
+Impôts différés passifs 8 8 16
+Emprunts et dettes financières non courants 13 66 79
+Emprunts liés aux droits d'utilisation non courants 13 567 698
+Engagement envers le personnel 14 346 260
+Provisions 14 26 97
+Total des passifs non courants 1 013 1 150
+Emprunts liés aux droits d'utilisation courants 13 19 9
+Dettes fournisseurs et comptes rattachés 15 2 114 3 364
+Autres créditeurs et dettes diverses 16 973 1 055
+Total des passifs courants 3 107 4 428
+Total du passif et des capitaux propres 9 632 9 760
+
+--- PAGE 2 ---
+II. Etat du résultat global provisoire
+(en millions FCFA) Note 2025 2024
+Chiffre d'affaires 17 13 298 12 467
+Produits des ventes 13 298 12 467
+Achats consommés 18 (5 647) (4 794)
+Charges externes 19 (2 350) (2 295)
+Charges de personnel 20 (2 544) (2 377)
+Impôts et taxes 8 (488) (408)
+Dotations aux amortissements et dépréciations 21 (363) (402)
+Dotations aux provisions nettes 22 33 66
+Charges provisionnées nettes sur créances commerciales 22 (34) (13)
+Autres produits d'exploitation 426 94
+Résultat opérationnel courant 2 331 2 338
+Autres produits et charges opérationnels (111) (196)
+Résultat opérationnel 2 220 2 142
+Coût de l'endettement financier brut 13 (60) (67)
+Revenus des équivalents de trésorerie 11 29 22
+Autres produits et charges financiers 13 (10) (5)
+Résultat financier (41) (50)
+Résultat avant impôt 2 179 2 093
+Charge d'impôt sur le résultat 8 (848) (578)
+Résultat net de l'ensemble 12 1 331 1 515
+Nombre total des actions 10 912 000 10 912 000
+Résultat net par action (de base et dilué) 12 122 139
+
+Pages contenant un mot-clé BPA/actions : [1, 2]
+
+===== ORGT_2019_certifies :: d7360f9ccfdadc68-20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf =====
+pages=89
+
+--- PAGE 1 ---
+31, avenue François Mitterrand 8ème étage immeuble BTCI Siège
+B.P. 7378 – Lomé Togo 169, Bd du 13 janvier – 06 BP 6019 Lomé, Togo
+Tél : + 228 22 21 68 22 Tél : +228 22 21 87 69
+Fax : + 228 22 21 83 86 Fax : +228 22 21 03 55
+E-mail : excoficao@excoafrique.com E-mail : contact@kpmg.tg
+ORAGROUP S.A.
+Rapport des commissaires aux comptes sur
+les états financiers consolidés annuels
+établis selon les normes Internationales
+d’Information Financière (IFRS)
+Exercice clos le 31 décembre 2019
+ORAGROUP S.A.
+BP 2810 Lomé - Togo
+Ce rapport contient 6 pages
+Les annexes comprennent 83 pages
+
+--- PAGE 13 ---
+ETATS FINANCIERS CONSOLIDES SELON LES NORMES COMPTABLES IFRS
+1 Compte de résultat consolidé
+En millions de FCFA Note 31.12.2019 31.12.2018
+Intérêts et produits assimilés 6.3.1 139 458 123 846
+Intérêts et charges assimilées 6.3.1 -66 649 -63 410
+Commissions (produits) 6.3.2 84 402 70 584
+Commissions (charges) 6.3.2 -14 108 -9 027
+Revenus des titres à revenue variable 6.3.3 43 73
+Gains ou pertes nets sur cession d'actifs financiers évalués au coût amorti 6.3.4 -30 180
+Produits des autres activités 6.3.5 3 779 4 803
+Charges des autres activités 6.3.5 -43 -132
+Produit net Bancaire 146 852 126 918
+Frais de personnel 6.3.6 -42 583 -38 932
+Dotations aux amortissements des immobilisations incorporelles et corporelles 6.3.7 -11 821 -10 234
+Autres charges générales d'exploitation 6.3.8 -45 953 -42 438
+Résultat Brut d'Exploitation 46 495 35 314
+Coût du risque 6.3.9 -22 705 -18 050
+Résultat d’exploitation 23 790 17 265
+Gains ou pertes nets sur autres actifs 6.3.10 557 -1 180
+Résultat avant impôt 24 347 16 084
+Impôts sur les bénéfices 6.3.11 -6 020 -3 593
+Résultat net 18 327 12 491
+Participations ne donnant pas le contrôle 8 521 4 523
+Résultat Net, Part du Groupe 9 806 7 968
+Page 1 sur 77
+
+--- PAGE 43 ---
+La réconciliation entre le taux d'impôt normatif du groupe et le taux d'impôt effectif s'analyse
+comme suit :
+En millions de FCFA 31.12.2019 31.12.2018
+Résultat avant impôt 24 347 16 084
+Taux effectif d'impôt 25% 22%
+Charge d'impôt théorique sur le résultat consolidé du groupe -10 275 -7 736
+Eléments non déductibles -5 003 -5 808
+Produits non imposable 9 258 9 951
+Charge nette d'impôts -6 020 -3 593
+Aux termes de l’Accord de siège entre Oragroup SA (la « Société ») et la République du Togo
+signé en Juin 2013, Oragroup SA est exonérée d’impôt sur l’ensemble des revenus provenant
+de ses activités au Togo.
+Résultat net par action
+2 019 2 018
+Résultat net part du groupe 9 806 7 968
+Nombre d'action en circulation 69 090 306 69 415 031
+Résultat de base par action (en unité de franc CFA) 142 115
+6.4 Notes relatives au bilan
+6.4.1 Caisse et banques centrales
+En millions de FCFA 31.12.2019 31.12.2018
+Caisse 54 320 38 226
+Banques centrales 150 846 103 453
+Total 205 166 141 679
+6.4.2 Autres actifs financiers aux coûts amortis
+En millions de FCFA 31.12.2019 31.12.2018
+Bons du trésor et obligations 664 328 501 438
+Créances rattachées sur bons et obligations 12 735 14 406
+Dépréciations cumulées (ECL) -212 -225
+Total 676 850 515 620
+Le mouvement de la période sur les actifs financiers évalués au coût amortis se présente
+comme suit :
+En millions de FCFA 31.12.2019 31.12.2018
+Solde d’ouverture au 1er janvier 515 620 424 079
+Acquisitions 296 466 141 873
+Cessions/remboursements -135 248 -47 288
+Dépréciations sur actifs financiers disponible à la vente 13 265
+Pertes et gains sur les actifs financiers disponibles à la vente 0 1 753
+Reclassement vers autres actifs financiers à la JVAERG 0 -5 063
+Solde de clôture 676 850 515 620
+Page 31 sur 77
+
+Pages contenant un mot-clé BPA/actions : [2, 43, 85, 88]
+
+--- PAGE 2 (extraits mot-clé) ---
+E-mail : excoficao@excoafrique.com E-mail : contact@kpmg.tg
+ORAGROUP S.A.
+Siège social : 392, rue des Plantains, B.P. 2810 Lomé - Togo
+Capital social : F CFA 69 415 031 000
+Rapport des commissaires aux comptes sur les états financiers consolidés
+annuels établis selon les normes IFRS
+Exercice clos le 31 décembre 2019
+Mesdames, Messieurs les Actionnaires,
+
+--- PAGE 85 (extraits mot-clé) ---
+a. Fonds propres de base durs de catégorie 1 (Common Equity Tier1)
+Au niveau consolidé, suivant la réglementation, les fonds propres de base durs comprennent
+principalement :
+ le capital social libéré, constitué d'actions ordinaires et des primes liées ;
+ le report a nouveau créditeur ;
+ le bénéfice de l'exercice non affecté ;
+ autres éléments du résultat global accumulés ;
+ autres réserves ;
+
+--- PAGE 88 (extraits mot-clé) ---
+et 11,5% pour le ratio de solvabilité.
+Au 31 décembre, le groupe présente les ratios de solvabilité suivants :
+En millions de FCFA 31.12.2019 31.12.2018
+Capital social libéré 68 067 69 415
+Primes liées à l'émission des instruments CET1 18 763 18 763
+Réserves consolidées 15 946 20 008
+Report à nouveau 4 871 -3 577
+Participation ne donnant pas le contrôle 29 077 20 977
+
+===== ORGT_2023 :: 487e59d9c526a577-20240429_-_etats_financiers_-_exercice_2023_-_oragroup_togo.pdf =====
+pages=2
+
+--- PAGE 1 ---
+ORAGROUP SA
+ETATS FINANCIERS CONSOLIDES PROVISOIRES
+EXERCICE CLOS AU 31 DECEMBRE 2023
+Etat consolidé de la Situation Financière
+En millions de FCFA 31.12.2023 31.12.2022
+Actif
+Caisse et banques centrales 240 063 393 310
+Actifs financiers au Coût amorti 3 545 192 3 936 404
+Prêts et créances sur les établissements de crédit 196 553 225 265
+Prêts et créances sur la clientèle 2 038 505 2 282 738
+Titres de dette non affectés en garantie 763 570 774 532
+Titres de dette affectés en garantie 546 563 653 869
+Actifs financiers à la juste valeur par les autres éléments du résultat global 6 987 7 440
+Instruments de capitaux propres 6 987 7 440
+Actifs d'impôts courants 10 405 9 655
+Actifs d'impôts différés 32 633 23 769
+Actifs divers 211 977 197 672
+Immeubles de placement 79 523 61 831
+Immobilisations corporelles 84 911 78 396
+Immobilisations incorporelles 9 074 8 566
+Goodwill 15 713 15 713
+TOTAL ACTIF 4 236 478 4 732 757
+En millions de FCFA 31.12.2023 31.12.2022
+Dettes
+Passifs financiers au coût amorti 3 937 851 4 380 932
+Dettes envers les établissements de crédit 656 231 999 291
+Dettes envers la clientèle 3 089 493 3 176 961
+Dettes représentées par un titre 71 810 74 700
+Autres dettes à termes 120 317 129 980
+Passifs d'impôts courants 8 321 11 610
+Passifs d'impôts différés 4 664 14 103
+Passifs divers 91 364 123 239
+Provisions 23 517 22 975
+Dettes subordonnées 26 939 13 903
+Total des passifs 4 092 656 4 566 761
+CAPITAUX PROPRES
+Capital social et primes liées 87 404 87 031
+Réserves consolidées et report à nouveau 6 982 28 025
+Total capital, réserves consolidées et résultat de la période, part du Groupe 94 386 115 056
+Total Capitaux propres part du groupe 94 386 115 056
+Participations ne donnant pas le contrôle 49 436 50 940
+Total des capitaux propres 143 822 165 995
+TOTAL DES PASSIFS ET CAPITAUX PROPRES 4 236 478 4 732 757
+Compte de Résultat Consolidé
+En millions de FCFA 31.12.2023 31.12.2022
+Intérêts et produits assimilés 252 870 235 346
+Intérêts et charges assimilées -135 927 -113 431
+Commissions (produits) 108 952 108 005
+Commissions (charges) -15 327 -11 449
+Revenus des titres à revenue variable 198 116
+Gains ou pertes nets sur cession d'actifs financiers évalués au coût amorti -343 0
+Produits des autres activités 5 278 4 115
+Charges des autres activités -421 -270
+Produit net Bancaire 215 280 222 431
+Frais de personnel -67 228 -61 318
+Dotations aux amortissements des immobilisations incorporelles et corporelles -15 708 -15 450
+Autres charges générales d'exploitation -68 558 -60 945
+Résultat Brut d'Exploitation 63 976 84 718
+Coût du risque -96 231 -59 790
+Résultat d’exploitation -32 255 24 928
+Gains ou pertes nets sur autres actifs 1 020 505
+Résultat avant impôt -31 235 25 433
+Impôts sur les bénéfices 13 049 -6 234
+Résultat net -18 186 19 199
+Participations ne donnant pas le contrôle 1 274 10 450
+Résultat Net, Part du Groupe -19 460 8 749
+Résultat net par action -280 126
+Résultat net dilué par action -281 126
+
+--- PAGE 2 ---
+Etat du résultat et des autres éléments du résultat global
+En millions de FCFA 31.12.2023 31.12.2022
+Résultat net -18 186 19 199
+Eléments qui seront reclassés ultérieurement en résultat net -180 -1 489
+Variations de valeur des éléments relatifs aux parités monétaires -180 -1 489
+Éléments ne pouvant être rapportés au résultat 210 1 151
+Pertes et gains nets sur les titres de participations classés à la JVAERG 291 1 735
+Impôts différés relatifs aux éléments qui ne seront pas reclassés ultérieurement en résultat net -81 -583
+Autres éléments du résultat global net d'impôt -18 156 18 861
+Part du Groupe -19 275 8 997
+Participations ne donnant pas le contrôle 1 119 5 136
+Tableau consolidé des flux de trésorerie
+En millions de FCFA 31.12.2023 31.12.2022
+Résultat net de l'ensemble consolidé -18 186 19 199
+Dotations nettes aux amortissements des immobilisations corporelles et incorporelles 15 517 15 450
+Dotations nettes aux provisions hors récupération sur créances amorties 98 396 62 860
+Variation des impôts différents -18 384 -1 550
+Total des éléments non monétaires inclus dans le résultat net et autres ajustements 95 529 76 760
+Flux liés aux opérations avec les établissements de crédit et assimilés -268 066 125 471
+Flux liés aux opérations prêts avec la clientèle 148 527 -383 869
+Flux liés aux dépôts de la clientèle -87 467 593 065
+Flux liés aux autres opérations affectant des actifs non financiers -50 003 -57 462
+Flux liés aux autres opérations affectant des passifs non financiers 12 549 11 875
+Variation des impôts courants -4 039 -6 342
+Dividendes payés -4 389 -2 148
+Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles -252 888 280 591
+Flux net de trésorerie généré par l’activité opérationnelle -175 545 376 550
+Acquisitions liées aux titres -269 848 -311 005
+Remboursements liés aux titres 388 142 136 349
+Acquisitions liées aux autres actifs évalués à la JVAERG 630 -250
+Acquisitions liées aux immeubles de placement -20 303 -9 339
+Acquisitions liées aux immobilisations corporelles -17 234 -26 073
+Cessions liées aux immobilisations corporelles et financières 1 349 4 503
+Acquisitions liées aux immobilisations incorporelles -3 392 -1 665
+Flux net de trésorerie lié aux opérations d’investissement 79 345 -207 479
+Augmentation de capital 480 388
+Souscription de nouveaux emprunts 14 460 63 982
+Remboursements liés aux emprunts -14 277 -19 667
+Flux net de trésorerie lié aux opérations de financement 664 44 703
+Effet de la variation des taux de change sur la trésorerie et équivalent de trésorerie -1 620 -2 203
+Flux net de la trésorerie et des équivalents de trésorerie -97 156 211 570
+Trésorerie et équivalents de trésorerie à l’ouverture 471 572 260 002
+Caisse, Banques centrales, CCP 393 310 253 385
+Comptes (actif & passif) à vue auprès des établissements de crédit 78 262 6 617
+Trésorerie et équivalents de trésorerie à la clôture 374 415 471 572
+Caisse, Banques centrales, CCP 240 063 393 310
+Comptes (actif & passif) à vue auprès des établissements de crédit 134 352 78 262
+Variation de la trésorerie nette -97 157 211 570
+Compte annuel Oragroup SA provisoire
+Projet d’affectation de résultat de l’exercice 2023
+Résultat de l’exercice 3 479 648 253
+Report à nouveau antérieur 8 454 799 511
+Bénéfice distribuable 11 934 447 764
+Dotation de la réserve obligatoire (10 % du résultat) : 347 964 825 francs CFA
+■ Distribution de dividendes : pas de distribution de dividendes
+■ Affectation au compte « Report à nouveau » : 11 586 482 939 francs CFA
+Cette décision d’affectation modifie la situation des capitaux propres de Oragroup SA comme suit :
+POSTE DU BILAN AVANT RÉPARTITION APRÈS RÉPARTITION
+Capital 69 986 131 000 69 986 131 000
+Réserves obligatoires 3 225 464 926 3 573 429 751
+Réserves facultatives 4 827 112 939 4 827 112 939
+Report à nouveau 8 454 799 511 11 586 482 939
+Prime d’émission 19 266 063 038 19 266 063 038
+CAPITAUX PROPRES 105 759 571 414 109 239 219 667
+Résultat de l’exercice 3 479 648 253 0
+Dividendes à distribuer 0
+TOTAUX 109 239 219 667 109 239 219 667
+
+Pages contenant un mot-clé BPA/actions : [1]
+
+===== ORGT_2025 :: 04d3b3e5c317e114-20260504_-_etats_financiers_-_exercice_2025_-_oragroup_tg.pdf =====
+pages=4
+
+--- PAGE 1 ---
+Etat consolidé de la Situation Financière
+En millions de FCFA 31.12.2025 31.12.2024
+ACTIF
+Caisse et banques centrales 346 667 254 698
+Actifs financiers au Coût amorti 3 261 689 3 225 745
+Prêts et créances sur les établissements de crédit 275 515 235 837
+Prêts et créances sur la clientèle 1 523 765 1 659 654
+Titres de dette non affectés en garantie 973 756 687 993
+Titres de dette affectés en garantie 488 653 642 260
+Actifs financiers à la juste valeur par les autres éléments du résultat global 7 706 7 771
+Instruments de capitaux propres 7 706 7 771
+Actifs d'impôts courants 5 095 7 746
+Actifs d'impôts différés 47 467 50 934
+Actifs divers 142 159 216 998
+Immeubles de placement 107 878 92 147
+Immobilisations corporelles 72 673 81 260
+Immobilisations incorporelles 7 145 8 383
+Goodwill 15 713 15 713
+TOTAL DE L'ACTIF 4 014 192 3 961 395
+En millions de FCFA 31.12.2025 31.12.2024
+PASSIF
+Banques centrales
+Passifs financiers au coût amorti 3 677 844 3 673 970
+Dettes envers les établissements de crédit 432 668 545 525
+Dettes envers la clientèle 3 088 698 2 933 724
+Dettes représentées par un titre 44 480 58 564
+Autres dettes à termes 111 998 136 157
+Passifs d'impôts courants 6 883 7 003
+Passifs d'impôts différés 19 891 18 688
+Passifs divers 149 129 107 514
+Provisions 20 917 29 084
+Dettes subordonnées 26 365 28 415
+TOTAL DES PASSIFS 3 901 027 3 864 674
+CAPITAUX PROPRES
+Capital social et primes liées 87 404 87 404
+Réserves consolidées et report à nouveau -17 925 -32 598
+Sous-Total Capitaux Propres part du groupe 69 479 54 806
+Participations ne donnant pas le contrôle 43 686 41 914
+TOTAL CAPITAUX PROPRES 113 165 96 720
+TOTAL DES PASSIFS ET CAPITAUX PROPRES 4 014 192 3 961 395
+
+--- PAGE 2 ---
+En millions de FCFA 31.12.2025 31.12.2024
+Intérêts et produits assimilés 222 533 226 597
+Intérêts et charges assimilées -118 034 -128 425
+Commissions (produits) 90 417 107 879
+Commissions (charges) -15 264 -15 693
+Revenus des titres à revenue variable 185 179
+Gains ou pertes nets sur intruments financiers 0 -13
+Produits des autres activités 6 975 5 217
+Charges des autres activités -203 -304
+Produit net Bancaire 186 609 195 436
+Frais de personnel -70 507 -71 214
+Dotations aux amortissements des immobilisations incorporelles et corporelles -18 096 -18 011
+Dépréciations du Goodwill 0 0
+Autres charges générales d'exploitation -61 869 -81 920
+Charges d'exploitation -150 472 -171 144
+Résultat Brut d'Exploitation 36 137 24 292
+Coût du risque -6 971 -69 056
+Résultat d’exploitation 29 166 -44 764
+Gains ou pertes nets sur autres actifs 573 156
+Résultat avant impôt 29 739 -44 608
+Impôts sur les bénéfices -8 096 245
+Résultat net 21 643 -44 363
+Résultat net attribuable aux :
+Participations ne donnant pas le contrôle 3 288 -6 499
+Actionnaires de la holding 18 355 -37 865
+Résultat de base par action 264 -545
+Résultat net dilué par action 241 -497
+En millions de FCFA 31.12.2025 31.12.2024
+Résultat net 21 643 -44 363
+Eléments qui seront reclassés ultérieurement en résultat net -2 547 760
+Variations de valeur des éléments relatifs aux parités monétaires -2 547 760
+Variations de valeur des actifs financiers classés à la JVAERG 0 0
+Variations de valeur des actifs financiers, rapportées au résultat de la période 0 0
+Impôts différés relatifs aux éléments qui seront reclassés ultérieurement en résultat ne0t 0
+Eléments ne pouvant être rapportés au résultat -16 -603
+Pertes et gains nets sur la réévaluation des immobilisations 0 -885
+Pertes et gains nets sur les titres de participations classés à la JVAERG -32 388
+Impôts différés relatifs aux éléments qui ne seront pas reclassés ultérieurement en ré1s6ultat ne-t107
+Autres éléments du résultat global net d'impôt 19 080 -44 206
+Part des actionnaires de la holding 16 895 -38 106
+Participations ne donnant pas le contrôle 2 185 -6 100
+
+Pages contenant un mot-clé BPA/actions : [1, 2]
+
+===== SDCC_2019_consolides :: 39cb1a0e872cdb79-sodeci_ifrs_comptes_consolides_2019.pdf =====
+pages=40
+
+--- PAGE 1 ---
+Comptes IFRS consolidés pour l’exercice clos 1
+le 31 décembre 2019
+Comptes IFRS consolidés
+pour l’exercice clos le
+31 décembre 2019
+
+--- PAGE 5 ---
+Comptes IFRS consolidés pour l’exercice clos 5
+le 31 décembre 2019
+A COMPTE DE RESULTAT CONSOLIDE
+Exercice clos au Exercice clos au
+( ( e e n n m m i i l l l l i i o o n n s s d d e e F F r r a a n n c c C C F F A A ) ) N N o o t t e e 3E1x Derécciecme bclroes 2 a0u1 9 3E1x Derécciceem cblroes 2a0u1 8
+31 Décembre 2019 31 Décembre 2018
+Prestations de service 35 914 42 923
+Prestations de service 35 914 42 923
+Ventes de marchandises 62 315 57 151
+Ventes de marchandises 62 315 57 151
+Produits des activités ordinaires 24 98 229 100 074
+Produits des activités ordinaires 24 98 229 100 074
+Achats consommés 26 (39 177) (37 019)
+Achats consommés 26 (39 177) (37 019)
+Charges externes 27 (23 456) (26 767)
+Charges externes 27 (23 456) (26 767)
+Charges de personnel 28 (18 983) (19 121)
+Charges de personnel 28 (18 983) (19 121)
+Impôts et taxes 29 (1 848) (1 752)
+Impôts et taxes 29 (1 848) (1 752)
+Dépréciations aux amortissements nettes (7 080) (6 892)
+Dépréciations aux amortissements nettes (7 080) (6 892)
+Dotations aux provisions nettes (hors créances commerciales) 392 (65)
+Dotations aux provisions nettes (hors créances commerciales) 392 (65)
+Provisions nettes sur créances commerciales (3 776) (4 076)
+Provisions nettes sur créances commerciales (3 776) (4 076)
+Autres produits d'exploitation 30 72 117
+Autres produits d'exploitation 30 72 117
+Autres charges d'exploitation 30 (686) (783)
+Autres charges d'exploitation 30 (686) (783)
+Résultat opérationnel courant 3 686 3 715
+Résultat opérationnel courant 3 686 3 715
+Autres produits et charges opérationnels 31 (195) (305)
+Autres produits et charges opérationnels 31 (195) (305)
+Résultat opérationnel 3 491 3 410
+Résultat opérationnel 3 491 3 410
+Coût de l'endettement financier 32 (684) (613)
+Coût de l'endettement financier 32 (684) (613)
+Revenu des équivalents de trésorerie 1 502 1 365
+Revenu des équivalents de trésorerie 1 502 1 365
+Autres charges et produits financiers 32 (74) (36)
+Autres charges et produits financiers 32 (74) (36)
+Résultat avant impôt 4 235 4 126
+Résultat avant impôt 4 235 4 126
+(2) 5
+Quote-part du résultat net des sociétés mises en équivalence
+Quote-part du résultat net des sociétés mises en équivalence (2) 5
+Impôt sur les bénéfices 33 (1 052) (1 210)
+Impôt sur les bénéfices 33 (1 052) (1 210)
+Résultat net de l'exercice 3 181 2 921
+Résultat net de l'exercice 3 181 2 921
+Résultat net de l'exercice en MFCFA 3 181 2 921
+Résultat net de l'exercice en MFCFA 3 181 2 921
+Nombre d'actions en circulation 9 000 000 9 000 000
+Nombre d'actions en circulation 9 000 000 9 000 000
+Résultat par action en FCFA 353 325
+Résultat par action en FCFA 353 325
+Résultat par action dilué en FCFA 353 325
+Résultat par action dilué en FCFA 353 325
+B ETAT DE RÉSULTAT GLOBAL
+L’état du résultat global présente le résultat de l’exercice ainsi que les produits et charges comptabilisés
+directement en capitaux propres sur la ligne « autres éléments du résultat global » en application des IFRS :
+Exercice clos au 31 Exercice clos au 31
+(en millions de Franc CFA) Exercice clos au 31 Exercice clos au 31
+(en millions de Franc CFA) Décembre 2019 Décembre 2018
+Décembre 2019 Décembre 2018
+Résultat net de l'exercice 3 181 2 921
+Résultat net de l'exercice 3 181 2 921
+Ecarts actuariels sur avantages au personnel (167) 41
+Ecarts actuariels sur avantages au personnel (167) 41
+Impôts différés sur écarts actuariels 42 (10)
+Impôts différés sur écarts actuariels 42 (10)
+Sous-total éléments non recyclables (125) 31
+Sous-total éléments non recyclables (125) 31
+Total des autres éléments du résultat global (125) 31
+Total des autres éléments du résultat global (125) 31
+Résultat global de l'exercice 3 056 2 952
+Résultat global de l'exercice 3 056 2 952
+Les écarts actuariels enregistrés en résultat global portent sur les engagements postérieurs à l’emploi
+(voir note 2.6 et 15.1)
+
+Pages contenant un mot-clé BPA/actions : [5, 23]
+
+--- PAGE 23 (extraits mot-clé) ---
+Actions émises au 31 Décembre 2018 9 000 000
+Actions émises au 31 Décembre 2019 9 000 000
+En 2018 et 2019, le capital social de SODECI se décompose en 9 millions d’actions ayant pour valeur
+nominale de 500 Francs CFA.
+Emprunts liés Autres Concours
+Emprunts
+Eamupxr durnotsit sli és empAruuntrtess e t Intérêts banCcoanirceosu erts Dettes
+
+===== SDCC_rapport_gestion_2019 :: 0c1c46359419e31c-20200615_-_rapport_de_gestion_2019_-_sodeci.pdf =====
+pages=143
+
+--- PAGE 1 ---
+SOMMAIRE
+1. Ordre du jour P.
+2. Direction de la Société P.
+3. Message du Président P.
+4. Rapport de Gestion du Conseil d’Administration à l’Assemblée Générale
+Ordinaire P.
+5. Rapport Général des Commissaires aux Comptes sur les Etats Financiers
+Annuels P.
+6. Rapport Spécial des Commissaires aux Comptes sur les Conventions
+Réglementées P.
+7. Point sur la gestion de la crise sanitaire P.
+8. Projet de résolutions P.
+9. Etats Financiers Syscohada P.
+10. Etats Financiers Individuels IFRS P.
+11. Etats Financiers Consolidés IFRS P.
+
+--- PAGE 28 ---
+28
+
+--- PAGE 29 ---
+A Compte de résultat
+Exercice clos au Exercice clos au
+(en millions de Franc CFA) Note
+31 Décembre 2019 31 Décembre 2018
+Production vendue de services 34 163 41 282
+Ventes de marchandises 62 315 57 151
+Produits des activités ordinaires 21 96 478 98 433
+Achats consommés 22 (39 098) (36 920)
+Charges externes 23 (22 742) (26 256)
+Charges de personnel 24 (18 731) (18 603)
+Impôts et taxes 25 (1 810) (1 694)
+Dépréciations aux amortissements nettes (6 447) (6 503)
+Dotations aux provisions nettes (hors créances commerciales) 392 (65)
+Provisions nettes sur créances commerciales (3 776) (4 076)
+Autres produits d'exploitation 26 78 127
+Autres charges d'exploitation 26 (686) (782)
+Résultat opérationnel courant 3 659 3 660
+Autres produits et charges opérationnels 27 (228) (283)
+Résultat opérationnel 3 431 3 377
+Coût de l'endettement financier 28 (639) (580)
+Revenu des équivalents de trésorerie 1 502 1 365
+Autres charges et produits financiers 28 (59) (37)
+Résultat avant impôt 4 236 4 126
+Impôt sur les bénéfices 29 (1 055) (1 209)
+Résultat net de l'exercice 3 180 2 918
+Résultat net de l'exercice en MFCFA 3 180 2 918
+Nombre d'action en circulation 9 000 000 9 000 000
+Résultat par action en FCFA 353 324
+Résultat par action dilué en FCFA 353 324
+29
+
+--- PAGE 88 ---
+12. STOCKS ........................................................................................................................................................... 122
+13. CREANCES CLIENTS .......................................................................................................................................... 123
+14. AUTRES DEBITEURS .......................................................................................................................................... 123
+15. AUTRES ACTIFS COURANTS ............................................................................................................................... 124
+16. CAPITAL ........................................................................................................................................................... 124
+17. DETTES FINANCIERES ....................................................................................................................................... 125
+17.1. ANALYSE PAR FLUX ....................................................................................................................................... 125
+17.2. ANALYSE PAR NATURE (COURANT ET NON COURANT) ..................................................................................... 125
+18. AVANTAGES AU PERSONNEL .............................................................................................................................. 126
+18.1. AVANTAGES POSTERIEURS A L’EMPLOI ........................................................................................................... 126
+18.2. AUTRES AVANTAGES A LONG TERME .............................................................................................................. 126
+18.3. HYPOTHESES ACTUARIELLES ......................................................................................................................... 127
+19. PROVISIONS ..................................................................................................................................................... 127
+20. IMPOTS DIFFERES ............................................................................................................................................. 128
+21. AUTRES CREDITEURS ........................................................................................................................................ 129
+22. AUTRES PASSIFS D’EXPLOITATION COURANTS .................................................................................................... 130
+23. PRODUITS DES ACTIVITES ORDINAIRES .............................................................................................................. 130
+24. INFORMATIONS SECTORIELLES .......................................................................................................................... 131
+24.1. BILAN PAR SECTEUR D’ACTIVITE.................................................................................................................... 131
+24.2. INVESTISSEMENTS DE L’EXERCICE PAR SECTEUR D’ACTIVITE ........................................................................... 132
+24.3. RESULTAT DE L’EXERCICE PAR SECTEUR D’ACTIVITE ....................................................................................... 133
+25. ACHATS CONSOMMES ........................................................................................................................................ 134
+26. CHARGES EXTERNES ......................................................................................................................................... 134
+27. CHARGES DE PERSONNEL .................................................................................................................................. 134
+28. IMPOTS ET TAXES ............................................................................................................................................. 135
+29. AUTRES PRODUITS ET CHARGES D’EXPLOITATION ............................................................................................... 135
+30. AUTRES PRODUITS ET CHARGES OPERATIONNELS ............................................................................................... 136
+31. COUT DE L’ENDETTEMENT FINANCIER ................................................................................................................ 136
+32. IMPOTS SUR LES BENEFICES .............................................................................................................................. 137
+33. INSTRUMENTS FINANCIERS ............................................................................................................................... 138
+34. ENGAGEMENTS HORS BILAN .............................................................................................................................. 140
+35. PARTIES LIEES .................................................................................................................................................. 141
+35.1. REMUNERATION DES DIRIGEANTS ................................................................................................................. 141
+35.2. AUTRES PARTIES LIEES ................................................................................................................................. 141
+36. EVENEMENTS POSTERIEURS A LA CLOTURE ......................................................................................................... 142
+88
+
+--- PAGE 89 ---
+G Compte de résultat consolidé
+Exercice clos au Exercice clos au
+(en millions de Franc CFA) Note
+31 Décembre 2019 31 Décembre 2018
+Production vendue de services 35 914 42 923
+Ventes de marchandises 62 315 57 151
+Produits des activités ordinaires 23 98 229 100 074
+Achats consommés 25 (39 177) (37 019)
+Charges externes 26 (23 456) (26 767)
+Charges de personnel 27 (18 983) (19 121)
+Impôts et taxes 28 (1 848) (1 752)
+Dépréciations aux amortissements nettes (7 080) (6 892)
+Dotations aux provisions nettes (hors créances commerciales) 392 (65)
+Provisions nettes sur créances commerciales (3 776) (4 076)
+Autres produits d'exploitation 29 72 117
+Autres charges d'exploitation 29 (686) (783)
+Résultat opérationnel courant 3 686 3 715
+Autres produits et charges opérationnels 30 (195) (305)
+Résultat opérationnel 3 491 3 410
+Coût de l'endettement financier 31 (684) (613)
+Revenu des équivalents de trésorerie 1 502 1 365
+Autres charges et produits financiers 31 (74) (36)
+Résultat avant impôt 4 235 4 126
+Quote-part du résultat net des sociétés mises en équivalence (2) 5
+Impôt sur les bénéfices 32 (1 052) (1 210)
+Résultat net de l'exercice 3 181 2 921
+Résultat net de l'exercice en MFCFA 3 181 2 921
+Nombre d'action en circulation 9 000 000 9 000 000
+Résultat par action en FCFA 353 325
+Résultat par action dilué en FCFA 353 325
+89
+
+Pages contenant un mot-clé BPA/actions : [29, 69, 89, 124]
+
+--- PAGE 69 (extraits mot-clé) ---
+Actions émises au 1er Janvier 2018 9 000 000
+Actions émises au 31 Décembre 2018 9 000 000
+Actions émises au 31 Décembre 2019 9 000 000
+En 2018 et 2019, le capital social de SODECI se décompe en 9 millions d’actions ayant
+pour valeur nominale de 500 Francs CFA.
+16. Dettes financières
+16.1. Analyse par flux
+Emprunts
+
+--- PAGE 124 (extraits mot-clé) ---
+Actions émises au 1er Janvier 2018 9 000 000
+Actions émises au 31 Décembre 2018 9 000 000
+Actions émises au 31 Décembre 2019 9 000 000
+En 2018 et 2019, le capital social de SODECI se décompe en 9 millions d’actions ayant
+pour valeur nominale de 500 Francs CFA.
+124

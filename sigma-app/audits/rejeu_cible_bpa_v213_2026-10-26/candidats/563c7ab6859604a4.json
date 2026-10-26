@@ -1,0 +1,40 @@
+{
+  "candidate_id": "563c7ab6859604a4",
+  "ticker": "ABJC",
+  "url": "https://www.brvm.org/sites/default/files/20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+  "selection_rank_for_ticker": 5,
+  "target_years_from_filename": [
+    2023,
+    2022,
+    2021
+  ],
+  "classified_document": {
+    "filename": "20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+    "label": "Etats financiers approuves exercice 2023 servair abidjan ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers_approuves",
+    "exercice": 2023,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2024-08-19",
+    "url": "https://www.brvm.org/sites/default/files/20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci",
+    "report_page_label": "SERVAIR ABIDJAN CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci"
+    ]
+  }
+}

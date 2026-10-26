@@ -1,0 +1,36 @@
+{
+  "candidate_id": "8532389fecd15c6a",
+  "ticker": "BNBC",
+  "url": "https://www.brvm.org/sites/default/files/20240507_-_etats_financiers_de_synthese_-_bernabe_ci.pdf",
+  "selection_rank_for_ticker": 18,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20240507_-_etats_financiers_de_synthese_-_bernabe_ci.pdf",
+    "label": "Etats financiers de synthese bernabe ci",
+    "link_text": "Télécharger",
+    "doc_type": "synthese_rapport_gestion",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2024-05-07",
+    "url": "https://www.brvm.org/sites/default/files/20240507_-_etats_financiers_de_synthese_-_bernabe_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "SYNTHESE",
+    "version_markers": [
+      "SYNTHESE"
+    ],
+    "content_role_hint": "SYNTHESE_OU_RAPPORT_DE_GESTION",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/bernabe-ci",
+    "report_page_label": "BERNABE CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/bernabe-ci",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/bernabe-ci"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "candidate_id": "4c2572cca3ee5493",
+  "ticker": "BOAS",
+  "url": "https://www.brvm.org/sites/default/files/20200602_-_rapport_de_lassemblee_generale_ordinaire_et_etats_financiers_certifies_et_approuves_-_boa_sn.pdf",
+  "selection_rank_for_ticker": 13,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20200602_-_rapport_de_lassemblee_generale_ordinaire_et_etats_financiers_certifies_et_approuves_-_boa_sn.pdf",
+    "label": "Rapport de lassemblee generale ordinaire et etats financiers certifies et approuves boa sn",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers_approuves",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2020-06-02",
+    "url": "https://www.brvm.org/sites/default/files/20200602_-_rapport_de_lassemblee_generale_ordinaire_et_etats_financiers_certifies_et_approuves_-_boa_sn.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-sn",
+    "report_page_label": "BANK OF AFRICA SN",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-sn?page=1"
+    ]
+  }
+}

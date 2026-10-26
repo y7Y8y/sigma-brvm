@@ -1,0 +1,2570 @@
+{
+  "candidate_id": "5384a37ae2577857",
+  "ticker": "ORGT",
+  "url": "https://www.brvm.org/sites/default/files/20230426_-_etats_financiers_exercice_2022_-_oragroup_tg.pdf",
+  "code_fingerprint": "84a6653cbb667afc18b8437eda6a943be09a51678379212d1eb06e1e992590be",
+  "candidate": {
+    "target_years_from_filename": [
+      2022,
+      2021,
+      2020
+    ],
+    "selection_rank_for_ticker": 5
+  },
+  "classified_document": {
+    "filename": "20230426_-_etats_financiers_exercice_2022_-_oragroup_tg.pdf",
+    "label": "Etats financiers exercice 2022 oragroup tg",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2022,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2023-04-26",
+    "url": "https://www.brvm.org/sites/default/files/20230426_-_etats_financiers_exercice_2022_-_oragroup_tg.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/oragroup",
+    "report_page_label": "ORAGROUP",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/oragroup",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/oragroup"
+    ]
+  },
+  "extraction": {
+    "columns": {
+      "courant": {
+        "produit_net_bancaire": {
+          "label": "Produit net bancaire",
+          "value": 222431000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Produit net Bancaire 222 431 187 315",
+              "raw_token": "222431.0",
+              "context_lines": [
+                "Produits des autres activités 6.3.5 4 115 4 285",
+                "Charges des autres activités 6.3.5 -270 -274",
+                "Produit net Bancaire 222 431 187 315",
+                "Frais de personnel 6.3.6 -61 318 -52 394",
+                "Dotations aux amortissements et dépréciations des immobilisations incorporelles et corporelles 6.3.7 -15 450 -13 321"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 222431000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 222431000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 19199000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Résultat net 19 199 19 798",
+              "raw_token": "19199.0",
+              "context_lines": [
+                "Résultat avant impôt 25 433 27 138",
+                "Impôts sur les bénéfices 6.3.11 -6 234 -7 340",
+                "Résultat net 19 199 19 798",
+                "Participations ne donnant pas le contrôle 10 450 9 034",
+                "Résultat Net, Part du Groupe 8 749 10 764"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 2,
+              "line": "Résultat net 19 199 19 798",
+              "raw_token": "19199.0",
+              "context_lines": [
+                "Etat du résultat et des autres éléménts du résultat global",
+                "En millions de FCFA 31.12.2022 31.12.2021",
+                "Résultat net 19 199 19 798",
+                "Eléments qui seront reclassés ultérieurement en résultat net -1 465 2 450",
+                "Variations de valeur des éléments relatifs aux parités monétaires -1 465 2 450"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -1465000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": -604000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 8749000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 19199000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1,
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 78310000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 19199000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "resultat_net_part_groupe": {
+          "label": "Résultat net part du groupe",
+          "value": 8749000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Résultat Net, Part du Groupe 8 749 10 764",
+              "raw_token": "8749.0",
+              "context_lines": [
+                "Résultat net 19 199 19 798",
+                "Participations ne donnant pas le contrôle 10 450 9 034",
+                "Résultat Net, Part du Groupe 8 749 10 764"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 8749000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 8749000000,
+          "confidence": "extraction_unique"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 115056000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Total Capitaux propres part du groupe 115 056 118 895",
+              "raw_token": "115056.0",
+              "context_lines": [
+                "Réserves consolidées et report à nouveau 28 025 32 169",
+                "Total capital, réserves consolidées et résultat de la période, part du Groupe 115 056 118 895",
+                "Total Capitaux propres part du groupe 115 056 118 895",
+                "Participations ne donnant pas le contrôle 50 940 45 858",
+                "Total des capitaux propres 165 995 164 752"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 115056000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 165995000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 115056000000,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 4732757000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "TOTAL ACTIF 4 732 757 4 058 135",
+              "raw_token": "4732757.0",
+              "context_lines": [
+                "Immobilisations incorporelles 6.4.9 8 566 9 227",
+                "Goodwill 6.4.10 15 713 15 713",
+                "TOTAL ACTIF 4 732 757 4 058 135",
+                "En millions de FCFA Note 31.12.2022 31.12.2021",
+                "Dettes"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 4732757000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 4732757000000,
+          "confidence": "extraction_unique"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 376550000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+              "raw_token": "376550.0",
+              "context_lines": [
+                "Dividendes payés -2 148 0",
+                "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 272 807 225 322",
+                "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+                "Acquisitions liées aux autres actifs évalués au coût amorti -311 005 -417 058",
+                "Remboursements liés aux autres actifs évalués au coût amorti 136 349 137 091"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 376550000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 376550000000,
+          "confidence": "extraction_unique"
+        },
+        "dividendes_verses": {
+          "label": "Dividendes versés (flux)",
+          "value": -2148000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Dividendes payés -2 148 0",
+              "raw_token": "-2148.0",
+              "context_lines": [
+                "Flux liés aux autres opérations affectant des passifs non financiers 11 875 16 566",
+                "Impôts payés -14 126 -2 334",
+                "Dividendes payés -2 148 0",
+                "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 272 807 225 322",
+                "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -2148000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -2148000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 471572000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+              "raw_token": "471572.0",
+              "context_lines": [
+                "Caisse, Banques centrales, CCP (actif & passif) 253 385 224 881",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 6 617 -5 430",
+                "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+                "Caisse, Banques centrales, CCP (actif & passif) 393 310 253 385",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 78 262 6 617"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 471572000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 471572000000,
+          "confidence": "extraction_unique"
+        }
+      },
+      "precedent": {
+        "produit_net_bancaire": {
+          "label": "Produit net bancaire",
+          "value": 187315000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Produit net Bancaire 222 431 187 315",
+              "raw_token": "187315.0",
+              "context_lines": [
+                "Produits des autres activités 6.3.5 4 115 4 285",
+                "Charges des autres activités 6.3.5 -270 -274",
+                "Produit net Bancaire 222 431 187 315",
+                "Frais de personnel 6.3.6 -61 318 -52 394",
+                "Dotations aux amortissements et dépréciations des immobilisations incorporelles et corporelles 6.3.7 -15 450 -13 321"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 187315000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 187315000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 19798000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Résultat net 19 199 19 798",
+              "raw_token": "19798.0",
+              "context_lines": [
+                "Résultat avant impôt 25 433 27 138",
+                "Impôts sur les bénéfices 6.3.11 -6 234 -7 340",
+                "Résultat net 19 199 19 798",
+                "Participations ne donnant pas le contrôle 10 450 9 034",
+                "Résultat Net, Part du Groupe 8 749 10 764"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 2,
+              "line": "Résultat net 19 199 19 798",
+              "raw_token": "19798.0",
+              "context_lines": [
+                "Etat du résultat et des autres éléménts du résultat global",
+                "En millions de FCFA 31.12.2022 31.12.2021",
+                "Résultat net 19 199 19 798",
+                "Eléments qui seront reclassés ultérieurement en résultat net -1 465 2 450",
+                "Variations de valeur des éléments relatifs aux parités monétaires -1 465 2 450"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 293000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 2450000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 10764000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 19798000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1,
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 58678000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 19798000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "resultat_net_part_groupe": {
+          "label": "Résultat net part du groupe",
+          "value": 10764000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Résultat Net, Part du Groupe 8 749 10 764",
+              "raw_token": "10764.0",
+              "context_lines": [
+                "Résultat net 19 199 19 798",
+                "Participations ne donnant pas le contrôle 10 450 9 034",
+                "Résultat Net, Part du Groupe 8 749 10 764"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 10764000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 10764000000,
+          "confidence": "extraction_unique"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 118895000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Total Capitaux propres part du groupe 115 056 118 895",
+              "raw_token": "118895.0",
+              "context_lines": [
+                "Réserves consolidées et report à nouveau 28 025 32 169",
+                "Total capital, réserves consolidées et résultat de la période, part du Groupe 115 056 118 895",
+                "Total Capitaux propres part du groupe 115 056 118 895",
+                "Participations ne donnant pas le contrôle 50 940 45 858",
+                "Total des capitaux propres 165 995 164 752"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 118895000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 164752000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 118895000000,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 4058135000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "TOTAL ACTIF 4 732 757 4 058 135",
+              "raw_token": "4058135.0",
+              "context_lines": [
+                "Immobilisations incorporelles 6.4.9 8 566 9 227",
+                "Goodwill 6.4.10 15 713 15 713",
+                "TOTAL ACTIF 4 732 757 4 058 135",
+                "En millions de FCFA Note 31.12.2022 31.12.2021",
+                "Dettes"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 4058135000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 4058135000000,
+          "confidence": "extraction_unique"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 311139000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+              "raw_token": "311139.0",
+              "context_lines": [
+                "Dividendes payés -2 148 0",
+                "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 272 807 225 322",
+                "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+                "Acquisitions liées aux autres actifs évalués au coût amorti -311 005 -417 058",
+                "Remboursements liés aux autres actifs évalués au coût amorti 136 349 137 091"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 311139000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 311139000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 260002000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+              "raw_token": "260002.0",
+              "context_lines": [
+                "Caisse, Banques centrales, CCP (actif & passif) 253 385 224 881",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 6 617 -5 430",
+                "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+                "Caisse, Banques centrales, CCP (actif & passif) 393 310 253 385",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 78 262 6 617"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "NON_PROUVE",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 260002000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 260002000000,
+          "confidence": "extraction_unique"
+        }
+      },
+      "colonnes": {
+        "0": {
+          "produit_net_bancaire": {
+            "label": "Produit net bancaire",
+            "value": 222431000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Produit net Bancaire 222 431 187 315",
+                "raw_token": "222431.0",
+                "context_lines": [
+                  "Produits des autres activités 6.3.5 4 115 4 285",
+                  "Charges des autres activités 6.3.5 -270 -274",
+                  "Produit net Bancaire 222 431 187 315",
+                  "Frais de personnel 6.3.6 -61 318 -52 394",
+                  "Dotations aux amortissements et dépréciations des immobilisations incorporelles et corporelles 6.3.7 -15 450 -13 321"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 222431000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 222431000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 19199000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Résultat net 19 199 19 798",
+                "raw_token": "19199.0",
+                "context_lines": [
+                  "Résultat avant impôt 25 433 27 138",
+                  "Impôts sur les bénéfices 6.3.11 -6 234 -7 340",
+                  "Résultat net 19 199 19 798",
+                  "Participations ne donnant pas le contrôle 10 450 9 034",
+                  "Résultat Net, Part du Groupe 8 749 10 764"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 2,
+                "line": "Résultat net 19 199 19 798",
+                "raw_token": "19199.0",
+                "context_lines": [
+                  "Etat du résultat et des autres éléménts du résultat global",
+                  "En millions de FCFA 31.12.2022 31.12.2021",
+                  "Résultat net 19 199 19 798",
+                  "Eléments qui seront reclassés ultérieurement en résultat net -1 465 2 450",
+                  "Variations de valeur des éléments relatifs aux parités monétaires -1 465 2 450"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -1465000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": -604000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 8749000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 19199000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1,
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 78310000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 19199000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "resultat_net_part_groupe": {
+            "label": "Résultat net part du groupe",
+            "value": 8749000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Résultat Net, Part du Groupe 8 749 10 764",
+                "raw_token": "8749.0",
+                "context_lines": [
+                  "Résultat net 19 199 19 798",
+                  "Participations ne donnant pas le contrôle 10 450 9 034",
+                  "Résultat Net, Part du Groupe 8 749 10 764"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 8749000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 8749000000,
+            "confidence": "extraction_unique"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 115056000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Total Capitaux propres part du groupe 115 056 118 895",
+                "raw_token": "115056.0",
+                "context_lines": [
+                  "Réserves consolidées et report à nouveau 28 025 32 169",
+                  "Total capital, réserves consolidées et résultat de la période, part du Groupe 115 056 118 895",
+                  "Total Capitaux propres part du groupe 115 056 118 895",
+                  "Participations ne donnant pas le contrôle 50 940 45 858",
+                  "Total des capitaux propres 165 995 164 752"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 115056000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 165995000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 115056000000,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 4732757000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "TOTAL ACTIF 4 732 757 4 058 135",
+                "raw_token": "4732757.0",
+                "context_lines": [
+                  "Immobilisations incorporelles 6.4.9 8 566 9 227",
+                  "Goodwill 6.4.10 15 713 15 713",
+                  "TOTAL ACTIF 4 732 757 4 058 135",
+                  "En millions de FCFA Note 31.12.2022 31.12.2021",
+                  "Dettes"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 4732757000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 4732757000000,
+            "confidence": "extraction_unique"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 376550000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+                "raw_token": "376550.0",
+                "context_lines": [
+                  "Dividendes payés -2 148 0",
+                  "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 272 807 225 322",
+                  "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+                  "Acquisitions liées aux autres actifs évalués au coût amorti -311 005 -417 058",
+                  "Remboursements liés aux autres actifs évalués au coût amorti 136 349 137 091"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 376550000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 376550000000,
+            "confidence": "extraction_unique"
+          },
+          "dividendes_verses": {
+            "label": "Dividendes versés (flux)",
+            "value": -2148000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Dividendes payés -2 148 0",
+                "raw_token": "-2148.0",
+                "context_lines": [
+                  "Flux liés aux autres opérations affectant des passifs non financiers 11 875 16 566",
+                  "Impôts payés -14 126 -2 334",
+                  "Dividendes payés -2 148 0",
+                  "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 272 807 225 322",
+                  "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -2148000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -2148000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 471572000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+                "raw_token": "471572.0",
+                "context_lines": [
+                  "Caisse, Banques centrales, CCP (actif & passif) 253 385 224 881",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 6 617 -5 430",
+                  "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+                  "Caisse, Banques centrales, CCP (actif & passif) 393 310 253 385",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 78 262 6 617"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 471572000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 471572000000,
+            "confidence": "extraction_unique"
+          }
+        },
+        "1": {
+          "produit_net_bancaire": {
+            "label": "Produit net bancaire",
+            "value": 187315000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Produit net Bancaire 222 431 187 315",
+                "raw_token": "187315.0",
+                "context_lines": [
+                  "Produits des autres activités 6.3.5 4 115 4 285",
+                  "Charges des autres activités 6.3.5 -270 -274",
+                  "Produit net Bancaire 222 431 187 315",
+                  "Frais de personnel 6.3.6 -61 318 -52 394",
+                  "Dotations aux amortissements et dépréciations des immobilisations incorporelles et corporelles 6.3.7 -15 450 -13 321"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 187315000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 187315000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 19798000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Résultat net 19 199 19 798",
+                "raw_token": "19798.0",
+                "context_lines": [
+                  "Résultat avant impôt 25 433 27 138",
+                  "Impôts sur les bénéfices 6.3.11 -6 234 -7 340",
+                  "Résultat net 19 199 19 798",
+                  "Participations ne donnant pas le contrôle 10 450 9 034",
+                  "Résultat Net, Part du Groupe 8 749 10 764"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 2,
+                "line": "Résultat net 19 199 19 798",
+                "raw_token": "19798.0",
+                "context_lines": [
+                  "Etat du résultat et des autres éléménts du résultat global",
+                  "En millions de FCFA 31.12.2022 31.12.2021",
+                  "Résultat net 19 199 19 798",
+                  "Eléments qui seront reclassés ultérieurement en résultat net -1 465 2 450",
+                  "Variations de valeur des éléments relatifs aux parités monétaires -1 465 2 450"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 293000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 2450000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 10764000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 19798000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1,
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 58678000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 19798000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "resultat_net_part_groupe": {
+            "label": "Résultat net part du groupe",
+            "value": 10764000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Résultat Net, Part du Groupe 8 749 10 764",
+                "raw_token": "10764.0",
+                "context_lines": [
+                  "Résultat net 19 199 19 798",
+                  "Participations ne donnant pas le contrôle 10 450 9 034",
+                  "Résultat Net, Part du Groupe 8 749 10 764"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 10764000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 10764000000,
+            "confidence": "extraction_unique"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 118895000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Total Capitaux propres part du groupe 115 056 118 895",
+                "raw_token": "118895.0",
+                "context_lines": [
+                  "Réserves consolidées et report à nouveau 28 025 32 169",
+                  "Total capital, réserves consolidées et résultat de la période, part du Groupe 115 056 118 895",
+                  "Total Capitaux propres part du groupe 115 056 118 895",
+                  "Participations ne donnant pas le contrôle 50 940 45 858",
+                  "Total des capitaux propres 165 995 164 752"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 118895000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 164752000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 118895000000,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 4058135000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "TOTAL ACTIF 4 732 757 4 058 135",
+                "raw_token": "4058135.0",
+                "context_lines": [
+                  "Immobilisations incorporelles 6.4.9 8 566 9 227",
+                  "Goodwill 6.4.10 15 713 15 713",
+                  "TOTAL ACTIF 4 732 757 4 058 135",
+                  "En millions de FCFA Note 31.12.2022 31.12.2021",
+                  "Dettes"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 4058135000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 4058135000000,
+            "confidence": "extraction_unique"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 311139000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+                "raw_token": "311139.0",
+                "context_lines": [
+                  "Dividendes payés -2 148 0",
+                  "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 272 807 225 322",
+                  "Flux net de trésorerie généré par l’activité opérationnelle 376 550 311 139",
+                  "Acquisitions liées aux autres actifs évalués au coût amorti -311 005 -417 058",
+                  "Remboursements liés aux autres actifs évalués au coût amorti 136 349 137 091"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 311139000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 311139000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 260002000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+                "raw_token": "260002.0",
+                "context_lines": [
+                  "Caisse, Banques centrales, CCP (actif & passif) 253 385 224 881",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 6 617 -5 430",
+                  "Trésorerie et équivalents de trésorerie à la clôture 471 572 260 002",
+                  "Caisse, Banques centrales, CCP (actif & passif) 393 310 253 385",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 78 262 6 617"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "NON_PROUVE",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 260002000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 260002000000,
+            "confidence": "extraction_unique"
+          }
+        }
+      },
+      "_per_share_observations": {
+        "parser_version": "eps-evidence-v2.1.1",
+        "eps": [],
+        "shares": [],
+        "numerators": [
+          {
+            "kind": "NUMERATEUR_BPA",
+            "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+            "value": 8749.0,
+            "raw_value": 8749.0,
+            "raw_token": "8 749",
+            "multiplier": 1,
+            "currency": "NON_PROUVEE",
+            "unit_label": "NON_PROUVEE, montants en unites",
+            "component": "NON_PRECISE",
+            "accounting_scope": "CONSOLIDE",
+            "target_exercice": 2022,
+            "year_offset_from_document": 0,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "evidence": {
+              "page": 1,
+              "line_index_on_page": 61,
+              "line_original": "Résultat Net, Part du Groupe 8 749 10 764",
+              "raw_token": "8 749",
+              "context_lines": [
+                "Résultat net 19 199 19 798",
+                "Participations ne donnant pas le contrôle 10 450 9 034",
+                "Résultat Net, Part du Groupe 8 749 10 764"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "parent_fr",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "NUMERATEUR_BPA",
+            "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+            "value": 10764.0,
+            "raw_value": 10764.0,
+            "raw_token": "10 764",
+            "multiplier": 1,
+            "currency": "NON_PROUVEE",
+            "unit_label": "NON_PROUVEE, montants en unites",
+            "component": "NON_PRECISE",
+            "accounting_scope": "CONSOLIDE",
+            "target_exercice": 2021,
+            "year_offset_from_document": 1,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "evidence": {
+              "page": 1,
+              "line_index_on_page": 61,
+              "line_original": "Résultat Net, Part du Groupe 8 749 10 764",
+              "raw_token": "10 764",
+              "context_lines": [
+                "Résultat net 19 199 19 798",
+                "Participations ne donnant pas le contrôle 10 450 9 034",
+                "Résultat Net, Part du Groupe 8 749 10 764"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "parent_fr",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "ignored": []
+      },
+      "_content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [
+          "CONSOLIDE"
+        ],
+        "frameworks_present": [],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 2,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "_page_contexts": [
+        {
+          "page": 1,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "NON_PROUVE",
+          "framework_source": "AUCUNE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "ORAGROUP SA ETATS FINANCIERS CONSOLIDES PROVISOIRES EXERCICE CLOS AU 31 DECEMBRE 2022 Etat consolidé de la Situation Financière En millions de FCFA Note 31.12.2022 31.12.2021 Actif Caisse et banques centrales 6.4.1 393 310 253 385 Autres actifs financiers aux coûts amortis 6.4.2 1 428 401 1 253 847 Actifs financiers à "
+        },
+        {
+          "page": 2,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "NON_PROUVE",
+          "framework_source": "AUCUNE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "ORAGROUP SA ETATS FINANCIERS CONSOLIDES EXERCICE CLOS AU 31 DECEMBRE 2022 Etat du résultat et des autres éléménts du résultat global En millions de FCFA 31.12.2022 31.12.2021 Résultat net 19 199 19 798 Eléments qui seront reclassés ultérieurement en résultat net -1 465 2 450 Variations de valeur des éléments relatifs a"
+        }
+      ]
+    },
+    "per_share_observations": {
+      "parser_version": "eps-evidence-v2.1.1",
+      "eps": [],
+      "shares": [],
+      "numerators": [
+        {
+          "kind": "NUMERATEUR_BPA",
+          "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+          "value": 8749.0,
+          "raw_value": 8749.0,
+          "raw_token": "8 749",
+          "multiplier": 1,
+          "currency": "NON_PROUVEE",
+          "unit_label": "NON_PROUVEE, montants en unites",
+          "component": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "target_exercice": 2022,
+          "year_offset_from_document": 0,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 61,
+            "line_original": "Résultat Net, Part du Groupe 8 749 10 764",
+            "raw_token": "8 749",
+            "context_lines": [
+              "Résultat net 19 199 19 798",
+              "Participations ne donnant pas le contrôle 10 450 9 034",
+              "Résultat Net, Part du Groupe 8 749 10 764"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "parent_fr",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "NUMERATEUR_BPA",
+          "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+          "value": 10764.0,
+          "raw_value": 10764.0,
+          "raw_token": "10 764",
+          "multiplier": 1,
+          "currency": "NON_PROUVEE",
+          "unit_label": "NON_PROUVEE, montants en unites",
+          "component": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "target_exercice": 2021,
+          "year_offset_from_document": 1,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "evidence": {
+            "page": 1,
+            "line_index_on_page": 61,
+            "line_original": "Résultat Net, Part du Groupe 8 749 10 764",
+            "raw_token": "10 764",
+            "context_lines": [
+              "Résultat net 19 199 19 798",
+              "Participations ne donnant pas le contrôle 10 450 9 034",
+              "Résultat Net, Part du Groupe 8 749 10 764"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "parent_fr",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "ignored": []
+    },
+    "document": {
+      "url": "https://www.brvm.org/sites/default/files/20230426_-_etats_financiers_exercice_2022_-_oragroup_tg.pdf",
+      "filename": "20230426_-_etats_financiers_exercice_2022_-_oragroup_tg.pdf",
+      "label": "Etats financiers exercice 2022 oragroup tg",
+      "link_text": "Télécharger",
+      "doc_type_filename": "etats_financiers",
+      "published_date": "2023-04-26",
+      "filename_exercice": 2022,
+      "filename_exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+      "content_exercice": 2022,
+      "content_exercice_status": "LU_DANS_LE_CONTENU",
+      "content_exercice_evidence": [
+        {
+          "page": 1,
+          "line": "EXERCICE CLOS AU 31 DECEMBRE 2022",
+          "year": 2022
+        },
+        {
+          "page": 2,
+          "line": "EXERCICE CLOS AU 31 DECEMBRE 2022",
+          "year": 2022
+        }
+      ],
+      "effective_exercice": 2022,
+      "period": {
+        "period_kind": "ANNUEL_OU_NON_PROUVE",
+        "interim_markers": [],
+        "filename_markers": [],
+        "content_title_markers": [],
+        "selection_status": "CANDIDAT_ANNUEL_SOUS_RESERVE_DES_AUTRES_CONTROLES"
+      },
+      "identity": {
+        "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+        "expected_ticker": "ORGT",
+        "best_ticker": "ORGT",
+        "expected_score": 99,
+        "best_other_ticker": null,
+        "best_other_score": 0,
+        "scores": {
+          "ORGT": 99
+        },
+        "evidence": [
+          {
+            "phrase": "oragroup tg",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 12,
+            "zone": "nom_fichier",
+            "page": null,
+            "weight": 3,
+            "weighted_score": 36
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "premiere_page_debut",
+            "page": 1,
+            "weight": 4,
+            "weighted_score": 24
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 1,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 2,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 9,
+            "zone": "texte_premieres_pages",
+            "page": 2,
+            "weight": 1,
+            "weighted_score": 9
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 1,
+            "weight": 1,
+            "weighted_score": 6
+          }
+        ],
+        "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+        "classifier_version": "document-selection-v2.0.0"
+      },
+      "content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [
+          "CONSOLIDE"
+        ],
+        "frameworks_present": [],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 2,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "scope_hint_filename": "NON_PROUVE",
+      "framework_hint_filename": "NON_PROUVE",
+      "selection_status_filename": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+      "selection_rejection": null,
+      "version_label": "NON_AUDITE_OU_PROVISOIRE",
+      "version_markers": [
+        "NON_AUDITE_OU_PROVISOIRE"
+      ],
+      "filename_markers": [],
+      "content_markers_first_pages": [
+        "NON_AUDITE_OU_PROVISOIRE"
+      ],
+      "sha256": "101fe5cb2143dcf19b3a4fad51518b7e7c949b9adae74206b356233e73bd1c66",
+      "bytes": 130526,
+      "cache": {
+        "status": "hit_par_url_et_nom",
+        "key": "4509756f3847eae6-20230426_-_etats_financiers_exercice_2022_-_oragroup_tg.pdf"
+      },
+      "page_selection": {
+        "pages_total": 2,
+        "pages_native_text_scanned": 2,
+        "pages_structured": 2,
+        "selected_pages": [
+          1,
+          2
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 6946
+      },
+      "parser_versions": {
+        "eps_evidence": "eps-evidence-v2.1.1",
+        "document_classifier": "document-selection-v2.0.0"
+      }
+    },
+    "identity": {
+      "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "expected_ticker": "ORGT",
+      "best_ticker": "ORGT",
+      "expected_score": 99,
+      "best_other_ticker": null,
+      "best_other_score": 0,
+      "scores": {
+        "ORGT": 99
+      },
+      "evidence": [
+        {
+          "phrase": "oragroup tg",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 12,
+          "zone": "nom_fichier",
+          "page": null,
+          "weight": 3,
+          "weighted_score": 36
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "premiere_page_debut",
+          "page": 1,
+          "weight": 4,
+          "weighted_score": 24
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 1,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 2,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 9,
+          "zone": "texte_premieres_pages",
+          "page": 2,
+          "weight": 1,
+          "weighted_score": 9
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 1,
+          "weight": 1,
+          "weighted_score": 6
+        }
+      ],
+      "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+      "classifier_version": "document-selection-v2.0.0"
+    },
+    "content_exercice": 2022,
+    "effective_exercice": 2022,
+    "notes": [],
+    "sha256": "101fe5cb2143dcf19b3a4fad51518b7e7c949b9adae74206b356233e73bd1c66",
+    "extraction": {
+      "method": "texte_natif",
+      "native_text_characters": 6946,
+      "page_selection": {
+        "pages_total": 2,
+        "pages_native_text_scanned": 2,
+        "pages_structured": 2,
+        "selected_pages": [
+          1,
+          2
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 6946
+      },
+      "document_identity_status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "selection_rejection": null,
+      "ocr": {
+        "available": null,
+        "attempted": false,
+        "used": false,
+        "cache_status": "non_appele",
+        "pages_ocrees": 0,
+        "mean_confidence": null,
+        "truncated": false
+      }
+    }
+  },
+  "document_sha256": "101fe5cb2143dcf19b3a4fad51518b7e7c949b9adae74206b356233e73bd1c66",
+  "extraction_seconds": 0.389
+}

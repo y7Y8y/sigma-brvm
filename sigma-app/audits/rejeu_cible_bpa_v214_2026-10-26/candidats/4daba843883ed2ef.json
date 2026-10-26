@@ -1,0 +1,35 @@
+{
+  "candidate_id": "4daba843883ed2ef",
+  "ticker": "UNXC",
+  "url": "https://www.brvm.org/sites/default/files/20180427_-_etats_financiers_provisoires_-_uniwax.pdf",
+  "selection_rank_for_ticker": 14,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20180427_-_etats_financiers_provisoires_-_uniwax.pdf",
+    "label": "Etats financiers provisoires uniwax",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2018-04-27",
+    "url": "https://www.brvm.org/sites/default/files/20180427_-_etats_financiers_provisoires_-_uniwax.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_AUDITE_OU_PROVISOIRE",
+    "version_markers": [
+      "NON_AUDITE_OU_PROVISOIRE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/uniwax-ci",
+    "report_page_label": "UNIWAX CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/uniwax-ci?page=1"
+    ]
+  }
+}

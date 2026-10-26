@@ -1,0 +1,4454 @@
+{
+  "candidate_id": "ed974856911e40bc",
+  "ticker": "ORGT",
+  "url": "https://www.brvm.org/sites/default/files/20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf",
+  "code_fingerprint": "84a6653cbb667afc18b8437eda6a943be09a51678379212d1eb06e1e992590be",
+  "candidate": {
+    "target_years_from_filename": [
+      2019,
+      2018,
+      2017
+    ],
+    "selection_rank_for_ticker": 10
+  },
+  "classified_document": {
+    "filename": "20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf",
+    "label": "Etats financiers certifies et approuves exercice 2019 oragroup togo",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers_approuves",
+    "exercice": 2019,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2020-07-10",
+    "url": "https://www.brvm.org/sites/default/files/20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/oragroup",
+    "report_page_label": "ORAGROUP",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/oragroup?page=1"
+    ]
+  },
+  "extraction": {
+    "columns": {
+      "courant": {
+        "produit_net_bancaire": {
+          "label": "Produit net bancaire",
+          "value": 146852000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 13,
+              "line": "Produit net Bancaire 146 852 126 918",
+              "raw_token": "146852.0",
+              "context_lines": [
+                "Produits des autres activités 6.3.5 3 779 4 803",
+                "Charges des autres activités 6.3.5 -43 -132",
+                "Produit net Bancaire 146 852 126 918",
+                "Frais de personnel 6.3.6 -42 583 -38 932",
+                "Dotations aux amortissements des immobilisations incorporelles et corporelles 6.3.7 -11 821 -10 234"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 146852000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                13
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 146852000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net_part_groupe": {
+          "label": "Résultat net part du groupe",
+          "value": 9806000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 13,
+              "line": "Résultat Net, Part du Groupe 9 806 7 968",
+              "raw_token": "9806.0",
+              "context_lines": [
+                "Résultat net 18 327 12 491",
+                "Participations ne donnant pas le contrôle 8 521 4 523",
+                "Résultat Net, Part du Groupe 9 806 7 968",
+                "Page 1 sur 77"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 43,
+              "line": "Résultat net part du groupe 9 806 7 968",
+              "raw_token": "9806.0",
+              "context_lines": [
+                "Résultat net par action",
+                "2 019 2 018",
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 9806000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                13,
+                43
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 9806000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 111571000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 15,
+              "line": "Total Capitaux propres part du groupe 111 571 108 590",
+              "raw_token": "111571.0",
+              "context_lines": [
+                "Réserves consolidées et report à nouveau 6.4.16 24 741 20 413",
+                "Total capital, réserves consolidées et résultat de la période, part du Groupe 111 571 108 590",
+                "Total Capitaux propres part du groupe 111 571 108 590",
+                "Participations ne donnant pas le contrôle 29 077 20 977",
+                "Total des capitaux propres 140 648 129 567"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 182000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                80
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 111571000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                15
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 140648000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                15
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 2634338000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                15
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 111571000000,
+          "confidence": "extraction_unique"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 208570000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 16,
+              "line": "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+              "raw_token": "208570.0",
+              "context_lines": [
+                "Dividendes payés -5 330 -5 005",
+                "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+                "Acquisitions liées aux autres actifs évalués au coût amorti -296 466 -141 873",
+                "Remboursements liés aux autres actifs évalués au coût amorti 135 24 8 47 288"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 208570000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                16
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 208570000000,
+          "confidence": "extraction_unique"
+        },
+        "dividendes_verses": {
+          "label": "Dividendes versés (flux)",
+          "value": -5330000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 16,
+              "line": "Dividendes payés -5 330 -5 005",
+              "raw_token": "-5330.0",
+              "context_lines": [
+                "Flux liés aux autres opérations affectant des passifs non financiers 2 450 -62 124",
+                "Impôts payés -8 504 -3 323",
+                "Dividendes payés -5 330 -5 005",
+                "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -5330000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                16
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -5330000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 238405000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 16,
+              "line": "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+              "raw_token": "238405.0",
+              "context_lines": [
+                "Caisse, Banques centrales, CCP (actif & passif) 141 64 6 64 989",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 7 94 7 13 642",
+                "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+                "Caisse, Banques centrales, CCP (actif & passif) 205 16 3 141 646",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 33 24 3 7 947"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 238405000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                16
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 238405000000,
+          "confidence": "extraction_unique"
+        },
+        "benefice_par_action": {
+          "label": "Bénéfice net par action publié",
+          "value": 142.0,
+          "value_kind": "fcfa_par_action",
+          "unit_label": "FCFA par action",
+          "source_amount_count": 1,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 43,
+              "line": "Résultat de base par action (en unité de franc CFA) 142 115",
+              "raw_token": "142",
+              "context_lines": [
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115",
+                "6.4 Notes relatives au bilan",
+                "6.4.1 Caisse et banques centrales"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "FCFA par action",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": "eps-evidence-v2.1.1",
+              "parser_rule": "fr_resultat_par_action"
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "basis": "DE_BASE",
+          "published_decimals": 0,
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+          "eps_metadata": {
+            "kind": "BPA_PUBLIE",
+            "value": 142.0,
+            "raw_token": "142",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1,
+            "page_monetary_scale_label": null,
+            "page_monetary_scale_source": "LIBELLE_BPA",
+            "per_share_unit_explicit": true,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2019,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": []
+          },
+          "source_multiplier": 1,
+          "candidate_groups": [
+            {
+              "value": 142.0,
+              "value_kind": "fcfa_par_action",
+              "occurrences": 1,
+              "pages": [
+                43
+              ],
+              "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": "FCFA",
+              "component": "TOTAL",
+              "basis": "DE_BASE",
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "confidence": "extraction_unique"
+        }
+      },
+      "precedent": {
+        "produit_net_bancaire": {
+          "label": "Produit net bancaire",
+          "value": 126918000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 13,
+              "line": "Produit net Bancaire 146 852 126 918",
+              "raw_token": "126918.0",
+              "context_lines": [
+                "Produits des autres activités 6.3.5 3 779 4 803",
+                "Charges des autres activités 6.3.5 -43 -132",
+                "Produit net Bancaire 146 852 126 918",
+                "Frais de personnel 6.3.6 -42 583 -38 932",
+                "Dotations aux amortissements des immobilisations incorporelles et corporelles 6.3.7 -11 821 -10 234"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 126918000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                13
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 126918000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net_part_groupe": {
+          "label": "Résultat net part du groupe",
+          "value": 7968000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 13,
+              "line": "Résultat Net, Part du Groupe 9 806 7 968",
+              "raw_token": "7968.0",
+              "context_lines": [
+                "Résultat net 18 327 12 491",
+                "Participations ne donnant pas le contrôle 8 521 4 523",
+                "Résultat Net, Part du Groupe 9 806 7 968",
+                "Page 1 sur 77"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 43,
+              "line": "Résultat net part du groupe 9 806 7 968",
+              "raw_token": "7968.0",
+              "context_lines": [
+                "Résultat net par action",
+                "2 019 2 018",
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 7968000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                13,
+                43
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 7968000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 108590000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 15,
+              "line": "Total Capitaux propres part du groupe 111 571 108 590",
+              "raw_token": "108590.0",
+              "context_lines": [
+                "Réserves consolidées et report à nouveau 6.4.16 24 741 20 413",
+                "Total capital, réserves consolidées et résultat de la période, part du Groupe 111 571 108 590",
+                "Total Capitaux propres part du groupe 111 571 108 590",
+                "Participations ne donnant pas le contrôle 29 077 20 977",
+                "Total des capitaux propres 140 648 129 567"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -1815000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                80
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 108590000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                15
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 129567000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                15
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 2159904000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                15
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 108590000000,
+          "confidence": "extraction_unique"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 149434000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 16,
+              "line": "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+              "raw_token": "149434.0",
+              "context_lines": [
+                "Dividendes payés -5 330 -5 005",
+                "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+                "Acquisitions liées aux autres actifs évalués au coût amorti -296 466 -141 873",
+                "Remboursements liés aux autres actifs évalués au coût amorti 135 24 8 47 288"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 149434000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                16
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 149434000000,
+          "confidence": "extraction_unique"
+        },
+        "dividendes_verses": {
+          "label": "Dividendes versés (flux)",
+          "value": -5005000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 16,
+              "line": "Dividendes payés -5 330 -5 005",
+              "raw_token": "-5005.0",
+              "context_lines": [
+                "Flux liés aux autres opérations affectant des passifs non financiers 2 450 -62 124",
+                "Impôts payés -8 504 -3 323",
+                "Dividendes payés -5 330 -5 005",
+                "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -5005000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                16
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -5005000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 149594000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 16,
+              "line": "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+              "raw_token": "149594.0",
+              "context_lines": [
+                "Caisse, Banques centrales, CCP (actif & passif) 141 64 6 64 989",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 7 94 7 13 642",
+                "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+                "Caisse, Banques centrales, CCP (actif & passif) 205 16 3 141 646",
+                "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 33 24 3 7 947"
+              ],
+              "column_header": null,
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "candidate_signature": "CONSOLIDE",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 149594000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                16
+              ],
+              "candidate_signature": "CONSOLIDE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 149594000000,
+          "confidence": "extraction_unique"
+        },
+        "benefice_par_action": {
+          "label": "Bénéfice net par action publié",
+          "value": 115.0,
+          "value_kind": "fcfa_par_action",
+          "unit_label": "FCFA par action",
+          "source_amount_count": 1,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 43,
+              "line": "Résultat de base par action (en unité de franc CFA) 142 115",
+              "raw_token": "115",
+              "context_lines": [
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115",
+                "6.4 Notes relatives au bilan",
+                "6.4.1 Caisse et banques centrales"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "FCFA par action",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": "eps-evidence-v2.1.1",
+              "parser_rule": "fr_resultat_par_action"
+            }
+          ],
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "basis": "DE_BASE",
+          "published_decimals": 0,
+          "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+          "eps_metadata": {
+            "kind": "BPA_PUBLIE",
+            "value": 115.0,
+            "raw_token": "115",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1,
+            "page_monetary_scale_label": null,
+            "page_monetary_scale_source": "LIBELLE_BPA",
+            "per_share_unit_explicit": true,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2018,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": []
+          },
+          "source_multiplier": 1,
+          "candidate_groups": [
+            {
+              "value": 115.0,
+              "value_kind": "fcfa_par_action",
+              "occurrences": 1,
+              "pages": [
+                43
+              ],
+              "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+              "accounting_scope": "CONSOLIDE",
+              "framework": "IFRS",
+              "currency": "FCFA",
+              "component": "TOTAL",
+              "basis": "DE_BASE",
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "confidence": "extraction_unique"
+        }
+      },
+      "colonnes": {
+        "0": {
+          "produit_net_bancaire": {
+            "label": "Produit net bancaire",
+            "value": 146852000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 13,
+                "line": "Produit net Bancaire 146 852 126 918",
+                "raw_token": "146852.0",
+                "context_lines": [
+                  "Produits des autres activités 6.3.5 3 779 4 803",
+                  "Charges des autres activités 6.3.5 -43 -132",
+                  "Produit net Bancaire 146 852 126 918",
+                  "Frais de personnel 6.3.6 -42 583 -38 932",
+                  "Dotations aux amortissements des immobilisations incorporelles et corporelles 6.3.7 -11 821 -10 234"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 146852000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  13
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 146852000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net_part_groupe": {
+            "label": "Résultat net part du groupe",
+            "value": 9806000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 13,
+                "line": "Résultat Net, Part du Groupe 9 806 7 968",
+                "raw_token": "9806.0",
+                "context_lines": [
+                  "Résultat net 18 327 12 491",
+                  "Participations ne donnant pas le contrôle 8 521 4 523",
+                  "Résultat Net, Part du Groupe 9 806 7 968",
+                  "Page 1 sur 77"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 43,
+                "line": "Résultat net part du groupe 9 806 7 968",
+                "raw_token": "9806.0",
+                "context_lines": [
+                  "Résultat net par action",
+                  "2 019 2 018",
+                  "Résultat net part du groupe 9 806 7 968",
+                  "Nombre d'action en circulation 69 090 306 69 415 031",
+                  "Résultat de base par action (en unité de franc CFA) 142 115"
+                ],
+                "column_header": {
+                  "years": [
+                    2019,
+                    2018
+                  ],
+                  "evidence_line": "2 019 2 018",
+                  "line_index": 13,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 9806000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  13,
+                  43
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 9806000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 111571000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 15,
+                "line": "Total Capitaux propres part du groupe 111 571 108 590",
+                "raw_token": "111571.0",
+                "context_lines": [
+                  "Réserves consolidées et report à nouveau 6.4.16 24 741 20 413",
+                  "Total capital, réserves consolidées et résultat de la période, part du Groupe 111 571 108 590",
+                  "Total Capitaux propres part du groupe 111 571 108 590",
+                  "Participations ne donnant pas le contrôle 29 077 20 977",
+                  "Total des capitaux propres 140 648 129 567"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 182000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  80
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 111571000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  15
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 140648000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  15
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 2634338000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  15
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 111571000000,
+            "confidence": "extraction_unique"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 208570000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 16,
+                "line": "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+                "raw_token": "208570.0",
+                "context_lines": [
+                  "Dividendes payés -5 330 -5 005",
+                  "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                  "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+                  "Acquisitions liées aux autres actifs évalués au coût amorti -296 466 -141 873",
+                  "Remboursements liés aux autres actifs évalués au coût amorti 135 24 8 47 288"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 208570000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  16
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 208570000000,
+            "confidence": "extraction_unique"
+          },
+          "dividendes_verses": {
+            "label": "Dividendes versés (flux)",
+            "value": -5330000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 16,
+                "line": "Dividendes payés -5 330 -5 005",
+                "raw_token": "-5330.0",
+                "context_lines": [
+                  "Flux liés aux autres opérations affectant des passifs non financiers 2 450 -62 124",
+                  "Impôts payés -8 504 -3 323",
+                  "Dividendes payés -5 330 -5 005",
+                  "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                  "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -5330000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  16
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -5330000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 238405000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 16,
+                "line": "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+                "raw_token": "238405.0",
+                "context_lines": [
+                  "Caisse, Banques centrales, CCP (actif & passif) 141 64 6 64 989",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 7 94 7 13 642",
+                  "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+                  "Caisse, Banques centrales, CCP (actif & passif) 205 16 3 141 646",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 33 24 3 7 947"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 238405000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  16
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 238405000000,
+            "confidence": "extraction_unique"
+          },
+          "benefice_par_action": {
+            "label": "Bénéfice net par action publié",
+            "value": 142.0,
+            "value_kind": "fcfa_par_action",
+            "unit_label": "FCFA par action",
+            "source_amount_count": 1,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 43,
+                "line": "Résultat de base par action (en unité de franc CFA) 142 115",
+                "raw_token": "142",
+                "context_lines": [
+                  "Résultat net part du groupe 9 806 7 968",
+                  "Nombre d'action en circulation 69 090 306 69 415 031",
+                  "Résultat de base par action (en unité de franc CFA) 142 115",
+                  "6.4 Notes relatives au bilan",
+                  "6.4.1 Caisse et banques centrales"
+                ],
+                "column_header": {
+                  "years": [
+                    2019,
+                    2018
+                  ],
+                  "evidence_line": "2 019 2 018",
+                  "line_index": 13,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "FCFA par action",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": "eps-evidence-v2.1.1",
+                "parser_rule": "fr_resultat_par_action"
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "basis": "DE_BASE",
+            "published_decimals": 0,
+            "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+            "eps_metadata": {
+              "kind": "BPA_PUBLIE",
+              "value": 142.0,
+              "raw_token": "142",
+              "token_repair": null,
+              "published_decimals": 0,
+              "is_dash": false,
+              "currency": "FCFA",
+              "currency_source": "LIGNE_OU_CONTEXTE",
+              "unit_label": "FCFA par action",
+              "page_monetary_scale_multiplier": 1,
+              "page_monetary_scale_label": null,
+              "page_monetary_scale_source": "LIBELLE_BPA",
+              "per_share_unit_explicit": true,
+              "basis": "DE_BASE",
+              "component": "TOTAL",
+              "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+              "accounting_scope": "CONSOLIDE",
+              "accounting_scope_source": "SECTION_PRECEDENTE",
+              "framework": "IFRS",
+              "target_exercice": 2019,
+              "year_offset_from_document": 0,
+              "column_year_source": "EN_TETE_DE_COLONNES",
+              "physical_column_index": 0,
+              "trailing_slots_ignored": 0,
+              "source_kind": "ETAT_OU_NOTE",
+              "eligible_fcfa_total_basic": true,
+              "ineligibility_reasons": []
+            },
+            "source_multiplier": 1,
+            "candidate_groups": [
+              {
+                "value": 142.0,
+                "value_kind": "fcfa_par_action",
+                "occurrences": 1,
+                "pages": [
+                  43
+                ],
+                "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": "FCFA",
+                "component": "TOTAL",
+                "basis": "DE_BASE",
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "confidence": "extraction_unique"
+          }
+        },
+        "1": {
+          "produit_net_bancaire": {
+            "label": "Produit net bancaire",
+            "value": 126918000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 13,
+                "line": "Produit net Bancaire 146 852 126 918",
+                "raw_token": "126918.0",
+                "context_lines": [
+                  "Produits des autres activités 6.3.5 3 779 4 803",
+                  "Charges des autres activités 6.3.5 -43 -132",
+                  "Produit net Bancaire 146 852 126 918",
+                  "Frais de personnel 6.3.6 -42 583 -38 932",
+                  "Dotations aux amortissements des immobilisations incorporelles et corporelles 6.3.7 -11 821 -10 234"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 126918000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  13
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 126918000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net_part_groupe": {
+            "label": "Résultat net part du groupe",
+            "value": 7968000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 13,
+                "line": "Résultat Net, Part du Groupe 9 806 7 968",
+                "raw_token": "7968.0",
+                "context_lines": [
+                  "Résultat net 18 327 12 491",
+                  "Participations ne donnant pas le contrôle 8 521 4 523",
+                  "Résultat Net, Part du Groupe 9 806 7 968",
+                  "Page 1 sur 77"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 43,
+                "line": "Résultat net part du groupe 9 806 7 968",
+                "raw_token": "7968.0",
+                "context_lines": [
+                  "Résultat net par action",
+                  "2 019 2 018",
+                  "Résultat net part du groupe 9 806 7 968",
+                  "Nombre d'action en circulation 69 090 306 69 415 031",
+                  "Résultat de base par action (en unité de franc CFA) 142 115"
+                ],
+                "column_header": {
+                  "years": [
+                    2019,
+                    2018
+                  ],
+                  "evidence_line": "2 019 2 018",
+                  "line_index": 13,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "PAGE_OU_SECTION",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 7968000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  13,
+                  43
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 7968000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 108590000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 15,
+                "line": "Total Capitaux propres part du groupe 111 571 108 590",
+                "raw_token": "108590.0",
+                "context_lines": [
+                  "Réserves consolidées et report à nouveau 6.4.16 24 741 20 413",
+                  "Total capital, réserves consolidées et résultat de la période, part du Groupe 111 571 108 590",
+                  "Total Capitaux propres part du groupe 111 571 108 590",
+                  "Participations ne donnant pas le contrôle 29 077 20 977",
+                  "Total des capitaux propres 140 648 129 567"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -1815000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  80
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 108590000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  15
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 129567000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  15
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 2159904000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  15
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 108590000000,
+            "confidence": "extraction_unique"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 149434000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 16,
+                "line": "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+                "raw_token": "149434.0",
+                "context_lines": [
+                  "Dividendes payés -5 330 -5 005",
+                  "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                  "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434",
+                  "Acquisitions liées aux autres actifs évalués au coût amorti -296 466 -141 873",
+                  "Remboursements liés aux autres actifs évalués au coût amorti 135 24 8 47 288"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 149434000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  16
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 149434000000,
+            "confidence": "extraction_unique"
+          },
+          "dividendes_verses": {
+            "label": "Dividendes versés (flux)",
+            "value": -5005000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 16,
+                "line": "Dividendes payés -5 330 -5 005",
+                "raw_token": "-5005.0",
+                "context_lines": [
+                  "Flux liés aux autres opérations affectant des passifs non financiers 2 450 -62 124",
+                  "Impôts payés -8 504 -3 323",
+                  "Dividendes payés -5 330 -5 005",
+                  "Diminution/(augmentation) nette des actifs et des passifs provenant des activités opérationnelles 149 697 105 066",
+                  "Flux net de trésorerie généré par l’activité opérationnelle 208 570 149 434"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -5005000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  16
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -5005000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 149594000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 16,
+                "line": "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+                "raw_token": "149594.0",
+                "context_lines": [
+                  "Caisse, Banques centrales, CCP (actif & passif) 141 64 6 64 989",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 7 94 7 13 642",
+                  "Trésorerie et équivalents de trésorerie à la clôture 238 405 149 594",
+                  "Caisse, Banques centrales, CCP (actif & passif) 205 16 3 141 646",
+                  "Comptes (actif & passif) et prêts/emprunts à vue auprès des établissements de crédit 33 24 3 7 947"
+                ],
+                "column_header": null,
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "candidate_signature": "CONSOLIDE",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 149594000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  16
+                ],
+                "candidate_signature": "CONSOLIDE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 149594000000,
+            "confidence": "extraction_unique"
+          },
+          "benefice_par_action": {
+            "label": "Bénéfice net par action publié",
+            "value": 115.0,
+            "value_kind": "fcfa_par_action",
+            "unit_label": "FCFA par action",
+            "source_amount_count": 1,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 43,
+                "line": "Résultat de base par action (en unité de franc CFA) 142 115",
+                "raw_token": "115",
+                "context_lines": [
+                  "Résultat net part du groupe 9 806 7 968",
+                  "Nombre d'action en circulation 69 090 306 69 415 031",
+                  "Résultat de base par action (en unité de franc CFA) 142 115",
+                  "6.4 Notes relatives au bilan",
+                  "6.4.1 Caisse et banques centrales"
+                ],
+                "column_header": {
+                  "years": [
+                    2019,
+                    2018
+                  ],
+                  "evidence_line": "2 019 2 018",
+                  "line_index": 13,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "FCFA par action",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": "eps-evidence-v2.1.1",
+                "parser_rule": "fr_resultat_par_action"
+              }
+            ],
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "basis": "DE_BASE",
+            "published_decimals": 0,
+            "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+            "eps_metadata": {
+              "kind": "BPA_PUBLIE",
+              "value": 115.0,
+              "raw_token": "115",
+              "token_repair": null,
+              "published_decimals": 0,
+              "is_dash": false,
+              "currency": "FCFA",
+              "currency_source": "LIGNE_OU_CONTEXTE",
+              "unit_label": "FCFA par action",
+              "page_monetary_scale_multiplier": 1,
+              "page_monetary_scale_label": null,
+              "page_monetary_scale_source": "LIBELLE_BPA",
+              "per_share_unit_explicit": true,
+              "basis": "DE_BASE",
+              "component": "TOTAL",
+              "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+              "accounting_scope": "CONSOLIDE",
+              "accounting_scope_source": "SECTION_PRECEDENTE",
+              "framework": "IFRS",
+              "target_exercice": 2018,
+              "year_offset_from_document": 1,
+              "column_year_source": "EN_TETE_DE_COLONNES",
+              "physical_column_index": 1,
+              "trailing_slots_ignored": 0,
+              "source_kind": "ETAT_OU_NOTE",
+              "eligible_fcfa_total_basic": true,
+              "ineligibility_reasons": []
+            },
+            "source_multiplier": 1,
+            "candidate_groups": [
+              {
+                "value": 115.0,
+                "value_kind": "fcfa_par_action",
+                "occurrences": 1,
+                "pages": [
+                  43
+                ],
+                "candidate_signature": "CONSOLIDE|IFRS|FCFA|TOTAL|DE_BASE",
+                "accounting_scope": "CONSOLIDE",
+                "framework": "IFRS",
+                "currency": "FCFA",
+                "component": "TOTAL",
+                "basis": "DE_BASE",
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "confidence": "extraction_unique"
+          }
+        }
+      },
+      "_per_share_observations": {
+        "parser_version": "eps-evidence-v2.1.1",
+        "eps": [
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 142.0,
+            "raw_token": "142",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1,
+            "page_monetary_scale_label": null,
+            "page_monetary_scale_source": "LIBELLE_BPA",
+            "per_share_unit_explicit": true,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2019,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": [],
+            "evidence": {
+              "page": 43,
+              "line_index_on_page": 17,
+              "line_original": "Résultat de base par action (en unité de franc CFA) 142 115",
+              "raw_token": "142",
+              "context_lines": [
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115",
+                "6.4 Notes relatives au bilan",
+                "6.4.1 Caisse et banques centrales"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 115.0,
+            "raw_token": "115",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1,
+            "page_monetary_scale_label": null,
+            "page_monetary_scale_source": "LIBELLE_BPA",
+            "per_share_unit_explicit": true,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2018,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": [],
+            "evidence": {
+              "page": 43,
+              "line_index_on_page": 17,
+              "line_original": "Résultat de base par action (en unité de franc CFA) 142 115",
+              "raw_token": "115",
+              "context_lines": [
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115",
+                "6.4 Notes relatives au bilan",
+                "6.4.1 Caisse et banques centrales"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "shares": [
+          {
+            "kind": "NOMBRE_ACTIONS",
+            "denominator_kind": "AUTOCONTROLE",
+            "value": -1348,
+            "raw_value": -1348.0,
+            "raw_token": "-1 348",
+            "multiplier": 1,
+            "unit_label": "actions (aucun multiplicateur proche prouvé)",
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2019,
+            "year_offset_from_document": 0,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "eligible_as_denominator": false,
+            "ineligibility_reasons": [
+              "ACTIONS_D_AUTOCONTROLE_PAS_UN_DENOMINATEUR_TOTAL",
+              "NOMBRE_D_ACTIONS_HORS_PLAGE_OU_NON_ENTIER"
+            ],
+            "evidence": {
+              "page": 17,
+              "line_index_on_page": 31,
+              "line_original": "Actions propres -1 348 -1 348 -1 348",
+              "raw_token": "-1 348",
+              "context_lines": [
+                "Autres éléments du résultat global 92 -149 -57 -3 -61",
+                "Résultat Global 0 9 806 92 0 -149 9 749 8 518 18 267",
+                "Actions propres -1 348 -1 348 -1 348",
+                "Distribution de dividendes -4 234 -4 234 -1 095 -5 330",
+                "Transaction entre les actionnaires -677 -677 677 0"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "actions_autocontrole",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "NOMBRE_ACTIONS",
+            "denominator_kind": "AUTOCONTROLE",
+            "value": -1348,
+            "raw_value": -1348.0,
+            "raw_token": "-1 348",
+            "multiplier": 1,
+            "unit_label": "actions (aucun multiplicateur proche prouvé)",
+            "accounting_scope": "CONSOLIDE",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2018,
+            "year_offset_from_document": 1,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "eligible_as_denominator": false,
+            "ineligibility_reasons": [
+              "ACTIONS_D_AUTOCONTROLE_PAS_UN_DENOMINATEUR_TOTAL",
+              "NOMBRE_D_ACTIONS_HORS_PLAGE_OU_NON_ENTIER"
+            ],
+            "evidence": {
+              "page": 17,
+              "line_index_on_page": 31,
+              "line_original": "Actions propres -1 348 -1 348 -1 348",
+              "raw_token": "-1 348",
+              "context_lines": [
+                "Autres éléments du résultat global 92 -149 -57 -3 -61",
+                "Résultat Global 0 9 806 92 0 -149 9 749 8 518 18 267",
+                "Actions propres -1 348 -1 348 -1 348",
+                "Distribution de dividendes -4 234 -4 234 -1 095 -5 330",
+                "Transaction entre les actionnaires -677 -677 677 0"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "actions_autocontrole",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "numerators": [
+          {
+            "kind": "NUMERATEUR_BPA",
+            "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+            "value": 9806.0,
+            "raw_value": 9806.0,
+            "raw_token": "9 806",
+            "multiplier": 1,
+            "currency": "NON_PROUVEE",
+            "unit_label": "NON_PROUVEE, montants en unites",
+            "component": "NON_PRECISE",
+            "accounting_scope": "CONSOLIDE",
+            "target_exercice": 2019,
+            "year_offset_from_document": 0,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "evidence": {
+              "page": 13,
+              "line_index_on_page": 24,
+              "line_original": "Résultat Net, Part du Groupe 9 806 7 968",
+              "raw_token": "9 806",
+              "context_lines": [
+                "Résultat net 18 327 12 491",
+                "Participations ne donnant pas le contrôle 8 521 4 523",
+                "Résultat Net, Part du Groupe 9 806 7 968",
+                "Page 1 sur 77"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "parent_fr",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "NUMERATEUR_BPA",
+            "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+            "value": 7968.0,
+            "raw_value": 7968.0,
+            "raw_token": "7 968",
+            "multiplier": 1,
+            "currency": "NON_PROUVEE",
+            "unit_label": "NON_PROUVEE, montants en unites",
+            "component": "NON_PRECISE",
+            "accounting_scope": "CONSOLIDE",
+            "target_exercice": 2018,
+            "year_offset_from_document": 1,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "evidence": {
+              "page": 13,
+              "line_index_on_page": 24,
+              "line_original": "Résultat Net, Part du Groupe 9 806 7 968",
+              "raw_token": "7 968",
+              "context_lines": [
+                "Résultat net 18 327 12 491",
+                "Participations ne donnant pas le contrôle 8 521 4 523",
+                "Résultat Net, Part du Groupe 9 806 7 968",
+                "Page 1 sur 77"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "parent_fr",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "NUMERATEUR_BPA",
+            "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+            "value": 9806.0,
+            "raw_value": 9806.0,
+            "raw_token": "9 806",
+            "multiplier": 1,
+            "currency": "NON_PROUVEE",
+            "unit_label": "NON_PROUVEE, montants en unites",
+            "component": "NON_PRECISE",
+            "accounting_scope": "CONSOLIDE",
+            "target_exercice": 2019,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "evidence": {
+              "page": 43,
+              "line_index_on_page": 15,
+              "line_original": "Résultat net part du groupe 9 806 7 968",
+              "raw_token": "9 806",
+              "context_lines": [
+                "Résultat net par action",
+                "2 019 2 018",
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "parent_fr",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "NUMERATEUR_BPA",
+            "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+            "value": 7968.0,
+            "raw_value": 7968.0,
+            "raw_token": "7 968",
+            "multiplier": 1,
+            "currency": "NON_PROUVEE",
+            "unit_label": "NON_PROUVEE, montants en unites",
+            "component": "NON_PRECISE",
+            "accounting_scope": "CONSOLIDE",
+            "target_exercice": 2018,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "evidence": {
+              "page": 43,
+              "line_index_on_page": 15,
+              "line_original": "Résultat net part du groupe 9 806 7 968",
+              "raw_token": "7 968",
+              "context_lines": [
+                "Résultat net par action",
+                "2 019 2 018",
+                "Résultat net part du groupe 9 806 7 968",
+                "Nombre d'action en circulation 69 090 306 69 415 031",
+                "Résultat de base par action (en unité de franc CFA) 142 115"
+              ],
+              "column_header": {
+                "years": [
+                  2019,
+                  2018
+                ],
+                "evidence_line": "2 019 2 018",
+                "line_index": 13,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "parent_fr",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "ignored": []
+      },
+      "_content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [
+          "CONSOLIDE"
+        ],
+        "frameworks_present": [
+          "IFRS"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": true,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 63,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "_page_contexts": [
+        {
+          "page": 1,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs",
+            "normes internationales d information financiere"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "31, avenue François Mitterrand 8ème étage immeuble BTCI Siège B.P. 7378 – Lomé Togo 169, Bd du 13 janvier – 06 BP 6019 Lomé, Togo Tél : + 228 22 21 68 22 Tél : +228 22 21 87 69 Fax : + 228 22 21 83 86 Fax : +228 22 21 03 55 E-mail : excoficao@excoafrique.com E-mail : contact@kpmg.tg ORAGROUP S.A. Rapport des commissair"
+        },
+        {
+          "page": 2,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "BILAN",
+            "COMPTE_DE_RESULTAT",
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "31, avenue François Mitterrand 8ème étage immeuble BTCI Siège B.P. 7378 – Lomé Togo 169, Bd du 13 janvier – 06 BP 6019 Lomé, Togo Tél : + 228 22 21 68 22 Tél : +228 22 21 87 69 Fax : + 228 22 21 83 86 Fax : +228 22 21 03 55 E-mail : excoficao@excoafrique.com E-mail : contact@kpmg.tg ORAGROUP S.A. Siège social : 392, ru"
+        },
+        {
+          "page": 3,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS 1.2. Fondement de l’opinion Nous avons effectué notre audit selon les normes internationales d’audit (ISA). Les responsabilités qui nous incombent en vertu de ces normes sont plus amplement décrites dans la section « "
+        },
+        {
+          "page": 4,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS Nous avons considéré que l’appréciation du risque de crédit et l’évaluation des dépréciations/provisions, constituent un domaine d’estimation comptable significatif, puisqu’il fait un recours important au jugement de "
+        },
+        {
+          "page": 5,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS Lors de la préparation des états financiers annuels consolidés, il incombe au Conseil d’administration d’évaluer la capacité de ORAGROUP à poursuivre son exploitation, de fournir, le cas échéant, des informations rela"
+        },
+        {
+          "page": 6,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS Si à la lumière des travaux que nous avons effectués lors de nos vérifications spécifiques ou sur les autres informations, nous concluons à la présence d’une anomalie significative, nous sommes tenus de signaler ce fa"
+        },
+        {
+          "page": 7,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS Annexes : - Responsabilités des commissaires aux comptes relatives à l’audit des états financiers annuels consolidés - Etats financiers consolidés IFRS au 31 décembre 2019 Exercice clos le 31 décembre 2019"
+        },
+        {
+          "page": 8,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS ANNEXE 1 : Responsabilités des commissaires aux comptes relatives à l’audit des états financiers annuels consolidés Exercice clos le 31 décembre 2019"
+        },
+        {
+          "page": 9,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS Cette annexe fait partie intégrante de notre rapport de commissariat aux comptes. Dans le cadre de nos diligences, nous nous conformons successivement :  aux exigences des normes Internationales d’Audit (ISA) et ;  "
+        },
+        {
+          "page": 10,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS financiers, mettons en œuvre des procédures d’audit spécifiques visant à identifier les cas de non-respect d’autres textes législatifs et réglementaires qui peuvent avoir une incidence significative sur les états fina"
+        },
+        {
+          "page": 11,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS  nous recueillons les éléments probants suffisants et appropriés montrant que les événements survenus entre la date des états financiers et la date de notre rapport, nécessitant un ajustement des états financiers ou "
+        },
+        {
+          "page": 12,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "RAPPORT_CAC"
+          ],
+          "heading_excerpt": "ORAGROUP S.A. Rapport des commissaires aux comptes sur les états financiers consolidés établis en IFRS ANNEXE 2 : Etats financiers consolidés IFRS au 31 décembre 2019 Exercice clos le 31 décembre 2019"
+        },
+        {
+          "page": 13,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "ETATS FINANCIERS CONSOLIDES SELON LES NORMES COMPTABLES IFRS 1 Compte de résultat consolidé En millions de FCFA Note 31.12.2019 31.12.2018 Intérêts et produits assimilés 6.3.1 139 458 123 846 Intérêts et charges assimilées 6.3.1 -66 649 -63 410 Commissions (produits) 6.3.2 84 402 70 584 Commissions (charges) 6.3.2 -14 "
+        },
+        {
+          "page": 14,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "2 Etat du résultat net et des autres éléments du résultat global En millions de FCFA 31.12.2019 31.12.2018 Résultat net 18 327 12 491 Eléments qui seront reclassés ultérieurement en résultat net -190 430 Variations de valeur des éléments relatifs aux parités monétaires -190 452 Variations de valeur des actifs financier"
+        },
+        {
+          "page": 15,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "3 Situation financière En millions de FCFA Note 31.12.2019 31.12.2018 Actif Caisse et banques centrales 6.4.1 205 166 141 679 Autres actifs financiers aux coûts amortis 6.4.2 676 850 515 620 Actifs financiers à la juste valeur par les autres éléments du résultat global 6.4.3 5 998 5 318 Prêts et créances sur les établi"
+        },
+        {
+          "page": 16,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "4 Tableau des flux de trésorerie En millions de FCFA 31.12.2019 31.12.2018 Résultat avant impôts 24 347 16 083 Dotations nettes aux amortissements des immobilisations corporelles et incorporelles 11 82 1 10 234 Dotations nettes aux provisions 22 70 5 18 051 Total des éléments non monétaires inclus dans le résultat net "
+        },
+        {
+          "page": 17,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "5 Etat de variation des capitaux propres Variation de juste Réserves de Capitau Participa valeur Capital Réserves réévaluation Ecarts de x tion ne des actifs En millions de FCFA social et consolidé des conversio propres donnant TOTAL financier primes es immobilisation n part du pas de s évalués s groupe contrôle à la J"
+        },
+        {
+          "page": 18,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "6 Notes annexes aux états financiers consolidés établis selon les normes comptables IFRS La société ORAGROUP SA («la Société »), est une société anonyme à conseil d'administration de droit togolais ayant son siège au 392 rue des Plantains - BP 271 0 Lomé, Togo. Les états financiers consolidés de la Société comprennent "
+        },
+        {
+          "page": 19,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "La juste valeur est définie comme étant le prix qui serait reçu pour la vente d’un actif ou payé pour le transfert d’un passif lors d’une transaction normale entre des intervenants du marché à la date d’évaluation, que ce prix soit directement observable ou estimé selon une autre technique d’évaluation. Lorsqu’il estim"
+        },
+        {
+          "page": 20,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "Le Groupe applique la définition d’un contrat de location et les indications connexes formulées dans IFRS 16 à tous les contrats de location conclus ou modifiés à partir du 1er janvier 2019, et ce, qu’il soit bailleur ou preneur dans le cadre du contrat de location. La mise en œuvre de la norme a révélé que la nouvelle"
+        },
+        {
+          "page": 21,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "La mise en œuvre de la norme entraînera probablement des modifications importantes des processus et des systèmes de l’entité et exigera une plus grande coordination entre un grand nombre de services, dont les services financiers, les services actuariels et les services informatiques. La norme entrera en vigueur pour le"
+        },
+        {
+          "page": 22,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "IAS 23, Coûts d’emprunt Les modifications précisent que si un emprunt contracté reste dû une fois que l’actif connexe est prêt pour son utilisation ou sa vente prévue, cet emprunt doit alors être traité en tant que fonds empruntés de façon générale aux fins du calcul du taux de capitalisation des emprunts généraux. IFR"
+        },
+        {
+          "page": 23,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "Le Groupe ne s’attend pas à ce que l’application de ces modifications ait une incidence sur les états financiers consolidés. 6.1.5.2.5 IFRS 10, États financiers consolidés et IAS 28 (modifications) Vente ou apport d’actifs entre un investisseur et son entreprise associée ou sa coentreprise Les modifications d’IFRS 10 e"
+        },
+        {
+          "page": 24,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Le résultat net et chaque composante des autres éléments du résultat global sont attribués aux propriétaires de la Société et aux détenteurs de participations ne donnant pas le contrôle. Le résultat global total des filiales est attribué aux propriétaires de la Société et aux détenteurs de participations ne donnant pas"
+        },
+        {
+          "page": 25,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN",
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "Les participations ne donnant pas le contrôle sont évaluées soit à hauteur de leur quote-part dans l’actif net identifiable évalué à la juste valeur de l’entité acquise (goodwill partiel) soit à leur juste valeur (goodwill total). Le Groupe n’a, à ce jour, jamais retenu cette dernière option. Les modifications du pourc"
+        },
+        {
+          "page": 26,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "■ la détention de l’actif financier s’inscrit dans un modèle économique dont l’objectif est de détenir des actifs financiers afin d’en percevoir les flux de trésorerie contractuels ; ■ les conditions contractuelles de l’actif financier donnent lieu, à des dates spécifiées, à des flux de trésorerie qui correspondent uni"
+        },
+        {
+          "page": 27,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "les autres éléments du résultat global. Pour les actifs financiers autres que des actifs financiers dépréciés dès leur acquisition ou leur création, les produits d’intérêt sont calculés en appliquant le taux d’intérêt effectif à la valeur comptable brute de l’actif financier, sauf les actifs financiers qui sont devenus"
+        },
+        {
+          "page": 28,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "(iii) Actifs financiers à la juste valeur par le résultat net Les actifs financiers qui ne répondent pas aux conditions de l’évaluation au coût amorti ou à la juste valeur par les autres éléments du résultat global (voir les paragraphes (i) à (ii) ci- dessus) sont évalués à la juste valeur par le résultat net. Plus pré"
+        },
+        {
+          "page": 29,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "pour pertes de cet instrument financier à un montant correspondant au montant des pertes de crédit attendues pour les 12 mois à venir. Les pertes de crédit attendues pour la durée de vie sont les pertes de crédit attendues découlant de la totalité des cas de défaillance dont un instrument financier peut faire l’objet a"
+        },
+        {
+          "page": 30,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Peu importe le résultat de l’évaluation ci-dessus, le Groupe suppose que le risque de crédit que comporte un actif financier a augmenté de façon significative depuis la comptabilisation initiale lorsque les paiements contractuels sont en souffrance depuis plus de 30 jours ou le contrat a subi une restructuration (stage"
+        },
+        {
+          "page": 31,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "(iii) Actifs financiers dépréciés Un actif financier est déprécié lorsque se sont produits un ou plusieurs événements qui ont un effet néfaste sur les flux de trésorerie futurs estimés de cet actif financier. Les indications de dépréciation d’un actif financier englobent les données observables au sujet des événements "
+        },
+        {
+          "page": 32,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Dans le cas d’un contrat de garantie financière, comme le Groupe n’est tenu d’effectuer des paiements qu’en cas de défaillance du débiteur selon les modalités de l’instrument garanti, la correction de valeur pour pertes attendues correspond aux sommes que l’entité s’attend à verser pour rembourser au porteur de l’instr"
+        },
+        {
+          "page": 33,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "6.2.2.2.1 Passifs financiers à la juste valeur par le résultat net Les passifs financiers sont classés comme étant à la juste valeur par le biais du résultat net lorsqu’ils : 1. constituent la contrepartie éventuelle à verser par un acquéreur dans le cadre d’un regroupement d’entreprises ; 2. sont détenus à des fins de"
+        },
+        {
+          "page": 34,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "La méthode du taux d’intérêt effectif est une méthode de calcul du coût amorti d’un passif financier et d’affectation des charges d’intérêts au cours de la période concernée. Le taux d’intérêt effectif est le taux qui actualise exactement les paiements en trésorerie futurs estimés (y compris l’intégralité des commissio"
+        },
+        {
+          "page": 35,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.2.2.6 Coût du risque Le coût du risque comprend au titre du risque de crédit les dotations et reprises de provisions pour dépréciation des titres à revenu fixe et des prêts et créances sur la clientèle et les établissements de crédit, les dotations et reprises relatives aux engagements de financement et de garantie d"
+        },
+        {
+          "page": 36,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "La valeur recouvrable d’une UGT ou groupe d’UGT est déterminée en utilisant la méthode DDM « Discount Dividend Method ». Les flux de trésorerie correspondent aux dividendes distribuables par les entités composant l’UGT en intégrant l’objectif cible de fonds propres du Groupe alloués à chacune. Ces flux sont actualisés "
+        },
+        {
+          "page": 37,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN",
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "6.2.6 Impôt sur le résultat exigible et différé La charge d’impôt sur le bénéfice exigible est déterminée sur la base des règles et taux en vigueur dans chaque pays d’implantation des sociétés du Groupe sur la période à laquelle se rapportent les résultats. Des impôts différés sont comptabilisés lorsqu’existent des dif"
+        },
+        {
+          "page": 38,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN",
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "6.2.8 Provisions Les provisions regroupent les provisions pour risque de crédit sur les engagements hors-bilan de financement et de garantie accordés par le Groupe à des tiers, les provisions relatives aux engagements sur les contrats d’épargne-logement, ainsi que celles représentatives d’autres passifs dont l’échéance"
+        },
+        {
+          "page": 39,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers consolides"
+          ],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.2.10.1 Jugements Les informations relatives aux jugements exercés pour appliquer les méthodes comptables ayant l'impact le plus significatif sur les montants comptabilisés dans les états financiers consolidés sont incluses dans les notes suivantes : Classement des actifs financiers sur la base des résultats de l’appl"
+        },
+        {
+          "page": 40,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "6.3 Notes relatives au compte de résultat 6.3.1 Marge nette d'intérêts En millions de FCFA 31.12.2019 31.12.2018 Produits d'intérêts Opérations avec les établissements de crédits 4 934 6 757 Intérêts sur prêts interbancaires au taux nominal 4 934 6 757 Opérations avec la clientèle 96 253 89 431 Intérêts sur prêts clien"
+        },
+        {
+          "page": 41,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.3.3 Revenus des titres à revenue variable En millions de FCFA 31.12.2019 31.12.2018 Produits de commissions Participations et autres titres détenus à long terme 43 73 Total des produits 43 73 6.3.4 Gains ou pertes nets sur cession d'actifs financiers évalués au coût amorti En millions de FCFA 31.12.2019 31.12.2018 Pl"
+        },
+        {
+          "page": 42,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.3.8 Autres charges générales d'exploitation En millions de FCFA 31.12.2019 31.12.2018 Fournitures consommées -4 599 -3 639 Loyers et charges locatives -2 556 -4 593 Entretiens et réparations -4 366 -3 474 Intermédiaires et honoraires -4 043 -3 888 Publicités et promotions -2 924 -2 363 Transports -3 897 -3 547 Poste "
+        },
+        {
+          "page": 43,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "La réconciliation entre le taux d'impôt normatif du groupe et le taux d'impôt effectif s'analyse comme suit : En millions de FCFA 31.12.2019 31.12.2018 Résultat avant impôt 24 347 16 084 Taux effectif d'impôt 25% 22% Charge d'impôt théorique sur le résultat consolidé du groupe -10 275 -7 736 Eléments non déductibles -5"
+        },
+        {
+          "page": 44,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.4.3 Actifs financiers à la juste valeur par les autres éléments du résultat global En millions de FCFA 31.12.2019 31.12.2018 Titres de participation 6 187 5 414 Dépréciations cumulées -627 -350 Variation de juste valeur 437 255 Total 5 998 5 318 Le mouvement des dépréciations de la période sur les actifs financiers é"
+        },
+        {
+          "page": 45,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "6.4.5 Prêts et créances sur la clientèle 31-déc-19 31.12.201 Particulie Professionne Institutionne Entrepri 8 En millions de FCFA Total rs ls ls ses Portefeuille d'effets commerciaux 0 5 542 1 889 25 647 33 078 28 566 Crédits à court terme 20 685 25 461 56 905 267 936 370 988 328 189 Crédits à moyen terme 149 886 63 96"
+        },
+        {
+          "page": 46,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "6.4.6 Impôts courants et différés En millions de FCFA 31.12.2019 31.12.2018 Impôts courants 580 829 Impôts différés 22 714 22 775 Total actifs d'impôts courants 23 294 23 604 Impôts courants 4 877 6 642 Impôts différés 10 810 11 784 Total passifs d'impôts courants 15 687 18 427 La variation des impôts différés au cours"
+        },
+        {
+          "page": 47,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "6.4.8 Immeubles de placement En millions de FCFA 31.12.2019 31.12.2018 Au 1er janvier 2019 36 179 0 Acquisition 2 846 0 Cession -351 0 Dotations aux amortissements -75 Reclassement de la période 0 36 179 Total Immeuble de placement 38 599 36 179 Les montants suivants ont été comptabilisés au compte de résultat Revenus "
+        },
+        {
+          "page": 48,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.4.9 Immobilisations d'exploitation Immobilisations corporelles Agencements Immobilisations Terrains et et Immobilisations Total En millions de FCFA incorporelles constructions installations Matériel Autres en cours Au 1er janvier 2018 Valeur brute 20 977 23 518 17 928 26 091 32 766 2 393 102 696 Amortissements cumulé"
+        },
+        {
+          "page": 49,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Immobilisations corporelles Agencements Immobilisations Terrains et et Immobilisations Total En millions de FCFA incorporelles constructions installations Matériel Autres en cours Au 1er janvier 2019 Valeur brute 23 126 24 092 16 159 30 801 7 315 6 831 85 198 Amortissements cumulés -13 054 -4 880 -12 034 -20 835 -6 556"
+        },
+        {
+          "page": 50,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.4.10 Goodwill En millions de FCFA 31.12.2019 31.12.2018 Valeur nette comptable en début de période 15 713 15 713 Valeur nette comptable en fin de période 15 713 15 713 Valeur brute 21 493 21 493 Cumul des dépréciations enregistrées en fin de période -5 779 -5 779 Le détail du goodwill par filiale se présente comme su"
+        },
+        {
+          "page": 51,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Les budgets prévisionnels s’appuient sur les principales hypothèses métiers et macro- économiques suivantes : Filiale Orabank Bénin  Dans un environnement contraint (pression réglementaire, inflation faible), poursuite de la transformation opérationnelle et relationnelle vers un modèle de banque digitalisée ;  Strict"
+        },
+        {
+          "page": 52,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Les hypothèses clés utilisées pour l'estimation de la valeur recouvrable déterminée sur la base de sa valeur d'utilité sont présentées ci-dessous :  Taux d'actualisation 31/12/2018 31/12/2019 Filiale Orabank- Benin 15,9% 15,9% Filiale Orabank- Gabon 19,0% 19% Filiale Orabank- Togo 15,8% 15,8% Succursale Orabank- Cote "
+        },
+        {
+          "page": 53,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "des UGT, entraînerait une diminution de 14% de la valeur recouvrable totale sans nécessiter de dépréciation additionnelle d’aucune UGT. 6.4.11 Banques centrales En millions de FCFA 31.12.2019 31.12.2018 Compte à vue 3 32 Total solde banque centrale 3 32 6.4.12 Dettes envers les établissements de crédit En millions de F"
+        },
+        {
+          "page": 54,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "Le détail des emprunts à la clôture se présente comme suit : En millions de FCFA Entité 31.12.2019 31.12.2018 Emprunts ICD (a) Oragroup SA 0 26 238 Emprunt PROPARCO (b) Oragroup SA 0 1 458 Emprunt BIO (c) Oragroup SA 984 1 640 Emprunt AFD1+2 (d) Oragroup SA 2 865 3 438 Emprunts obligataires ORGP (e) Oragroup SA 0 3 000"
+        },
+        {
+          "page": 55,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "l) L’emprunt AFRILAND contracté par le véhicule BMB au taux de 6% sur une période de 5 ans avec remboursement à terme. m) ORAGROUP SA a émis des billets de trésorerie sur une durée de 2 ans au taux de 6,1% par appel à l'épargne publique garantie à 100% par AGF en principal et intérêts. n) L’emprunt BIDC est une dette c"
+        },
+        {
+          "page": 56,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.4.16 Engagement hors bilan En millions de FCFA 31.12.2019 31.12.2018 Engagements donnés 606 083 436 523 Engagements de financement 208 769 171 051 Engagements de garantie 397 313 265 472 Engagements reçus 1 423 505 1 177 882 Engagements de garantie 1 348 005 1 177 882 6.5 Gestion des risques La section suivante prése"
+        },
+        {
+          "page": 57,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.5.1.1 Politique de crédit Les principes du risque de crédit reflètent les convictions et la position du Conseil d’Administration, la Direction Générale et du personnel en matière de risque de crédit. Ils servent de guide pour le choix des types de financement et des clients avec lesquels des relations seront nouées. "
+        },
+        {
+          "page": 58,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Le processus de validation des risques repose sur les principes clés ci-après :  toutes les transactions entraînant un risque de crédit doivent être soumises à autorisation préalable ;  l’analyse et la validation des dossiers incombent respectivement au secteur de suivi commercial du client et aux unités de risque dé"
+        },
+        {
+          "page": 59,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": " Watch-list : il s’agit des créances en observation possédant des impayés ne dépendant pas les 30 jours, les dépassements autorisés de découvert et les créances restructurées sans incident avec des durées comprise entre 12 mois et 24 mois.  Créances pré douteuses : il s’agit des créances avec des impayés de moins de "
+        },
+        {
+          "page": 60,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "6.5.1.4 Mesure du risque de crédit 6.5.1.4.1 Prêts et créances ; engagement de financement et de garantie L'estimation de l'exposition au risque de crédit aux fins de la gestion des risques est complexe et nécessite l'utilisation de modèles car l'exposition varie en fonction de l'évolution de la situation du marché, de"
+        },
+        {
+          "page": 61,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "Le diagramme ci-dessous récapitule les exigences de dépréciation selon IFRS 9 (autres que les actifs financiers dépréciés acquis ou créés) : Changement de la qualité du crédit depuis la comptabilisation initiale Stage 1 Stage 2 Stage 3 (Augmentation significative du risqué de crédit depuis la (Comptabilisation initiale"
+        },
+        {
+          "page": 62,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Critères qualitatifs : Pour évaluer si le risque de crédit a augmenté sensiblement depuis le moment de la comptabilisation initiale le Groupe tient compte des informations qualitatives suivantes :  une détérioration importante, avérée ou attendue, dans la notation de crédit externe de l’instrument financier (si elle e"
+        },
+        {
+          "page": 63,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": " L'emprunteur est insolvable ;  L'emprunteur n'a pas respecté le ou les engagements financiers ;  Un marché actif pour cet actif financier a disparu en raison de difficultés financières ;  Le prêteur a consenti des concessions en raison des difficultés financières de l'emprunteur. Il devient probable que l'emprunte"
+        },
+        {
+          "page": 64,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "La perte en cas de défaillance (LGD) représente l’attente du Groupe quant à l’ampleur de la perte sur une exposition en défaut. LGD varie en fonction du type et de l'ancienneté de la créance, ainsi que de la disponibilité d'une garantie. La LGD est exprimée en pourcentage de perte par unité d'exposition au moment du dé"
+        },
+        {
+          "page": 65,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.5.1.5 Exposition au risque de crédit 6.5.1.5.1 Engagements maximums sur instruments financiers soumis à dépréciation au titre de ECL Le tableau ci-dessous présente une analyse de l'exposition au risque de crédit des instruments financiers pour lesquels une provision pour perte attendue est comptabilisée. La valeur co"
+        },
+        {
+          "page": 66,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Autres actifs financiers aux coûts amortis 2019 2018 Stage de calcul des Stage de calcul des En millions de FCFA pertes attendues pertes attendues Stage Stage Stage Stage 1 Stage 1 Stage 3 2 3 2 Durée Durée Durée Durée En millions de FCFA 12 mois 12 mois de vie de vie de vie de vie 515 Valeur brute comptable 677 063 0 "
+        },
+        {
+          "page": 67,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Le tableau ci-dessus représente le scénario pour l’exposition du Groupe au risque de crédit au 31 décembre 2018 et au 31 décembre 2019 sans tenir compte des garanties détenues ou autres rehaussements de crédit associés. Pour les actifs au bilan, les expositions détaillées ci-dessus reposent sur les valeurs nettes compt"
+        },
+        {
+          "page": 68,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Corporates et Banque de détail Au 31 décembre 2018 Institutionnels et PME Risque Risque Risque Risque faible - moyen faible - moyen En millions de FCFA Créance - Watch Créance - Watch saine List saine List Portefeuille d'effets commerciaux 8 302 6 180 6 447 1 025 Crédits à court terme 94 970 39 499 112 178 29 060 Crédi"
+        },
+        {
+          "page": 69,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Cependant, il a été intégré dans la liste des garanties éligibles pour l’atténuation du risque, les garanties issues des Fonds de Garantie comme AGF et FAGACE. Le Groupe surveille de près les sûretés détenues pour des actifs financiers considérés comme ayant une dépréciation de crédit, car il est de plus en plus probab"
+        },
+        {
+          "page": 70,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Stage 1 Stage 2 Stage 3 Total Prêts et créances sur la clientèle 12 mois Durée de vie Durée de vie Correction Correction de Correction de Correction de Valeur brute Valeur brute Valeur brute de valeur Valeur brute En millions de FCFA valeur pour valeur pour valeur pour comptable comptable comptable pour comptable perte"
+        },
+        {
+          "page": 71,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.5.1.8 Crédits restructurés Le Groupe modifie parfois les conditions des prêts accordés à des clients en raison de renégociations commerciales ou de prêts en difficulté, dans le but de maximiser le recouvrement. L’approbation d’une créance restructurée est validée par un niveau supérieur au niveau d’approbation initia"
+        },
+        {
+          "page": 72,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.5.2 Concentration des risques d'actifs financiers avec exposition au risque de crédit 6.5.2.1 Région géographique Le tableau suivant décompose le principal risque de crédit de la Banque, selon le secteur géographique. Pour ce tableau, la Banque a classé les expositions aux régions en fonction du pays de domicile de s"
+        },
+        {
+          "page": 73,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.5.2.2 Secteur d'activité Le tableau suivant décompose le principal risque de crédit de la Banque, selon le secteur d'activité de la contrepartie au 31 décembre 2019. Commerce Services Institutions Industrie et Secteur En millions de FCFA de gros et et Total financières construction Publique de détail autres Autres ac"
+        },
+        {
+          "page": 74,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.6 Risque de change La Banque prend en compte les effets des fluctuations des taux de change en vigueur sur sa situation financière et ses flux de trésorerie. Des limites d'exposition par devise et par jour sont globalement fixées. Au 31 décembre 2019 En millions de FCFA Dollar Euro CFA Autres Total Actif Caisse et ba"
+        },
+        {
+          "page": 75,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.7 Risque de taux d’intérêt Le risque de taux d'intérêt de flux de trésorerie est le risque que les flux de trésorerie futurs d'un instrument financier fluctuent en raison des variations des taux d'intérêt du marché. Le risque de taux d'intérêt à la juste valeur est le risque que la valeur d'un instrument financier fl"
+        },
+        {
+          "page": 76,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Au 31 décembre 2018 Actifs et > 1 et > 3 et >1 an au delà < = 1 Passifs En millions de FCFA <= 3 <= 12 et <= 5 de 5 Total mois non mois mois ans ans rémunérés Actif Caisse et banques centrales 141 679 141 679 Prêts et créances sur les établissements de crédit 79 655 79 655 Prêts et créances sur la clientèle 100 267 103"
+        },
+        {
+          "page": 77,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.8 Risque de liquidité Le tableau ci-dessous présente les flux de trésorerie à payer par le Groupe, répartis par échéance contractuelle résiduelle à la date de l’état de la situation financière. Les montants figurant dans le tableau sont les flux de trésorerie contractuels non actualisés puisque le Groupe gère le risq"
+        },
+        {
+          "page": 78,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Au 31 décembre 2018 > 1 et > 3 et >1 an et au delà < = 1 En millions de FCFA <= 3 <= 12 <= 5 de 5 Total mois mois mois ans ans Actif Caisse et banques centrales 141 679 141 679 Prêts et créances sur les établissements de crédit 79 854 0 0 0 0 79 854 Prêts et créances sur la clientèle 101 044 105 792 401 132 522 047 284"
+        },
+        {
+          "page": 79,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "6.9 Classes d’instruments et classification au sein de la hiérarchie de la juste valeur Selon IFRS 13, les instruments financiers évalués à la juste valeur sont répartis selon une hiérarchie qui comprend trois niveaux.  Niveau 1 : les valeurs de marché sont déterminées en utilisant directement les prix cotés sur des m"
+        },
+        {
+          "page": 80,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Les actifs et passifs financiers à court terme pour lesquels la valeur nette comptable est considérée correspondre à une approximation raisonnable de la juste valeur compte tenu de leur nature à court terme est égale à la valeur nette comptable. 31-déc-19 31-déc-18 Niveau Niveau Niveau Niveau Niveau Niveau En millions "
+        },
+        {
+          "page": 81,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Juste valeur Juste par les valeur autres Au 31 décembre 2018 par le éléments compte du Coût de résultat amorti résultat global Total Actif Caisse et banques centrales 141 679 141 679 Actifs financiers disponibles à la vente 0 Créances sur les établissements de crédit 79 655 79 655 Prêts et créances sur la clientèle 1 2"
+        },
+        {
+          "page": 82,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "6.11 Informations sectorielles 6.11.1 Performances des pôles métiers Conformément à l'approche de gestion de la norme IFRS 8, les pôles métiers sont comptabilisés conformément aux rapports internes fournis au Comité exécutif du groupe. Tous pôles métiers utilisés par le groupe répondent à la définition d'un segment à d"
+        },
+        {
+          "page": 83,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "6.11.2 Performances des zones géographiques Le groupe opère dans quatre zones géographiques dont les performances sont résumées ci-dessous. Il s’agit de la zone UMOA composée de huit entités bancaires, la zone CEMAC qui regroupe les filiales du Tchad et du Gabon et les filiales de la Mauritanie et du Tchad constituées "
+        },
+        {
+          "page": 84,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "6.12 Gestion du capital et adéquation fonds propres 6.12.1 Cadre réglementaire Depuis janvier 2018, Oragroup applique la nouvelle réglementation Bâle 2/3 mise en œuvre dans l’Union Monétaire Ouest Africaine (UMOA) par le biais de la Décision n°013/24/06/CM/UMOA du 24 juin 2016 portant dispositif prudentiel, l’entrée en"
+        },
+        {
+          "page": 87,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Les déductions des fonds propres de base additionnels portent essentiellement sur les éléments suivants :  les participations croisées qui sont éligibles à la catégorie AT1 ;  les participations significatives représentées par des éléments de fonds propres éligibles à AT1 ;  le montant des éléments devant être dédui"
+        },
+        {
+          "page": 88,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Chaque semestre, les ratios sont calculés sur la base de l’arrêté des comptes puis comparés aux exigences minimales fixées par le superviseur pour chacun des ratios. L’exigence minimum est fixée par la réglementation à 6,875% pour le CET1, 7,875% pour le T1 et 10,375% pour le ratio de solvabilité au 31 décembre 2019. C"
+        },
+        {
+          "page": 89,
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Le groupe poursuit activement les discussions avec les bailleurs de fonds pour des financements au profit des clients importateurs des produits en provenance des pays de la Ligue Arabe, en faveur de notre filiale au Gabon et à l'endroit des PMEs dans la zone UEMOA. 8 Informations complémentaires 8.1 Transactions avec p"
+        }
+      ]
+    },
+    "per_share_observations": {
+      "parser_version": "eps-evidence-v2.1.1",
+      "eps": [
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 142.0,
+          "raw_token": "142",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1,
+          "page_monetary_scale_label": null,
+          "page_monetary_scale_source": "LIBELLE_BPA",
+          "per_share_unit_explicit": true,
+          "basis": "DE_BASE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "target_exercice": 2019,
+          "year_offset_from_document": 0,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": true,
+          "ineligibility_reasons": [],
+          "evidence": {
+            "page": 43,
+            "line_index_on_page": 17,
+            "line_original": "Résultat de base par action (en unité de franc CFA) 142 115",
+            "raw_token": "142",
+            "context_lines": [
+              "Résultat net part du groupe 9 806 7 968",
+              "Nombre d'action en circulation 69 090 306 69 415 031",
+              "Résultat de base par action (en unité de franc CFA) 142 115",
+              "6.4 Notes relatives au bilan",
+              "6.4.1 Caisse et banques centrales"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2 019 2 018",
+              "line_index": 13,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 115.0,
+          "raw_token": "115",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1,
+          "page_monetary_scale_label": null,
+          "page_monetary_scale_source": "LIBELLE_BPA",
+          "per_share_unit_explicit": true,
+          "basis": "DE_BASE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "target_exercice": 2018,
+          "year_offset_from_document": 1,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": true,
+          "ineligibility_reasons": [],
+          "evidence": {
+            "page": 43,
+            "line_index_on_page": 17,
+            "line_original": "Résultat de base par action (en unité de franc CFA) 142 115",
+            "raw_token": "115",
+            "context_lines": [
+              "Résultat net part du groupe 9 806 7 968",
+              "Nombre d'action en circulation 69 090 306 69 415 031",
+              "Résultat de base par action (en unité de franc CFA) 142 115",
+              "6.4 Notes relatives au bilan",
+              "6.4.1 Caisse et banques centrales"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2 019 2 018",
+              "line_index": 13,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "shares": [
+        {
+          "kind": "NOMBRE_ACTIONS",
+          "denominator_kind": "AUTOCONTROLE",
+          "value": -1348,
+          "raw_value": -1348.0,
+          "raw_token": "-1 348",
+          "multiplier": 1,
+          "unit_label": "actions (aucun multiplicateur proche prouvé)",
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "target_exercice": 2019,
+          "year_offset_from_document": 0,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "eligible_as_denominator": false,
+          "ineligibility_reasons": [
+            "ACTIONS_D_AUTOCONTROLE_PAS_UN_DENOMINATEUR_TOTAL",
+            "NOMBRE_D_ACTIONS_HORS_PLAGE_OU_NON_ENTIER"
+          ],
+          "evidence": {
+            "page": 17,
+            "line_index_on_page": 31,
+            "line_original": "Actions propres -1 348 -1 348 -1 348",
+            "raw_token": "-1 348",
+            "context_lines": [
+              "Autres éléments du résultat global 92 -149 -57 -3 -61",
+              "Résultat Global 0 9 806 92 0 -149 9 749 8 518 18 267",
+              "Actions propres -1 348 -1 348 -1 348",
+              "Distribution de dividendes -4 234 -4 234 -1 095 -5 330",
+              "Transaction entre les actionnaires -677 -677 677 0"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "actions_autocontrole",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "NOMBRE_ACTIONS",
+          "denominator_kind": "AUTOCONTROLE",
+          "value": -1348,
+          "raw_value": -1348.0,
+          "raw_token": "-1 348",
+          "multiplier": 1,
+          "unit_label": "actions (aucun multiplicateur proche prouvé)",
+          "accounting_scope": "CONSOLIDE",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "target_exercice": 2018,
+          "year_offset_from_document": 1,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "eligible_as_denominator": false,
+          "ineligibility_reasons": [
+            "ACTIONS_D_AUTOCONTROLE_PAS_UN_DENOMINATEUR_TOTAL",
+            "NOMBRE_D_ACTIONS_HORS_PLAGE_OU_NON_ENTIER"
+          ],
+          "evidence": {
+            "page": 17,
+            "line_index_on_page": 31,
+            "line_original": "Actions propres -1 348 -1 348 -1 348",
+            "raw_token": "-1 348",
+            "context_lines": [
+              "Autres éléments du résultat global 92 -149 -57 -3 -61",
+              "Résultat Global 0 9 806 92 0 -149 9 749 8 518 18 267",
+              "Actions propres -1 348 -1 348 -1 348",
+              "Distribution de dividendes -4 234 -4 234 -1 095 -5 330",
+              "Transaction entre les actionnaires -677 -677 677 0"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "actions_autocontrole",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "numerators": [
+        {
+          "kind": "NUMERATEUR_BPA",
+          "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+          "value": 9806.0,
+          "raw_value": 9806.0,
+          "raw_token": "9 806",
+          "multiplier": 1,
+          "currency": "NON_PROUVEE",
+          "unit_label": "NON_PROUVEE, montants en unites",
+          "component": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "target_exercice": 2019,
+          "year_offset_from_document": 0,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "evidence": {
+            "page": 13,
+            "line_index_on_page": 24,
+            "line_original": "Résultat Net, Part du Groupe 9 806 7 968",
+            "raw_token": "9 806",
+            "context_lines": [
+              "Résultat net 18 327 12 491",
+              "Participations ne donnant pas le contrôle 8 521 4 523",
+              "Résultat Net, Part du Groupe 9 806 7 968",
+              "Page 1 sur 77"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "parent_fr",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "NUMERATEUR_BPA",
+          "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+          "value": 7968.0,
+          "raw_value": 7968.0,
+          "raw_token": "7 968",
+          "multiplier": 1,
+          "currency": "NON_PROUVEE",
+          "unit_label": "NON_PROUVEE, montants en unites",
+          "component": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "target_exercice": 2018,
+          "year_offset_from_document": 1,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "evidence": {
+            "page": 13,
+            "line_index_on_page": 24,
+            "line_original": "Résultat Net, Part du Groupe 9 806 7 968",
+            "raw_token": "7 968",
+            "context_lines": [
+              "Résultat net 18 327 12 491",
+              "Participations ne donnant pas le contrôle 8 521 4 523",
+              "Résultat Net, Part du Groupe 9 806 7 968",
+              "Page 1 sur 77"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "parent_fr",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "NUMERATEUR_BPA",
+          "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+          "value": 9806.0,
+          "raw_value": 9806.0,
+          "raw_token": "9 806",
+          "multiplier": 1,
+          "currency": "NON_PROUVEE",
+          "unit_label": "NON_PROUVEE, montants en unites",
+          "component": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "target_exercice": 2019,
+          "year_offset_from_document": 0,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "evidence": {
+            "page": 43,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net part du groupe 9 806 7 968",
+            "raw_token": "9 806",
+            "context_lines": [
+              "Résultat net par action",
+              "2 019 2 018",
+              "Résultat net part du groupe 9 806 7 968",
+              "Nombre d'action en circulation 69 090 306 69 415 031",
+              "Résultat de base par action (en unité de franc CFA) 142 115"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2 019 2 018",
+              "line_index": 13,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "parent_fr",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "NUMERATEUR_BPA",
+          "numerator_kind": "PART_DU_GROUPE_OU_PROPRIETAIRES",
+          "value": 7968.0,
+          "raw_value": 7968.0,
+          "raw_token": "7 968",
+          "multiplier": 1,
+          "currency": "NON_PROUVEE",
+          "unit_label": "NON_PROUVEE, montants en unites",
+          "component": "NON_PRECISE",
+          "accounting_scope": "CONSOLIDE",
+          "target_exercice": 2018,
+          "year_offset_from_document": 1,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "evidence": {
+            "page": 43,
+            "line_index_on_page": 15,
+            "line_original": "Résultat net part du groupe 9 806 7 968",
+            "raw_token": "7 968",
+            "context_lines": [
+              "Résultat net par action",
+              "2 019 2 018",
+              "Résultat net part du groupe 9 806 7 968",
+              "Nombre d'action en circulation 69 090 306 69 415 031",
+              "Résultat de base par action (en unité de franc CFA) 142 115"
+            ],
+            "column_header": {
+              "years": [
+                2019,
+                2018
+              ],
+              "evidence_line": "2 019 2 018",
+              "line_index": 13,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "parent_fr",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "ignored": []
+    },
+    "document": {
+      "url": "https://www.brvm.org/sites/default/files/20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf",
+      "filename": "20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf",
+      "label": "Etats financiers certifies et approuves exercice 2019 oragroup togo",
+      "link_text": "Télécharger",
+      "doc_type_filename": "etats_financiers_approuves",
+      "published_date": "2020-07-10",
+      "filename_exercice": 2019,
+      "filename_exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+      "content_exercice": 2019,
+      "content_exercice_status": "LU_DANS_LE_CONTENU",
+      "content_exercice_evidence": [
+        {
+          "page": 1,
+          "line": "Exercice clos le 31 décembre 2019",
+          "year": 2019
+        },
+        {
+          "page": 1,
+          "line": "Exercice clos le 31 décembre 2019",
+          "year": 2019
+        },
+        {
+          "page": 2,
+          "line": "Exercice clos le 31 décembre 2019",
+          "year": 2019
+        },
+        {
+          "page": 2,
+          "line": "Exercice clos le 31 décembre 2019",
+          "year": 2019
+        },
+        {
+          "page": 2,
+          "line": "présentons notre rapport relatif à l’exercice clos le 31 décembre 2019 sur :",
+          "year": 2019
+        }
+      ],
+      "effective_exercice": 2019,
+      "period": {
+        "period_kind": "ANNUEL_OU_NON_PROUVE",
+        "interim_markers": [],
+        "filename_markers": [],
+        "content_title_markers": [],
+        "selection_status": "CANDIDAT_ANNUEL_SOUS_RESERVE_DES_AUTRES_CONTROLES"
+      },
+      "identity": {
+        "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+        "expected_ticker": "ORGT",
+        "best_ticker": "ORGT",
+        "expected_score": 153,
+        "best_other_ticker": null,
+        "best_other_score": 0,
+        "scores": {
+          "ORGT": 153
+        },
+        "evidence": [
+          {
+            "phrase": "oragroup togo",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 12,
+            "zone": "nom_fichier",
+            "page": null,
+            "weight": 3,
+            "weighted_score": 36
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 9,
+            "zone": "premiere_page_debut",
+            "page": 1,
+            "weight": 4,
+            "weighted_score": 36
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 9,
+            "zone": "en_tetes_premieres_pages",
+            "page": 5,
+            "weight": 2,
+            "weighted_score": 18
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 3,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 4,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 9,
+            "zone": "texte_premieres_pages",
+            "page": 1,
+            "weight": 1,
+            "weighted_score": 9
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 9,
+            "zone": "texte_premieres_pages",
+            "page": 2,
+            "weight": 1,
+            "weighted_score": 9
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 3,
+            "score": 9,
+            "zone": "texte_premieres_pages",
+            "page": 5,
+            "weight": 1,
+            "weighted_score": 9
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 3,
+            "weight": 1,
+            "weighted_score": 6
+          },
+          {
+            "phrase": "oragroup",
+            "ticker": "ORGT",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 4,
+            "weight": 1,
+            "weighted_score": 6
+          }
+        ],
+        "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+        "classifier_version": "document-selection-v2.0.0"
+      },
+      "content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [
+          "CONSOLIDE"
+        ],
+        "frameworks_present": [
+          "IFRS"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": true,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 63,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "scope_hint_filename": "NON_PROUVE",
+      "framework_hint_filename": "NON_PROUVE",
+      "selection_status_filename": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+      "selection_rejection": null,
+      "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+      "version_markers": [
+        "AUDITE_CERTIFIE_OU_APPROUVE"
+      ],
+      "filename_markers": [
+        "AUDITE_CERTIFIE_OU_APPROUVE"
+      ],
+      "content_markers_first_pages": [
+        "AUDITE_CERTIFIE_OU_APPROUVE"
+      ],
+      "sha256": "229771dec57e339efe298348b6aeaf2768ed81d0b6810adf791c80f25c0f63f5",
+      "bytes": 1151990,
+      "cache": {
+        "status": "hit_par_url_et_nom",
+        "key": "d7360f9ccfdadc68-20200710_-_etats_financiers_certifies_et_approuves_exercice_2019_-_oragroup_togo.pdf"
+      },
+      "page_selection": {
+        "pages_total": 89,
+        "pages_native_text_scanned": 89,
+        "pages_structured": 87,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          87,
+          88,
+          89
+        ],
+        "selection_method": "BALAYAGE_TEXTE_INTEGRAL_PUIS_PAGES_PERTINENTES",
+        "native_text_characters_all_pages": 204563
+      },
+      "parser_versions": {
+        "eps_evidence": "eps-evidence-v2.1.1",
+        "document_classifier": "document-selection-v2.0.0"
+      }
+    },
+    "identity": {
+      "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "expected_ticker": "ORGT",
+      "best_ticker": "ORGT",
+      "expected_score": 153,
+      "best_other_ticker": null,
+      "best_other_score": 0,
+      "scores": {
+        "ORGT": 153
+      },
+      "evidence": [
+        {
+          "phrase": "oragroup togo",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 12,
+          "zone": "nom_fichier",
+          "page": null,
+          "weight": 3,
+          "weighted_score": 36
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 9,
+          "zone": "premiere_page_debut",
+          "page": 1,
+          "weight": 4,
+          "weighted_score": 36
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 9,
+          "zone": "en_tetes_premieres_pages",
+          "page": 5,
+          "weight": 2,
+          "weighted_score": 18
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 3,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 4,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 9,
+          "zone": "texte_premieres_pages",
+          "page": 1,
+          "weight": 1,
+          "weighted_score": 9
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 9,
+          "zone": "texte_premieres_pages",
+          "page": 2,
+          "weight": 1,
+          "weighted_score": 9
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 3,
+          "score": 9,
+          "zone": "texte_premieres_pages",
+          "page": 5,
+          "weight": 1,
+          "weighted_score": 9
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 3,
+          "weight": 1,
+          "weighted_score": 6
+        },
+        {
+          "phrase": "oragroup",
+          "ticker": "ORGT",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 4,
+          "weight": 1,
+          "weighted_score": 6
+        }
+      ],
+      "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+      "classifier_version": "document-selection-v2.0.0"
+    },
+    "content_exercice": 2019,
+    "effective_exercice": 2019,
+    "notes": [
+      "Résultat net écarté par contrôle de plausibilité (résultat net inférieur à 1 % des capitaux propres en extraction unique (échelle suspecte)).",
+      "Actions d'autocontrôle détenues écarté par contrôle de plausibilité (nombre d'actions hors plage plausible pour un émetteur coté)."
+    ],
+    "sha256": "229771dec57e339efe298348b6aeaf2768ed81d0b6810adf791c80f25c0f63f5",
+    "extraction": {
+      "method": "texte_natif",
+      "native_text_characters": 204563,
+      "page_selection": {
+        "pages_total": 89,
+        "pages_native_text_scanned": 89,
+        "pages_structured": 87,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          87,
+          88,
+          89
+        ],
+        "selection_method": "BALAYAGE_TEXTE_INTEGRAL_PUIS_PAGES_PERTINENTES",
+        "native_text_characters_all_pages": 204563
+      },
+      "document_identity_status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "selection_rejection": null,
+      "ocr": {
+        "available": null,
+        "attempted": false,
+        "used": false,
+        "cache_status": "non_appele",
+        "pages_ocrees": 0,
+        "mean_confidence": null,
+        "truncated": false
+      }
+    }
+  },
+  "document_sha256": "229771dec57e339efe298348b6aeaf2768ed81d0b6810adf791c80f25c0f63f5",
+  "extraction_seconds": 15.086
+}
