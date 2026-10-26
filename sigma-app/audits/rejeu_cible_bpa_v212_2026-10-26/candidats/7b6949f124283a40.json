@@ -1,0 +1,40 @@
+{
+  "candidate_id": "7b6949f124283a40",
+  "ticker": "SDSC",
+  "url": "https://www.brvm.org/sites/default/files/20201028_-_etats_financiers_exercice_2019_-_comptes_consolides_-_bollore_transport_logistics.pdf",
+  "selection_rank_for_ticker": 16,
+  "target_years_from_filename": [
+    2019,
+    2018,
+    2017
+  ],
+  "classified_document": {
+    "filename": "20201028_-_etats_financiers_exercice_2019_-_comptes_consolides_-_bollore_transport_logistics.pdf",
+    "label": "Etats financiers exercice 2019 comptes consolides bollore transport logistics",
+    "link_text": "Télécharger",
+    "doc_type": "comptes_ifrs",
+    "exercice": 2019,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2020-10-28",
+    "url": "https://www.brvm.org/sites/default/files/20201028_-_etats_financiers_exercice_2019_-_comptes_consolides_-_bollore_transport_logistics.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "CONSOLIDE",
+    "scope_hint_evidence": [
+      "consolide",
+      "consolides"
+    ],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics",
+    "report_page_label": "BOLLORE TRANSPORT & LOGISTICS",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics?page=1"
+    ]
+  }
+}

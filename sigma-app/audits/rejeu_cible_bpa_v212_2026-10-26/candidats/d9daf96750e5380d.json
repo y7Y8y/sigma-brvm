@@ -1,0 +1,42 @@
+{
+  "candidate_id": "d9daf96750e5380d",
+  "ticker": "SDCC",
+  "url": "https://www.brvm.org/sites/default/files/sodeci_ifrs_comptes_consolides_2019.pdf",
+  "selection_rank_for_ticker": 11,
+  "target_years_from_filename": [
+    2019,
+    2018,
+    2017
+  ],
+  "classified_document": {
+    "filename": "sodeci_ifrs_comptes_consolides_2019.pdf",
+    "label": "Sodeci ifrs comptes consolides 2019",
+    "link_text": "Télécharger",
+    "doc_type": "comptes_ifrs",
+    "exercice": 2019,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": null,
+    "url": "https://www.brvm.org/sites/default/files/sodeci_ifrs_comptes_consolides_2019.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "CONSOLIDE",
+    "scope_hint_evidence": [
+      "consolide",
+      "consolides"
+    ],
+    "framework_hint": "IFRS",
+    "framework_hint_evidence": [
+      "ifrs"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sodeci",
+    "report_page_label": "SODECI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sodeci?page=1"
+    ]
+  }
+}

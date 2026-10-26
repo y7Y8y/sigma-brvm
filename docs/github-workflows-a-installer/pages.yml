@@ -1,0 +1,38 @@
+name: SIGMA — publier l'app (GitHub Pages)
+
+# Ce fichier doit vivre à la RACINE du dépôt (.github/workflows/) pour que GitHub
+# le voie. Le dossier de l'application est sigma-app/, d'où le `path` ci-dessous.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "sigma-app/web/**"
+      - ".github/workflows/pages.yml"
+  schedule:
+    # Publie après les tentatives de collecte quotidienne (18:20 et 21:20 UTC).
+    - cron: "5 19 * * 1-5"
+    - cron: "5 22 * * 1-5"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sigma-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: sigma-app/web
+      - uses: actions/deploy-pages@v4

@@ -1,0 +1,34 @@
+{
+  "candidate_id": "25e1d68332e319bb",
+  "ticker": "BOAB",
+  "url": "https://www.brvm.org/sites/default/files/20220420_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_boa_benin.pdf",
+  "selection_rank_for_ticker": 11,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20220420_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_boa_benin.pdf",
+    "label": "Rapport des commissaires aux comptes sur les etats financiers annuels boa benin",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2022-04-20",
+    "url": "https://www.brvm.org/sites/default/files/20220420_-_rapport_des_commissaires_aux_comptes_sur_les_etats_financiers_annuels_-_boa_benin.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-bn",
+    "report_page_label": "BANK OF AFRICA BN",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-bn",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-bn"
+    ]
+  }
+}

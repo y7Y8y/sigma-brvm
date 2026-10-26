@@ -1,0 +1,4503 @@
+{
+  "candidate_id": "563c7ab6859604a4",
+  "ticker": "ABJC",
+  "url": "https://www.brvm.org/sites/default/files/20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+  "code_fingerprint": "84a6653cbb667afc18b8437eda6a943be09a51678379212d1eb06e1e992590be",
+  "candidate": {
+    "target_years_from_filename": [
+      2023,
+      2022,
+      2021
+    ],
+    "selection_rank_for_ticker": 5
+  },
+  "classified_document": {
+    "filename": "20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+    "label": "Etats financiers approuves exercice 2023 servair abidjan ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers_approuves",
+    "exercice": 2023,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2024-08-19",
+    "url": "https://www.brvm.org/sites/default/files/20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "AUDITE_CERTIFIE_OU_APPROUVE",
+    "version_markers": [
+      "AUDITE_CERTIFIE_OU_APPROUVE"
+    ],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci",
+    "report_page_label": "SERVAIR ABIDJAN CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci"
+    ]
+  },
+  "extraction": {
+    "columns": {
+      "courant": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 11254000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 5,
+              "line": "Chiffre d'affaires 17 11 254 10 804",
+              "raw_token": "11254.0",
+              "context_lines": [
+                "II. Etat du résultat global",
+                "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "Chiffre d'affaires 17 11 254 10 804",
+                "Produits des ventes 11 254 10 804",
+                "Achats consommés 18 (4 071) (3 559)"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 265000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 2023000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 2118000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 8871000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 11254000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                5
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 11254000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 1358000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 5,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Résultat de l'exercice 1 1 358 1 272",
+              "raw_token": "1358.0",
+              "context_lines": [
+                "Ecart de réévaluation 12 56 56",
+                "Réserves consolidés 12 2 389 2 232",
+                "Résultat de l'exercice 1 1 358 1 272",
+                "Total capitaux propres 5 167 4 924",
+                "Impôts différés passifs 8 16 15"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 5,
+              "line": "Résultat net de l'ensemble 12 1 358 1 272",
+              "raw_token": "1358.0",
+              "context_lines": [
+                "Quote-part du résultat net des sociétés mises en équivalence - -",
+                "Charge d'impôt sur le résultat 8 (568) (683)",
+                "Résultat net de l'ensemble 12 1 358 1 272",
+                "10 912 10 912",
+                "Nombre total des actions"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 6,
+              "line": "Résultat net 1358 1272",
+              "raw_token": "1358.0",
+              "context_lines": [
+                "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "Flux de trésorerie lié à l'activité",
+                "Résultat net 1358 1272",
+                "Dotation aux amortissements (y compris l'amortissement du droit",
+                "391 429"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1358000000,
+              "value_kind": "fcfa",
+              "occurrences": 5,
+              "pages": [
+                4,
+                5,
+                6,
+                7,
+                25
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 1358000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 5167000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Total capitaux propres 5 167 4 924",
+              "raw_token": "5167.0",
+              "context_lines": [
+                "Réserves consolidés 12 2 389 2 232",
+                "Résultat de l'exercice 1 1 358 1 272",
+                "Total capitaux propres 5 167 4 924",
+                "Impôts différés passifs 8 16 15",
+                "Emprunts et dettes financières non courants 13 63 68"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 25,
+              "line": "Capitaux propres 5 167 4 924",
+              "raw_token": "5167.0",
+              "context_lines": [
+                "Autres réserves 2 116 1 959",
+                "Résultat de l'exercice 1 358 1 272",
+                "Capitaux propres 5 167 4 924",
+                "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+                "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+                "line_index": 5,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 5167000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                4,
+                25
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 5167000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 12884000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Total de l'actif 12 884 10 917",
+              "raw_token": "12884.0",
+              "context_lines": [
+                "Actis destinés à être cédés ou échangés - -",
+                "Total de l'actif courant 11 333 9 196",
+                "Total de l'actif 12 884 10 917",
+                "PASSIF ET CAPITAUX PROPRES (en millions de",
+                "Note 31-déc-23 31-déc-22"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 4,
+              "line": "Total du passif et des capitaux propres 12 884 10 917",
+              "raw_token": "12884.0",
+              "context_lines": [
+                "Passifs destinés à être cédés ou échangés - -",
+                "Total des passifs courants 6 370 5 228",
+                "Total du passif et des capitaux propres 12 884 10 917",
+                "4"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1551000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 11333000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 12884000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 12884000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 2628000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 6,
+              "line": "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+              "raw_token": "2628.0",
+              "context_lines": [
+                "645 1 971",
+                "courus)",
+                "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 2628000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 2628000000,
+          "confidence": "extraction_unique"
+        },
+        "investissements_immobilisations": {
+          "label": "Investissements en immobilisations (flux)",
+          "value": -58000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 6,
+              "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+              "raw_token": "-58.0",
+              "context_lines": [
+                "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+                "Encaissement sur cession d'immobilisations corporelles - -",
+                "Décaissements liés aux acquisitions d'immobilisations financières - -"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -58000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -58000000,
+          "confidence": "extraction_unique"
+        },
+        "dividendes_verses": {
+          "label": "Dividendes versés (flux)",
+          "value": -312000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 6,
+              "line": "Dividendes versés (312) (700)",
+              "raw_token": "-312.0",
+              "context_lines": [
+                "Encaissements liés aux emprunts - (177)",
+                "Décaissements liés aux emprunts (y compris contrat de location financement) - 13",
+                "Dividendes versés (312) (700)",
+                "Trésorerie générée par les activités de financement (c) (312) (864)",
+                "Variation monétaire (e) = (a) + (b) + (c) 2269 1635"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -312000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -312000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 7677000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+              "raw_token": "7677.0",
+              "context_lines": [
+                "Créances clients 10 2 498 2 556",
+                "Autres débiteurs 10 570 618",
+                "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+                "Actis destinés à être cédés ou échangés - -",
+                "Total de l'actif courant 11 333 9 196"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 6,
+              "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+              "raw_token": "7677.0",
+              "context_lines": [
+                "Variation monétaire (e) = (a) + (b) + (c) 2269 1635",
+                "Disponibilités et quasi-disponibilités à l'ouverture (d) 5408 3773",
+                "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+                "6"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 7677000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                4,
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 7677000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "benefice_par_action": {
+          "label": "Bénéfice net par action publié",
+          "value": 124.0,
+          "value_kind": "fcfa_par_action",
+          "unit_label": "FCFA par action",
+          "source_amount_count": 1,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 5,
+              "line": "Résultat net par action (de base et dilué) 12 124 117",
+              "raw_token": "124",
+              "context_lines": [
+                "Nombre total des actions",
+                "000 000",
+                "Résultat net par action (de base et dilué) 12 124 117",
+                "Eléments recyclables en résultat 12 - -",
+                "Eléments non recyclables en résultat 13 - -"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "FCFA par action",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": "eps-evidence-v2.1.1",
+              "parser_rule": "fr_resultat_par_action"
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "published_decimals": 0,
+          "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "eps_metadata": {
+            "kind": "BPA_PUBLIE",
+            "value": 124.0,
+            "raw_token": "124",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2023,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": []
+          },
+          "source_multiplier": 1,
+          "candidate_groups": [
+            {
+              "value": 124.0,
+              "value_kind": "fcfa_par_action",
+              "occurrences": 1,
+              "pages": [
+                5
+              ],
+              "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": "FCFA",
+              "component": "TOTAL",
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "confidence": "extraction_unique"
+        }
+      },
+      "precedent": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 10804000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 5,
+              "line": "Chiffre d'affaires 17 11 254 10 804",
+              "raw_token": "10804.0",
+              "context_lines": [
+                "II. Etat du résultat global",
+                "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "Chiffre d'affaires 17 11 254 10 804",
+                "Produits des ventes 11 254 10 804",
+                "Achats consommés 18 (4 071) (3 559)"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 166000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 2022000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 2455000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 8183000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                27
+              ],
+              "candidate_signature": "INDIVIDUEL",
+              "accounting_scope": "INDIVIDUEL",
+              "framework": "SYSCOHADA",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 10804000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                5
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 10804000000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 1272000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 4,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Résultat de l'exercice 1 1 358 1 272",
+              "raw_token": "1272.0",
+              "context_lines": [
+                "Ecart de réévaluation 12 56 56",
+                "Réserves consolidés 12 2 389 2 232",
+                "Résultat de l'exercice 1 1 358 1 272",
+                "Total capitaux propres 5 167 4 924",
+                "Impôts différés passifs 8 16 15"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 5,
+              "line": "Résultat net de l'ensemble 12 1 358 1 272",
+              "raw_token": "1272.0",
+              "context_lines": [
+                "Quote-part du résultat net des sociétés mises en équivalence - -",
+                "Charge d'impôt sur le résultat 8 (568) (683)",
+                "Résultat net de l'ensemble 12 1 358 1 272",
+                "10 912 10 912",
+                "Nombre total des actions"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 6,
+              "line": "Résultat net 1358 1272",
+              "raw_token": "1272.0",
+              "context_lines": [
+                "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "Flux de trésorerie lié à l'activité",
+                "Résultat net 1358 1272",
+                "Dotation aux amortissements (y compris l'amortissement du droit",
+                "391 429"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1272000000,
+              "value_kind": "fcfa",
+              "occurrences": 4,
+              "pages": [
+                4,
+                5,
+                6,
+                25
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 1272000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 4924000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Total capitaux propres 5 167 4 924",
+              "raw_token": "4924.0",
+              "context_lines": [
+                "Réserves consolidés 12 2 389 2 232",
+                "Résultat de l'exercice 1 1 358 1 272",
+                "Total capitaux propres 5 167 4 924",
+                "Impôts différés passifs 8 16 15",
+                "Emprunts et dettes financières non courants 13 63 68"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 25,
+              "line": "Capitaux propres 5 167 4 924",
+              "raw_token": "4924.0",
+              "context_lines": [
+                "Autres réserves 2 116 1 959",
+                "Résultat de l'exercice 1 358 1 272",
+                "Capitaux propres 5 167 4 924",
+                "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+                "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+                "line_index": 5,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 4924000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                4,
+                25
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 4924000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 10917000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Total de l'actif 12 884 10 917",
+              "raw_token": "10917.0",
+              "context_lines": [
+                "Actis destinés à être cédés ou échangés - -",
+                "Total de l'actif courant 11 333 9 196",
+                "Total de l'actif 12 884 10 917",
+                "PASSIF ET CAPITAUX PROPRES (en millions de",
+                "Note 31-déc-23 31-déc-22"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 4,
+              "line": "Total du passif et des capitaux propres 12 884 10 917",
+              "raw_token": "10917.0",
+              "context_lines": [
+                "Passifs destinés à être cédés ou échangés - -",
+                "Total des passifs courants 6 370 5 228",
+                "Total du passif et des capitaux propres 12 884 10 917",
+                "4"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 1720000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 9196000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 10917000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 10917000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 2510000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 6,
+              "line": "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+              "raw_token": "2510.0",
+              "context_lines": [
+                "645 1 971",
+                "courus)",
+                "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 2510000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 2510000000,
+          "confidence": "extraction_unique"
+        },
+        "investissements_immobilisations": {
+          "label": "Investissements en immobilisations (flux)",
+          "value": -28000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 6,
+              "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+              "raw_token": "-28.0",
+              "context_lines": [
+                "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                "Flux de trésorerie lié aux opérations d'investissement",
+                "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+                "Encaissement sur cession d'immobilisations corporelles - -",
+                "Décaissements liés aux acquisitions d'immobilisations financières - -"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -28000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -28000000,
+          "confidence": "extraction_unique"
+        },
+        "dividendes_verses": {
+          "label": "Dividendes versés (flux)",
+          "value": -700000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 6,
+              "line": "Dividendes versés (312) (700)",
+              "raw_token": "-700.0",
+              "context_lines": [
+                "Encaissements liés aux emprunts - (177)",
+                "Décaissements liés aux emprunts (y compris contrat de location financement) - 13",
+                "Dividendes versés (312) (700)",
+                "Trésorerie générée par les activités de financement (c) (312) (864)",
+                "Variation monétaire (e) = (a) + (b) + (c) 2269 1635"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": -700000000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -700000000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 5408000000,
+          "value_kind": "fcfa",
+          "unit_label": "en millions de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+              "raw_token": "5408.0",
+              "context_lines": [
+                "Créances clients 10 2 498 2 556",
+                "Autres débiteurs 10 570 618",
+                "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+                "Actis destinés à être cédés ou échangés - -",
+                "Total de l'actif courant 11 333 9 196"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 6,
+              "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+              "raw_token": "5408.0",
+              "context_lines": [
+                "Variation monétaire (e) = (a) + (b) + (c) 2269 1635",
+                "Disponibilités et quasi-disponibilités à l'ouverture (d) 5408 3773",
+                "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+                "6"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en millions de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000000,
+          "input_rounding_abs_fcfa": 500000.0,
+          "candidate_groups": [
+            {
+              "value": 5408000000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                4,
+                6
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 5408000000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "benefice_par_action": {
+          "label": "Bénéfice net par action publié",
+          "value": 117.0,
+          "value_kind": "fcfa_par_action",
+          "unit_label": "FCFA par action",
+          "source_amount_count": 1,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 5,
+              "line": "Résultat net par action (de base et dilué) 12 124 117",
+              "raw_token": "117",
+              "context_lines": [
+                "Nombre total des actions",
+                "000 000",
+                "Résultat net par action (de base et dilué) 12 124 117",
+                "Eléments recyclables en résultat 12 - -",
+                "Eléments non recyclables en résultat 13 - -"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "FCFA par action",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": "eps-evidence-v2.1.1",
+              "parser_rule": "fr_resultat_par_action"
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "published_decimals": 0,
+          "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "eps_metadata": {
+            "kind": "BPA_PUBLIE",
+            "value": 117.0,
+            "raw_token": "117",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2022,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": []
+          },
+          "source_multiplier": 1,
+          "candidate_groups": [
+            {
+              "value": 117.0,
+              "value_kind": "fcfa_par_action",
+              "occurrences": 1,
+              "pages": [
+                5
+              ],
+              "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": "FCFA",
+              "component": "TOTAL",
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "confidence": "extraction_unique"
+        }
+      },
+      "colonnes": {
+        "0": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 11254000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 5,
+                "line": "Chiffre d'affaires 17 11 254 10 804",
+                "raw_token": "11254.0",
+                "context_lines": [
+                  "II. Etat du résultat global",
+                  "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "Chiffre d'affaires 17 11 254 10 804",
+                  "Produits des ventes 11 254 10 804",
+                  "Achats consommés 18 (4 071) (3 559)"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 265000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 2023000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 2118000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 8871000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 11254000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  5
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 11254000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 1358000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 5,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Résultat de l'exercice 1 1 358 1 272",
+                "raw_token": "1358.0",
+                "context_lines": [
+                  "Ecart de réévaluation 12 56 56",
+                  "Réserves consolidés 12 2 389 2 232",
+                  "Résultat de l'exercice 1 1 358 1 272",
+                  "Total capitaux propres 5 167 4 924",
+                  "Impôts différés passifs 8 16 15"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 5,
+                "line": "Résultat net de l'ensemble 12 1 358 1 272",
+                "raw_token": "1358.0",
+                "context_lines": [
+                  "Quote-part du résultat net des sociétés mises en équivalence - -",
+                  "Charge d'impôt sur le résultat 8 (568) (683)",
+                  "Résultat net de l'ensemble 12 1 358 1 272",
+                  "10 912 10 912",
+                  "Nombre total des actions"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 6,
+                "line": "Résultat net 1358 1272",
+                "raw_token": "1358.0",
+                "context_lines": [
+                  "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "Flux de trésorerie lié à l'activité",
+                  "Résultat net 1358 1272",
+                  "Dotation aux amortissements (y compris l'amortissement du droit",
+                  "391 429"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1358000000,
+                "value_kind": "fcfa",
+                "occurrences": 5,
+                "pages": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  25
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 1358000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 5167000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Total capitaux propres 5 167 4 924",
+                "raw_token": "5167.0",
+                "context_lines": [
+                  "Réserves consolidés 12 2 389 2 232",
+                  "Résultat de l'exercice 1 1 358 1 272",
+                  "Total capitaux propres 5 167 4 924",
+                  "Impôts différés passifs 8 16 15",
+                  "Emprunts et dettes financières non courants 13 63 68"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 25,
+                "line": "Capitaux propres 5 167 4 924",
+                "raw_token": "5167.0",
+                "context_lines": [
+                  "Autres réserves 2 116 1 959",
+                  "Résultat de l'exercice 1 358 1 272",
+                  "Capitaux propres 5 167 4 924",
+                  "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+                  "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+                  "line_index": 5,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 5167000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  4,
+                  25
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 5167000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 12884000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Total de l'actif 12 884 10 917",
+                "raw_token": "12884.0",
+                "context_lines": [
+                  "Actis destinés à être cédés ou échangés - -",
+                  "Total de l'actif courant 11 333 9 196",
+                  "Total de l'actif 12 884 10 917",
+                  "PASSIF ET CAPITAUX PROPRES (en millions de",
+                  "Note 31-déc-23 31-déc-22"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 4,
+                "line": "Total du passif et des capitaux propres 12 884 10 917",
+                "raw_token": "12884.0",
+                "context_lines": [
+                  "Passifs destinés à être cédés ou échangés - -",
+                  "Total des passifs courants 6 370 5 228",
+                  "Total du passif et des capitaux propres 12 884 10 917",
+                  "4"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1551000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 11333000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 12884000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 12884000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 2628000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 6,
+                "line": "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                "raw_token": "2628.0",
+                "context_lines": [
+                  "645 1 971",
+                  "courus)",
+                  "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 2628000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 2628000000,
+            "confidence": "extraction_unique"
+          },
+          "investissements_immobilisations": {
+            "label": "Investissements en immobilisations (flux)",
+            "value": -58000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 6,
+                "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+                "raw_token": "-58.0",
+                "context_lines": [
+                  "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+                  "Encaissement sur cession d'immobilisations corporelles - -",
+                  "Décaissements liés aux acquisitions d'immobilisations financières - -"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -58000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -58000000,
+            "confidence": "extraction_unique"
+          },
+          "dividendes_verses": {
+            "label": "Dividendes versés (flux)",
+            "value": -312000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 6,
+                "line": "Dividendes versés (312) (700)",
+                "raw_token": "-312.0",
+                "context_lines": [
+                  "Encaissements liés aux emprunts - (177)",
+                  "Décaissements liés aux emprunts (y compris contrat de location financement) - 13",
+                  "Dividendes versés (312) (700)",
+                  "Trésorerie générée par les activités de financement (c) (312) (864)",
+                  "Variation monétaire (e) = (a) + (b) + (c) 2269 1635"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -312000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -312000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 7677000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+                "raw_token": "7677.0",
+                "context_lines": [
+                  "Créances clients 10 2 498 2 556",
+                  "Autres débiteurs 10 570 618",
+                  "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+                  "Actis destinés à être cédés ou échangés - -",
+                  "Total de l'actif courant 11 333 9 196"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 6,
+                "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+                "raw_token": "7677.0",
+                "context_lines": [
+                  "Variation monétaire (e) = (a) + (b) + (c) 2269 1635",
+                  "Disponibilités et quasi-disponibilités à l'ouverture (d) 5408 3773",
+                  "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+                  "6"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 7677000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  4,
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 7677000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "benefice_par_action": {
+            "label": "Bénéfice net par action publié",
+            "value": 124.0,
+            "value_kind": "fcfa_par_action",
+            "unit_label": "FCFA par action",
+            "source_amount_count": 1,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 5,
+                "line": "Résultat net par action (de base et dilué) 12 124 117",
+                "raw_token": "124",
+                "context_lines": [
+                  "Nombre total des actions",
+                  "000 000",
+                  "Résultat net par action (de base et dilué) 12 124 117",
+                  "Eléments recyclables en résultat 12 - -",
+                  "Eléments non recyclables en résultat 13 - -"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "FCFA par action",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": "eps-evidence-v2.1.1",
+                "parser_rule": "fr_resultat_par_action"
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "published_decimals": 0,
+            "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "eps_metadata": {
+              "kind": "BPA_PUBLIE",
+              "value": 124.0,
+              "raw_token": "124",
+              "token_repair": null,
+              "published_decimals": 0,
+              "is_dash": false,
+              "currency": "FCFA",
+              "currency_source": "LIGNE_OU_CONTEXTE",
+              "unit_label": "FCFA par action",
+              "page_monetary_scale_multiplier": 1000000,
+              "page_monetary_scale_label": "millions",
+              "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+              "per_share_unit_explicit": false,
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "component": "TOTAL",
+              "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+              "accounting_scope": "NON_PROUVE",
+              "accounting_scope_source": "AUCUNE",
+              "framework": "IFRS",
+              "target_exercice": 2023,
+              "year_offset_from_document": 0,
+              "column_year_source": "EN_TETE_DE_COLONNES",
+              "physical_column_index": 0,
+              "trailing_slots_ignored": 0,
+              "source_kind": "ETAT_OU_NOTE",
+              "eligible_fcfa_total_basic": true,
+              "ineligibility_reasons": []
+            },
+            "source_multiplier": 1,
+            "candidate_groups": [
+              {
+                "value": 124.0,
+                "value_kind": "fcfa_par_action",
+                "occurrences": 1,
+                "pages": [
+                  5
+                ],
+                "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": "FCFA",
+                "component": "TOTAL",
+                "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "confidence": "extraction_unique"
+          }
+        },
+        "1": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 10804000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 5,
+                "line": "Chiffre d'affaires 17 11 254 10 804",
+                "raw_token": "10804.0",
+                "context_lines": [
+                  "II. Etat du résultat global",
+                  "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "Chiffre d'affaires 17 11 254 10 804",
+                  "Produits des ventes 11 254 10 804",
+                  "Achats consommés 18 (4 071) (3 559)"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 166000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 2022000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 2455000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 8183000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  27
+                ],
+                "candidate_signature": "INDIVIDUEL",
+                "accounting_scope": "INDIVIDUEL",
+                "framework": "SYSCOHADA",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 10804000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  5
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 10804000000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 1272000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 4,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Résultat de l'exercice 1 1 358 1 272",
+                "raw_token": "1272.0",
+                "context_lines": [
+                  "Ecart de réévaluation 12 56 56",
+                  "Réserves consolidés 12 2 389 2 232",
+                  "Résultat de l'exercice 1 1 358 1 272",
+                  "Total capitaux propres 5 167 4 924",
+                  "Impôts différés passifs 8 16 15"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 5,
+                "line": "Résultat net de l'ensemble 12 1 358 1 272",
+                "raw_token": "1272.0",
+                "context_lines": [
+                  "Quote-part du résultat net des sociétés mises en équivalence - -",
+                  "Charge d'impôt sur le résultat 8 (568) (683)",
+                  "Résultat net de l'ensemble 12 1 358 1 272",
+                  "10 912 10 912",
+                  "Nombre total des actions"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 6,
+                "line": "Résultat net 1358 1272",
+                "raw_token": "1272.0",
+                "context_lines": [
+                  "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "Flux de trésorerie lié à l'activité",
+                  "Résultat net 1358 1272",
+                  "Dotation aux amortissements (y compris l'amortissement du droit",
+                  "391 429"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1272000000,
+                "value_kind": "fcfa",
+                "occurrences": 4,
+                "pages": [
+                  4,
+                  5,
+                  6,
+                  25
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 1272000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 4924000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Total capitaux propres 5 167 4 924",
+                "raw_token": "4924.0",
+                "context_lines": [
+                  "Réserves consolidés 12 2 389 2 232",
+                  "Résultat de l'exercice 1 1 358 1 272",
+                  "Total capitaux propres 5 167 4 924",
+                  "Impôts différés passifs 8 16 15",
+                  "Emprunts et dettes financières non courants 13 63 68"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 25,
+                "line": "Capitaux propres 5 167 4 924",
+                "raw_token": "4924.0",
+                "context_lines": [
+                  "Autres réserves 2 116 1 959",
+                  "Résultat de l'exercice 1 358 1 272",
+                  "Capitaux propres 5 167 4 924",
+                  "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+                  "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+                  "line_index": 5,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 4924000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  4,
+                  25
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 4924000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 10917000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Total de l'actif 12 884 10 917",
+                "raw_token": "10917.0",
+                "context_lines": [
+                  "Actis destinés à être cédés ou échangés - -",
+                  "Total de l'actif courant 11 333 9 196",
+                  "Total de l'actif 12 884 10 917",
+                  "PASSIF ET CAPITAUX PROPRES (en millions de",
+                  "Note 31-déc-23 31-déc-22"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 4,
+                "line": "Total du passif et des capitaux propres 12 884 10 917",
+                "raw_token": "10917.0",
+                "context_lines": [
+                  "Passifs destinés à être cédés ou échangés - -",
+                  "Total des passifs courants 6 370 5 228",
+                  "Total du passif et des capitaux propres 12 884 10 917",
+                  "4"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 1720000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 9196000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 10917000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 10917000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 2510000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 6,
+                "line": "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                "raw_token": "2510.0",
+                "context_lines": [
+                  "645 1 971",
+                  "courus)",
+                  "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 2510000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 2510000000,
+            "confidence": "extraction_unique"
+          },
+          "investissements_immobilisations": {
+            "label": "Investissements en immobilisations (flux)",
+            "value": -28000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 6,
+                "line": "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+                "raw_token": "-28.0",
+                "context_lines": [
+                  "Trésorerie générée par les activités d'exploitation (a) 2628 2510",
+                  "Flux de trésorerie lié aux opérations d'investissement",
+                  "Décaissements liés aux acquisitions d'immobilisations corp. et incorp. (58) (28)",
+                  "Encaissement sur cession d'immobilisations corporelles - -",
+                  "Décaissements liés aux acquisitions d'immobilisations financières - -"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -28000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -28000000,
+            "confidence": "extraction_unique"
+          },
+          "dividendes_verses": {
+            "label": "Dividendes versés (flux)",
+            "value": -700000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 6,
+                "line": "Dividendes versés (312) (700)",
+                "raw_token": "-700.0",
+                "context_lines": [
+                  "Encaissements liés aux emprunts - (177)",
+                  "Décaissements liés aux emprunts (y compris contrat de location financement) - 13",
+                  "Dividendes versés (312) (700)",
+                  "Trésorerie générée par les activités de financement (c) (312) (864)",
+                  "Variation monétaire (e) = (a) + (b) + (c) 2269 1635"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": -700000000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -700000000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 5408000000,
+            "value_kind": "fcfa",
+            "unit_label": "en millions de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+                "raw_token": "5408.0",
+                "context_lines": [
+                  "Créances clients 10 2 498 2 556",
+                  "Autres débiteurs 10 570 618",
+                  "Trésorerie et équivalents de trésorerie 11 7 677 5 408",
+                  "Actis destinés à être cédés ou échangés - -",
+                  "Total de l'actif courant 11 333 9 196"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 6,
+                "line": "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+                "raw_token": "5408.0",
+                "context_lines": [
+                  "Variation monétaire (e) = (a) + (b) + (c) 2269 1635",
+                  "Disponibilités et quasi-disponibilités à l'ouverture (d) 5408 3773",
+                  "Disponibilités et quasi-disponibilités à la clôture (e) + (d) 7677 5408",
+                  "6"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions de FCFA) 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en millions de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000000,
+            "input_rounding_abs_fcfa": 500000.0,
+            "candidate_groups": [
+              {
+                "value": 5408000000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  4,
+                  6
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 5408000000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "benefice_par_action": {
+            "label": "Bénéfice net par action publié",
+            "value": 117.0,
+            "value_kind": "fcfa_par_action",
+            "unit_label": "FCFA par action",
+            "source_amount_count": 1,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 5,
+                "line": "Résultat net par action (de base et dilué) 12 124 117",
+                "raw_token": "117",
+                "context_lines": [
+                  "Nombre total des actions",
+                  "000 000",
+                  "Résultat net par action (de base et dilué) 12 124 117",
+                  "Eléments recyclables en résultat 12 - -",
+                  "Eléments non recyclables en résultat 13 - -"
+                ],
+                "column_header": {
+                  "years": [
+                    2023,
+                    2022
+                  ],
+                  "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                  "line_index": 1,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "FCFA par action",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": "eps-evidence-v2.1.1",
+                "parser_rule": "fr_resultat_par_action"
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "published_decimals": 0,
+            "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "eps_metadata": {
+              "kind": "BPA_PUBLIE",
+              "value": 117.0,
+              "raw_token": "117",
+              "token_repair": null,
+              "published_decimals": 0,
+              "is_dash": false,
+              "currency": "FCFA",
+              "currency_source": "LIGNE_OU_CONTEXTE",
+              "unit_label": "FCFA par action",
+              "page_monetary_scale_multiplier": 1000000,
+              "page_monetary_scale_label": "millions",
+              "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+              "per_share_unit_explicit": false,
+              "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+              "component": "TOTAL",
+              "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+              "accounting_scope": "NON_PROUVE",
+              "accounting_scope_source": "AUCUNE",
+              "framework": "IFRS",
+              "target_exercice": 2022,
+              "year_offset_from_document": 1,
+              "column_year_source": "EN_TETE_DE_COLONNES",
+              "physical_column_index": 1,
+              "trailing_slots_ignored": 0,
+              "source_kind": "ETAT_OU_NOTE",
+              "eligible_fcfa_total_basic": true,
+              "ineligibility_reasons": []
+            },
+            "source_multiplier": 1,
+            "candidate_groups": [
+              {
+                "value": 117.0,
+                "value_kind": "fcfa_par_action",
+                "occurrences": 1,
+                "pages": [
+                  5
+                ],
+                "candidate_signature": "NON_PROUVE|IFRS|FCFA|TOTAL|DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": "FCFA",
+                "component": "TOTAL",
+                "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "confidence": "extraction_unique"
+          }
+        }
+      },
+      "_per_share_observations": {
+        "parser_version": "eps-evidence-v2.1.1",
+        "eps": [
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 124.0,
+            "raw_token": "124",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2023,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": [],
+            "evidence": {
+              "page": 5,
+              "line_index_on_page": 31,
+              "line_original": "Résultat net par action (de base et dilué) 12 124 117",
+              "raw_token": "124",
+              "context_lines": [
+                "Nombre total des actions",
+                "000 000",
+                "Résultat net par action (de base et dilué) 12 124 117",
+                "Eléments recyclables en résultat 12 - -",
+                "Eléments non recyclables en résultat 13 - -"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 117.0,
+            "raw_token": "117",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1000000,
+            "page_monetary_scale_label": "millions",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2022,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": true,
+            "ineligibility_reasons": [],
+            "evidence": {
+              "page": 5,
+              "line_index_on_page": 31,
+              "line_original": "Résultat net par action (de base et dilué) 12 124 117",
+              "raw_token": "117",
+              "context_lines": [
+                "Nombre total des actions",
+                "000 000",
+                "Résultat net par action (de base et dilué) 12 124 117",
+                "Eléments recyclables en résultat 12 - -",
+                "Eléments non recyclables en résultat 13 - -"
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+                "line_index": 1,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 124.0,
+            "raw_token": "124",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1,
+            "page_monetary_scale_label": null,
+            "page_monetary_scale_source": "LIBELLE_BPA",
+            "per_share_unit_explicit": true,
+            "basis": "NON_PRECISE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "INDIVIDUEL",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2023,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "BASE_DE_BASE_OU_DILUE_NON_PRECISEE"
+            ],
+            "evidence": {
+              "page": 25,
+              "line_index_on_page": 14,
+              "line_original": "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+              "raw_token": "124",
+              "context_lines": [
+                "Capitaux propres 5 167 4 924",
+                "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+                "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+                "en circulation de 10 912 000 sur les deux exercices. Il faut noter que le cours de l’action SERVAIR",
+                "ABIDJAN au 29 Décembre 2023 était de 1330 FCFA."
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+                "line_index": 5,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 117.0,
+            "raw_token": "117",
+            "token_repair": null,
+            "published_decimals": 0,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "FCFA par action",
+            "page_monetary_scale_multiplier": 1,
+            "page_monetary_scale_label": null,
+            "page_monetary_scale_source": "LIBELLE_BPA",
+            "per_share_unit_explicit": true,
+            "basis": "NON_PRECISE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "INDIVIDUEL",
+            "accounting_scope_source": "SECTION_PRECEDENTE",
+            "framework": "IFRS",
+            "target_exercice": 2022,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "BASE_DE_BASE_OU_DILUE_NON_PRECISEE"
+            ],
+            "evidence": {
+              "page": 25,
+              "line_index_on_page": 14,
+              "line_original": "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+              "raw_token": "117",
+              "context_lines": [
+                "Capitaux propres 5 167 4 924",
+                "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+                "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+                "en circulation de 10 912 000 sur les deux exercices. Il faut noter que le cours de l’action SERVAIR",
+                "ABIDJAN au 29 Décembre 2023 était de 1330 FCFA."
+              ],
+              "column_header": {
+                "years": [
+                  2023,
+                  2022
+                ],
+                "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+                "line_index": 5,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "shares": [],
+        "numerators": [],
+        "ignored": []
+      },
+      "_content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [
+          "INDIVIDUEL"
+        ],
+        "frameworks_present": [
+          "IFRS",
+          "SYSCOHADA"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 21,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "_page_contexts": [
+        {
+          "page": 1,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "ETATS FINANCIERS ANNUELS IFRS Exercice de 12 mois clos le 31 décembre 2023 1"
+        },
+        {
+          "page": 2,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT",
+            "SOMMAIRE_POSSIBLE"
+          ],
+          "heading_excerpt": "Table des matières I. Etat de situation financière ........................................................................................................................ 4 II. Etat du résultat global ......................................................................................................................"
+        },
+        {
+          "page": 3,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Incertitude relative aux traitements fiscaux................................................................................... 19 Recours aux jugements et à des estimations ................................................................................ 19 Adoption des normes nouvelles et révisées ...................."
+        },
+        {
+          "page": 4,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "I. Etat de situation financière ACTIF (en millions de FCFA) Note 31-déc-23 31-déc-22 Immobilisations incorporelles 3 8 - Droits d'usage des immobilisations louées 5 799 310 Immobilisations corporelles 6 659 874 Actifs financiers non courants 7 86 109 Impôts différés actifs 8 - 428- Total de l'actif non courant 1 551 1 "
+        },
+        {
+          "page": 5,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "II. Etat du résultat global (en millions FCFA) Note 31-déc-23 31-déc-22 Chiffre d'affaires 17 11 254 10 804 Produits des ventes 11 254 10 804 Achats consommés 18 (4 071) (3 559) Charges externes 19 (1 944) (1 864) Charges de personnel 20 (2 381) (2 281) Impôts et taxes 8 (433) (643) Dotations aux amortissements et dépr"
+        },
+        {
+          "page": 6,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "III. Tableau des flux de trésorerie (en millions de FCFA) 31-déc-23 31-déc-22 Flux de trésorerie lié à l'activité Résultat net 1358 1272 Dotation aux amortissements (y compris l'amortissement du droit 391 429 d'utilisation) Provisions nettes pour risques et charges 88 (15) Impôts & Impôts différés 16 (25) Eléments calc"
+        },
+        {
+          "page": 7,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "IV. Etat de variation des capitaux propres Capital Prime Ecart de Réserves En millions de FCFA Total social d'émission réévaluation et résultat Solde au 31 décembre 1 364 - 56 3 505 4 924 2022 Résultat net 2023 - - - 1 358 1 358 Autres éléments du - - - - - résultat global Distribution de dividendes - - - (1 115) (1 11"
+        },
+        {
+          "page": 8,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "PAGE_OU_SECTION",
+          "accounting_scope_evidence": [
+            "etats financiers individuels"
+          ],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "BILAN",
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "V. Notes explicatives annexées aux états financiers clos le 31 décembre 2023 Les états financiers couvrent une période de 12 mois allant du 01 janvier 2023 au 31 décembre 2023 et sont présentés en millions de franc CFA (sauf mention contraire). Ces états financiers sont présentés en comparaison avec l’exercice comptabl"
+        },
+        {
+          "page": 9,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "Son chiffre d’affaires se divise en chiffre d’affaires aérien et chiffre d’affaires hors aérien. Ces chiffres d’affaires ne sont cependant pas issus de secteurs opérationnels distincts. Faits marquants de l’exercice 2023 La direction relève les faits suivants survenus sur l’exercice comptable 2023 : • Le départ de Mark"
+        },
+        {
+          "page": 10,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "Les immobilisations incorporelles Les immobilisations incorporelles sont comptabilisées s’il est probable que les avantages économiques futurs attribuables à l’actif iront à l’entité et si le coût de cet actif peut être évalué de façon fiable. Ces immobilisations entrent initialement en comptabilité par le coût d’acqui"
+        },
+        {
+          "page": 11,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "d’exercer, ainsi que les options de résiliation que le preneur a la certitude raisonnable de ne pas exercer. La valeur de ces actifs correspond aux engagements de loyers futurs actualisés sur la durée ferme du contrat, ajustés des paiements effectués d’avance, de franchises de loyer, de coûts directs initiaux et de coû"
+        },
+        {
+          "page": 12,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "La valeur recouvrable est la valeur la plus élevée entre la juste valeur diminuée des coûts de sortie et la valeur d’utilité. Dans le cadre de l’évaluation de la valeur d’utilité, les flux de trésorerie futurs estimés sont actualisés à leur valeur actualisée par application d’un taux d’actualisation avant impôt qui ref"
+        },
+        {
+          "page": 13,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Instruments financiers hors créances clients Les actifs et les passifs financiers sont évalués initialement à la juste valeur. Subséquemment, les instruments financiers classés à la juste valeur par le biais du résultat net et à la juste valeur par le biais des autres éléments du résultat global, tandis que les autres "
+        },
+        {
+          "page": 14,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Trésorerie et équivalents de trésorerie La trésorerie et les équivalents de trésorerie comptabilisés au bilan comprennent la trésorerie en banque, la caisse, les dépôts à court terme ayant une échéance de moins de trois mois et tout placement monétaire à court terme liquide et facilement convertible en un montant déter"
+        },
+        {
+          "page": 15,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Avantages du Personnel Les avantages du personnel sont évalués conformément à la norme IAS 19. Ils se décomposent entre avantages à court terme et avantages à long terme. • Les avantages à court terme Les salariés de la Société bénéficient d’avantages à court terme tels que les congés payés, primes et autres avantages,"
+        },
+        {
+          "page": 16,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Des écarts actuariels sont générés lorsque des différences sont constatées entre les données réelles et les prévisions effectuées antérieurement, ou à la suite de changements d’hypothèses actuarielles. Dans le cas des avantages à long terme pendant l’emploi, les écarts actuariels sont reconnus immédiatement en résultat"
+        },
+        {
+          "page": 17,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Juste valeur Juste valeur Au 31 décembre 2023 Coût amorti par capitaux Total par résultat propres ACTIF Actifs financiers non courants 86 - - 86 Créances clients 2 498 - - 2 498 Autres débiteurs 570 - - 570 Trésorerie et équivalents de trésorerie - - 7 677 7 677 PASSIF Emprunts et dettes financières 63 - - 63 Emprunts "
+        },
+        {
+          "page": 18,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Impôt différé L’impôt différé est l’impôt que l’entité s’attend à payer ou à récupérer sur les différences entre les valeurs comptables des actifs et des passifs présentés dans les états financiers et les valeurs fiscales correspondantes utilisées dans le calcul du bénéfice imposable et comptabilisé suivant la méthode "
+        },
+        {
+          "page": 19,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Incertitude relative aux traitements fiscaux IFRIC 23 explique comment déterminer la position fiscale comptable en cas d’incertitude relative aux traitements fiscaux. Cette interprétation exige que la société : • Détermine si les positions fiscales incertaines sont évaluées séparément ou en tant que groupe ; • Evalue s"
+        },
+        {
+          "page": 20,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "• L’évaluation des dépréciations sur stocks et sur créances clients • L’évaluation des impôts différés actifs • La comptabilisation et calcul des provisions et passifs éventuels : les principales hypothèses concernent la probabilité et l'ampleur d'une sortie de ressources. Ces estimations partent d’une hypothèse de con"
+        },
+        {
+          "page": 21,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "• Modifications d’IAS 1 : « Classement des passifs en tant que passifs courants ou non courants », « Classement des passifs en tant que passifs courants ou non courants – Report de la date d’entrée en vigueur », « Passifs non courants assortis de clauses restrictives » • Modifications d’IAS 7 et d’IFRS 7 : « Accords de"
+        },
+        {
+          "page": 22,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "NOTE 6 : Les immobilisations corporelles Au 31 décembre 2023 Valeur brute Cumul Amort Valeur nette Construction et agencement 3 340 (2 991) 349 Matériel d'exploitation 1 610 (1 381) 229 Matériel de transport 413 (363) 50 Matériel de bureau 185 (182) 4 Matériel informatique 177 (151) 26 Total 5725 (5068) 658 Au 31 décem"
+        },
+        {
+          "page": 23,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Au 31 décembre 2022 Valeur brute Cumul Amort Valeur nette Titre de participation 1 066 (1 016) 50 Prêts au personnel 22 (1) 21 Dépôt et cautionnement 31 (1) 30 Bon du trésor 8 - 8 Total 1127 (1018) 109 L’entité détient 1,016 milliards FCFA de titre de participation sur la société AIR AFRIQUE en liquidation. Ces titres "
+        },
+        {
+          "page": 24,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Au 31/12/2022 397 Au 31/12/2023 413 Impôt différé de la période (16) NOTE 9 : Les stocks En millions de FCFA Au 31 déc 23 Au 31 déc 22 Nourriture et boissons 367 346 Produits d’accueil 124 134 Stock en route 84 107 Autres stocks 14 28 Total 589 615 Les variations de stocks sont de -26 millions de FCFA pour 2023 et de 1"
+        },
+        {
+          "page": 25,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BPA_OU_NOTE_BPA"
+          ],
+          "heading_excerpt": "Le capital est 1 364 millions de FCFA réparti en 545 600 actions de 2 500 FCFA réparti comme suit : Servair Investissement Aéroportuaire 80% Divers Investisseurs UEMOA 20% Les capitaux propres ressortent ainsi : En millions de FCFA Au 31 déc 23 Au 31 déc 22 Capital social 1 364 1 364 Ecart de réévaluation 56 56 Réserve"
+        },
+        {
+          "page": 26,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "syscohada"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "Solde Solde En millions de FCFA Augmentation Diminution Reclassement ouverture clôture Dette à court terme 177 - (369) 192 0 Dette à long terme 192 932 (112) (192) 820 Total 369 932 (481) - 820 NOTE 14 : Les provisions En millions de FCFA Au 31 déc 23 Au 31 déc 22 Provision pour indemnité départ en retraite 296 345 Pro"
+        },
+        {
+          "page": 27,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Autres provisions Les autres provisions concernent les provisions pour litiges du personnel et risque fiscal. NOTE 15 : Dettes fournisseurs et comptes rattachés En millions de FCFA Au 31 déc 23 Au 31 déc 22 Fournisseurs, comptes collectifs 1 096 1 113 Fournisseurs, factures non parvenues 801 440 Fournisseurs, factures "
+        },
+        {
+          "page": 28,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "NOTE 18 : Les achats consommés En millions de FCFA Au 31 déc 23 Au 31 déc 22 Achats stockés 3 747 3 396 Variation de stock 26 (166) Achat non stockés 298 329 Total 4 071 3 559 Les achats stockés sont composés des achats de matières premières de nourriture et de boisson des achats de produits d’accueil, de fourniture de"
+        },
+        {
+          "page": 29,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "NOTE 20 : Les charges de personnel Au 31/12/2023, les effectifs sont de 292 salariés répartis en 248 CDI et 44 CDD. En millions de FCFA Au 31 déc 23 Au 31 déc 22 Salaire et sursalaire 1 181 1 102 Prime et gratification 243 239 Congé payé 196 139 Indemnités 214 267 Retraite 38 39 Charges sociales 249 241 Personnel extra"
+        },
+        {
+          "page": 30,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Provision sur créances En millions de Solde Augmentation Diminution Reclassement Solde clôture FCFA ouverture Clients aériens 65 - (65) - - Clients non aérien 21 - - - 21 Total 86 - (65) - 21 Provision pour indemnité de départ à la retraite, provision médaille et autres provisions En millions de Solde Augmentation Dimi"
+        },
+        {
+          "page": 31,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "Les montants des dépréciations sur les créances clients sont fournis dans la note 22. Les procédures internes de la société comportent des règles de gestion du risque de crédit décrivant les fondamentaux de contrôle interne dans ce domaine, notamment la séparation des pouvoirs entre les équipes commerciales et financiè"
+        },
+        {
+          "page": 32,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN",
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "Gate SAB Autres Au 31 décembre 2023 Servair SA AF SIA RRCI Group RESTOCO stés Bilan Compte courant - - - - - - Créance d’exploitation - 233 374 204 106 67 Dette d’exploitation 12 383 - 1 - 3 Compte de résultat Produits - 6 1,973 59 194 102 Achat de matières - - - - - 6 Charge externe 9 525 - - - 1 Charge financière (0)"
+        },
+        {
+          "page": 33,
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "accounting_scope_evidence": [],
+          "framework": "SYSCOHADA",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "ressources représentatives d’avantages économiques soit nécessaire pour éteindre l’obligation ou le montant de l’obligation ne peut être évalué avec une fiabilité suffisante. Un actif éventuel est un actif potentiel résultant d’événements passés et dont l’existence ne sera confirmée que par la survenance ou non d’un ou"
+        }
+      ]
+    },
+    "per_share_observations": {
+      "parser_version": "eps-evidence-v2.1.1",
+      "eps": [
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 124.0,
+          "raw_token": "124",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1000000,
+          "page_monetary_scale_label": "millions",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2023,
+          "year_offset_from_document": 0,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": true,
+          "ineligibility_reasons": [],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 31,
+            "line_original": "Résultat net par action (de base et dilué) 12 124 117",
+            "raw_token": "124",
+            "context_lines": [
+              "Nombre total des actions",
+              "000 000",
+              "Résultat net par action (de base et dilué) 12 124 117",
+              "Eléments recyclables en résultat 12 - -",
+              "Eléments non recyclables en résultat 13 - -"
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+              "line_index": 1,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 117.0,
+          "raw_token": "117",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1000000,
+          "page_monetary_scale_label": "millions",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE_ET_DILUE_PRESENTES_ENSEMBLE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2022,
+          "year_offset_from_document": 1,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": true,
+          "ineligibility_reasons": [],
+          "evidence": {
+            "page": 5,
+            "line_index_on_page": 31,
+            "line_original": "Résultat net par action (de base et dilué) 12 124 117",
+            "raw_token": "117",
+            "context_lines": [
+              "Nombre total des actions",
+              "000 000",
+              "Résultat net par action (de base et dilué) 12 124 117",
+              "Eléments recyclables en résultat 12 - -",
+              "Eléments non recyclables en résultat 13 - -"
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "(en millions FCFA) Note 31-déc-23 31-déc-22",
+              "line_index": 1,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 124.0,
+          "raw_token": "124",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1,
+          "page_monetary_scale_label": null,
+          "page_monetary_scale_source": "LIBELLE_BPA",
+          "per_share_unit_explicit": true,
+          "basis": "NON_PRECISE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "target_exercice": 2023,
+          "year_offset_from_document": 0,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE"
+          ],
+          "evidence": {
+            "page": 25,
+            "line_index_on_page": 14,
+            "line_original": "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+            "raw_token": "124",
+            "context_lines": [
+              "Capitaux propres 5 167 4 924",
+              "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+              "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+              "en circulation de 10 912 000 sur les deux exercices. Il faut noter que le cours de l’action SERVAIR",
+              "ABIDJAN au 29 Décembre 2023 était de 1330 FCFA."
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+              "line_index": 5,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 117.0,
+          "raw_token": "117",
+          "token_repair": null,
+          "published_decimals": 0,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "FCFA par action",
+          "page_monetary_scale_multiplier": 1,
+          "page_monetary_scale_label": null,
+          "page_monetary_scale_source": "LIBELLE_BPA",
+          "per_share_unit_explicit": true,
+          "basis": "NON_PRECISE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "INDIVIDUEL",
+          "accounting_scope_source": "SECTION_PRECEDENTE",
+          "framework": "IFRS",
+          "target_exercice": 2022,
+          "year_offset_from_document": 1,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "BASE_DE_BASE_OU_DILUE_NON_PRECISEE"
+          ],
+          "evidence": {
+            "page": 25,
+            "line_index_on_page": 14,
+            "line_original": "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+            "raw_token": "117",
+            "context_lines": [
+              "Capitaux propres 5 167 4 924",
+              "La réserve légale cesse d’être obligatoire lorsqu’elle atteint 20% du capital social.",
+              "Le résultat par action est de 124 FCFA en 2023 et de 117 FCFA en 2022 avec un nombre d’actions",
+              "en circulation de 10 912 000 sur les deux exercices. Il faut noter que le cours de l’action SERVAIR",
+              "ABIDJAN au 29 Décembre 2023 était de 1330 FCFA."
+            ],
+            "column_header": {
+              "years": [
+                2023,
+                2022
+              ],
+              "evidence_line": "En millions de FCFA Au 31 déc 23 Au 31 déc 22",
+              "line_index": 5,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "shares": [],
+      "numerators": [],
+      "ignored": []
+    },
+    "document": {
+      "url": "https://www.brvm.org/sites/default/files/20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+      "filename": "20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf",
+      "label": "Etats financiers approuves exercice 2023 servair abidjan ci",
+      "link_text": "Télécharger",
+      "doc_type_filename": "etats_financiers_approuves",
+      "published_date": "2024-08-19",
+      "filename_exercice": 2023,
+      "filename_exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+      "content_exercice": 2023,
+      "content_exercice_status": "LU_DANS_LE_CONTENU",
+      "content_exercice_evidence": [
+        {
+          "page": 2,
+          "line": "Faits marquants de l’exercice 2023 ..................................................................................................... 9",
+          "year": 2023
+        },
+        {
+          "page": 8,
+          "line": "Les états financiers couvrent une période de 12 mois allant du 01 janvier 2023 au 31 décembre 2023",
+          "year": 2023
+        },
+        {
+          "page": 8,
+          "line": "ses états financiers individuels au titre de l’exercice clos le 31 décembre 2023 et déclare que",
+          "year": 2023
+        },
+        {
+          "page": 8,
+          "line": "ses états financiers individuels au titre de l’exercice clos le 31 décembre 2023 et déclare que",
+          "year": 2023
+        },
+        {
+          "page": 9,
+          "line": "Faits marquants de l’exercice 2023",
+          "year": 2023
+        }
+      ],
+      "effective_exercice": 2023,
+      "period": {
+        "period_kind": "ANNUEL_OU_NON_PROUVE",
+        "interim_markers": [],
+        "filename_markers": [],
+        "content_title_markers": [],
+        "selection_status": "CANDIDAT_ANNUEL_SOUS_RESERVE_DES_AUTRES_CONTROLES"
+      },
+      "identity": {
+        "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+        "expected_ticker": "ABJC",
+        "best_ticker": "ABJC",
+        "expected_score": 45,
+        "best_other_ticker": null,
+        "best_other_score": 0,
+        "scores": {
+          "ABJC": 45
+        },
+        "evidence": [
+          {
+            "phrase": "servair abidjan ci",
+            "ticker": "ABJC",
+            "occurrences_capped": 3,
+            "score": 15,
+            "zone": "nom_fichier",
+            "page": null,
+            "weight": 3,
+            "weighted_score": 45
+          }
+        ],
+        "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+        "classifier_version": "document-selection-v2.0.0"
+      },
+      "content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [
+          "INDIVIDUEL"
+        ],
+        "frameworks_present": [
+          "IFRS",
+          "SYSCOHADA"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 21,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "scope_hint_filename": "NON_PROUVE",
+      "framework_hint_filename": "NON_PROUVE",
+      "selection_status_filename": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+      "selection_rejection": null,
+      "version_label": "AUDITE_CERTIFIE_OU_APPROUVE",
+      "version_markers": [
+        "AUDITE_CERTIFIE_OU_APPROUVE"
+      ],
+      "filename_markers": [
+        "AUDITE_CERTIFIE_OU_APPROUVE"
+      ],
+      "content_markers_first_pages": [],
+      "sha256": "092b94a9670bdce08864f97a54ad37595e55a74cde2f94d92ac11684b35e4f08",
+      "bytes": 775238,
+      "cache": {
+        "status": "hit_par_url_et_nom",
+        "key": "c8a8277ac156d381-20240819_-_etats_financiers_approuves_-_exercice_2023_-_servair_abidjan_ci.pdf"
+      },
+      "page_selection": {
+        "pages_total": 33,
+        "pages_native_text_scanned": 33,
+        "pages_structured": 33,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 61331
+      },
+      "parser_versions": {
+        "eps_evidence": "eps-evidence-v2.1.1",
+        "document_classifier": "document-selection-v2.0.0"
+      }
+    },
+    "identity": {
+      "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "expected_ticker": "ABJC",
+      "best_ticker": "ABJC",
+      "expected_score": 45,
+      "best_other_ticker": null,
+      "best_other_score": 0,
+      "scores": {
+        "ABJC": 45
+      },
+      "evidence": [
+        {
+          "phrase": "servair abidjan ci",
+          "ticker": "ABJC",
+          "occurrences_capped": 3,
+          "score": 15,
+          "zone": "nom_fichier",
+          "page": null,
+          "weight": 3,
+          "weighted_score": 45
+        }
+      ],
+      "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+      "classifier_version": "document-selection-v2.0.0"
+    },
+    "content_exercice": 2023,
+    "effective_exercice": 2023,
+    "notes": [],
+    "sha256": "092b94a9670bdce08864f97a54ad37595e55a74cde2f94d92ac11684b35e4f08",
+    "extraction": {
+      "method": "texte_natif",
+      "native_text_characters": 61331,
+      "page_selection": {
+        "pages_total": 33,
+        "pages_native_text_scanned": 33,
+        "pages_structured": 33,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 61331
+      },
+      "document_identity_status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "selection_rejection": null,
+      "ocr": {
+        "available": null,
+        "attempted": false,
+        "used": false,
+        "cache_status": "non_appele",
+        "pages_ocrees": 0,
+        "mean_confidence": null,
+        "truncated": false
+      }
+    }
+  },
+  "document_sha256": "092b94a9670bdce08864f97a54ad37595e55a74cde2f94d92ac11684b35e4f08",
+  "extraction_seconds": 5.18
+}

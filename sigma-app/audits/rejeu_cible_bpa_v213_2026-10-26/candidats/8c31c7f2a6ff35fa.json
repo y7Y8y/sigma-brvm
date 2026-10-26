@@ -1,0 +1,38 @@
+{
+  "candidate_id": "8c31c7f2a6ff35fa",
+  "ticker": "SNTS",
+  "url": "https://www.brvm.org/sites/default/files/20260216_-_etats_financiers_2025_et_attestation_des_cac_-_sonatel_sn.pdf",
+  "selection_rank_for_ticker": 1,
+  "target_years_from_filename": [
+    2025,
+    2024,
+    2023
+  ],
+  "classified_document": {
+    "filename": "20260216_-_etats_financiers_2025_et_attestation_des_cac_-_sonatel_sn.pdf",
+    "label": "Etats financiers 2025 et attestation des cac sonatel sn",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2025,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": "2026-02-16",
+    "url": "https://www.brvm.org/sites/default/files/20260216_-_etats_financiers_2025_et_attestation_des_cac_-_sonatel_sn.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sonatel",
+    "report_page_label": "SONATEL",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sonatel",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/sonatel"
+    ]
+  }
+}

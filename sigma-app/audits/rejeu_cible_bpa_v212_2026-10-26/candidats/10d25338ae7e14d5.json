@@ -1,0 +1,39 @@
+{
+  "candidate_id": "10d25338ae7e14d5",
+  "ticker": "SPHC",
+  "url": "https://www.brvm.org/sites/default/files/20230427_-_etats_financiers_syscohada_exercice_2022_-_saph_ci.pdf",
+  "selection_rank_for_ticker": 9,
+  "target_years_from_filename": [
+    2022,
+    2021,
+    2020
+  ],
+  "classified_document": {
+    "filename": "20230427_-_etats_financiers_syscohada_exercice_2022_-_saph_ci.pdf",
+    "label": "Etats financiers syscohada exercice 2022 saph ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2022,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2023-04-27",
+    "url": "https://www.brvm.org/sites/default/files/20230427_-_etats_financiers_syscohada_exercice_2022_-_saph_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "SYSCOHADA",
+    "framework_hint_evidence": [
+      "syscohada"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+    "report_page_label": "SAPH CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci?page=1"
+    ]
+  }
+}

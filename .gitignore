@@ -1,0 +1,12 @@
+# Environnements et caches regenerables
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+sigma-app/.cache/
+
+# Gros journaux documentaires : conserves dans SIGMA-BRVM_transmission-complete_2026-10-26.zip
+sigma-app/audits/**/document_results*.jsonl
+sigma-app/audits/**/matrix.json
+sigma-app/audits/**/inventory.json
+sigma-app/audits/**/candidate_plan.json

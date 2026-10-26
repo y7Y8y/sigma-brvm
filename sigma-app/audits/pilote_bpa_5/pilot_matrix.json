@@ -1,0 +1,2703 @@
+{
+  "metadata": {
+    "audit": "Pilote BPA fermé — cinq sociétés, exercices 2016 à 2025",
+    "date_audit": "2026-10-24",
+    "perimetre_sources": "Pages BRVM Rapports société inventoriées en profondeur (deux passages), documents annuels et comparatifs ouverts, seconds lecteurs texte natif/OCR/visuel ; sources officielles d'événements de capital uniquement pour les drapeaux de structure du capital.",
+    "regle_retenue": "Un BPA n'entre dans la couverture FCFA retenue que s'il est directement publié en FCFA, dans le périmètre de référence indiqué, et validé par un second document ou par un contrôle arithmétique indépendant. Les composantes activités poursuivies/arrêtées, les devises étrangères, les périmètres individuels et les ratios de fin d'exercice restent séparés.",
+    "societes": {
+      "CIEC": {
+        "nom": "CIE COTE D'IVOIRE",
+        "introduction_brvm": "1998-09-16",
+        "perimetre_reference_bpa": "IFRS consolidé"
+      },
+      "SNTS": {
+        "nom": "SONATEL SENEGAL",
+        "introduction_brvm": "1998-10-02",
+        "perimetre_reference_bpa": "IFRS consolidé"
+      },
+      "SDSC": {
+        "nom": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)",
+        "introduction_brvm": "1998-09-16",
+        "perimetre_reference_bpa": "IFRS consolidé"
+      },
+      "BOAC": {
+        "nom": "BANK OF AFRICA COTE D'IVOIRE",
+        "introduction_brvm": "2010-04-07",
+        "perimetre_reference_bpa": "États bancaires annuels PCB/SYSCOHADA"
+      },
+      "ETIT": {
+        "nom": "Ecobank Transnational Incorporated TOGO",
+        "introduction_brvm": "2006-09-11",
+        "perimetre_reference_bpa": "IFRS consolidé du groupe, présentation USD avec traductions FCFA dans certaines publications BRVM"
+      }
+    }
+  },
+  "summary": {
+    "cellules_brutes": 50,
+    "cellules_applicables_confirmees": 50,
+    "documents_indexes_pages_brvm": 485,
+    "documents_ouverts": 73,
+    "documents_ouverts_dont_autre_emetteur_exclu": 1,
+    "bpa_publie_fcfa_retenu": {
+      "observations": 18,
+      "denominateur": 50,
+      "taux_pct": 36.0,
+      "confirmes_deux_documents": 8,
+      "confirmes_deux_documents_pct": 16.0,
+      "un_document_valide_par_controle": 10
+    },
+    "bpa_recalcule_comparable_fcfa_retenu": {
+      "observations": 0,
+      "denominateur": 50,
+      "taux_pct": 0.0,
+      "note": "Aucun recalcul n'est substitué à un BPA publié ; les recalculs servent de contrôles indépendants."
+    },
+    "controles_numerateur_attribuable_ou_part_groupe_sur_pondere": {
+      "concordants_sur_bpa_retenus": 6,
+      "discordants_rejetes": 1
+    },
+    "ratios_indicatifs_fin_exercice_separes": {
+      "observations": 13,
+      "denominateur": 50,
+      "taux_pct": 26.0,
+      "note": "Hors couverture BPA comparable."
+    },
+    "publications_par_action_non_retenues": {
+      "cellules": 8,
+      "dont_devise_ou_composante": 7,
+      "dont_incoherence_source": 1,
+      "bpa_individuels_non_fusionnes_cellules": 5
+    },
+    "absences": {
+      "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 22,
+      "DOCUMENT_INTROUVABLE": 2,
+      "ILLISIBLE": 0,
+      "NON_RECHERCHE": 0,
+      "NON_APPLICABLE": 0
+    },
+    "statuts_bpa": {
+      "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 22,
+      "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 9,
+      "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 8,
+      "DOCUMENT_INTROUVABLE": 2,
+      "PUBLIE_SOURCE_DIVERGENTE_RESOLUE": 1,
+      "PUBLIE_INCOHERENT_NON_RETENU": 1,
+      "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE": 7
+    },
+    "par_societe": {
+      "CIEC": {
+        "cellules": 10,
+        "bpa_publie_fcfa_retenu": 7,
+        "bpa_publie_fcfa_retenu_pct": 70.0,
+        "confirmes_deux_documents": 5,
+        "ratios_indicatifs_separes": 1,
+        "statuts": {
+          "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 3,
+          "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 2,
+          "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 5
+        }
+      },
+      "SNTS": {
+        "cellules": 10,
+        "bpa_publie_fcfa_retenu": 4,
+        "bpa_publie_fcfa_retenu_pct": 40.0,
+        "confirmes_deux_documents": 1,
+        "ratios_indicatifs_separes": 3,
+        "statuts": {
+          "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 4,
+          "DOCUMENT_INTROUVABLE": 2,
+          "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 2,
+          "PUBLIE_SOURCE_DIVERGENTE_RESOLUE": 1,
+          "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1
+        }
+      },
+      "SDSC": {
+        "cellules": 10,
+        "bpa_publie_fcfa_retenu": 4,
+        "bpa_publie_fcfa_retenu_pct": 40.0,
+        "confirmes_deux_documents": 1,
+        "ratios_indicatifs_separes": 0,
+        "statuts": {
+          "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 5,
+          "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 3,
+          "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1,
+          "PUBLIE_INCOHERENT_NON_RETENU": 1
+        }
+      },
+      "BOAC": {
+        "cellules": 10,
+        "bpa_publie_fcfa_retenu": 0,
+        "bpa_publie_fcfa_retenu_pct": 0.0,
+        "confirmes_deux_documents": 0,
+        "ratios_indicatifs_separes": 9,
+        "statuts": {
+          "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+        }
+      },
+      "ETIT": {
+        "cellules": 10,
+        "bpa_publie_fcfa_retenu": 3,
+        "bpa_publie_fcfa_retenu_pct": 30.0,
+        "confirmes_deux_documents": 1,
+        "ratios_indicatifs_separes": 0,
+        "statuts": {
+          "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE": 7,
+          "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE": 2,
+          "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1
+        }
+      }
+    },
+    "porte_collecte_complete": "REFUSEE_AVANT_CORRECTIFS_ET_TEST_DE_NON_REGRESSION_SUR_LE_PILOTE"
+  },
+  "rows": [
+    {
+      "ticker": "CIEC",
+      "exercice": 2016,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_EXAMINES",
+      "perimetre_retenu": "SYSCOHADA (publication annuelle d'une page)",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Recherche plein texte sur les états 2016 (deux copies) et le comparatif 2017 : aucune ligne de résultat par action ni nombre d'actions. Résultat net lu : 10 780 309 milliers FCFA.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 10780309000,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Aucun BPA ; résultat net correct.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "AVANT_FRACTIONNEMENT_2017"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice2016 cie",
+          "pages": "1",
+          "role": "états annuels et recherche BPA"
+        },
+        {
+          "document": "Etats financiers 2017 cie",
+          "pages": "1",
+          "role": "comparatif 2016"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2017,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_EXAMINES_DONT_SCAN_OCR",
+      "perimetre_retenu": "SYSCOHADA",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "États 2017 natifs, version corrigée scannée relue en OCR et rapport annuel 2018 : aucune ligne BPA. Résultat net : 1 986 976 401 FCFA dans le rapport annuel 2018.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 1986976401,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Changement d'unité d'action en cours d'année",
+        "valeur": null,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Aucun BPA ; résultat net recoupé.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "FRACTIONNEMENT_20_POUR_1_LE_2017-10-19",
+        "DENOMINATEUR_PONDERE_NON_PUBLIE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers 2017 cie",
+          "pages": "1",
+          "role": "états annuels"
+        },
+        {
+          "document": "Etats financiers 2017 cie corriges",
+          "pages": "1",
+          "role": "scan relu en OCR contrôlé"
+        },
+        {
+          "document": "Rapport annuel 2018 cie",
+          "pages": "52-53",
+          "role": "comparatif résultat"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2018,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_EXAMINES",
+      "perimetre_retenu": "SYSCOHADA social",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "États 2018 et rapport annuel 2018 (59 pages) relus : résultat et nombre d'actions sont présents, mais aucune ligne de bénéfice par action. Le graphique « valeur mathématique de l'action » n'est pas un BPA.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 88.03,
+        "formule": "4 929 700 612 FCFA / 56 000 000 actions",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net social",
+        "valeur": 4929700612,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions formant le capital en fin d'exercice",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Aucun BPA ; résultat et dénominateur non fusionnés en BPA.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 cie",
+          "pages": "49, 52-53",
+          "role": "56 000 000 actions et résultat"
+        },
+        {
+          "document": "Etats financiers exercice 2018 cie ci",
+          "pages": "1",
+          "role": "recherche BPA négative"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2019,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 140,
+        "unite": "FCFA/action",
+        "libelle": "Résultat par action"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Ligne relue dans les états IFRS consolidés 2020, colonne 2019 : 140 FCFA. Contrôle : 7 826 millions FCFA / 56 000 000 = 139,75 FCFA.",
+      "controle_recalcul": {
+        "valeur": 139.75,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT_A_L_ARRONDI_DES_MILLIONS"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 6534423000,
+          "unite": "FCFA",
+          "detail": "Résultat SYSCOHADA social 2019, autre périmètre, sans BPA"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net consolidé retenu par la publication IFRS",
+        "valeur": 7826000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en circulation publiées",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "140 FCFA depuis le document 2020 ; une copie OCR 2019 donne un résultat net faux de 534 423 000 FCFA.",
+        "verdict": "BPA_CORRECT_OCR_A_REJETER"
+      },
+      "drapeaux": [
+        "PERIMETRES_MULTIPLES",
+        "OCR_FAUX_REJETE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers consolides ifrs exercice 2020 cie ci 0",
+          "pages": "1",
+          "role": "BPA 2019, résultat et actions"
+        },
+        {
+          "document": "Etats financiers certifies exercice 2019 cie ci",
+          "pages": "1",
+          "role": "périmètre SYSCOHADA séparé"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2020,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 307,
+        "unite": "FCFA/action",
+        "libelle": "Résultat par action"
+      },
+      "confirmations_documents_distincts": 2,
+      "validation": "307 FCFA dans les états IFRS 2020 et en comparatif des états IFRS 2021. Contrôle : 17 183 millions / 56 000 000 = 306,84 FCFA.",
+      "controle_recalcul": {
+        "valeur": 306.84,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 16170000000,
+          "unite": "FCFA",
+          "detail": "Résultat SYSCOHADA social, autre périmètre"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net consolidé",
+        "valeur": 17183000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en circulation",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "307 FCFA dans les deux documents IFRS.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "PERIMETRES_MULTIPLES"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers consolides ifrs exercice 2020 cie ci 0",
+          "pages": "1",
+          "role": "publication"
+        },
+        {
+          "document": "Etats financiers ifrs exercice 2021 cie",
+          "pages": "1",
+          "role": "comparatif confirmant"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2021,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 188,
+        "unite": "FCFA/action",
+        "libelle": "Résultat par action"
+      },
+      "confirmations_documents_distincts": 2,
+      "validation": "188 FCFA dans les états IFRS 2021 et en comparatif 2022. Contrôle : 10 511 millions / 56 000 000 = 187,70 FCFA.",
+      "controle_recalcul": {
+        "valeur": 187.7,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 9757000000,
+          "unite": "FCFA",
+          "detail": "Résultat SYSCOHADA social, autre périmètre"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net consolidé",
+        "valeur": 10511000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en circulation",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "188 FCFA dans les deux documents IFRS.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "PERIMETRES_MULTIPLES"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers ifrs exercice 2021 cie",
+          "pages": "1",
+          "role": "publication"
+        },
+        {
+          "document": "Etats financiers ifrs exercice 2022 cie ci",
+          "pages": "1",
+          "role": "comparatif confirmant"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2022,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 183,
+        "unite": "FCFA/action",
+        "libelle": "Résultat par action"
+      },
+      "confirmations_documents_distincts": 2,
+      "validation": "183 FCFA dans les états IFRS 2022 et dans la partie consolidée IFRS du document 2023. Contrôle : 10 261 millions / 56 000 000 = 183,23 FCFA.",
+      "controle_recalcul": {
+        "valeur": 183.23,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 9819000000,
+          "unite": "FCFA",
+          "detail": "Résultat SYSCOHADA social, autre périmètre"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net consolidé",
+        "valeur": 10261000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en circulation",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "183 FCFA dans les deux documents.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "DOCUMENT_MIXTE_SYSCOHADA_ET_IFRS"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers ifrs exercice 2022 cie ci",
+          "pages": "1",
+          "role": "publication"
+        },
+        {
+          "document": "Etats financiers syscohada exercice 2023 cie ci",
+          "pages": "3",
+          "role": "partie IFRS consolidée confirmant 2022"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2023,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 205,
+        "unite": "FCFA/action",
+        "libelle": "Résultat par action"
+      },
+      "confirmations_documents_distincts": 2,
+      "validation": "205 FCFA à la page IFRS consolidée du document 2023 et en comparatif du document 2024. Contrôle : 11 485 millions / 56 000 000 = 205,09 FCFA.",
+      "controle_recalcul": {
+        "valeur": 205.09,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net consolidé attribuable retenu dans le tableau",
+        "valeur": 11485000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en circulation",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "205 FCFA dans les deux documents ; copie scannée 2023 sans extraction utile.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "DOCUMENT_MIXTE_SYSCOHADA_ET_IFRS"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers syscohada exercice 2023 cie ci",
+          "pages": "3",
+          "role": "publication IFRS consolidée"
+        },
+        {
+          "document": "Etats financiers norme syscohada exercice 2024 cie ci",
+          "pages": "3",
+          "role": "comparatif IFRS confirmant"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2024,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 188,
+        "unite": "FCFA/action",
+        "libelle": "Résultat par action"
+      },
+      "confirmations_documents_distincts": 2,
+      "validation": "188 FCFA dans la partie IFRS du document 2024 et en comparatif du document 2025. Contrôle : 10 526 millions / 56 000 000 = 187,96 FCFA.",
+      "controle_recalcul": {
+        "valeur": 187.96,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net consolidé attribuable retenu dans le tableau",
+        "valeur": 10526000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en circulation",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "188 FCFA dans les deux documents.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "DOCUMENT_MIXTE_SYSCOHADA_ET_IFRS"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers norme syscohada exercice 2024 cie ci",
+          "pages": "3",
+          "role": "publication IFRS consolidée"
+        },
+        {
+          "document": "Etats financiers syscohada et ifrs exercice 2025 cie ci",
+          "pages": "3",
+          "role": "comparatif IFRS confirmant"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2025,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 234,
+        "unite": "FCFA/action",
+        "libelle": "Résultat par action"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "234 FCFA à la page IFRS consolidée 2025. Contrôle : 13 100 millions / 56 000 000 = 233,93 FCFA.",
+      "controle_recalcul": {
+        "valeur": 233.93,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net consolidé attribuable retenu dans le tableau",
+        "valeur": 13100000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en circulation",
+        "valeur": 56000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "234 FCFA.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "DOCUMENT_MIXTE_SYSCOHADA_ET_IFRS"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers syscohada et ifrs exercice 2025 cie ci",
+          "pages": "3",
+          "role": "publication IFRS consolidée"
+        }
+      ],
+      "societe": "CIE COTE D'IVOIRE"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2016,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_PROPRE_INTROUVABLE_SOURCES_COMPARATIVES_EXAMINEES",
+      "perimetre_retenu": "Consolidé SYSCOHADA historique",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "La présentation des résultats 2017 donne le résultat part de l'entreprise consolidante 2016 (186 331 millions) sans BPA. Le rapport annuel 2018 donne 100 000 000 actions ordinaires au titre de 2016 dans le tableau quinquennal, sans dénominateur pondéré IAS 33.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 1863.31,
+        "formule": "186 331 000 000 / 100 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Part de l'entreprise consolidante",
+        "valeur": 186331000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions ordinaires en fin d'exercice (tableau quinquennal)",
+        "valeur": 100000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Aucune extraction : libellé ancien non reconnu et états au-delà de la limite de pages.",
+        "verdict": "ABSENCE_CORRECTE_MAIS_INTRANT_MANQUE"
+      },
+      "drapeaux": [
+        "ANCIEN_LIBELLE_PART_ENTREPRISE_CONSOLIDANTE",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Presentation resultats financiers 2017 sonatel",
+          "pages": "41-42",
+          "role": "numérateur 2016"
+        },
+        {
+          "document": "Rapport annuel 2018 sonatel",
+          "pages": "224",
+          "role": "actions 2016"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2017,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "Consolidé SYSCOHADA, colonne 2017 proforma",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Le compte de résultat consolidé 2018 présente 2017 en deux colonnes : réel 172 454 millions et proforma SYSCOHADA révisé 171 801 millions, sans ligne BPA. Le ratio séparé utilise la colonne proforma, cohérente avec 2018.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 1718.01,
+        "formule": "171 801 000 000 / 100 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [
+        {
+          "valeur": 1724.54,
+          "unite": "FCFA/action",
+          "detail": "Ratio sur la colonne 2017 réelle avant retraitement"
+        }
+      ],
+      "numerateur": {
+        "type": "Part de l'entreprise consolidante, 2017 proforma",
+        "valeur": 171801000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions ordinaires en fin d'exercice",
+        "valeur": 100000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Aucune extraction utile : états p. 151 et actions p. 224 au-delà de la limite de 80 pages.",
+        "verdict": "MANQUE_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "COLONNES_REEL_ET_PROFORMA",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 sonatel",
+          "pages": "151, 224",
+          "role": "numérateur et actions"
+        },
+        {
+          "document": "Presentation resultats financiers 2017 sonatel",
+          "pages": "41-42",
+          "role": "colonne réelle 2017"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2018,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "RAPPORT_ANNUEL_COMPLET_EXAMINE_PAR_SECOND_LECTEUR",
+      "perimetre_retenu": "Consolidé SYSCOHADA révisé",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Compte de résultat consolidé du rapport annuel 2018, p. 151 : part de l'entreprise consolidante 172 467 millions, aucune ligne BPA. Actions ordinaires : 100 000 000 p. 224.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 1724.67,
+        "formule": "172 467 000 000 / 100 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Part de l'entreprise consolidante",
+        "valeur": 172467000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions ordinaires en fin d'exercice",
+        "valeur": 100000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Invisible pour l'extracteur en raison de la limite de 80 pages.",
+        "verdict": "MANQUE_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "LIMITE_80_PAGES",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 sonatel",
+          "pages": "151, 224",
+          "role": "compte consolidé et actions"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2019,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "DOCUMENT_INTROUVABLE",
+      "statut_documentaire": "ETATS_CONSOLIDES_ANNUELS_COMPLETS_ABSENTS_DE_L_INVENTAIRE_BRVM",
+      "perimetre_retenu": "Consolidé",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Seule une synthèse de rapport de gestion est indexée pour 2019. Elle donne un résultat net consolidé arrondi (196,8 milliards) mais ni part attribuable, ni BPA, ni nombre d'actions. L'absence dans cette synthèse ne suffit pas à conclure à une non-publication dans des états complets non retrouvés.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net consolidé total, arrondi de présentation",
+        "valeur": 196800000000,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Faux résultat de 33 000 000 FCFA depuis une ligne de présentation dégradée ; aucun BPA.",
+        "verdict": "VALEUR_FAUSSE_REJETEE"
+      },
+      "drapeaux": [
+        "SYNTHESE_SEULE",
+        "NUMERATEUR_ATTRIBUABLE_ABSENT"
+      ],
+      "sources": [
+        {
+          "document": "Synthese rapport de gestion 2019 250220 vf 4",
+          "pages": "ensemble du document",
+          "role": "seul document annuel indexé ouvert"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2020,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "DOCUMENT_INTROUVABLE",
+      "statut_documentaire": "ETATS_CONSOLIDES_ANNUELS_COMPLETS_ABSENTS_DE_L_INVENTAIRE_BRVM",
+      "perimetre_retenu": "Consolidé",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Le rapport de gestion 2020 ouvert donne le résultat net consolidé total arrondi (201,3 milliards), sans part attribuable, BPA ni dénominateur. Aucun état consolidé annuel complet 2020 n'est présent dans l'inventaire BRVM du pilote.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net consolidé total, arrondi de présentation",
+        "valeur": 201300000000,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Aucune valeur retenue dans ce document de présentation.",
+        "verdict": "ABSENCE_CORRECTE"
+      },
+      "drapeaux": [
+        "RAPPORT_DE_GESTION_SEUL",
+        "EXERCICE_DU_DOCUMENT_DEDUIT_DU_LIBELLE_PAS_DE_LA_DATE_FICHIER"
+      ],
+      "sources": [
+        {
+          "document": "Sonatel rapport de gestion 2020 vf 25022021",
+          "pages": "ensemble du document",
+          "role": "document annuel ouvert ; exercice 2020 d'après le libellé"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2021,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "PRESENTATIONS_ANNUELLES_ET_COMPARATIFS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Présentation 2022 et états 2023 donnent le résultat attribuable aux propriétaires de la maison mère 2021 : 211 054 millions. Aucune ligne BPA dans les documents annuels ouverts. Le contrôle 211 054 / 100 000 000 = 2 110,54 FCFA n'est pas retenu comme ratio vérifié, faute de dénominateur pondéré ou de fin d'exercice publié pour 2021 dans ces sources.",
+      "controle_recalcul": {
+        "valeur": 2110.54,
+        "unite": "FCFA/action",
+        "verdict": "CONTROLE_NON_RETENU_DENOMINATEUR_NON_PUBLIE_POUR_2021"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net attribuable aux propriétaires de la maison mère",
+        "valeur": 211054000000,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Numérateur extrait depuis la présentation 2022 ; aucun BPA.",
+        "verdict": "ABSENCE_BPA_CONCORDANTE"
+      },
+      "drapeaux": [
+        "TROISIEME_COLONNE_COMPARATIVE_POUR_LE_NUMERATEUR"
+      ],
+      "sources": [
+        {
+          "document": "Comfi groupe sonatel resultats financiers 2022 fr v finale brvm",
+          "pages": "compte de résultat consolidé",
+          "role": "numérateur 2021"
+        },
+        {
+          "document": "Etats financiers exercice 2023 sonatel sn",
+          "pages": "compte de résultat consolidé à trois colonnes",
+          "role": "numérateur 2021 confirmé, sans BPA"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2022,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "RAPPORT_ANNUEL_2024_ET_PRESENTATION_2022_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 2359,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net par action de base"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Rapport annuel 2024, compte consolidé à trois colonnes p. 34 : 2 359 FCFA pour 2022. Contrôle avec le numérateur du même tableau : 235 974 millions / 100 000 000 = 2 359,74 FCFA. La valeur 2 110 imprimée sous 2022 dans les états condensés 2024 est rejetée : elle correspond au contrôle 2021 et révèle un décalage de la ligne BPA de ce document.",
+      "controle_recalcul": {
+        "valeur": 2359.74,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT_DENOMINATEUR_STABLE_NON_REPUBLIE_POUR_2022"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 2110,
+          "unite": "FCFA/action",
+          "detail": "États condensés 2024, ligne BPA décalée"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net attribuable aux propriétaires de la maison mère",
+        "valeur": 235974000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions utilisées au contrôle ; note pondérée explicite seulement pour 2024/2023",
+        "valeur": 100000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "BPA manqué : troisième colonne comparative ignorée.",
+        "verdict": "MANQUE_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "TROISIEME_COLONNE",
+        "SOURCE_CONDENSEE_DIVERGENTE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport dactivites annuel exercice 2024 sonatel sn",
+          "pages": "34",
+          "role": "BPA et numérateur 2022"
+        },
+        {
+          "document": "Etats financiers exercice 2024 sonatel sn",
+          "pages": "25",
+          "role": "source divergente rejetée"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2023,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_SOURCE_DIVERGENTE_RESOLUE",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_RAPPORT_2024_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 2794,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net par action de base"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Rapport annuel 2024 : 2 794 FCFA au compte de résultat p. 34 et dans la note résultat par action p. 45. La note donne le dénominateur moyen pondéré 100 000 000 ; 279 448 millions / 100 000 000 = 2 794,48. Les états condensés 2024 impriment 2 359 sous 2023 et un dilué 3 298 supérieur au de base 2024 : ligne rejetée comme décalée/erronée.",
+      "controle_recalcul": {
+        "valeur": 2794.48,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 2359,
+          "unite": "FCFA/action",
+          "detail": "États financiers 2024 p. 25, valeur correspondant à 2022"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net attribuable aux propriétaires de la maison mère",
+        "valeur": 279448000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires",
+        "valeur": 100000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Deux valeurs concurrentes extraites : 2 359 et 2 794, sans résolution.",
+        "verdict": "DIVERGENCE_NON_RESOLUE_PAR_L_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "SOURCE_DIVERGENTE_RESOLUE_PAR_ARITHMETIQUE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport dactivites annuel exercice 2024 sonatel sn",
+          "pages": "34, 45",
+          "role": "BPA, numérateur et dénominateur"
+        },
+        {
+          "document": "Etats financiers exercice 2024 sonatel sn",
+          "pages": "25",
+          "role": "source rejetée"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2024,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_ET_COMPARATIF_2025_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 3288,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net par action de base"
+      },
+      "confirmations_documents_distincts": 3,
+      "validation": "3 288 FCFA dans les états 2024, le rapport annuel 2024 et le comparatif des états 2025. Note du rapport annuel : dénominateur moyen pondéré 100 000 000 ; numérateur 328 750 millions, soit 3 287,50 FCFA avant arrondi de publication.",
+      "controle_recalcul": {
+        "valeur": 3287.5,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net attribuable aux propriétaires de la maison mère",
+        "valeur": 328750000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires",
+        "valeur": 100000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "3 288 FCFA dans les trois documents.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [],
+      "sources": [
+        {
+          "document": "Rapport dactivites annuel exercice 2024 sonatel sn",
+          "pages": "34, 45",
+          "role": "publication complète"
+        },
+        {
+          "document": "Etats financiers 2025 et attestation des cac sonatel sn",
+          "pages": "20",
+          "role": "comparatif confirmant"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SNTS",
+      "exercice": 2025,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 3420,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net par action de base"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "3 420 FCFA dans les états 2025. Le numérateur attribuable du même compte est 341 963 millions ; le contrôle par le dénominateur stable de 100 000 000 donne 3 419,63 FCFA. Le document condensé ne répète pas la note de dénominateur.",
+      "controle_recalcul": {
+        "valeur": 3419.63,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT_DENOMINATEUR_NON_REPUBLIE_DANS_LE_DOCUMENT_2025"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net attribuable aux propriétaires de la maison mère",
+        "valeur": 341963000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Dénominateur de contrôle issu de la note 2024",
+        "valeur": 100000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "3 420 FCFA.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "DENOMINATEUR_NON_REPUBLIE_2025"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers 2025 et attestation des cac sonatel sn",
+          "pages": "20",
+          "role": "BPA et numérateur"
+        }
+      ],
+      "societe": "SONATEL SENEGAL"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2016,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_EXAMINE",
+      "perimetre_retenu": "SYSCOHADA (synthèse annuelle)",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Le seul document annuel 2016 indexé et ouvert est une synthèse d'une page en texte natif ; recherche complète sans ligne par action ni nombre d'actions.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": null,
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Aucun BPA.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "DOCUMENT_CLASSE_AUTRE_PAR_LE_COLLECTEUR"
+      ],
+      "sources": [
+        {
+          "document": "Etats financier exercice 2016 bollore",
+          "pages": "1",
+          "role": "recherche BPA négative"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2017,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_ET_RAPPORT_2018_EXAMINES",
+      "perimetre_retenu": "SYSCOHADA",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "États annuels 2017 de deux pages en texte natif sans BPA ni actions. Le rapport annuel 2018 scanné, relu en OCR sur ses pages financières d'ouverture, donne un résultat 2017 mais aucune ligne BPA.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net SYSCOHADA lu en OCR, non retenu pour un ratio",
+        "valeur": 13143000000,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Aucun BPA.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "RAPPORT_2018_SCANNE_OCR_PARTIEL"
+      ],
+      "sources": [
+        {
+          "document": "Bollore trans.log etats financier 2017",
+          "pages": "1-2",
+          "role": "recherche BPA négative"
+        },
+        {
+          "document": "Rapport annuel 2018 bollore",
+          "pages": "14, 21 (OCR)",
+          "role": "résultat/capital sans BPA"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2018,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "COMPTES_IFRS_2019_AVEC_COMPARATIF_2018_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé retraité",
+      "bpa_retenu": {
+        "valeur": 280.1,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net part du Groupe par action, de base"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Comptes consolidés 2019, p. 3 : 280,1 FCFA pour 2018 retraité IFRS. Note 9.2 p. 29 : numérateur utilisé 15 249 millions et 54 435 300 actions moyennes pondérées, soit 280,12 FCFA.",
+      "controle_recalcul": {
+        "valeur": 280.12,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 266,
+          "unite": "FCFA/action",
+          "detail": "BPA des comptes individuels IFRS 2019, comparatif 2018 ; périmètre distinct non fusionné"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe utilisé pour le BPA",
+        "valeur": 15249000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires",
+        "valeur": 54435300,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Numérateur et dénominateur consolidés extraits, BPA consolidé manqué ; BPA individuel 266 extrait séparément dans les données brutes du pilote.",
+        "verdict": "MANQUE_BPA_CONSOLIDE_RISQUE_DE_PERIMETRE"
+      },
+      "drapeaux": [
+        "TRANSITION_IFRS",
+        "PERIMETRE_INDIVIDUEL_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2019 comptes consolides bollore transport logistics",
+          "pages": "3, 29",
+          "role": "BPA et intrants"
+        },
+        {
+          "document": "Etats financiers exercice 2019 comptes individuels bollore transport logistics",
+          "pages": "5",
+          "role": "BPA individuel séparé"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2019,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "COMPTES_CONSOLIDES_2019_ET_2020_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 202.6,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net part du Groupe par action, de base"
+      },
+      "confirmations_documents_distincts": 2,
+      "validation": "202,6 FCFA au pied du compte consolidé 2019 (p. 3) et en comparatif des comptes consolidés 2020 (p. 3). Note : 11 030 millions / 54 435 300 = 202,63 FCFA.",
+      "controle_recalcul": {
+        "valeur": 202.63,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 232,
+          "unite": "FCFA/action",
+          "detail": "BPA individuel IFRS, confirmé dans les comptes individuels 2019 et 2020 mais hors périmètre retenu"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe utilisé pour le BPA",
+        "valeur": 11030000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires",
+        "valeur": 54435300,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "BPA consolidé manqué (présentation sur plusieurs lignes) ; intrants extraits. BPA individuel 232 extrait.",
+        "verdict": "MANQUE_BPA_CONSOLIDE"
+      },
+      "drapeaux": [
+        "BPA_SUR_PLUSIEURS_LIGNES",
+        "PERIMETRE_INDIVIDUEL_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2019 comptes consolides bollore transport logistics",
+          "pages": "3, 29",
+          "role": "publication et intrants"
+        },
+        {
+          "document": "Btl ci 2020 comptes consolides ifrs rapport general des cac",
+          "pages": "3, 26",
+          "role": "confirmation"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2020,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "COMPTES_CONSOLIDES_IFRS_CLASSE_AUTRE_RETROUVES_APRES_CONTRE_LECTURE",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 266.5,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net part du Groupe par action, de base"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Comptes consolidés IFRS 2020, p. 3 : 266,5 FCFA. Note 9.2 p. 26 : 14 501 millions / 54 420 286 = 266,44 FCFA, écart compatible avec les montants arrondis en millions.",
+      "controle_recalcul": {
+        "valeur": 266.44,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 349,
+          "unite": "FCFA/action",
+          "detail": "BPA individuel IFRS 2020, périmètre distinct"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe utilisé pour le BPA",
+        "valeur": 14501000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires",
+        "valeur": 54420286,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Document classé « autre » ; la référence de note 9.2 a été prise pour une valeur puis le BPA a été écarté par plausibilité. Intrants extraits.",
+        "verdict": "MANQUE_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "DOCUMENT_CLASSE_AUTRE",
+        "REFERENCE_DE_NOTE_CONFONDUE_AVEC_VALEUR",
+        "ACTIONS_D_AUTOCONTROLE"
+      ],
+      "sources": [
+        {
+          "document": "Btl ci 2020 comptes consolides ifrs rapport general des cac",
+          "pages": "3, 26",
+          "role": "BPA et intrants"
+        },
+        {
+          "document": "Btl ci 2020 comptes individuels ifrs rapport general des cac",
+          "pages": "5, 23",
+          "role": "périmètre individuel séparé"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2021,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "COMPARATIFS_DES_COMPTES_2022_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé",
+      "bpa_retenu": {
+        "valeur": 308.4,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net part du Groupe par action, de base"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Comptes consolidés 2022, p. 3 : 308,4 FCFA en comparatif 2021. Contrôle : 16 780 millions / 54 418 250 = 308,35 FCFA. La colonne 2021 de la note est cohérente, contrairement à la colonne 2022 du même tableau.",
+      "controle_recalcul": {
+        "valeur": 308.35,
+        "unite": "FCFA/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 371,
+          "unite": "FCFA/action",
+          "detail": "BPA individuel IFRS 2021 ; contrôle 20 181 190 767 / 54 418 250 = 370,86"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe",
+        "valeur": 16780000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires (note 2022)",
+        "valeur": 54418250,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "BPA consolidé manqué ; BPA individuel 371 extrait, risque de substitution de périmètre.",
+        "verdict": "MANQUE_BPA_CONSOLIDE"
+      },
+      "drapeaux": [
+        "PERIMETRE_INDIVIDUEL_SEPARE",
+        "ACTIONS_D_AUTOCONTROLE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport des commissaires aux comptes etats financiers consolides exercice 2022 agl cote divoire",
+          "pages": "3, 27",
+          "role": "BPA et intrants 2021"
+        },
+        {
+          "document": "Rapport des commissaires aux comptes ifrs etats financiers individuels exercice 2022 agl cote divoire",
+          "pages": "5, 22",
+          "role": "BPA individuel séparé"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2022,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_INCOHERENT_NON_RETENU",
+      "statut_documentaire": "COMPTES_CONSOLIDES_ET_INDIVIDUELS_IFRS_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé (valeur rejetée)",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Le compte consolidé p. 3 imprime 250,9 FCFA, mais son propre résultat part du Groupe est 14 124 millions ; avec 54 418 250 actions pondérées, le contrôle donne 259,54 FCFA. La note 8.2 p. 27 répète en outre 16 780 millions pour 2022 et 2021 et ne concorde pas avec les titres d'autocontrôle des comptes individuels. Aucune substitution silencieuse n'est faite.",
+      "controle_recalcul": {
+        "valeur": 259.54,
+        "unite": "FCFA/action",
+        "verdict": "ECART_DE_3_3_PCT_ET_NOTE_INCOHERENTE"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 250.9,
+          "unite": "FCFA/action",
+          "detail": "BPA consolidé publié mais incohérent avec les intrants du document"
+        },
+        {
+          "valeur": 318,
+          "unite": "FCFA/action",
+          "detail": "BPA individuel IFRS validé (17 315 512 616 / 54 410 300 = 318,22), hors périmètre consolidé retenu"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe du compte de résultat",
+        "valeur": 14124000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré publié dans la note consolidée",
+        "valeur": 54418250,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "BPA consolidé manqué ; faux BPA individuel de 22 lu dans le sommaire pointillé (numéro de page), au lieu de 318 p. 5/22.",
+        "verdict": "FAUX_POSITIF_ET_MANQUE"
+      },
+      "drapeaux": [
+        "INCOHERENCE_INTERNE_SOURCE",
+        "SOMMAIRE_POINTILLE",
+        "PERIMETRE_INDIVIDUEL_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport des commissaires aux comptes etats financiers consolides exercice 2022 agl cote divoire",
+          "pages": "3, 27",
+          "role": "valeur rejetée et intrants"
+        },
+        {
+          "document": "Rapport des commissaires aux comptes ifrs etats financiers individuels exercice 2022 agl cote divoire",
+          "pages": "2, 5, 22",
+          "role": "faux positif sommaire et vrai BPA individuel"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2023,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "SYNTHESE_SCANNEE_LUE_VISUELLEMENT",
+      "perimetre_retenu": "SYSCOHADA social provisoire",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "La page unique des états de synthèse provisoires 2023 a été lue visuellement : résultat net 17 138 527 milliers FCFA, capital en en-tête, aucune ligne BPA ni nombre d'actions. Aucun compte IFRS annuel 2023 n'est indexé dans le périmètre BRVM du pilote.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net SYSCOHADA provisoire",
+        "valeur": 17138527000,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "OCR : 10 044 129 000 FCFA affecté à 2023 et 10 044 000 FCFA à 2022 ; la page montre 17 138 527 milliers pour 2023 et 10 044 129 milliers pour 2022.",
+        "verdict": "OCR_COLONNES_ET_ECHELLE_FAUSSES"
+      },
+      "drapeaux": [
+        "CHANGEMENT_DE_DENOMINATION_AGL",
+        "OCR_REJETE_APRES_LECTURE_VISUELLE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2023 africa global logistics ci",
+          "pages": "1",
+          "role": "synthèse annuelle lue visuellement"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2024,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "RAPPORT_CAC_SANS_ETATS_JOINTS_ET_SYNTHESE_2025_EXAMINEE",
+      "perimetre_retenu": "SYSCOHADA social",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Le PDF BRVM intitulé états et rapport CAC 2024 contient le rapport d'audit SYSCOHADA, sans les états joints annoncés. La synthèse 2025 donne le comparatif résultat 2024 (21 068 974 milliers) et le capital, sans BPA. Le statut vaut pour les sources effectivement vérifiées du pilote.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net 2024 en comparatif de la synthèse 2025",
+        "valeur": 21068974000,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Aucun chiffre annuel utile dans le seul rapport CAC ; aucun BPA.",
+        "verdict": "ABSENCE_CORRECTE_DOCUMENT_INCOMPLET"
+      },
+      "drapeaux": [
+        "ETATS_JOINTS_ABSENTS_DU_PDF"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers et rapport des cac exercice 2024 africa global logistics ci",
+          "pages": "1-11",
+          "role": "rapport CAC seul"
+        },
+        {
+          "document": "Etats financiers certifies exercice 2025 africa global logistics ci",
+          "pages": "1",
+          "role": "comparatif 2024 sans BPA"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "SDSC",
+      "exercice": 2025,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "SYNTHESES_ATTESTATION_ET_RAPPORT_CAC_EXAMINES",
+      "perimetre_retenu": "SYSCOHADA social",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Synthèse 2025 lue visuellement et en texte natif sur une copie : résultat net 784 970 milliers FCFA ; attestation CAC : 784 970 349 FCFA. Aucune ligne BPA ni dénombrement d'actions dans la synthèse, l'attestation ou le rapport CAC de 10 pages.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net SYSCOHADA",
+        "valeur": 784970349,
+        "unite": "FCFA"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Résultat net concordant sur la copie native et l'OCR ; aucun BPA.",
+        "verdict": "CONCORDANT_POUR_LE_RESULTAT"
+      },
+      "drapeaux": [
+        "DOCUMENTS_2025_MULTIPLES_SANS_ETATS_IFRS"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers certifies exercice 2025 africa global logistics ci",
+          "pages": "1",
+          "role": "synthèse"
+        },
+        {
+          "document": "Attestation des commissaires aux comptes etats financiers exercice 2025 africa glogal logistics ci",
+          "pages": "1",
+          "role": "résultat exact"
+        },
+        {
+          "document": "Rapport des commissaires aux comptes sur les etats financiers africa global logistics ci",
+          "pages": "1-10",
+          "role": "exercice clos 2025, sans BPA"
+        }
+      ],
+      "societe": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE (ex-Bolloré Transport & Logistics CI)"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2016,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_PROPRE_INTROUVABLE_COMPARATIF_2017_EXAMINE",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Les états au 31/12/2017 présentent 2016 en première colonne : bénéfice 10 149 millions et capital 10 000 millions, sans BPA ni nombre d'actions. L'unité d'action d'alors est antérieure à l'attribution gratuite et au fractionnement de 2017 ; aucun ratio comparable n'est retenu.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Bénéfice de l'exercice (ancien format bancaire)",
+        "valeur": 10149000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Capital de fin d'exercice, nombre d'actions non publié dans le document",
+        "valeur": 10000000000,
+        "unite": "FCFA de capital"
+      },
+      "extracteur": {
+        "resultat": "Aucun agrégat : colonnes précédent d'abord et libellé BENEFICE non exploité. Aucun faux BPA.",
+        "verdict": "ABSENCE_BPA_CORRECTE_INTRANT_MANQUE"
+      },
+      "drapeaux": [
+        "COLONNES_PRECEDENT_D_ABORD",
+        "AVANT_AUGMENTATION_ET_FRACTIONNEMENT_2017"
+      ],
+      "sources": [
+        {
+          "document": "Boa ci etats financiers 31 decembre 2017",
+          "pages": "2, 4",
+          "role": "capital et bénéfice comparatifs 2016"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2017,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_2017_ET_2018_EXAMINES",
+      "perimetre_retenu": "États bancaires annuels retraités",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Aucune ligne BPA. Le résultat 2017 publié initialement à 10 845 millions est présenté à 9 879 millions dans les documents 2018. Le rapport annuel 2018 donne 20 000 000 actions au 31/12/2017. Le ratio séparé utilise la version retraitée.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 493.95,
+        "formule": "9 879 000 000 / 20 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [
+        {
+          "valeur": 10845000000,
+          "unite": "FCFA",
+          "detail": "Bénéfice 2017 dans la publication initiale, remplacé par 9 879 millions dans les documents 2018"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net retraité",
+        "valeur": 9879000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en fin d'exercice après opérations 2017",
+        "valeur": 20000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Résultat retraité extrait depuis les documents 2018 ; document 2017 initial non exploité.",
+        "verdict": "VERSIONS_A_DISTINGUER"
+      },
+      "drapeaux": [
+        "ACTIONS_GRATUITES_1_POUR_1_EN_2017",
+        "FRACTIONNEMENT_10_POUR_1_EN_2017",
+        "RETRAITEMENT_DU_RESULTAT",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 boa cote divoire",
+          "pages": "43, 58",
+          "role": "nominal, actions et résultat retraité"
+        },
+        {
+          "document": "Boa ci etats financiers 31 decembre 2017",
+          "pages": "2, 4",
+          "role": "version initiale et doublement du capital"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2018,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_EXAMINES",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Rapport annuel 2018 : résultat de l'exercice 11 699 091 388 FCFA p. 58 ; 20 000 000 actions de nominal 1 000 FCFA p. 43 et p. 58. Le tableau p. 58 publie un dividende par action, pas un BPA.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 584.95,
+        "formule": "11 699 091 388 / 20 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [
+        {
+          "valeur": 340,
+          "unite": "FCFA/action",
+          "detail": "Dividende brut par action, à ne pas confondre avec un BPA"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 11699091388,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en fin d'exercice",
+        "valeur": 20000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "États provisoires corrects ; le rapport annuel produit aussi un faux résultat de 2 017 000 000 FCFA rejeté à la contre-lecture.",
+        "verdict": "FAUX_RESULTAT_A_REJETER"
+      },
+      "drapeaux": [
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 boa cote divoire",
+          "pages": "43, 58",
+          "role": "résultat, nominal et actions"
+        },
+        {
+          "document": "Boaci etats financiers 2018 provisoires",
+          "pages": "ensemble",
+          "role": "recherche BPA négative"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2019,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENTS_ANNUELS_EXAMINES_INTERMEDIAIRE_EXCLU",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Deux copies des états annuels 2019 : capital souscrit 20 000 millions et résultat net 14 382 millions, colonnes 2018 puis 2019, aucune ligne BPA. Les états certifiés au 30 juin 2019 sont intermédiaires et exclus de l'exercice annuel.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 719.1,
+        "formule": "14 382 000 000 / (20 000 000 000 / 1 000)",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 14382000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Capital souscrit / nominal de 1 000 FCFA lu au rapport 2018",
+        "valeur": 20000000,
+        "unite": "actions déduites du capital et du nominal"
+      },
+      "extracteur": {
+        "resultat": "Résultat annuel correct ; le document au 30 juin a été traité comme source annuelle dans le pilote initial avant exclusion manuelle.",
+        "verdict": "RISQUE_INTERMEDIAIRE"
+      },
+      "drapeaux": [
+        "INTERMEDIAIRE_30_JUIN_A_EXCLURE",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2019 boa ci",
+          "pages": "2-3",
+          "role": "capital et résultat"
+        },
+        {
+          "document": "Etats financiers certifies 30 juin 2019 boa ci",
+          "pages": "ensemble",
+          "role": "document intermédiaire exclu"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2020,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_EXAMINE",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "États 2020 : capital souscrit 20 000 millions, résultat net 14 216 millions, aucune ligne BPA ni dénominateur pondéré.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 710.8,
+        "formule": "14 216 000 000 / 20 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 14216000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Capital souscrit / nominal 1 000 FCFA",
+        "valeur": 20000000,
+        "unite": "actions déduites du capital et du nominal"
+      },
+      "extracteur": {
+        "resultat": "Résultat correct, aucun BPA.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2020 boa ci",
+          "pages": "2-3",
+          "role": "capital et résultat"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2021,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_PROPRE_INTROUVABLE_COMPARATIF_2022_SCANNE_EXAMINE_EN_ENTIER",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Aucun état annuel propre 2021 dans l'inventaire. Le document scanné 2022 a été relu en OCR sur les 39 pages (24 par le passage contrôlé, 15 par OCR ciblé) : tableau triennal p. 27 « 14 216 / 16 638 / 20 069 » et capital 20 000 millions ; aucune ligne BPA.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 831.9,
+        "formule": "16 638 000 000 / 20 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net comparatif lu en OCR et confirmé par le tableau triennal",
+        "valeur": 16638000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Capital souscrit comparatif / nominal 1 000 FCFA",
+        "valeur": 20000000,
+        "unite": "actions déduites du capital et du nominal"
+      },
+      "extracteur": {
+        "resultat": "OCR limité à 24 pages mais valeur 2021 concordante avec le tableau p. 27 relu ensuite.",
+        "verdict": "CONCORDANT_APRES_OCR_CIBLE"
+      },
+      "drapeaux": [
+        "SCAN_OCR_COMPLET_PAR_PASSAGES",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2022 boa ci",
+          "pages": "2, 27 et OCR ciblé 25-39",
+          "role": "capital, résultat 2021 et recherche BPA"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2022,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_SCANNE_EXAMINE_EN_ENTIER_PAR_OCR_CIBLE",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Document 2022 de 39 pages scannées : capital 20 000 millions, résultat net 20 069 millions lu en OCR et confirmé par le comparatif natif 2023. Recherche BPA/actions sur toutes les pages après OCR ciblé des pages 25 à 39 : négative.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 1003.45,
+        "formule": "20 069 000 000 / 20 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 20069000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Capital souscrit / nominal 1 000 FCFA",
+        "valeur": 20000000,
+        "unite": "actions déduites du capital et du nominal"
+      },
+      "extracteur": {
+        "resultat": "Résultat OCR concordant avec 2023 ; limite native de 24 pages dépassée seulement par le passage ciblé du pilote.",
+        "verdict": "CONCORDANT_APRES_CONTROLE"
+      },
+      "drapeaux": [
+        "LIMITE_OCR_24_PAGES",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2022 boa ci",
+          "pages": "1-39",
+          "role": "états scannés"
+        },
+        {
+          "document": "Etats financiers exercice 2023 boa ci",
+          "pages": "2",
+          "role": "confirmation du résultat 2022"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2023,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_ET_COMPARATIF_2024_EXAMINES",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "États 2023 et comparatif 2024 : capital 20 000 millions, résultat net 26 075 millions, aucune ligne BPA.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 1303.75,
+        "formule": "26 075 000 000 / 20 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 26075000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Capital souscrit / nominal 1 000 FCFA",
+        "valeur": 20000000,
+        "unite": "actions déduites du capital et du nominal"
+      },
+      "extracteur": {
+        "resultat": "Résultat concordant dans deux documents, aucun BPA.",
+        "verdict": "CONCORDANT"
+      },
+      "drapeaux": [
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2023 boa ci",
+          "pages": "2",
+          "role": "capital et résultat"
+        },
+        {
+          "document": "Etats financiers exercice 2024 boa ci",
+          "pages": "2",
+          "role": "comparatif"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2024,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_ANNUEL_ET_EVENEMENT_DE_CAPITAL_EXAMINES",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Les états 2024 montrent le capital passant de 20 000 à 40 000 millions et le résultat net de 32 044 millions, sans BPA ni dénominateur pondéré. L'opération est une attribution gratuite 1 pour 1 avec jouissance au 1er janvier 2024 ; le ratio de fin d'exercice ne doit pas être enchaîné avec 2023 sans retraitement du dénominateur.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 801.1,
+        "formule": "32 044 000 000 / 40 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net",
+        "valeur": 32044000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Actions en fin d'exercice après doublement du capital",
+        "valeur": 40000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Résultat et saut de capital lisibles, aucun BPA ; aucun registre d'événement ne protège un ratio automatique.",
+        "verdict": "RISQUE_DE_RUPTURE_DE_SERIE"
+      },
+      "drapeaux": [
+        "ACTIONS_GRATUITES_1_POUR_1",
+        "JOUISSANCE_2024-01-01",
+        "RETRAITEMENT_RETROSPECTIF_REQUIS_POUR_TOUTE_SERIE_PAR_ACTION",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2024 boa ci",
+          "pages": "2",
+          "role": "capital 20 000 vers 40 000 et résultat"
+        },
+        {
+          "document": "Rapport CAC et états annuels exercice 2025 boa ci",
+          "pages": "15",
+          "role": "capital au 31/12/2024 relu visuellement"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "BOAC",
+      "exercice": 2025,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_documentaire": "DOCUMENT_SCANNE_EXAMINE_EN_ENTIER_PAR_OCR_ET_LECTURE_VISUELLE",
+      "perimetre_retenu": "États bancaires annuels",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Bilan scanné lu visuellement p. 15 : colonnes 31/12/2024 puis 31/12/2025, capital souscrit 40 000,00 dans les deux colonnes et résultat 35 540,00 millions en 2025. OCR ciblé des pages 25 à 53 : aucune ligne BPA/nombre d'actions.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": {
+        "valeur_fcfa": 888.5,
+        "formule": "35 540 000 000 / 40 000 000",
+        "statut": "RATIO_SEPARE_NON_BPA"
+      },
+      "publications_non_retenues": [],
+      "numerateur": {
+        "type": "Résultat net lu visuellement et en OCR",
+        "valeur": 35540000000,
+        "unite": "FCFA"
+      },
+      "denominateur": {
+        "type": "Capital souscrit / nominal 1 000 FCFA",
+        "valeur": 40000000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "OCR de production limité à 24 pages ; résultat juste, mais l'ordre des colonnes du bilan est précédent puis courant.",
+        "verdict": "CONCORDANT_APRES_LECTURE_VISUELLE"
+      },
+      "drapeaux": [
+        "COLONNES_PRECEDENT_D_ABORD_AU_BILAN",
+        "LIMITE_OCR_24_PAGES",
+        "RATIO_INDICATIF_SEPARE"
+      ],
+      "sources": [
+        {
+          "document": "Rapport des commissaires aux comptes et etats financiers annuels exercice 2025 boa ci",
+          "pages": "15, OCR ciblé 25-53",
+          "role": "bilan et recherche BPA"
+        }
+      ],
+      "societe": "BANK OF AFRICA COTE D'IVOIRE"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2016,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "statut_documentaire": "RAPPORT_ANNUEL_2018_EXAMINE_PAR_SECOND_LECTEUR",
+      "perimetre_retenu": "IFRS consolidé, résumé quinquennal",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Rapport annuel 2018 du groupe, résumé quinquennal p. 300 : BPA de base 2016 de -1,01 cent USD et perte attribuable aux propriétaires de -249 898 milliers USD. Aucune traduction FCFA de ce BPA dans la source ; valeur conservée comme publication en devise, hors couverture FCFA.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": -1.01,
+          "unite": "cents USD/action",
+          "detail": "BPA de base du résumé quinquennal"
+        }
+      ],
+      "numerateur": {
+        "type": "Perte attribuable aux propriétaires de la maison mère",
+        "valeur": -249898000,
+        "unite": "USD"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Aucune valeur : document de 324 pages en anglais, extracteur de production non terminé pendant le pilote.",
+        "verdict": "MANQUE_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "DEVISE_USD",
+        "DOCUMENT_EN_ANGLAIS",
+        "RESUME_QUINQUENNAL"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 ecobank group",
+          "pages": "300",
+          "role": "BPA quinquennal 2016"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2017,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "statut_documentaire": "DOCUMENT_AUTRE_EMETTEUR_EXCLU_ET_RAPPORT_2018_EXAMINE",
+      "perimetre_retenu": "IFRS consolidé, composantes par activité",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Le document « Etats financiers 2017 ecobank ci » est celui d'Ecobank Côte d’Ivoire, autre émetteur : exclu. Pour ETI, note 16 du rapport annuel 2018 p. 261 : profit attribuable poursuivi 178 071 milliers USD, arrêté 514, dénominateur pondéré 24 607 640 milliers d'actions ; BPA poursuivi 0,72 cent et arrêté 0,00. Le total implicite est 0,7257 cent, sans BPA total FCFA directement publié.",
+      "controle_recalcul": {
+        "valeur": 0.7257,
+        "unite": "cents USD/action",
+        "verdict": "TOTAL_IMPLICITE_NON_PUBLIE_EN_FCFA"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 0.72,
+          "unite": "cents USD/action",
+          "detail": "Activités poursuivies"
+        },
+        {
+          "valeur": 4.01,
+          "unite": "FCFA/action",
+          "detail": "Traduction de la seule composante poursuivie dans les chiffres clés 2018"
+        }
+      ],
+      "numerateur": {
+        "type": "Profit attribuable aux détenteurs de capitaux propres, total poursuivi + arrêté",
+        "valeur": 178585000,
+        "unite": "USD"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires",
+        "valeur": 24607640000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Aucune valeur du bon émetteur ; document Ecobank CI présent dans les candidats.",
+        "verdict": "RISQUE_MAUVAIS_EMETTEUR"
+      },
+      "drapeaux": [
+        "DOCUMENT_AUTRE_EMETTEUR_EXCLU",
+        "COMPOSANTES_ACTIVITES",
+        "DEVISE_USD"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 ecobank group",
+          "pages": "175, 261",
+          "role": "compte de résultat et note BPA"
+        },
+        {
+          "document": "Etats financiers 2017 ecobank ci",
+          "pages": "1-2",
+          "role": "document d'un autre émetteur exclu"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2018,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "statut_documentaire": "VERSIONS_2018_ET_RETRAITEE_2019_EXAMINEES",
+      "perimetre_retenu": "IFRS consolidé, deux vintages",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Version 2018 : BPA poursuivi 1,06 cent USD, arrêté 0,00 ; numérateur total 261 647 milliers USD et dénominateur 24 592 619 milliers, contrôle 1,0639 cent. Version retraitée dans les états 2019 : total attribuable 182 178 milliers, BPA poursuivi 0,74 cent et traduction FCFA 4,11. L'écart de vintage est matériel (-30,4 % sur le BPA) ; aucun choix silencieux n'est fait.",
+      "controle_recalcul": {
+        "valeur": 1.0639,
+        "unite": "cents USD/action (version initiale)",
+        "verdict": "RETRAITEMENT_2019_A_0_7407_CENT_IMPLICITE"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 1.06,
+          "unite": "cents USD/action",
+          "detail": "version initiale 2018"
+        },
+        {
+          "valeur": 0.74,
+          "unite": "cents USD/action",
+          "detail": "version retraitée 2019, activités poursuivies"
+        },
+        {
+          "valeur": 5.9,
+          "unite": "FCFA/action",
+          "detail": "traduction initiale"
+        },
+        {
+          "valeur": 4.11,
+          "unite": "FCFA/action",
+          "detail": "traduction retraitée de la composante poursuivie"
+        }
+      ],
+      "numerateur": {
+        "type": "Profit attribuable total, version initiale",
+        "valeur": 261647000,
+        "unite": "USD"
+      },
+      "denominateur": {
+        "type": "Nombre moyen pondéré d'actions ordinaires",
+        "valeur": 24592619000,
+        "unite": "actions"
+      },
+      "extracteur": {
+        "resultat": "Aucune valeur exploitable ; chiffres décimaux espacés et document annuel anglais de 324 pages.",
+        "verdict": "MANQUE_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "RETRAITEMENT_MATERIEL",
+        "VINTAGES_MULTIPLES",
+        "COMPOSANTES_ACTIVITES"
+      ],
+      "sources": [
+        {
+          "document": "Rapport annuel 2018 ecobank group",
+          "pages": "175, 261, 300",
+          "role": "version initiale et intrants"
+        },
+        {
+          "document": "Etats financiers exercice 2019 eti tg",
+          "pages": "1, 11",
+          "role": "comparatif 2018 retraité"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2019,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "statut_documentaire": "DOCUMENT_ANNUEL_EXAMINE",
+      "perimetre_retenu": "IFRS consolidé, composantes par activité",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "BPA de base publié par composante : 0,78 cent USD pour les activités poursuivies et 0,01 pour les activités arrêtées ; les chiffres clés traduisent la seule composante poursuivie à 4,56 FCFA. Numérateurs : 191 409 et 2 549 milliers USD. Aucun BPA total FCFA directement publié dans le document condensé.",
+      "controle_recalcul": {
+        "valeur": 0.79,
+        "unite": "cents USD/action",
+        "verdict": "SOMME_ARRONDIE_DES_COMPOSANTES_NON_UN_BPA_TOTAL_PUBLIE"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 0.78,
+          "unite": "cents USD/action",
+          "detail": "activités poursuivies"
+        },
+        {
+          "valeur": 0.01,
+          "unite": "cent USD/action",
+          "detail": "activités arrêtées"
+        },
+        {
+          "valeur": 4.56,
+          "unite": "FCFA/action",
+          "detail": "traduction de la composante poursuivie"
+        }
+      ],
+      "numerateur": {
+        "type": "Profit attribuable total",
+        "valeur": 193958000,
+        "unite": "USD"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "0,01 retenu comme BPA : c'est la composante activités arrêtées, pas le total.",
+        "verdict": "FAUSSE_VALEUR_DE_COMPOSANTE"
+      },
+      "drapeaux": [
+        "COMPOSANTES_ACTIVITES",
+        "DECIMALES_ESPACEES"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2019 eti tg",
+          "pages": "1, 11",
+          "role": "chiffres clés et compte de résultat"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2020,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "statut_documentaire": "DOCUMENT_ANNUEL_PROPRE_ABSENT_COMPARATIF_AUDITE_2021_EXAMINE",
+      "perimetre_retenu": "IFRS consolidé, composantes par activité",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Comparatif audité 2021 : BPA poursuivi 0,010 cent USD et arrêté 0,007 ; numérateurs attribuables 2 400 et 1 801 milliers USD. Le total implicite est 0,017 cent, très différent de la seule composante poursuivie traduite à 0,056 FCFA. Aucun total FCFA publié.",
+      "controle_recalcul": {
+        "valeur": 0.017,
+        "unite": "cents USD/action",
+        "verdict": "SOMME_DES_COMPOSANTES_NON_PUBLIEE_COMME_TOTAL_FCFA"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 0.01,
+          "unite": "cent USD/action",
+          "detail": "activités poursuivies"
+        },
+        {
+          "valeur": 0.007,
+          "unite": "cent USD/action",
+          "detail": "activités arrêtées"
+        },
+        {
+          "valeur": 0.056,
+          "unite": "FCFA/action",
+          "detail": "traduction de la composante poursuivie"
+        }
+      ],
+      "numerateur": {
+        "type": "Profit attribuable total",
+        "valeur": 4202000,
+        "unite": "USD"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "Aucun BPA 2020 exploitable ; décimales espacées 0 ,010 / 0 ,007.",
+        "verdict": "MANQUE_EXTRACTEUR"
+      },
+      "drapeaux": [
+        "COMPOSANTES_MATERIELLES",
+        "DECIMALES_ESPACEES"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers audites exercice 2021 etit",
+          "pages": "1, 5",
+          "role": "comparatif 2020"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2021,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "statut_documentaire": "VERSIONS_NON_AUDITEE_ET_AUDITEE_EXAMINEES",
+      "perimetre_retenu": "IFRS consolidé audité, composantes par activité",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Version auditée du 30/03/2022 préférée à la version de janvier : BPA poursuivi 1,063 cent USD (5,892 FCFA dans les chiffres clés) et arrêté 0,004 ; la version antérieure donnait 1,041. Le total implicite audité est 1,067 cent, sans total FCFA directement publié.",
+      "controle_recalcul": {
+        "valeur": 1.067,
+        "unite": "cents USD/action",
+        "verdict": "SOMME_DES_COMPOSANTES_AUDITEES"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 1.063,
+          "unite": "cents USD/action",
+          "detail": "activités poursuivies, version auditée"
+        },
+        {
+          "valeur": 1.041,
+          "unite": "cents USD/action",
+          "detail": "version antérieure remplacée"
+        },
+        {
+          "valeur": 5.892,
+          "unite": "FCFA/action",
+          "detail": "traduction de la composante poursuivie auditée"
+        }
+      ],
+      "numerateur": {
+        "type": "Profit attribuable total audité",
+        "valeur": 262234000,
+        "unite": "USD"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "1,0 dans les deux versions : décimale espacée tronquée et devise ignorée.",
+        "verdict": "FAUX_PARSE_DECIMAL"
+      },
+      "drapeaux": [
+        "VERSION_AUDITEE_REMPLACE_LA_PRECEDENTE",
+        "COMPOSANTES_ACTIVITES",
+        "DECIMALES_ESPACEES"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers audites exercice 2021 etit",
+          "pages": "1, 5",
+          "role": "version retenue pour la contre-lecture"
+        },
+        {
+          "document": "Etats financiers exercice 2021 eti tg",
+          "pages": "1-2",
+          "role": "version antérieure"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2022,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "COMPARATIF_DU_DOCUMENT_2023_EXAMINE",
+      "perimetre_retenu": "IFRS consolidé ; activités arrêtées néant",
+      "bpa_retenu": {
+        "valeur": 7.064,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net par action, chiffres clés"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Document 2023 : chiffres clés 1,165 cent USD / 7,064 FCFA et compte de résultat 1,165 cent, avec tirets pour les activités arrêtées. Le numérateur attribuable est 286 430 milliers USD ; le dénominateur implicite du BPA USD est cohérent avec l'ordre de grandeur publié en 2018 (environ 24,59 milliards), sans conversion effectuée par l'audit.",
+      "controle_recalcul": {
+        "valeur": 1.165,
+        "unite": "cents USD/action",
+        "verdict": "CONCORDANT_ENTRE_CHIFFRES_CLES_ET_COMPTE_DE_RESULTAT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 1.165,
+          "unite": "cents USD/action",
+          "detail": "valeur USD accompagnant le FCFA retenu"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe",
+        "valeur": 286430000,
+        "unite": "USD"
+      },
+      "denominateur": {
+        "type": "Dénominateur implicite, non republié dans le condensé",
+        "valeur": 24586695000,
+        "unite": "actions (ordre de grandeur de contrôle)"
+      },
+      "extracteur": {
+        "resultat": "1,0 : décimale espacée tronquée, colonne devise non distinguée.",
+        "verdict": "FAUX_PARSE_DECIMAL_ET_DEVISE"
+      },
+      "drapeaux": [
+        "DOUBLE_COLONNE_USD_FCFA",
+        "ACTIVITES_ARRETEES_NEANT"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2023 eti tg",
+          "pages": "1, 3",
+          "role": "BPA comparatif 2022 en deux emplacements"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2023,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_documentaire": "DOCUMENT_2023_ET_COMPARATIF_CERTIFIE_2024_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé ; activités arrêtées néant",
+      "bpa_retenu": {
+        "valeur": 7.099,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net par action"
+      },
+      "confirmations_documents_distincts": 2,
+      "validation": "Document 2023 : 1,170 cent USD / 7,099 FCFA ; document certifié 2024 en comparatif : 1,170 / 7,1. Activités arrêtées : tirets. Numérateur part du Groupe 287 824 milliers USD dans les deux comptes.",
+      "controle_recalcul": {
+        "valeur": 1.17,
+        "unite": "cents USD/action",
+        "verdict": "CONCORDANT"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 1.17,
+          "unite": "cents USD/action",
+          "detail": "valeur USD accompagnant le FCFA retenu"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe",
+        "valeur": 287824000,
+        "unite": "USD"
+      },
+      "denominateur": {
+        "type": "Dénominateur implicite, non republié dans les condensés",
+        "valeur": 24600342000,
+        "unite": "actions (ordre de grandeur de contrôle)"
+      },
+      "extracteur": {
+        "resultat": "1,0 depuis 2023 et 8,0 depuis le comparatif 2024 : choix incohérent entre colonnes USD et FCFA.",
+        "verdict": "FAUX_PARSE_DECIMAL_ET_DEVISE"
+      },
+      "drapeaux": [
+        "DOUBLE_COLONNE_USD_FCFA",
+        "ACTIVITES_ARRETEES_NEANT"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers exercice 2023 eti tg",
+          "pages": "1, 3",
+          "role": "publication"
+        },
+        {
+          "document": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+          "pages": "2, 4",
+          "role": "comparatif confirmant"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2024,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_EXTRAIT_VALIDE_PAR_CONTRE_LECTURE_ET_CONTROLE",
+      "statut_documentaire": "DOCUMENT_CERTIFIE_2024_ET_COMPARATIF_RECLASSE_2025_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé, vintage de l'exercice",
+      "bpa_retenu": {
+        "valeur": 8.23,
+        "unite": "FCFA/action",
+        "libelle": "Résultat net par action, chiffres clés"
+      },
+      "confirmations_documents_distincts": 1,
+      "validation": "Document certifié 2024 : chiffres clés 1,35 cent USD / 8,23 FCFA ; compte de résultat 1,355 / 8,2. Aucune ligne d'activités arrêtées n'est séparée dans cette vintage et le résultat part du Groupe est 333 175 milliers USD. En 2025, le comparatif reclasse une perte d'activités en cours de cession et présente un BPA poursuivi différent (1,37 / 8,00) ; il ne remplace pas le total de la vintage 2024 dans ce pilote.",
+      "controle_recalcul": {
+        "valeur": 1.355,
+        "unite": "cents USD/action",
+        "verdict": "CONCORDANT_AVEC_LE_NUMERATEUR_ET_L_ORDRE_DE_GRANDEUR_DU_DENOMINATEUR"
+      },
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 1.355,
+          "unite": "cents USD/action",
+          "detail": "valeur USD de la vintage 2024"
+        },
+        {
+          "valeur": 8.0,
+          "unite": "FCFA/action",
+          "detail": "BPA poursuivi comparatif reclassé en 2025, autre composante/vintage"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe",
+        "valeur": 333175000,
+        "unite": "USD"
+      },
+      "denominateur": {
+        "type": "Dénominateur implicite, non republié dans le condensé",
+        "valeur": 24588745000,
+        "unite": "actions (ordre de grandeur de contrôle)"
+      },
+      "extracteur": {
+        "resultat": "1,355 lu comme valeur du champ FCFA ; les comparatifs 2025 donnent 8,0. Devise et vintage non distinguées.",
+        "verdict": "UNITE_FAUSSE_DANS_LE_CHAMP_ACTUEL"
+      },
+      "drapeaux": [
+        "DOUBLE_COLONNE_USD_FCFA",
+        "RECLASSEMENT_COMPARATIF_2025"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg",
+          "pages": "2, 4",
+          "role": "vintage retenue"
+        },
+        {
+          "document": "Etats financiers ifrs exercice 2025 eti tg",
+          "pages": "3",
+          "role": "comparatif reclassé non substitué"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    },
+    {
+      "ticker": "ETIT",
+      "exercice": 2025,
+      "applicabilite": "APPLICABLE_CONFIRMEE",
+      "statut_bpa": "PUBLIE_NON_RETENU_DEVISE_OU_COMPOSANTE",
+      "statut_documentaire": "DEUX_DOCUMENTS_2025_EXAMINES",
+      "perimetre_retenu": "IFRS consolidé, composante activités poursuivies",
+      "bpa_retenu": null,
+      "confirmations_documents_distincts": 0,
+      "validation": "Les deux documents 2025 publient le BPA des activités poursuivies : 1,68 cent USD / 10,00 FCFA. Le compte présente séparément des activités arrêtées ou en cours de cession de -6 159 milliers USD au niveau du groupe, sans ventilation attribuable ni BPA de cette composante ; le BPA total n'est donc pas retenu.",
+      "controle_recalcul": null,
+      "ratio_indicatif_fin_exercice": null,
+      "publications_non_retenues": [
+        {
+          "valeur": 1.68,
+          "unite": "cents USD/action",
+          "detail": "activités poursuivies"
+        },
+        {
+          "valeur": 10.0,
+          "unite": "FCFA/action",
+          "detail": "traduction de la composante poursuivie"
+        }
+      ],
+      "numerateur": {
+        "type": "Résultat net part du Groupe total",
+        "valeur": 407141000,
+        "unite": "USD"
+      },
+      "denominateur": null,
+      "extracteur": {
+        "resultat": "1,0 : « 1 .68 » et « 1 0.00 » mal lus ; devise/composante non distinguées.",
+        "verdict": "FAUX_PARSE_DECIMAL"
+      },
+      "drapeaux": [
+        "COMPOSANTE_POURSUIVIE_SEULE",
+        "ACTIVITES_ARRETEES_NON_VENTILEES_PAR_ACTION",
+        "DECIMALES_ESPACEES"
+      ],
+      "sources": [
+        {
+          "document": "Etats financiers ifrs exercice 2025 eti tg",
+          "pages": "1, 3",
+          "role": "BPA poursuivi et activités arrêtées"
+        },
+        {
+          "document": "Rapport des commissaires aux comptes sur les etats financiers annuels exercice 2025 eti tg",
+          "pages": "2, 4",
+          "role": "même publication"
+        }
+      ],
+      "societe": "Ecobank Transnational Incorporated TOGO"
+    }
+  ]
+}

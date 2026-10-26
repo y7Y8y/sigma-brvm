@@ -1,0 +1,173 @@
+
+===== SDSC_2022_consolides :: 840e2d472c159979-20231106_-_rapport_des_commissaires_aux_comptes_-_etats_financiers_consolides_exercice_2022_-_agl_cote_divoire.pdf =====
+SHA256 7b6328fe5e9d256121a7d7adea19f3d447ca598753df0dc2bde76e5c3c693f4f
+pages=44
+
+--- PAGE 3 ---
+AFRICA GLOBAL LOGISTICS (AGL) COTE D’IVOIRE S.A. - 31 DECEMBRE 2022 Comptes consolidés
+ÉTATS FINANCIERS CONSOLIDÉS
+ÉTAT DU COMPTE DE RÉSULTAT CONSOLIDÉ
+(en millions de francs CFA) NOTES 2022 2021
+Produit des activités ordinaires 4.1 - 4.2 - 4.3 88 451 89 697
+Achats et charges externes 4.4 (53 531) (53 833)
+Frais de personnel 4.4 (21 279) (20 136)
+Amortissements et provisions 4.4 (8 346) (9 202)
+Autres produits opérationnels 4.4 1 623 268
+Autres charges opérationnelles 4.4 (4 111) (1 634)
+Part dans le résultat net des sociétés MEE
+opérationnelles 4.4 19 052 17 538
+Résultat opérationnel 4.2 - 4.3 - 4.4 21 858 22 698
+Coût net du financement 6.1 (413) (112)
+Autres produits financiers 6.1 271 18
+Autres charges financières 6.1 (1 601) (1 401)
+Résultat financier 6.1 (1 743) (1 495)
+Part dans le résultat net des entreprises associées (82) 29
+Impôts sur les résultats 11 (5 906) (4 445)
+Résultat net consolidé 14 128 16 788
+Résultat net consolidé, part du Groupe 14 124 16 780
+Intérêts minoritaires 4 8
+Résultat par action (en francs CFA) : 8
+2022 2021
+Résultat net part du Groupe :
+- de base 250,9 308,4
+- dilué 250,9 308,4
+Page 3 sur 34
+
+--- PAGE 27 ---
+AFRICA GLOBAL LOGISTICS (AGL) COTE D’IVOIRE S.A. - 31 DECEMBRE 2022 Comptes consolidés
+Note 8 - Capitaux propres et résultat par action
+8.1 - Capitaux propres
+Principes comptables
+Les titres de la société consolidante détenus par le Groupe sont comptabilisés en déduction des capitaux propres pour leur
+coût d'acquisition. Les éventuels profits ou pertes liés à l'achat, la vente, l'émission ou l'annulation de ces titres sont
+comptabilisés directement en capitaux propres sans affecter le résultat.
+Au 31 décembre 2022, le capital social de AFRICA GLOBAL LOGISTICS (AGL) Côte d'Ivoire S.A. s'élève à 10 887 millions de
+francs CFA, divisé en 54 435 300 actions ordinaires d'un nominal de 200 francs CFA chacune et entièrement libérées.
+Au cours de l’exercice clos le 31 décembre 2022, le nombre moyen pondéré d'actions ordinaires en circulation s'est élevé à
+54 418 250 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 418 250 actions.
+8.1.1 - Evolution du capital
+Aucune évolution du capital de la société mère n’a été constatée au cours de l’exercice 2022.
+Les événements affectants ou pouvant affecter le capital social de AFRICA GLOBAL LOGISTICS (AGL) Côte d'Ivoire S.A.
+sont soumis à l'accord de l'Assemblée Générale des actionnaires.
+Le Groupe suit en particulier l'évolution du ratio endettement net / capitaux propres totaux.
+L'endettement net utilisé est présenté en note 7.5 - Endettement financier.
+Les capitaux propres utilisés sont ceux présentés dans le tableau de variation des capitaux propres des états financiers.
+8.1.2 - Dividendes distribués par la société mère
+Le montant total des dividendes distribués au titre de l’exercice 2022 s’élève à 7 077 millions de francs CFA, soit 130 francs
+CFA par action.
+8.1.3 - Titres d’autocontrôle
+Au 31 décembre 2022, le nombre d'actions d'autocontrôle détenues par la société AFRICA GLOBAL LOGISTICS (AGL)Côte d’Ivoire
+S.A. et ses filiales s'élève à 20 493 actions.
+8.2 - Résultat par action
+Le tableau ci-dessous fournit le détail des éléments utilisés pour calculer les résultats par action de base et dilué présentés
+au pied du compte de résultat.
+2022 2021
+(en millions de francs CFA)
+Résultat net part du Groupe, utilisé pour le calcul du résultat par action - de base 16 780 16 780
+Résultat net part du Groupe, utilisé pour le calcul du résultat par action - dilué 16 780 16 780
+Nombre de titres émis 54 435 300 54 435 300
+Nombre de titres d'autocontrôle (20 493) (20 493)
+Nombre de titres en circulation 54 414 807 54 414 807
+Plan d'options de souscription d'actions 0 0
+Actions gratuites 0 0
+Nombre de titres émis et potentiels 54 414 807 54 414 807
+Nombre moyen pondéré de titres en circulation - de base 54 418 250 54 418 250
+Titres potentiels dilutifs résultant de l'exercice d'options de souscription et d'actions gratuites 0 0
+Nombre moyen pondéré de titres en circulation et potentiels - après dilution 54 418 250 54 418 250
+Page 27 sur 34
+
+===== SDSC_2022_individuels :: 77b7e8e438399ba0-20231106_-_rapport_des_commissaires_aux_comptes_ifrs_-_etats_financiers_individuels_exercice_2022_-_agl_cote_divoire.pdf =====
+SHA256 c145de1603147240f4d2f4a863379a594361d34d24052e2840432541836da58c
+pages=40
+
+--- PAGE 5 ---
+AFRCA GLOBAL LOGISTICS (AGL) COTE D’IVOIRE S.A. - 31 DECEMBRE 2022 Comptes individuels IFRS
+Compte de résultat
+COMPTE DE RESULTAT (en francs CFA) Notes EXERCICE 2022 EXERCICE 2021
+Activités poursuivies
+Produits des activités ordinaires 21 86 997 123 523 88 721 262 511
+Achats consommés 22 -7 241 731 332 -7 225 146 572
+Services extérieurs 23 -30 809 615 073 -31 352 381 961
+Impôts et taxes 24 -6 399 201 211 -5 646 242 095
+Charges de personnel 25 -28 637 681 286 -28 626 058 067
+Dotation aux amortissements et dépréciations 26 -9 690 620 840 -9 371 983 709
+Dotation aux provisions 27 -2 560 404 794 -1 381 109 292
+Autres produits opérationnels courants 28 394 361 930 193 887 818
+Autres charges opérationnelles courantes 28 -1 153 658 467 -1 663 749 392
+Résultat opérationnel courant 898 572 450 3 648 479 241
+Autres produits opérationnels 29 1 208 814 413 74 026 819
+Autres charges opérationnelles 29 -212 282 210 -34 350 551
+Résultat opérationnel 1 895 104 653 3 688 155 509
+Produits financiers 30 13 121 337 783 13 000 904 963
+Charges financières 30 -1 783 400 459 -2 078 890 232
+Résultat financier 11 337 937 324 10 922 014 731
+Quote-part dans le résultat des entités mises en équivalence 31 5 802 751 527 5 668 307 204
+Résultat avant impôt 19 035 793 504 20 278 477 444
+Charge d'impôt sur le résultat 32 -1 720 280 888 -97 286 677
+Résultat après impôt des activités poursuivies 17 315 512 616 20 181 190 767
+Résultat net de l'exercice 17 315 512 616 20 181 190 767
+Résultat par action
+● Résultat de base par action 318 371
+● Résultat dilué par action 318 371
+Etat des autres éléments du résultat global
+ETAT DES AUTRES ELEMENTS DU RESULTAT GLOBAL
+ETAT DES AUTRES ELEMENTS DU RESULTAT GLOBAL (en francs CFA) Notes EXERCICE 2022 EXERCICE 2021
+Résultat net de l'exercice 0 17 315 512 616 20 181 190 767
+Autres éléments du résultat global
+Eléments qui ne seront pas reclassés ultérieurement en résultat :
+● écarts de réévaluation des immobilisations corporelles - -
+● écarts actuariels sur engagements sociaux à prestations définies 711 960 653
+● quote-part dans la réévaluation des entités associées - -
+● impôt sur les éléments non recyclables (1) - -
+Eléments susceptibles d'être reclassés ultérieurement en résultat :
+● différences de change sur conversion d'activités à l'étranger - -
+● changements de juste valeur des actifs financiers disponibles à la vente - -
+● changements de juste valeur des instruments de couverture des flux
+de trésorerie - -
+● impôt sur les éléments recyclables (1) - -
+Autres éléments du résultat global, net d'impôt - -
+Résultat global de l'exercice 18 027 473 269 20 181 190 767
+(1) Les montants peuvent également être présentés, au choix de l'entité, pour leur montant net d'impôt.
+
+--- PAGE 22 ---
+AFRICA GLOBAL LOGISTICS (AGL) COTE D’IVOIRE S.A. - 31 DECEMBRE 2022 Comptes individuels IFRS
+Au 31 décembre 2022, le nombre d'actions d'autocontrôle détenues par la société AFRICA GLOBAL LOGISTICS (AGL) Côte
+d’Ivoire S.A. et ses filiales s'élève à 25 000 actions.
+La variation de ce compte provient de l'achat de 4 507 nouveaux titres pour une valeur de 7,5 millions de F CFA.
+Conformément à la norme IAS 32, ces actions propres ont été déduites des capitaux propres.
+Les flux de trésorerie se détaillent comme suit :
+Variation
+Exercice 2022 Exercice 2021 Valeur %
+Flux de trésorerie provenant des activités opérationnelles 18 661 166 334 7 645 095 518 11 016 070 816 144%
+Flux de trésorerie provenant des activités d'investissements (9 715 499 553) (12 281 679 141) 2 566 179 588 -21%
+Flux de trésorerie provenant des activités de financement (7 021 330 851) (5 399 739 388) (1 621 591 463) 30%
+Total Flux de trésorerie 1 924 335 930 (10 036 323 011) 11 960 658 941 -119%
+Trésorerie et équivalents de trésorerie au 1er janvier -5 702 792 586 4 333 530 425 (10 036 323 011) -232%
+Trésorerie et équivalents de trésorerie au 31 décembre (3 778 456 656) -5 702 792 586 1 924 335 930 -34%
+Note 11 : Capital et Résultat par action
+Au 31 décembre 2022, le capital social de AFRICA GLOBAL LOGISTICS (AGL) Côte d’Ivoire S.A. s'élève à 10 887 millions
+de francs CFA, divisé en 54 435 300 actions ordinaires d'un nominal de 200 francs CFA chacune et entièrement
+libérées.
+▪ Résultat par action
+2022 2021
+Résultat de base par action 318 371
+Résultat dilué par action 318 371
+Au cours de l’exercice clos le 31 décembre 2022, le nombre moyen pondéré d'actions ordinaires en circulation s'est
+élevé à 54 418 250 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 418 250
+actions.
+▪ Evolution du capital
+Aucune évolution du capital de AGL COTE D’IVOIRE n’a été constatée au cours de l’exercice 2022.
+Les événements affectants ou pouvant affecter le capital social de AFRICA GLOBAL LOGISTICS (AGL)Côte d’Ivoire S.A.
+sont soumis à l'accord de l'Assemblée Générale des actionnaires.
+Les capitaux propres utilisés sont ceux présentés dans le tableau de variation des capitaux propres des états financiers.
+2022 2021
+Nombre de titres émis 54 435 300 54 435 300
+Nombre de titres d'autocontrôle ( 25 000) (20 493)
+Nombre de titres en circulation 54 410 300 54 414 807
+Plan d'options de souscription d'actions 0 0
+Actions gratuites 0 0
+Nombre de titres émis et potentiels 54 410 300 54 414 807
+Nombre moyen pondéré de titres en circulation - de base 54 410 300 54 418 250
+Titres potentiels dilutifs résultant de l'exercice d'options de souscription et d'actions gratuites 0 0
+Nombre moyen pondéré de titres en circulation et potentiels - après dilution 54 410 300 54 418 250
+22

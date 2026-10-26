@@ -1,0 +1,37 @@
+{
+  "candidate_id": "cdee52e3850d964c",
+  "ticker": "SNTS",
+  "url": "https://www.brvm.org/sites/default/files/sonatel_presentation_resultats_2020_vf_26_02_2021_definitive.pdf",
+  "selection_rank_for_ticker": 11,
+  "target_years_from_filename": [
+    2021,
+    2020,
+    2019
+  ],
+  "classified_document": {
+    "filename": "sonatel_presentation_resultats_2020_vf_26_02_2021_definitive.pdf",
+    "label": "Sonatel presentation resultats 2020 vf 26 02 2021 definitive",
+    "link_text": "Télécharger",
+    "doc_type": "presentation_resultats",
+    "exercice": 2021,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": null,
+    "url": "https://www.brvm.org/sites/default/files/sonatel_presentation_resultats_2020_vf_26_02_2021_definitive.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "PRESENTATION_DE_RESULTATS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sonatel",
+    "report_page_label": "SONATEL",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sonatel?page=1"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "candidate_id": "44004e3d7e43f92f",
+  "ticker": "PRSC",
+  "url": "https://www.brvm.org/sites/default/files/20250613_-_etats_financiers_-_exercices_2018-2023_-_tractafric_motors_ci.pdf",
+  "selection_rank_for_ticker": 6,
+  "target_years_from_filename": [
+    2023,
+    2022,
+    2021
+  ],
+  "classified_document": {
+    "filename": "20250613_-_etats_financiers_-_exercices_2018-2023_-_tractafric_motors_ci.pdf",
+    "label": "Etats financiers exercices 2018 2023 tractafric motors ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2023,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": "2025-06-13",
+    "url": "https://www.brvm.org/sites/default/files/20250613_-_etats_financiers_-_exercices_2018-2023_-_tractafric_motors_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/tractafric-ci",
+    "report_page_label": "TRACTAFRIC CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/tractafric-ci",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/tractafric-ci"
+    ]
+  }
+}

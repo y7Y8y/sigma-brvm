@@ -1,0 +1,37 @@
+{
+  "candidate_id": "b6533a9b9f4e9f96",
+  "ticker": "ETIT",
+  "url": "https://www.brvm.org/sites/default/files/20190409_-_communique_-_resultats_financiers_exercice_2018_-_ecobank_ci.pdf",
+  "selection_rank_for_ticker": 11,
+  "target_years_from_filename": [
+    2018,
+    2017,
+    2016
+  ],
+  "classified_document": {
+    "filename": "20190409_-_communique_-_resultats_financiers_exercice_2018_-_ecobank_ci.pdf",
+    "label": "Communique resultats financiers exercice 2018 ecobank ci",
+    "link_text": "Télécharger",
+    "doc_type": "autre",
+    "exercice": 2018,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2019-04-09",
+    "url": "https://www.brvm.org/sites/default/files/20190409_-_communique_-_resultats_financiers_exercice_2018_-_ecobank_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "AUTRE_A_CLASSER",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/ecobank-tg",
+    "report_page_label": "ECOBANK TG",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/ecobank-tg?page=1"
+    ]
+  }
+}

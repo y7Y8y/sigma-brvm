@@ -1,0 +1,37 @@
+{
+  "candidate_id": "d769a578b66a86a8",
+  "ticker": "SIBC",
+  "url": "https://www.brvm.org/sites/default/files/20200424_-_etats_financiers_exercice_2019_-_sib_ci.pdf",
+  "selection_rank_for_ticker": 7,
+  "target_years_from_filename": [
+    2019,
+    2018,
+    2017
+  ],
+  "classified_document": {
+    "filename": "20200424_-_etats_financiers_exercice_2019_-_sib_ci.pdf",
+    "label": "Etats financiers exercice 2019 sib ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2019,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2020-04-24",
+    "url": "https://www.brvm.org/sites/default/files/20200424_-_etats_financiers_exercice_2019_-_sib_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sib",
+    "report_page_label": "SIB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sib?page=1"
+    ]
+  }
+}

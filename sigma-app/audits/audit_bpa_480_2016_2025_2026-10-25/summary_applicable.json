@@ -1,0 +1,788 @@
+{
+  "schema_version": "sigma-audit-bpa-480-applicable-review-v1",
+  "generated_at": "2026-10-26T00:40:31Z",
+  "raw_summary_generated_at": "2026-10-26T00:36:30Z",
+  "code_fingerprint_extraction": "c4d9376b936ba4322a9e5d837fc83cd31ef6ff3564d5f3bfdac2e5b342ccc729",
+  "dataset_published_sha256": "ed5ba551705cd6f9ddb5ecaa345ca22712cb41be2317310c235fbf8a36fd1efb",
+  "dataset_published_modified": false,
+  "cellules": {
+    "brutes_48x10": 480,
+    "applicables_confirmees": 442,
+    "non_applicables_avant_introduction": 38,
+    "applicables_avec_document_primaire_lu": 336,
+    "applicables_avec_serie_extraite": 285,
+    "taux_examen_primaire_sur_applicables_pct": 76.018,
+    "taux_serie_sur_applicables_pct": 64.48
+  },
+  "bpa_publie": {
+    "raw_toutes_cellules": 34,
+    "raw_applicables": 33,
+    "raw_avant_introduction": 1,
+    "apres_revue_applicables": 29,
+    "apres_revue_confirmes_deux_documents": 7,
+    "apres_revue_controle_arithmetique": 4,
+    "apres_revue_extraction_unique_sans_controle_pondere": 18,
+    "taux_apres_revue_sur_applicables_pct": 6.561,
+    "taux_apres_revue_sur_applicables_examinees_pct": 8.631,
+    "taux_confirmes_deux_documents_sur_applicables_examinees_pct": 2.083
+  },
+  "bpa_recalcule_comparable_sans_publie_applicables": 0,
+  "publications_detectees_non_retenues_applicables": 33,
+  "quarantaines_applicables": 1,
+  "ratios_indicatifs_fin_exercice_applicables": 9,
+  "statuts_bpa_applicables_raw": {
+    "DOCUMENT_INTROUVABLE": 15,
+    "ILLISIBLE": 71,
+    "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 262,
+    "NON_RECHERCHE": 18,
+    "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 7,
+    "PUBLIE_EN_QUARANTAINE_COHERENCE": 1,
+    "PUBLIE_EXTRAIT": 25,
+    "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 33,
+    "PUBLIE_SOURCE_DIVERGENTE_RESOLUE_PAR_CONTROLE": 1,
+    "RATIO_INDICATIF_FIN_EXERCICE": 9
+  },
+  "statuts_documentaires_applicables_raw": {
+    "CANDIDATS_INVENTORIES_NON_OUVERTS": 2,
+    "DOCUMENTS_OUVERTS_SANS_ETAT_PRIMAIRE_PROUVE": 12,
+    "DOCUMENTS_PRIMAIRES_EXAMINES": 336,
+    "DOCUMENT_INTROUVABLE": 15,
+    "ILLISIBLE": 71,
+    "NON_RECHERCHE": 6
+  },
+  "par_exercice_applicables": {
+    "2016": {
+      "applicables": 41,
+      "documents_primaires_lus": 33,
+      "series_extraites": 26,
+      "bpa_publies_retenus_apres_revue": 0,
+      "non_publies_sources_verifiees": 29,
+      "illisibles": 5,
+      "document_introuvable": 2,
+      "non_recherches": 1
+    },
+    "2017": {
+      "applicables": 43,
+      "documents_primaires_lus": 35,
+      "series_extraites": 29,
+      "bpa_publies_retenus_apres_revue": 0,
+      "non_publies_sources_verifiees": 29,
+      "illisibles": 5,
+      "document_introuvable": 2,
+      "non_recherches": 1
+    },
+    "2018": {
+      "applicables": 43,
+      "documents_primaires_lus": 37,
+      "series_extraites": 30,
+      "bpa_publies_retenus_apres_revue": 2,
+      "non_publies_sources_verifiees": 26,
+      "illisibles": 4,
+      "document_introuvable": 2,
+      "non_recherches": 0
+    },
+    "2019": {
+      "applicables": 44,
+      "documents_primaires_lus": 31,
+      "series_extraites": 27,
+      "bpa_publies_retenus_apres_revue": 4,
+      "non_publies_sources_verifiees": 22,
+      "illisibles": 8,
+      "document_introuvable": 2,
+      "non_recherches": 2
+    },
+    "2020": {
+      "applicables": 44,
+      "documents_primaires_lus": 32,
+      "series_extraites": 26,
+      "bpa_publies_retenus_apres_revue": 2,
+      "non_publies_sources_verifiees": 27,
+      "illisibles": 8,
+      "document_introuvable": 1,
+      "non_recherches": 2
+    },
+    "2021": {
+      "applicables": 44,
+      "documents_primaires_lus": 32,
+      "series_extraites": 26,
+      "bpa_publies_retenus_apres_revue": 2,
+      "non_publies_sources_verifiees": 25,
+      "illisibles": 9,
+      "document_introuvable": 1,
+      "non_recherches": 2
+    },
+    "2022": {
+      "applicables": 45,
+      "documents_primaires_lus": 34,
+      "series_extraites": 29,
+      "bpa_publies_retenus_apres_revue": 5,
+      "non_publies_sources_verifiees": 26,
+      "illisibles": 6,
+      "document_introuvable": 1,
+      "non_recherches": 4
+    },
+    "2023": {
+      "applicables": 45,
+      "documents_primaires_lus": 36,
+      "series_extraites": 30,
+      "bpa_publies_retenus_apres_revue": 5,
+      "non_publies_sources_verifiees": 28,
+      "illisibles": 7,
+      "document_introuvable": 0,
+      "non_recherches": 2
+    },
+    "2024": {
+      "applicables": 46,
+      "documents_primaires_lus": 35,
+      "series_extraites": 34,
+      "bpa_publies_retenus_apres_revue": 5,
+      "non_publies_sources_verifiees": 27,
+      "illisibles": 8,
+      "document_introuvable": 2,
+      "non_recherches": 1
+    },
+    "2025": {
+      "applicables": 47,
+      "documents_primaires_lus": 31,
+      "series_extraites": 28,
+      "bpa_publies_retenus_apres_revue": 4,
+      "non_publies_sources_verifiees": 23,
+      "illisibles": 11,
+      "document_introuvable": 2,
+      "non_recherches": 3
+    }
+  },
+  "par_ticker_applicables": {
+    "ABJC": {
+      "applicables": 10,
+      "documents_primaires_lus": 7,
+      "series_extraites": 7,
+      "bpa_publies_raw": 4,
+      "bpa_publies_apres_revue": 4,
+      "statuts_bpa": {
+        "ILLISIBLE": 3,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 3,
+        "PUBLIE_EXTRAIT": 4
+      }
+    },
+    "BBGC": {
+      "applicables": 0,
+      "note": "Aucune cellule 2016-2025 applicable après la date d'introduction vérifiée."
+    },
+    "BICB": {
+      "applicables": 1,
+      "documents_primaires_lus": 1,
+      "series_extraites": 1,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 1
+      }
+    },
+    "BICC": {
+      "applicables": 10,
+      "documents_primaires_lus": 9,
+      "series_extraites": 8,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 1,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 8,
+        "RATIO_INDICATIF_FIN_EXERCICE": 1
+      }
+    },
+    "BNBC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 8,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 2
+      }
+    },
+    "BOAB": {
+      "applicables": 10,
+      "documents_primaires_lus": 5,
+      "series_extraites": 5,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 5,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 2,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 3
+      }
+    },
+    "BOABF": {
+      "applicables": 10,
+      "documents_primaires_lus": 3,
+      "series_extraites": 2,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 7,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 3
+      }
+    },
+    "BOAC": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 8,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 2,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 6,
+        "RATIO_INDICATIF_FIN_EXERCICE": 2
+      }
+    },
+    "BOAM": {
+      "applicables": 10,
+      "documents_primaires_lus": 3,
+      "series_extraites": 2,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 7,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 3
+      }
+    },
+    "BOAN": {
+      "applicables": 10,
+      "documents_primaires_lus": 0,
+      "series_extraites": 0,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 10
+      }
+    },
+    "BOAS": {
+      "applicables": 10,
+      "documents_primaires_lus": 5,
+      "series_extraites": 4,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 5,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 1,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 2,
+        "RATIO_INDICATIF_FIN_EXERCICE": 2
+      }
+    },
+    "CABC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 7,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "CBIBF": {
+      "applicables": 10,
+      "documents_primaires_lus": 2,
+      "series_extraites": 2,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "DOCUMENT_INTROUVABLE": 4,
+        "ILLISIBLE": 3,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 2,
+        "NON_RECHERCHE": 1
+      }
+    },
+    "CFAC": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 7,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 2,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 8
+      }
+    },
+    "CIEC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 7,
+      "bpa_publies_apres_revue": 7,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 3,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 5,
+        "PUBLIE_EXTRAIT": 2
+      }
+    },
+    "ECOC": {
+      "applicables": 9,
+      "documents_primaires_lus": 7,
+      "series_extraites": 7,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 7,
+        "NON_RECHERCHE": 2
+      }
+    },
+    "ETIT": {
+      "applicables": 10,
+      "documents_primaires_lus": 9,
+      "series_extraites": 3,
+      "bpa_publies_raw": 3,
+      "bpa_publies_apres_revue": 3,
+      "statuts_bpa": {
+        "ILLISIBLE": 1,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1,
+        "PUBLIE_EXTRAIT": 2,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 6
+      }
+    },
+    "FTSC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "LNBB": {
+      "applicables": 2,
+      "documents_primaires_lus": 2,
+      "series_extraites": 2,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 2
+      }
+    },
+    "NEIC": {
+      "applicables": 10,
+      "documents_primaires_lus": 9,
+      "series_extraites": 0,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 1,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 9
+      }
+    },
+    "NSBC": {
+      "applicables": 9,
+      "documents_primaires_lus": 9,
+      "series_extraites": 9,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 9
+      }
+    },
+    "NTLC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 2,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "ONTBF": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 7,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 8,
+        "NON_RECHERCHE": 2
+      }
+    },
+    "ORAC": {
+      "applicables": 4,
+      "documents_primaires_lus": 4,
+      "series_extraites": 3,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 2,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 2
+      }
+    },
+    "ORGT": {
+      "applicables": 7,
+      "documents_primaires_lus": 7,
+      "series_extraites": 7,
+      "bpa_publies_raw": 5,
+      "bpa_publies_apres_revue": 5,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 2,
+        "PUBLIE_EXTRAIT": 5
+      }
+    },
+    "PALC": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 8,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 2,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 7,
+        "RATIO_INDICATIF_FIN_EXERCICE": 1
+      }
+    },
+    "PRSC": {
+      "applicables": 10,
+      "documents_primaires_lus": 4,
+      "series_extraites": 6,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 4,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 6
+      }
+    },
+    "SAFC": {
+      "applicables": 10,
+      "documents_primaires_lus": 9,
+      "series_extraites": 8,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 9,
+        "NON_RECHERCHE": 1
+      }
+    },
+    "SCRC": {
+      "applicables": 10,
+      "documents_primaires_lus": 7,
+      "series_extraites": 7,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 3,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 7
+      }
+    },
+    "SDCC": {
+      "applicables": 10,
+      "documents_primaires_lus": 7,
+      "series_extraites": 7,
+      "bpa_publies_raw": 2,
+      "bpa_publies_apres_revue": 2,
+      "statuts_bpa": {
+        "ILLISIBLE": 1,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 5,
+        "NON_RECHERCHE": 2,
+        "PUBLIE_EXTRAIT": 2
+      }
+    },
+    "SDSC": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 7,
+      "bpa_publies_raw": 4,
+      "bpa_publies_apres_revue": 4,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 3,
+        "NON_RECHERCHE": 2,
+        "PUBLIE_EN_QUARANTAINE_COHERENCE": 1,
+        "PUBLIE_EXTRAIT": 4
+      }
+    },
+    "SEMC": {
+      "applicables": 10,
+      "documents_primaires_lus": 7,
+      "series_extraites": 6,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "DOCUMENT_INTROUVABLE": 2,
+        "ILLISIBLE": 1,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 7
+      }
+    },
+    "SGBC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 8,
+        "RATIO_INDICATIF_FIN_EXERCICE": 2
+      }
+    },
+    "SHEC": {
+      "applicables": 10,
+      "documents_primaires_lus": 9,
+      "series_extraites": 9,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 1,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 9
+      }
+    },
+    "SIBC": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 7,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 6,
+        "NON_RECHERCHE": 2,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 1,
+        "RATIO_INDICATIF_FIN_EXERCICE": 1
+      }
+    },
+    "SICC": {
+      "applicables": 10,
+      "documents_primaires_lus": 6,
+      "series_extraites": 3,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 4,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 6
+      }
+    },
+    "SIVC": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 8,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 8,
+        "NON_RECHERCHE": 2
+      }
+    },
+    "SLBC": {
+      "applicables": 10,
+      "documents_primaires_lus": 9,
+      "series_extraites": 9,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 9,
+        "NON_RECHERCHE": 1
+      }
+    },
+    "SMBC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "SNTS": {
+      "applicables": 10,
+      "documents_primaires_lus": 8,
+      "series_extraites": 7,
+      "bpa_publies_raw": 4,
+      "bpa_publies_apres_revue": 4,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 3,
+        "NON_RECHERCHE": 2,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 1,
+        "PUBLIE_EXTRAIT": 2,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 1,
+        "PUBLIE_SOURCE_DIVERGENTE_RESOLUE_PAR_CONTROLE": 1
+      }
+    },
+    "SOGC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "SPHC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 2,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 4,
+        "PUBLIE_EXTRAIT": 2,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 4
+      }
+    },
+    "STAC": {
+      "applicables": 10,
+      "documents_primaires_lus": 5,
+      "series_extraites": 0,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 5,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 5
+      }
+    },
+    "STBC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "TTLC": {
+      "applicables": 10,
+      "documents_primaires_lus": 10,
+      "series_extraites": 10,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 10
+      }
+    },
+    "TTLS": {
+      "applicables": 10,
+      "documents_primaires_lus": 2,
+      "series_extraites": 2,
+      "bpa_publies_raw": 2,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "DOCUMENT_INTROUVABLE": 7,
+        "NON_RECHERCHE": 1,
+        "PUBLIE_EXTRAIT": 2
+      }
+    },
+    "UNLC": {
+      "applicables": 10,
+      "documents_primaires_lus": 6,
+      "series_extraites": 6,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "DOCUMENT_INTROUVABLE": 2,
+        "ILLISIBLE": 2,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 6
+      }
+    },
+    "UNXC": {
+      "applicables": 10,
+      "documents_primaires_lus": 9,
+      "series_extraites": 2,
+      "bpa_publies_raw": 0,
+      "bpa_publies_apres_revue": 0,
+      "statuts_bpa": {
+        "ILLISIBLE": 1,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 9
+      }
+    }
+  },
+  "pilote_5_comparaison": {
+    "cellules": 50,
+    "valeurs_attendues": 18,
+    "valeurs_concordantes": 18,
+    "valeurs_divergentes_ou_manquantes": [],
+    "faux_positifs_sur_cellules_sans_valeur_humaine": []
+  },
+  "decisions_revue_preuves": [
+    {
+      "ticker": "SPHC",
+      "exercice": 2020,
+      "raw_status": "PUBLIE_EXTRAIT",
+      "raw_value_fcfa": -21.0,
+      "raw_validation_level": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+      "expected_raw_value": -21.0,
+      "review_status": "PUBLIE_NON_RETENU_APRES_REVUE_DATE_PRISE_POUR_VALEUR",
+      "reason": "La ligne de preuve est l'en-tête « Resultat par action 31-déc-21 31-déc-20 » : -21 provient du suffixe de date 31-déc-20, pas d'un montant par action.",
+      "next_action": "Corriger l'extracteur pour exclure les dates 31-déc-AA des slots de valeurs, puis rouvrir le document."
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2021,
+      "raw_status": "PUBLIE_EXTRAIT",
+      "raw_value_fcfa": 31.0,
+      "raw_validation_level": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+      "expected_raw_value": 31.0,
+      "review_status": "PUBLIE_NON_RETENU_APRES_REVUE_DATE_PRISE_POUR_VALEUR",
+      "reason": "La ligne de preuve est l'en-tête « Resultat par action 31-déc-21 31-déc-20 » : 31 est le jour de la date de clôture, pas un BPA.",
+      "next_action": "Corriger l'extracteur pour exclure les dates 31-déc-AA des slots de valeurs, puis rouvrir le document."
+    },
+    {
+      "ticker": "TTLS",
+      "exercice": 2024,
+      "raw_status": "PUBLIE_EXTRAIT",
+      "raw_value_fcfa": 128.0,
+      "raw_validation_level": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+      "expected_raw_value": 128.0,
+      "review_status": "PUBLIE_NON_RETENU_CONFLIT_PERIMETRE",
+      "reason": "La valeur retenue vient de la page 39 des états IFRS individuels, alors que la matrice la présente au périmètre consolidé ; la page 42 consolidée donne 219 FCFA pour 2024.",
+      "next_action": "Séparer les blocs individuels et consolidés d'un même rapport avant de retenir un BPA comparable."
+    },
+    {
+      "ticker": "TTLS",
+      "exercice": 2025,
+      "raw_status": "PUBLIE_EXTRAIT",
+      "raw_value_fcfa": 205.0,
+      "raw_validation_level": "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE",
+      "expected_raw_value": 205.0,
+      "review_status": "PUBLIE_NON_RETENU_CONFLIT_PERIMETRE",
+      "reason": "La valeur retenue vient de la page 39 des états IFRS individuels, alors que la matrice la présente au périmètre consolidé ; la page 42 consolidée donne 208 FCFA pour 2025.",
+      "next_action": "Séparer les blocs individuels et consolidés d'un même rapport avant de retenir un BPA comparable."
+    }
+  ],
+  "journal": {
+    "rows": 660,
+    "unique_ticker_url": 660,
+    "with_sha256": 657,
+    "errors_or_timeouts": [
+      {
+        "ticker": "ETIT",
+        "label": "Rapport annuel 2018 ecobank group",
+        "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_ecobank_group.pdf",
+        "error": "EXTRACTION_TIMEOUT_APRES_240S: Command '['/usr/local/bin/python3', '-B', '/home/user/sigma-app/ingestion/audit_bpa_480.py', '--phase', 'extract-one', '--candidate-file', '.cache/audit-bpa-480-pdf/_audit480_one/f67fd4f860515787.candidate.jso"
+      },
+      {
+        "ticker": "NSBC",
+        "label": "Rapport annuel 2018 nsia banque ci",
+        "url": "https://www.brvm.org/sites/default/files/rapport_annuel_2018_nsia_banque_ci.pdf",
+        "error": "EXTRACTION_TIMEOUT_APRES_240S: Command '['/usr/local/bin/python3', '-B', '/home/user/sigma-app/ingestion/audit_bpa_480.py', '--phase', 'extract-one', '--candidate-file', '.cache/audit-bpa-480-pdf/_audit480_one/5802fa90477d5b6d.candidate.jso"
+      },
+      {
+        "ticker": "SIVC",
+        "label": "Rapport des cac sur les etats financiers annuels air liquide ci",
+        "url": "https://www.brvm.org/sites/default/files/20240718_-_rapport_des_cac_sur_les_etats_financiers_annuels_-_air_liquide_ci.pdf",
+        "error": "EXTRACTION_TIMEOUT_APRES_240S: Command '['/usr/local/bin/python3', '-B', '/home/user/sigma-app/ingestion/audit_bpa_480.py', '--phase', 'extract-one', '--candidate-file', '.cache/audit-bpa-480-pdf/_audit480_one/425159842d38f843.candidate.jso"
+      }
+    ],
+    "rejected_other_issuer": 3,
+    "rejected_interim": 26,
+    "extraction_methods": {
+      "None": 4,
+      "aucun_agregat_retenu": 320,
+      "texte_natif": 336
+    }
+  },
+  "avant_introduction_avec_bpa_publie_raw": [
+    {
+      "ticker": "ORGT",
+      "exercice": 2018,
+      "listing_date": "2019-04-16",
+      "bpa_publie_fcfa_raw": 115.0,
+      "statut_bpa_raw": "PUBLIE_EXTRAIT"
+    }
+  ],
+  "decision": "Audit 480 terminé en mode statuts et preuves. Aucune intégration au dataset publié n'est autorisée à ce stade : les extractions uniques, le conflit de périmètre TTLS, la quarantaine SDSC 2022, les publications non retenues et le backlog OCR doivent être traités séparément."
+}

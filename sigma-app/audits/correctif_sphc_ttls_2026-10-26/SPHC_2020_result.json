@@ -1,0 +1,3153 @@
+{
+  "candidate_id": "c984c9110633bdfa",
+  "ticker": "SPHC",
+  "url": "https://www.brvm.org/sites/default/files/20210423_-_etats_financiers_-_exercice_2020_-_saph_ci.pdf",
+  "code_fingerprint": "84a6653cbb667afc18b8437eda6a943be09a51678379212d1eb06e1e992590be",
+  "candidate": {
+    "target_years_from_filename": [
+      2020,
+      2019,
+      2018
+    ],
+    "selection_rank_for_ticker": 13
+  },
+  "classified_document": {
+    "filename": "20210423_-_etats_financiers_-_exercice_2020_-_saph_ci.pdf",
+    "label": "Etats financiers exercice 2020 saph ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2020,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2021-04-23",
+    "url": "https://www.brvm.org/sites/default/files/20210423_-_etats_financiers_-_exercice_2020_-_saph_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+    "report_page_label": "SAPH CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci?page=2"
+    ]
+  },
+  "extraction": {
+    "columns": {
+      "courant": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 158789037442,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Chiffre d'affaires 158 789 037 143 735 241",
+              "raw_token": "158789037.0",
+              "context_lines": [
+                "En milliers de FCFA",
+                "COMPTE DE RESULTAT 31‐déc‐20 31‐déc‐19",
+                "Chiffre d'affaires 158 789 037 143 735 241",
+                "Achats consommés ‐ 100 902 145 ‐ 90 721 429",
+                "Marge brute 57 886 892 53 013 812"
+              ],
+              "column_header": null,
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+              "raw_token": "158789037442.0",
+              "context_lines": [
+                "Immobilisations financières 287 304 341 321 164 045 Travaux, services vendus 2 734 480 044 2 764 348 785",
+                "ACTIF IMMOBILISE 85 849 395 152 87 824 467 144 Produits accessoires 532 538 580 290 074 737",
+                "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+                "Stocks et encours 35 481 772 905 32 298 948 946 Production stockée (ou déstockage) 976 960 988 3 280 985 600",
+                "Créances et emplois assimilés 24 160 741 187 19 747 388 329 Production immobilisée 2 941 924 785 2 870 432 913"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 158789037442,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1,
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 158789037442,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 7466595005,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 3,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+              "raw_token": "7466595005.0",
+              "context_lines": [
+                "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744",
+                "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+                "+ Encaissements liés aux cessions d’immob incorp et corp 111 174 135 35 557 483",
+                "PROJET D'AFFECTATION DU RESULTAT"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+              "raw_token": "7493033989.0",
+              "context_lines": [
+                "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238",
+                "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+              "raw_token": "7493033989.0",
+              "context_lines": [
+                "Report à nouveau 2 526 809 966 ‐847 995 680",
+                "+ Augmentations de capital par apports nouveaux Réserve libre 50 410 251 190 50 410 251 190",
+                "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+                "+ Emprunts 15 742 968 000 7 000 000 000 Total origines 60 430 095 145 52 937 061 156",
+                "+ Autres dettes financières diverses 839 548 718 0 AFFECTATIONS"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 7466595005,
+              "value_kind": "fcfa",
+              "occurrences": 3,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 8665154000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                3,
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 7466595005,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 11176114121,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+              "raw_token": "11176114121.0",
+              "context_lines": [
+                "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                "Autres charges ‐1 007 765 166 ‐1 949 255 919"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 11176114121,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 84004628000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 86824966785,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 11176114121,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 157047871171,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+              "raw_token": "157047871171.0",
+              "context_lines": [
+                "ACTIF CIRCULANT 59 642 514 092 52 046 337 275 Autres produits 1 644 149 302 268 874 746",
+                "Trésorerie ‐ actif 11 555 961 927 7 163 564 985 Transferts de charges d'exploitation 571 399 872 610 430 009",
+                "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+                "Variation de stocks de matières premières et fournitures liée 1 663 688 542 934 764 036",
+                "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+              "raw_token": "157047871171.0",
+              "context_lines": [
+                "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422",
+                "Trésorerie ‐ passif 19 910 805 138 25 561 173 085 Reprises d’amortissements, provisions et dépréciations 394 957 401 227 257 435",
+                "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+                "RESULTAT D'EXPLOITATION 10 954 030 372 7 524 609 808",
+                "Revenus financiers et assimilés 10 647 011 5 960 333"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 157047871171,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 159150851000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 157047871171,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 6413979215,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+              "raw_token": "6413979215.0",
+              "context_lines": [
+                "+ Variation du passif circulant ‐1 871 829 221 3 303 930 098 Autres Produits HAO 7 458 404 0",
+                "Variation du BF lié aux activités opérationnelles ‐9 094 072 214 ‐5 848 696 792 Valeurs comptables des cessions d'immobilisations ‐165 704 293 ‐258 879 058",
+                "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+                "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 6413979215,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 6413979215,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 11555962000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+              "raw_token": "11555962.0",
+              "context_lines": [
+                "Créances clients 16 452 792 14 618 779",
+                "Autres actifs courants 8 254 319 5 502 543",
+                "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                "Actifs courants 73 324 937 58 986 867",
+                "Total actif 159 150 851 147 483 344"
+              ],
+              "column_header": null,
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 11555962000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 11555962000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_nette": {
+          "label": "Trésorerie nette",
+          "value": 354843211,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+              "raw_token": "354843211.0",
+              "context_lines": [
+                "Flux de trésorerie provenant des activités de financement 9 734 539 020 945 917 807 Dividendes 3 757 026 735",
+                "VARIATION DE LA TRÉSORERIE NETTE DE LA PÉRIODE 10 042 764 889 ‐2 149 514 786 Report à nouveau 6 262 817 220 2 526 809 966",
+                "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+                "Comptes certifiés par les Commissaires aux Comptes au terme d'un examen des comptes au 31 décembre 2020",
+                "Etats financiers provisoires à soumettre à l'Assemblée Générale Ordinaire des actionnaires."
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 354843211,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 354843211,
+          "confidence": "extraction_unique"
+        },
+        "dettes_financieres_non_courantes": {
+          "label": "Dettes financières non courantes",
+          "value": 29876571140,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+              "raw_token": "29876571140.0",
+              "context_lines": [
+                "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                "Autres charges ‐1 007 765 166 ‐1 949 255 919",
+                "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+                "RESSOURCES STABLES 116 701 537 925 99 539 772 814 Charges de personnel ‐20 816 957 524 ‐19 031 494 135",
+                "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 29876571140,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 29876571140,
+          "confidence": "extraction_unique"
+        }
+      },
+      "precedent": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 143735240870,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+              "raw_token": "143735240870.0",
+              "context_lines": [
+                "Immobilisations financières 287 304 341 321 164 045 Travaux, services vendus 2 734 480 044 2 764 348 785",
+                "ACTIF IMMOBILISE 85 849 395 152 87 824 467 144 Produits accessoires 532 538 580 290 074 737",
+                "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+                "Stocks et encours 35 481 772 905 32 298 948 946 Production stockée (ou déstockage) 976 960 988 3 280 985 600",
+                "Créances et emplois assimilés 24 160 741 187 19 747 388 329 Production immobilisée 2 941 924 785 2 870 432 913"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 3,
+              "line": "Chiffre d'affaires 158 789 037 143 735 241",
+              "raw_token": "143735241.0",
+              "context_lines": [
+                "En milliers de FCFA",
+                "COMPTE DE RESULTAT 31‐déc‐20 31‐déc‐19",
+                "Chiffre d'affaires 158 789 037 143 735 241",
+                "Achats consommés ‐ 100 902 145 ‐ 90 721 429",
+                "Marge brute 57 886 892 53 013 812"
+              ],
+              "column_header": null,
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 143735240870,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                1,
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 143735240870,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 3374805646,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 5,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+              "raw_token": "3374805646.0",
+              "context_lines": [
+                "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238",
+                "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+              "raw_token": "3374805646.0",
+              "context_lines": [
+                "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744",
+                "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+                "+ Encaissements liés aux cessions d’immob incorp et corp 111 174 135 35 557 483",
+                "PROJET D'AFFECTATION DU RESULTAT"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+              "raw_token": "3374805646.0",
+              "context_lines": [
+                "Report à nouveau 2 526 809 966 ‐847 995 680",
+                "+ Augmentations de capital par apports nouveaux Réserve libre 50 410 251 190 50 410 251 190",
+                "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+                "+ Emprunts 15 742 968 000 7 000 000 000 Total origines 60 430 095 145 52 937 061 156",
+                "+ Autres dettes financières diverses 839 548 718 0 AFFECTATIONS"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 3374805646,
+              "value_kind": "fcfa",
+              "occurrences": 5,
+              "pages": [
+                1,
+                3,
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 3374805646,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 8649304155,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+              "raw_token": "8649304155.0",
+              "context_lines": [
+                "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                "Autres charges ‐1 007 765 166 ‐1 949 255 919"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 8649304155,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            },
+            {
+              "value": 74752393000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            },
+            {
+              "value": 79331932796,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": false
+            }
+          ],
+          "value_fcfa": 8649304155,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 147034369404,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 4,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+              "raw_token": "147034369404.0",
+              "context_lines": [
+                "ACTIF CIRCULANT 59 642 514 092 52 046 337 275 Autres produits 1 644 149 302 268 874 746",
+                "Trésorerie ‐ actif 11 555 961 927 7 163 564 985 Transferts de charges d'exploitation 571 399 872 610 430 009",
+                "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+                "Variation de stocks de matières premières et fournitures liée 1 663 688 542 934 764 036",
+                "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 1,
+              "line": "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+              "raw_token": "147034369404.0",
+              "context_lines": [
+                "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422",
+                "Trésorerie ‐ passif 19 910 805 138 25 561 173 085 Reprises d’amortissements, provisions et dépréciations 394 957 401 227 257 435",
+                "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+                "RESULTAT D'EXPLOITATION 10 954 030 372 7 524 609 808",
+                "Revenus financiers et assimilés 10 647 011 5 960 333"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 2,
+              "line": "Total actif 159 150 851 147 483 344",
+              "raw_token": "147483344.0",
+              "context_lines": [
+                "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                "Actifs courants 73 324 937 58 986 867",
+                "Total actif 159 150 851 147 483 344",
+                "31‐déc‐20 31‐déc‐19",
+                "PASSIFS"
+              ],
+              "column_header": null,
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 147034369404,
+              "value_kind": "fcfa",
+              "occurrences": 4,
+              "pages": [
+                1,
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 147034369404,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "flux_tresorerie_operationnel": {
+          "label": "Flux de trésorerie opérationnel",
+          "value": 5886413920,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+              "raw_token": "5886413920.0",
+              "context_lines": [
+                "+ Variation du passif circulant ‐1 871 829 221 3 303 930 098 Autres Produits HAO 7 458 404 0",
+                "Variation du BF lié aux activités opérationnelles ‐9 094 072 214 ‐5 848 696 792 Valeurs comptables des cessions d'immobilisations ‐165 704 293 ‐258 879 058",
+                "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+                "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 5886413920,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 5886413920,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 7163565000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+              "raw_token": "7163565.0",
+              "context_lines": [
+                "Créances clients 16 452 792 14 618 779",
+                "Autres actifs courants 8 254 319 5 502 543",
+                "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                "Actifs courants 73 324 937 58 986 867",
+                "Total actif 159 150 851 147 483 344"
+              ],
+              "column_header": null,
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 7163565000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 7163565000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_nette": {
+          "label": "Trésorerie nette",
+          "value": 397608100,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+              "raw_token": "397608100.0",
+              "context_lines": [
+                "Flux de trésorerie provenant des activités de financement 9 734 539 020 945 917 807 Dividendes 3 757 026 735",
+                "VARIATION DE LA TRÉSORERIE NETTE DE LA PÉRIODE 10 042 764 889 ‐2 149 514 786 Report à nouveau 6 262 817 220 2 526 809 966",
+                "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+                "Comptes certifiés par les Commissaires aux Comptes au terme d'un examen des comptes au 31 décembre 2020",
+                "Etats financiers provisoires à soumettre à l'Assemblée Générale Ordinaire des actionnaires."
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 397608100,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 397608100,
+          "confidence": "extraction_unique"
+        },
+        "dettes_financieres_non_courantes": {
+          "label": "Dettes financières non courantes",
+          "value": 20207840018,
+          "value_kind": "fcfa",
+          "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+          "source_amount_count": 4,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 1,
+              "line": "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+              "raw_token": "20207840018.0",
+              "context_lines": [
+                "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                "Autres charges ‐1 007 765 166 ‐1 949 255 919",
+                "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+                "RESSOURCES STABLES 116 701 537 925 99 539 772 814 Charges de personnel ‐20 816 957 524 ‐19 031 494 135",
+                "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422"
+              ],
+              "column_header": null,
+              "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "NON_PROUVE",
+          "source_multiplier": 1,
+          "input_rounding_abs_fcfa": 0.5,
+          "candidate_groups": [
+            {
+              "value": 20207840018,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                1
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "NON_PROUVE",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 20207840018,
+          "confidence": "extraction_unique"
+        }
+      },
+      "colonnes": {
+        "0": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 158789037442,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Chiffre d'affaires 158 789 037 143 735 241",
+                "raw_token": "158789037.0",
+                "context_lines": [
+                  "En milliers de FCFA",
+                  "COMPTE DE RESULTAT 31‐déc‐20 31‐déc‐19",
+                  "Chiffre d'affaires 158 789 037 143 735 241",
+                  "Achats consommés ‐ 100 902 145 ‐ 90 721 429",
+                  "Marge brute 57 886 892 53 013 812"
+                ],
+                "column_header": null,
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+                "raw_token": "158789037442.0",
+                "context_lines": [
+                  "Immobilisations financières 287 304 341 321 164 045 Travaux, services vendus 2 734 480 044 2 764 348 785",
+                  "ACTIF IMMOBILISE 85 849 395 152 87 824 467 144 Produits accessoires 532 538 580 290 074 737",
+                  "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+                  "Stocks et encours 35 481 772 905 32 298 948 946 Production stockée (ou déstockage) 976 960 988 3 280 985 600",
+                  "Créances et emplois assimilés 24 160 741 187 19 747 388 329 Production immobilisée 2 941 924 785 2 870 432 913"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 158789037442,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1,
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 158789037442,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 7466595005,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 3,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+                "raw_token": "7466595005.0",
+                "context_lines": [
+                  "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                  "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744",
+                  "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+                  "+ Encaissements liés aux cessions d’immob incorp et corp 111 174 135 35 557 483",
+                  "PROJET D'AFFECTATION DU RESULTAT"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                "raw_token": "7493033989.0",
+                "context_lines": [
+                  "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238",
+                  "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                  "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                  "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                  "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+                "raw_token": "7493033989.0",
+                "context_lines": [
+                  "Report à nouveau 2 526 809 966 ‐847 995 680",
+                  "+ Augmentations de capital par apports nouveaux Réserve libre 50 410 251 190 50 410 251 190",
+                  "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+                  "+ Emprunts 15 742 968 000 7 000 000 000 Total origines 60 430 095 145 52 937 061 156",
+                  "+ Autres dettes financières diverses 839 548 718 0 AFFECTATIONS"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 7466595005,
+                "value_kind": "fcfa",
+                "occurrences": 3,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 8665154000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  3,
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 7466595005,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 11176114121,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                "raw_token": "11176114121.0",
+                "context_lines": [
+                  "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                  "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                  "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                  "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                  "Autres charges ‐1 007 765 166 ‐1 949 255 919"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 11176114121,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 84004628000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 86824966785,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 11176114121,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 157047871171,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+                "raw_token": "157047871171.0",
+                "context_lines": [
+                  "ACTIF CIRCULANT 59 642 514 092 52 046 337 275 Autres produits 1 644 149 302 268 874 746",
+                  "Trésorerie ‐ actif 11 555 961 927 7 163 564 985 Transferts de charges d'exploitation 571 399 872 610 430 009",
+                  "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+                  "Variation de stocks de matières premières et fournitures liée 1 663 688 542 934 764 036",
+                  "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+                "raw_token": "157047871171.0",
+                "context_lines": [
+                  "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422",
+                  "Trésorerie ‐ passif 19 910 805 138 25 561 173 085 Reprises d’amortissements, provisions et dépréciations 394 957 401 227 257 435",
+                  "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+                  "RESULTAT D'EXPLOITATION 10 954 030 372 7 524 609 808",
+                  "Revenus financiers et assimilés 10 647 011 5 960 333"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 157047871171,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 159150851000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 157047871171,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 6413979215,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+                "raw_token": "6413979215.0",
+                "context_lines": [
+                  "+ Variation du passif circulant ‐1 871 829 221 3 303 930 098 Autres Produits HAO 7 458 404 0",
+                  "Variation du BF lié aux activités opérationnelles ‐9 094 072 214 ‐5 848 696 792 Valeurs comptables des cessions d'immobilisations ‐165 704 293 ‐258 879 058",
+                  "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+                  "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                  "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 6413979215,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 6413979215,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 11555962000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                "raw_token": "11555962.0",
+                "context_lines": [
+                  "Créances clients 16 452 792 14 618 779",
+                  "Autres actifs courants 8 254 319 5 502 543",
+                  "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                  "Actifs courants 73 324 937 58 986 867",
+                  "Total actif 159 150 851 147 483 344"
+                ],
+                "column_header": null,
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 11555962000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 11555962000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_nette": {
+            "label": "Trésorerie nette",
+            "value": 354843211,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+                "raw_token": "354843211.0",
+                "context_lines": [
+                  "Flux de trésorerie provenant des activités de financement 9 734 539 020 945 917 807 Dividendes 3 757 026 735",
+                  "VARIATION DE LA TRÉSORERIE NETTE DE LA PÉRIODE 10 042 764 889 ‐2 149 514 786 Report à nouveau 6 262 817 220 2 526 809 966",
+                  "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+                  "Comptes certifiés par les Commissaires aux Comptes au terme d'un examen des comptes au 31 décembre 2020",
+                  "Etats financiers provisoires à soumettre à l'Assemblée Générale Ordinaire des actionnaires."
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 354843211,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 354843211,
+            "confidence": "extraction_unique"
+          },
+          "dettes_financieres_non_courantes": {
+            "label": "Dettes financières non courantes",
+            "value": 29876571140,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+                "raw_token": "29876571140.0",
+                "context_lines": [
+                  "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                  "Autres charges ‐1 007 765 166 ‐1 949 255 919",
+                  "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+                  "RESSOURCES STABLES 116 701 537 925 99 539 772 814 Charges de personnel ‐20 816 957 524 ‐19 031 494 135",
+                  "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 29876571140,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 29876571140,
+            "confidence": "extraction_unique"
+          }
+        },
+        "1": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 143735240870,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+                "raw_token": "143735240870.0",
+                "context_lines": [
+                  "Immobilisations financières 287 304 341 321 164 045 Travaux, services vendus 2 734 480 044 2 764 348 785",
+                  "ACTIF IMMOBILISE 85 849 395 152 87 824 467 144 Produits accessoires 532 538 580 290 074 737",
+                  "Actifs circulants HAO CHIFFRE D'AFFAIRES 158 789 037 442 143 735 240 870",
+                  "Stocks et encours 35 481 772 905 32 298 948 946 Production stockée (ou déstockage) 976 960 988 3 280 985 600",
+                  "Créances et emplois assimilés 24 160 741 187 19 747 388 329 Production immobilisée 2 941 924 785 2 870 432 913"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 3,
+                "line": "Chiffre d'affaires 158 789 037 143 735 241",
+                "raw_token": "143735241.0",
+                "context_lines": [
+                  "En milliers de FCFA",
+                  "COMPTE DE RESULTAT 31‐déc‐20 31‐déc‐19",
+                  "Chiffre d'affaires 158 789 037 143 735 241",
+                  "Achats consommés ‐ 100 902 145 ‐ 90 721 429",
+                  "Marge brute 57 886 892 53 013 812"
+                ],
+                "column_header": null,
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 143735240870,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  1,
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 143735240870,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 3374805646,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 5,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                "raw_token": "3374805646.0",
+                "context_lines": [
+                  "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238",
+                  "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                  "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                  "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                  "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+                "raw_token": "3374805646.0",
+                "context_lines": [
+                  "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                  "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744",
+                  "‐ Décaissements pour immobilisations financières 0 ‐77 976 700 RESULTAT NET 7 466 595 005 3 374 805 646",
+                  "+ Encaissements liés aux cessions d’immob incorp et corp 111 174 135 35 557 483",
+                  "PROJET D'AFFECTATION DU RESULTAT"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+                "raw_token": "3374805646.0",
+                "context_lines": [
+                  "Report à nouveau 2 526 809 966 ‐847 995 680",
+                  "+ Augmentations de capital par apports nouveaux Réserve libre 50 410 251 190 50 410 251 190",
+                  "‐ Dividendes versés 0 0 Résultat net de l'exercice 7 493 033 989 3 374 805 646",
+                  "+ Emprunts 15 742 968 000 7 000 000 000 Total origines 60 430 095 145 52 937 061 156",
+                  "+ Autres dettes financières diverses 839 548 718 0 AFFECTATIONS"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 3374805646,
+                "value_kind": "fcfa",
+                "occurrences": 5,
+                "pages": [
+                  1,
+                  3,
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 3374805646,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 8649304155,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                "raw_token": "8649304155.0",
+                "context_lines": [
+                  "Primes et réserves 53 562 197 820 52 714 202 140 Variation de stocks d’autres approvisionnements 627 261 783 463 657 596",
+                  "Résultat net 7 493 033 989 3 374 805 646 Transports ‐638 866 990 ‐528 152 103",
+                  "Autres capitaux propres 11 176 114 121 8 649 304 155 Services extérieurs ‐17 073 410 937 ‐16 517 610 673",
+                  "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                  "Autres charges ‐1 007 765 166 ‐1 949 255 919"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 8649304155,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              },
+              {
+                "value": 74752393000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              },
+              {
+                "value": 79331932796,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": false
+              }
+            ],
+            "value_fcfa": 8649304155,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 147034369404,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 4,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+                "raw_token": "147034369404.0",
+                "context_lines": [
+                  "ACTIF CIRCULANT 59 642 514 092 52 046 337 275 Autres produits 1 644 149 302 268 874 746",
+                  "Trésorerie ‐ actif 11 555 961 927 7 163 564 985 Transferts de charges d'exploitation 571 399 872 610 430 009",
+                  "TOTAL ACTIF 157 047 871 171 147 034 369 404 Achats de matières premières et fournitures liées ‐85 540 361 914 ‐75 946 698 900",
+                  "Variation de stocks de matières premières et fournitures liée 1 663 688 542 934 764 036",
+                  "Capital social 14 593 620 855 14 593 620 855 Autres achats ‐18 803 161 785 ‐17 318 470 238"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 1,
+                "line": "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+                "raw_token": "147034369404.0",
+                "context_lines": [
+                  "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422",
+                  "Trésorerie ‐ passif 19 910 805 138 25 561 173 085 Reprises d’amortissements, provisions et dépréciations 394 957 401 227 257 435",
+                  "TOTAL PASSIF 157 047 871 171 147 034 369 404 Dotations aux amortissements, aux provisions et dépréciatio ‐8 465 734 536 ‐8 381 990 049",
+                  "RESULTAT D'EXPLOITATION 10 954 030 372 7 524 609 808",
+                  "Revenus financiers et assimilés 10 647 011 5 960 333"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 2,
+                "line": "Total actif 159 150 851 147 483 344",
+                "raw_token": "147483344.0",
+                "context_lines": [
+                  "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                  "Actifs courants 73 324 937 58 986 867",
+                  "Total actif 159 150 851 147 483 344",
+                  "31‐déc‐20 31‐déc‐19",
+                  "PASSIFS"
+                ],
+                "column_header": null,
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 147034369404,
+                "value_kind": "fcfa",
+                "occurrences": 4,
+                "pages": [
+                  1,
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 147034369404,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "flux_tresorerie_operationnel": {
+            "label": "Flux de trésorerie opérationnel",
+            "value": 5886413920,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+                "raw_token": "5886413920.0",
+                "context_lines": [
+                  "+ Variation du passif circulant ‐1 871 829 221 3 303 930 098 Autres Produits HAO 7 458 404 0",
+                  "Variation du BF lié aux activités opérationnelles ‐9 094 072 214 ‐5 848 696 792 Valeurs comptables des cessions d'immobilisations ‐165 704 293 ‐258 879 058",
+                  "Flux de trésorerie provenant des activités opérationnelles 6 413 979 215 5 886 413 920 Autres Charges HAO ‐7 634 372 0",
+                  "‐ Décaissements pour immobilisations incorporelles ‐76 728 963 0 RESULTAT HORS ACTIVITES ORDINAIRES ‐54 706 126 ‐223 321 575",
+                  "‐ Décaissements pour immobilisations corporelles ‐6 200 497 206 ‐8 977 035 519 Impôts sur le résultat ‐859 432 788 ‐1 366 000 744"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 5886413920,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 5886413920,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 7163565000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                "raw_token": "7163565.0",
+                "context_lines": [
+                  "Créances clients 16 452 792 14 618 779",
+                  "Autres actifs courants 8 254 319 5 502 543",
+                  "Trésorerie et équivalents de trésorerie 11 555 962 7 163 565",
+                  "Actifs courants 73 324 937 58 986 867",
+                  "Total actif 159 150 851 147 483 344"
+                ],
+                "column_header": null,
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 7163565000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 7163565000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_nette": {
+            "label": "Trésorerie nette",
+            "value": 397608100,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+                "raw_token": "397608100.0",
+                "context_lines": [
+                  "Flux de trésorerie provenant des activités de financement 9 734 539 020 945 917 807 Dividendes 3 757 026 735",
+                  "VARIATION DE LA TRÉSORERIE NETTE DE LA PÉRIODE 10 042 764 889 ‐2 149 514 786 Report à nouveau 6 262 817 220 2 526 809 966",
+                  "Trésorerie nette au 31 Décembre ‐8 354 843 211 ‐18 397 608 100 Total affectations 60 430 095 145 52 937 061 156",
+                  "Comptes certifiés par les Commissaires aux Comptes au terme d'un examen des comptes au 31 décembre 2020",
+                  "Etats financiers provisoires à soumettre à l'Assemblée Générale Ordinaire des actionnaires."
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 397608100,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 397608100,
+            "confidence": "extraction_unique"
+          },
+          "dettes_financieres_non_courantes": {
+            "label": "Dettes financières non courantes",
+            "value": 20207840018,
+            "value_kind": "fcfa",
+            "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+            "source_amount_count": 4,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 1,
+                "line": "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+                "raw_token": "20207840018.0",
+                "context_lines": [
+                  "CAPITAUX PROPRES ET RESSOURCES ASSIMILEES 86 824 966 785 79 331 932 796 Impôts et taxes ‐2 587 834 350 ‐2 794 268 846",
+                  "Autres charges ‐1 007 765 166 ‐1 949 255 919",
+                  "Dettes financières et ressources assimilées 29 876 571 140 20 207 840 018 VALEUR AJOUTEE 39 841 765 031 34 710 836 557",
+                  "RESSOURCES STABLES 116 701 537 925 99 539 772 814 Charges de personnel ‐20 816 957 524 ‐19 031 494 135",
+                  "Passif circulant 20 435 528 108 21 933 423 505 EXCEDENT BRUT D'EXPLOITATION 19 024 807 507 15 679 342 422"
+                ],
+                "column_header": null,
+                "unit_label": "FCFA (états de synthèse SYSCOHADA codés)",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "NON_PROUVE",
+            "source_multiplier": 1,
+            "input_rounding_abs_fcfa": 0.5,
+            "candidate_groups": [
+              {
+                "value": 20207840018,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  1
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "NON_PROUVE",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 20207840018,
+            "confidence": "extraction_unique"
+          }
+        }
+      },
+      "_per_share_observations": {
+        "parser_version": "eps-evidence-v2.1.1",
+        "eps": [
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 1.695,
+            "raw_token": "1,695",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DILUE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2019,
+            "year_offset_from_document": 0,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+              "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 27,
+              "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Dilué 1,695 0,666",
+              "raw_token": "1,695",
+              "context_lines": [
+                "Résultat net 8 665 154 3 404 046",
+                "Resultat par action 31‐déc‐20 31‐déc‐19",
+                "Dilué 1,695 0,666",
+                "Non dilué 1,695 0,666"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 0.666,
+            "raw_token": "0,666",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DILUE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2018,
+            "year_offset_from_document": 1,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+              "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 27,
+              "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Dilué 1,695 0,666",
+              "raw_token": "0,666",
+              "context_lines": [
+                "Résultat net 8 665 154 3 404 046",
+                "Resultat par action 31‐déc‐20 31‐déc‐19",
+                "Dilué 1,695 0,666",
+                "Non dilué 1,695 0,666"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 1.695,
+            "raw_token": "1,695",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2019,
+            "year_offset_from_document": 0,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 28,
+              "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Non dilué 1,695 0,666",
+              "raw_token": "1,695",
+              "context_lines": [
+                "Resultat par action 31‐déc‐20 31‐déc‐19",
+                "Dilué 1,695 0,666",
+                "Non dilué 1,695 0,666"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 0.666,
+            "raw_token": "0,666",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2018,
+            "year_offset_from_document": 1,
+            "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 28,
+              "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Non dilué 1,695 0,666",
+              "raw_token": "0,666",
+              "context_lines": [
+                "Resultat par action 31‐déc‐20 31‐déc‐19",
+                "Dilué 1,695 0,666",
+                "Non dilué 1,695 0,666"
+              ],
+              "column_header": null,
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "shares": [],
+        "numerators": [],
+        "ignored": []
+      },
+      "_content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [],
+        "frameworks_present": [
+          "IFRS"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 5,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "_page_contexts": [
+        {
+          "page": 1,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "NON_PROUVE",
+          "framework_source": "AUCUNE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "BILAN",
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "SOCIETE AFRICAINE DE PLANTATIONS D'HEVEAS Société Anonyme avec conseil d'administration au Capital de 14.593.620.855 F‐CFA Siège social: Abidjan Côte d'Ivoire ‐ Treichville, Rue des Galions ‐ 01 BP 1322 Abidjan 01 ETATS FINANCIERS DE SYNTHESE AU 31/12/2020 En XOF BILAN COMPTE DE RESULTAT Exercice N Exercice N‐1 Libellé"
+        },
+        {
+          "page": 2,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "SAPH ‐ BILAN IFRS ‐ 31 Décembre 2020 En milliers de FCFA 31‐déc‐20 31‐déc‐19 ACTIFS Immobilisations incorporelles 52 102 16 933 Ecarts d'acquisition 6 107 616 6 107 616 Immobilisations corporelles 33 072 033 37 399 718 Droits d'usage des immobilisations louées 2 535 963 1 800 987 Actifs biologiques plantes productrices"
+        },
+        {
+          "page": 3,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT",
+            "BPA_OU_NOTE_BPA"
+          ],
+          "heading_excerpt": "SAPH ‐ COMPTE DE RESULTAT IFRS ‐ 31 Décembre 2020 En milliers de FCFA COMPTE DE RESULTAT 31‐déc‐20 31‐déc‐19 Chiffre d'affaires 158 789 037 143 735 241 Achats consommés ‐ 100 902 145 ‐ 90 721 429 Marge brute 57 886 892 53 013 812 Charges de personnel ‐ 20 816 958 ‐ 19 031 494 Charges externes ‐ 14 683 485 ‐ 13 987 100 "
+        },
+        {
+          "page": 4,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "SAPH ‐ Tableau de flux de trésorerie ‐ 31 Décembre 2020 En milliers de FCFA 31‐déc‐20 31‐déc‐19 Résultat net 8 665 154 3 404 046 Elimination des amortissements et provisions 8 349 462 8 662 418 Elimination des profits/pertes de réévaluation (juste valeur) 919 689 ‐372 330 Elimination des plus ou moins values de cession"
+        },
+        {
+          "page": 5,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "MIXTE",
+          "framework_source": "PAGE_MIXTE",
+          "framework_evidence": [
+            "ifrs",
+            "syscohada"
+          ],
+          "statement_kinds": [],
+          "heading_excerpt": "SAPH ‐ Variation des capitaux propres Résultat de En milliers de FCFA Capital Réserves Report à nouveau Capitaux propres l'exercice Capitaux propres au 1er janvier 2019 14 593 621 8 123 138 5 0 410 251 ‐ 1 367 439 71 759 571 Affectation du résultat 2018 en réserves 50 410 251 ‐ 51 258 247 1 367 439 5 19 443 Dividendes "
+        }
+      ]
+    },
+    "per_share_observations": {
+      "parser_version": "eps-evidence-v2.1.1",
+      "eps": [
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 1.695,
+          "raw_token": "1,695",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DILUE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2019,
+          "year_offset_from_document": 0,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 27,
+            "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Dilué 1,695 0,666",
+            "raw_token": "1,695",
+            "context_lines": [
+              "Résultat net 8 665 154 3 404 046",
+              "Resultat par action 31‐déc‐20 31‐déc‐19",
+              "Dilué 1,695 0,666",
+              "Non dilué 1,695 0,666"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 0.666,
+          "raw_token": "0,666",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DILUE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2018,
+          "year_offset_from_document": 1,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 27,
+            "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Dilué 1,695 0,666",
+            "raw_token": "0,666",
+            "context_lines": [
+              "Résultat net 8 665 154 3 404 046",
+              "Resultat par action 31‐déc‐20 31‐déc‐19",
+              "Dilué 1,695 0,666",
+              "Non dilué 1,695 0,666"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 1.695,
+          "raw_token": "1,695",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2019,
+          "year_offset_from_document": 0,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 28,
+            "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Non dilué 1,695 0,666",
+            "raw_token": "1,695",
+            "context_lines": [
+              "Resultat par action 31‐déc‐20 31‐déc‐19",
+              "Dilué 1,695 0,666",
+              "Non dilué 1,695 0,666"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 0.666,
+          "raw_token": "0,666",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2018,
+          "year_offset_from_document": 1,
+          "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 28,
+            "line_original": "Resultat par action 31‐déc‐20 31‐déc‐19 | Non dilué 1,695 0,666",
+            "raw_token": "0,666",
+            "context_lines": [
+              "Resultat par action 31‐déc‐20 31‐déc‐19",
+              "Dilué 1,695 0,666",
+              "Non dilué 1,695 0,666"
+            ],
+            "column_header": null,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "shares": [],
+      "numerators": [],
+      "ignored": []
+    },
+    "document": {
+      "url": "https://www.brvm.org/sites/default/files/20210423_-_etats_financiers_-_exercice_2020_-_saph_ci.pdf",
+      "filename": "20210423_-_etats_financiers_-_exercice_2020_-_saph_ci.pdf",
+      "label": "Etats financiers exercice 2020 saph ci",
+      "link_text": "Télécharger",
+      "doc_type_filename": "etats_financiers",
+      "published_date": "2021-04-23",
+      "filename_exercice": 2020,
+      "filename_exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+      "content_exercice": 2019,
+      "content_exercice_status": "LU_DANS_LE_CONTENU",
+      "content_exercice_evidence": [
+        {
+          "page": 5,
+          "line": "Capitaux propres au 31 décembre 2019 14 593 621 5 7 602 723 ‐ 847 996 3 404 045 7 4 752 393",
+          "year": 2019
+        },
+        {
+          "page": 5,
+          "line": "Capitaux propres au 31 décembre 2020 14 593 621 5 8 219 043 2 526 810 8 665 154 8 4 004 628",
+          "year": 2020
+        }
+      ],
+      "effective_exercice": 2019,
+      "period": {
+        "period_kind": "ANNUEL_OU_NON_PROUVE",
+        "interim_markers": [],
+        "filename_markers": [],
+        "content_title_markers": [],
+        "selection_status": "CANDIDAT_ANNUEL_SOUS_RESERVE_DES_AUTRES_CONTROLES"
+      },
+      "identity": {
+        "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+        "expected_ticker": "SPHC",
+        "best_ticker": "SPHC",
+        "expected_score": 111,
+        "best_other_ticker": null,
+        "best_other_score": 0,
+        "scores": {
+          "SPHC": 111
+        },
+        "evidence": [
+          {
+            "phrase": "saph ci",
+            "ticker": "SPHC",
+            "occurrences_capped": 3,
+            "score": 12,
+            "zone": "nom_fichier",
+            "page": null,
+            "weight": 3,
+            "weighted_score": 36
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 2,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 3,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 4,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 5,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 3,
+            "score": 9,
+            "zone": "texte_premieres_pages",
+            "page": 5,
+            "weight": 1,
+            "weighted_score": 9
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 2,
+            "weight": 1,
+            "weighted_score": 6
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 3,
+            "weight": 1,
+            "weighted_score": 6
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 4,
+            "weight": 1,
+            "weighted_score": 6
+          }
+        ],
+        "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+        "classifier_version": "document-selection-v2.0.0"
+      },
+      "content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [],
+        "frameworks_present": [
+          "IFRS"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 5,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "scope_hint_filename": "NON_PROUVE",
+      "framework_hint_filename": "NON_PROUVE",
+      "selection_status_filename": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+      "selection_rejection": null,
+      "version_label": "NON_PRECISE",
+      "version_markers": [],
+      "filename_markers": [],
+      "content_markers_first_pages": [],
+      "sha256": "7193773e336f70b373d0b648c59ad9b37302162fb80aaab719a6e31237244df7",
+      "bytes": 237106,
+      "cache": {
+        "status": "hit_par_url_et_nom",
+        "key": "36a2512c7b1c3188-20210423_-_etats_financiers_-_exercice_2020_-_saph_ci.pdf"
+      },
+      "page_selection": {
+        "pages_total": 5,
+        "pages_native_text_scanned": 5,
+        "pages_structured": 5,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 11445
+      },
+      "parser_versions": {
+        "eps_evidence": "eps-evidence-v2.1.1",
+        "document_classifier": "document-selection-v2.0.0"
+      }
+    },
+    "identity": {
+      "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "expected_ticker": "SPHC",
+      "best_ticker": "SPHC",
+      "expected_score": 111,
+      "best_other_ticker": null,
+      "best_other_score": 0,
+      "scores": {
+        "SPHC": 111
+      },
+      "evidence": [
+        {
+          "phrase": "saph ci",
+          "ticker": "SPHC",
+          "occurrences_capped": 3,
+          "score": 12,
+          "zone": "nom_fichier",
+          "page": null,
+          "weight": 3,
+          "weighted_score": 36
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 2,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 3,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 4,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 5,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 3,
+          "score": 9,
+          "zone": "texte_premieres_pages",
+          "page": 5,
+          "weight": 1,
+          "weighted_score": 9
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 2,
+          "weight": 1,
+          "weighted_score": 6
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 3,
+          "weight": 1,
+          "weighted_score": 6
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 4,
+          "weight": 1,
+          "weighted_score": 6
+        }
+      ],
+      "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+      "classifier_version": "document-selection-v2.0.0"
+    },
+    "content_exercice": 2019,
+    "effective_exercice": 2019,
+    "notes": [
+      "Exercice du nom de fichier (2020) différent de l'exercice lu dans le contenu (2019) : le contenu fait foi pour le rattachement des colonnes."
+    ],
+    "sha256": "7193773e336f70b373d0b648c59ad9b37302162fb80aaab719a6e31237244df7",
+    "extraction": {
+      "method": "texte_natif",
+      "native_text_characters": 11445,
+      "page_selection": {
+        "pages_total": 5,
+        "pages_native_text_scanned": 5,
+        "pages_structured": 5,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 11445
+      },
+      "document_identity_status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "selection_rejection": null,
+      "ocr": {
+        "available": null,
+        "attempted": false,
+        "used": false,
+        "cache_status": "non_appele",
+        "pages_ocrees": 0,
+        "mean_confidence": null,
+        "truncated": false
+      }
+    }
+  },
+  "document_sha256": "7193773e336f70b373d0b648c59ad9b37302162fb80aaab719a6e31237244df7",
+  "extraction_seconds": 0.685
+}

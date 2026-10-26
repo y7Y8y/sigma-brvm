@@ -1,0 +1,37 @@
+{
+  "candidate_id": "7c6624ecdb18a3a8",
+  "ticker": "SPHC",
+  "url": "https://www.brvm.org/sites/default/files/20200430_-_etats_financiers_exercice_2019_-_saph_ci_0.pdf",
+  "selection_rank_for_ticker": 16,
+  "target_years_from_filename": [
+    2019,
+    2018,
+    2017
+  ],
+  "classified_document": {
+    "filename": "20200430_-_etats_financiers_exercice_2019_-_saph_ci_0.pdf",
+    "label": "Etats financiers exercice 2019 saph ci 0",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2019,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2020-04-30",
+    "url": "https://www.brvm.org/sites/default/files/20200430_-_etats_financiers_exercice_2019_-_saph_ci_0.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+    "report_page_label": "SAPH CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci?page=2"
+    ]
+  }
+}

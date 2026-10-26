@@ -1,0 +1,2555 @@
+{
+  "candidate_id": "2e29710a9c773c19",
+  "ticker": "SPHC",
+  "url": "https://www.brvm.org/sites/default/files/20220415_-_etats_financiers_ifrs_exercice_2021_-_saph_ci.pdf",
+  "code_fingerprint": "84a6653cbb667afc18b8437eda6a943be09a51678379212d1eb06e1e992590be",
+  "candidate": {
+    "target_years_from_filename": [
+      2021,
+      2020,
+      2019
+    ],
+    "selection_rank_for_ticker": 11
+  },
+  "classified_document": {
+    "filename": "20220415_-_etats_financiers_ifrs_exercice_2021_-_saph_ci.pdf",
+    "label": "Etats financiers ifrs exercice 2021 saph ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2021,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2022-04-15",
+    "url": "https://www.brvm.org/sites/default/files/20220415_-_etats_financiers_ifrs_exercice_2021_-_saph_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "IFRS",
+    "framework_hint_evidence": [
+      "ifrs"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+    "report_page_label": "SAPH CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci?page=1"
+    ]
+  },
+  "extraction": {
+    "columns": {
+      "courant": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 208794461000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+              "raw_token": "208794461.0",
+              "context_lines": [
+                "En milliers de FCFA",
+                "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+                "Achats consommés Note 23 - 131 928 805 - 101 165 570",
+                "Marge brute 76 865 656 57 623 467"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                "line_index": 3,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 208794461000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 208794461000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 21206399000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 3,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Résultat net 21 206 399 8 401 729",
+              "raw_token": "21206399.0",
+              "context_lines": [
+                "Resultat avant impot 25 662 748 9 655 493",
+                "Charge/Produit d'impot sur les sociétés Note 31 - 4 456 349 - 1 253 764",
+                "Résultat net 21 206 399 8 401 729",
+                "Compte de résultat par action",
+                "Resultat par action 31-déc-21 31-déc-20"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                "line_index": 3,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 4,
+              "line": "Résultat net de la période 21 206 399 8 401 729",
+              "raw_token": "21206399.0",
+              "context_lines": [
+                "31-déc-21 31-déc-20",
+                "En milliers de FCFA",
+                "Résultat net de la période 21 206 399 8 401 729",
+                "I. Eléments ultérieurement recyclables en compte de résultat:",
+                "Variation de juste valeur des instruments de couverture -1 595 804 1 134 007"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "31-déc-21 31-déc-20",
+                "line_index": 2,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 4,
+              "line": "Résultat net 21 206 399 8 401 729",
+              "raw_token": "21206399.0",
+              "context_lines": [
+                "Tableau des flux de trésorerie",
+                "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "Résultat net 21 206 399 8 401 729",
+                "Elimination des amortissements et provisions 7 954 271 8 349 462",
+                "Elimination des profits/pertes de réévaluation (juste valeur) 20 222 1 183 114"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "31-déc-21 31-déc-20",
+                "line_index": 2,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 21206399000,
+              "value_kind": "fcfa",
+              "occurrences": 3,
+              "pages": [
+                3,
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 21206399000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 99983963000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Capitaux propres 99 983 963 84 004 628",
+              "raw_token": "99983963.0",
+              "context_lines": [
+                "Notes 31-déc-21 31-déc-20",
+                "PASSIFS",
+                "Capitaux propres 99 983 963 84 004 628",
+                "Capital social Note 14 14 593 621 14 593 621",
+                "Reserves Note 15 64 183 942 61 009 278"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 99983963000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 99983963000,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 171791777000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Total actif 171 791 777 159 150 851",
+              "raw_token": "171791777.0",
+              "context_lines": [
+                "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                "Actifs courants 77 996 633 73 324 937",
+                "Total actif 171 791 777 159 150 851",
+                "Notes 31-déc-21 31-déc-20",
+                "PASSIFS"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 2,
+              "line": "Total passif 171 791 777 159 150 850",
+              "raw_token": "171791777.0",
+              "context_lines": [
+                "Autres passifs courants Note 20 10 629 482 1 72 093",
+                "Passifs courants 45 158 893 49 515 172",
+                "Total passif 171 791 777 159 150 850"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 171791777000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 171791777000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "dividendes_verses": {
+          "label": "Dividendes versés (flux)",
+          "value": -3757027000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 4,
+              "line": "Dividendes versés -3 757 027 0",
+              "raw_token": "-3757027.0",
+              "context_lines": [
+                "Cession d'immobilisations 68 547 171 473",
+                "Total flux net provenant des (affecté aux) investissements -14 560 934 -5 559 992",
+                "Dividendes versés -3 757 027 0",
+                "Emissions d'emprunts 0 16 582 517",
+                "Remboursements d'emprunts -7 723 593 -6 957 787"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "31-déc-21 31-déc-20",
+                "line_index": 2,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": -3757027000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": -3757027000,
+          "confidence": "extraction_unique"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 2826842000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+              "raw_token": "2826842.0",
+              "context_lines": [
+                "Créances clients Note 11 25 871 624 16 452 792",
+                "Autres actifs courants Note 11 5 360 017 8 254 319",
+                "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                "Actifs courants 77 996 633 73 324 937",
+                "Total actif 171 791 777 159 150 851"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 2826842000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 2826842000,
+          "confidence": "extraction_unique"
+        }
+      },
+      "precedent": {
+        "chiffre_affaires": {
+          "label": "Chiffre d'affaires",
+          "value": 158789037000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+              "raw_token": "158789037.0",
+              "context_lines": [
+                "En milliers de FCFA",
+                "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+                "Achats consommés Note 23 - 131 928 805 - 101 165 570",
+                "Marge brute 76 865 656 57 623 467"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                "line_index": 3,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 158789037000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                3
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 158789037000,
+          "confidence": "extraction_unique"
+        },
+        "resultat_net": {
+          "label": "Résultat net",
+          "value": 8401729000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 3,
+          "evidence": [
+            {
+              "page": 3,
+              "line": "Résultat net 21 206 399 8 401 729",
+              "raw_token": "8401729.0",
+              "context_lines": [
+                "Resultat avant impot 25 662 748 9 655 493",
+                "Charge/Produit d'impot sur les sociétés Note 31 - 4 456 349 - 1 253 764",
+                "Résultat net 21 206 399 8 401 729",
+                "Compte de résultat par action",
+                "Resultat par action 31-déc-21 31-déc-20"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                "line_index": 3,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 4,
+              "line": "Résultat net de la période 21 206 399 8 401 729",
+              "raw_token": "8401729.0",
+              "context_lines": [
+                "31-déc-21 31-déc-20",
+                "En milliers de FCFA",
+                "Résultat net de la période 21 206 399 8 401 729",
+                "I. Eléments ultérieurement recyclables en compte de résultat:",
+                "Variation de juste valeur des instruments de couverture -1 595 804 1 134 007"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "31-déc-21 31-déc-20",
+                "line_index": 2,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 4,
+              "line": "Résultat net 21 206 399 8 401 729",
+              "raw_token": "8401729.0",
+              "context_lines": [
+                "Tableau des flux de trésorerie",
+                "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "Résultat net 21 206 399 8 401 729",
+                "Elimination des amortissements et provisions 7 954 271 8 349 462",
+                "Elimination des profits/pertes de réévaluation (juste valeur) 20 222 1 183 114"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "31-déc-21 31-déc-20",
+                "line_index": 2,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 8401729000,
+              "value_kind": "fcfa",
+              "occurrences": 3,
+              "pages": [
+                3,
+                4
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 8401729000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "capitaux_propres": {
+          "label": "Capitaux propres",
+          "value": 84004628000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Capitaux propres 99 983 963 84 004 628",
+              "raw_token": "84004628.0",
+              "context_lines": [
+                "Notes 31-déc-21 31-déc-20",
+                "PASSIFS",
+                "Capitaux propres 99 983 963 84 004 628",
+                "Capital social Note 14 14 593 621 14 593 621",
+                "Reserves Note 15 64 183 942 61 009 278"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 84004628000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 84004628000,
+          "confidence": "extraction_unique"
+        },
+        "total_bilan": {
+          "label": "Total du bilan",
+          "value": 159150850000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 2,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Total passif 171 791 777 159 150 850",
+              "raw_token": "159150850.0",
+              "context_lines": [
+                "Autres passifs courants Note 20 10 629 482 1 72 093",
+                "Passifs courants 45 158 893 49 515 172",
+                "Total passif 171 791 777 159 150 850"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            },
+            {
+              "page": 2,
+              "line": "Total actif 171 791 777 159 150 851",
+              "raw_token": "159150851.0",
+              "context_lines": [
+                "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                "Actifs courants 77 996 633 73 324 937",
+                "Total actif 171 791 777 159 150 851",
+                "Notes 31-déc-21 31-déc-20",
+                "PASSIFS"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 159150850000,
+              "value_kind": "fcfa",
+              "occurrences": 2,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 159150850000,
+          "confidence": "recoupe_dans_le_document"
+        },
+        "tresorerie_equivalents": {
+          "label": "Trésorerie et équivalents",
+          "value": 11555962000,
+          "value_kind": "fcfa",
+          "unit_label": "en milliers de FCFA",
+          "source_amount_count": 2,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "occurrences": 1,
+          "evidence": [
+            {
+              "page": 2,
+              "line": "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+              "raw_token": "11555962.0",
+              "context_lines": [
+                "Créances clients Note 11 25 871 624 16 452 792",
+                "Autres actifs courants Note 11 5 360 017 8 254 319",
+                "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                "Actifs courants 77 996 633 73 324 937",
+                "Total actif 171 791 777 159 150 851"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                "line_index": 4,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "unit_label": "en milliers de FCFA",
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_version": null,
+              "parser_rule": null
+            }
+          ],
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "source_multiplier": 1000,
+          "input_rounding_abs_fcfa": 500.0,
+          "candidate_groups": [
+            {
+              "value": 11555962000,
+              "value_kind": "fcfa",
+              "occurrences": 1,
+              "pages": [
+                2
+              ],
+              "candidate_signature": null,
+              "accounting_scope": "NON_PROUVE",
+              "framework": "IFRS",
+              "currency": null,
+              "component": null,
+              "basis": null,
+              "eligible": true,
+              "selected": true
+            }
+          ],
+          "value_fcfa": 11555962000,
+          "confidence": "extraction_unique"
+        }
+      },
+      "colonnes": {
+        "0": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 208794461000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+                "raw_token": "208794461.0",
+                "context_lines": [
+                  "En milliers de FCFA",
+                  "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                  "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+                  "Achats consommés Note 23 - 131 928 805 - 101 165 570",
+                  "Marge brute 76 865 656 57 623 467"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                  "line_index": 3,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 208794461000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 208794461000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 21206399000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 3,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Résultat net 21 206 399 8 401 729",
+                "raw_token": "21206399.0",
+                "context_lines": [
+                  "Resultat avant impot 25 662 748 9 655 493",
+                  "Charge/Produit d'impot sur les sociétés Note 31 - 4 456 349 - 1 253 764",
+                  "Résultat net 21 206 399 8 401 729",
+                  "Compte de résultat par action",
+                  "Resultat par action 31-déc-21 31-déc-20"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                  "line_index": 3,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 4,
+                "line": "Résultat net de la période 21 206 399 8 401 729",
+                "raw_token": "21206399.0",
+                "context_lines": [
+                  "31-déc-21 31-déc-20",
+                  "En milliers de FCFA",
+                  "Résultat net de la période 21 206 399 8 401 729",
+                  "I. Eléments ultérieurement recyclables en compte de résultat:",
+                  "Variation de juste valeur des instruments de couverture -1 595 804 1 134 007"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "31-déc-21 31-déc-20",
+                  "line_index": 2,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 4,
+                "line": "Résultat net 21 206 399 8 401 729",
+                "raw_token": "21206399.0",
+                "context_lines": [
+                  "Tableau des flux de trésorerie",
+                  "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "Résultat net 21 206 399 8 401 729",
+                  "Elimination des amortissements et provisions 7 954 271 8 349 462",
+                  "Elimination des profits/pertes de réévaluation (juste valeur) 20 222 1 183 114"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "31-déc-21 31-déc-20",
+                  "line_index": 2,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 21206399000,
+                "value_kind": "fcfa",
+                "occurrences": 3,
+                "pages": [
+                  3,
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 21206399000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 99983963000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Capitaux propres 99 983 963 84 004 628",
+                "raw_token": "99983963.0",
+                "context_lines": [
+                  "Notes 31-déc-21 31-déc-20",
+                  "PASSIFS",
+                  "Capitaux propres 99 983 963 84 004 628",
+                  "Capital social Note 14 14 593 621 14 593 621",
+                  "Reserves Note 15 64 183 942 61 009 278"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 99983963000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 99983963000,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 171791777000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Total actif 171 791 777 159 150 851",
+                "raw_token": "171791777.0",
+                "context_lines": [
+                  "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                  "Actifs courants 77 996 633 73 324 937",
+                  "Total actif 171 791 777 159 150 851",
+                  "Notes 31-déc-21 31-déc-20",
+                  "PASSIFS"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 2,
+                "line": "Total passif 171 791 777 159 150 850",
+                "raw_token": "171791777.0",
+                "context_lines": [
+                  "Autres passifs courants Note 20 10 629 482 1 72 093",
+                  "Passifs courants 45 158 893 49 515 172",
+                  "Total passif 171 791 777 159 150 850"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 171791777000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 171791777000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "dividendes_verses": {
+            "label": "Dividendes versés (flux)",
+            "value": -3757027000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 4,
+                "line": "Dividendes versés -3 757 027 0",
+                "raw_token": "-3757027.0",
+                "context_lines": [
+                  "Cession d'immobilisations 68 547 171 473",
+                  "Total flux net provenant des (affecté aux) investissements -14 560 934 -5 559 992",
+                  "Dividendes versés -3 757 027 0",
+                  "Emissions d'emprunts 0 16 582 517",
+                  "Remboursements d'emprunts -7 723 593 -6 957 787"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "31-déc-21 31-déc-20",
+                  "line_index": 2,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": -3757027000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": -3757027000,
+            "confidence": "extraction_unique"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 2826842000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                "raw_token": "2826842.0",
+                "context_lines": [
+                  "Créances clients Note 11 25 871 624 16 452 792",
+                  "Autres actifs courants Note 11 5 360 017 8 254 319",
+                  "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                  "Actifs courants 77 996 633 73 324 937",
+                  "Total actif 171 791 777 159 150 851"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 2826842000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 2826842000,
+            "confidence": "extraction_unique"
+          }
+        },
+        "1": {
+          "chiffre_affaires": {
+            "label": "Chiffre d'affaires",
+            "value": 158789037000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+                "raw_token": "158789037.0",
+                "context_lines": [
+                  "En milliers de FCFA",
+                  "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                  "Chiffre d'affaires Note 22 208 794 461 158 789 037",
+                  "Achats consommés Note 23 - 131 928 805 - 101 165 570",
+                  "Marge brute 76 865 656 57 623 467"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                  "line_index": 3,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 158789037000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  3
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 158789037000,
+            "confidence": "extraction_unique"
+          },
+          "resultat_net": {
+            "label": "Résultat net",
+            "value": 8401729000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 3,
+            "evidence": [
+              {
+                "page": 3,
+                "line": "Résultat net 21 206 399 8 401 729",
+                "raw_token": "8401729.0",
+                "context_lines": [
+                  "Resultat avant impot 25 662 748 9 655 493",
+                  "Charge/Produit d'impot sur les sociétés Note 31 - 4 456 349 - 1 253 764",
+                  "Résultat net 21 206 399 8 401 729",
+                  "Compte de résultat par action",
+                  "Resultat par action 31-déc-21 31-déc-20"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20",
+                  "line_index": 3,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 4,
+                "line": "Résultat net de la période 21 206 399 8 401 729",
+                "raw_token": "8401729.0",
+                "context_lines": [
+                  "31-déc-21 31-déc-20",
+                  "En milliers de FCFA",
+                  "Résultat net de la période 21 206 399 8 401 729",
+                  "I. Eléments ultérieurement recyclables en compte de résultat:",
+                  "Variation de juste valeur des instruments de couverture -1 595 804 1 134 007"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "31-déc-21 31-déc-20",
+                  "line_index": 2,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 4,
+                "line": "Résultat net 21 206 399 8 401 729",
+                "raw_token": "8401729.0",
+                "context_lines": [
+                  "Tableau des flux de trésorerie",
+                  "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "Résultat net 21 206 399 8 401 729",
+                  "Elimination des amortissements et provisions 7 954 271 8 349 462",
+                  "Elimination des profits/pertes de réévaluation (juste valeur) 20 222 1 183 114"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "31-déc-21 31-déc-20",
+                  "line_index": 2,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 8401729000,
+                "value_kind": "fcfa",
+                "occurrences": 3,
+                "pages": [
+                  3,
+                  4
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 8401729000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "capitaux_propres": {
+            "label": "Capitaux propres",
+            "value": 84004628000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Capitaux propres 99 983 963 84 004 628",
+                "raw_token": "84004628.0",
+                "context_lines": [
+                  "Notes 31-déc-21 31-déc-20",
+                  "PASSIFS",
+                  "Capitaux propres 99 983 963 84 004 628",
+                  "Capital social Note 14 14 593 621 14 593 621",
+                  "Reserves Note 15 64 183 942 61 009 278"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 84004628000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 84004628000,
+            "confidence": "extraction_unique"
+          },
+          "total_bilan": {
+            "label": "Total du bilan",
+            "value": 159150850000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 2,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Total passif 171 791 777 159 150 850",
+                "raw_token": "159150850.0",
+                "context_lines": [
+                  "Autres passifs courants Note 20 10 629 482 1 72 093",
+                  "Passifs courants 45 158 893 49 515 172",
+                  "Total passif 171 791 777 159 150 850"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              },
+              {
+                "page": 2,
+                "line": "Total actif 171 791 777 159 150 851",
+                "raw_token": "159150851.0",
+                "context_lines": [
+                  "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                  "Actifs courants 77 996 633 73 324 937",
+                  "Total actif 171 791 777 159 150 851",
+                  "Notes 31-déc-21 31-déc-20",
+                  "PASSIFS"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 159150850000,
+                "value_kind": "fcfa",
+                "occurrences": 2,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 159150850000,
+            "confidence": "recoupe_dans_le_document"
+          },
+          "tresorerie_equivalents": {
+            "label": "Trésorerie et équivalents",
+            "value": 11555962000,
+            "value_kind": "fcfa",
+            "unit_label": "en milliers de FCFA",
+            "source_amount_count": 2,
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "occurrences": 1,
+            "evidence": [
+              {
+                "page": 2,
+                "line": "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                "raw_token": "11555962.0",
+                "context_lines": [
+                  "Créances clients Note 11 25 871 624 16 452 792",
+                  "Autres actifs courants Note 11 5 360 017 8 254 319",
+                  "Trésorerie et équivalents de trésorerie Note 13 2 826 842 11 555 962",
+                  "Actifs courants 77 996 633 73 324 937",
+                  "Total actif 171 791 777 159 150 851"
+                ],
+                "column_header": {
+                  "years": [
+                    2021,
+                    2020
+                  ],
+                  "evidence_line": "En milliers de FCFA Notes 31-déc-21 31-déc-20",
+                  "line_index": 4,
+                  "source": "EN_TETE_MEME_LIGNE"
+                },
+                "unit_label": "en milliers de FCFA",
+                "extraction_method": "texte_natif",
+                "ocr_confidence": null,
+                "parser_version": null,
+                "parser_rule": null
+              }
+            ],
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "source_multiplier": 1000,
+            "input_rounding_abs_fcfa": 500.0,
+            "candidate_groups": [
+              {
+                "value": 11555962000,
+                "value_kind": "fcfa",
+                "occurrences": 1,
+                "pages": [
+                  2
+                ],
+                "candidate_signature": null,
+                "accounting_scope": "NON_PROUVE",
+                "framework": "IFRS",
+                "currency": null,
+                "component": null,
+                "basis": null,
+                "eligible": true,
+                "selected": true
+              }
+            ],
+            "value_fcfa": 11555962000,
+            "confidence": "extraction_unique"
+          }
+        }
+      },
+      "_per_share_observations": {
+        "parser_version": "eps-evidence-v2.1.1",
+        "eps": [
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 0.83,
+            "raw_token": "0,830",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DILUE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2021,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+              "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 29,
+              "line_original": "Resultat par action 31-déc-21 31-déc-20 | Dilué 0,830 0,329",
+              "raw_token": "0,830",
+              "context_lines": [
+                "Compte de résultat par action",
+                "Resultat par action 31-déc-21 31-déc-20",
+                "Dilué 0,830 0,329",
+                "Non dilué 0,830 0,329"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+                "line_index": 16,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 0.329,
+            "raw_token": "0,329",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DILUE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2020,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+              "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 29,
+              "line_original": "Resultat par action 31-déc-21 31-déc-20 | Dilué 0,830 0,329",
+              "raw_token": "0,329",
+              "context_lines": [
+                "Compte de résultat par action",
+                "Resultat par action 31-déc-21 31-déc-20",
+                "Dilué 0,830 0,329",
+                "Non dilué 0,830 0,329"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+                "line_index": 16,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 0.83,
+            "raw_token": "0,830",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2021,
+            "year_offset_from_document": 0,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 0,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 30,
+              "line_original": "Resultat par action 31-déc-21 31-déc-20 | Non dilué 0,830 0,329",
+              "raw_token": "0,830",
+              "context_lines": [
+                "Resultat par action 31-déc-21 31-déc-20",
+                "Dilué 0,830 0,329",
+                "Non dilué 0,830 0,329"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+                "line_index": 16,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          },
+          {
+            "kind": "BPA_PUBLIE",
+            "value": 0.329,
+            "raw_token": "0,329",
+            "token_repair": null,
+            "published_decimals": 3,
+            "is_dash": false,
+            "currency": "FCFA",
+            "currency_source": "LIGNE_OU_CONTEXTE",
+            "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+            "page_monetary_scale_multiplier": 1000,
+            "page_monetary_scale_label": "milliers",
+            "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+            "per_share_unit_explicit": false,
+            "basis": "DE_BASE",
+            "component": "TOTAL",
+            "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+            "accounting_scope": "NON_PROUVE",
+            "accounting_scope_source": "AUCUNE",
+            "framework": "IFRS",
+            "target_exercice": 2020,
+            "year_offset_from_document": 1,
+            "column_year_source": "EN_TETE_DE_COLONNES",
+            "physical_column_index": 1,
+            "trailing_slots_ignored": 0,
+            "source_kind": "ETAT_OU_NOTE",
+            "eligible_fcfa_total_basic": false,
+            "ineligibility_reasons": [
+              "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+            ],
+            "evidence": {
+              "page": 3,
+              "line_index_on_page": 30,
+              "line_original": "Resultat par action 31-déc-21 31-déc-20 | Non dilué 0,830 0,329",
+              "raw_token": "0,329",
+              "context_lines": [
+                "Resultat par action 31-déc-21 31-déc-20",
+                "Dilué 0,830 0,329",
+                "Non dilué 0,830 0,329"
+              ],
+              "column_header": {
+                "years": [
+                  2021,
+                  2020
+                ],
+                "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+                "line_index": 16,
+                "source": "EN_TETE_MEME_LIGNE"
+              },
+              "extraction_method": "texte_natif",
+              "ocr_confidence": null,
+              "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+              "parser_version": "eps-evidence-v2.1.1"
+            }
+          }
+        ],
+        "shares": [],
+        "numerators": [],
+        "ignored": []
+      },
+      "_content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [],
+        "frameworks_present": [
+          "IFRS"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 4,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "_page_contexts": [
+        {
+          "page": 1,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "NON_PROUVE",
+          "framework_source": "AUCUNE",
+          "framework_evidence": [],
+          "statement_kinds": [],
+          "heading_excerpt": "ETATS FINANCIERS 1ER JANVIER 2021 - 31 DECEMBRE 2021 ____________________________________________ Société Africaine de Plantations d'Hévéas Société anonyme avec conseil d'administration Au capital social de 14.593.620.855 FCFA Siège social : Abidjan - Treichville RCCM Abidjan N°CI-ABJ-1962-B-2059 ***"
+        },
+        {
+          "page": 2,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "BILAN"
+          ],
+          "heading_excerpt": "Toutes les données présentées dans ce document sont en milliers de Francs CFA, sauf indication contraire. Etat de la situation financière SAPH - BILAN IFRS - 31 décembre 2021 En milliers de FCFA Notes 31-déc-21 31-déc-20 ACTIFS Immobilisations incorporelles Note 4 26 511 52 102 Ecarts d'acquisition Note 5 6 107 616 6 1"
+        },
+        {
+          "page": 3,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "PAGE_OU_SECTION",
+          "framework_evidence": [
+            "ifrs"
+          ],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT",
+            "BPA_OU_NOTE_BPA"
+          ],
+          "heading_excerpt": "Compte de résultat SAPH - COMPTE DE RESULTAT IFRS - 31 décembre 2021 En milliers de FCFA COMPTE DE RESULTAT Notes 31-déc-21 31-déc-20 Chiffre d'affaires Note 22 208 794 461 158 789 037 Achats consommés Note 23 - 131 928 805 - 101 165 570 Marge brute 76 865 656 57 623 467 Charges de personnel Note 24 - 21 312 920 - 20 8"
+        },
+        {
+          "page": 4,
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "accounting_scope_evidence": [],
+          "framework": "IFRS",
+          "framework_source": "SECTION_PRECEDENTE",
+          "framework_evidence": [],
+          "statement_kinds": [
+            "COMPTE_DE_RESULTAT"
+          ],
+          "heading_excerpt": "Etat du résultat global SAPH - ETAT DU RESULTAT GLOBAL 31-déc-21 31-déc-20 En milliers de FCFA Résultat net de la période 21 206 399 8 401 729 I. Eléments ultérieurement recyclables en compte de résultat: Variation de juste valeur des instruments de couverture -1 595 804 1 134 007 Effet d'impôt 398 951 -283 502 Sous-to"
+        }
+      ]
+    },
+    "per_share_observations": {
+      "parser_version": "eps-evidence-v2.1.1",
+      "eps": [
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 0.83,
+          "raw_token": "0,830",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DILUE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2021,
+          "year_offset_from_document": 0,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 29,
+            "line_original": "Resultat par action 31-déc-21 31-déc-20 | Dilué 0,830 0,329",
+            "raw_token": "0,830",
+            "context_lines": [
+              "Compte de résultat par action",
+              "Resultat par action 31-déc-21 31-déc-20",
+              "Dilué 0,830 0,329",
+              "Non dilué 0,830 0,329"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+              "line_index": 16,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 0.329,
+          "raw_token": "0,329",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DILUE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2020,
+          "year_offset_from_document": 1,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE",
+            "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 29,
+            "line_original": "Resultat par action 31-déc-21 31-déc-20 | Dilué 0,830 0,329",
+            "raw_token": "0,329",
+            "context_lines": [
+              "Compte de résultat par action",
+              "Resultat par action 31-déc-21 31-déc-20",
+              "Dilué 0,830 0,329",
+              "Non dilué 0,830 0,329"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+              "line_index": 16,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 0.83,
+          "raw_token": "0,830",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2021,
+          "year_offset_from_document": 0,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 0,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 30,
+            "line_original": "Resultat par action 31-déc-21 31-déc-20 | Non dilué 0,830 0,329",
+            "raw_token": "0,830",
+            "context_lines": [
+              "Resultat par action 31-déc-21 31-déc-20",
+              "Dilué 0,830 0,329",
+              "Non dilué 0,830 0,329"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+              "line_index": 16,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        },
+        {
+          "kind": "BPA_PUBLIE",
+          "value": 0.329,
+          "raw_token": "0,329",
+          "token_repair": null,
+          "published_decimals": 3,
+          "is_dash": false,
+          "currency": "FCFA",
+          "currency_source": "LIGNE_OU_CONTEXTE",
+          "unit_label": "valeur brute sous échelle de page en milliers de FCFA, sans unité par action explicite",
+          "page_monetary_scale_multiplier": 1000,
+          "page_monetary_scale_label": "milliers",
+          "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+          "per_share_unit_explicit": false,
+          "basis": "DE_BASE",
+          "component": "TOTAL",
+          "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+          "accounting_scope": "NON_PROUVE",
+          "accounting_scope_source": "AUCUNE",
+          "framework": "IFRS",
+          "target_exercice": 2020,
+          "year_offset_from_document": 1,
+          "column_year_source": "EN_TETE_DE_COLONNES",
+          "physical_column_index": 1,
+          "trailing_slots_ignored": 0,
+          "source_kind": "ETAT_OU_NOTE",
+          "eligible_fcfa_total_basic": false,
+          "ineligibility_reasons": [
+            "ECHELLE_MONETAIRE_DE_PAGE_SANS_UNITE_PAR_ACTION_EXPLICITE"
+          ],
+          "evidence": {
+            "page": 3,
+            "line_index_on_page": 30,
+            "line_original": "Resultat par action 31-déc-21 31-déc-20 | Non dilué 0,830 0,329",
+            "raw_token": "0,329",
+            "context_lines": [
+              "Resultat par action 31-déc-21 31-déc-20",
+              "Dilué 0,830 0,329",
+              "Non dilué 0,830 0,329"
+            ],
+            "column_header": {
+              "years": [
+                2021,
+                2020
+              ],
+              "evidence_line": "Resultat par action 31-déc-21 31-déc-20",
+              "line_index": 16,
+              "source": "EN_TETE_MEME_LIGNE"
+            },
+            "extraction_method": "texte_natif",
+            "ocr_confidence": null,
+            "parser_rule": "fr_resultat_par_action_sans_accent+sous_ligne",
+            "parser_version": "eps-evidence-v2.1.1"
+          }
+        }
+      ],
+      "shares": [],
+      "numerators": [],
+      "ignored": []
+    },
+    "document": {
+      "url": "https://www.brvm.org/sites/default/files/20220415_-_etats_financiers_ifrs_exercice_2021_-_saph_ci.pdf",
+      "filename": "20220415_-_etats_financiers_ifrs_exercice_2021_-_saph_ci.pdf",
+      "label": "Etats financiers ifrs exercice 2021 saph ci",
+      "link_text": "Télécharger",
+      "doc_type_filename": "etats_financiers",
+      "published_date": "2022-04-15",
+      "filename_exercice": 2021,
+      "filename_exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+      "content_exercice": 2021,
+      "content_exercice_status": "DEDUIT_DES_EN_TETES_DE_COLONNES",
+      "content_exercice_evidence": [],
+      "effective_exercice": 2021,
+      "period": {
+        "period_kind": "ANNUEL_OU_NON_PROUVE",
+        "interim_markers": [],
+        "filename_markers": [],
+        "content_title_markers": [],
+        "selection_status": "CANDIDAT_ANNUEL_SOUS_RESERVE_DES_AUTRES_CONTROLES"
+      },
+      "identity": {
+        "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+        "expected_ticker": "SPHC",
+        "best_ticker": "SPHC",
+        "expected_score": 90,
+        "best_other_ticker": null,
+        "best_other_score": 0,
+        "scores": {
+          "SPHC": 90
+        },
+        "evidence": [
+          {
+            "phrase": "saph ci",
+            "ticker": "SPHC",
+            "occurrences_capped": 3,
+            "score": 12,
+            "zone": "nom_fichier",
+            "page": null,
+            "weight": 3,
+            "weighted_score": 36
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 2,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 3,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "en_tetes_premieres_pages",
+            "page": 4,
+            "weight": 2,
+            "weighted_score": 12
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 2,
+            "weight": 1,
+            "weighted_score": 6
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 3,
+            "weight": 1,
+            "weighted_score": 6
+          },
+          {
+            "phrase": "saph",
+            "ticker": "SPHC",
+            "occurrences_capped": 2,
+            "score": 6,
+            "zone": "texte_premieres_pages",
+            "page": 4,
+            "weight": 1,
+            "weighted_score": 6
+          }
+        ],
+        "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+        "classifier_version": "document-selection-v2.0.0"
+      },
+      "content_classification": {
+        "classifier_version": "document-selection-v2.0.0",
+        "scopes_present": [],
+        "frameworks_present": [
+          "IFRS"
+        ],
+        "has_primary_financial_statements": true,
+        "has_balance_sheet": true,
+        "has_income_statement": true,
+        "has_auditor_report": false,
+        "auditor_report_without_detected_statements": false,
+        "numeric_pages": 4,
+        "content_status": "ETATS_PRIMAIRES_DETECTES"
+      },
+      "scope_hint_filename": "NON_PROUVE",
+      "framework_hint_filename": "IFRS",
+      "selection_status_filename": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+      "selection_rejection": null,
+      "version_label": "NON_PRECISE",
+      "version_markers": [],
+      "filename_markers": [],
+      "content_markers_first_pages": [],
+      "sha256": "10a0449bb094a1cf76206334adaca606eb2c83cf5ab07d9d4c5f67d12e558084",
+      "bytes": 1112456,
+      "cache": {
+        "status": "hit_par_url_et_nom",
+        "key": "a754dcdfdc3bf4c8-20220415_-_etats_financiers_ifrs_exercice_2021_-_saph_ci.pdf"
+      },
+      "page_selection": {
+        "pages_total": 4,
+        "pages_native_text_scanned": 4,
+        "pages_structured": 4,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 5172
+      },
+      "parser_versions": {
+        "eps_evidence": "eps-evidence-v2.1.1",
+        "document_classifier": "document-selection-v2.0.0"
+      }
+    },
+    "identity": {
+      "status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "expected_ticker": "SPHC",
+      "best_ticker": "SPHC",
+      "expected_score": 90,
+      "best_other_ticker": null,
+      "best_other_score": 0,
+      "scores": {
+        "SPHC": 90
+      },
+      "evidence": [
+        {
+          "phrase": "saph ci",
+          "ticker": "SPHC",
+          "occurrences_capped": 3,
+          "score": 12,
+          "zone": "nom_fichier",
+          "page": null,
+          "weight": 3,
+          "weighted_score": 36
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 2,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 3,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "en_tetes_premieres_pages",
+          "page": 4,
+          "weight": 2,
+          "weighted_score": 12
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 2,
+          "weight": 1,
+          "weighted_score": 6
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 3,
+          "weight": 1,
+          "weighted_score": 6
+        },
+        {
+          "phrase": "saph",
+          "ticker": "SPHC",
+          "occurrences_capped": 2,
+          "score": 6,
+          "zone": "texte_premieres_pages",
+          "page": 4,
+          "weight": 1,
+          "weighted_score": 6
+        }
+      ],
+      "method": "alias_phrases_longues_d_abord_sur_nom_et_premieres_pages",
+      "classifier_version": "document-selection-v2.0.0"
+    },
+    "content_exercice": 2021,
+    "effective_exercice": 2021,
+    "notes": [],
+    "sha256": "10a0449bb094a1cf76206334adaca606eb2c83cf5ab07d9d4c5f67d12e558084",
+    "extraction": {
+      "method": "texte_natif",
+      "native_text_characters": 5172,
+      "page_selection": {
+        "pages_total": 4,
+        "pages_native_text_scanned": 4,
+        "pages_structured": 4,
+        "selected_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "selection_method": "TOUTES_LES_PAGES_JUSQU_A_80",
+        "native_text_characters_all_pages": 5172
+      },
+      "document_identity_status": "CONFIRME_PAR_LE_CONTENU_OU_LE_NOM",
+      "selection_rejection": null,
+      "ocr": {
+        "available": null,
+        "attempted": false,
+        "used": false,
+        "cache_status": "non_appele",
+        "pages_ocrees": 0,
+        "mean_confidence": null,
+        "truncated": false
+      }
+    }
+  },
+  "document_sha256": "10a0449bb094a1cf76206334adaca606eb2c83cf5ab07d9d4c5f67d12e558084",
+  "extraction_seconds": 0.514
+}

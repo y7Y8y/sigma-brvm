@@ -1,0 +1,351 @@
+
+####################################################################################################
+CIEC CIE COTE D'IVOIRE
+
+DOC 2016 | etats_financiers | Etats financiers exercice2016 cie | pages=1 chars=3895
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2016 | etats_financiers | Etats financiers exercice2016 cie 1 | pages=1 chars=3895
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2017 | etats_financiers | Etats financiers 2017 cie | pages=1 chars=4443
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2017 | etats_financiers | Etats financiers 2017 cie corriges | pages=0 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2018 | etats_financiers | Etats financiers exercice 2018 cie ci | pages=1 chars=5030
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2018 | etats_financiers | Etats financiers exercice 2018 cie ci v2 | pages=0 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2019 | etats_financiers | Etats financiers certifies exercice 2019 cie ci | pages=1 chars=5187
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2019 | etats_financiers | Etats financiers exercice 2019 cie ci | pages=1 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2020 | etats_financiers | Etats financiers consolides ifrs exercice 2020 cie ci 0 | pages=1 chars=6105
+ p1: Nombre d'actions en circulation 56 000 000 56 000 000
+ p1: Résultat par action en FCFA 307 140 Comptes courants d'actionnaires -299 0
+ p1: Résultat par action dilué en FCFA 307 140 Dividendes versés par CIE -6 532 -4 930
+
+DOC 2020 | etats_financiers | Etats financiers exercice 2020 cie ci | pages=1 chars=4611
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2021 | etats_financiers | Etats financiers ifrs exercice 2021 cie | pages=1 chars=6614
+ p1: Nombre d'actions en circulation 56 000 000 56 000 000
+ p1: Résultat par action en FCFA 188 307 Comptes courants d'actionnaires (13) (299)
+ p1: Résultat par action dilué en FCFA 188 307 Dividendes versés par CIE (10 400) (6 532)
+
+DOC 2021 | etats_financiers | Etats financiers syscohada exercice 2021 cie | pages=1 chars=6180
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2022 | etats_financiers | Etats financiers ifrs exercice 2022 cie ci | pages=1 chars=6345
+ p1: Nombre d'actions en circulation 56 000 000 56 000 000 Augmentation de Capital 40
+ p1: Résultat par action en FCFA 183 188 Comptes courants d'actionnaires 2 (13)
+ p1: Résultat par action dilué en FCFA 183 188 Dividendes versés par CIE (9 514) (10 400)
+
+DOC 2022 | etats_financiers | Etats financiers syscohada exercice 2022 cie ci | pages=1 chars=4911
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2023 | etats_financiers | Etats financiers syscohada exercice 2023 cie ci | pages=3 chars=12793
+ p3: Nombre d'actions en circulation 56 000 000 56 000 000 Augmentation de Capital 0 40
+ p3: Résultat par action en FCFA 205 183 Comptes courants d'actionnaires (8) 2
+ p3: Résultat par action dilué en FCFA 205 183 Dividendes versés par CIE (9 816) (9 514)
+
+DOC 2023 | etats_financiers | Etats financiers exercice 2023 cie ci | pages=4 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2024 | etats_financiers | Etats financiers norme syscohada exercice 2024 cie ci | pages=3 chars=12751
+ p3: Nombre d'actions en circulation 56 000 000 56 000 000 Augmentation de Capital 0 0
+ p3: Résultat par action en FCFA 188 205 Comptes courants d'actionnaires (8)
+ p3: Résultat par action dilué en FCFA 188 205 Dividendes versés par CIE (10 637) (9 816)
+
+DOC 2025 | etats_financiers | Etats financiers syscohada et ifrs exercice 2025 cie ci | pages=3 chars=12848
+ p3: Nombre d'actions en circulation 56 000 000 56 000 000 Comptes courants d'actionnaires
+ p3: Résultat par action en FCFA 234 188 Dividendes versés par CIE (10 077) (10 637)
+ p3: Résultat par action dilué en FCFA 234 188 Transactions avec les détenteurs d'intérêts ne conférant pas le contrôle
+
+####################################################################################################
+SNTS SONATEL SENEGAL
+
+DOC 2017 | autre | Presentation resultats financiers 2017 sonatel | pages=81 chars=71349
+ p41: RESULTAT NET (part de l'entreprise consolidante) 1 72 454 1 86 331
+ p41: PART DE L'ENTREPRISE CONSOLIDANTE 6 26 119 6 41 329
+ p42: PART DE L'ENTREPRISE CONSOLIDANTE 172 454 186 331
+ p59: - Résultat part de l'entreprise consolidante 172 454 186 331
+ p74: Les stocks sont évalués au coût moyen pondéré des
+ p80: dividende net de 1.500 F.CFA par action sera mis en paiement à compter
+
+DOC 2018 | rapport_annuel | Rapport annuel 2018 sonatel | pages=276 chars=422887
+ p14: Le droit de participer aux Assemblées est Quel que soit le nombre d’actions qu’il détient, tout
+ p112: par action
+ p150: Resultat net (Part de l’entreprise consolidante) 172 467 171 801 172 454
+ p150: Part de l’entreprise consolidante 626 561 625 466 626 119
+ p151: Part de l’entreprise consolidante 172 467 171 801 172 454
+ p168: - Résultat part de l’entreprise consolidante 172 467 172 454
+ p224: Actions ordinaires 100 000 000 100 000 000 100 000 000 100 000 000 100 000 000
+ p225: Maintien de la politique de distribution de dividende : 1667 par action
+ p238: Les stocks sont évalués au coût moyen pondéré des achats.
+ p271: FCFA par action sera mis en paiement à compter du 14 mai 2019.
+
+DOC 2021 | autre | Rapport de gestion exercice 2021 sonatel sn | pages=12 chars=19314
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2021 | autre | Resultats financiers 2021 sonatel sn 0 | pages=47 chars=27636
+ p44: Après déduction de la retenue à la source de 10 % au titre de l’IRVM, le dividende net de 1.400 FCFA par action sera
+
+DOC 2022 | autre | Comfi groupe sonatel resultats financiers 2022 fr v finale brvm | pages=26 chars=20876
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2023 | etats_financiers | Etats financiers exercice 2023 sonatel sn | pages=27 chars=24252
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2023 | resultats_consolides | Resultats consolides exercice 2023 sonatel sn 0 | pages=4 chars=9468
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2024 | etats_financiers | Etats financiers exercice 2024 sonatel sn | pages=33 chars=25854
+ p25: Résultat net par actions attribuable aux propriétaires de la maison mère
+
+DOC 2024 | rapport_activites_annuel | Rapport dactivites annuel exercice 2024 sonatel sn | pages=103 chars=429157
+ p7: Quel que soit le nombre d’actions qu’il détient,
+ p29: par action
+ p34: Résultat net par actions attribuable aux propriétaires de la
+ p40: IAS 2 Stocks Evaluation des stocks selon le coût unitaire moyen pondéré ■ niveau 1 : cours du marché (non ajustés) sur des
+ p45: Les impôts différés sont constatés sur toutes Note 4.11 Résultat par action
+ p45: comptables des actifs et des passifs et leurs les résultats par action de base et dilués sont
+ p45: Les actifs d’impôts différés ne sont comptabilisés Nombre d’actions
+ p45: que lorsque leur recouvrement est probable. Le nombre moyen pondéré d’actions utilisé pour
+ p45: Note 4.10 Charges d’impôts et preuve d’impôts consolidés le calcul du résultat net par action de base et du
+ p45: Nombre moyen pondéré d’actions ordinaires en circulation 100 000 000 100 000 000
+ p45: Nombre moyen pondéré d’actions en circulation et dilutives 100 000 000 100 000 000
+ p45: Résultat par action
+ p45: Le résultat par action est ainsi obtenu :
+ p45: Résultat net par action de base 3 288 2 794
+ p45: Eléments de réconciliation Résultat net par action dilué 3 288 2 794
+ p45: La norme IAS 33-Résultat par action s’applique aux ou d’un autre organisme de régulation, aux fins
+ p45: états financiers individuels d’une entité et aux états d’émettre des actions ordinaires sur un marché
+ p45: ■ dont les actions ordinaires ou les actions Le Groupe Sonatel présente un résultat par action
+ p45: ordinaires potentielles sont négociées sur un de base et un résultat par action dilué. Le Groupe
+ p49: déterminé selon la méthode du coût moyen pondéré. Personnel, créances 1 093 1 093 2477 1376
+ p74: Actions ordinaires 0 0 0 0 100 000 000
+ p101: par action sera mis en paiement à compter qui statuera en 2028 sur les comptes de l’exercice Spécial des Commissaires aux Comptes sur les ■ d écide que :
+ p101: clos le 31 décembre 2027. de 1 318 704 actions ordinaires existantes prélèvement obligatoire, à concurrence du
+
+DOC 2025 | etats_financiers | Etats financiers 2025 et attestation des cac sonatel sn | pages=31 chars=26452
+ p20: Résultat net par actions attribuable aux propriétaires de la maison mère
+
+####################################################################################################
+SDSC AFRICA GLOBAL LOGISTICS COTE D'IVOIRE
+
+DOC 2016 | autre | Etats financier exercice 2016 bollore | pages=1 chars=4411
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2017 | autre | Bollore trans.log etats financier 2017 | pages=2 chars=4471
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2018 | etats_financiers | Etats financiers exercice 2018 btl | pages=1 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2018 | rapport_annuel | Rapport annuel 2018 bollore | pages=69 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2019 | etats_financiers | Etats financiers exercice 2019 comptes consolides bollore transport logistics | pages=41 chars=123171
+ p3: Résultat par action (en francs CFA) :
+ p8: Note 9 - Capitaux propres et résultat par action ............................................................................................... 29
+ p8: 9.2 - Résultat par action ..................................................................................................................................................................... 29
+ p20: Au 1er janvier 2019, le taux d’emprunt marginal moyen pondéré des dettes locatives s’établit à 8,34%.
+ p29: Note 9 - Capitaux propres et résultat par action
+ p29: de francs CFA, divisé en 54 435 300 actions ordinaires d'un nominal de 200 francs CFA chacune et entièrement libérées.
+ p29: Au cours de l’exercice clos le 31 décembre 2019, le nombre moyen pondéré d'actions ordinaires en circulation s'est élevé à
+ p29: 54 435 300 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 435 300 actions.
+ p29: CFA par actions.
+ p29: 9.2 - Résultat par action
+ p29: Le tableau ci-dessous fournit le détail des éléments utilisés pour calculer les résultats par action de base et dilué présentés
+ p29: Résultat net part du Groupe, utilisé pour le calcul du résultat par action - de base 11 030 15 249
+ p29: Résultat net part du Groupe, utilisé pour le calcul du résultat par action - dilué 11 030 15 249
+ p29: Nombre moyen pondéré de titres en circulation - de base 54 435 300 54 435 300
+ p29: Nombre moyen pondéré de titres en circulation et potentiels - après dilution 54 435 300 54 435 300
+
+DOC 2019 | etats_financiers | Etats financiers exercice 2019 bollore transport logistics | pages=1 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2020 | etats_financiers | Etats financiers exercice 2020 bollore transport logistics ci 1 | pages=1 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2020 | etats_financiers | Btl ci 2020 etats financiers de synthese rapport general des cac | pages=12 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2021 | etats_financiers | Etats financiers exercice 2021 bollore transport logistics ci | pages=1 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2022 | etats_financiers | Rapport des commissaires aux comptes etats financiers consolides exercice 2022 agl cote divoire | pages=44 chars=99132
+ p3: Résultat par action (en francs CFA) : 8
+ p8: Note 8 - Capitaux propres et résultat par action ......................................................................................................... 27
+ p9: 8.2 - Résultat par action.......................................................................................................................................... 27
+ p27: Note 8 - Capitaux propres et résultat par action
+ p27: francs CFA, divisé en 54 435 300 actions ordinaires d'un nominal de 200 francs CFA chacune et entièrement libérées.
+ p27: Au cours de l’exercice clos le 31 décembre 2022, le nombre moyen pondéré d'actions ordinaires en circulation s'est élevé à
+ p27: 54 418 250 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 418 250 actions.
+ p27: CFA par action.
+ p27: Au 31 décembre 2022, le nombre d'actions d'autocontrôle détenues par la société AFRICA GLOBAL LOGISTICS (AGL)Côte d’Ivoire
+ p27: 8.2 - Résultat par action
+ p27: Le tableau ci-dessous fournit le détail des éléments utilisés pour calculer les résultats par action de base et dilué présentés
+ p27: Résultat net part du Groupe, utilisé pour le calcul du résultat par action - de base 16 780 16 780
+ p27: Résultat net part du Groupe, utilisé pour le calcul du résultat par action - dilué 16 780 16 780
+ p27: Nombre moyen pondéré de titres en circulation - de base 54 418 250 54 418 250
+ p27: Nombre moyen pondéré de titres en circulation et potentiels - après dilution 54 418 250 54 418 250
+
+DOC 2022 | etats_financiers | Rapport des commissaires aux comptes ifrs etats financiers individuels exercice 2022 agl cote divoire | pages=40 chars=89180
+ p2: Note 11 : Capital et Résultat par action ............................................................................................................... 22
+ p5: Résultat par action
+ p5: ● Résultat de base par action 318 371
+ p5: ● Résultat dilué par action 318 371
+ p22: Au 31 décembre 2022, le nombre d'actions d'autocontrôle détenues par la société AFRICA GLOBAL LOGISTICS (AGL) Côte
+ p22: Note 11 : Capital et Résultat par action
+ p22: de francs CFA, divisé en 54 435 300 actions ordinaires d'un nominal de 200 francs CFA chacune et entièrement
+ p22: ▪ Résultat par action
+ p22: Résultat de base par action 318 371
+ p22: Résultat dilué par action 318 371
+ p22: Au cours de l’exercice clos le 31 décembre 2022, le nombre moyen pondéré d'actions ordinaires en circulation s'est
+ p22: élevé à 54 418 250 actions et le nombre moyen pondéré d'actions ordinaires et dilutives s'est élevé à 54 418 250
+ p22: Nombre moyen pondéré de titres en circulation - de base 54 410 300 54 418 250
+ p22: Nombre moyen pondéré de titres en circulation et potentiels - après dilution 54 410 300 54 418 250
+ p23: francs CFA par action.
+ p23: Au 31 décembre 2022, le nombre d'actions d'autocontrôle détenues par la société AFRICA GLOBAL LOGISTICS (AGL) Côte
+
+DOC 2023 | etats_financiers | Etats financiers exercice 2023 africa global logistics ci | pages=1 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2024 | etats_financiers | Etats financiers et rapport des cac exercice 2024 africa global logistics ci | pages=11 chars=20900
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2025 | etats_financiers | Etats financiers certifies exercice 2025 africa global logistics ci | pages=1 chars=64
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2025 | etats_financiers | Etats financiers exercice 2025 africa global logistics ci | pages=2 chars=4550
+ AUCUNE LIGNE BPA/ACTIONS
+
+####################################################################################################
+BOAC BANK OF AFRICA COTE D'IVOIRE
+
+DOC 2017 | etats_financiers | Boa ci etats financiers 31 decembre 2017 | pages=5 chars=6229
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2018 | etats_financiers | Boaci etats financiers 2018 provisoires | pages=5 chars=3455
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2018 | rapport_annuel | Rapport annuel 2018 boa cote divoire | pages=75 chars=48088
+ p8: Nombre d’actions : __________________________
+ p58: Nombre d'actions 20 000 000 20 000 000
+ p58: Dividende brut par action ( FCFA) 327,8 340,0
+ p58: Dividende net par action ( FCFA) 295,0 306,0
+ p70: 306 F CFA par action de 1.000 F CFA.
+
+DOC 2019 | etats_financiers | Etats financiers certifies 30 juin 2019 boa ci | pages=5 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2019 | etats_financiers | Etats financiers exercice 2019 boa ci | pages=3 chars=3442
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2020 | etats_financiers | Etats financiers exercice 2020 boa ci | pages=3 chars=3431
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2022 | etats_financiers | Etats financiers exercice 2022 boa ci | pages=39 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2023 | etats_financiers | Etats financiers exercice 2023 boa ci | pages=2 chars=3541
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2024 | etats_financiers | Etats financiers exercice 2024 boa ci | pages=2 chars=3571
+ AUCUNE LIGNE BPA/ACTIONS
+
+DOC 2025 | etats_financiers | Rapport des commissaires aux comptes et etats financiers annuels exercice 2025 boa ci | pages=53 chars=0
+ AUCUNE LIGNE BPA/ACTIONS
+
+####################################################################################################
+ETIT Ecobank Transnational Incorporated TOGO
+
+DOC 2017 | etats_financiers | Etats financiers 2017 ecobank ci | pages=7 chars=4750
+ p2: milliards de FCFA, (en hausse de 21% par rapport à l’exercice 2016), soit 2 049 FCFA brut par action.
+
+DOC 2018 | etats_financiers | Etats financiers 2018 ecobank tg 1 | pages=7 chars=5971
+ p1: Résultat net par action (en cents 1 .06 5 .90 0 .72 4 .01 -47% -47%
+
+DOC 2018 | etats_financiers | Etats financiers 2018 ecobank tg 2 | pages=6 chars=10307
+ p3: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):
+ p3: - Résultat de base par action 1.06 0 .72
+ p3: - Résultat dilué par action 1.06 0 .72
+ p3: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par
+ p3: Résultat de base par action 0.00 0 .00
+ p3: Résultat dilué par action 0.00 0 .00
+ p6: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2018 ( 2017 : 0 cents $EU ).
+
+DOC 2019 | etats_financiers | Etats financiers exercice 2019 eti tg | pages=14 chars=15886
+ p1: Résultat net par action (en cents $EU 0 ,78 4 ,56 0 ,74 4 ,11 -5% -11%
+ p11: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):
+ p11: - Résultat de base par action 0,78 0 ,74
+ p11: - Résultat dilué par action 0,78 0 ,74
+ p11: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par
+ p11: Résultat de base par action 0,01 0 ,00
+ p11: Résultat dilué par action 0,01 0 ,00
+ p14: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2019 ( 2018 : 0 cents $EU ).
+
+DOC 2021 | etats_financiers | Etats financiers exercice 2021 eti tg | pages=5 chars=11459
+ p1: Résultat net par action (en cents $EU / FCFA) 1 ,041 5 ,773 0 ,010 0 ,056 10564% 10172%
+ p2: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):
+ p2: - Résultat de base par action 1 ,041 0 ,010
+ p2: - Résultat dilué par action 1 ,041 0 ,010
+ p2: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):
+ p2: Résultat de base par action 0 ,004 0 ,007
+ p2: Résultat dilué par action 0 ,004 0 ,007
+ p5: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2020 ( 2019 : 0 cents $EU ).
+
+DOC 2021 | etats_financiers | Etats financiers audites exercice 2021 etit | pages=8 chars=20578
+ p1: Résultat net par action (en cents $EU / FCFA) 1 ,063 5 ,892 0 ,010 0 ,056 10785% 10385%
+ p1: Dividendes par action (en cents $EU ) 0,16
+ p5: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):
+ p5: - Résultat de base par action 1 ,063 0 ,010
+ p5: - Résultat dilué par action 1 ,063 0 ,010
+ p5: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):
+ p5: Résultat de base par action 0 ,004 0 ,007
+ p5: Résultat dilué par action 0 ,004 0 ,007
+ p8: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2020 ( 2019 : 0 cents $EU ).
+
+DOC 2023 | etats_financiers | Etats financiers exercice 2023 eti tg | pages=6 chars=17075
+ p1: Résultat net par action (en cents $EU / FCFA) 1 ,170 7 ,099 1 ,165 7 ,064 0% 0%
+ p3: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU par action):
+ p3: - Résultat de base par action 1 ,170 1 ,165
+ p3: - Résultat dilué par action 1 ,170 1 ,165
+ p3: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le Résultat net des activités arrêtées ou en cours de cession (exprimé en cents de dollars EU par action):
+ p3: Résultat de base par action - -
+ p3: Résultat dilué par action - -
+ p6: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2020 ( 2019 : 0 cents $EU ).
+
+DOC 2024 | etats_financiers | Etats financiers certifies par les commissaires aux comptes exercice 2024 eti tg | pages=7 chars=18942
+ p2: Résultat net par action (en cents $EU / Franc CFA) 1 ,35 8,23 1 ,17 7 ,10 16% 16%
+ p2: augmenté la valeur comptable tangible par action de 4 %, à 4,20 cents de dollar US.
+ p4: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et
+ p4: Franc CFA par action):
+ p4: - Résultat de base par action 1,355 8 ,2 1,170 7,1
+ p4: - Résultat dilué par action 1,355 8 ,2 1,170 7,1
+ p7: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2020 ( 2019 : 0 cents $EU ).
+
+DOC 2025 | etats_financiers | Etats financiers ifrs exercice 2025 eti tg | pages=6 chars=17649
+ p1: Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%
+ p3: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et
+ p3: Franc CFA par action):
+ p3: - Résultat de base par action 1.68 1 0.00 1.37 8 .00
+ p3: - Résultat dilué par action 1.68 1 0.00 1.37 8 .00
+ p6: USD) par action, sous réserve de l’approbation des actionnaires lors de l’Assemblée Générale Annuelle (AGO).
+ p6: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2020 ( 2019 : 0 cents $EU ).
+
+DOC 2025 | etats_financiers | Rapport des commissaires aux comptes sur les etats financiers annuels exercice 2025 eti tg | pages=7 chars=17340
+ p2: Résultat net par action (en cents $EU / Franc CFA) 1 .68 1 0.00 1 .37 8 .00 23% 25%
+ p4: Résultat net par action à attribuer aux actionnaires du Groupe durant l'exercice sur le résultat net des activités poursuivies (exprimé en cents de dollars EU et
+ p4: Franc CFA par action):
+ p4: - Résultat de base par action 1.68 1 0.00 1.37 8 .00
+ p4: - Résultat dilué par action 1.68 1 0.00 1.37 8 .00
+ p7: A la prochaine assemblée générale ordinaire, il ne sera pas proposé de dividende par action au titre de l'exercice 2020 ( 2019 : 0 cents $EU ).

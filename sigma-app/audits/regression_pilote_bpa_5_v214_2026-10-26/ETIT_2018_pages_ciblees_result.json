@@ -1,0 +1,2295 @@
+{
+  "method": "Pages structurées une par une, sans balayage texte des 324 pages; sélection reprise de la régression fermée 2026-10-24.",
+  "source_pdf": ".cache/regression-pilote-bpa-5-pdf/9a74fb755b5f3f3c-rapport_annuel_2018_ecobank_group.pdf",
+  "sha256": "294b40ebcacbb07de1d527d185a704bc802e602ec2b78a4fe05420ad3abda0de",
+  "pages_total": 324,
+  "selected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    9,
+    10,
+    174,
+    175,
+    176,
+    245,
+    246,
+    247,
+    260,
+    261,
+    262,
+    272,
+    273,
+    274,
+    299,
+    300,
+    301
+  ],
+  "parser_version": "eps-evidence-v2.1.4",
+  "page_contexts": [
+    {
+      "page": 1,
+      "accounting_scope": "NON_PROUVE",
+      "accounting_scope_source": "AUCUNE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "BUILDING AFRICA’S FINANCIAL FUTURE ECOBANK GROUP ANNUAL REPORT 2018"
+    },
+    {
+      "page": 2,
+      "accounting_scope": "NON_PROUVE",
+      "accounting_scope_source": "AUCUNE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": ""
+    },
+    {
+      "page": 3,
+      "accounting_scope": "NON_PROUVE",
+      "accounting_scope_source": "AUCUNE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "BUILDING AFRICA’S FINANCIAL FUTURE ECOBANK GROUP ANNUAL REPORT 2018"
+    },
+    {
+      "page": 4,
+      "accounting_scope": "NON_PROUVE",
+      "accounting_scope_source": "AUCUNE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": ""
+    },
+    {
+      "page": 5,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "accounting_scope_evidence": [
+        "consolidated financial statements"
+      ],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [
+        "SOMMAIRE_POSSIBLE"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT CONTENTS 05 Performance Highlights 08 Ecobank is the leading Pan-African Banking Institution 09 Business Segments 10 Our Pan-African Footprint 15 Board and Management Reports 16 Group Chairman’s Statement 22 Group Chief Executive’s Review 32 Consumer Bank 36 Commercial Bank 40 Corporate and "
+    },
+    {
+      "page": 8,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [
+        "BILAN",
+        "COMPTE_DE_RESULTAT"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT PERFORMANCE HIGHLIGHTS For the year ended 31 December (in millions of US dollars, except per share and ratio data) 2018 2017 Selected income statement data Operating income (net revenue) 1,825 1,831 Operating expenses 1,123 1,132 Operating profit before impairment losses & taxation 702 700 I"
+    },
+    {
+      "page": 9,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [
+        "BPA_OU_NOTE_BPA"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT Operating income (net revenue) Operating profit before Profit before tax1 ($m) impairment losses & taxation ($m) ($m) 789 2,280 738 735 700 702 520 2,106 1,972 1,831 436 1,825 288 205 (131) 2014 2015 2016 2017 2018 2014 2015 2016 2017 2018 2014 2015 2016 2017 2018 Net loans & advances to cus"
+    },
+    {
+      "page": 10,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT Ecobank is the leading Pan-African banking institution Founded in 1985 and headquartered in Lomé, Togo, Ecobank provides consumer and commercial banking, corporate and investment banking, and securities, wealth and asset management to over 19 million customers, ranging from individuals, smal"
+    },
+    {
+      "page": 174,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "accounting_scope_evidence": [
+        "consolidated financial statements"
+      ],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [
+        "RAPPORT_CAC"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT REPORT OF THE INDEPENDENT AUDITORS TO THE MEMBERS OF ECOBANK TRANSNATIONAL INCORPORATED We communicate with the audit committee and the directors regarding, among other matters, the planned scope and timing of the audit and significant audit findings, including any significant deficiencies i"
+    },
+    {
+      "page": 175,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [
+        "COMPTE_DE_RESULTAT",
+        "BPA_OU_NOTE_BPA"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT CONSOLIDATED INCOME STATEMENT (All amounts in thousands US dollar unless otherwise stated) For the year ended 31 December Notes 2018 2017 Interest income 7 1,528,410 1,570,320 Interest expense 7 (598,650) (593,001) Net interest income 929,760 977,319 Fee and commission income 8 507,434 469,5"
+    },
+    {
+      "page": 176,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "NON_PROUVE",
+      "framework_source": "AUCUNE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (All amounts in thousands of US dollars unless otherwise stated) For the year ended 31 December Notes 2018 2017 Profit for the year 328,649 228,534 Other comprehensive income: Items that may be subsequently reclassed to profit or loss: Exchange "
+    },
+    {
+      "page": 245,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "IFRS",
+      "framework_source": "PAGE_OU_SECTION",
+      "framework_evidence": [
+        "ifrs"
+      ],
+      "statement_kinds": [
+        "BILAN"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT 5.5 Fair value of financial assets and liabilities (v) Other assets The bulk of these financial assets have short term (less than (continued) 12 months) maturities and their amounts are a reasonable Management do not believe any greater disaggregation approximation of fair value of the items"
+    },
+    {
+      "page": 246,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "accounting_scope_evidence": [
+        "consolidated financial statements"
+      ],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (All amounts in thousands of US dollars unless otherwise stated) 31 December 2018 31 December 2017 Level 1 Level 2 Level 3 Level 1 Level 2 Level 3 Treasury and other eligible bills 701,994 1,126,257 – 965,646 753,331 — Trading financial assets 96,50"
+    },
+    {
+      "page": 247,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT 5.5 Fair value of financial assets and liabilities (continued) (c) Financial instrument classification Liabilities at fair value Equity FVTOCI through Liabilities Amortised FVTOCI - Debt Instruments – Equity profit or at amortised At 31 December 2018 cost FVTPL Instruments at FVTPL instrumen"
+    },
+    {
+      "page": 260,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "accounting_scope_evidence": [
+        "consolidated financial statements"
+      ],
+      "framework": "IFRS",
+      "framework_source": "PAGE_OU_SECTION",
+      "framework_evidence": [
+        "ifrs"
+      ],
+      "statement_kinds": [
+        "BILAN"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (All amounts in thousands of US dollars unless otherwise stated) 13 Impairment losses on loans and advances 2018 2017 Loans and advances to customers (Note 21) 810,656 441,733 • Specific allowance 558,747 385,697 • Collective allowance 251,909 56,03"
+    },
+    {
+      "page": 261,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [
+        "BPA_OU_NOTE_BPA"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT 16 Earnings per share Basic Basic earnings per share is calculated by dividing the net profit attributable to equity holders of the company by the weighted average number of ordinary shares in issue outstanding during the period. 2018 2017 Profit attributable to equity holders of the Company"
+    },
+    {
+      "page": 262,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "accounting_scope_evidence": [
+        "consolidated financial statements"
+      ],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (All amounts in thousands of US dollars unless otherwise stated) 17 Cash and balances with central banks 2018 2017 Cash in hand 656,785 576,862 Balances with central banks other than mandatory reserve deposits 1,011,451 895,316 Included in cash and "
+    },
+    {
+      "page": 272,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "accounting_scope_evidence": [
+        "consolidated financial statements"
+      ],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (All amounts in thousands of US dollars unless otherwise stated) 26 Investment in associates (continued) OLD MUTUAL OLD MUTUAL EB-ACCION EB-ACCION EB-ACCION At 31 December 2017 Life insurance General insurance Nigeria Ghana Cameroon Total Opening ne"
+    },
+    {
+      "page": 273,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT 27 Intangible assets (continued) The goodwill is arising on acquisitions in the following subsidiaries: At 31 December 2018 2017 Ecobank Nigeria (Oceanic Bank) 168,886 200,996 Ecobank Ghana (The Trust Bank) 8,384 9,155 Ecobank Rwanda 4,319 4,493 Ecobank Zimbabwe 6,550 6,550 SOFIPE 4,481 4,69"
+    },
+    {
+      "page": 274,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "PAGE_OU_SECTION",
+      "accounting_scope_evidence": [
+        "consolidated financial statements"
+      ],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (All amounts in thousands of US dollars unless otherwise stated) 28 Property and equipment Motor Land Furniture Construction Vehicles & Buildings & Equipment Installations in progress Total At 1 January 2017 Cost or Valuation 75,479 579,138 355,743 "
+    },
+    {
+      "page": 299,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT 45 Major business acquisitions There were no major business acquisitions in 2018. 46 Subsequent Events: Establishment of a local currency in Zimbabwe and possible change in functional currency The Reserve Bank of Zimbabwe (RBZ) through its Monetary Policy Statement issued on 20 February, 201"
+    },
+    {
+      "page": 300,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [
+        "BPA_OU_NOTE_BPA"
+      ],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT STATEMENT OF VALUE ADDED (All amounts in thousands of US dollars unless otherwise stated) Statement of value added Year ended 31 December (in thousands of US dollars) 2018 2017 Interest expenses paid (598,650) (593,001) Fee and commission expenses (62,993) (69,140) 1,825,972 1,832,153 Impair"
+    },
+    {
+      "page": 301,
+      "accounting_scope": "CONSOLIDE",
+      "accounting_scope_source": "SECTION_PRECEDENTE",
+      "accounting_scope_evidence": [],
+      "framework": "IFRS",
+      "framework_source": "SECTION_PRECEDENTE",
+      "framework_evidence": [],
+      "statement_kinds": [],
+      "heading_excerpt": "ECOBANK GROUP ANNUAL REPORT PARENT COMPANY’S FINANCIAL STATEMENTS (All amounts in thousands of US dollars unless otherwise stated) Statement of comprehensive income Year ended 31 December 2018 2017 Interest income 38,826 36,356 Finance cost (88,387) (55,502) Net interest income (49,561) (19,146) Net fees and commission"
+    }
+  ],
+  "content_summary": {
+    "classifier_version": "document-selection-v2.0.0",
+    "scopes_present": [
+      "CONSOLIDE"
+    ],
+    "frameworks_present": [
+      "IFRS"
+    ],
+    "has_primary_financial_statements": true,
+    "has_balance_sheet": true,
+    "has_income_statement": true,
+    "has_auditor_report": true,
+    "auditor_report_without_detected_statements": false,
+    "numeric_pages": 16,
+    "content_status": "ETATS_PRIMAIRES_DETECTES"
+  },
+  "per_share_observations": {
+    "parser_version": "eps-evidence-v2.1.4",
+    "eps": [
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.01,
+        "raw_token": "0.01",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "AUCUNE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1000000,
+        "page_monetary_scale_label": "millions",
+        "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "NON_PRECISE",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "NON_PROUVE",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "CHIFFRES_CLES",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+        ],
+        "evidence": {
+          "page": 8,
+          "line_index_on_page": 14,
+          "line_original": "Profit attributable per share ($): | Basic EPS 0.01 0.01",
+          "raw_token": "0.01",
+          "context_lines": [
+            "Profit attributable to ETI shareholders 262 179",
+            "Profit attributable per share ($):",
+            "Basic EPS 0.01 0.01",
+            "Diluted EPS 0.01 0.01",
+            "Selected statement of financial position data"
+          ],
+          "column_header": null,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_profit_per_share+sous_ligne",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.01,
+        "raw_token": "0.01",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "AUCUNE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1000000,
+        "page_monetary_scale_label": "millions",
+        "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "NON_PRECISE",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "NON_PROUVE",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "CHIFFRES_CLES",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+        ],
+        "evidence": {
+          "page": 8,
+          "line_index_on_page": 14,
+          "line_original": "Profit attributable per share ($): | Basic EPS 0.01 0.01",
+          "raw_token": "0.01",
+          "context_lines": [
+            "Profit attributable to ETI shareholders 262 179",
+            "Profit attributable per share ($):",
+            "Basic EPS 0.01 0.01",
+            "Diluted EPS 0.01 0.01",
+            "Selected statement of financial position data"
+          ],
+          "column_header": null,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_profit_per_share+sous_ligne",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.01,
+        "raw_token": "0.01",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "AUCUNE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1000000,
+        "page_monetary_scale_label": "millions",
+        "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "NON_PRECISE",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "NON_PROUVE",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "CHIFFRES_CLES",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+          "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+        ],
+        "evidence": {
+          "page": 8,
+          "line_index_on_page": 15,
+          "line_original": "Profit attributable per share ($): | Diluted EPS 0.01 0.01",
+          "raw_token": "0.01",
+          "context_lines": [
+            "Profit attributable per share ($):",
+            "Basic EPS 0.01 0.01",
+            "Diluted EPS 0.01 0.01",
+            "Selected statement of financial position data",
+            "Net loans and advances to customers 9,169 9,358"
+          ],
+          "column_header": null,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_profit_per_share+sous_ligne",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.01,
+        "raw_token": "0.01",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "AUCUNE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1000000,
+        "page_monetary_scale_label": "millions",
+        "page_monetary_scale_source": "EN_TETE_DE_PAGE",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "NON_PRECISE",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "NON_PROUVE",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "CHIFFRES_CLES",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+          "COMPOSANTE_NON_PRECISEE_DANS_LES_CHIFFRES_CLES"
+        ],
+        "evidence": {
+          "page": 8,
+          "line_index_on_page": 15,
+          "line_original": "Profit attributable per share ($): | Diluted EPS 0.01 0.01",
+          "raw_token": "0.01",
+          "context_lines": [
+            "Profit attributable per share ($):",
+            "Basic EPS 0.01 0.01",
+            "Diluted EPS 0.01 0.01",
+            "Selected statement of financial position data",
+            "Net loans and advances to customers 9,169 9,358"
+          ],
+          "column_header": null,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_profit_per_share+sous_ligne",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 2.0,
+        "raw_token": "2",
+        "token_repair": null,
+        "published_decimals": 0,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "AUCUNE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "AUCUNE_ECHELLE_DE_PAGE_DETECTEE",
+        "per_share_unit_explicit": false,
+        "basis": "DE_BASE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "NON_PROUVE",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "ORDRE_DOCUMENT_SUPPOSE_DESCENDANT",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+        ],
+        "evidence": {
+          "page": 9,
+          "line_index_on_page": 26,
+          "line_original": "Profit attributable to Earnings per share (Basic)2 Return on equity",
+          "raw_token": "2",
+          "context_lines": [
+            "9.3 9.4 9.2",
+            "2014 2015 2016 2017 2018 2014 2015 2016 2017 2018 2014 2015 2016 2017 2018",
+            "Profit attributable to Earnings per share (Basic)2 Return on equity",
+            "ETI shareholders ($m) ($) (%)",
+            "17.8"
+          ],
+          "column_header": null,
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 1.06,
+        "raw_token": "1.06",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "component_source": "LIGNE_OU_TITRE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 10,
+          "line_original": "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+          "raw_token": "1.06",
+          "context_lines": [
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "Diluted"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.72,
+        "raw_token": "0.72",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "component_source": "LIGNE_OU_TITRE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 10,
+          "line_original": "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+          "raw_token": "0.72",
+          "context_lines": [
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "Diluted"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.0,
+        "raw_token": "0.00",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "component_source": "LIGNE_OU_TITRE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 11,
+          "line_original": "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+          "raw_token": "0.00",
+          "context_lines": [
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "Diluted",
+            "Diluted earnings per share is calculated by adjusting the weighted average number of ordinary shares outstanding to assume"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.0,
+        "raw_token": "0.00",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "component_source": "LIGNE_OU_TITRE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 11,
+          "line_original": "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+          "raw_token": "0.00",
+          "context_lines": [
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "Diluted",
+            "Diluted earnings per share is calculated by adjusting the weighted average number of ordinary shares outstanding to assume"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 24819484.0,
+        "raw_token": "24,819,484",
+        "token_repair": null,
+        "published_decimals": 0,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1000,
+        "page_monetary_scale_label": "milliers",
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": false,
+        "basis": "DILUE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 29,
+          "line_original": "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+          "raw_token": "24,819,484",
+          "context_lines": [
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Adjustment for dilutive convertible loans 226,865 706,536",
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 25314176.0,
+        "raw_token": "25,314,176",
+        "token_repair": null,
+        "published_decimals": 0,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1000,
+        "page_monetary_scale_label": "milliers",
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": false,
+        "basis": "DILUE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 29,
+          "line_original": "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+          "raw_token": "25,314,176",
+          "context_lines": [
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Adjustment for dilutive convertible loans 226,865 706,536",
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 1.06,
+        "raw_token": "1.06",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+        "component_source": "COMPOSANTE_ARRETEE_NEANT_OU_ZERO_DANS_LE_MEME_DOCUMENT",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 30,
+          "line_original": "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+          "raw_token": "1.06",
+          "context_lines": [
+            "Adjustment for dilutive convertible loans 226,865 706,536",
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "259"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.72,
+        "raw_token": "0.72",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "TOTAL_EQUIVALENT_ARRETEES_NEANT_OU_ZERO",
+        "component_source": "COMPOSANTE_ARRETEE_NEANT_OU_ZERO_DANS_LE_MEME_DOCUMENT",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 30,
+          "line_original": "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+          "raw_token": "0.72",
+          "context_lines": [
+            "Adjustment for dilutive convertible loans 226,865 706,536",
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "259"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.0,
+        "raw_token": "0.00",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "component_source": "LIGNE_OU_TITRE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+          "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 31,
+          "line_original": "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+          "raw_token": "0.00",
+          "context_lines": [
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "259"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.0,
+        "raw_token": "0.00",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "USD_CENT",
+        "currency_source": "LIGNE_OU_CONTEXTE",
+        "unit_label": "cents USD par action",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "component_source": "LIGNE_OU_TITRE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE",
+          "COMPOSANTE_ET_NON_TOTAL_PUBLIE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 31,
+          "line_original": "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+          "raw_token": "0.00",
+          "context_lines": [
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00",
+            "259"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 1.06,
+        "raw_token": "1.06",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 34,
+          "line_original": "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+          "raw_token": "1.06",
+          "context_lines": [
+            "Profit / (loss) for the Year 328,649 228,534 (204,958) 107,464 394,770",
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.72,
+        "raw_token": "0.72",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 34,
+          "line_original": "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+          "raw_token": "0.72",
+          "context_lines": [
+            "Profit / (loss) for the Year 328,649 228,534 (204,958) 107,464 394,770",
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": -1.01,
+        "raw_token": "(1.01)",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2016,
+        "year_offset_from_document": 2,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 2,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 34,
+          "line_original": "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+          "raw_token": "(1.01)",
+          "context_lines": [
+            "Profit / (loss) for the Year 328,649 228,534 (204,958) 107,464 394,770",
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.28,
+        "raw_token": "0.28",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2015,
+        "year_offset_from_document": 3,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 3,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 34,
+          "line_original": "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+          "raw_token": "0.28",
+          "context_lines": [
+            "Profit / (loss) for the Year 328,649 228,534 (204,958) 107,464 394,770",
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 1.69,
+        "raw_token": "1.69",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DE_BASE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2014,
+        "year_offset_from_document": 4,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 4,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 34,
+          "line_original": "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+          "raw_token": "1.69",
+          "context_lines": [
+            "Profit / (loss) for the Year 328,649 228,534 (204,958) 107,464 394,770",
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 1.06,
+        "raw_token": "1.06",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 0,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 35,
+          "line_original": "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+          "raw_token": "1.06",
+          "context_lines": [
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —",
+            "Return on average equity (%) 17.8% 11.6% (9.6%) 4.2% 16.5%"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 4,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.72,
+        "raw_token": "0.72",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 1,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 35,
+          "line_original": "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+          "raw_token": "0.72",
+          "context_lines": [
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —",
+            "Return on average equity (%) 17.8% 11.6% (9.6%) 4.2% 16.5%"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 4,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": -1.01,
+        "raw_token": "(1.01)",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2016,
+        "year_offset_from_document": 2,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 2,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 35,
+          "line_original": "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+          "raw_token": "(1.01)",
+          "context_lines": [
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —",
+            "Return on average equity (%) 17.8% 11.6% (9.6%) 4.2% 16.5%"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 4,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 0.28,
+        "raw_token": "0.28",
+        "token_repair": null,
+        "published_decimals": 2,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2015,
+        "year_offset_from_document": 3,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 3,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 35,
+          "line_original": "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+          "raw_token": "0.28",
+          "context_lines": [
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —",
+            "Return on average equity (%) 17.8% 11.6% (9.6%) 4.2% 16.5%"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 4,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "BPA_PUBLIE",
+        "value": 1.6,
+        "raw_token": "1.6",
+        "token_repair": null,
+        "published_decimals": 1,
+        "is_dash": false,
+        "currency": "NON_PROUVEE",
+        "currency_source": "CENT_SANS_DEVISE",
+        "unit_label": "devise par action non prouvée",
+        "page_monetary_scale_multiplier": 1,
+        "page_monetary_scale_label": null,
+        "page_monetary_scale_source": "LIBELLE_BPA",
+        "per_share_unit_explicit": true,
+        "basis": "DILUE",
+        "component": "TOTAL",
+        "component_source": "AUCUNE_COMPOSANTE_DANS_LA_LIGNE",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2014,
+        "year_offset_from_document": 4,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "physical_column_index": 4,
+        "trailing_slots_ignored": 0,
+        "source_kind": "ETAT_OU_NOTE",
+        "eligible_fcfa_total_basic": false,
+        "ineligibility_reasons": [
+          "DEVISE_NON_FCFA_OU_NON_PROUVEE",
+          "BPA_DILUE_NON_RETENU_COMME_DE_BASE"
+        ],
+        "evidence": {
+          "page": 300,
+          "line_index_on_page": 35,
+          "line_original": "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+          "raw_token": "1.6",
+          "context_lines": [
+            "Profit / (loss) attributable to owners of the parent 261,647 178,585 (249,898) 65,539 337,863",
+            "Earnings per share – basic (US dollar cents) 1.06 0.72 (1.01) 0.28 1.69",
+            "Earnings per share – diluted (US dollar cents) 1.06 0.72 (1.01) 0.28 1.6",
+            "Dividend per share (US dollar cents) – — — 0.20 —",
+            "Return on average equity (%) 17.8% 11.6% (9.6%) 4.2% 16.5%"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017,
+              2016,
+              2015,
+              2014
+            ],
+            "evidence_line": "2018 2017 2016 2015 2014",
+            "line_index": 4,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "en_earnings_per_share",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      }
+    ],
+    "shares": [
+      {
+        "kind": "NOMBRE_ACTIONS",
+        "denominator_kind": "FIN_EXERCICE_OU_EN_CIRCULATION",
+        "value": 261214,
+        "raw_value": 261214.0,
+        "raw_token": "261,214",
+        "multiplier": 1,
+        "unit_label": "actions (aucun multiplicateur proche prouvé)",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "eligible_as_denominator": true,
+        "ineligibility_reasons": [],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 7,
+          "line_original": "average number of ordinary shares in issue outstanding during the period. | Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+          "raw_token": "261,214",
+          "context_lines": [
+            "average number of ordinary shares in issue outstanding during the period.",
+            "2018 2017",
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "emises_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NOMBRE_ACTIONS",
+        "denominator_kind": "FIN_EXERCICE_OU_EN_CIRCULATION",
+        "value": 178071,
+        "raw_value": 178071.0,
+        "raw_token": "178,071",
+        "multiplier": 1,
+        "unit_label": "actions (aucun multiplicateur proche prouvé)",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "eligible_as_denominator": true,
+        "ineligibility_reasons": [],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 7,
+          "line_original": "average number of ordinary shares in issue outstanding during the period. | Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+          "raw_token": "178,071",
+          "context_lines": [
+            "average number of ordinary shares in issue outstanding during the period.",
+            "2018 2017",
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "emises_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NOMBRE_ACTIONS",
+        "denominator_kind": "MOYEN_PONDERE",
+        "value": 24592619000,
+        "raw_value": 24592619.0,
+        "raw_token": "24,592,619",
+        "multiplier": 1000,
+        "unit_label": "milliers (mention proche de la ligne)",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "eligible_as_denominator": true,
+        "ineligibility_reasons": [],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 9,
+          "line_original": "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+          "raw_token": "24,592,619",
+          "context_lines": [
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "pondere_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NOMBRE_ACTIONS",
+        "denominator_kind": "MOYEN_PONDERE",
+        "value": 24607640000,
+        "raw_value": 24607640.0,
+        "raw_token": "24,607,640",
+        "multiplier": 1000,
+        "unit_label": "milliers (mention proche de la ligne)",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "eligible_as_denominator": true,
+        "ineligibility_reasons": [],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 9,
+          "line_original": "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+          "raw_token": "24,607,640",
+          "context_lines": [
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Basic earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "pondere_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NOMBRE_ACTIONS",
+        "denominator_kind": "MOYEN_PONDERE_DILUE",
+        "value": 24819484000,
+        "raw_value": 24819484.0,
+        "raw_token": "24,819,484",
+        "multiplier": 1000,
+        "unit_label": "milliers (mention proche de la ligne)",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "eligible_as_denominator": false,
+        "ineligibility_reasons": [
+          "DENOMINATEUR_DILUE_NON_RETENU_POUR_LE_DE_BASE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 29,
+          "line_original": "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+          "raw_token": "24,819,484",
+          "context_lines": [
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Adjustment for dilutive convertible loans 226,865 706,536",
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "pondere_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NOMBRE_ACTIONS",
+        "denominator_kind": "MOYEN_PONDERE_DILUE",
+        "value": 25314176000,
+        "raw_value": 25314176.0,
+        "raw_token": "25,314,176",
+        "multiplier": 1000,
+        "unit_label": "milliers (mention proche de la ligne)",
+        "accounting_scope": "CONSOLIDE",
+        "accounting_scope_source": "SECTION_PRECEDENTE",
+        "framework": "IFRS",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "eligible_as_denominator": false,
+        "ineligibility_reasons": [
+          "DENOMINATEUR_DILUE_NON_RETENU_POUR_LE_DE_BASE"
+        ],
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 29,
+          "line_original": "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+          "raw_token": "25,314,176",
+          "context_lines": [
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Adjustment for dilutive convertible loans 226,865 706,536",
+            "Weighted average number of ordinary shares for diluted earnings per share (in thousands) 24,819,484 25,314,176",
+            "Dilutive earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72",
+            "Dilutive earnings per share (expressed in US cents per share) from discontinued operations 0.00 0.00"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "pondere_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      }
+    ],
+    "numerators": [
+      {
+        "kind": "NUMERATEUR_BPA",
+        "numerator_kind": "ATTRIBUABLE_AUX_ACTIONNAIRES_ORDINAIRES",
+        "value": 261.214,
+        "raw_value": 261.214,
+        "raw_token": "261,214",
+        "multiplier": 1,
+        "currency": "NON_PROUVEE",
+        "unit_label": "NON_PROUVEE, montants en unites",
+        "component": "ACTIVITES_POURSUIVIES",
+        "accounting_scope": "CONSOLIDE",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 7,
+          "line_original": "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+          "raw_token": "261,214",
+          "context_lines": [
+            "average number of ordinary shares in issue outstanding during the period.",
+            "2018 2017",
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "ordinaire_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NUMERATEUR_BPA",
+        "numerator_kind": "ATTRIBUABLE_AUX_ACTIONNAIRES_ORDINAIRES",
+        "value": 178.071,
+        "raw_value": 178.071,
+        "raw_token": "178,071",
+        "multiplier": 1,
+        "currency": "NON_PROUVEE",
+        "unit_label": "NON_PROUVEE, montants en unites",
+        "component": "ACTIVITES_POURSUIVIES",
+        "accounting_scope": "CONSOLIDE",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 7,
+          "line_original": "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+          "raw_token": "178,071",
+          "context_lines": [
+            "average number of ordinary shares in issue outstanding during the period.",
+            "2018 2017",
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "ordinaire_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NUMERATEUR_BPA",
+        "numerator_kind": "ATTRIBUABLE_AUX_ACTIONNAIRES_ORDINAIRES",
+        "value": 433.0,
+        "raw_value": 433.0,
+        "raw_token": "433",
+        "multiplier": 1,
+        "currency": "NON_PROUVEE",
+        "unit_label": "NON_PROUVEE, montants en unites",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "accounting_scope": "CONSOLIDE",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 8,
+          "line_original": "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+          "raw_token": "433",
+          "context_lines": [
+            "2018 2017",
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "ordinaire_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NUMERATEUR_BPA",
+        "numerator_kind": "ATTRIBUABLE_AUX_ACTIONNAIRES_ORDINAIRES",
+        "value": 514.0,
+        "raw_value": 514.0,
+        "raw_token": "514",
+        "multiplier": 1,
+        "currency": "NON_PROUVEE",
+        "unit_label": "NON_PROUVEE, montants en unites",
+        "component": "ACTIVITES_ARRETEES_OU_EN_CESSION",
+        "accounting_scope": "CONSOLIDE",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 8,
+          "line_original": "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+          "raw_token": "514",
+          "context_lines": [
+            "2018 2017",
+            "Profit attributable to equity holders of the Company from continuing operations 261,214 178,071",
+            "Profit attributable to equity holders of the Company from discontinued operations 433 514",
+            "Weighted average number of ordinary shares in issue (in thousands) 24,592,619 24,607,640",
+            "Basic earnings per share (expressed in US cents per share) from continuing operations 1.06 0.72"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "ordinaire_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NUMERATEUR_BPA",
+        "numerator_kind": "ATTRIBUABLE_AUX_ACTIONNAIRES_ORDINAIRES",
+        "value": 261.214,
+        "raw_value": 261.214,
+        "raw_token": "261,214",
+        "multiplier": 1,
+        "currency": "NON_PROUVEE",
+        "unit_label": "NON_PROUVEE, montants en unites",
+        "component": "ACTIVITES_POURSUIVIES",
+        "accounting_scope": "CONSOLIDE",
+        "target_exercice": 2018,
+        "year_offset_from_document": 0,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 22,
+          "line_original": "Profit attributable to equity holders of the company from continuing operations 261,214 178,071",
+          "raw_token": "261,214",
+          "context_lines": [
+            "monetary value of the subscription rights attached to outstanding share options. The number of shares calculated as above is",
+            "compared with the number of shares that would have been issued assuming the exercise of the share options.",
+            "Profit attributable to equity holders of the company from continuing operations 261,214 178,071",
+            "Interest expense on dilutive convertible loans 752 3,590",
+            "261,966 181,661"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "ordinaire_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      },
+      {
+        "kind": "NUMERATEUR_BPA",
+        "numerator_kind": "ATTRIBUABLE_AUX_ACTIONNAIRES_ORDINAIRES",
+        "value": 178.071,
+        "raw_value": 178.071,
+        "raw_token": "178,071",
+        "multiplier": 1,
+        "currency": "NON_PROUVEE",
+        "unit_label": "NON_PROUVEE, montants en unites",
+        "component": "ACTIVITES_POURSUIVIES",
+        "accounting_scope": "CONSOLIDE",
+        "target_exercice": 2017,
+        "year_offset_from_document": 1,
+        "column_year_source": "EN_TETE_DE_COLONNES",
+        "evidence": {
+          "page": 261,
+          "line_index_on_page": 22,
+          "line_original": "Profit attributable to equity holders of the company from continuing operations 261,214 178,071",
+          "raw_token": "178,071",
+          "context_lines": [
+            "monetary value of the subscription rights attached to outstanding share options. The number of shares calculated as above is",
+            "compared with the number of shares that would have been issued assuming the exercise of the share options.",
+            "Profit attributable to equity holders of the company from continuing operations 261,214 178,071",
+            "Interest expense on dilutive convertible loans 752 3,590",
+            "261,966 181,661"
+          ],
+          "column_header": {
+            "years": [
+              2018,
+              2017
+            ],
+            "evidence_line": "2018 2017",
+            "line_index": 5,
+            "source": "EN_TETE_MEME_LIGNE"
+          },
+          "extraction_method": "texte_natif",
+          "ocr_confidence": null,
+          "parser_rule": "ordinaire_en",
+          "parser_version": "eps-evidence-v2.1.4"
+        }
+      }
+    ],
+    "ignored": []
+  }
+}

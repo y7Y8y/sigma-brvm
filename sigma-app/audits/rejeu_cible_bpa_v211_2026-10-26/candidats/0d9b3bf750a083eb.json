@@ -1,0 +1,42 @@
+{
+  "candidate_id": "0d9b3bf750a083eb",
+  "ticker": "SDSC",
+  "url": "https://www.brvm.org/sites/default/files/20210701_-_btl_ci_2020_-_comptes_individuels_ifrs_-_rapport_general_des_cac.pdf",
+  "selection_rank_for_ticker": 13,
+  "target_years_from_filename": [
+    2020,
+    2019,
+    2018
+  ],
+  "classified_document": {
+    "filename": "20210701_-_btl_ci_2020_-_comptes_individuels_ifrs_-_rapport_general_des_cac.pdf",
+    "label": "Btl ci 2020 comptes individuels ifrs rapport general des cac",
+    "link_text": "Télécharger",
+    "doc_type": "comptes_ifrs",
+    "exercice": 2020,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": "2021-07-01",
+    "url": "https://www.brvm.org/sites/default/files/20210701_-_btl_ci_2020_-_comptes_individuels_ifrs_-_rapport_general_des_cac.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "INDIVIDUEL",
+    "scope_hint_evidence": [
+      "individuel",
+      "individuels"
+    ],
+    "framework_hint": "IFRS",
+    "framework_hint_evidence": [
+      "ifrs"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics",
+    "report_page_label": "BOLLORE TRANSPORT & LOGISTICS",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics?page=1"
+    ]
+  }
+}

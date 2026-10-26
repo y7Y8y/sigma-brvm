@@ -1,0 +1,39 @@
+{
+  "candidate_id": "b3aeaaec743211eb",
+  "ticker": "SPHC",
+  "url": "https://www.brvm.org/sites/default/files/20201216_-_etats_financiers_de_synthese_31_12_2019_-_saph_ci.pdf",
+  "selection_rank_for_ticker": 18,
+  "target_years_from_filename": [
+    2019,
+    2018,
+    2017
+  ],
+  "classified_document": {
+    "filename": "20201216_-_etats_financiers_de_synthese_31_12_2019_-_saph_ci.pdf",
+    "label": "Etats financiers de synthese 31 12 2019 saph ci",
+    "link_text": "Télécharger",
+    "doc_type": "synthese_rapport_gestion",
+    "exercice": 2019,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": "2020-12-16",
+    "url": "https://www.brvm.org/sites/default/files/20201216_-_etats_financiers_de_synthese_31_12_2019_-_saph_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "SYNTHESE",
+    "version_markers": [
+      "SYNTHESE"
+    ],
+    "content_role_hint": "SYNTHESE_OU_RAPPORT_DE_GESTION",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+    "report_page_label": "SAPH CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci?page=2"
+    ]
+  }
+}

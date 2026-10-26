@@ -1,0 +1,468 @@
+{
+  "schema_version": "sigma-bpa-480-compteurs-v1",
+  "date": "2026-10-26",
+  "parser_version": "eps-evidence-v2.1.4",
+  "matrix_reference": "audits/audit_bpa_480_corrige_rejeu_v214_2026-10-26/matrix.csv",
+  "overlay_reference": "ingestion/overlay_decisions_humaines.json",
+  "dataset_published_modified": false,
+  "counting_base": {
+    "official_base": "APPLICABLE",
+    "official_base_size": 442,
+    "decision": "La base de comptage officielle des indicateurs de couverture BPA est celle des 442 cellules applicables. Les 38 cellules antérieures à l'introduction sont comptées séparément, jamais fusionnées dans un taux.",
+    "source": "arbitrage_lead_2026-10-26"
+  },
+  "compteurs": {
+    "BRUTE_480": {
+      "base": "BRUTE_480",
+      "cellules": 480,
+      "statuts_bpa": {
+        "DOCUMENT_INTROUVABLE": 15,
+        "ILLISIBLE": 72,
+        "NON_APPLICABLE": 37,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 263,
+        "NON_RECHERCHE": 18,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 7,
+        "PUBLIE_EN_QUARANTAINE_COHERENCE": 1,
+        "PUBLIE_EXTRAIT": 24,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 34,
+        "PUBLIE_SOURCE_DIVERGENTE_RESOLUE_PAR_CONTROLE": 1,
+        "RATIO_INDICATIF_FIN_EXERCICE": 8
+      },
+      "niveaux_validation": {
+        "AUCUNE_VALEUR_RETENUE": 405,
+        "CANDIDAT_PART_GROUPE_PONDEREE_A_VERIFIER": 1,
+        "CONTROLE_ARITHMETIQUE_CONCORDANT": 4,
+        "DEUX_DOCUMENTS_DISTINCTS": 7,
+        "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE": 21,
+        "PUBLICATION_DETECTEE_NON_RETENUE": 34,
+        "RATIO_INDICATIF_SEPARE": 8
+      },
+      "statuts_documentaires": {
+        "CANDIDATS_INVENTORIES_NON_OUVERTS": 2,
+        "DOCUMENTS_OUVERTS_SANS_ETAT_PRIMAIRE_PROUVE": 12,
+        "DOCUMENTS_PRIMAIRES_EXAMINES": 335,
+        "DOCUMENT_INTROUVABLE": 15,
+        "ILLISIBLE": 72,
+        "NON_APPLICABLE": 38,
+        "NON_RECHERCHE": 6
+      },
+      "bpa_publies_transcrits_hors_perimetre_inclus": 32,
+      "bpa_publies_retenus_dans_la_couverture": 31,
+      "dont_exclus_de_la_comparabilite_formelle": 2,
+      "dont_non_exclus_par_decision": 29,
+      "detail_exclusions_comparabilite": [
+        {
+          "ticker": "TTLS",
+          "exercice": 2024
+        },
+        {
+          "ticker": "TTLS",
+          "exercice": 2025
+        }
+      ],
+      "publications_hors_perimetre_non_comptees": [
+        {
+          "ticker": "ORGT",
+          "exercice": 2018,
+          "statut_bpa": "PUBLIE_EXTRAIT",
+          "valeur_conservee_fcfa": "115.0",
+          "motif": "exercice non applicable (antérieur à l'introduction)"
+        }
+      ],
+      "bpa_recalcules_comparables": 0,
+      "publications_detectees_non_retenues": 34,
+      "quarantaine_coherence": 1,
+      "ratios_indicatifs_fin_exercice_separes": 8,
+      "series_chiffrees_extraites": 293,
+      "cellules_document_primaire_examine": 335,
+      "cellules_avec_document_primaire_lu": 342,
+      "repartition_par_exercice": {
+        "2016": {
+          "cellules": 48,
+          "bpa_publies_retenus": 0
+        },
+        "2017": {
+          "cellules": 48,
+          "bpa_publies_retenus": 0
+        },
+        "2018": {
+          "cellules": 48,
+          "bpa_publies_retenus": 2
+        },
+        "2019": {
+          "cellules": 48,
+          "bpa_publies_retenus": 4
+        },
+        "2020": {
+          "cellules": 48,
+          "bpa_publies_retenus": 2
+        },
+        "2021": {
+          "cellules": 48,
+          "bpa_publies_retenus": 2
+        },
+        "2022": {
+          "cellules": 48,
+          "bpa_publies_retenus": 5
+        },
+        "2023": {
+          "cellules": 48,
+          "bpa_publies_retenus": 5
+        },
+        "2024": {
+          "cellules": 48,
+          "bpa_publies_retenus": 6
+        },
+        "2025": {
+          "cellules": 48,
+          "bpa_publies_retenus": 5
+        }
+      }
+    },
+    "APPLICABLE_442": {
+      "base": "APPLICABLE_442",
+      "cellules": 442,
+      "statuts_bpa": {
+        "DOCUMENT_INTROUVABLE": 15,
+        "ILLISIBLE": 72,
+        "NON_PUBLIE_DANS_SOURCES_VERIFIEES": 263,
+        "NON_RECHERCHE": 18,
+        "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 7,
+        "PUBLIE_EN_QUARANTAINE_COHERENCE": 1,
+        "PUBLIE_EXTRAIT": 23,
+        "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE": 34,
+        "PUBLIE_SOURCE_DIVERGENTE_RESOLUE_PAR_CONTROLE": 1,
+        "RATIO_INDICATIF_FIN_EXERCICE": 8
+      },
+      "niveaux_validation": {
+        "AUCUNE_VALEUR_RETENUE": 368,
+        "CANDIDAT_PART_GROUPE_PONDEREE_A_VERIFIER": 1,
+        "CONTROLE_ARITHMETIQUE_CONCORDANT": 4,
+        "DEUX_DOCUMENTS_DISTINCTS": 7,
+        "EXTRACTION_UNIQUE_SANS_CONTROLE_PONDERE": 20,
+        "PUBLICATION_DETECTEE_NON_RETENUE": 34,
+        "RATIO_INDICATIF_SEPARE": 8
+      },
+      "statuts_documentaires": {
+        "CANDIDATS_INVENTORIES_NON_OUVERTS": 2,
+        "DOCUMENTS_OUVERTS_SANS_ETAT_PRIMAIRE_PROUVE": 12,
+        "DOCUMENTS_PRIMAIRES_EXAMINES": 335,
+        "DOCUMENT_INTROUVABLE": 15,
+        "ILLISIBLE": 72,
+        "NON_RECHERCHE": 6
+      },
+      "bpa_publies_transcrits_hors_perimetre_inclus": 31,
+      "bpa_publies_retenus_dans_la_couverture": 31,
+      "dont_exclus_de_la_comparabilite_formelle": 2,
+      "dont_non_exclus_par_decision": 29,
+      "detail_exclusions_comparabilite": [
+        {
+          "ticker": "TTLS",
+          "exercice": 2024
+        },
+        {
+          "ticker": "TTLS",
+          "exercice": 2025
+        }
+      ],
+      "publications_hors_perimetre_non_comptees": [],
+      "bpa_recalcules_comparables": 0,
+      "publications_detectees_non_retenues": 34,
+      "quarantaine_coherence": 1,
+      "ratios_indicatifs_fin_exercice_separes": 8,
+      "series_chiffrees_extraites": 288,
+      "cellules_document_primaire_examine": 335,
+      "cellules_avec_document_primaire_lu": 335,
+      "repartition_par_exercice": {
+        "2016": {
+          "cellules": 41,
+          "bpa_publies_retenus": 0
+        },
+        "2017": {
+          "cellules": 43,
+          "bpa_publies_retenus": 0
+        },
+        "2018": {
+          "cellules": 43,
+          "bpa_publies_retenus": 2
+        },
+        "2019": {
+          "cellules": 44,
+          "bpa_publies_retenus": 4
+        },
+        "2020": {
+          "cellules": 44,
+          "bpa_publies_retenus": 2
+        },
+        "2021": {
+          "cellules": 44,
+          "bpa_publies_retenus": 2
+        },
+        "2022": {
+          "cellules": 45,
+          "bpa_publies_retenus": 5
+        },
+        "2023": {
+          "cellules": 45,
+          "bpa_publies_retenus": 5
+        },
+        "2024": {
+          "cellules": 46,
+          "bpa_publies_retenus": 6
+        },
+        "2025": {
+          "cellules": 47,
+          "bpa_publies_retenus": 5
+        }
+      }
+    }
+  },
+  "controles": [
+    {
+      "controle": "C1 somme des statuts BPA (base brute)",
+      "observe": 480,
+      "attendu": 480,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C2 somme des niveaux de validation (base brute)",
+      "observe": 480,
+      "attendu": 480,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C3 somme des statuts documentaires (base brute)",
+      "observe": 480,
+      "attendu": 480,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C4 somme des statuts BPA (base applicable)",
+      "observe": 442,
+      "attendu": 442,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C5 applicables + non applicables",
+      "observe": 480,
+      "attendu": 480,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C6 non applicables",
+      "observe": 38,
+      "attendu": 38,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C7 BPA publiés sans valeur transcrite",
+      "observe": 0,
+      "attendu": 0,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C8 BPA recalculés comparables",
+      "observe": 0,
+      "attendu": 0,
+      "resultat": "OK"
+    },
+    {
+      "controle": "C9 publiés + quarantaine + ratios + absences",
+      "observe": 480,
+      "attendu": 480,
+      "resultat": "OK"
+    }
+  ],
+  "journal_overlay": [
+    {
+      "ticker": "BOAS",
+      "exercice": 2017,
+      "decision": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "statut_avant": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "statut_apres": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "BOAS",
+      "exercice": 2018,
+      "decision": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "statut_avant": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "statut_apres": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "BOAS",
+      "exercice": 2019,
+      "decision": "RATIO_INDICATIF_SEPARE_PAS_UN_BPA_COMPARABLE",
+      "statut_avant": "RATIO_INDICATIF_FIN_EXERCICE",
+      "statut_apres": "RATIO_INDICATIF_FIN_EXERCICE",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "BOAS",
+      "exercice": 2020,
+      "decision": "AUCUNE_CONCLUSION_DE_NON_PUBLICATION",
+      "statut_avant": "ILLISIBLE",
+      "statut_apres": "ILLISIBLE",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2019,
+      "decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "statut_avant": "PUBLIE_EXTRAIT",
+      "statut_apres": "PUBLIE_EXTRAIT",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2020,
+      "decision": "BPA_PUBLIE_RETENU",
+      "statut_avant": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_apres": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2021,
+      "decision": "BPA_PUBLIE_RETENU",
+      "statut_avant": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_apres": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2022,
+      "decision": "BPA_PUBLIE_RETENU",
+      "statut_avant": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_apres": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2023,
+      "decision": "BPA_PUBLIE_RETENU",
+      "statut_avant": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_apres": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2024,
+      "decision": "BPA_PUBLIE_RETENU",
+      "statut_avant": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "statut_apres": "PUBLIE_CONFIRME_DEUX_DOCUMENTS",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2025,
+      "decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "statut_avant": "PUBLIE_EXTRAIT",
+      "statut_apres": "PUBLIE_EXTRAIT",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SDCC",
+      "exercice": 2018,
+      "decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "statut_avant": "PUBLIE_EXTRAIT",
+      "statut_apres": "PUBLIE_EXTRAIT",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SDCC",
+      "exercice": 2019,
+      "decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "statut_avant": "PUBLIE_EXTRAIT",
+      "statut_apres": "PUBLIE_EXTRAIT",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2019,
+      "decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "statut_avant": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "statut_apres": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2020,
+      "decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "statut_avant": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "statut_apres": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2021,
+      "decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "statut_avant": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "statut_apres": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2022,
+      "decision": "CORRECTION_MANUELLE_PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "statut_avant": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_apres": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "effet": "modifie",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2023,
+      "decision": "CORRECTION_MANUELLE_PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "statut_avant": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "statut_apres": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "effet": "modifie",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "TTLS",
+      "exercice": 2024,
+      "decision": "TRANSCRIPTION_CONFIRMEE_EXCLUE_DES_BPA_FORMELLEMENT_COMPARABLES",
+      "statut_avant": "PUBLIE_EXTRAIT",
+      "statut_apres": "PUBLIE_EXTRAIT",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "TTLS",
+      "exercice": 2025,
+      "decision": "TRANSCRIPTION_CONFIRMEE_EXCLUE_DES_BPA_FORMELLEMENT_COMPARABLES",
+      "statut_avant": "PUBLIE_EXTRAIT",
+      "statut_apres": "PUBLIE_EXTRAIT",
+      "effet": "sans_effet",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "ORGT",
+      "exercice": 2018,
+      "decision": "HORS_PERIMETRE_NON_APPLICABLE",
+      "statut_avant": "PUBLIE_EXTRAIT",
+      "statut_apres": "PUBLIE_EXTRAIT",
+      "effet": "sans_effet",
+      "source": "arbitrage_lead_2026-10-26"
+    }
+  ],
+  "integration_dataset": false
+}

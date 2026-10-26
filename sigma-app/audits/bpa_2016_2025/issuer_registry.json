@@ -1,0 +1,1057 @@
+[
+  {
+    "ticker": "ABJC",
+    "name": "SERVAIR ABIDJAN COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "abjc",
+      "servair abidjan cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SERVAIR ABIDJAN CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2017,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BBGC",
+    "name": "BRIDGE BANK GROUP COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bbgc",
+      "bbgci",
+      "bridge bank group",
+      "bridge bank group cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "BBGCI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bbgci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 2,
+    "annual_document_min_exercice": null,
+    "annual_document_max_exercice": null,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BICB",
+    "name": "BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "banque internationale pour l industrie et le commerce du benin",
+      "bicb",
+      "biic",
+      "biic benin"
+    ],
+    "report_pages": [
+      {
+        "label": "BIIC",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/biic"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 9,
+    "annual_document_min_exercice": 2024,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BICC",
+    "name": "BICI COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bicc",
+      "bici cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "BICI CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bici-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2016,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BNBC",
+    "name": "BERNABE COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "bernabe cote d ivoire",
+      "bnbc"
+    ],
+    "report_pages": [
+      {
+        "label": "BERNABE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bernabe-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BOAB",
+    "name": "BANK OF AFRICA BENIN",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa benin",
+      "boab"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA BN",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-bn"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 39,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BOABF",
+    "name": "BANK OF AFRICA BURKINA FASO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa burkina",
+      "bank of africa burkina faso",
+      "boabf"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA BF",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-bf"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2019,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BOAC",
+    "name": "BANK OF AFRICA COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa cote d ivoire",
+      "boa cote d ivoire",
+      "boac"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BOAM",
+    "name": "BANK OF AFRICA MALI",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa mali",
+      "boam"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA ML",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-ml"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BOAN",
+    "name": "BANK OF AFRICA NIGER",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa niger",
+      "boan"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA NG",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-ng"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2019,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "BOAS",
+    "name": "BANK OF AFRICA SENEGAL",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa senegal",
+      "boas"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA SN",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-sn"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "CABC",
+    "name": "SICABLE COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "cabc",
+      "sicable",
+      "sicable cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SICABLE",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sicable"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "CBIBF",
+    "name": "CORIS BANK INTERNATIONAL BURKINA FASO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "cbibf",
+      "coris bank international",
+      "coris bank international burkina",
+      "coris bank international burkina faso"
+    ],
+    "report_pages": [
+      {
+        "label": "CORIS BANK INTERNATIONAL",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/coris-bank-international"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2022,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "CFAC",
+    "name": "CFAO MOTORS COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "cfac",
+      "cfao motors cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "CFAO MOTORS CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/cfao-motors-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "CIEC",
+    "name": "CIE COTE D'IVOIRE",
+    "sector": "Services publics",
+    "aliases_canoniques": [
+      "cie cote d ivoire",
+      "ciec"
+    ],
+    "report_pages": [
+      {
+        "label": "CIE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/cie-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2021,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "ECOC",
+    "name": "ECOBANK COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "ecobank cote d ivoire",
+      "ecoc"
+    ],
+    "report_pages": [
+      {
+        "label": "ECOBANK CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/ecobank-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "ETIT",
+    "name": "Ecobank Transnational Incorporated TOGO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "ecobank tg",
+      "ecobank togo",
+      "ecobank trans incorp togo",
+      "ecobank transnational",
+      "ecobank transnational incorporated togo",
+      "eti tg",
+      "eti togo",
+      "etit"
+    ],
+    "report_pages": [
+      {
+        "label": "ECOBANK TG",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/ecobank-tg"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "FTSC",
+    "name": "FILTISAC COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "filtisac cote d ivoire",
+      "ftsc"
+    ],
+    "report_pages": [
+      {
+        "label": "FILTISAC CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/filtisac-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2021,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "LNBB",
+    "name": "LOTERIE NATIONALE DU BENIN",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "lnb",
+      "lnbb",
+      "loterie nationale du benin"
+    ],
+    "report_pages": [
+      {
+        "label": "LNB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/lnb"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 7,
+    "annual_document_min_exercice": 2024,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "NEIC",
+    "name": "NEI-CEDA COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "nei ceda cote d ivoire",
+      "neic"
+    ],
+    "report_pages": [
+      {
+        "label": "NEI-CEDA CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/nei-ceda-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2021,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "NSBC",
+    "name": "NSIA BANQUE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "nsbc",
+      "nsia banque cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "NSBC",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/nsbc"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 0,
+    "annual_document_min_exercice": null,
+    "annual_document_max_exercice": null,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "NTLC",
+    "name": "NESTLE COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "nestle cote d ivoire",
+      "ntlc"
+    ],
+    "report_pages": [
+      {
+        "label": "NESTLE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/nestle-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2017,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "ONTBF",
+    "name": "ONATEL BURKINA FASO",
+    "sector": "Télécommunications",
+    "aliases_canoniques": [
+      "onatel",
+      "onatel burkina faso",
+      "ontbf"
+    ],
+    "report_pages": [
+      {
+        "label": "ONATEL BF",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/onatel-bf"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2019,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "ORAC",
+    "name": "ORANGE COTE D'IVOIRE",
+    "sector": "Télécommunications",
+    "aliases_canoniques": [
+      "orac",
+      "orange cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "ORANGE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/orange-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 26,
+    "annual_document_min_exercice": 2022,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "ORGT",
+    "name": "ORAGROUP TOGO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "oragroup",
+      "oragroup togo",
+      "orgt"
+    ],
+    "report_pages": [
+      {
+        "label": "ORAGROUP",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/oragroup"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2021,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "PALC",
+    "name": "PALM COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "palc",
+      "palm ci",
+      "palm cote d ivoire",
+      "palmci"
+    ],
+    "report_pages": [
+      {
+        "label": "PALM CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/palm-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2017,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "PRSC",
+    "name": "TRACTAFRIC MOTORS COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "prsc",
+      "tractafric cote d ivoire",
+      "tractafric motors cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "TRACTAFRIC CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tractafric-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SAFC",
+    "name": "SAFCA COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "safc",
+      "safca cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SAFCA CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/safca-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2016,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SCRC",
+    "name": "SUCRIVOIRE COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "scrc",
+      "sucrivoire",
+      "sucrivoire cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SUCRIVOIRE",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sucrivoire"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2017,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SDCC",
+    "name": "SODE COTE D'IVOIRE",
+    "sector": "Services publics",
+    "aliases_canoniques": [
+      "sdcc",
+      "sode cote d ivoire",
+      "sodeci"
+    ],
+    "report_pages": [
+      {
+        "label": "SODECI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sodeci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2021,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SDSC",
+    "name": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "africa global logistics ci",
+      "africa global logistics cote d ivoire",
+      "bollore transport logistics",
+      "sdsc"
+    ],
+    "report_pages": [
+      {
+        "label": "BOLLORE TRANSPORT & LOGISTICS",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2019,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SEMC",
+    "name": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "crown siem cote d ivoire",
+      "eviosys packaging siem cote d ivoire",
+      "semc",
+      "sonoco metal packaging siem s"
+    ],
+    "report_pages": [
+      {
+        "label": "CROWN SIEM CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/crown-siem-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2017,
+    "annual_document_max_exercice": 2023,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SGBC",
+    "name": "SOCIETE GENERALE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "sgb cote d ivoire",
+      "sgbc",
+      "sgci",
+      "societe generale cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SGB CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sgb-ci"
+      },
+      {
+        "label": "SGCI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sgci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SHEC",
+    "name": "VIVO ENERGY COTE D'IVOIRE",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "shec",
+      "vivo energy cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "VIVO ENERGY CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/vivo-energy-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SIBC",
+    "name": "SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "sib",
+      "sibc",
+      "societe ivoirienne de banque",
+      "societe ivoirienne de banque cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SIB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sib"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SICC",
+    "name": "SICOR COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "sicc",
+      "sicor",
+      "sicor cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SICOR",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sicor"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2015,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SIVC",
+    "name": "ERIUM COTE D’IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "air liquide cote d ivoire",
+      "erium cote d ivoire",
+      "erium cote d ivoire ex air liquide cote d ivoire",
+      "sivc"
+    ],
+    "report_pages": [
+      {
+        "label": "AIR LIQUIDE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/air-liquide-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2016,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SLBC",
+    "name": "SOLIBRA COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "slbc",
+      "solibra",
+      "solibra cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SOLIBRA",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/solibra"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SMBC",
+    "name": "SMB COTE D'IVOIRE",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "smb",
+      "smb cote d ivoire",
+      "smbc",
+      "societe multinationale de bitume"
+    ],
+    "report_pages": [
+      {
+        "label": "SMB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/smb"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2019,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SNTS",
+    "name": "SONATEL SENEGAL",
+    "sector": "Télécommunications",
+    "aliases_canoniques": [
+      "snts",
+      "sonatel",
+      "sonatel senegal"
+    ],
+    "report_pages": [
+      {
+        "label": "SONATEL",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sonatel"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 60,
+    "annual_document_min_exercice": 2023,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SOGC",
+    "name": "SOGB COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "sogb",
+      "sogb cote d ivoire",
+      "sogc"
+    ],
+    "report_pages": [
+      {
+        "label": "SOGB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sogb"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2021,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "SPHC",
+    "name": "SAPH COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "saph",
+      "saph cote d ivoire",
+      "sphc"
+    ],
+    "report_pages": [
+      {
+        "label": "SAPH CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2021,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "STAC",
+    "name": "SETAO COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "setao cote d ivoire",
+      "stac"
+    ],
+    "report_pages": [
+      {
+        "label": "SETAO CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/setao-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2020,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "STBC",
+    "name": "SITAB COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "sitab",
+      "sitab cote d ivoire",
+      "stbc"
+    ],
+    "report_pages": [
+      {
+        "label": "SITAB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sitab"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2019,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "TTLC",
+    "name": "TOTALENERGIES MARKETING COTE D'IVOIRE",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "total",
+      "total energies marketing cote d ivoire",
+      "totalenergies marketing cote d ivoire",
+      "ttlc"
+    ],
+    "report_pages": [
+      {
+        "label": "TOTAL",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/total"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2019,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "TTLS",
+    "name": "TOTALENERGIES MARKETING SENEGAL",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "totalenergies marketing senegal",
+      "ttls"
+    ],
+    "report_pages": [
+      {
+        "label": "TOTALENERGIES MARKETING SN",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/totalenergies-marketing-sn"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 1,
+    "annual_document_min_exercice": 2025,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "UNLC",
+    "name": "UNILEVER COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "unilever cote d ivoire",
+      "unlc"
+    ],
+    "report_pages": [
+      {
+        "label": "UNILEVER CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/unilever-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_document_min_exercice": 2018,
+    "annual_document_max_exercice": 2023,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  },
+  {
+    "ticker": "UNXC",
+    "name": "UNIWAX COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "uniwax cote d ivoire",
+      "unxc"
+    ],
+    "report_pages": [
+      {
+        "label": "UNIWAX CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/uniwax-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 40,
+    "annual_document_min_exercice": 2017,
+    "annual_document_max_exercice": 2025,
+    "listing_year": null,
+    "listing_year_status": "NON_RECHERCHE"
+  }
+]

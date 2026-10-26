@@ -1,0 +1,38 @@
+{
+  "candidate_id": "b1453811d3244cc7",
+  "ticker": "TTLS",
+  "url": "https://www.brvm.org/sites/default/files/20260615_-_rapport_dactivites_annuel_-_exercice_2025_-_totalenergies_marketing_sn.pdf",
+  "selection_rank_for_ticker": 1,
+  "target_years_from_filename": [
+    2025,
+    2024,
+    2023
+  ],
+  "classified_document": {
+    "filename": "20260615_-_rapport_dactivites_annuel_-_exercice_2025_-_totalenergies_marketing_sn.pdf",
+    "label": "Rapport dactivites annuel exercice 2025 totalenergies marketing sn",
+    "link_text": "Télécharger",
+    "doc_type": "rapport_activites_annuel",
+    "exercice": 2025,
+    "exercice_source": "EXPLICITE_DANS_LE_NOM_OU_LE_LIEN",
+    "published_date": "2026-06-15",
+    "url": "https://www.brvm.org/sites/default/files/20260615_-_rapport_dactivites_annuel_-_exercice_2025_-_totalenergies_marketing_sn.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "AUTRE_A_CLASSER",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/totalenergies-marketing-sn",
+    "report_page_label": "TOTALENERGIES MARKETING SN",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/totalenergies-marketing-sn",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/totalenergies-marketing-sn"
+    ]
+  }
+}

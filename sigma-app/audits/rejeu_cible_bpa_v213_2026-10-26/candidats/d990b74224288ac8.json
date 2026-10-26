@@ -1,0 +1,39 @@
+{
+  "candidate_id": "d990b74224288ac8",
+  "ticker": "STBC",
+  "url": "https://www.brvm.org/sites/default/files/20250707_-_etats_financiers_individuels_syscohada_-_sitab_ci_annule_remplace_le_precedent.pdf",
+  "selection_rank_for_ticker": 26,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20250707_-_etats_financiers_individuels_syscohada_-_sitab_ci_annule_remplace_le_precedent.pdf",
+    "label": "Etats financiers individuels syscohada sitab ci annule remplace le precedent",
+    "link_text": "Télécharger",
+    "doc_type": "comptes_ifrs",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2025-07-07",
+    "url": "https://www.brvm.org/sites/default/files/20250707_-_etats_financiers_individuels_syscohada_-_sitab_ci_annule_remplace_le_precedent.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "INDIVIDUEL",
+    "scope_hint_evidence": [
+      "individuel",
+      "individuels"
+    ],
+    "framework_hint": "SYSCOHADA",
+    "framework_hint_evidence": [
+      "syscohada"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+    "report_page_label": "SITAB",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sitab",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/sitab"
+    ]
+  }
+}

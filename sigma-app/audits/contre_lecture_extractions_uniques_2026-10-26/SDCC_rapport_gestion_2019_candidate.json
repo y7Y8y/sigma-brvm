@@ -1,0 +1,37 @@
+{
+  "candidate_id": "b1eec9184f0cb6ee",
+  "ticker": "SDCC",
+  "url": "https://www.brvm.org/sites/default/files/20200615_-_rapport_de_gestion_2019_-_sodeci.pdf",
+  "selection_rank_for_ticker": 14,
+  "target_years_from_filename": [
+    2019,
+    2018,
+    2017
+  ],
+  "classified_document": {
+    "filename": "20200615_-_rapport_de_gestion_2019_-_sodeci.pdf",
+    "label": "Rapport de gestion 2019 sodeci",
+    "link_text": "Télécharger",
+    "doc_type": "synthese_rapport_gestion",
+    "exercice": 2019,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": "2020-06-15",
+    "url": "https://www.brvm.org/sites/default/files/20200615_-_rapport_de_gestion_2019_-_sodeci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "NON_PROUVE",
+    "framework_hint_evidence": [],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "SYNTHESE_OU_RAPPORT_DE_GESTION",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/sodeci",
+    "report_page_label": "SODECI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/sodeci?page=1"
+    ]
+  }
+}

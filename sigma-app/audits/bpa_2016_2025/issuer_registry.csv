@@ -1,0 +1,49 @@
+ticker,name,sector,registry_status,report_pages,aliases_canoniques,documents_indexes,annual_document_min_exercice,annual_document_max_exercice,listing_year,listing_year_status
+ABJC,SERVAIR ABIDJAN COTE D'IVOIRE,Consommation discrétionnaire,PAGE_RATTACHEE,SERVAIR ABIDJAN CI,abjc;servair abidjan cote d ivoire,40,2017,2025,,NON_RECHERCHE
+BBGC,BRIDGE BANK GROUP COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,BBGCI,bbgc;bbgci;bridge bank group;bridge bank group cote d ivoire,2,,,,NON_RECHERCHE
+BICB,BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN,Services financiers,PAGE_RATTACHEE,BIIC,banque internationale pour l industrie et le commerce du benin;bicb;biic;biic benin,9,2024,2025,,NON_RECHERCHE
+BICC,BICI COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,BICI CI,bicc;bici cote d ivoire,40,2016,2025,,NON_RECHERCHE
+BNBC,BERNABE COTE D'IVOIRE,Consommation discrétionnaire,PAGE_RATTACHEE,BERNABE CI,bernabe cote d ivoire;bnbc,40,2018,2025,,NON_RECHERCHE
+BOAB,BANK OF AFRICA BENIN,Services financiers,PAGE_RATTACHEE,BANK OF AFRICA BN,bank of africa benin;boab,39,2018,2025,,NON_RECHERCHE
+BOABF,BANK OF AFRICA BURKINA FASO,Services financiers,PAGE_RATTACHEE,BANK OF AFRICA BF,bank of africa burkina;bank of africa burkina faso;boabf,40,2019,2025,,NON_RECHERCHE
+BOAC,BANK OF AFRICA COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,BANK OF AFRICA CI,bank of africa cote d ivoire;boa cote d ivoire;boac,40,2018,2025,,NON_RECHERCHE
+BOAM,BANK OF AFRICA MALI,Services financiers,PAGE_RATTACHEE,BANK OF AFRICA ML,bank of africa mali;boam,40,2018,2025,,NON_RECHERCHE
+BOAN,BANK OF AFRICA NIGER,Services financiers,PAGE_RATTACHEE,BANK OF AFRICA NG,bank of africa niger;boan,40,2019,2025,,NON_RECHERCHE
+BOAS,BANK OF AFRICA SENEGAL,Services financiers,PAGE_RATTACHEE,BANK OF AFRICA SN,bank of africa senegal;boas,40,2018,2025,,NON_RECHERCHE
+CABC,SICABLE COTE D'IVOIRE,Industriels,PAGE_RATTACHEE,SICABLE,cabc;sicable;sicable cote d ivoire,40,2018,2025,,NON_RECHERCHE
+CBIBF,CORIS BANK INTERNATIONAL BURKINA FASO,Services financiers,PAGE_RATTACHEE,CORIS BANK INTERNATIONAL,cbibf;coris bank international;coris bank international burkina;coris bank international burkina faso,20,2022,2025,,NON_RECHERCHE
+CFAC,CFAO MOTORS COTE D'IVOIRE,Consommation discrétionnaire,PAGE_RATTACHEE,CFAO MOTORS CI,cfac;cfao motors cote d ivoire,40,2018,2025,,NON_RECHERCHE
+CIEC,CIE COTE D'IVOIRE,Services publics,PAGE_RATTACHEE,CIE CI,cie cote d ivoire;ciec,20,2021,2025,,NON_RECHERCHE
+ECOC,ECOBANK COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,ECOBANK CI,ecobank cote d ivoire;ecoc,40,2018,2025,,NON_RECHERCHE
+ETIT,Ecobank Transnational Incorporated TOGO,Services financiers,PAGE_RATTACHEE,ECOBANK TG,ecobank tg;ecobank togo;ecobank trans incorp togo;ecobank transnational;ecobank transnational incorporated togo;eti tg;eti togo;etit,40,2018,2025,,NON_RECHERCHE
+FTSC,FILTISAC COTE D'IVOIRE,Industriels,PAGE_RATTACHEE,FILTISAC CI,filtisac cote d ivoire;ftsc,20,2021,2025,,NON_RECHERCHE
+LNBB,LOTERIE NATIONALE DU BENIN,Consommation discrétionnaire,PAGE_RATTACHEE,LNB,lnb;lnbb;loterie nationale du benin,7,2024,2025,,NON_RECHERCHE
+NEIC,NEI-CEDA COTE D'IVOIRE,Consommation discrétionnaire,PAGE_RATTACHEE,NEI-CEDA CI,nei ceda cote d ivoire;neic,20,2021,2025,,NON_RECHERCHE
+NSBC,NSIA BANQUE COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,NSBC,nsbc;nsia banque cote d ivoire,0,,,,NON_RECHERCHE
+NTLC,NESTLE COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,NESTLE CI,nestle cote d ivoire;ntlc,40,2017,2025,,NON_RECHERCHE
+ONTBF,ONATEL BURKINA FASO,Télécommunications,PAGE_RATTACHEE,ONATEL BF,onatel;onatel burkina faso;ontbf,40,2019,2025,,NON_RECHERCHE
+ORAC,ORANGE COTE D'IVOIRE,Télécommunications,PAGE_RATTACHEE,ORANGE CI,orac;orange cote d ivoire,26,2022,2025,,NON_RECHERCHE
+ORGT,ORAGROUP TOGO,Services financiers,PAGE_RATTACHEE,ORAGROUP,oragroup;oragroup togo;orgt,20,2021,2025,,NON_RECHERCHE
+PALC,PALM COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,PALM CI,palc;palm ci;palm cote d ivoire;palmci,40,2017,2025,,NON_RECHERCHE
+PRSC,TRACTAFRIC MOTORS COTE D'IVOIRE,Consommation discrétionnaire,PAGE_RATTACHEE,TRACTAFRIC CI,prsc;tractafric cote d ivoire;tractafric motors cote d ivoire,40,2018,2025,,NON_RECHERCHE
+SAFC,SAFCA COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,SAFCA CI,safc;safca cote d ivoire,40,2016,2025,,NON_RECHERCHE
+SCRC,SUCRIVOIRE COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,SUCRIVOIRE,scrc;sucrivoire;sucrivoire cote d ivoire,40,2017,2025,,NON_RECHERCHE
+SDCC,SODE COTE D'IVOIRE,Services publics,PAGE_RATTACHEE,SODECI,sdcc;sode cote d ivoire;sodeci,20,2021,2025,,NON_RECHERCHE
+SDSC,AFRICA GLOBAL LOGISTICS COTE D'IVOIRE,Industriels,PAGE_RATTACHEE,BOLLORE TRANSPORT & LOGISTICS,africa global logistics ci;africa global logistics cote d ivoire;bollore transport logistics;sdsc,40,2019,2025,,NON_RECHERCHE
+SEMC,EVIOSYS PACKAGING SIEM COTE D'IVOIRE,Industriels,PAGE_RATTACHEE,CROWN SIEM CI,crown siem cote d ivoire;eviosys packaging siem cote d ivoire;semc;sonoco metal packaging siem s,20,2017,2023,,NON_RECHERCHE
+SGBC,SOCIETE GENERALE COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,SGB CI;SGCI,sgb cote d ivoire;sgbc;sgci;societe generale cote d ivoire,40,2018,2025,,NON_RECHERCHE
+SHEC,VIVO ENERGY COTE D'IVOIRE,Énergie,PAGE_RATTACHEE,VIVO ENERGY CI,shec;vivo energy cote d ivoire,40,2018,2025,,NON_RECHERCHE
+SIBC,SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE,Services financiers,PAGE_RATTACHEE,SIB,sib;sibc;societe ivoirienne de banque;societe ivoirienne de banque cote d ivoire,40,2018,2025,,NON_RECHERCHE
+SICC,SICOR COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,SICOR,sicc;sicor;sicor cote d ivoire,20,2015,2025,,NON_RECHERCHE
+SIVC,ERIUM COTE D’IVOIRE,Industriels,PAGE_RATTACHEE,AIR LIQUIDE CI,air liquide cote d ivoire;erium cote d ivoire;erium cote d ivoire ex air liquide cote d ivoire;sivc,40,2016,2025,,NON_RECHERCHE
+SLBC,SOLIBRA COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,SOLIBRA,slbc;solibra;solibra cote d ivoire,20,2018,2025,,NON_RECHERCHE
+SMBC,SMB COTE D'IVOIRE,Énergie,PAGE_RATTACHEE,SMB,smb;smb cote d ivoire;smbc;societe multinationale de bitume,40,2019,2025,,NON_RECHERCHE
+SNTS,SONATEL SENEGAL,Télécommunications,PAGE_RATTACHEE,SONATEL,snts;sonatel;sonatel senegal,60,2023,2025,,NON_RECHERCHE
+SOGC,SOGB COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,SOGB,sogb;sogb cote d ivoire;sogc,20,2021,2025,,NON_RECHERCHE
+SPHC,SAPH COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,SAPH CI,saph;saph cote d ivoire;sphc,40,2021,2025,,NON_RECHERCHE
+STAC,SETAO COTE D'IVOIRE,Industriels,PAGE_RATTACHEE,SETAO CI,setao cote d ivoire;stac,20,2020,2025,,NON_RECHERCHE
+STBC,SITAB COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,SITAB,sitab;sitab cote d ivoire;stbc,40,2019,2025,,NON_RECHERCHE
+TTLC,TOTALENERGIES MARKETING COTE D'IVOIRE,Énergie,PAGE_RATTACHEE,TOTAL,total;total energies marketing cote d ivoire;totalenergies marketing cote d ivoire;ttlc,40,2019,2025,,NON_RECHERCHE
+TTLS,TOTALENERGIES MARKETING SENEGAL,Énergie,PAGE_RATTACHEE,TOTALENERGIES MARKETING SN,totalenergies marketing senegal;ttls,1,2025,2025,,NON_RECHERCHE
+UNLC,UNILEVER COTE D'IVOIRE,Consommation de base,PAGE_RATTACHEE,UNILEVER CI,unilever cote d ivoire;unlc,20,2018,2023,,NON_RECHERCHE
+UNXC,UNIWAX COTE D'IVOIRE,Consommation discrétionnaire,PAGE_RATTACHEE,UNIWAX CI,uniwax cote d ivoire;unxc,40,2017,2025,,NON_RECHERCHE

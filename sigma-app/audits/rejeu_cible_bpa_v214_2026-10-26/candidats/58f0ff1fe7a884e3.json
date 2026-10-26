@@ -1,0 +1,39 @@
+{
+  "candidate_id": "58f0ff1fe7a884e3",
+  "ticker": "BNBC",
+  "url": "https://www.brvm.org/sites/default/files/bernabe_-_etats_financiers_ifrs_2019.pdf",
+  "selection_rank_for_ticker": 9,
+  "target_years_from_filename": [
+    2019,
+    2018,
+    2017
+  ],
+  "classified_document": {
+    "filename": "bernabe_-_etats_financiers_ifrs_2019.pdf",
+    "label": "Bernabe etats financiers ifrs 2019",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": 2019,
+    "exercice_source": "ANNEE_DANS_LE_NOM_DE_FICHIER_A_CONFIRMER_PAR_LE_CONTENU",
+    "published_date": null,
+    "url": "https://www.brvm.org/sites/default/files/bernabe_-_etats_financiers_ifrs_2019.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "NON_PROUVEE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "IFRS",
+    "framework_hint_evidence": [
+      "ifrs"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "A_CLASSER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/bernabe-ci",
+    "report_page_label": "BERNABE CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/bernabe-ci?page=1"
+    ]
+  }
+}

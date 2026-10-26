@@ -1,0 +1,36 @@
+{
+  "candidate_id": "8bcdef039301b550",
+  "ticker": "SPHC",
+  "url": "https://www.brvm.org/sites/default/files/20240718_-_rapport_des_cac_sur_les_etats_financiers_annuels_-_syscohada_-_saph_ci.pdf",
+  "selection_rank_for_ticker": 30,
+  "target_years_from_filename": [],
+  "classified_document": {
+    "filename": "20240718_-_rapport_des_cac_sur_les_etats_financiers_annuels_-_syscohada_-_saph_ci.pdf",
+    "label": "Rapport des cac sur les etats financiers annuels syscohada saph ci",
+    "link_text": "Télécharger",
+    "doc_type": "etats_financiers",
+    "exercice": null,
+    "exercice_source": null,
+    "published_date": "2024-07-18",
+    "url": "https://www.brvm.org/sites/default/files/20240718_-_rapport_des_cac_sur_les_etats_financiers_annuels_-_syscohada_-_saph_ci.pdf",
+    "classifier_version": "document-selection-v2.0.0",
+    "period_kind": "ANNUEL_INDICE_PAR_LE_LIBELLE",
+    "interim_markers": [],
+    "scope_hint": "NON_PROUVE",
+    "scope_hint_evidence": [],
+    "framework_hint": "SYSCOHADA",
+    "framework_hint_evidence": [
+      "syscohada"
+    ],
+    "version_hint": "NON_PRECISE",
+    "version_markers": [],
+    "content_role_hint": "ETATS_FINANCIERS",
+    "selection_status": "CANDIDAT_ANNUEL_A_CONFIRMER_PAR_LE_CONTENU",
+    "report_page_url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+    "report_page_label": "SAPH CI",
+    "found_in": [
+      "pass1:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci",
+      "pass2:https://www.brvm.org/fr/rapports-societe-cotes/saph-ci"
+    ]
+  }
+}

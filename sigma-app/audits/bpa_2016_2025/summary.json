@@ -1,0 +1,195 @@
+{
+  "cellules_brutes": 480,
+  "cellules_applicables_confirmees": null,
+  "denominateur_series_extraites": 233,
+  "bpa_publie": {
+    "observations": 16,
+    "taux_sur_cellules_brutes_pct": 3.333,
+    "taux_sur_series_extraites_pct": 6.867,
+    "confirme_deux_documents": 4,
+    "taux_confirme_sur_series_extraites_pct": 1.717
+  },
+  "bpa_recalcule_comparable": {
+    "observations_sans_bpa_publie": 0,
+    "taux_sur_series_extraites_pct": 0.0,
+    "confirme_deux_documents": 0
+  },
+  "candidat_part_groupe_ponderee": {
+    "observations": 1
+  },
+  "ratio_indicatif_fin_exercice_hors_couverture_bpa": {
+    "observations": 4
+  },
+  "statuts_bpa": {
+    "NON_RECHERCHE": 459,
+    "PUBLIE_EXTRAIT": 12,
+    "PUBLIE_CONFIRME_DEUX_DOCUMENTS": 4,
+    "RATIO_INDICATIF_FIN_EXERCICE": 4,
+    "RECALCULE_PART_GROUPE_PONDEREE_A_VERIFIER": 1
+  },
+  "statuts_documentaires": {
+    "DOCUMENTS_CANDIDATS_INDEXES_AUDIT_BPA_NON_TERMINE": 121,
+    "SERIE_EXTRAITE_POUR_EXERCICE": 233,
+    "NON_RECHERCHE": 77,
+    "DOCUMENT_INTROUVABLE_DANS_INDEX_ACTUEL": 49
+  },
+  "par_exercice": {
+    "2016": {
+      "cellules": 48,
+      "series_extraites": 0,
+      "bpa_publie": 0
+    },
+    "2017": {
+      "cellules": 48,
+      "series_extraites": 0,
+      "bpa_publie": 0
+    },
+    "2018": {
+      "cellules": 48,
+      "series_extraites": 0,
+      "bpa_publie": 0
+    },
+    "2019": {
+      "cellules": 48,
+      "series_extraites": 16,
+      "bpa_publie": 0
+    },
+    "2020": {
+      "cellules": 48,
+      "series_extraites": 30,
+      "bpa_publie": 1
+    },
+    "2021": {
+      "cellules": 48,
+      "series_extraites": 34,
+      "bpa_publie": 2
+    },
+    "2022": {
+      "cellules": 48,
+      "series_extraites": 34,
+      "bpa_publie": 3
+    },
+    "2023": {
+      "cellules": 48,
+      "series_extraites": 39,
+      "bpa_publie": 3
+    },
+    "2024": {
+      "cellules": 48,
+      "series_extraites": 41,
+      "bpa_publie": 3
+    },
+    "2025": {
+      "cellules": 48,
+      "series_extraites": 39,
+      "bpa_publie": 4
+    }
+  },
+  "schema_version": "sigma-bpa-audit-v1",
+  "source_dataset_generated_at": "2026-10-22T21:20:37+00:00",
+  "companies": 48,
+  "exercices": [
+    2016,
+    2025
+  ],
+  "referentiel": {
+    "societes": 48,
+    "pages_rattachees": 48,
+    "listing_years_status": "NON_RECHERCHE",
+    "pages_rapports_non_rattachees": [
+      {
+        "label": "COTE D'IVOIRE TELECOM",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/cote-divoire-telecom"
+      },
+      {
+        "label": "DC/BR",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/dcbr"
+      },
+      {
+        "label": "EDKSN",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/edksn"
+      },
+      {
+        "label": "FIDELIS FINANCE",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/fidelis-finance"
+      },
+      {
+        "label": "FIMSN.O1",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/fimsno1"
+      },
+      {
+        "label": "FOCUS IMMOBILIER SA",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/focus-immobilier-sa"
+      },
+      {
+        "label": "MOVIS CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/movis-ci"
+      },
+      {
+        "label": "NOURMONY HOLDING",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/nourmony-holding"
+      },
+      {
+        "label": "SANCFIS FASO SA",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sancfis-faso-sa"
+      },
+      {
+        "label": "SDMA S.A",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sdma-sa"
+      },
+      {
+        "label": "SIMPA SA",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/simpa-sa"
+      },
+      {
+        "label": "SOCIÉTÉ IVOIRIENNE DE RAFFINAGE",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/societe-ivoirienne-de-raffinage"
+      },
+      {
+        "label": "TEYLIMOGPCI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/teylimogpci"
+      },
+      {
+        "label": "TNC_FIDFIN.O1",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tncfidfino1"
+      },
+      {
+        "label": "TNC_NMHGCINC.O1",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tncnmhgcinco1"
+      },
+      {
+        "label": "TNC_SCFBF.O1",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tncscfbfo1"
+      },
+      {
+        "label": "TNC_SDMACI.O1",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tncsdmacio1"
+      },
+      {
+        "label": "TNC_SIMPSNNC.O1",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tncsimpsnnco1"
+      },
+      {
+        "label": "TOTAL SENEGAL S.A.",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/total-senegal-sa"
+      },
+      {
+        "label": "TPBF",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tpbf"
+      },
+      {
+        "label": "TPBJ",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tpbj"
+      },
+      {
+        "label": "TPCI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tpci"
+      },
+      {
+        "label": "TRITRAF CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tritraf-ci"
+      }
+    ]
+  },
+  "avertissement": "Grille initiale. NON_RECHERCHE ne signifie ni absent ni non publié. Les exercices antérieurs à une introduction restent à classer NON_APPLICABLE uniquement après preuve officielle de la date d'introduction."
+}

@@ -1,0 +1,1841 @@
+[
+  {
+    "ticker": "ABJC",
+    "name": "SERVAIR ABIDJAN COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "abjc",
+      "servair abidjan cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SERVAIR ABIDJAN CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/servair-abidjan-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 88,
+    "annual_candidates_indexes": 18,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2000-03-31",
+    "listing_date_raw": "31/03/2000",
+    "listing_year": 2000,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/servair-abidjan",
+    "listing_profile_symbol": "ABJC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "BBGC",
+    "name": "BRIDGE BANK GROUP COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bbgc",
+      "bbgci",
+      "bridge bank group",
+      "bridge bank group cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "BBGCI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bbgci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 2,
+    "annual_candidates_indexes": 0,
+    "filename_covered_years": [],
+    "listing_date": "2026-09-24",
+    "listing_date_raw": "24 septembre 2026",
+    "listing_year": 2026,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/bridge-bank-group-cote-divoire-fait-son-entree-la-brvm"
+  },
+  {
+    "ticker": "BICB",
+    "name": "BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "banque internationale pour l industrie et le commerce du benin",
+      "bicb",
+      "biic",
+      "biic benin"
+    ],
+    "report_pages": [
+      {
+        "label": "BIIC",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/biic"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 9,
+    "annual_candidates_indexes": 4,
+    "filename_covered_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2025-04-28",
+    "listing_date_raw": "28 avril 2025",
+    "listing_year": 2025,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/la-banque-internationale-pour-lindustrie-et-le-commerce-du-benin-biic-admise"
+  },
+  {
+    "ticker": "BICC",
+    "name": "BICI COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bicc",
+      "bici cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "BICI CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bici-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 91,
+    "annual_candidates_indexes": 11,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/banque-internationale-pour-le-commerce-et-lindustrie-de-cote-divoire",
+    "listing_profile_symbol": "BICC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "BNBC",
+    "name": "BERNABE COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "bernabe cote d ivoire",
+      "bnbc"
+    ],
+    "report_pages": [
+      {
+        "label": "BERNABE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bernabe-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 94,
+    "annual_candidates_indexes": 18,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/bernabe",
+    "listing_profile_symbol": "BNBC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "BOAB",
+    "name": "BANK OF AFRICA BENIN",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa benin",
+      "boab"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA BN",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-bn"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 94,
+    "annual_candidates_indexes": 11,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2000-11-17",
+    "listing_date_raw": "17/11/2000",
+    "listing_year": 2000,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/bank-africa-benin",
+    "listing_profile_symbol": "BOAB",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "BOABF",
+    "name": "BANK OF AFRICA BURKINA FASO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa burkina",
+      "bank of africa burkina faso",
+      "boabf"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA BF",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-bf"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 89,
+    "annual_candidates_indexes": 16,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2010-12-30",
+    "listing_date_raw": "30/12/2010",
+    "listing_year": 2010,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/bank-africa-burkina-faso",
+    "listing_profile_symbol": "BOA BF",
+    "listing_ticker_resolution_method": "SYMBOLE_NORMALISE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "BOAC",
+    "name": "BANK OF AFRICA COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa cote d ivoire",
+      "boa cote d ivoire",
+      "boac"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 78,
+    "annual_candidates_indexes": 10,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2010-04-07",
+    "listing_date_raw": "07 avril 2010",
+    "listing_year": 2010,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/bank-africa-cote-divoire",
+    "listing_profile_symbol": "BOA CI",
+    "listing_ticker_resolution_method": "SYMBOLE_VIA_ALIAS",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "BOAM",
+    "name": "BANK OF AFRICA MALI",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa mali",
+      "boam"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA ML",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-ml"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 64,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2016-05-31",
+    "listing_date_raw": "31/05/2016",
+    "listing_year": 2016,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/bank-africa-mali",
+    "listing_profile_symbol": "BOAM",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "BOAN",
+    "name": "BANK OF AFRICA NIGER",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa niger",
+      "boan"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA NG",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-ng"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 93,
+    "annual_candidates_indexes": 10,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2003-12-30",
+    "listing_date_raw": "30/12/2003",
+    "listing_year": 2003,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/bank-africa-niger",
+    "listing_profile_symbol": "BOAN",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "BOAS",
+    "name": "BANK OF AFRICA SENEGAL",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "bank of africa senegal",
+      "boas"
+    ],
+    "report_pages": [
+      {
+        "label": "BANK OF AFRICA SN",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bank-africa-sn"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 65,
+    "annual_candidates_indexes": 13,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2014-12-09",
+    "listing_date_raw": "09/12/2014",
+    "listing_year": 2014,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/bank-africa-senegal",
+    "listing_profile_symbol": "BOAS",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "CABC",
+    "name": "SICABLE COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "cabc",
+      "sicable",
+      "sicable cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SICABLE",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sicable"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 95,
+    "annual_candidates_indexes": 17,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-ivoirienne-de-cables-sicable",
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-ivoirienne-de-cables-sicable"
+  },
+  {
+    "ticker": "CBIBF",
+    "name": "CORIS BANK INTERNATIONAL BURKINA FASO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "cbibf",
+      "coris bank international",
+      "coris bank international burkina",
+      "coris bank international burkina faso"
+    ],
+    "report_pages": [
+      {
+        "label": "CORIS BANK INTERNATIONAL",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/coris-bank-international"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 20,
+    "annual_candidates_indexes": 4,
+    "filename_covered_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2016-12-23",
+    "listing_date_raw": "23 décembre 2016",
+    "listing_year": 2016,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/coris-bank-international",
+    "listing_profile_symbol": "CBI SA",
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/coris-bank-international"
+  },
+  {
+    "ticker": "CFAC",
+    "name": "CFAO MOTORS COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "cfac",
+      "cfao motors cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "CFAO MOTORS CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/cfao-motors-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 117,
+    "annual_candidates_indexes": 17,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/compagnie-francaise-de-lafrique-occidentale-en-cote-divoire-cfao-ci",
+    "listing_profile_symbol": "BNBC",
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/compagnie-francaise-de-lafrique-occidentale-en-cote-divoire-cfao-ci"
+  },
+  {
+    "ticker": "CIEC",
+    "name": "CIE COTE D'IVOIRE",
+    "sector": "Services publics",
+    "aliases_canoniques": [
+      "cie cote d ivoire",
+      "ciec"
+    ],
+    "report_pages": [
+      {
+        "label": "CIE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/cie-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 91,
+    "annual_candidates_indexes": 20,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/compagnie-ivoirienne-delectricite-cie-ci",
+    "listing_profile_symbol": "CIEC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "ECOC",
+    "name": "ECOBANK COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "ecobank cote d ivoire",
+      "ecoc"
+    ],
+    "report_pages": [
+      {
+        "label": "ECOBANK CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/ecobank-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 45,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2017-12-12",
+    "listing_date_raw": "12 décembre 2017",
+    "listing_year": 2017,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/ecobank-cote-divoire-fait-son-entree-la-bourse-regionale-des-valeurs"
+  },
+  {
+    "ticker": "ETIT",
+    "name": "Ecobank Transnational Incorporated TOGO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "ecobank tg",
+      "ecobank togo",
+      "ecobank trans incorp togo",
+      "ecobank transnational",
+      "ecobank transnational incorporated togo",
+      "eti tg",
+      "eti togo",
+      "etit"
+    ],
+    "report_pages": [
+      {
+        "label": "ECOBANK TG",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/ecobank-tg"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 105,
+    "annual_candidates_indexes": 14,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2006-09-11",
+    "listing_date_raw": "11/09/2006",
+    "listing_year": 2006,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/ecobank-transnational-incorporated-eti",
+    "listing_profile_symbol": "ETI TG",
+    "listing_ticker_resolution_method": "SYMBOLE_VIA_ALIAS",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "FTSC",
+    "name": "FILTISAC COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "filtisac cote d ivoire",
+      "ftsc"
+    ],
+    "report_pages": [
+      {
+        "label": "FILTISAC CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/filtisac-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 95,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2016-09-16",
+    "listing_date_raw": "16/09/2016",
+    "listing_year": 2016,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/filature-tissage-sacs-de-cote-divoire-filtisac",
+    "listing_profile_symbol": "FTSC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "LNBB",
+    "name": "LOTERIE NATIONALE DU BENIN",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "lnb",
+      "lnbb",
+      "loterie nationale du benin"
+    ],
+    "report_pages": [
+      {
+        "label": "LNB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/lnb"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 7,
+    "annual_candidates_indexes": 2,
+    "filename_covered_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2024-12-13",
+    "listing_date_raw": "13 décembre 2024",
+    "listing_year": 2024,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/la-brvm-franchit-un-nouveau-cap-avec-une-capitalisation-record-de-plus-de-10"
+  },
+  {
+    "ticker": "NEIC",
+    "name": "NEI-CEDA COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "nei ceda cote d ivoire",
+      "neic"
+    ],
+    "report_pages": [
+      {
+        "label": "NEI-CEDA CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/nei-ceda-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 113,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2000-04-14",
+    "listing_date_raw": "14/04/2000",
+    "listing_year": 2000,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/nouvelles-editions-ivoiriennes-centre-deditions-et-de-diffussion",
+    "listing_profile_symbol": "NEIC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "NSBC",
+    "name": "NSIA BANQUE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "nsbc",
+      "nsia banque cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "NSBC",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/nsbc"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 44,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2017-10-24",
+    "listing_date_raw": "24 octobre 2017",
+    "listing_year": 2017,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/nsia-banque-ci-cotee-la-brvm"
+  },
+  {
+    "ticker": "NTLC",
+    "name": "NESTLE COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "nestle cote d ivoire",
+      "ntlc"
+    ],
+    "report_pages": [
+      {
+        "label": "NESTLE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/nestle-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 89,
+    "annual_candidates_indexes": 11,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/nestle-cote-divoire",
+    "listing_profile_symbol": "NTLC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "ONTBF",
+    "name": "ONATEL BURKINA FASO",
+    "sector": "Télécommunications",
+    "aliases_canoniques": [
+      "onatel",
+      "onatel burkina faso",
+      "ontbf"
+    ],
+    "report_pages": [
+      {
+        "label": "ONATEL BF",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/onatel-bf"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 102,
+    "annual_candidates_indexes": 28,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2009-04-30",
+    "listing_date_raw": "30 avril 2009",
+    "listing_year": 2009,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/moov-africa-burkina-faso",
+    "listing_profile_symbol": "ONTBF",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "ORAC",
+    "name": "ORANGE COTE D'IVOIRE",
+    "sector": "Télécommunications",
+    "aliases_canoniques": [
+      "orac",
+      "orange cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "ORANGE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/orange-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 26,
+    "annual_candidates_indexes": 9,
+    "filename_covered_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2022-12-30",
+    "listing_date_raw": "30 décembre 2022",
+    "listing_year": 2022,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/orange-cote-divoire-admis-la-cote-de-la-brvm-cest-la-plus-importante"
+  },
+  {
+    "ticker": "ORGT",
+    "name": "ORAGROUP TOGO",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "oragroup",
+      "oragroup togo",
+      "orgt"
+    ],
+    "report_pages": [
+      {
+        "label": "ORAGROUP",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/oragroup"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 39,
+    "annual_candidates_indexes": 13,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2019-04-16",
+    "listing_date_raw": "16 avril 2019",
+    "listing_year": 2019,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.orabank.net/sites/default/files/190416_ipo_oragroup_cotation_fr.pdf"
+  },
+  {
+    "ticker": "PALC",
+    "name": "PALM COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "palc",
+      "palm ci",
+      "palm cote d ivoire",
+      "palmci"
+    ],
+    "report_pages": [
+      {
+        "label": "PALM CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/palm-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 103,
+    "annual_candidates_indexes": 13,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1999-10-18",
+    "listing_date_raw": "18/10/1999",
+    "listing_year": 1999,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/palm-cote-divoire-palmci",
+    "listing_profile_symbol": "PALC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "PRSC",
+    "name": "TRACTAFRIC MOTORS COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "prsc",
+      "tractafric cote d ivoire",
+      "tractafric motors cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "TRACTAFRIC CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/tractafric-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 72,
+    "annual_candidates_indexes": 15,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/tractafric-motors-cote-divoire",
+    "listing_profile_symbol": "PRSC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SAFC",
+    "name": "SAFCA COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "safc",
+      "safca cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SAFCA CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/safca-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 78,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-africaine-de-credit-automobile-de-cote-divoire-safca",
+    "listing_profile_symbol": "SAFC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SCRC",
+    "name": "SUCRIVOIRE COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "scrc",
+      "sucrivoire",
+      "sucrivoire cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SUCRIVOIRE",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sucrivoire"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 49,
+    "annual_candidates_indexes": 22,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2016-12-29",
+    "listing_date_raw": "29 décembre 2016",
+    "listing_year": 2016,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/2016-cru-exceptionnel-pour-la-brvm"
+  },
+  {
+    "ticker": "SDCC",
+    "name": "SODE COTE D'IVOIRE",
+    "sector": "Services publics",
+    "aliases_canoniques": [
+      "sdcc",
+      "sode cote d ivoire",
+      "sodeci"
+    ],
+    "report_pages": [
+      {
+        "label": "SODECI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sodeci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 94,
+    "annual_candidates_indexes": 23,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-de-distribution-deau-de-cote-divoire-sodeci",
+    "listing_profile_symbol": "SDCC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SDSC",
+    "name": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "africa global logistics ci",
+      "africa global logistics cote d ivoire",
+      "bollore transport logistics",
+      "sdsc"
+    ],
+    "report_pages": [
+      {
+        "label": "BOLLORE TRANSPORT & LOGISTICS",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/bollore-transport-logistics"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 107,
+    "annual_candidates_indexes": 23,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/africa-global-logistics-agl-cote-divoire",
+    "listing_profile_symbol": "SDSC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "INDEX_OFFICIEL_BRVM"
+  },
+  {
+    "ticker": "SEMC",
+    "name": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "crown siem cote d ivoire",
+      "eviosys packaging siem cote d ivoire",
+      "semc",
+      "sonoco metal packaging siem s"
+    ],
+    "report_pages": [
+      {
+        "label": "CROWN SIEM CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/crown-siem-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 60,
+    "annual_candidates_indexes": 11,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-ivoirienne-demballage-metallique-crown-siem",
+    "listing_profile_symbol": "SEMC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SGBC",
+    "name": "SOCIETE GENERALE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "sgb cote d ivoire",
+      "sgbc",
+      "sgci",
+      "societe generale cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SGB CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sgb-ci"
+      },
+      {
+        "label": "SGCI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sgci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 99,
+    "annual_candidates_indexes": 14,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-generale-cote-divoire-sgci",
+    "listing_profile_symbol": "SGBC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SHEC",
+    "name": "VIVO ENERGY COTE D'IVOIRE",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "shec",
+      "vivo energy cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "VIVO ENERGY CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/vivo-energy-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 43,
+    "annual_candidates_indexes": 11,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/vivo-energy-cote-divoire",
+    "listing_profile_symbol": "SHEC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SIBC",
+    "name": "SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE",
+    "sector": "Services financiers",
+    "aliases_canoniques": [
+      "sib",
+      "sibc",
+      "societe ivoirienne de banque",
+      "societe ivoirienne de banque cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SIB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sib"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 53,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2016-10-27",
+    "listing_date_raw": "27 octobre 2016",
+    "listing_year": 2016,
+    "listing_year_status": "LU_SUR_SOURCE_OFFICIELLE_VERIFIEE_SUPPLEMENT",
+    "listing_profile_url": null,
+    "listing_profile_symbol": null,
+    "listing_ticker_resolution_method": "SUPPLEMENT_VERIFIE_TITRE_OU_COMMUNIQUE_OFFICIEL",
+    "listing_profile_discovered_via": "SUPPLEMENT_SOURCES_OFFICIELLES",
+    "listing_source_url": "https://www.brvm.org/fr/mediacentre/actualites/2016-cru-exceptionnel-pour-la-brvm"
+  },
+  {
+    "ticker": "SICC",
+    "name": "SICOR COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "sicc",
+      "sicor",
+      "sicor cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SICOR",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sicor"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 37,
+    "annual_candidates_indexes": 13,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-ivoirienne-de-coco-rape-sicor-0",
+    "listing_profile_symbol": "SICC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SIVC",
+    "name": "ERIUM COTE D’IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "air liquide cote d ivoire",
+      "erium cote d ivoire",
+      "erium cote d ivoire ex air liquide cote d ivoire",
+      "sivc"
+    ],
+    "report_pages": [
+      {
+        "label": "AIR LIQUIDE CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/air-liquide-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 69,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1999-04-19",
+    "listing_date_raw": "19/04/1999",
+    "listing_year": 1999,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/erium-cote-divoire",
+    "listing_profile_symbol": "SIVC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SLBC",
+    "name": "SOLIBRA COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "slbc",
+      "solibra",
+      "solibra cote d ivoire"
+    ],
+    "report_pages": [
+      {
+        "label": "SOLIBRA",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/solibra"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 72,
+    "annual_candidates_indexes": 9,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-de-limonaderies-et-brasseries-dafrique-solibra",
+    "listing_profile_symbol": "SLBC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SMBC",
+    "name": "SMB COTE D'IVOIRE",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "smb",
+      "smb cote d ivoire",
+      "smbc",
+      "societe multinationale de bitume"
+    ],
+    "report_pages": [
+      {
+        "label": "SMB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/smb"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 107,
+    "annual_candidates_indexes": 22,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-multinationale-de-bitume-de-cote-divoire-smb",
+    "listing_profile_symbol": "SMBC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SNTS",
+    "name": "SONATEL SENEGAL",
+    "sector": "Télécommunications",
+    "aliases_canoniques": [
+      "snts",
+      "sonatel",
+      "sonatel senegal"
+    ],
+    "report_pages": [
+      {
+        "label": "SONATEL",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sonatel"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 103,
+    "annual_candidates_indexes": 21,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-10-02",
+    "listing_date_raw": "02/10/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-nationale-de-telecommunication-du-senegal-sonatel",
+    "listing_profile_symbol": "SNTS",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SOGC",
+    "name": "SOGB COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "sogb",
+      "sogb cote d ivoire",
+      "sogc"
+    ],
+    "report_pages": [
+      {
+        "label": "SOGB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sogb"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 107,
+    "annual_candidates_indexes": 17,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-des-caoutchoucs-de-grand-bereby-de-cote-divoire-sogb",
+    "listing_profile_symbol": "SOGC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "SPHC",
+    "name": "SAPH COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "saph",
+      "saph cote d ivoire",
+      "sphc"
+    ],
+    "report_pages": [
+      {
+        "label": "SAPH CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/saph-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 125,
+    "annual_candidates_indexes": 30,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-africaine-de-plantation-dheveas-de-cote-divoire-saph",
+    "listing_profile_symbol": "SPHC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "STAC",
+    "name": "SETAO COTE D'IVOIRE",
+    "sector": "Industriels",
+    "aliases_canoniques": [
+      "setao cote d ivoire",
+      "stac"
+    ],
+    "report_pages": [
+      {
+        "label": "SETAO CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/setao-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 54,
+    "annual_candidates_indexes": 12,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-detudes-et-de-travaux-pour-lafrique-de-louest-setao",
+    "listing_profile_symbol": "STAC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "STBC",
+    "name": "SITAB COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "sitab",
+      "sitab cote d ivoire",
+      "stbc"
+    ],
+    "report_pages": [
+      {
+        "label": "SITAB",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/sitab"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 96,
+    "annual_candidates_indexes": 29,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/societe-ivoirienne-des-tabacs-sitab",
+    "listing_profile_symbol": "STBC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "TTLC",
+    "name": "TOTALENERGIES MARKETING COTE D'IVOIRE",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "total",
+      "total energies marketing cote d ivoire",
+      "totalenergies marketing cote d ivoire",
+      "ttlc"
+    ],
+    "report_pages": [
+      {
+        "label": "TOTAL",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/total"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 104,
+    "annual_candidates_indexes": 23,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/total-cote-divoire-total-cote-divoire",
+    "listing_profile_symbol": "TTLC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "TTLS",
+    "name": "TOTALENERGIES MARKETING SENEGAL",
+    "sector": "Énergie",
+    "aliases_canoniques": [
+      "totalenergies marketing senegal",
+      "ttls"
+    ],
+    "report_pages": [
+      {
+        "label": "TOTALENERGIES MARKETING SN",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/totalenergies-marketing-sn"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 1,
+    "annual_candidates_indexes": 1,
+    "filename_covered_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "2015-02-20",
+    "listing_date_raw": "20/02/2015",
+    "listing_year": 2015,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/total-senegal-total-senegal",
+    "listing_profile_symbol": "TTLS",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "UNLC",
+    "name": "UNILEVER COTE D'IVOIRE",
+    "sector": "Consommation de base",
+    "aliases_canoniques": [
+      "unilever cote d ivoire",
+      "unlc"
+    ],
+    "report_pages": [
+      {
+        "label": "UNILEVER CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/unilever-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 24,
+    "annual_candidates_indexes": 8,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/huilerie-savonnerie-lipochimie-unilever",
+    "listing_profile_symbol": "UNLC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  },
+  {
+    "ticker": "UNXC",
+    "name": "UNIWAX COTE D'IVOIRE",
+    "sector": "Consommation discrétionnaire",
+    "aliases_canoniques": [
+      "uniwax cote d ivoire",
+      "unxc"
+    ],
+    "report_pages": [
+      {
+        "label": "UNIWAX CI",
+        "url": "https://www.brvm.org/fr/rapports-societe-cotes/uniwax-ci"
+      }
+    ],
+    "registry_status": "PAGE_RATTACHEE",
+    "documents_indexes": 88,
+    "annual_candidates_indexes": 14,
+    "filename_covered_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "listing_date": "1998-09-16",
+    "listing_date_raw": "16/09/1998",
+    "listing_year": 1998,
+    "listing_year_status": "LU_SUR_PROFIL_OFFICIEL_BRVM",
+    "listing_profile_url": "https://www.brvm.org/fr/emetteurs/societes-cotees/uniwax",
+    "listing_profile_symbol": "UNXC",
+    "listing_ticker_resolution_method": "SYMBOLE_EXACT",
+    "listing_profile_discovered_via": "RECHERCHE_INTERNE_BRVM_PAR_SYMBOLE_OU_NOM"
+  }
+]
