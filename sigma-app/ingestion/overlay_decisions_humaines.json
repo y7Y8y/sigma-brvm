@@ -1,0 +1,242 @@
+{
+  "schema_version": "sigma-bpa-480-overlay-decisions-v1",
+  "date": "2026-10-26",
+  "parser_version": "eps-evidence-v2.1.4",
+  "matrix_reference": "audits/audit_bpa_480_corrige_rejeu_v214_2026-10-26/matrix.csv",
+  "audit_decisions_source": "audits/audit_bpa_480_corrige_rejeu_v214_2026-10-26/decisions_humaines_v214.json",
+  "dataset_published_modified": false,
+  "counting_base": {
+    "official_base": "APPLICABLE",
+    "official_base_size": 442,
+    "decision": "La base de comptage officielle des indicateurs de couverture BPA est celle des 442 cellules applicables. Les 38 cellules antérieures à l'introduction sont comptées séparément, jamais fusionnées dans un taux.",
+    "source": "arbitrage_lead_2026-10-26"
+  },
+  "rules": {
+    "single_source": "Ce fichier est la seule couche de décision humaine appliquée en machine à la matrice v2.1.4.",
+    "no_rewrite": "matrix.csv n'est jamais réécrit : l'overlay est appliqué à la lecture par compteurs_bpa_480.py.",
+    "guard": "Chaque décision porte le statut attendu dans la matrice ; un désaccord bloque le calcul.",
+    "no_integration": "Aucune décision de ce fichier n'autorise une intégration dans web/data/data.json."
+  },
+  "cell_decisions": [
+    {
+      "ticker": "BOAS",
+      "exercice": 2017,
+      "audit_decision": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "guard_status_bpa_matrix": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_status_bpa": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_validation_level": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "reason": "Page 54 : résultat net par action ou part sociale, périmètre individuel, base de calcul non précisée. La valeur correspond arithmétiquement à un ratio sur actions de fin de période, pas à un BPA moyen pondéré démontré.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "BOAS",
+      "exercice": 2018,
+      "audit_decision": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "guard_status_bpa_matrix": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_status_bpa": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_validation_level": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "reason": "Même ligne page 54 ; base non précisée et aucun nombre moyen pondéré vérifié.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "BOAS",
+      "exercice": 2019,
+      "audit_decision": "RATIO_INDICATIF_SEPARE_PAS_UN_BPA_COMPARABLE",
+      "guard_status_bpa_matrix": "RATIO_INDICATIF_FIN_EXERCICE",
+      "applied_status_bpa": null,
+      "reason": "Le document est désormais rattaché à 2019, non 2020. Le quotient de contrôle concorde avec le 380 imprimé, mais le dénominateur est un nombre d'actions de fin d'exercice.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "BOAS",
+      "exercice": 2020,
+      "audit_decision": "AUCUNE_CONCLUSION_DE_NON_PUBLICATION",
+      "guard_status_bpa_matrix": "ILLISIBLE",
+      "applied_status_bpa": null,
+      "reason": "La couverture autrefois attribuée à 2020 appartenait au document 2019. Après correction, aucun état primaire lisible ne couvre 2020 dans le périmètre journalisé.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2019,
+      "audit_decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 140.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2020,
+      "audit_decision": "BPA_PUBLIE_RETENU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 307.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2021,
+      "audit_decision": "BPA_PUBLIE_RETENU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 188.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2022,
+      "audit_decision": "BPA_PUBLIE_RETENU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 183.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2023,
+      "audit_decision": "BPA_PUBLIE_RETENU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 205.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2024,
+      "audit_decision": "BPA_PUBLIE_RETENU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 188.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "CIEC",
+      "exercice": 2025,
+      "audit_decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 234.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SDCC",
+      "exercice": 2018,
+      "audit_decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 325.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SDCC",
+      "exercice": 2019,
+      "audit_decision": "BPA_PUBLIE_RETENU_CONTRE_LU",
+      "guard_status_bpa_matrix": null,
+      "applied_status_bpa": null,
+      "retained_published": true,
+      "retained_value_fcfa": 353.0,
+      "reason": "",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2019,
+      "audit_decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "guard_status_bpa_matrix": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_status_bpa": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_validation_level": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "reason": "Valeurs sous échelle de page sans unité par action explicite ; aucune conversion autorisée.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2020,
+      "audit_decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "guard_status_bpa_matrix": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_status_bpa": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_validation_level": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "reason": "Valeurs brutes 1,695/0,666 conservées comme preuves, non promues en FCFA par action.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2021,
+      "audit_decision": "PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "guard_status_bpa_matrix": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_status_bpa": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_validation_level": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "reason": "Valeurs sous échelle de page et périmètre insuffisamment démontré pour une promotion comparable.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2022,
+      "audit_decision": "CORRECTION_MANUELLE_PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "guard_status_bpa_matrix": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "applied_status_bpa": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_validation_level": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "reason": "Il ne s'agit pas d'une absence. Le montant imprimé est sous échelle de page sans unité par action distincte ; la règle du chantier interdit de le convertir silencieusement. Le quotient de contrôle n'est pas substitué au BPA publié.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "SPHC",
+      "exercice": 2023,
+      "audit_decision": "CORRECTION_MANUELLE_PUBLICATION_DETECTEE_NON_RETENUE_ECHELLE",
+      "guard_status_bpa_matrix": "NON_PUBLIE_DANS_SOURCES_VERIFIEES",
+      "applied_status_bpa": "PUBLIE_NON_RETENU_DEVISE_COMPOSANTE_OU_PERIMETRE",
+      "applied_validation_level": "PUBLICATION_DETECTEE_NON_RETENUE",
+      "reason": "Publication présente mais non retenue pour la même ambiguïté d'échelle ; aucune valeur convertie n'est intégrée.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "TTLS",
+      "exercice": 2024,
+      "audit_decision": "TRANSCRIPTION_CONFIRMEE_EXCLUE_DES_BPA_FORMELLEMENT_COMPARABLES",
+      "guard_status_bpa_matrix": "PUBLIE_EXTRAIT",
+      "applied_status_bpa": null,
+      "comparability_excluded": true,
+      "comparability_exclusion_reason": "Numérateur part du groupe non prouvé : exclu des BPA formellement comparables.",
+      "reason": "Le quotient sur résultat net total est 219,1796 alors que le quotient sur la part du groupe est 140,5637. Sans note de calcul prouvant le numérateur attribuable aux actionnaires ordinaires, la comparabilité formelle n'est pas établie.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "TTLS",
+      "exercice": 2025,
+      "audit_decision": "TRANSCRIPTION_CONFIRMEE_EXCLUE_DES_BPA_FORMELLEMENT_COMPARABLES",
+      "guard_status_bpa_matrix": "PUBLIE_EXTRAIT",
+      "applied_status_bpa": null,
+      "comparability_excluded": true,
+      "comparability_exclusion_reason": "Numérateur part du groupe non prouvé : exclu des BPA formellement comparables.",
+      "reason": "Le quotient sur résultat net total est 208,0741 alors que le quotient sur la part du groupe est 143,2353. Même exclusion provisoire, malgré une segmentation individuel/consolidé désormais correcte.",
+      "source": "decisions_humaines_v214.json"
+    },
+    {
+      "ticker": "ORGT",
+      "exercice": 2018,
+      "audit_decision": "HORS_PERIMETRE_NON_APPLICABLE",
+      "guard_status_bpa_matrix": "PUBLIE_EXTRAIT",
+      "applied_status_bpa": null,
+      "coverage_scope": "HORS_PERIMETRE_NON_APPLICABLE",
+      "retained_value_fcfa_preserved": 115.0,
+      "reason": "Exercice antérieur à l'introduction en bourse du 16/04/2019 : la cellule est NON_APPLICABLE à la série de marché visée. Le BPA publié de 115,0 FCFA (consolidé) est conservé comme information hors périmètre et n'entre dans aucun taux de couverture BPA.",
+      "source": "arbitrage_lead_2026-10-26"
+    }
+  ]
+}
