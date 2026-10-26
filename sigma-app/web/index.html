@@ -223,5 +223,16 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   <script src="app.js" defer></script>
+  <script>
+    /* Installation PWA : l'application doit rester ouvrable sans réseau, en
+       affichant la date de la dernière collecte officielle disponible. */
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js", { scope: "./" }).catch(() => {
+          /* Un échec d'enregistrement ne doit jamais empêcher l'usage en ligne. */
+        });
+      });
+    }
+  </script>
 </body>
 </html>
