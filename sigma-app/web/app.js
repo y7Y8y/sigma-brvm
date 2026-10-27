@@ -5,6 +5,14 @@
    Les données personnelles restent dans localStorage, sur cet appareil. */
 
 const STORAGE_KEY = "sigma_personal_v1";
+
+/* Compatibilité : structuredClone n'existe pas avant Safari 15.4 ni sur certains
+   WebView Android anciens. Sans ce repli, TOUTE l'application échouait au
+   chargement sur ces appareils — pas seulement une fonctionnalité. Le repli
+   reste sûr ici : les données personnelles ne contiennent que des types simples. */
+const cloneSur = (typeof structuredClone === "function")
+  ? structuredClone
+  : (valeur) => JSON.parse(JSON.stringify(valeur));
 const DEFAULT_PERSONAL = {
   profile: null,
   onboardingDismissedAt: null,
@@ -149,10 +157,10 @@ const ui = {
 function loadPersonal() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return structuredClone(DEFAULT_PERSONAL);
+    if (!raw) return cloneSur(DEFAULT_PERSONAL);
     const parsed = JSON.parse(raw);
     return {
-      ...structuredClone(DEFAULT_PERSONAL),
+      ...cloneSur(DEFAULT_PERSONAL),
       ...parsed,
       portfolios: {
         reel: { transactions: parsed?.portfolios?.reel?.transactions || [] },
@@ -161,7 +169,7 @@ function loadPersonal() {
       settings: { ...DEFAULT_PERSONAL.settings, ...(parsed.settings || {}) }
     };
   } catch (_) {
-    return structuredClone(DEFAULT_PERSONAL);
+    return cloneSur(DEFAULT_PERSONAL);
   }
 }
 
@@ -662,6 +670,7 @@ function showView(view, ticker = null) {
   // l’accueil, la fiche société des entreprises.
   const navView = view === "fiche" ? "entreprises" : ["marche", "alertes"].includes(view) ? "accueil" : view;
   $$(".nav-item").forEach(button => button.classList.toggle("is-active", button.dataset.view === navView));
+  $$("[data-view-link='parametres']").forEach(button => button.classList.toggle("is-active", view === "parametres"));
   const target = view === "fiche" && ui.selectedTicker ? `fiche-${ui.selectedTicker}` : view;
   history.replaceState(null, "", `#${target}`);
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -890,6 +899,7 @@ function generateAlerts() {
       type: "echeance", icon: "◷", tone: "amber",
       title: `Échéance macro — ${event.title}`,
       body: `${fmtDate(event.date)} · ${calendarEventAmount(event) || "Montant non publié dans le tableau"} · ${event.detail || ""}`,
+      short: calendarEventAmount(event) || "Montant non publié dans le tableau",
       meta: `${event.source_label} · Date publiée par la source ; à la collecte : J+${event.in_days}.`,
       url: event.url, date: event.date
     });
@@ -970,13 +980,25 @@ function renderHome() {
       <p class="source-line">Ordre de lecture préparé par des règles explicites (onglet Décision), jamais un ordre d’achat : lisez la fiche et le brouillon de thèse avant tout geste chez votre SGI.</p>
     </article>`;
 
-  // 2 · Alertes non lues (la page complète reste accessible).
+  // 2 · Sociétés à étudier : mis en avant immédiatement, une ligne par société.
+  const radarCard = `<article class="card section-space">
+      <div class="event-row"><div><p class="eyebrow">Règles explicites · Radar</p><h2>Sociétés à étudier en premier</h2></div><button type="button" class="button button-secondary button-small" data-decision-link="radar">Règles &amp; classement</button></div>
+      ${radar.selection.length ? `<ul class="study-list">${radar.selection.slice(0, 5).map((entry, index) => `<li class="study-row">
+        <span class="study-rank">${index + 1}</span>
+        <span class="study-id"><button type="button" class="text-button ticker" data-open-company="${entry.company.ticker}">${entry.company.ticker}</button><span class="study-name">${escapeHtml(entry.company.name)}</span></span>
+        <span class="study-metrics"><span>PER ${fmtRatio(entry.company.latest_boc?.per)}</span><span>Rdt ${fmtPct(entry.company.latest_boc?.net_dividend_yield_pct, 2, false)}</span><span>Liq. ${fmtCompactFCFA(entry.company.history_stats?.median_traded_value_last_20_fcfa)}</span></span>
+        <button type="button" class="button button-secondary button-small" data-open-company="${entry.company.ticker}">Fiche</button>
+      </li>`).join("")}</ul>` : '<div class="Empty-state">Aucune société ne passe les règles du Radar avec les données actuelles.</div>'}
+      <p class="source-line">Tri automatique par règles écrites (liquidité, PER publié au BOC, dividende récent). <strong>Ordre d'étude, jamais ordre d'achat</strong> : la fiche dit ce que SIGMA sait, ce qu'il ignore et ce qui invaliderait la thèse.</p>
+    </article>`;
+
+  // 3 · Alertes non lues (la page complète reste accessible).
   const alerts = generateAlerts();
   const unread = alerts.filter(a => !personal.alertsRead.includes(a.id));
   const shownAlerts = (unread.length ? unread : alerts).slice(0, 3);
   const alertsCard = `<article class="card section-space">
       <div class="event-row"><div><p class="eyebrow">Faits datés sur votre périmètre</p><h2>Alertes ${unread.length ? `· ${unread.length} non lue(s)` : "· rien de neuf"}</h2></div><div style="display:flex;gap:6px;flex-wrap:wrap">${unread.length ? `<button type="button" class="button button-small" data-mark-alerts-read>Tout marquer comme lu</button>` : ""}<button type="button" class="button button-secondary button-small" data-view-link="alertes">Toutes les alertes</button></div></div>
-      ${shownAlerts.length ? `<ul class="list-clean">${shownAlerts.map(alert => `<li class="event-row"><div style="display:flex;gap:10px;align-items:flex-start"><span class="alert-icon ${alert.tone}">${alert.icon}</span><div><div class="strong">${escapeHtml(alert.title)}</div><div class="subtext">${escapeHtml(alert.body)}</div></div></div><span class="pill">${fmtDate(alert.date)}</span></li>`).join("")}</ul>` : '<div class="Empty-state">Aucune alerte factuelle dans le périmètre surveillé automatiquement.</div>'}
+      ${shownAlerts.length ? `<ul class="list-clean">${shownAlerts.map(alert => `<li class="event-row"><div style="display:flex;gap:10px;align-items:flex-start"><span class="alert-icon ${alert.tone}">${alert.icon}</span><div><div class="strong">${escapeHtml(alert.title)}</div><div class="subtext">${escapeHtml(alert.short || alert.body)}</div></div></div><span class="pill">${fmtDate(alert.date)}</span></li>`).join("")}</ul>` : '<div class="Empty-state">Aucune alerte factuelle dans le périmètre surveillé automatiquement.</div>'}
     </article>`;
 
   // 3 · Le marché en une minute (détail complet : page Marché).
@@ -994,15 +1016,11 @@ function renderHome() {
 
   host.innerHTML = `
     ${monthlyCard}
+    ${radarCard}
     ${alertsCard}
     ${marketCard}
 
     <div class="grid-2 section-space">
-      <article class="card">
-        <div class="event-row"><div><p class="eyebrow">Sélection automatique du moment</p><h2>Radar SIGMA — à étudier en premier</h2></div><button type="button" class="button button-secondary button-small" data-decision-link="radar">Règles &amp; classement</button></div>
-        ${radar.selection.length ? `<ul class="list-clean">${radar.selection.slice(0, 3).map((entry, index) => `<li class="event-row"><div style="display:flex;gap:10px;align-items:center"><span class="radar-rank">${index + 1}</span><div><button type="button" class="text-button ticker" data-open-company="${entry.company.ticker}">${entry.company.ticker}</button><div class="subtext">${escapeHtml(entry.company.name)} · PER BOC ${fmtRatio(entry.company.latest_boc?.per)} · rendement ${fmtPct(entry.company.latest_boc?.net_dividend_yield_pct, 2, false)}</div></div></div><div style="text-align:right"><div class="score-total" style="font-size:18px">${entry.score}<span style="font-size:11px">/100</span></div><div class="subtext">score d'étude</div></div></li>`).join("")}</ul>` : '<div class="Empty-state">Aucune société ne passe les règles du Radar avec les données actuelles.</div>'}
-        <p class="source-line">Premier tri par règles quantitatives transparentes (échangeabilité, PER publié, dividende documenté). Ordre de lecture, jamais ordre d'achat — les piliers fondamentaux restent conditionnés aux séries vérifiées dans deux documents affichées en fiche.</p>
-      </article>
       <article class="card">
         <div class="event-row"><div><p class="eyebrow">Collecte automatique</p><h2>Dernières publications</h2></div><button type="button" class="button button-secondary button-small" data-view-link="actualites">Tout le fil</button></div>
         ${latestNews.length ? latestNews.map(newsItemHtml).join("") : '<div class="Empty-state">Aucune publication collectée à ce stade.</div>'}
@@ -2631,13 +2649,13 @@ function renderSettings() {
     try {
       const parsed = JSON.parse(await file.text());
       if (!parsed.personal || typeof parsed.personal !== "object") throw new Error("Format non reconnu");
-      personal = { ...structuredClone(DEFAULT_PERSONAL), ...parsed.personal, settings: { ...DEFAULT_PERSONAL.settings, ...(parsed.personal.settings || {}) } };
+      personal = { ...cloneSur(DEFAULT_PERSONAL), ...parsed.personal, settings: { ...DEFAULT_PERSONAL.settings, ...(parsed.personal.settings || {}) } };
       savePersonal(); renderDynamic(); showView("parametres"); showToast("Sauvegarde personnelle importée.");
     } catch (_) { showToast("Import impossible : fichier personnel SIGMA non reconnu."); }
   });
   $("#resetData").addEventListener("click", () => {
     if (!confirm("Supprimer watchlist, portefeuilles, journal, événements et réglages enregistrés dans ce navigateur ?")) return;
-    personal = structuredClone(DEFAULT_PERSONAL); ui.decision.budget = personal.settings.monthlyBudget;
+    personal = cloneSur(DEFAULT_PERSONAL); ui.decision.budget = personal.settings.monthlyBudget;
     savePersonal(); renderDynamic(); showView("parametres"); showToast("Espace personnel réinitialisé.");
   });
 }

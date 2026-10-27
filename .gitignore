@@ -10,3 +10,7 @@ sigma-app/audits/**/document_results*.jsonl
 sigma-app/audits/**/matrix.json
 sigma-app/audits/**/inventory.json
 sigma-app/audits/**/candidate_plan.json
+
+# Smoke test (jsdom) : dépendances Node locales
+sigma-app/tools/smoke/node_modules/
+sigma-app/tools/smoke/package-lock.json
