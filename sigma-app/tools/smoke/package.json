@@ -1,0 +1,13 @@
+{
+  "name": "sigma-smoke",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vérification de rendu de l'app SIGMA dans un DOM réel (jsdom), hors pytest.",
+  "scripts": {
+    "accueil": "node smoke.js ../../web",
+    "vues": "node vues.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}
