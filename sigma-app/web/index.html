@@ -117,25 +117,27 @@
           <div>
             <p class="eyebrow">Préparer, comparer, documenter</p>
             <h1 id="title-decision">Décision</h1>
-            <p class="lead">Votre décision mensuelle préparée automatiquement : budget du mois, sociétés à examiner en premier, baisses à vérifier avant tout geste, contexte daté et documents officiels. SIGMA prépare et explique — la décision et l’ordre, chez votre SGI, restent les vôtres.</p>
+            <p class="lead">Ce qu’il y a à faire de votre versement ce mois-ci, dans l’ordre — la décision reste la vôtre.</p>
           </div>
         </div>
         <div class="tabs" role="tablist" aria-label="Sections de décision">
-          <button type="button" class="tab is-active" data-decision-tab="decision">Décision du mois</button>
-          <button type="button" class="tab" data-decision-tab="radar">Radar SIGMA</button>
-          <button type="button" class="tab" data-decision-tab="baisses">Baisses à examiner</button>
-          <button type="button" class="tab" data-decision-tab="contexte">Contexte &amp; scénarios</button>
-          <button type="button" class="tab" data-decision-tab="chiffres">Marché en chiffres</button>
-          <button type="button" class="tab" data-decision-tab="documents">Documents &amp; échéances</button>
+          <button type="button" class="tab is-active" data-decision-tab="mois">Ce mois</button>
+          <button type="button" class="tab" data-decision-tab="examiner">À examiner</button>
+          <button type="button" class="tab" data-decision-tab="donnees">Références</button>
         </div>
         <div id="analysisContent"></div>
         <div id="decisionDocuments" hidden>
-          <div class="toolbar card">
-            <label>Filtrer les pages de rapports des émetteurs
-              <input id="reportSearch" type="search" placeholder="Nom de l’émetteur…">
-            </label>
-          </div>
-          <div id="reportsContent"></div>
+          <details class="fold">
+            <summary><span class="fold-caret" aria-hidden="true">›</span><span class="fold-title"><span class="eyebrow">Bibliothèque officielle</span>Documents, dividendes, BOC et échéances</span><span class="fold-hint">Sources</span></summary>
+            <div class="fold-body">
+              <div class="toolbar">
+                <label>Filtrer les pages de rapports des émetteurs
+                  <input id="reportSearch" type="search" placeholder="Nom de l’émetteur…">
+                </label>
+              </div>
+              <div id="reportsContent"></div>
+            </div>
+          </details>
         </div>
       </section>
 

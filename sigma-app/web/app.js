@@ -284,9 +284,16 @@ function modeBanner(kind) {
   }
   return `<div class="mode-banner real"><span aria-hidden="true" style="font-size:22px">●</span><div><strong>Vous êtes dans le ${termButton("Portefeuille réel", "portefeuille réel déclaré")}.</strong><p>Il ne contient que des opérations déjà exécutées chez votre SGI puis enregistrées ici. En cas d’écart, l’avis d’opéré de la SGI fait foi.</p></div></div>`;
 }
+function fold(summary, body, { open = false, hint = "", className = "" } = {}) {
+  // Un seul patron pour tout ce qui est méthode, liste complète ou preuve :
+  // visible à un clic, jamais supprimé. Le corps est rendu même fermé (les
+  // formulaires et boutons qu'il contient restent branchés).
+  if (!body) return "";
+  return `<details class="fold${className ? ` ${className}` : ""}"${open ? " open" : ""}><summary><span class="fold-caret" aria-hidden="true">›</span><span class="fold-title">${summary}</span>${hint ? `<span class="fold-hint">${hint}</span>` : ""}</summary><div class="fold-body">${body}</div></details>`;
+}
 function plainSummary(title, bullets, extraClass = "") {
   if (!bullets?.length) return "";
-  return `<article class="card plain-summary ${extraClass}"><p class="eyebrow">En clair</p><h2>${escapeHtml(title)}</h2><ul>${bullets.map(item => `<li>${item}</li>`).join("")}</ul></article>`;
+  return fold(`<span class="eyebrow">En clair</span>${escapeHtml(title)}`, `<ul>${bullets.map(item => `<li>${item}</li>`).join("")}</ul>`, { className: `plain-summary ${extraClass}`.trim(), hint: "Ouvrir" });
 }
 function latestBocDate() {
   const sessions = DATA?.history?.sessions || [];
@@ -600,7 +607,7 @@ const NEWS_TAG_LABELS = {
   dette_publique: "Dette publique", matieres_premieres: "Matières premières", regulation: "Régulation"
 };
 
-function newsItemHtml(item) {
+function newsItemHtml(item, { compact = false } = {}) {
   const official = item.source_type !== "presse_specialisee";
   const dateLabel = item.published_date
     ? fmtDate(item.published_date) + (item.date_type === "mentionnee_dans_texte" ? " · date mentionnée dans le texte" : "")
@@ -616,7 +623,7 @@ function newsItemHtml(item) {
       <span class="tag-chip">${escapeHtml(item.category || "")}</span>${tickerChips}${tagChips}
     </div>
     <a class="news-title" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>
-    ${item.excerpt ? `<p class="news-excerpt">${escapeHtml(item.excerpt)}</p>` : ""}
+    ${item.excerpt && !compact ? `<p class="news-excerpt">${escapeHtml(item.excerpt)}</p>` : ""}
     <div class="subtext" style="margin-top:4px">${dateLabel}${item.document_type === "pdf" ? " · Document PDF de l'émetteur" : ""}${(item.tickers || []).length ? " · rattachement automatique à confirmer à la lecture" : ""}</div>
   </div>`;
 }
@@ -977,7 +984,7 @@ function renderHome() {
       </div>` : `<p><strong>Aucune société ne passe vos filtres ce mois-ci</strong> avec un budget de ${fmtFCFA(monthly.workingBudget)}. C’est une réponse valable : garder le versement en attente fait partie de la méthode. Vous pouvez aussi élargir un critère dans l’onglet Décision plutôt que forcer un achat.</p>`}
       ${profileDone ? "" : `<div class="notice" style="margin-top:12px"><p><strong>Préréglage non fait :</strong> ce bloc utilise un montant neutre. Deux minutes pour indiquer votre pays, votre SGI et votre versement réel — ensuite tout est automatique.</p></div>`}
       <div class="form-actions" style="margin-top:12px"><button type="button" class="button" data-decision-link="decision">Préparer la décision du mois</button>${firstCandidate ? `<button type="button" class="button button-secondary" data-open-company="${firstCandidate.company.ticker}">Ouvrir la fiche ${firstCandidate.company.ticker}</button>` : ""}${profileDone ? "" : `<button type="button" class="button button-secondary" data-open-onboarding>Faire le préréglage</button>`}</div>
-      <p class="source-line">Ordre de lecture préparé par des règles explicites (onglet Décision), jamais un ordre d’achat : lisez la fiche et le brouillon de thèse avant tout geste chez votre SGI.</p>
+      <p class="source-line">Liste de lecture préparée par des règles écrites — jamais un ordre d’achat.</p>
     </article>`;
 
   // 2 · Sociétés à étudier : mis en avant immédiatement, une ligne par société.
@@ -989,7 +996,7 @@ function renderHome() {
         <span class="study-metrics"><span>PER ${fmtRatio(entry.company.latest_boc?.per)}</span><span>Rdt ${fmtPct(entry.company.latest_boc?.net_dividend_yield_pct, 2, false)}</span><span>Liq. ${fmtCompactFCFA(entry.company.history_stats?.median_traded_value_last_20_fcfa)}</span></span>
         <button type="button" class="button button-secondary button-small" data-open-company="${entry.company.ticker}">Fiche</button>
       </li>`).join("")}</ul>` : '<div class="Empty-state">Aucune société ne passe les règles du Radar avec les données actuelles.</div>'}
-      <p class="source-line">Tri automatique par règles écrites (liquidité, PER publié au BOC, dividende récent). <strong>Ordre d'étude, jamais ordre d'achat</strong> : la fiche dit ce que SIGMA sait, ce qu'il ignore et ce qui invaliderait la thèse.</p>
+      <p class="source-line"><strong>Ordre d’étude, jamais ordre d’achat.</strong> La fiche dit ce que SIGMA sait, ce qu’il ignore et ce qui invaliderait la lecture.</p>
     </article>`;
 
   // 3 · Alertes non lues (la page complète reste accessible).
@@ -1011,7 +1018,7 @@ function renderHome() {
         <div class="key-fact"><span class="metric-label">${termButton("Valeur échangée", "Valeur des transactions")}</span><div class="metric-value">${fmtCompactFCFA(activity["Valeur des transactions"]?.value)}</div><div class="subtext">Activité publiée par la BRVM</div></div>
       </div>
       <div style="margin-top:14px">${lineChart(compositePoints)}</div>
-      <p class="source-line">Niveaux d’indice imprimés dans les ${termButton("BOC", "Bulletins Officiels de la Cote")} (${compositePoints.length} séances lues). Concentration des capitalisations : <strong>non calculée</strong> tant que le nombre d’actions vérifié n’est pas intégré pour toutes les sociétés.</p>
+      <p class="source-line">Niveaux d’indice des ${termButton("BOC", "Bulletins Officiels de la Cote")} (${compositePoints.length} séances lues).</p>
     </article>`;
 
   host.innerHTML = `
@@ -1020,27 +1027,20 @@ function renderHome() {
     ${alertsCard}
     ${marketCard}
 
-    <div class="grid-2 section-space">
-      <article class="card">
-        <div class="event-row"><div><p class="eyebrow">Collecte automatique</p><h2>Dernières publications</h2></div><button type="button" class="button button-secondary button-small" data-view-link="actualites">Tout le fil</button></div>
-        ${latestNews.length ? latestNews.map(newsItemHtml).join("") : '<div class="Empty-state">Aucune publication collectée à ce stade.</div>'}
-      </article>
-    </div>
+    ${fold("Dernières publications officielles et de presse", `<div class="event-row" style="margin-bottom:8px"><p class="eyebrow" style="margin:0">Collecte automatique du ${fmtDateTime(DATA.generated_at)}</p><button type="button" class="button button-secondary button-small" data-view-link="actualites">Tout le fil</button></div>${latestNews.length ? latestNews.map(item => newsItemHtml(item, { compact: true })).join("") : '<div class="Empty-state">Aucune publication collectée à ce stade.</div>'}`, { hint: "Fil" })}
 
-    <div class="grid-2 section-space">
+    ${fold("Dividendes à venir et valeurs que vous suivez", `<div class="grid-2">
       <article class="card">
         <p class="eyebrow">À connaître</p><h2>Prochains dividendes officiels</h2>
         ${upcoming.length ? `<ul class="list-clean">${upcoming.map(div => `<li class="event-row"><div><div class="strong">${escapeHtml(div.issuer)}</div><div class="subtext">Ex-dividende ${fmtDate(div.ex_date)} · paiement ${fmtDate(div.payment_date)}</div></div><div style="text-align:right"><div class="strong">${fmtFCFA(div.net_amount_fcfa)}</div>${div.notice_url ? `<a href="${div.notice_url}" target="_blank" rel="noopener">Avis</a>` : ""}</div></li>`).join("")}</ul>` : '<div class="Empty-state">Aucun dividende futur dans les pages officielles collectées à la date de génération.</div>'}
-        <p class="source-line">Montants nets et dates tels que publiés dans le tableau officiel des paiements de dividendes.</p>
       </article>
       <article class="card">
-        <div class="event-row"><div><p class="eyebrow">Votre périmètre de lecture</p><h2>Valeurs à surveiller — sources distinguées</h2></div><button type="button" class="button button-secondary button-small" data-view-link="entreprises">Toutes les entreprises</button></div>
-        <p class="source-line">SIGMA réunit ici vos positions et épingles personnelles${personal.settings.autoFollowRadar === false ? "" : ", plus la sélection automatique du Radar"}. Chaque badge indique pourquoi la valeur apparaît ; une position simulée reste violette et séparée du réel.</p>
+        <div class="event-row"><div><p class="eyebrow">Votre périmètre de lecture</p><h2>Valeurs à surveiller</h2></div><button type="button" class="button button-secondary button-small" data-view-link="entreprises">Toutes les entreprises</button></div>
         ${relevantCompanies.length ? `<ul class="list-clean">${relevantCompanies.slice(0, 7).map(c => companyMiniRow(c)).join("")}</ul>` : `<div class="Empty-state"><span class="sigma-empty">Σ</span>Aucune valeur dans le périmètre suivi. Activez le ${termButton("Suivi automatique Radar")} dans Paramètres ou épinglez une société.<br><button type="button" class="button button-small" data-decision-link="radar" style="margin-top:12px">Voir la sélection automatique</button></div>`}
       </article>
-    </div>
+    </div>`, { hint: "Contexte" })}
 
-    ${macroCalendarCard()}
+    ${fold("Calendrier des échéances datées — dividendes, titres publics, BCEAO", macroCalendarCard({ compact: true }), { hint: "Échéances" })}
 
     <details class="card section-space">
       <summary class="strong" style="cursor:pointer"><span class="eyebrow" style="display:block">Instantané BRVM · bruit de séance</span>Plus fortes variations — à lire sans réagir</summary>
@@ -1048,10 +1048,9 @@ function renderHome() {
         <div><h3 style="margin-top:0">Plus fortes hausses</h3><ul class="list-clean">${top.map(c => companyMiniRow(c, `<div class="subtext">Volume : ${fmtNum(c.latest_quote.volume)} titres</div>`)).join("")}</ul></div>
         <div><h3 style="margin-top:0">Plus fortes baisses</h3><ul class="list-clean">${flop.map(c => companyMiniRow(c, `<div class="subtext">Volume : ${fmtNum(c.latest_quote.volume)} titres</div>`)).join("")}</ul></div>
       </div>
-      <p class="source-line">Une variation de séance, surtout sur faible volume, ne dit rien de la qualité d’une société : c’est la checklist baisse de l’onglet Décision qui sert à examiner, documents à l’appui.</p>
     </details>
 
-    <div class="notice blue section-space"><p><strong>État réel de couverture.</strong> ${escapeHtml(DATA.coverage.note)} Les fiches séparent donc faits de marché officiels, chiffres extraits avec leur niveau de vérification et éléments encore non calculables.</p></div>`;
+    <p class="source-line">Couverture mesurée : ${DATA.coverage.companies_in_snapshot ?? COMPANIES.length} sociétés décrites, ${DATA.coverage.boc_sessions ?? 0} BOC lus, ${DATA.coverage.issuer_documents_indexed ?? 0} documents émetteurs indexés, ${DATA.coverage.companies_with_series_3y ?? 0} séries de 3 exercices. <button type="button" class="text-button" data-view-link="parametres">Détail des trous de données</button></p>`;
 }
 function renderMarket() {
   const host = $("#marketContent");
@@ -1141,7 +1140,7 @@ function renderCompanies() {
     return `<article class="card company-card">
       <div class="company-card-head"><div><div class="ticker">${company.ticker}</div><h3>${escapeHtml(company.name)}</h3><div class="subtext">${escapeHtml(company.sector)}</div>${trackingBadges(company.ticker)}</div>
       <button type="button" class="icon-button ${isWatched(company.ticker) ? "is-on" : ""}" data-toggle-watch="${company.ticker}" aria-label="Épingler personnellement ${company.ticker}" title="Épingle personnelle">${isWatched(company.ticker) ? "★" : "☆"}</button></div>
-      <div><div class="company-price">${fmtFCFA(quote.close)}</div><div style="margin-top:6px">${variationPill(quote.variation_pct)} <span class="subtext">${termButton("Volume")} ${fmtNum(quote.volume)}</span></div></div>
+      <div><div class="company-price">${fmtFCFA(quote.close)}</div><div style="margin-top:6px">${variationPill(quote.variation_pct)}</div></div>
       <div class="metric-row">
         <div><div class="metric-label">${termButton("PER")} BOC</div><div class="metric-value">${fmtRatio(boc.per)}</div></div>
         <div><div class="metric-label">${termButton("Rendement net", "Rdt net")} BOC</div><div class="metric-value">${fmtPct(boc.net_dividend_yield_pct, 2, false)}</div></div>
@@ -1352,7 +1351,7 @@ function renderCompanyDetail() {
   host.innerHTML = `
     <div class="view-heading" style="margin-top:8px">
       <div><p class="eyebrow">${escapeHtml(company.sector)} · ${company.ticker}</p><h1 id="title-fiche">${escapeHtml(company.name)}</h1>
-      <p class="lead">Lecture en trois temps : d’abord l’essentiel en clair, puis les chiffres officiels, puis les documents et limites. Les mots en pointillé avec <span class="term-mark" aria-hidden="true">?</span> ouvrent leur définition.</p>${trackingBadges(company.ticker)}</div>
+      <p class="lead">L’essentiel, les chiffres officiels, puis les preuves — dans cet ordre.</p>${trackingBadges(company.ticker)}</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="button button-secondary" data-toggle-watch="${company.ticker}">${isWatched(company.ticker) ? "★ Épinglée personnellement" : "☆ Épingler"}</button>
       <button type="button" class="button" data-journal-for="${company.ticker}">Brouillon de thèse automatique</button></div>
     </div>
@@ -1384,7 +1383,7 @@ function renderCompanyDetail() {
 
     <article class="card section-space">
       <div class="event-row"><div><p class="eyebrow">Préparation d'ordre</p><h2>Si vous vouliez acheter des actions ${company.ticker}</h2></div><span class="pill amber">SIGMA ne passe aucun ordre</span></div>
-      <p class="muted">SIGMA prépare les chiffres ; l'ordre réel se passe chez votre ${termButton("SGI")}, pendant la séance (négociation en continu de 9h45 à 14h00, fixing de clôture à 14h30 — horaires officiels BRVM). Le cours de référence ci-dessous est le dernier cours <strong>publié</strong> : ce n'est pas un prix en temps réel et l'exécution pourra différer. Sur ce marché, un ${termButton("Ordre à cours limité", "ordre à cours limité")} protège contre les écarts. <strong>La simulation violette plus bas ne transmet rien à la SGI.</strong></p>
+      <p class="muted">L’ordre réel se passe chez votre ${termButton("SGI")}, en séance (9h45–14h00, fixing 14h30). Le cours ci-dessous est le dernier cours <strong>publié</strong>, pas un prix temps réel : un ${termButton("Ordre à cours limité", "ordre à cours limité")} protège des écarts.</p>
       <div class="form-grid" style="margin-top:12px">
         <label>Quantité envisagée (actions)<input id="orderQty" type="number" min="0" step="1" value="${orderDefaultQty}"><span class="field-hint">Pré-rempli automatiquement avec ce que permet un versement mensuel${orderPocketPct ? ` hors ${termButton("Poche d'apprentissage", "poche d'apprentissage")} (${fmtNum(orderPocketPct)} %)` : ""} : ${fmtFCFA(orderWorkingBudget)}. Vous pouvez changer la quantité ; sinon, il n’y a rien à recalculer.</span></label>
         <label>Cours de référence publié<input value="${isNum(orderRefPrice) ? fmtNum(orderRefPrice) : "—"} FCFA" readonly><span class="field-hint">${escapeHtml(DATA.snapshot.source_updated_label || "")} · ${escapeHtml(DATA.snapshot.session_status)} · collecte SIGMA du ${fmtDateTime(DATA.generated_at)}</span></label>
@@ -1452,7 +1451,7 @@ function renderCompanyDetail() {
         <h3 style="margin-top:16px">Avis récents rattachés</h3>
         ${matchedDividends.length ? `<ul class="list-clean">${matchedDividends.slice(0, 6).map(div => `<li class="event-row"><div><div class="strong">${fmtFCFA(div.net_amount_fcfa)} net</div><div class="subtext">Exercice ${escapeHtml(div.fiscal_year)} · ex-dividende ${fmtDate(div.ex_date)} · paiement ${fmtDate(div.payment_date)}</div></div>${div.notice_url ? `<a class="button button-secondary button-small" href="${div.notice_url}" target="_blank" rel="noopener">Avis</a>` : ""}</li>`).join("")}</ul>` : '<div class="Empty-state">Aucun avis du tableau collecté n’a pu être rattaché sans ambiguïté à ce ticker.</div>'}
       </details>
-      <article class="card section-space"><p class="eyebrow">Fondamentaux · états financiers officiels</p><h2>Série annuelle et piliers SIGMA</h2>
+      ${fold("Série annuelle et piliers SIGMA — ce que disent les états financiers officiels", `<article class="card section-space"><p class="eyebrow">Fondamentaux · états financiers officiels</p><h2>Série annuelle et piliers SIGMA</h2>
         ${(() => {
           const fund = company.fundamentals || {};
           const series = fundamentalSeries(company);
@@ -1539,7 +1538,7 @@ function renderCompanyDetail() {
           <div class="notice" style="margin-top:12px"><p><strong>Score global : toujours suspendu.</strong> SIGMA publie la Solidité, la Croissance et ces repères dividende/flux séparément. Les fusionner maintenant donnerait un poids trompeur aux sociétés simplement mieux documentées ; le ${termButton("Dividende durable", "pilier Dividende durable")} ne deviendra une note que lorsque le taux brut de distribution, la couverture cash et les recoupements seront suffisamment couverts.</p></div>
           ${(fund.notes || []).length ? `<details style="margin-top:10px"><summary class="strong" style="cursor:pointer">Contrôles et écarts signalés (${fund.notes.length})</summary><ul>${fund.notes.map(note => `<li class="small">${escapeHtml(note)}</li>`).join("")}</ul></details>` : ""}`;
         })()}
-      </article>
+      </article>`, { hint: "Données" })}
     </div>
 
     <details class="card section-space"><summary style="cursor:pointer"><span class="eyebrow" style="display:block">Bibliothèque officielle de l'émetteur · collecte automatique</span><strong style="font-size:19px">Documents financiers indexés sur brvm.org (${(company.documents || []).length})</strong></summary>
@@ -1622,32 +1621,33 @@ function renderAnalysisRadar() {
   }
   return `<article class="card">
     <div class="event-row"><div><p class="eyebrow">Sélection automatique · BOC du ${fmtDate(latestBocDate())}</p><h2>${termButton("Radar SIGMA", "Radar SIGMA")} — les sociétés à étudier en premier</h2></div><span class="pill dark">${scored.length} éligible(s) / ${COMPANIES.length}</span></div>
-    <p class="muted">SIGMA applique les mêmes règles aux ${COMPANIES.length} sociétés cotées à chaque collecte. Le Radar ordonne votre travail de lecture ; il ne connaît ni la qualité réelle des entreprises ni leurs résultats futurs. Aucune société n'est « recommandée ».</p>
-    <div class="grid-3" style="margin:14px 0">
+    <p class="muted">Mêmes règles pour les ${COMPANIES.length} sociétés cotées. Le Radar ordonne votre lecture — il ne recommande rien.</p>
+    ${fold("Les trois règles appliquées — et pourquoi celles-ci", `    <div class="grid-3" style="margin:14px 0">
       <div class="key-fact"><span class="metric-label">Règle 1 — ${termButton("Liquidité", "Échangeabilité")}</span><div class="metric-value" style="font-size:16px">≥ ${rules.minTradedSessions}/20 séances et ≥ ${fmtCompactFCFA(rules.minMedianTradedValue)} médiane</div><div class="subtext">Un versement de 100 000 à 300 000 FCFA doit rester une fraction raisonnable des échanges d'une séance type.</div></div>
       <div class="key-fact"><span class="metric-label">Règle 2 — ${termButton("Valorisation", "Valorisation publiée")}</span><div class="metric-value" style="font-size:16px">${termButton("PER")} BOC présent, entre 0 et ${rules.maxPer}</div><div class="subtext">Un PER absent signale souvent un ${termButton("Bénéfice net par action", "bénéfice par action")} négatif ou non communiqué : hors premier tri, pas hors étude définitive.</div></div>
       <div class="key-fact"><span class="metric-label">Règle 3 — ${termButton("Dividende", "Dividende documenté")}</span><div class="metric-value" style="font-size:16px">Rendement &gt; 0, ≤ 15 %, &lt; 18 mois</div><div class="subtext">Les rendements extrêmes ou anciens sont écartés. L’historique BRVM par exercice est ensuite affiché pour distinguer une distribution régulière d’un paiement isolé ; il ne remplace pas le ${termButton("Taux de distribution", "taux de distribution")}.</div></div>
     </div>
     <p class="source-line">Notation des éligibles : rangs parmi les éligibles — ${termButton("Liquidité")} ${rules.weights.liquidity} pts, ${termButton("Valorisation", "Valorisation relative")} ${rules.weights.valuation} pts, ${termButton("Rendement net", "Rendement")} ${rules.weights.yield} pts. Sélection limitée à ${rules.maxPerSector} sociétés par secteur pour éviter une liste mono-sectorielle.</p>
     ${personal.settings.autoFollowRadar === false ? `<div class="notice" style="margin-top:12px"><p><strong>Suivi automatique désactivé.</strong> La sélection n’alimente ni l’accueil, ni les alertes, ni le filtre des actualités, sauf vos épingles et positions.</p></div>` : `<div class="notice green" style="margin-top:12px"><p><strong>Déjà fait automatiquement :</strong> cette sélection alimente l’accueil, les alertes et le filtre « Mes valeurs » sous le badge « Suivi automatique Radar ». Vous n’avez pas à l’ajouter à la main. L’étoile reste réservée à votre ${termButton("Liste de suivi", "liste de suivi personnelle")}.</p></div>`}
+    `, { hint: "Méthode" })}
     <div class="form-actions"><button type="button" class="button" data-decision-link="decision">Préparer la décision du mois</button><button type="button" class="button button-secondary" data-view-link="parametres">Régler le suivi automatique</button></div>
   </article>
 
-  <div class="grid-2-equal section-space">${selection.map((entry, index) => radarEntryCard(entry, index + 1)).join("")}</div>
+  <div class="grid-2-equal section-space">${selection.slice(0, 3).map((entry, index) => radarEntryCard(entry, index + 1)).join("")}</div>
+  ${selection.length > 3 ? fold(`Les ${selection.length - 3} autres sociétés éligibles (rangs 4 à ${selection.length})`, `<div class="grid-2-equal">${selection.slice(3).map((entry, index) => radarEntryCard(entry, index + 4)).join("")}</div>`, { hint: "Suite" }) : ""}
 
-  ${overflow.length ? `<article class="card section-space"><p class="eyebrow">Éligibles suivantes</p><h2>Hors sélection : plafond sectoriel ou rang</h2>
+  ${overflow.length ? fold(`Éligibles suivantes — ${overflow.length} société(s) hors sélection (plafond sectoriel ou rang)`, `<article class="card"><p class="eyebrow">Éligibles suivantes</p><h2>Hors sélection : plafond sectoriel ou rang</h2>
     <div class="table-wrap"><table><thead><tr><th>Société</th><th class="num">${termButton("Score d'étude")}</th><th class="num">${termButton("PER")} BOC</th><th class="num">${termButton("Rendement net", "Rendement")}</th><th class="num">${termButton("Liquidité", "Liquidité méd.")}</th><th></th></tr></thead>
-    <tbody>${overflow.map(entry => `<tr><td><div class="ticker">${entry.company.ticker}</div><div class="subtext">${escapeHtml(entry.company.name)} · ${escapeHtml(entry.company.sector)}</div></td><td class="num strong">${entry.score}/100</td><td class="num">${fmtRatio(entry.company.latest_boc?.per)}</td><td class="num">${fmtPct(entry.company.latest_boc?.net_dividend_yield_pct, 2, false)}</td><td class="num">${fmtCompactFCFA(entry.company.history_stats?.median_traded_value_last_20_fcfa)}</td><td><button type="button" class="button button-secondary button-small" data-open-company="${entry.company.ticker}">Fiche</button></td></tr>`).join("")}</tbody></table></div></article>` : ""}
+    <tbody>${overflow.map(entry => `<tr><td><div class="ticker">${entry.company.ticker}</div><div class="subtext">${escapeHtml(entry.company.name)} · ${escapeHtml(entry.company.sector)}</div></td><td class="num strong">${entry.score}/100</td><td class="num">${fmtRatio(entry.company.latest_boc?.per)}</td><td class="num">${fmtPct(entry.company.latest_boc?.net_dividend_yield_pct, 2, false)}</td><td class="num">${fmtCompactFCFA(entry.company.history_stats?.median_traded_value_last_20_fcfa)}</td><td><button type="button" class="button button-secondary button-small" data-open-company="${entry.company.ticker}">Fiche</button></td></tr>`).join("")}</tbody></table></div></article>`, { hint: "Liste" }) : ""}
 
-  <article class="card section-space"><p class="eyebrow">Transparence du tri</p><h2>${rejected.length} société(s) écartée(s) par les règles</h2>
+  ${fold(`Pourquoi ${rejected.length} société(s) sont écartées — et ce que cela ne veut pas dire`, `<p class="eyebrow">Transparence du tri</p>
     <ul class="list-clean">${[...reasonCounts.entries()].sort((a, b) => b[1] - a[1]).map(([label, count]) => `<li class="event-row"><span>${escapeHtml(label)}</span><strong>${count}</strong></li>`).join("")}</ul>
     <p class="subtext">Une société peut cumuler plusieurs motifs. Être écartée du Radar ne signifie pas « mauvaise entreprise » : cela signifie que les données de marché vérifiées ne suffisent pas à la placer dans le premier périmètre d'étude.</p>
     <details style="margin-top:10px"><summary class="strong" style="cursor:pointer">Détail société par société</summary>
       <div class="table-wrap" style="margin-top:10px"><table><thead><tr><th>Société</th><th>Motif(s) d'écartement</th></tr></thead>
       <tbody>${rejected.map(item => `<tr><td><div class="ticker">${item.company.ticker}</div><div class="subtext">${escapeHtml(item.company.name)}</div></td><td>${item.reasons.map(escapeHtml).join(" · ")}</td></tr>`).join("")}</tbody></table></div>
     </details>
-    <div class="notice" style="margin-top:14px"><p><strong>Limite assumée.</strong> Le score d’étude du Radar reste fondé sur le marché ; les ${termButton("États financiers")} sont présentés séparément dans chaque fiche (Solidité/Croissance quand calculables). Dette nette, flux, ${termButton("Taux de distribution", "taux de distribution")} et avantages concurrentiels ne sont pas encore intégrés au tri.</p></div>
-  </article>`;
+    <div class="notice" style="margin-top:14px"><p><strong>Limite assumée.</strong> Le score d’étude du Radar reste fondé sur le marché ; les ${termButton("États financiers")} sont présentés séparément dans chaque fiche (Solidité/Croissance quand calculables). Dette nette, flux, ${termButton("Taux de distribution", "taux de distribution")} et avantages concurrentiels ne sont pas encore intégrés au tri.</p></div>`, { hint: "Tri" })}`;
 }
 
 /* ---------------------------------------------------------------------------
@@ -1801,11 +1801,11 @@ function renderNews() {
     return true;
   });
   const total = items.length;
-  items = items.slice(0, 60);
+  items = items.slice(0, 30);
   const officialCount = newsItems().filter(item => item.source_type !== "presse_specialisee").length;
   host.innerHTML = `<article class="card">
     <div class="event-row"><div><p class="eyebrow">Collecte du ${fmtDateTime(DATA.generated_at)}</p><h2>${total} publication(s) correspondent au filtre</h2></div><span class="pill">${newsItems().length} collectées · ${officialCount} officielles</span></div>
-    <p class="source-line">Ordre : date de publication décroissante. Les actualités BRVM ne portent pas de date de publication structurée : SIGMA signale alors « date mentionnée dans le texte ». La presse est étiquetée comme telle et ne remplace jamais l'annonce officielle de l'émetteur. Le filtre « Mes valeurs » inclut vos positions et épingles${personal.settings.autoFollowRadar === false ? "" : " plus le suivi automatique Radar"} ; la raison du suivi est visible en ouvrant la fiche.</p>
+    <p class="source-line">Plus récentes d’abord. La presse est étiquetée : elle ne remplace jamais l’annonce officielle de l’émetteur.</p>
     ${items.length ? items.map(newsItemHtml).join("") : '<div class="Empty-state">Aucune publication ne correspond à ce filtre dans la dernière collecte.</div>'}
     ${total > items.length ? `<p class="source-line" style="margin-top:10px">Affichage limité aux ${items.length} plus récentes ; affinez la recherche pour le reste.</p>` : ""}
   </article>`;
@@ -1886,7 +1886,6 @@ function renderAnalysisDecision() {
   const { candidates, reasons, workingBudget, pocketAmount, pocketPct, outOfScope, feesKnown } = computeMonthlyCandidates();
   return `<div class="grid-2">
     <article class="card"><p class="eyebrow">Automatique · vos critères visibles</p><h2>Préparer le versement du mois</h2>
-      <div class="notice green" style="margin:12px 0"><p><strong>En clair :</strong> changez un montant ou un filtre et SIGMA recalcule immédiatement le nombre de titres possibles. Il n’y a aucun bouton « Recalculer » à chercher. Le résultat reste une liste à lire, pas un ordre.</p></div>
       <form id="decisionForm" class="form-grid">
         <label class="wide">Périmètre d'examen<select name="source">
           <option value="radar" ${d.source === "radar" ? "selected" : ""}>Sociétés éligibles au Radar SIGMA (sélection automatique par règles)</option>
@@ -1906,7 +1905,7 @@ function renderAnalysisDecision() {
       </form>
       <div class="${feesKnown ? "notice green" : "notice"} section-space"><p>${feesKnown ? `Frais estimés avec vos paramètres : ${escapeHtml(personal.settings.sgiName || "SGI")} · ${termButton("Courtage", "courtage")}  ${fmtNum(Number(personal.settings.feePct), 3)} % + ${fmtFCFA(Number(personal.settings.fixedFee))}.` : "<strong>Frais non estimés.</strong> Renseignez le courtage et le minimum de votre SGI dans Paramètres ; SIGMA n’invente aucun tarif."}</p></div>
     </article>
-    <article class="card"><p class="eyebrow">Transparence du filtre</p><h2>Pourquoi les autres n’apparaissent pas</h2>
+    ${fold("Pourquoi les autres sociétés n’apparaissent pas", `<p class="eyebrow">Transparence du filtre</p>
       <ul class="list-clean">
         <li class="event-row"><span>Hors périmètre choisi (${d.source === "radar" ? "non éligibles au Radar" : d.source === "followed" ? "absentes du périmètre suivi automatique/personnel" : "—"})</span><strong>${outOfScope}</strong></li>
         <li class="event-row"><span>Prix unitaire supérieur au budget ou aucun titre achetable après frais connus</span><strong>${reasons.price}</strong></li>
@@ -1915,8 +1914,7 @@ function renderAnalysisDecision() {
         <li class="event-row"><span>Critère BOC absent, rendement extrême/ancien écarté, ou ${termButton("PER")} non utilisable</span><strong>${reasons.criterion}</strong></li>
         <li class="event-row"><span>Hors secteur choisi</span><strong>${reasons.sector}</strong></li>
       </ul>
-      <p class="source-line">Les fondamentaux restent conditionnels : seuls les piliers dont la série officielle est suffisante sont publiés en fiche. Cette sélection ne remplace jamais la lecture des rapports ni la relecture du brouillon de ${termButton("Thèse", "thèse")} préparé automatiquement.</p>
-    </article>
+      <p class="source-line">Les fondamentaux restent conditionnels : seuls les piliers dont la série officielle est suffisante sont publiés en fiche.</p>`, { hint: "Filtres" })}
   </div>
   <article class="card section-space"><p class="eyebrow">Sélection à examiner — pas un classement d’achat</p><h2>${candidates.length} société(s) à examiner avec ${fmtFCFA(workingBudget)}${pocketPct ? ` <span class="pill">Objectif ${personal.profile?.horizon === "moyen" ? "moyen" : "long"} terme · ${fmtFCFA(pocketAmount)} réservés à la ${termButton("Poche d'apprentissage", "poche d'apprentissage")} (${fmtNum(pocketPct)} %) — argent réel séparé, pas simulation</span>` : ""}</h2>
     ${candidates.length ? `<div class="table-wrap"><table><thead><tr><th>Société</th><th class="num">Cours utilisé</th><th class="num">Titres possibles</th><th class="num">Investi</th><th class="num">Frais ${termButton("SGI")}</th><th class="num">Reste</th><th class="num">${termButton("PER")} / ${termButton("Rendement net", "Rdt")} BOC</th><th></th></tr></thead><tbody>
@@ -2010,23 +2008,31 @@ function renderAnalysisContext() {
 function renderDecision() {
   const host = $("#analysisContent");
   if (!host || !DATA) return;
-  // Anciens onglets séparés « indicateurs » et « liquidité » fusionnés en
-  // « Marché en chiffres » ; « rapports » devient « documents ».
-  if (ui.analysisTab === "indicateurs" || ui.analysisTab === "liquidite") ui.analysisTab = "chiffres";
-  if (!["decision", "radar", "baisses", "contexte", "chiffres", "documents"].includes(ui.analysisTab)) ui.analysisTab = "decision";
+  // Trois portes seulement. Les six anciens onglets sont conservés comme
+  // adresses internes (liens existants) et rabattus sur la bonne porte.
+  const PORTES = {
+    decision: "mois", radar: "examiner", baisses: "examiner",
+    indicateurs: "donnees", liquidite: "donnees", chiffres: "donnees",
+    contexte: "donnees", documents: "donnees"
+  };
+  if (PORTES[ui.analysisTab]) ui.analysisTab = PORTES[ui.analysisTab];
+  if (!["mois", "examiner", "donnees"].includes(ui.analysisTab)) ui.analysisTab = "mois";
   $$("[data-decision-tab]").forEach(tab => tab.classList.toggle("is-active", tab.dataset.decisionTab === ui.analysisTab));
   const documentsHost = $("#decisionDocuments");
-  if (ui.analysisTab === "documents") {
-    host.innerHTML = "";
-    if (documentsHost) documentsHost.hidden = false;
-    renderReports();
-    return;
-  }
-  if (documentsHost) documentsHost.hidden = true;
-  host.innerHTML = ui.analysisTab === "radar" ? renderAnalysisRadar()
-    : ui.analysisTab === "baisses" ? renderAnalysisDeclines()
-    : ui.analysisTab === "contexte" ? renderAnalysisContext()
-    : ui.analysisTab === "chiffres" ? renderAnalysisIndicators() + renderAnalysisLiquidity()
+  if (documentsHost) documentsHost.hidden = ui.analysisTab !== "donnees";
+  if (ui.analysisTab === "donnees") renderReports();
+  host.innerHTML = ui.analysisTab === "examiner" ? renderAnalysisRadar() + renderAnalysisDeclines()
+    : ui.analysisTab === "donnees"
+      ? `<p class="muted">Ce que SIGMA sait, en trois blocs : ouvrez seulement celui dont vous avez besoin. Les repères ci-dessous résument le marché sans ouvrir les tableaux.</p>
+        <div class="grid-4 section-space">
+          <div class="key-fact"><span class="metric-label">${termButton("PER", "PER médian")} du marché</span><div class="metric-value">${fmtRatio(median(COMPANIES.map(c => c.latest_boc?.per)))}</div><div class="subtext">Calculé sur les PER publiés au BOC</div></div>
+          <div class="key-fact"><span class="metric-label">${termButton("Rendement net", "Rendement médian")}</span><div class="metric-value">${fmtPct(median(COMPANIES.map(c => yieldScreenInfo(c).usable ? c.latest_boc?.net_dividend_yield_pct : null)), 2, false)}</div><div class="subtext">Rendements récents, non extrêmes</div></div>
+          <div class="key-fact"><span class="metric-label">Sociétés échangées</span><div class="metric-value">${COMPANIES.filter(c => (c.history_stats?.traded_sessions_last_20 ?? 0) >= RADAR_RULES.minTradedSessions).length}/${COMPANIES.length}</div><div class="subtext">Au moins ${RADAR_RULES.minTradedSessions} séances sur 20</div></div>
+          <div class="key-fact"><span class="metric-label">Valeur médiane / séance</span><div class="metric-value">${fmtCompactFCFA(median(COMPANIES.map(c => c.history_stats?.median_traded_value_last_20_fcfa)))}</div><div class="subtext">Sur les 20 dernières séances lues</div></div>
+        </div>`
+        + fold("PER, rendement et dernier dividende publiés au BOC — les 48 sociétés", renderAnalysisIndicators(), { hint: "Tableau" })
+        + fold("Liquidité des 48 sociétés sur les 20 dernières séances", renderAnalysisLiquidity(), { hint: "Tableau" })
+        + fold("Contexte macro, échéances et hypothèses personnelles", renderAnalysisContext(), { hint: "Ouvrir" })
     : renderAnalysisDecision();
   const decisionForm = $("#decisionForm");
   if (decisionForm) {
@@ -2163,7 +2169,7 @@ function renderPortfolio() {
     <div class="grid-2 section-space">
       <article class="card ${kind === "virtuel" ? "simulation-panel" : ""}"><p class="eyebrow">${kind === "virtuel" ? "Simulation · aucun ordre transmis" : "Réel · enregistrement après exécution"}</p><h2>${kind === "virtuel" ? "◆ Ajouter une transaction fictive" : "Ajouter une transaction réelle exécutée"}</h2>
         ${modePill(kind)}
-        <p class="source-line" style="margin-top:9px"><strong>Préparation automatique :</strong> ${escapeHtml(txPrefill.source)}. Société, quantité, dernier cours publié et frais SGI connus sont déjà remplis ci-dessous ; vous ne corrigez que ce qui diffère ${kind === "virtuel" ? "de votre essai" : "de l’avis d’opéré"}.</p>
+        <p class="source-line" style="margin-top:9px">${escapeHtml(txPrefill.source)} — corrigez seulement ce qui diffère ${kind === "virtuel" ? "de votre essai" : "de l’avis d’opéré"}.</p>
         <form id="transactionForm" class="form-grid">
           <label>Type<select name="type" id="txType"><option value="achat" ${txPrefill.type === "achat" ? "selected" : ""}>${kind === "virtuel" ? "Achat fictif" : "Achat exécuté"}</option><option value="vente" ${txPrefill.type === "vente" ? "selected" : ""}>${kind === "virtuel" ? "Vente fictive" : "Vente exécutée"}</option><option value="dividende" ${txPrefill.type === "dividende" ? "selected" : ""}>${kind === "virtuel" ? "Dividende fictif saisi" : "Dividende net reçu"}</option></select></label>
           <label>Date<input name="date" type="date" required value="${txPrefill.date || today}"></label>
@@ -2174,12 +2180,12 @@ function renderPortfolio() {
           <label id="txFeesLabel">Frais ${kind === "virtuel" ? "de la simulation" : "réels de l’avis d’opéré"} (FCFA)<input name="fees" id="txFees" type="number" min="0" step="1" value="${txPrefill.fees}"><span class="field-hint" id="txFeesHint">${txPrefill.feesKnown ? "Pré-remplis depuis votre grille SGI ; corrigez si l’avis diffère." : "Grille SGI inconnue : 0 par défaut, donc résultat éventuellement surestimé."}</span></label>
           <div class="form-actions wide"><button class="button ${kind === "virtuel" ? "button-simulation" : ""}" type="submit">${kind === "virtuel" ? "◆ Ajouter à la simulation" : "Ajouter au portefeuille réel"}</button></div>
         </form>
-        <p class="source-line">SIGMA ne se connecte pas à votre ${termButton("SGI")} et ne passe aucun ordre. ${kind === "virtuel" ? "Cette ligne restera violette et séparée du réel." : "N’enregistrez ici qu’une opération déjà exécutée."}</p>
+        <p class="source-line">SIGMA ne passe aucun ordre chez votre ${termButton("SGI")}.</p>
       </article>
       <article class="card"><p class="eyebrow">Mémoire personnelle · ni réel ni simulation</p><h2>${ui.journalPrefill ? "Brouillon automatique à relire" : "Journal de décision"}</h2>
         <p class="source-line">${ui.journalPrefill
-          ? "SIGMA a rempli les champs avec des faits datés et sourcés de la fiche. Ce texte n’est pas encore enregistré : corrigez ce qui ne correspond pas à votre lecture, puis enregistrez seulement si vous l’assumez."
-          : "Le plus rapide : depuis une fiche, le Radar, Décision ou Baisses, cliquez sur « Brouillon de thèse automatique » ou « Checklist préremplie ». Vous arrivez ici avec les faits déjà remplis au lieu d’une page blanche."}</p>
+          ? "Champs préremplis avec les faits de la fiche : relisez, corrigez, puis enregistrez."
+          : "Partez d’une fiche : « Brouillon de thèse automatique » remplit ce formulaire à votre place."}</p>
         <form id="journalForm" class="form-grid">
           <label>Type<select name="type"><option ${prefill.type === "Thèse" ? "selected" : ""}>Thèse</option><option ${prefill.type === "Checklist baisse" ? "selected" : ""}>Checklist baisse</option><option>Note</option><option>Contexte</option></select></label>
           <label>Date<input name="date" type="date" required value="${today}"></label>
@@ -2462,7 +2468,7 @@ function renderSettings() {
         ${(() => {
           const list = personal.profile?.country && personal.profile.country !== "Autre" ? sgisForCountry(personal.profile.country) : (DATA.sgis || []);
           if (!list.length) return '<div class="Empty-state">Annuaire indisponible dans la dernière collecte.</div>';
-          const shown = list.slice(0, personal.profile?.country && personal.profile.country !== "Autre" ? 40 : 12);
+          const shown = list.slice(0, 6);
           return `<ul class="list-clean">${shown.map(sgi => `<li class="event-row"><div><div class="strong">${escapeHtml(sgi.name)}</div><div class="subtext">${escapeHtml(sgi.country || "Pays non précisé")}${sgi.country_basis === "indicatif_telephonique_publie" ? " (déduit de l'indicatif publié)" : ""}${sgi.phone ? ` · ${escapeHtml(sgi.phone)}` : ""}${sgi.email ? ` · ${escapeHtml(sgi.email)}` : ""}</div></div>${sgi.website ? `<a class="button button-secondary button-small" href="${escapeHtml(sgi.website)}" target="_blank" rel="noopener">Site</a>` : ""}</li>`).join("")}</ul>
           ${list.length > shown.length ? `<p class="source-line">Affichage limité : ${list.length} SGI dans l'annuaire collecté. Faites le préréglage avec votre pays pour la liste ciblée.</p>` : ""}
           <p class="source-line">Tarifs : la BRVM ne les publie pas, mais les <strong>plafonds homologués par l'AMF-UMOA</strong> sont relus par SIGMA dans les décisions officielles (carte « Plafonds homologués négociables » ci-dessous). La grille écrite de votre SGI reste le document qui fait foi.</p>`;
@@ -2487,7 +2493,7 @@ function renderSettings() {
       })() : '<div class="Empty-state" style="margin-top:14px">Aucun tarif saisi. Demandez deux ou trois grilles écrites : la différence de coût sur 10 ans de versements mensuels est un des rares gains certains.</div>'}
     </article>
 
-    <article class="card section-space"><p class="eyebrow">Tarifs officiels homologués · ${termButton("AMF-UMOA")}</p><h2>${termButton("Plafond homologué", "Plafonds homologués")} négociables des SGI</h2>
+    ${fold("Plafonds homologués par l’AMF-UMOA — ce que votre SGI peut facturer au maximum", `    <article class="card section-space"><p class="eyebrow">Tarifs officiels homologués · ${termButton("AMF-UMOA")}</p><h2>${termButton("Plafond homologué", "Plafonds homologués")} négociables des SGI</h2>
       ${(() => {
         const fees = DATA.market_fees_official || {};
         const statusLabels = {
@@ -2554,7 +2560,7 @@ function renderSettings() {
         ${unmatched.length ? `<div class="notice" style="margin-top:12px"><p><strong>Décisions hors annuaire BRVM collecté (${unmatched.length}) :</strong> ${unmatched.map(item => `${escapeHtml(item.sgi_name_pdf || item.index_sgi_name)}${item.decision_number ? ` (n° ${escapeHtml(item.decision_number)})` : item.announced_decision_number ? ` (annoncé ${escapeHtml(item.announced_decision_number)})` : ""}`).join(" · ")}. Ces SGI figurent dans les décisions du régulateur mais pas dans l'annuaire BRVM relu : SIGMA les liste séparément au lieu de les fusionner avec une autre société.</p></div>` : ""}
         <p class="source-line">Découverte des PDF via les publications officielles de la BRVM (les décisions lui sont communiquées pour publication), complétées par les index Richbourse et Omaad ; chaque tarif affiché est relu par SIGMA dans le document officiel lié, jamais copié depuis la transcription d'un tiers. Lorsqu'une SGI a connu plusieurs homologations, SIGMA affiche la plus récente lisible. Un plafond ancien reste le dernier homologué connu : demandez confirmation écrite à la SGI avant d'ouvrir ou de transférer un compte.</p>`;
       })()}
-    </article>
+    </article>`, { hint: "Tarifs" })}
 
     <h2 style="margin:32px 0 2px">État des données <span class="pill">Technique</span></h2>
     <p class="muted" style="margin:0 0 8px">Pour vérifier d’où viennent les chiffres et ce qui manque encore. Rien ici n’est nécessaire à l’usage mensuel.</p>
