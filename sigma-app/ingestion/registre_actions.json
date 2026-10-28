@@ -1,0 +1,56 @@
+{
+  "schema_version": "sigma-registre-actions-v1",
+  "date": "2026-10-26",
+  "principe": "Aucune valeur sans document, page et ligne lues. Une lecture unique alimente une capitalisation indicative, jamais un BPA comparable.",
+  "exercices_perimetre": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "source_initiale": "web/data/data.json — extractions déjà présentes, reportées telles quelles avec leur preuve",
+  "entrees": [
+    {
+      "ticker": "CIEC",
+      "exercice": 2025,
+      "actions": 56000000,
+      "nature": "actions en circulation en fin d'exercice",
+      "niveau": "LU_DANS_UN_DOCUMENT",
+      "preuve": {
+        "document": "Etats financiers syscohada et ifrs exercice 2025 cie ci",
+        "page": 3,
+        "ligne": "Nombre d'actions en circulation 56 000 000 56 000 000 Comptes courants d'actionnaires",
+        "methode": "texte_natif",
+        "url": "https://www.brvm.org/sites/default/files/20260520_-_etats_financiers_syscohada_et_ifrs_-_exercice_2025_-_cie_ci.pdf"
+      },
+      "controle": {
+        "statut": "A_CONFIRMER_PAR_SECOND_DOCUMENT",
+        "note": "Lecture unique. Ne peut pas alimenter un BPA comparable ; capitalisation indicative seulement."
+      }
+    },
+    {
+      "ticker": "SGBC",
+      "exercice": 2025,
+      "actions": 31111110,
+      "nature": "actions en circulation en fin d'exercice",
+      "niveau": "LU_DANS_UN_DOCUMENT",
+      "preuve": {
+        "document": "Rapport dactivites annuel et etats financiers exercice 2025 societe generale ci annule et remplace le precedent",
+        "page": 4,
+        "ligne": "Impôts sur les bénéfices -26 333 -25 155 Nombre d’actions 31 111 110",
+        "methode": "texte_natif",
+        "url": "https://www.brvm.org/sites/default/files/20260831_-_rapport_dactivites_-_1er_semestre_2026_-_societe_generale_ci.pdf"
+      },
+      "controle": {
+        "statut": "A_CONFIRMER_PAR_SECOND_DOCUMENT",
+        "note": "Lecture unique. Ne peut pas alimenter un BPA comparable ; capitalisation indicative seulement."
+      }
+    }
+  ]
+}

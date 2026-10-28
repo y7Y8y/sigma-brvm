@@ -448,3 +448,8 @@ td.num, th.num, .kpi-value { font-variant-numeric: tabular-nums; }
   .study-metrics { grid-column: 2 / -1; flex-wrap: wrap; gap: 4px 12px; padding-bottom: 2px; }
   .study-row > .button { grid-column: 3; grid-row: 1; }
 }
+
+/* Badge sur une icône de la barre du haut (Actualités) : même traitement que
+   dans la barre basse, sans élargir le bouton. */
+.icon-button { position: relative; }
+.icon-badge { position: absolute; top: -4px; right: -4px; margin: 0; }

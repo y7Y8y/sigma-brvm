@@ -72,11 +72,17 @@ class TypographieTests(unittest.TestCase):
 
 
 class NavigationTests(unittest.TestCase):
-    def test_cinq_items_maximum(self):
-        items = re.findall(r'class="nav-item[^"]*"\s+data-view="([a-z]+)"', HTML)
-        if not items:
-            items = re.findall(r'data-view="([a-z]+)"', HTML)
-        self.assertEqual(len(items), 5, f"la barre doit tenir en 5 items, trouvé : {items}")
+    def test_quatre_items_maximum(self):
+        # Quatre destinations principales seulement : au-delà, la barre mobile
+        # rogne les libellés. Actualités et Paramètres vivent dans la barre du haut.
+        items = re.findall(r'data-view="([a-z]+)"', HTML)
+        self.assertLessEqual(len(items), 4, f"trop d'items de navigation : {items}")
+        self.assertEqual(len(items), 4, f"la barre doit tenir en 4 items, trouvé : {items}")
+
+    def test_actus_et_parametres_dans_la_barre_du_haut(self):
+        self.assertIn('data-view-link="actualites"', HTML)
+        self.assertIn('data-view-link="parametres"', HTML)
+        self.assertNotIn('data-view="actualites"', HTML)
 
     def test_parametres_hors_de_la_barre_basse(self):
         self.assertNotIn('data-view="parametres"', HTML)
