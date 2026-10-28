@@ -50,9 +50,9 @@
        subtitle 17   sous-titre de carte, valeur forte en ligne
        title   21    titre de section ou de carte (h2)
        hero    27    titre de page (h1)
-       figure  30    chiffre clé, cours, montant mis en avant
+       figure  31    chiffre clé, cours, montant mis en avant
 
-     Les rapports entre marches valent 1,14 / 1,17 / 1,21 / 1,24 / 1,29.
+     Les rapports entre marches valent 1,14 / 1,17 / 1,21 / 1,24 / 1,29 / 1,15.
      Aucune taille en dur ailleurs dans la feuille : test_charte.py le vérifie.
      ------------------------------------------------------------------------ */
   --fs-micro: 10.5px;
