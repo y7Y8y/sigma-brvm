@@ -22,7 +22,6 @@
       <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
         <button type="button" data-view="accueil" class="nav-item is-active"><span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-label">Accueil</span><span class="nav-badge" id="alertBadge" hidden>0</span></button>
         <button type="button" data-view="entreprises" class="nav-item"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-label">Sociétés</span></button>
-        <button type="button" data-view="actualites" class="nav-item"><span class="nav-icon" aria-hidden="true">≣</span><span class="nav-label">Actus</span><span class="nav-badge" id="newsBadge" hidden>0</span></button>
         <button type="button" data-view="decision" class="nav-item"><span class="nav-icon" aria-hidden="true">◈</span><span class="nav-label">Décision</span></button>
         <button type="button" data-view="portefeuille" class="nav-item"><span class="nav-icon" aria-hidden="true">◎</span><span class="nav-label">Portefeuille</span></button>
       </nav>
@@ -42,6 +41,7 @@
           <input id="globalSearch" type="search" list="companySuggestions" placeholder="Rechercher une société ou un ticker…" autocomplete="off">
           <datalist id="companySuggestions"></datalist>
         </label>
+        <button type="button" class="icon-button" data-view-link="actualites" aria-label="Actualités" title="Actualités">≣<span class="nav-badge icon-badge" id="newsBadge" hidden>0</span></button>
         <button type="button" class="icon-button" data-view-link="parametres" aria-label="Paramètres" title="Paramètres">⚙</button>
         <button type="button" class="button button-secondary button-small glossary-button" id="openGlossary" aria-label="Ouvrir toutes les définitions"><span class="term-mark" aria-hidden="true">?</span><span class="glossary-label">Définitions</span></button>
         <div class="freshness-pill" id="freshnessPill">Données en chargement</div>
