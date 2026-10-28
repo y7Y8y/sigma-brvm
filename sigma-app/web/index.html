@@ -230,8 +230,19 @@
        affichant la date de la dernière collecte officielle disponible. */
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("sw.js", { scope: "./" }).catch(() => {
-          /* Un échec d'enregistrement ne doit jamais empêcher l'usage en ligne. */
+        navigator.serviceWorker
+          .register("sw.js", { scope: "./", updateViaCache: "none" })
+          .then((registration) => registration.update())
+          .catch(() => {
+            /* Un échec d'enregistrement ne doit jamais empêcher l'usage en ligne. */
+          });
+        /* Une nouvelle version prend le contrôle : on recharge une seule fois
+           pour ne jamais afficher du HTML neuf avec l'ancien app.js. */
+        let dejaRecharge = false;
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (dejaRecharge) return;
+          dejaRecharge = true;
+          window.location.reload();
         });
       });
     }

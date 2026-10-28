@@ -1917,11 +1917,29 @@ function renderAnalysisDecision() {
       <p class="source-line">Les fondamentaux restent conditionnels : seuls les piliers dont la série officielle est suffisante sont publiés en fiche.</p>`, { hint: "Filtres" })}
   </div>
   <article class="card section-space"><p class="eyebrow">Sélection à examiner — pas un classement d’achat</p><h2>${candidates.length} société(s) à examiner avec ${fmtFCFA(workingBudget)}${pocketPct ? ` <span class="pill">Objectif ${personal.profile?.horizon === "moyen" ? "moyen" : "long"} terme · ${fmtFCFA(pocketAmount)} réservés à la ${termButton("Poche d'apprentissage", "poche d'apprentissage")} (${fmtNum(pocketPct)} %) — argent réel séparé, pas simulation</span>` : ""}</h2>
-    ${candidates.length ? `<div class="table-wrap"><table><thead><tr><th>Société</th><th class="num">Cours utilisé</th><th class="num">Titres possibles</th><th class="num">Investi</th><th class="num">Frais ${termButton("SGI")}</th><th class="num">Reste</th><th class="num">${termButton("PER")} / ${termButton("Rendement net", "Rdt")} BOC</th><th></th></tr></thead><tbody>
-      ${candidates.map(({ company, price, affordable }) => `<tr><td><div class="ticker">${company.ticker}</div><div class="subtext">${escapeHtml(company.name)} · ${escapeHtml(company.sector)}</div><div class="subtext">${termButton("Liquidité", "Liquidité méd.")} ${fmtCompactFCFA(company.history_stats?.median_traded_value_last_20_fcfa)} · ${fmtNum(company.history_stats?.traded_sessions_last_20)}/20 séances</div>${trackingBadges(company.ticker)}</td>
-        <td class="num">${fmtFCFA(price)}</td><td class="num strong">${fmtNum(affordable.shares)}</td><td class="num">${fmtFCFA(affordable.invested)}</td><td class="num">${affordable.feesKnown ? fmtFCFA(Math.round(affordable.fees)) : "Non estimés"}</td><td class="num">${fmtFCFA(Math.round(affordable.remainder))}</td><td class="num">${fmtRatio(company.latest_boc?.per)} · ${fmtPct(company.latest_boc?.net_dividend_yield_pct, 2, false)}${ratioWarning(company)}</td>
-        <td><div style="display:flex;gap:6px;flex-wrap:wrap"><button type="button" class="button button-secondary button-small" data-open-company="${company.ticker}">Fiche</button><button type="button" class="button button-small" data-journal-for="${company.ticker}">Brouillon de thèse</button><button type="button" class="button button-simulation button-small" data-simulate-decision="${company.ticker}" data-simulate-qty="${affordable.shares}">◆ Simuler ${fmtNum(affordable.shares)} titres</button></div></td></tr>`).join("")}
-    </tbody></table></div>` : '<div class="Empty-state">Aucune société ne passe ces filtres. Élargissez un critère plutôt que de forcer une conclusion.</div>'}
+    ${candidates.length ? `<ul class="pick-list">
+      ${candidates.map(({ company, price, affordable }) => `<li class="pick-row">
+        <div class="pick-id">
+          <button type="button" class="text-button ticker" data-open-company="${company.ticker}">${company.ticker}</button>
+          <div class="subtext">${escapeHtml(company.name)}</div>
+          <div class="subtext">${escapeHtml(company.sector)} · ${fmtNum(company.history_stats?.traded_sessions_last_20)}/20 séances</div>
+          ${trackingBadges(company.ticker)}
+        </div>
+        <div class="pick-figures">
+          <div><span class="metric-label">Cours utilisé</span><span class="pick-value">${fmtFCFA(price)}</span></div>
+          <div><span class="metric-label">Titres possibles</span><span class="pick-value">${fmtNum(affordable.shares)}</span></div>
+          <div><span class="metric-label">Investi</span><span class="pick-value">${fmtFCFA(affordable.invested)}</span></div>
+          <div><span class="metric-label">Frais ${termButton("SGI")}</span><span class="pick-value">${affordable.feesKnown ? fmtFCFA(Math.round(affordable.fees)) : "Non estimés"}</span></div>
+          <div><span class="metric-label">Reste</span><span class="pick-value">${fmtFCFA(Math.round(affordable.remainder))}</span></div>
+          <div><span class="metric-label">${termButton("PER")} · ${termButton("Rendement net", "Rdt")}</span><span class="pick-value">${fmtRatio(company.latest_boc?.per)} · ${fmtPct(company.latest_boc?.net_dividend_yield_pct, 2, false)}${ratioWarning(company)}</span></div>
+        </div>
+        <div class="pick-actions">
+          <button type="button" class="button button-secondary button-small" data-open-company="${company.ticker}">Fiche</button>
+          <button type="button" class="button button-small" data-journal-for="${company.ticker}">Thèse</button>
+          <button type="button" class="button button-simulation button-small" data-simulate-decision="${company.ticker}" data-simulate-qty="${affordable.shares}">◆ Simuler ${fmtNum(affordable.shares)}</button>
+        </div>
+      </li>`).join("")}
+    </ul>` : '<div class="Empty-state">Aucune société ne passe ces filtres. Élargissez un critère plutôt que de forcer une conclusion.</div>'}
     <p class="source-line">Cours : dernier instantané officiel disponible. Le nombre de titres est un calcul de préparation ; l’ordre réel, s’il a lieu, se passe chez votre SGI après relecture des sources. <strong style="color:#5b21b6">Le bouton violet crée seulement une simulation ; il ne transmet aucun ordre.</strong></p>
   </article>`;
 }
@@ -2719,6 +2737,15 @@ function bindStaticEvents() {
     savePersonal(); renderAlerts();
   });
   const search = $("#globalSearch");
+  // Sur téléphone, la barre ne laisse pas la place au texte complet : un
+  // libellé court évite le « Recherc » tronqué des captures du 28/10.
+  const raccourcirRecherche = () => {
+    if (!search) return;
+    const etroit = window.matchMedia("(max-width: 640px)").matches;
+    search.placeholder = etroit ? "Rechercher…" : "Rechercher une société ou un ticker…";
+  };
+  raccourcirRecherche();
+  window.addEventListener("resize", raccourcirRecherche);
   search.addEventListener("change", () => {
     const value = search.value.trim();
     const ticker = value.split(/\s|—/)[0].toUpperCase();
