@@ -49,14 +49,59 @@ class ServiceWorkerTests(unittest.TestCase):
         self.assertIn("caches.delete", self.sw)
         self.assertIn("startsWith(VERSION)", self.sw)
 
+    def test_la_coque_est_servie_reseau_d_abord(self):
+        # Défaut constaté le 28/10 : cache d'abord + version jamais incrémentée
+        # = téléphone bloqué sur un app.js de la veille (six onglets affichés
+        # alors que trois étaient déployés).
+        self.assertNotIn("cacheDAbord(", self.sw, "la coque ne doit plus être servie depuis le cache")
+        self.assertIn("reseauDAbord(request, CACHE_COQUE)", self.sw)
+        self.assertIn('cache: "no-store"', self.sw)
+
+    def test_la_page_se_recharge_au_changement_de_version(self):
+        html = (WEB / "index.html").read_text(encoding="utf-8")
+        self.assertIn("controllerchange", html)
+        self.assertIn("updateViaCache", html)
+        self.assertIn("dejaRecharge", html)
+
+    def test_version_du_cache_au_moins_v2(self):
+        version = re.search(r'VERSION\s*=\s*"sigma-pwa-v(\d+)"', self.sw)
+        self.assertIsNotNone(version)
+        self.assertGreaterEqual(int(version.group(1)), 2)
+
     def test_le_service_worker_est_enregistre_par_la_page(self):
         html = (WEB / "index.html").read_text(encoding="utf-8")
-        self.assertIn('navigator.serviceWorker.register("sw.js"', html)
+        self.assertRegex(html, r'navigator\.serviceWorker\s*\n?\s*\.register\("sw\.js"')
         self.assertIn('"serviceWorker" in navigator', html)
 
     def test_echec_enregistrement_ne_bloque_pas_l_usage_en_ligne(self):
         html = (WEB / "index.html").read_text(encoding="utf-8")
         self.assertIn(".catch(", html)
+
+
+class MobileTests(unittest.TestCase):
+    """Défauts vus sur téléphone le 28/10 : tableau comprimé, pastille rognée."""
+
+    def setUp(self):
+        self.css = (WEB / "styles.css").read_text(encoding="utf-8")
+        self.js = (WEB / "app.js").read_text(encoding="utf-8")
+
+    def test_les_tableaux_ne_se_compriment_plus(self):
+        # Sans min-width, `table { width: 100% }` écrasait huit colonnes dans
+        # 390 px : chaque montant se coupait caractère par caractère.
+        self.assertIn(".table-wrap > table { min-width: 620px; }", self.css)
+        self.assertIn("white-space: nowrap", self.css)
+
+    def test_la_selection_du_mois_n_est_plus_un_tableau(self):
+        self.assertIn('class="pick-list"', self.js)
+        self.assertIn(".pick-row", self.css)
+        self.assertNotIn('<th>Société</th><th class="num">Cours utilisé</th>', self.js)
+
+    def test_la_pastille_de_notification_reste_dans_son_bouton(self):
+        self.assertIn(".icon-badge { top: 1px; right: 1px; }", self.css)
+
+    def test_le_libelle_de_recherche_tient_sur_mobile(self):
+        self.assertIn("raccourcirRecherche", self.js)
+        self.assertIn('"Rechercher…"', self.js)
 
 
 class ManifestTests(unittest.TestCase):

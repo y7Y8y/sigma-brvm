@@ -485,3 +485,44 @@ details.fold.plain-summary > summary { font-weight: 620; }
 details.fold.plain-summary .fold-body ul { margin: 0; padding-left: 19px; }
 details.fold.plain-summary .fold-body li + li { margin-top: 5px; }
 .fold .table-wrap { margin-top: 10px; }
+
+/* ---------------------------------------------------------------------------
+   Mobile — 2026-10-28
+   Trois défauts constatés sur téléphone, mesurés sur captures d'écran :
+   1. les tableaux à 6-8 colonnes étaient comprimés et les montants se coupaient
+      caractère par caractère (« 1 / 6 / 8 / 0 / 0 / 0 ») ;
+   2. la pastille de notification sortait de la barre et se faisait rogner ;
+   3. la sélection du mois restait un tableau, illisible sur 390 px de large.
+--------------------------------------------------------------------------- */
+/* 1. Un tableau ne se comprime plus : il défile. */
+.table-wrap { -webkit-overflow-scrolling: touch; }
+.table-wrap > table { min-width: 620px; }
+td.num, th.num { white-space: nowrap; }
+.table-wrap > table td, .table-wrap > table th { overflow-wrap: normal; }
+
+/* 2. La pastille reste à l'intérieur de son bouton. */
+.icon-button { position: relative; overflow: visible; }
+.icon-badge { top: 1px; right: 1px; }
+.topbar { overflow: visible; }
+
+/* 3. Sélection du mois : une ligne par société, plus de tableau de 8 colonnes. */
+.pick-list { list-style: none; margin: 12px 0 0; padding: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.pick-row {
+  display: grid; grid-template-columns: minmax(170px, 1.3fr) minmax(0, 2.6fr) auto;
+  gap: 14px; align-items: start; padding: 13px 15px;
+}
+.pick-row + .pick-row { border-top: 1px solid var(--border); }
+.pick-row:hover { background: #fbfbfc; }
+.pick-id { min-width: 0; }
+.pick-id .ticker { padding-top: 0; }
+.pick-figures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 16px; min-width: 0; }
+.pick-figures > div { display: grid; gap: 1px; min-width: 0; }
+.pick-value { font-weight: 660; color: var(--text-strong); font-variant-numeric: tabular-nums; white-space: nowrap; font-size: var(--fs-body); }
+.pick-actions { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+
+@media (max-width: 920px) {
+  .pick-row { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 14px; }
+  .pick-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+  .pick-actions { justify-content: flex-start; }
+  .pick-actions .button { flex: 1 1 auto; }
+}
