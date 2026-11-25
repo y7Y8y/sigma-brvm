@@ -1170,9 +1170,12 @@ function verdictCard(ticker, { compact = false } = {}) {
         <span class="subtext">${HORIZONS[h].sous}</span>
       </div>
       <div class="verdict-body">
-        ${calcule ? `<span class="verdict-ton ${ton}">${libelle}</span>` : `<span class="verdict-ton vide">Série insuffisante</span>`}
+        ${calcule
+          ? `<span class="verdict-ton ${ton}">${libelle}</span>${b.profondeur === "limitee" ? ' <span class="verdict-ton vide">Lecture limitée</span>' : ""}`
+          : `<span class="verdict-ton vide">Série insuffisante</span>`}
         <p class="verdict-phrase">${escapeHtml(principal)}</p>
         ${details.length ? `<ul class="verdict-details">${details.map(d => `<li>${escapeHtml(String(d))}</li>`).join("")}</ul>` : ""}
+        ${h === "long" && v.position_longue?.ecart_moyenne_pct !== undefined ? `<p class="verdict-regle"><strong>Prix face à son propre cycle :</strong> ${fmtPct(v.position_longue.ecart_moyenne_pct, 1)} par rapport à sa moyenne de 120 séances, ${fmtPct(v.position_longue.ecart_plus_haut_pct, 1)} sous son plus haut de l'année (${fmtFCFA(v.position_longue.plus_haut)}). Ce n'est pas une prévision : c'est la distance parcourue.</p>` : ""}
         ${b.regle ? `<p class="verdict-regle"><strong>Règle :</strong> ${escapeHtml(b.regle)}${b.invalidation ? ` · <strong>Ce qui l'invaliderait :</strong> ${escapeHtml(b.invalidation)}` : ""}</p>` : ""}
       </div>
     </li>`;
@@ -1182,13 +1185,17 @@ function verdictCard(ticker, { compact = false } = {}) {
       <div><p class="eyebrow">Verdict SIGMA · ${VERDICTS.archive_boc?.seances ?? 0} séances d'archive, ${VERDICTS.archive_boc?.du ? `du ${fmtDate(VERDICTS.archive_boc.du)}` : ""}</p>
       <h2>${escapeHtml(v.nom)} — ce que disent les données</h2></div>
       ${cap.statut === "calcule"
-        ? `<span class="pill">Capitalisation ${fmtCompactFCFA(cap.valeur_fcfa)}</span>`
-        : `<span class="pill" title="${escapeHtml(cap.raison || "")}">Capitalisation non calculable</span>`}
+        ? `<span class="pill">Capitalisation ${fmtCompactFCFA(cap.valeur_fcfa)} · actions vérifiées</span>`
+        : cap.statut === "implicite"
+          ? `<span class="pill" title="${escapeHtml(cap.base || "")}">Capitalisation ≈ ${fmtCompactFCFA(cap.valeur_fcfa)} · déduite du PER</span>`
+          : `<span class="pill" title="${escapeHtml(cap.origine || cap.raison || "")}">Capitalisation non calculable</span>`}
     </div>
     <ul class="verdict-list">${lignes}</ul>
     ${v.capitalisation?.statut === "calcule"
-      ? `<p class="source-line">Capitalisation = ${fmtNum(cap.actions)} actions × ${fmtFCFA(v.cours)} (dernier cours publié). Nombre d'actions lu dans un document officiel.</p>`
-      : `<p class="source-line">Capitalisation non calculable : ${escapeHtml(cap.raison || "nombre d'actions absent")}. SIGMA ne la déduit pas d'un cours ni d'un bénéfice par action.</p>`}`;
+      ? `<p class="source-line">Capitalisation = ${fmtNum(cap.actions)} actions × ${fmtFCFA(v.cours)}. Nombre d'actions lu dans un document officiel.</p>`
+      : v.capitalisation?.statut === "implicite"
+        ? `<p class="source-line">Capitalisation déduite : PER publié ${fmtNum(cap.per_publie, 2)} × résultat net ${fmtNum(cap.resultat_net / 1e6, 0)} M FCFA (exercice ${cap.exercice}). Ce n'est pas un nombre d'actions vérifié ; l'identité a été contrôlée à 0,14 % et 0,20 % sur les deux sociétés où il l'est.</p>`
+        : `<p class="source-line">Capitalisation non calculable. ${escapeHtml(cap.origine || cap.raison || "")}. <strong>Pour la débloquer :</strong> ${escapeHtml(cap.deblocage || "lire le nombre d'actions dans le rapport annuel")}.</p>`}`;
 }
 
 function renderCompanies() {
@@ -2509,6 +2516,67 @@ function coverageAuditRows() {
   ];
 }
 
+/* ---------------------------------------------------------------------------
+   Ce qui manque — le registre des trous, pas une excuse.
+   Le propriétaire refuse le partiel ; la seule réponse honnête n'est pas de
+   masquer les trous, c'est de les nommer un par un avec la source qui les
+   comble. Cette vue est construite depuis data/verdicts.json (champ `manques`),
+   lui-même dérivé des verdicts : elle ne peut pas mentir sur l'état réel.
+--------------------------------------------------------------------------- */
+function renderCompletude() {
+  const host = $("#completudeContent");
+  if (!host) return;
+  if (!VERDICTS?.manques) {
+    host.innerHTML = `<div class="Empty-state">Le registre des manques n’est pas chargé : <span class="mono">data/verdicts.json</span> est absent de cette collecte.</div>`;
+    return;
+  }
+  const r = VERDICTS.resume || {};
+  const manques = VERDICTS.manques;
+  const parHorizon = new Map();
+  for (const m of manques) {
+    if (!parHorizon.has(m.horizon)) parHorizon.set(m.horizon, []);
+    parHorizon.get(m.horizon).push(m);
+  }
+  const jauge = (libelle, pleines, deduites, total) => {
+    const pct = total ? Math.round(pleines / total * 100) : 0;
+    return `<div class="jauge">
+      <div class="jauge-head"><span class="jauge-label">${libelle}</span>
+        <span class="jauge-valeur">${pleines}/${total} <span class="subtext">${pct} %</span></span></div>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      ${deduites ? `<p class="source-line">+ ${deduites} déduites par identité vérifiée (capitalisation), jamais par estimation libre.</p>` : ""}
+    </div>`;
+  };
+  host.innerHTML = `
+    <article class="card">
+      <p class="eyebrow">Registre des manques · ${manques.length} point(s) ouvert(s) sur ${r.societes} sociétés</p>
+      <h2>Ce que SIGMA ne sait pas encore — et où le prendre</h2>
+      <p class="muted">Aucune donnée n'est estimée pour combler un trou. Chaque ligne dit ce qui manque, à quelle société, pourquoi, et la source exacte qui le débloquerait.</p>
+      <div class="grid-3 section-space">
+        ${jauge("Court terme — position du cours", r.court_plein ?? 0, 0, r.societes)}
+        ${jauge("Moyen terme — PER sur sa propre histoire", r.moyen_plein ?? 0, (r.moyen_calcule ?? 0) - (r.moyen_plein ?? 0), r.societes)}
+        ${jauge("Long terme — trois exercices ou plus", r.long_plein ?? 0, (r.long_calcule ?? 0) - (r.long_plein ?? 0), r.societes)}
+      </div>
+      <div class="grid-2 section-space">
+        ${jauge("Capitalisation — actions vérifiées", r.capitalisation_calculee ?? 0, r.capitalisation_implicite ?? 0, r.societes)}
+        ${jauge("Prix face à son cycle de 120 séances", r.position_longue_calculee ?? 0, 0, r.societes)}
+      </div>
+    </article>
+    ${[...parHorizon.entries()].sort((a, b) => b[1].length - a[1].length).map(([horizon, liste]) => `
+      <article class="card section-space">
+        <div class="event-row"><div><p class="eyebrow">${escapeHtml(horizon)}</p><h2>${liste.length} société(s) à compléter</h2></div>
+        <span class="pill">${liste.filter(m => m.etat === "absent").length} absent(s) · ${liste.filter(m => m.etat === "limite").length} limité(s)</span></div>
+        <ul class="manque-list">
+          ${liste.map(m => `<li class="manque-row">
+            <div><button type="button" class="text-button ticker" data-open-company="${m.ticker}">${m.ticker}</button>
+              <span class="subtext">${escapeHtml(m.societe)}</span></div>
+            <div><span class="pill ${m.etat === "absent" ? "red" : "amber"}">${m.etat === "absent" ? "Absent" : "Limité"}</span>
+              <p class="manque-raison">${escapeHtml(m.raison || "")}</p>
+              <p class="subtext"><strong>Source :</strong> ${escapeHtml(m.source || "—")}${m.deblocage ? ` · <strong>Déblocage :</strong> ${escapeHtml(m.deblocage)}` : ""}</p></div>
+          </li>`).join("")}
+        </ul>
+      </article>`).join("")}`;
+}
+
 function renderSettings() {
   const host = $("#settingsContent");
   if (!host) return;
@@ -2655,6 +2723,8 @@ function renderSettings() {
       })()}
     </article>`, { hint: "Tarifs" })}
 
+    <article class="card section-space"><div class="event-row"><div><p class="eyebrow">Registre des trous</p><h2>Ce que SIGMA ne sait pas encore</h2><p class="muted">${VERDICTS?.manques ? `${VERDICTS.manques.length} point(s) ouvert(s) sur ${VERDICTS.resume?.societes ?? 0} sociétés, chacun avec la source qui le débloquerait.` : "Registre non chargé dans cette collecte."}</p></div><button type="button" class="button" data-view-link="completude">Ouvrir le registre</button></div></article>
+
     <h2 style="margin:32px 0 2px">État des données <span class="pill">Technique</span></h2>
     <p class="muted" style="margin:0 0 8px">Pour vérifier d’où viennent les chiffres et ce qui manque encore. Rien ici n’est nécessaire à l’usage mensuel.</p>
     <details class="card section-space"><summary style="cursor:pointer"><span class="eyebrow" style="display:block">Transparence de collecte</span><strong class="summary-title">Manifeste des données affichées</strong></summary>
@@ -2771,7 +2841,7 @@ function updateNewsBadge() {
 function renderDynamic() {
   if (!DATA) return;
   renderFreshness(); renderHome(); renderMarket(); renderCompanies(); renderDecision();
-  renderNews(); renderPortfolio(); renderAlerts(); renderReports(); renderSettings();
+  renderNews(); renderPortfolio(); renderAlerts(); renderReports(); renderSettings(); renderCompletude();
   if (ui.selectedTicker) renderCompanyDetail();
   updateAlertBadge();
   updateNewsBadge();

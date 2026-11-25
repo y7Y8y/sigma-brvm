@@ -1,11 +1,13 @@
 const fs=require("fs"),path=require("path"),{JSDOM,VirtualConsole}=require("jsdom");
 const WEB="/home/user/sigma-brvm/sigma-app/web";
 const DATA=fs.readFileSync(path.join(WEB,"data/data.json"),"utf8");
+const VERDICTS=fs.readFileSync(path.join(WEB,"data/verdicts.json"),"utf8");
 const erreurs=[];const vc=new VirtualConsole();
 vc.on("jsdomError",e=>erreurs.push(String(e.message||e)));vc.on("error",m=>erreurs.push(String(m)));
 const dom=new JSDOM(fs.readFileSync(path.join(WEB,"index.html"),"utf8"),{runScripts:"outside-only",pretendToBeVisual:true,url:"http://localhost/",virtualConsole:vc});
 const w=dom.window;
-w.fetch=()=>Promise.resolve({ok:true,status:200,json:()=>Promise.resolve(JSON.parse(DATA)),clone(){return this;}});
+w.fetch=url=>{const corps=String(url).includes("verdicts")?VERDICTS:DATA;
+  return Promise.resolve({ok:true,status:200,json:()=>Promise.resolve(JSON.parse(corps)),clone(){return this;}});};
 w.matchMedia=w.matchMedia||(()=>({matches:false,addListener(){},removeListener(){}}));
 w.requestAnimationFrame=cb=>setTimeout(()=>cb(Date.now()),0);w.scrollTo=()=>{};
 if(!w.HTMLDialogElement)w.HTMLDialogElement=w.HTMLElement;
@@ -16,7 +18,7 @@ const att=ms=>new Promise(r=>setTimeout(r,ms));
 (async()=>{
   await att(900);
   const out={};
-  for(const vue of ["accueil","entreprises","actualites","decision","portefeuille","parametres","marche","alertes"]){
+  for(const vue of ["accueil","entreprises","actualites","decision","portefeuille","parametres","marche","alertes","completude"]){
     erreurs.length=0;
     const bouton=w.document.querySelector(`.nav-item[data-view="${vue}"]`);
     if(bouton){bouton.dispatchEvent(new w.MouseEvent("click",{bubbles:true}));}

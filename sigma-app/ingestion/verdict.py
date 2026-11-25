@@ -66,8 +66,14 @@ SEUIL_FOURCHETTE_BAS = 20.0      # et en dessous « bas »
 SEUIL_PER_CHER = 80.0            # percentile du PER propre à la société
 SEUIL_PER_BON_MARCHE = 20.0
 SEUIL_PERFIANCE_COURT = 10.0     # variation 20 séances qui mérite une explication
-MIN_SEANCES_PER = 120            # sous ce nombre de séances, la distribution est trop courte
-MIN_EXERCICES = 3                # exercices nécessaires pour une lecture long terme
+# Deux niveaux, jamais confondus à l'écran :
+#   PLEIN     — la série est assez longue pour une distribution complète ;
+#   LIMITE    — la série existe mais est courte : on répond, en le disant.
+# Un refus silencieux serait aussi trompeur qu'une affirmation sans base.
+PER_SEANCES_PLEIN = 120
+PER_SEANCES_LIMITE = 30          # en dessous, aucune lecture sérieuse n'est possible
+MIN_EXERCICES = 3                # exercices nécessaires pour une lecture long terme pleine
+MIN_EXERCICES_LIMITE = 2         # deux exercices complets : lecture possible, dite « limitée »
 
 # ── Court terme ────────────────────────────────────────────────────────────
 
@@ -89,6 +95,32 @@ def position_fourchette(clotures: list[float], fenetre: int = 60) -> dict | None
         "dernier": dernier,
         "seances": len(propre),
         "ecart_au_haut_pct": round((dernier / haut - 1) * 100, 1),
+    }
+
+
+def position_longue(clotures: list[float], fenetre: int = 120) -> dict | None:
+    """Où en est le cours par rapport à son propre cycle, pas par rapport à la séance.
+
+    Le court terme répond « payer cher aujourd'hui ? ». Cette lecture répond à
+    la question du long terme côté prix : le titre est-il au-dessus ou en
+    dessous de sa moyenne de 120 séances, et à quelle distance de son plus haut
+    sur un an. Deux repères, aucune prédiction.
+    """
+    propre = [c for c in clotures if isinstance(c, (int, float))]
+    if len(propre) < fenetre:
+        return None
+    moyenne = sum(propre[-fenetre:]) / fenetre
+    dernier = propre[-1]
+    plus_haut = max(propre[-250:] if len(propre) >= 250 else propre)
+    plus_bas = min(propre[-250:] if len(propre) >= 250 else propre)
+    return {
+        "moyenne_120": round(moyenne, 2),
+        "ecart_moyenne_pct": round((dernier / moyenne - 1) * 100, 1),
+        "plus_haut": round(plus_haut, 2),
+        "ecart_plus_haut_pct": round((dernier / plus_haut - 1) * 100, 1),
+        "plus_bas": round(plus_bas, 2),
+        "ecart_plus_bas_pct": round((dernier / plus_bas - 1) * 100, 1),
+        "seances": len(propre),
     }
 
 
@@ -123,7 +155,7 @@ def lecture_court(marche: dict | None, stats: dict) -> dict:
 def distribution_per(per: list[float]) -> dict | None:
     """Distribution du PER d'UNE société, sur ses propres séances."""
     propre = [p for p in per if isinstance(p, (int, float)) and 0 < p < 60]
-    if len(propre) < MIN_SEANCES_PER:
+    if len(propre) < PER_SEANCES_LIMITE:
         return None
     tris = sorted(propre)
     q1 = tris[len(tris) // 4]
@@ -138,6 +170,7 @@ def distribution_per(per: list[float]) -> dict | None:
         "maximum": round(max(propre), 2),
         "percentile": round(100.0 * sum(1 for p in propre if p <= actuel) / len(propre), 1),
         "seances": len(propre),
+        "profondeur": "pleine" if len(propre) >= PER_SEANCES_PLEIN else "limitee",
     }
 
 
@@ -153,7 +186,7 @@ def decomposition(hist: list[dict]) -> dict | None:
     """
     paires = [(h.get("close"), h.get("per")) for h in hist
               if isinstance(h.get("close"), (int, float)) and isinstance(h.get("per"), (int, float)) and h["per"] > 0]
-    if len(paires) < MIN_SEANCES_PER:
+    if len(paires) < PER_SEANCES_LIMITE:
         return None
     c0, p0 = paires[0]
     c1, p1 = paires[-1]
@@ -185,9 +218,14 @@ def decomposition(hist: list[dict]) -> dict | None:
 def lecture_moyen(dist: dict | None, boc: dict) -> dict:
     if dist is None:
         return {"statut": "non_calculable", "horizon": "moyen",
-                "raison": f"moins de {MIN_SEANCES_PER} séances de PER publié dans l'archive",
+                "raison": f"moins de {PER_SEANCES_LIMITE} séances de PER publié dans l'archive",
                 "regle": "PER comparé à sa propre distribution historique"}
     p = dist["percentile"]
+    profondeur = dist.get("profondeur", "pleine")
+    mention = "" if profondeur == "pleine" else (
+        f" Distribution courte ({dist['seances']} séances publiées sur {PER_SEANCES_PLEIN} attendues) : "
+        "le rang est indicatif, pas un centile établi."
+    )
     cours = boc.get("close")
     marge_benefice = None
     if isinstance(cours, (int, float)) and isinstance(dist["actuel"], (int, float)):
@@ -206,14 +244,24 @@ def lecture_moyen(dist: dict | None, boc: dict) -> dict:
                   "La valorisation est dans son cours habituel.")
     detail = [phrase,
               f"Sa fourchette personnelle va de {dist['q1']:.1f} (1ᵉʳ quartile) à {dist['q3']:.1f} (3ᵉ quartile) ; extrêmes observés {dist['minimum']:.1f} à {dist['maximum']:.1f}."]
+    if profondeur != "pleine":
+        detail.append(mention.strip())
     return {
         "statut": "calcule", "horizon": "moyen", "ton": ton, "phrase": detail[0],
+        "profondeur": profondeur,
         "details": detail, "donnees": dist,
         "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
         "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
     }
 
 # ── Long terme ─────────────────────────────────────────────────────────────
+
+
+def normalize_texte(texte: str) -> str:
+    """Minuscules sans accents — même normalisation que le collecteur."""
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", texte.lower())
+                   if unicodedata.category(c) != "Mn")
 
 
 def serie(company: dict) -> list[dict]:
@@ -230,10 +278,14 @@ def valeur(figure: dict | None) -> float | None:
 
 def lecture_long(company: dict) -> dict:
     exercices = serie(company)
-    if len(exercices) < MIN_EXERCICES:
+    if len(exercices) < MIN_EXERCICES_LIMITE:
+        # Une seule année ne permet aucune comparaison : on refuse au lieu de
+        # décrire un instant et de l'appeler une trajectoire.
         return {"statut": "non_calculable", "horizon": "long",
-                "raison": f"{len(exercices)} exercice(s) d'états financiers extraits, il en faut {MIN_EXERCICES}",
-                "regle": "états financiers officiels sur trois exercices ou plus"}
+                "raison": (f"{len(exercices)} exercice(s) d'états financiers extraits des documents indexés ; "
+                           f"deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine"),
+                "regle": "états financiers officiels, deux exercices minimum"}
+    profondeur = "pleine" if len(exercices) >= MIN_EXERCICES else "limitee"
     dernier, premier = exercices[-1], exercices[0]
     figs_d, figs_p = dernier.get("figures") or {}, premier.get("figures") or {}
 
@@ -306,8 +358,11 @@ def lecture_long(company: dict) -> dict:
                 "raison": f"{len(exercices)} exercice(s) présents mais aucune grandeur exploitable "
                           "(résultat net, fonds propres, flux ou dividende absents)",
                 "regle": "états financiers officiels sur trois exercices ou plus"}
+    if profondeur != "pleine":
+        points.append(f"Lecture courte : {len(exercices)} exercices seulement ({' et '.join(str(e.get('exercice')) for e in exercices)}). "
+                      "Une trajectoire sur deux points est un début, pas une tendance.")
     return {
-        "statut": "calcule", "horizon": "long", "ton": ton, "phrase": points[0],
+        "statut": "calcule", "horizon": "long", "ton": ton, "profondeur": profondeur, "phrase": points[0],
         "details": points,
         "exercices": [e.get("exercice") for e in exercices],
         "paiements_dividendes": f"{div_hist.get('paid_last_5_fiscal_years', 0)}/5 derniers exercices" if div_hist else "non documenté",
@@ -327,6 +382,7 @@ class Verdict:
     cours: float | None
     horizons: dict = field(default_factory=dict)
     capitalisation: dict = field(default_factory=dict)
+    position_longue: dict = field(default_factory=dict)
     note: str = ""
 
     def to_dict(self) -> dict:
@@ -352,6 +408,7 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
         v = Verdict(ticker=t, nom=c.get("name", ""), secteur=c.get("sector", ""),
                     cours=cours if isinstance(cours, (int, float)) else None)
         v.horizons["court"] = lecture_court(position_fourchette(clotures), c.get("history_stats") or {})
+        v.position_longue = position_longue(clotures) or {}
         decomp = decomposition(hist)
         v.horizons["moyen"] = lecture_moyen(distribution_per(pers), boc)
         if decomp and v.horizons["moyen"].get("statut") == "calcule":
@@ -359,8 +416,16 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
             v.horizons["moyen"]["details"].append(decomp["phrase"])
         v.horizons["long"] = lecture_long(c)
 
-        # Capitalisation : seulement si le nombre d'actions est PROUVÉ dans un
-        # document. Aucune déduction depuis un cours ou un BPA.
+        # Capitalisation, trois niveaux de preuve distincts et jamais confondus :
+        #   1. nombre d'actions lu dans un document officiel  → capitalisation directe ;
+        #   2. identité vérifiée capitalisation = PER publié × résultat net de
+        #      l'exercice de référence → capitalisation implicite. Contrôlée sur
+        #      les deux seules sociétés dont le nombre d'actions est prouvé :
+        #      SGBC 1213,33 Md / PER 11,97 = 101 365 M contre 101 228 M publiés
+        #      (0,14 % d'écart) ; CIEC 280,00 Md / PER 21,33 = 13 127 M contre
+        #      13 100 M (0,20 %). L'identité tient, elle reste une déduction ;
+        #   3. aucun des deux → absence motivée, avec ce qui la débloquerait.
+        # Le nombre d'actions, lui, n'est JAMAIS déduit : il reste le verrou.
         actions = valeur((c.get("figures_supplement") or {}).get("nombre_actions_fin_exercice"))
         if actions is None:
             for e in reversed(serie(c)):
@@ -372,22 +437,113 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
                                 "valeur_fcfa": round(actions * cours),
                                 "base": "nombre d'actions lu dans un document officiel × dernier cours publié"}
         else:
+            # Pas de « non calculable » sec : on dit ce qui manque, d'où cela
+            # vient, et ce qui le débloquerait. Ce n'est pas la même chose
+            # qu'une société qui n'a publié aucun document, et l'écran doit
+            # pouvoir faire la différence.
+            # niveau 2 : capitalisation implicite par le PER publié
+            per_publie = boc.get("per")
+            rn_ref = None
+            rn_exercice = None
+            for e in reversed(serie(c)):
+                valeur_rn = valeur((e.get("figures") or {}).get("resultat_net"))
+                if valeur_rn:
+                    rn_ref, rn_exercice = valeur_rn, e.get("exercice")
+                    break
+            if isinstance(per_publie, (int, float)) and per_publie > 0 and rn_ref and rn_ref > 0:
+                v.capitalisation = {
+                    "statut": "implicite",
+                    "valeur_fcfa": round(per_publie * rn_ref),
+                    "per_publie": per_publie,
+                    "resultat_net": rn_ref,
+                    "exercice": rn_exercice,
+                    "base": ("déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice "
+                             f"{rn_exercice}. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre "
+                             "d'actions est prouvé."),
+                    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM",
+                }
+                verdicts[t] = v
+                continue
+            docs = c.get("documents") or []
+            etats = [x for x in docs
+                     if "etats_financiers" in (x.get("doc_type") or "")
+                     or "etat" in normalize_texte(x.get("label") or "")
+                     or "financ" in normalize_texte(x.get("label") or "") and "rapport" not in normalize_texte(x.get("label") or "")[:10]]
+            if not docs:
+                origine = "aucun document émetteur indexé pour cette société dans la collecte"
+                deblocage = "indexer ses publications officielles sur brvm.org, puis ses états financiers"
+            elif not etats:
+                origine = (f"{len(docs)} document(s) indexé(s), aucun état financier publié "
+                           f"({', '.join(sorted({(x.get('doc_type') or 'type inconnu') for x in docs}))})")
+                deblocage = "attendre ou retrouver la publication des états financiers de l'exercice"
+            else:
+                origine = (f"{len(etats)} état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; "
+                           f"{len(serie(c))} exercice(s) extraits")
+                deblocage = "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
             v.capitalisation = {"statut": "non_calculable",
-                                "raison": "nombre d'actions absent des documents indexés pour cette société"}
+                                "raison": "nombre d'actions absent des documents indexés",
+                                "origine": origine,
+                                "deblocage": deblocage}
         verdicts[t] = v
     return verdicts
+
+
+def manques(verdicts: dict[str, Verdict]) -> list[dict]:
+    """Ce qui empêche chaque société d'être complète, écrit une fois pour toutes.
+
+    Un manque n'est pas une fatalité : c'est une tâche. Ce registre est
+    reconstruit depuis les verdicts pour qu'aucune société ne sorte de l'écran
+    sans que l'on sache exactement ce qui lui manque et où le prendre.
+    """
+    taches = []
+    for ticker, v in verdicts.items():
+        for horizon, libelle in (("court", "court terme"), ("moyen", "moyen terme"), ("long", "long terme")):
+            h = v.horizons[horizon]
+            if h.get("statut") == "calcule" and h.get("profondeur", "pleine") == "pleine":
+                continue
+            taches.append({
+                "ticker": ticker,
+                "societe": v.nom,
+                "horizon": libelle,
+                "etat": "limite" if h.get("statut") == "calcule" else "absent",
+                "raison": h.get("raison") or (
+                    f"distribution courte ({h.get('donnees', {}).get('seances')} séances)" if horizon == "moyen"
+                    else f"lecture courte ({len(h.get('exercices') or [])} exercices complets)"),
+                "source": ("archive BOC — bulletin officiel de la cote" if horizon in ("court", "moyen")
+                           else "états financiers officiels de l'émetteur"),
+            })
+        if v.capitalisation.get("statut") == "non_calculable":
+            taches.append({
+                "ticker": ticker, "societe": v.nom, "horizon": "capitalisation", "etat": "absent",
+                "raison": v.capitalisation.get("raison"),
+                "source": v.capitalisation.get("origine"),
+                "deblocage": v.capitalisation.get("deblocage"),
+            })
+    return taches
 
 
 def resume(verdicts: dict[str, Verdict]) -> dict:
     def compte(horizon: str, statut: str) -> int:
         return sum(1 for v in verdicts.values() if v.horizons[horizon].get("statut") == statut)
 
+    def pleine(horizon: str) -> int:
+        return sum(1 for v in verdicts.values()
+                   if v.horizons[horizon].get("statut") == "calcule"
+                   and v.horizons[horizon].get("profondeur", "pleine") == "pleine")
+
     return {
         "societes": len(verdicts),
         "court_calcule": compte("court", "calcule"),
         "moyen_calcule": compte("moyen", "calcule"),
         "long_calcule": compte("long", "calcule"),
+        # Les mêmes trois capacités, comptées uniquement quand la série est
+        # assez profonde pour que le chiffre veuille dire quelque chose.
+        "court_plein": pleine("court"),
+        "moyen_plein": pleine("moyen"),
+        "long_plein": pleine("long"),
         "capitalisation_calculee": sum(1 for v in verdicts.values() if v.capitalisation.get("statut") == "calcule"),
+        "capitalisation_implicite": sum(1 for v in verdicts.values() if v.capitalisation.get("statut") == "implicite"),
+        "position_longue_calculee": sum(1 for v in verdicts.values() if v.position_longue),
         "trois_horizons_complets": sum(
             1 for v in verdicts.values()
             if all(v.horizons[h].get("statut") == "calcule" for h in ("court", "moyen", "long"))
@@ -400,6 +556,7 @@ def main() -> None:
     ap.add_argument("tickers", nargs="*", help="limiter à ces tickers")
     ap.add_argument("--out", help="écrire le JSON complet")
     ap.add_argument("--json", action="store_true", help="afficher en JSON au lieu du texte")
+    ap.add_argument("--manques", action="store_true", help="lister ce qui empêche chaque société d'être complète")
     args = ap.parse_args()
 
     data = json.loads(DATA.read_text(encoding="utf-8"))
@@ -407,6 +564,13 @@ def main() -> None:
     verdicts = construire(data, archive)
     if args.tickers:
         verdicts = {t: v for t, v in verdicts.items() if t in {x.upper() for x in args.tickers}}
+
+    if args.manques:
+        taches = manques(verdicts)
+        for tache in sorted(taches, key=lambda x: (x["etat"], x["ticker"])):
+            print(f"{tache['ticker']:7} {tache['horizon']:16} {tache['etat']:8} {tache['raison']}")
+        print(f"\n{len(taches)} manque(s) sur {len(verdicts)} sociétés.")
+        return
 
     if args.out:
         payload = {
@@ -418,10 +582,13 @@ def main() -> None:
                 "fourchette_bas_percentile": SEUIL_FOURCHETTE_BAS,
                 "per_cher_percentile": SEUIL_PER_CHER,
                 "per_bon_marche_percentile": SEUIL_PER_BON_MARCHE,
-                "min_seances_per": MIN_SEANCES_PER,
+                "per_seances_plein": PER_SEANCES_PLEIN,
+                "per_seances_limite": PER_SEANCES_LIMITE,
                 "min_exercices": MIN_EXERCICES,
+                "min_exercices_limite": MIN_EXERCICES_LIMITE,
             },
             "resume": resume(verdicts),
+            "manques": manques(verdicts),
             "verdicts": {t: v.to_dict() for t, v in verdicts.items()},
         }
         Path(args.out).write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
