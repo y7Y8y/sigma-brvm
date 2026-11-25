@@ -374,6 +374,230 @@ def lecture_long(company: dict) -> dict:
 # ── Assemblage ─────────────────────────────────────────────────────────────
 
 
+# ── Le revenu : ce qu'un actionnaire touche réellement ─────────────────────
+
+def _fig(exercice: dict, cle: str) -> float | None:
+    return valeur((exercice.get("figures") or {}).get(cle))
+
+
+def _ratio(num: float | None, den: float | None, pct: bool = False) -> float | None:
+    if not num or not den or den <= 0:
+        return None
+    r = num / den * (100 if pct else 1)
+    return round(r, 2)
+
+
+def regularite(dh: dict, exercice_reference: int | None) -> dict:
+    """Le dividende est-il une politique ou un accident ?
+
+    On ne compte que les exercices **consécutifs réellement payés**, du plus
+    récent vers le passé. `current_consecutive_paid_years` du collecteur ne
+    suffit pas : il s'arrête au premier trou sans dire lequel.
+    """
+    annuels = {a["fiscal_year"]: a for a in (dh.get("annual") or []) if a.get("net_amount_fcfa")}
+    if not annuels:
+        return {"statut": "non_documentee",
+                "raison": "aucune distribution rattachée à un exercice dans l'historique collecté"}
+    dernier = dh.get("latest_paid_fiscal_year") or max(annuels)
+    annees, annee = [], dernier
+    while annee in annuels:
+        annees.append({"exercice": annee, "dps": round(annuels[annee]["net_amount_fcfa"], 2)})
+        annee -= 1
+    # Une variation d'un exercice sur l'autre, mesurée seulement à série continue.
+    variations = []
+    for a, b in zip(annees[1:], annees):
+        if a["dps"]:
+            variations.append(round((b["dps"] / a["dps"] - 1) * 100, 1))
+    return {
+        "statut": "documentee",
+        "dernier_exercice_paye": dernier,
+        "annees_consecutives": len(annees),
+        # Le dernier exercice payé peut précéder le dernier exercice publié :
+        # ce n'est pas un trou de collecte, c'est un exercice sans distribution.
+        # Deux décalages opposés, jamais confondus :
+        #   retard des comptes  → le dividende est connu, pas les états financiers
+        #                         (CFAC : dividende 2025, derniers comptes 2024) ;
+        #   retard du dividende → les comptes sont là, la distribution non
+        #                         (SIVC : comptes à jour, dernier versement 2016).
+        "en_retard_sur_les_comptes": max(0, exercice_reference - dernier) if exercice_reference else None,
+        "comptes_en_retard": bool(exercice_reference and dernier > exercice_reference),
+        "variations_recentes_pct": variations[:5],
+        "baisses": sum(1 for v in variations if v < 0),
+        "hausses": sum(1 for v in variations if v > 0),
+        "suite": annees[:5],
+    }
+
+
+def payout(company: dict, dh: dict) -> dict:
+    """Part du bénéfice versée, par deux chemins qui ne se mélangent jamais.
+
+    1. **documentaire** — dividendes versés (tableau de financement) ÷ résultat
+       net du même exercice. C'est le chiffre comptable, il ne dépend d'aucun
+       cours. Disponible pour 11 sociétés.
+    2. **identité** — rendement net publié au BOC × PER publié au BOC
+       (= dividende ÷ cours × cours ÷ bénéfice). Contrôlée sur les exercices où
+       les deux chemins existent : l'écart est celui du dividende retenu et de
+       l'exercice de référence, pas une erreur d'arithmétique. Disponible pour
+       27 sociétés. Statut `implicite`, jamais présenté comme comptable.
+    """
+    ser = serie(company)
+    docs = []
+    for e in ser:
+        dv, rn = _fig(e, "dividendes_verses"), _fig(e, "resultat_net")
+        p = _ratio(abs(dv) if dv else None, rn, pct=True)
+        if p is not None:
+            docs.append({"exercice": e.get("exercice"), "payout_pct": p,
+                         "dividendes_verses": abs(dv), "resultat_net": rn})
+    if docs:
+        dernier = docs[-1]
+        moyenne = round(sum(d["payout_pct"] for d in docs) / len(docs), 1)
+        return {"statut": "documentaire", "dernier": dernier, "moyenne_pct": moyenne,
+                "exercices": docs,
+                "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"}
+    # Aucun « dividendes versés » extrait : on ne le remplace pas par le BOC,
+    # qui porte souvent sur un autre exercice. On déclare le statut.
+    boc = company.get("latest_boc") or {}
+    y, per = boc.get("net_dividend_yield_pct"), boc.get("per")
+    if isinstance(y, (int, float)) and isinstance(per, (int, float)) and y > 0 and per > 0:
+        return {
+            "statut": "implicite",
+            "dernier": {"payout_pct": round(y * per, 1)},
+            "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+            "limite": ("déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier "
+                       "résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"),
+        }
+    return {"statut": "non_calculable",
+            "raison": ("ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC")}
+
+
+def couverture(company: dict) -> dict:
+    """Le dividende est-il payé par la trésorerie de l'exploitation ?
+
+    Seul le chemin documentaire existe : comparer un dividende de l'exercice N
+    à un flux d'un autre exercice n'a aucun sens. Absent = dit, jamais estimé.
+    """
+    for e in reversed(serie(company)):
+        flux, dv = _fig(e, "flux_tresorerie_operationnel"), _fig(e, "dividendes_verses")
+        if flux and dv:
+            return {"statut": "calcule", "exercice": e.get("exercice"),
+                    "flux_operationnel": flux, "dividendes_verses": abs(dv),
+                    "couverture_x": round(flux / abs(dv), 2),
+                    "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"}
+    return {"statut": "non_calculable",
+            "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"}
+
+
+def revenu(company: dict, cours: float | None) -> dict:
+    """Le bloc « ce que ça rapporte », trois preuves séparées et une seule addition.
+
+    Ordre de lecture imposé : d'abord ce qui est prouvé par le dividende, puis
+    ce qui est déduit, puis ce qui n'existe pas. Un rendement affiché sans sa
+    qualité (régularité, couverture) est un piège : le plus haut rendement de la
+    cote peut être celui d'une société qui distribue un exercice exceptionnel.
+    """
+    dh = company.get("dividend_history") or {}
+    boc = company.get("latest_boc") or {}
+    ser = serie(company)
+    exercice_ref = ser[-1].get("exercice") if ser else None
+    reg = regularite(dh, exercice_ref)
+    pay = payout(company, dh)
+    cov = couverture(company)
+    # Rendement : **une seule source**, le BOC, parce que le tableau de
+    # paiement de la BRVM publie parfois le montant brut et parfois le net
+    # (17/48 brut, 17/48 net sur la collecte) : un rendement calculé en
+    # croisant les deux surestime le revenu de 13,6 % dans les cas bruts.
+    # Aucun montant n'est donc transféré d'une source à l'autre.
+    rendement = boc.get("net_dividend_yield_pct")
+    rendement = round(rendement, 2) if isinstance(rendement, (int, float)) else None
+    dps_boc = boc.get("last_net_dividend_fcfa")
+    date_div = boc.get("last_dividend_date_label")
+
+    points, alertes = [], []
+    if rendement is not None:
+        points.append(f"{rendement:.2f} % de rendement net, dividende de {dps_boc:.0f} FCFA par action"
+                      + (f" mis en paiement le {date_div}" if date_div else "") + " (source : BOC).")
+    if reg.get("statut") == "documentee":
+        points.append(f"{reg['annees_consecutives']} exercice(s) consécutif(s) avec distribution documentée"
+                      + (f", dernier payé : {reg['dernier_exercice_paye']}." if reg.get("dernier_exercice_paye") else "."))
+        if reg.get("en_retard_sur_les_comptes") and reg["en_retard_sur_les_comptes"] >= 2:
+            alertes.append(f"aucune distribution documentée depuis {reg['dernier_exercice_paye']}, soit "
+                           f"{reg['en_retard_sur_les_comptes']} exercices de retard sur les comptes extraits")
+    if pay.get("statut") == "documentaire":
+        p = pay["dernier"]["payout_pct"]
+        points.append(f"{p:.0f} % du résultat versé en {pay['dernier']['exercice']} "
+                      f"(moyenne {pay['moyenne_pct']:.0f} % sur {len(pay['exercices'])} exercices).")
+        if p > 100:
+            alertes.append(f"distribution supérieure au bénéfice en {pay['dernier']['exercice']} : elle a été payée "
+                           "par autre chose que le résultat de l'exercice")
+    elif pay.get("statut") == "implicite":
+        p = pay["dernier"]["payout_pct"]
+        points.append(f"≈ {p:.0f} % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable).")
+        if p > 120:
+            alertes.append(f"distribution déduite très supérieure au bénéfice (≈ {p:.0f} %) : à confirmer au tableau "
+                           "de financement avant d'en faire un revenu récurrent")
+    if cov.get("statut") == "calcule":
+        points.append(f"dividende couvert {cov['couverture_x']:.2f} fois par le flux d'exploitation de "
+                      f"{cov['exercice']}.")
+        if cov["couverture_x"] < 1:
+            alertes.append(f"le flux d'exploitation de {cov['exercice']} ne couvre pas la distribution "
+                           f"({cov['couverture_x']:.2f} fois)")
+    if rendement is not None and rendement > 20:
+        alertes.append(f"rendement de {rendement:.0f} % : hors norme pour une société qui distribue "
+                       "régulièrement, à traiter comme un versement exceptionnel ou un cours déprimé, pas comme un revenu")
+    dernier_payout = (pay.get("dernier") or {}).get("exercice")
+    if reg.get("comptes_en_retard"):
+        points.append(f"le dividende de l'exercice {reg['dernier_exercice_paye']} est publié, mais les états financiers "
+                      "de cet exercice ne sont pas encore extraits"
+                      + (f" : le taux de distribution n'est calculable que jusqu'à {dernier_payout}."
+                         if dernier_payout else "."))
+    if reg.get("statut") == "documentee" and reg.get("en_retard_sur_les_comptes"):
+        alertes.append(f"le dernier exercice payé ({reg['dernier_exercice_paye']}) précède le dernier exercice "
+                       f"publié ({exercice_ref}) : le taux décrit un versement passé, pas un revenu attendu")
+    if reg.get("statut") == "documentee" and reg.get("baisses"):
+        alertes.append(f"{reg['baisses']} baisse(s) de dividende sur les {len(reg['variations_recentes_pct'])} "
+                       "dernières variations : la politique n'est pas une rente fixe")
+
+    # Les trois preuves d'un revenu, chacune vérifiable séparément. Ce n'est
+    # pas un score : c'est un décompte, et le détail dit laquelle manque.
+    preuves = {
+        "regularite": bool(reg.get("statut") == "documentee" and reg.get("annees_consecutives", 0) >= 3),
+        "financement": bool(pay.get("statut") == "documentaire" and pay.get("dernier", {}).get("payout_pct", 999) <= 100),
+        "couverture": bool(cov.get("statut") == "calcule" and cov.get("couverture_x", 0) >= 1),
+    }
+    regle = ("Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est "
+             "renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par "
+             "l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement "
+             "à ne pas considérer comme un revenu.")
+
+    # Niveau de preuve, du plus solide au plus faible. Il ne note pas la
+    # société : il note la qualité de CE QUE SIGMA SAIT d'elle.
+    if reg.get("statut") == "documentee" and pay.get("statut") == "documentaire":
+        preuve = "documentaire"
+    elif reg.get("statut") == "documentee" or pay.get("statut") == "implicite":
+        preuve = "partielle"
+    else:
+        preuve = "absente"
+
+    return {
+        "rendement_pct": rendement,
+        "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+        "dps_reference": round(dps_boc, 2) if isinstance(dps_boc, (int, float)) else None,
+        "date_paiement": date_div,
+        # Le rendement élevé n'est pas une qualité : si le dividende n'a pas
+        # été renouvelé, le taux affiché décrit un versement passé.
+        "rendement_en_retard": bool((reg.get("en_retard_sur_les_comptes") or 0) >= 1),
+        "regularite": reg,
+        "payout": pay,
+        "couverture": cov,
+        "preuve": preuve,
+        "preuves": preuves,
+        "preuves_reunies": sum(preuves.values()),
+        "regle": regle,
+        "points": points[:4],
+        "alertes": alertes[:3],
+    }
+
+
 @dataclass
 class Verdict:
     ticker: str
@@ -383,6 +607,7 @@ class Verdict:
     horizons: dict = field(default_factory=dict)
     capitalisation: dict = field(default_factory=dict)
     position_longue: dict = field(default_factory=dict)
+    revenu: dict = field(default_factory=dict)
     note: str = ""
 
     def to_dict(self) -> dict:
@@ -415,6 +640,7 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
             v.horizons["moyen"]["decomposition"] = decomp
             v.horizons["moyen"]["details"].append(decomp["phrase"])
         v.horizons["long"] = lecture_long(c)
+        v.revenu = revenu(c, v.cours)
 
         # Capitalisation, trois niveaux de preuve distincts et jamais confondus :
         #   1. nombre d'actions lu dans un document officiel  → capitalisation directe ;
@@ -512,6 +738,24 @@ def manques(verdicts: dict[str, Verdict]) -> list[dict]:
                 "source": ("archive BOC — bulletin officiel de la cote" if horizon in ("court", "moyen")
                            else "états financiers officiels de l'émetteur"),
             })
+        rev = v.revenu or {}
+        if rev.get("preuve") != "documentaire":
+            preuves = rev.get("preuves") or {}
+            manquantes = [libelle for cle, libelle in (
+                ("regularite", "régularité du dividende (3 exercices consécutifs)"),
+                ("financement", "financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %)"),
+                ("couverture", "couverture par le flux d'exploitation du même exercice"),
+            ) if not preuves.get(cle)]
+            taches.append({
+                "ticker": ticker, "societe": v.nom, "horizon": "revenu",
+                "etat": "limite" if rev.get("rendement_pct") is not None else "absent",
+                "raison": ("preuves manquantes : " + " · ".join(manquantes)) if manquantes
+                          else "rendement publié mais aucune preuve de durabilité réunie",
+                "source": ("BOC (rendement) + tableau de financement des états financiers (dividendes versés, "
+                           "flux d'exploitation)"),
+                "deblocage": ("extraire « dividendes versés » et le flux d'exploitation du tableau de financement "
+                              "pour le même exercice, et rattacher chaque avis de paiement à son exercice"),
+            })
         if v.capitalisation.get("statut") == "non_calculable":
             taches.append({
                 "ticker": ticker, "societe": v.nom, "horizon": "capitalisation", "etat": "absent",
@@ -544,6 +788,11 @@ def resume(verdicts: dict[str, Verdict]) -> dict:
         "capitalisation_calculee": sum(1 for v in verdicts.values() if v.capitalisation.get("statut") == "calcule"),
         "capitalisation_implicite": sum(1 for v in verdicts.values() if v.capitalisation.get("statut") == "implicite"),
         "position_longue_calculee": sum(1 for v in verdicts.values() if v.position_longue),
+        "revenu_documente": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuve") == "documentaire"),
+        "revenu_partiel": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuve") == "partielle"),
+        "revenu_absent": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuve") == "absente"),
+        "rendement_calcule": sum(1 for v in verdicts.values() if (v.revenu or {}).get("rendement_pct") is not None),
+        "revenu_trois_preuves": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuves_reunies") == 3),
         "trois_horizons_complets": sum(
             1 for v in verdicts.values()
             if all(v.horizons[h].get("statut") == "calcule" for h in ("court", "moyen", "long"))

@@ -993,6 +993,7 @@ function renderHome() {
           const [ton, libelle] = TONS[b.ton] || TONS.neutre;
           return `<li class="verdict-line ${calcule ? "" : "is-vide"}"><div class="verdict-horizon"><span class="verdict-titre">${HORIZONS[h].titre}</span></div><div class="verdict-body">${calcule ? `<span class="verdict-ton ${ton}">${libelle}</span>` : '<span class="verdict-ton vide">Série insuffisante</span>'}<p class="verdict-phrase">${escapeHtml(calcule ? b.phrase : (b.raison || "non calculable"))}</p></div></li>`;
         }).join("")}</ul>` : ""}
+      ${firstVerdict?.revenu ? `<p class="verdict-regle section-space"><strong>Ce que ça rapporte aujourd'hui :</strong> ${isNum(firstVerdict.revenu.rendement_pct) ? `${fmtPct(firstVerdict.revenu.rendement_pct, 2, false)} de rendement net` : "aucun rendement publié"} — ${firstVerdict.revenu.preuves_reunies ?? 0} preuve(s) sur 3 que ce versement est un revenu (renouvelé, financé par le bénéfice, payé par l'exploitation). <button type="button" class="text-button" data-open-company="${firstCandidate.company.ticker}">Voir le détail</button></p>` : ""}
       <div class="form-actions" style="margin-top:12px"><button type="button" class="button" data-decision-link="decision">Préparer la décision du mois</button>${firstCandidate ? `<button type="button" class="button button-secondary" data-open-company="${firstCandidate.company.ticker}">Ouvrir la fiche ${firstCandidate.company.ticker}</button>` : ""}${profileDone ? "" : `<button type="button" class="button button-secondary" data-open-onboarding>Faire le préréglage</button>`}</div>
       <p class="source-line">Liste de lecture préparée par des règles écrites — jamais un ordre d’achat.</p>
     </article>`;
@@ -1033,6 +1034,7 @@ function renderHome() {
 
   host.innerHTML = `
     ${monthlyCard}
+    ${parcoursCard()}
     ${radarCard}
     ${alertsCard}
     ${marketCard}
@@ -1196,6 +1198,53 @@ function verdictCard(ticker, { compact = false } = {}) {
       : v.capitalisation?.statut === "implicite"
         ? `<p class="source-line">Capitalisation déduite : PER publié ${fmtNum(cap.per_publie, 2)} × résultat net ${fmtNum(cap.resultat_net / 1e6, 0)} M FCFA (exercice ${cap.exercice}). Ce n'est pas un nombre d'actions vérifié ; l'identité a été contrôlée à 0,14 % et 0,20 % sur les deux sociétés où il l'est.</p>`
         : `<p class="source-line">Capitalisation non calculable. ${escapeHtml(cap.origine || cap.raison || "")}. <strong>Pour la débloquer :</strong> ${escapeHtml(cap.deblocage || "lire le nombre d'actions dans le rapport annuel")}.</p>`}`;
+}
+
+/* ---------------------------------------------------------------------------
+   Le revenu — ce qu'un actionnaire touche réellement.
+   Trois preuves, jamais fondues en une note : le dividende est-il renouvelé,
+   financé par le bénéfice, payé par l'exploitation ? Les trois réunies font un
+   revenu ; aucune ne fait un rendement à considérer comme un revenu.
+   Le rendement vient du seul BOC : le tableau de paiement de la BRVM publie
+   tantôt brut tantôt net, le mélanger surestimerait le revenu de 13,6 %.
+--------------------------------------------------------------------------- */
+function revenuCard(ticker, { compact = false } = {}) {
+  const v = verdictDe(ticker);
+  if (!v?.revenu) return "";
+  const r = v.revenu;
+  const p = r.preuves || {};
+  const lignes = [
+    ["regularite", "Dividende renouvelé", r.regularite?.statut === "documentee"
+      ? `${r.regularite.annees_consecutives} exercice(s) consécutif(s), dernier payé ${r.regularite.dernier_exercice_paye}`
+      : "aucune distribution rattachée à un exercice"],
+    ["financement", "Financé par le bénéfice", r.payout?.statut === "documentaire"
+      ? `${fmtPct(r.payout.dernier.payout_pct, 0, false)} du résultat de ${r.payout.dernier.exercice}`
+      : r.payout?.statut === "implicite"
+        ? `≈ ${fmtPct(r.payout.dernier.payout_pct, 0, false)} déduits du rendement et du PER (pas un chiffre comptable)`
+        : "dividendes versés non extraits"],
+    ["couverture", "Payé par l'exploitation", r.couverture?.statut === "calcule"
+      ? `flux ${r.couverture.exercice} = ${fmtMultiple(r.couverture.couverture_x)} la distribution`
+      : "flux et dividende jamais réunis sur un même exercice"],
+  ];
+  const rendu = lignes.map(([cle, titre, detail]) => `<li class="verdict-line revenu-proof ${p[cle] ? "" : "is-vide"}">
+      <div class="verdict-horizon"><span class="verdict-titre">${titre}</span></div>
+      <div class="verdict-body">
+        <span class="verdict-ton ${p[cle] ? "solide" : "vide"}">${p[cle] ? "Tenue" : "Manquante"}</span>
+        <p class="verdict-phrase">${escapeHtml(detail)}</p>
+      </div>
+    </li>`).join("");
+  const total = r.preuves_reunies ?? 0;
+  const verdict = total === 3 ? "Revenu établi" : total === 2 ? "Revenu probable, une preuve manque" : total === 1 ? "Revenu fragile" : "Rendement, pas un revenu";
+  return `<div class="revenu-head">
+      <div><p class="eyebrow">Le revenu · ${escapeHtml(r.rendement_source || "BOC")}</p>
+      <h2>${isNum(r.rendement_pct) ? `${fmtPct(r.rendement_pct, 2, false)} de rendement net` : "Rendement non publié"} <span class="subtext">· ${verdict}</span></h2></div>
+      <span class="pill ${total === 3 ? "" : "dark"}">${total}/3 preuves</span>
+    </div>
+    ${isNum(r.rendement_pct) && r.rendement_en_retard ? `<div class="notice"><p><strong>Ce taux décrit un versement passé :</strong> le dernier exercice payé (${r.regularite?.dernier_exercice_paye}) précède le dernier exercice publié. Un rendement élevé qui n'est pas renouvelé n'est pas un revenu.</p></div>` : ""}
+    <ul class="verdict-list">${rendu}</ul>
+    ${!compact && r.points?.length ? `<ul class="verdict-details">${r.points.slice(1).map(x => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : ""}
+    ${!compact && r.alertes?.length ? `<ul class="verdict-details revenu-alertes">${r.alertes.map(x => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : ""}
+    <p class="verdict-regle"><strong>Règle :</strong> ${escapeHtml(r.regle || "")}</p>`;
 }
 
 function renderCompanies() {
@@ -1437,6 +1486,8 @@ function renderCompanyDetail() {
     </div>
 
     <article class="card verdict-card section-space">${verdictCard(company.ticker)}</article>
+
+    <article class="card verdict-card section-space">${revenuCard(company.ticker)}</article>
 
     ${detailSummary}
 
@@ -2556,10 +2607,12 @@ function renderCompletude() {
         ${jauge("Moyen terme — PER sur sa propre histoire", r.moyen_plein ?? 0, (r.moyen_calcule ?? 0) - (r.moyen_plein ?? 0), r.societes)}
         ${jauge("Long terme — trois exercices ou plus", r.long_plein ?? 0, (r.long_calcule ?? 0) - (r.long_plein ?? 0), r.societes)}
       </div>
-      <div class="grid-2 section-space">
+      <div class="grid-3 section-space">
         ${jauge("Capitalisation — actions vérifiées", r.capitalisation_calculee ?? 0, r.capitalisation_implicite ?? 0, r.societes)}
         ${jauge("Prix face à son cycle de 120 séances", r.position_longue_calculee ?? 0, 0, r.societes)}
+        ${jauge("Revenu — trois preuves réunies", r.revenu_trois_preuves ?? 0, (r.revenu_documente ?? 0) - (r.revenu_trois_preuves ?? 0), r.societes)}
       </div>
+      <p class="source-line">Le revenu est compté à part : ${r.rendement_calcule ?? 0}/48 sociétés ont un rendement publié au BOC, ${r.revenu_documente ?? 0} ont un dossier documentaire complet, mais ${r.revenu_trois_preuves ?? 0} seulement réunissent les trois preuves (dividende renouvelé, financé par le bénéfice, payé par l'exploitation). Un rendement affiché sans ses preuves n'est pas un revenu — c'est un versement passé.</p>
     </article>
     ${[...parHorizon.entries()].sort((a, b) => b[1].length - a[1].length).map(([horizon, liste]) => `
       <article class="card section-space">
@@ -2575,6 +2628,83 @@ function renderCompletude() {
           </li>`).join("")}
         </ul>
       </article>`).join("")}`;
+}
+
+/* ---------------------------------------------------------------------------
+   Le point de départ — où en est quelqu'un qui arrive, débutant ou non.
+   Ce n'est pas un test de niveau : c'est le chemin d'ouverture d'un compte.
+   Une personne expérimentée saute des étapes, elle ne les contourne pas : un
+   compte-titres ne s'ouvre pas sans convention SGI, et aucun outil ne peut
+   détenir des actions à sa place.
+--------------------------------------------------------------------------- */
+const PARCOURS_ETAPES = [
+  { cle: "compte", titre: "Compte-titres ouvert chez une SGI agréée",
+    detail: "La BRVM publie les SGI agréées et leurs contacts ; elle ne publie pas leurs tarifs. Aucun ordre n'existe sans compte : c'est le seul point de passage obligé.",
+    source: "annuaire officiel BRVM des SGI" },
+  { cle: "cours", titre: "Les ordres se donnent à cours limité, sur un carnet peu profond",
+    detail: "Sur les 20 dernières séances, 3 valeurs sur 48 n'ont pas changé de main et 11 ont échangé moins de 5 M FCFA par séance en médiane. Un ordre « au marché » sur une valeur peu liquide se paie au prix que le carnet veut bien donner.",
+    source: "archive BOC — volume nul et valeur médiane échangée" },
+  { cle: "frais", titre: "Les frais font partie du rendement",
+    detail: "SIGMA ne fabrique pas de grille : il calcule vos frais à partir de la vôtre. Sans elle, il écrit « frais non estimés » plutôt qu'un chiffre plausible.",
+    source: "grille écrite de votre SGI, à recopier une fois" },
+  { cle: "dividende", titre: "Le rendement affiché est brut de ce que vous toucherez",
+    detail: "Le rendement du BOC est net d'impôt sur les montants publiés, mais il ignore les frais de votre SGI et le délai de crédit. Un rendement de 6 % n'est pas 6 % dans votre poche.",
+    source: "BOC + avis officiels de paiement de dividendes" },
+  { cle: "impot", titre: "La fiscalité dépend de votre pays de résidence",
+    detail: "SIGMA ne publie pas de taux d'imposition : il n'en a pas de source officielle unifiée pour les huit pays de l'UEMOA. Il affiche les montants nets publiés et laisse la fiscalité à votre SGI.",
+    source: "absence assumée : aucune source officielle collectée" },
+];
+
+function etatParcours() {
+  const profile = personal.profile;
+  if (!profile) return { fait: false, etapes: null, raison: "préréglage non fait" };
+  const pays = profile.country && profile.country !== "Autre" ? profile.country : null;
+  const sgiDuPays = pays ? sgisForCountry(pays).length : 0;
+  return {
+    fait: true,
+    pays,
+    sgiDuPays,
+    sgiChoisie: Boolean(profile.sgiName),
+    grilleConnue: personal.settings.feePct !== "" && personal.settings.fixedFee !== "",
+  };
+}
+
+function parcoursCard() {
+  const e = etatParcours();
+  if (!e.fait) {
+    return `<article class="card section-space">
+      <p class="eyebrow">Avant le premier ordre</p><h2>Où vous en êtes</h2>
+      <p class="muted">Cinq points de passage, et ce que SIGMA sait de chacun — sans supposer que vous débutez.</p>
+      <div class="form-actions" style="margin-top:10px"><button type="button" class="button" data-open-onboarding>Faire le préréglage (2 min)</button></div>
+      <p class="source-line">${PARCOURS_ETAPES.map(x => `<strong>${escapeHtml(x.titre)}</strong> — ${escapeHtml(x.detail)}`).join(" ")}</p>
+    </article>`;
+  }
+  const lignes = [
+    ["compte", e.sgiChoisie,
+      e.sgiChoisie ? `SGI déclarée : ${escapeHtml(personal.profile.sgiName)}` : "SGI pas encore déclarée",
+      personal.profile.sgiName ? "déclarée par vous" : `${e.sgiDuPays} SGI agréées en ${escapeHtml(e.pays || "UEMOA")} dans l'annuaire BRVM`],
+    ["cours", true,
+      "Ordres à cours limité, jamais au marché sur une valeur peu liquide",
+      "3 valeurs sans échange sur 20 séances · 11 sous 5 M FCFA par séance"],
+    ["frais", e.grilleConnue,
+      e.grilleConnue ? `Courtage ${escapeHtml(personal.settings.feePct)} % + ${fmtFCFA(personal.settings.fixedFee)} par ordre` : "Grille de frais non renseignée : les frais restent non estimés",
+      e.grilleConnue ? "votre grille" : "à recopier une fois dans Paramètres"],
+    ["dividende", true,
+      "Rendement du BOC, net des montants publiés — hors frais et délai de crédit",
+      "BOC"],
+    ["impot", false,
+      "Fiscalité de votre pays : non publiée par SIGMA, faute de source officielle UEMOA",
+      "à vérifier auprès de votre SGI"],
+  ];
+  return `<article class="card section-space">
+    <div class="event-row"><div><p class="eyebrow">Avant le premier ordre · ${escapeHtml(e.pays || "UEMOA")}</p><h2>Où vous en êtes</h2></div>
+      <span class="pill dark">${lignes.filter(l => l[1]).length}/5 points</span></div>
+    <ul class="verdict-list">${lignes.map(([cle, ok, texte, source]) => `<li class="verdict-line ${ok ? "" : "is-vide"}">
+      <div class="verdict-horizon"><span class="verdict-titre">${escapeHtml(PARCOURS_ETAPES.find(x => x.cle === cle).titre)}</span></div>
+      <div class="verdict-body"><span class="verdict-ton ${ok ? "solide" : "vide"}">${ok ? "Connu" : "À faire"}</span>
+      <p class="verdict-phrase">${texte}</p><p class="verdict-regle">${escapeHtml(source)}</p></div></li>`).join("")}</ul>
+    ${!e.sgiChoisie || !e.grilleConnue ? `<div class="form-actions" style="margin-top:10px"><button type="button" class="button button-small" data-open-onboarding>Compléter</button></div>` : ""}
+  </article>`;
 }
 
 function renderSettings() {
@@ -2614,6 +2744,7 @@ function renderSettings() {
       </article>
     </div>
     <div class="grid-2 section-space">
+      ${parcoursCard()}
       <article class="card"><p class="eyebrow">Préréglage personnel</p><h2>Votre configuration SIGMA</h2>
         ${personal.profile ? `<ul class="list-clean">
           <li class="event-row"><span>Pays</span><strong>${escapeHtml(personal.profile.country || "—")}</strong></li>

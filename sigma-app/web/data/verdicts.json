@@ -27,6 +27,11 @@
   "capitalisation_calculee": 3,
   "capitalisation_implicite": 35,
   "position_longue_calculee": 47,
+  "revenu_documente": 10,
+  "revenu_partiel": 34,
+  "revenu_absent": 4,
+  "rendement_calcule": 43,
+  "revenu_trois_preuves": 3,
   "trois_horizons_complets": 40
  },
  "manques": [
@@ -57,11 +62,38 @@
   {
    "ticker": "BBGC",
    "societe": "BRIDGE BANK GROUP COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "absent",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BBGC",
+   "societe": "BRIDGE BANK GROUP COTE D'IVOIRE",
    "horizon": "capitalisation",
    "etat": "absent",
    "raison": "nombre d'actions absent des documents indexés",
    "source": "2 document(s) indexé(s), aucun état financier publié (activite_semestrielle)",
    "deblocage": "attendre ou retrouver la publication des états financiers de l'exercice"
+  },
+  {
+   "ticker": "BICB",
+   "societe": "BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BICC",
+   "societe": "BICI COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "BNBC",
@@ -72,6 +104,87 @@
    "source": "archive BOC — bulletin officiel de la cote"
   },
   {
+   "ticker": "BNBC",
+   "societe": "BERNABE COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BOAB",
+   "societe": "BANK OF AFRICA BENIN",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BOABF",
+   "societe": "BANK OF AFRICA BURKINA FASO",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BOAC",
+   "societe": "BANK OF AFRICA COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BOAM",
+   "societe": "BANK OF AFRICA MALI",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BOAN",
+   "societe": "BANK OF AFRICA NIGER",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "BOAS",
+   "societe": "BANK OF AFRICA SENEGAL",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "CABC",
+   "societe": "SICABLE COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "CBIBF",
+   "societe": "CORIS BANK INTERNATIONAL BURKINA FASO",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
    "ticker": "CBIBF",
    "societe": "CORIS BANK INTERNATIONAL BURKINA FASO",
    "horizon": "capitalisation",
@@ -79,6 +192,15 @@
    "raison": "nombre d'actions absent des documents indexés",
    "source": "3 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 4 exercice(s) extraits",
    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "ECOC",
+   "societe": "ECOBANK COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "ETIT",
@@ -91,11 +213,38 @@
   {
    "ticker": "ETIT",
    "societe": "Ecobank Transnational Incorporated TOGO",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "ETIT",
+   "societe": "Ecobank Transnational Incorporated TOGO",
    "horizon": "capitalisation",
    "etat": "absent",
    "raison": "nombre d'actions absent des documents indexés",
    "source": "11 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 0 exercice(s) extraits",
    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "FTSC",
+   "societe": "FILTISAC COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "LNBB",
+   "societe": "LOTERIE NATIONALE DU BENIN",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "NEIC",
@@ -104,6 +253,15 @@
    "etat": "limite",
    "raison": "lecture courte (2 exercices complets)",
    "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "NEIC",
+   "societe": "NEI-CEDA COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "NEIC",
@@ -125,6 +283,15 @@
   {
    "ticker": "NSBC",
    "societe": "NSIA BANQUE COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "NSBC",
+   "societe": "NSIA BANQUE COTE D'IVOIRE",
    "horizon": "capitalisation",
    "etat": "absent",
    "raison": "nombre d'actions absent des documents indexés",
@@ -138,6 +305,24 @@
    "etat": "limite",
    "raison": "lecture courte (2 exercices complets)",
    "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "NTLC",
+   "societe": "NESTLE COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "ONTBF",
+   "societe": "ONATEL BURKINA FASO",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "ORGT",
@@ -156,6 +341,24 @@
    "source": "archive BOC — bulletin officiel de la cote"
   },
   {
+   "ticker": "SAFC",
+   "societe": "SAFCA COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "absent",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SCRC",
+   "societe": "SUCRIVOIRE COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
    "ticker": "SCRC",
    "societe": "SUCRIVOIRE COTE D'IVOIRE",
    "horizon": "capitalisation",
@@ -163,6 +366,42 @@
    "raison": "nombre d'actions absent des documents indexés",
    "source": "18 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 6 exercice(s) extraits",
    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "SEMC",
+   "societe": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SGBC",
+   "societe": "SOCIETE GENERALE COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SHEC",
+   "societe": "VIVO ENERGY COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SIBC",
+   "societe": "SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "SICC",
@@ -183,6 +422,15 @@
   {
    "ticker": "SICC",
    "societe": "SICOR COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "absent",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SICC",
+   "societe": "SICOR COTE D'IVOIRE",
    "horizon": "capitalisation",
    "etat": "absent",
    "raison": "nombre d'actions absent des documents indexés",
@@ -198,6 +446,51 @@
    "source": "archive BOC — bulletin officiel de la cote"
   },
   {
+   "ticker": "SIVC",
+   "societe": "ERIUM COTE D’IVOIRE",
+   "horizon": "revenu",
+   "etat": "absent",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SLBC",
+   "societe": "SOLIBRA COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SMBC",
+   "societe": "SMB COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SNTS",
+   "societe": "SONATEL SENEGAL",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SOGC",
+   "societe": "SOGB COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
    "ticker": "STAC",
    "societe": "SETAO COTE D'IVOIRE",
    "horizon": "moyen terme",
@@ -208,11 +501,38 @@
   {
    "ticker": "STAC",
    "societe": "SETAO COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "STAC",
+   "societe": "SETAO COTE D'IVOIRE",
    "horizon": "capitalisation",
    "etat": "absent",
    "raison": "nombre d'actions absent des documents indexés",
    "source": "6 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 7 exercice(s) extraits",
    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "STBC",
+   "societe": "SITAB COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "TTLC",
+   "societe": "TOTALENERGIES MARKETING COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "TTLC",
@@ -232,12 +552,30 @@
    "source": "états financiers officiels de l'émetteur"
   },
   {
+   "ticker": "TTLS",
+   "societe": "TOTALENERGIES MARKETING SENEGAL",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
    "ticker": "UNLC",
    "societe": "UNILEVER COTE D'IVOIRE",
    "horizon": "moyen terme",
    "etat": "absent",
    "raison": "moins de 30 séances de PER publié dans l'archive",
    "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "UNLC",
+   "societe": "UNILEVER COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "absent",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "UNXC",
@@ -254,6 +592,15 @@
    "etat": "limite",
    "raison": "lecture courte (2 exercices complets)",
    "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "UNXC",
+   "societe": "UNIWAX COTE D'IVOIRE",
+   "horizon": "revenu",
+   "etat": "limite",
+   "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
+   "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
+   "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
   },
   {
    "ticker": "UNXC",
@@ -378,6 +725,86 @@
     "ecart_plus_bas_pct": 66.2,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 6.72,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 201.52,
+    "date_paiement": "30-sept.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 1,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 124.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2024,
+      "payout_pct": 217.95,
+      "dividendes_verses": 3302000000,
+      "resultat_net": 1515000000
+     },
+     "moyenne_pct": 98.6,
+     "exercices": [
+      {
+       "exercice": 2022,
+       "payout_pct": 55.03,
+       "dividendes_verses": 700000000,
+       "resultat_net": 1272000000
+      },
+      {
+       "exercice": 2023,
+       "payout_pct": 22.97,
+       "dividendes_verses": 312000000,
+       "resultat_net": 1358000000
+      },
+      {
+       "exercice": 2024,
+       "payout_pct": 217.95,
+       "dividendes_verses": 3302000000,
+       "resultat_net": 1515000000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2024,
+     "flux_operationnel": -429000000,
+     "dividendes_verses": 3302000000,
+     "couverture_x": -0.13,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "6.72 % de rendement net, dividende de 202 FCFA par action mis en paiement le 30-sept.-26 (source : BOC).",
+     "1 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "218 % du résultat versé en 2024 (moyenne 99 % sur 3 exercices).",
+     "dividende couvert -0.13 fois par le flux d'exploitation de 2024."
+    ],
+    "alertes": [
+     "distribution supérieure au bénéfice en 2024 : elle a été payée par autre chose que le résultat de l'exercice",
+     "le flux d'exploitation de 2024 ne couvre pas la distribution (-0.13 fois)"
+    ]
+   },
    "note": ""
   },
   "BBGC": {
@@ -412,6 +839,35 @@
     "deblocage": "attendre ou retrouver la publication des états financiers de l'exercice"
    },
    "position_longue": {},
+   "revenu": {
+    "rendement_pct": null,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": null,
+    "date_paiement": null,
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "non_documentee",
+     "raison": "aucune distribution rattachée à un exercice dans l'historique collecté"
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "absente",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [],
+    "alertes": []
+   },
    "note": ""
   },
   "BICB": {
@@ -518,6 +974,61 @@
     "plus_bas": 4850,
     "ecart_plus_bas_pct": 75.3,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 3,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 254.6,
+    "date_paiement": "31-juil.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      0.0
+     ],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 254.6
+      },
+      {
+       "exercice": 2024,
+       "dps": 254.6
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 40.7
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.00 % de rendement net, dividende de 255 FCFA par action mis en paiement le 31-juil.-26 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 41 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": []
    },
    "note": ""
   },
@@ -629,6 +1140,79 @@
     "ecart_plus_bas_pct": 77.2,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 3.76,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 1157.2,
+    "date_paiement": "6-juil.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 6,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      39.3,
+      74.5,
+      34.8,
+      -22.5,
+      936.0
+     ],
+     "baisses": 1,
+     "hausses": 4,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 1315.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 944.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 540.9
+      },
+      {
+       "exercice": 2022,
+       "dps": 401.4
+      },
+      {
+       "exercice": 2021,
+       "dps": 518.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 52.9
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.76 % de rendement net, dividende de 1157 FCFA par action mis en paiement le 6-juil.-26 (source : BOC).",
+     "6 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 53 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "1 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "BNBC": {
@@ -707,6 +1291,59 @@
     "plus_bas": 1260,
     "ecart_plus_bas_pct": 36.5,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 8.72,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 150,
+    "date_paiement": "24-juil.-23",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2022,
+     "annees_consecutives": 1,
+     "en_retard_sur_les_comptes": 3,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2022,
+       "dps": 150.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 4451.5
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "8.72 % de rendement net, dividende de 150 FCFA par action mis en paiement le 24-juil.-23 (source : BOC).",
+     "1 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2022.",
+     "≈ 4452 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "aucune distribution documentée depuis 2022, soit 3 exercices de retard sur les comptes extraits",
+     "distribution déduite très supérieure au bénéfice (≈ 4452 %) : à confirmer au tableau de financement avant d'en faire un revenu récurrent",
+     "le dernier exercice payé (2022) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
    },
    "note": ""
   },
@@ -821,6 +1458,79 @@
     "ecart_plus_bas_pct": 85.7,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 6.44,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 585,
+    "date_paiement": "26-mai-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 7,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      25.0,
+      -33.7,
+      12.6,
+      14.8,
+      25.2
+     ],
+     "baisses": 2,
+     "hausses": 4,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 585.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 468.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 706.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 627.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 546.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 118.1
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "6.44 % de rendement net, dividende de 585 FCFA par action mis en paiement le 26-mai-26 (source : BOC).",
+     "7 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 118 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "BOABF": {
@@ -931,6 +1641,79 @@
     "plus_bas": 3450,
     "ecart_plus_bas_pct": 126.2,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 5.09,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 397,
+    "date_paiement": "23-avr.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 10,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -7.2,
+      -39.2,
+      22.0,
+      28.8,
+      21.1
+     ],
+     "baisses": 3,
+     "hausses": 5,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 397.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 428.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 704.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 577.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 448.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 90.8
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.09 % de rendement net, dividende de 397 FCFA par action mis en paiement le 23-avr.-26 (source : BOC).",
+     "10 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 91 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -1045,6 +1828,80 @@
     "ecart_plus_bas_pct": 63.0,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 5.31,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 597.53,
+    "date_paiement": "6-mai-26",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2024,
+     "annees_consecutives": 9,
+     "en_retard_sur_les_comptes": 1,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -31.4,
+      26.7,
+      1976.9,
+      -91.7,
+      0.0
+     ],
+     "baisses": 4,
+     "hausses": 3,
+     "suite": [
+      {
+       "exercice": 2024,
+       "dps": 469.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 684.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 540.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 26.0
+      },
+      {
+       "exercice": 2020,
+       "dps": 315.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 67.2
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.31 % de rendement net, dividende de 598 FCFA par action mis en paiement le 6-mai-26 (source : BOC).",
+     "9 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2024.",
+     "≈ 67 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "le dernier exercice payé (2024) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu",
+     "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "BOAM": {
@@ -1154,6 +2011,68 @@
     "plus_bas": 3440,
     "ecart_plus_bas_pct": 65.6,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 5.36,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 305.04,
+    "date_paiement": "3-juin-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 3,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -35.7,
+      229.6
+     ],
+     "baisses": 1,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 305.04
+      },
+      {
+       "exercice": 2024,
+       "dps": 474.65
+      },
+      {
+       "exercice": 2023,
+       "dps": 144.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 75.6
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.36 % de rendement net, dividende de 305 FCFA par action mis en paiement le 3-juin-26 (source : BOC).",
+     "3 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 76 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -1268,6 +2187,81 @@
     "ecart_plus_bas_pct": 92.7,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.38,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 209.25,
+    "date_paiement": "3-juin-25",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2024,
+     "annees_consecutives": 9,
+     "en_retard_sur_les_comptes": 1,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -65.6,
+      -0.8,
+      6038.0,
+      -97.7,
+      0.0
+     ],
+     "baisses": 4,
+     "hausses": 3,
+     "suite": [
+      {
+       "exercice": 2024,
+       "dps": 209.25
+      },
+      {
+       "exercice": 2023,
+       "dps": 609.15
+      },
+      {
+       "exercice": 2022,
+       "dps": 613.8
+      },
+      {
+       "exercice": 2021,
+       "dps": 10.0
+      },
+      {
+       "exercice": 2020,
+       "dps": 429.66
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 1064.0
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.38 % de rendement net, dividende de 209 FCFA par action mis en paiement le 3-juin-25 (source : BOC).",
+     "9 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2024.",
+     "≈ 1064 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "distribution déduite très supérieure au bénéfice (≈ 1064 %) : à confirmer au tableau de financement avant d'en faire un revenu récurrent",
+     "le dernier exercice payé (2024) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu",
+     "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "BOAS": {
@@ -1379,6 +2373,79 @@
     "plus_bas": 5150,
     "ecart_plus_bas_pct": 56.5,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 5.58,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 450,
+    "date_paiement": "1-juin-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 11,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      28.6,
+      16.7,
+      60.0,
+      16.5,
+      -0.0
+     ],
+     "baisses": 2,
+     "hausses": 6,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 450.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 350.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 300.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 187.5
+      },
+      {
+       "exercice": 2021,
+       "dps": 161.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 73.9
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.58 % de rendement net, dividende de 450 FCFA par action mis en paiement le 1-juin-26 (source : BOC).",
+     "11 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 74 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -1492,6 +2559,80 @@
     "ecart_plus_bas_pct": 76.4,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 5.08,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 152.02,
+    "date_paiement": "1-juin-26",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2024,
+     "annees_consecutives": 10,
+     "en_retard_sur_les_comptes": 1,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      61.0,
+      15.3,
+      0.0,
+      137.9,
+      -61.3
+     ],
+     "baisses": 3,
+     "hausses": 4,
+     "suite": [
+      {
+       "exercice": 2024,
+       "dps": 128.1
+      },
+      {
+       "exercice": 2023,
+       "dps": 79.58
+      },
+      {
+       "exercice": 2022,
+       "dps": 69.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 69.0
+      },
+      {
+       "exercice": 2020,
+       "dps": 29.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 62.5
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.08 % de rendement net, dividende de 152 FCFA par action mis en paiement le 1-juin-26 (source : BOC).",
+     "10 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2024.",
+     "≈ 62 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "le dernier exercice payé (2024) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu",
+     "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "CBIBF": {
@@ -1596,6 +2737,68 @@
     "plus_bas": 9890,
     "ecart_plus_bas_pct": 213.4,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 2.9,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 900,
+    "date_paiement": "19-juin-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 3,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      62.2,
+      -29.7
+     ],
+     "baisses": 1,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 900.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 555.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 790.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 43.9
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "2.90 % de rendement net, dividende de 900 FCFA par action mis en paiement le 19-juin-26 (source : BOC).",
+     "3 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 44 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -1711,6 +2914,101 @@
     "ecart_plus_bas_pct": 15.2,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 3.85,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 55.44,
+    "date_paiement": "14-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 11,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": true,
+     "variations_recentes_pct": [
+      687.5,
+      -49.6,
+      -42.2,
+      -60.5,
+      213.6
+     ],
+     "baisses": 7,
+     "hausses": 3,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 63.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 8.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 15.87
+      },
+      {
+       "exercice": 2022,
+       "dps": 27.45
+      },
+      {
+       "exercice": 2021,
+       "dps": 69.47
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2024,
+      "payout_pct": 68.17,
+      "dividendes_verses": 3199747046,
+      "resultat_net": 4693479450
+     },
+     "moyenne_pct": 169.4,
+     "exercices": [
+      {
+       "exercice": 2023,
+       "payout_pct": 270.63,
+       "dividendes_verses": 5533563559,
+       "resultat_net": 2044698000
+      },
+      {
+       "exercice": 2024,
+       "payout_pct": 68.17,
+       "dividendes_verses": 3199747046,
+       "resultat_net": 4693479450
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2024,
+     "flux_operationnel": 7091248195,
+     "dividendes_verses": 3199747046,
+     "couverture_x": 2.22,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": true,
+     "couverture": true
+    },
+    "preuves_reunies": 3,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.85 % de rendement net, dividende de 55 FCFA par action mis en paiement le 14-août-26 (source : BOC).",
+     "11 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "68 % du résultat versé en 2024 (moyenne 169 % sur 2 exercices).",
+     "dividende couvert 2.22 fois par le flux d'exploitation de 2024."
+    ],
+    "alertes": [
+     "7 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "CIEC": {
@@ -1825,6 +3123,119 @@
     "ecart_plus_bas_pct": 121.7,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.12,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 205.92,
+    "date_paiement": "28-juil.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 11,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      30.0,
+      5.3,
+      8.6,
+      2.8,
+      -8.4
+     ],
+     "baisses": 2,
+     "hausses": 8,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 234.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 180.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 171.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 157.5
+      },
+      {
+       "exercice": 2021,
+       "dps": 153.16
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2025,
+      "payout_pct": 76.95,
+      "dividendes_verses": 10080000000,
+      "resultat_net": 13100000000
+     },
+     "moyenne_pct": 91.0,
+     "exercices": [
+      {
+       "exercice": 2021,
+       "payout_pct": 98.94,
+       "dividendes_verses": 10400000000,
+       "resultat_net": 10511000000
+      },
+      {
+       "exercice": 2022,
+       "payout_pct": 92.88,
+       "dividendes_verses": 9530000000,
+       "resultat_net": 10261000000
+      },
+      {
+       "exercice": 2023,
+       "payout_pct": 85.33,
+       "dividendes_verses": 9800000000,
+       "resultat_net": 11485000000
+      },
+      {
+       "exercice": 2024,
+       "payout_pct": 101.08,
+       "dividendes_verses": 10640000000,
+       "resultat_net": 10526000000
+      },
+      {
+       "exercice": 2025,
+       "payout_pct": 76.95,
+       "dividendes_verses": 10080000000,
+       "resultat_net": 13100000000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": 43912000000,
+     "dividendes_verses": 10080000000,
+     "couverture_x": 4.36,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": true,
+     "couverture": true
+    },
+    "preuves_reunies": 3,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.12 % de rendement net, dividende de 206 FCFA par action mis en paiement le 28-juil.-26 (source : BOC).",
+     "11 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "77 % du résultat versé en 2025 (moyenne 91 % sur 5 exercices).",
+     "dividende couvert 4.36 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "ECOC": {
@@ -1938,6 +3349,79 @@
     "ecart_plus_bas_pct": 20.9,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.91,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 781.44,
+    "date_paiement": "26-mai-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 9,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      10.4,
+      35.4,
+      8.2,
+      30.6,
+      42.8
+     ],
+     "baisses": 2,
+     "hausses": 6,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 888.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 804.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 594.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 549.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 420.3
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 67.7
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.91 % de rendement net, dividende de 781 FCFA par action mis en paiement le 26-mai-26 (source : BOC).",
+     "9 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 68 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "ETIT": {
@@ -2029,6 +3513,55 @@
     "plus_bas": 19,
     "ecart_plus_bas_pct": 231.6,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 1.46,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 92,
+    "date_paiement": "30-juin-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 1,
+     "en_retard_sur_les_comptes": null,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 1.06
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 4.8
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "1.46 % de rendement net, dividende de 92 FCFA par action mis en paiement le 30-juin-26 (source : BOC).",
+     "1 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 5 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": []
    },
    "note": ""
   },
@@ -2140,6 +3673,65 @@
     "ecart_plus_bas_pct": 0.0,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 95.92,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 1726.56,
+    "date_paiement": "30-sept.-25",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2024,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 1,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      822.4
+     ],
+     "baisses": 0,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2024,
+       "dps": 1320.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 143.1
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 5225.7
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "95.92 % de rendement net, dividende de 1727 FCFA par action mis en paiement le 30-sept.-25 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2024.",
+     "≈ 5226 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "distribution déduite très supérieure au bénéfice (≈ 5226 %) : à confirmer au tableau de financement avant d'en faire un revenu récurrent",
+     "rendement de 96 % : hors norme pour une société qui distribue régulièrement, à traiter comme un versement exceptionnel ou un cours déprimé, pas comme un revenu",
+     "le dernier exercice payé (2024) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
+   },
    "note": ""
   },
   "LNBB": {
@@ -2248,6 +3840,63 @@
     "ecart_plus_bas_pct": 8.0,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.11,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 164.17,
+    "date_paiement": "3-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -40.4
+     ],
+     "baisses": 1,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 164.17
+      },
+      {
+       "exercice": 2024,
+       "dps": 275.5
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 71.1
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.11 % de rendement net, dividende de 164 FCFA par action mis en paiement le 3-août-26 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 71 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "1 baisse(s) de dividende sur les 1 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "NEIC": {
@@ -2354,6 +4003,56 @@
     "ecart_plus_bas_pct": 217.9,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 6.59,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 140.4,
+    "date_paiement": "10-sept.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 1,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": true,
+     "variations_recentes_pct": [],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 159.54
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 88.0
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "6.59 % de rendement net, dividende de 140 FCFA par action mis en paiement le 10-sept.-26 (source : BOC).",
+     "1 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 88 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable).",
+     "le dividende de l'exercice 2025 est publié, mais les états financiers de cet exercice ne sont pas encore extraits."
+    ],
+    "alertes": []
+   },
    "note": ""
   },
   "NSBC": {
@@ -2445,6 +4144,71 @@
     "plus_bas": 11000,
     "ecart_plus_bas_pct": 88.0,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 3.27,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 675.98,
+    "date_paiement": "4-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 4,
+     "en_retard_sur_les_comptes": null,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      1.2,
+      66.9,
+      25.1
+     ],
+     "baisses": 0,
+     "hausses": 3,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 768.16
+      },
+      {
+       "exercice": 2024,
+       "dps": 759.26
+      },
+      {
+       "exercice": 2023,
+       "dps": 454.83
+      },
+      {
+       "exercice": 2022,
+       "dps": 363.6
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 41.1
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.27 % de rendement net, dividende de 676 FCFA par action mis en paiement le 4-août-26 (source : BOC).",
+     "4 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 41 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": []
    },
    "note": ""
   },
@@ -2555,6 +4319,80 @@
     "ecart_plus_bas_pct": 41.8,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 2.54,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 369.6,
+    "date_paiement": "7-sept.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 6,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": true,
+     "variations_recentes_pct": [
+      -48.8,
+      21.5,
+      -7.3,
+      -15.0,
+      135.6
+     ],
+     "baisses": 3,
+     "hausses": 2,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 420.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 820.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 675.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 728.1
+      },
+      {
+       "exercice": 2021,
+       "dps": 856.8
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 44.2
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "2.54 % de rendement net, dividende de 370 FCFA par action mis en paiement le 7-sept.-26 (source : BOC).",
+     "6 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 44 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable).",
+     "le dividende de l'exercice 2025 est publié, mais les états financiers de cet exercice ne sont pas encore extraits."
+    ],
+    "alertes": [
+     "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "ONTBF": {
@@ -2664,6 +4502,79 @@
     "plus_bas": 2370,
     "ecart_plus_bas_pct": 30.2,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 4.71,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 145.32,
+    "date_paiement": "15-juin-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 10,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -23.3,
+      -28.9,
+      -7.4,
+      -30.9,
+      4.3
+     ],
+     "baisses": 5,
+     "hausses": 4,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 145.32
+      },
+      {
+       "exercice": 2024,
+       "dps": 189.53
+      },
+      {
+       "exercice": 2023,
+       "dps": 266.45
+      },
+      {
+       "exercice": 2022,
+       "dps": 287.88
+      },
+      {
+       "exercice": 2021,
+       "dps": 416.58
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 68.1
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.71 % de rendement net, dividende de 145 FCFA par action mis en paiement le 15-juin-26 (source : BOC).",
+     "10 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 68 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "5 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -2779,6 +4690,102 @@
     "ecart_plus_bas_pct": 42.1,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 3.54,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 704,
+    "date_paiement": "8-juin-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 4,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      6.7,
+      -3.8,
+      3.6
+     ],
+     "baisses": 1,
+     "hausses": 2,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 800.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 750.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 780.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 752.76
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2025,
+      "payout_pct": 114.72,
+      "dividendes_verses": 192500000000,
+      "resultat_net": 167800000000
+     },
+     "moyenne_pct": 103.7,
+     "exercices": [
+      {
+       "exercice": 2023,
+       "payout_pct": 97.55,
+       "dividendes_verses": 151100000000,
+       "resultat_net": 154900000000
+      },
+      {
+       "exercice": 2024,
+       "payout_pct": 98.74,
+       "dividendes_verses": 156200000000,
+       "resultat_net": 158200000000
+      },
+      {
+       "exercice": 2025,
+       "payout_pct": 114.72,
+       "dividendes_verses": 192500000000,
+       "resultat_net": 167800000000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": 335500000000,
+     "dividendes_verses": 192500000000,
+     "couverture_x": 1.74,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": true
+    },
+    "preuves_reunies": 2,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.54 % de rendement net, dividende de 704 FCFA par action mis en paiement le 8-juin-26 (source : BOC).",
+     "4 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "115 % du résultat versé en 2025 (moyenne 104 % sur 3 exercices).",
+     "dividende couvert 1.74 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "distribution supérieure au bénéfice en 2025 : elle a été payée par autre chose que le résultat de l'exercice",
+     "1 baisse(s) de dividende sur les 3 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "ORGT": {
@@ -2892,6 +4899,92 @@
     "plus_bas": 2385,
     "ecart_plus_bas_pct": 16.6,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 2.14,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 59.52,
+    "date_paiement": "17-juil.-20",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2019,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 6,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      4.9
+     ],
+     "baisses": 0,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2019,
+       "dps": 59.52
+      },
+      {
+       "exercice": 2018,
+       "dps": 56.73
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2025,
+      "payout_pct": 2.01,
+      "dividendes_verses": 436000000,
+      "resultat_net": 21643000000
+     },
+     "moyenne_pct": 23.8,
+     "exercices": [
+      {
+       "exercice": 2020,
+       "payout_pct": 58.22,
+       "dividendes_verses": 5496000000,
+       "resultat_net": 9440000000
+      },
+      {
+       "exercice": 2022,
+       "payout_pct": 11.19,
+       "dividendes_verses": 2148000000,
+       "resultat_net": 19199000000
+      },
+      {
+       "exercice": 2025,
+       "payout_pct": 2.01,
+       "dividendes_verses": 436000000,
+       "resultat_net": 21643000000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": 288054000000,
+     "dividendes_verses": 436000000,
+     "couverture_x": 660.67,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": false,
+     "financement": true,
+     "couverture": true
+    },
+    "preuves_reunies": 2,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "2.14 % de rendement net, dividende de 60 FCFA par action mis en paiement le 17-juil.-20 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2019.",
+     "2 % du résultat versé en 2025 (moyenne 24 % sur 3 exercices).",
+     "dividende couvert 660.67 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "aucune distribution documentée depuis 2019, soit 6 exercices de retard sur les comptes extraits",
+     "le dernier exercice payé (2019) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
    },
    "note": ""
   },
@@ -3007,6 +5100,107 @@
     "ecart_plus_bas_pct": 7.3,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 5.88,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 441.04,
+    "date_paiement": "29-juin-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 6,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -2.2,
+      -8.9,
+      -53.6,
+      -1.8,
+      4845.4
+     ],
+     "baisses": 4,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 501.6
+      },
+      {
+       "exercice": 2024,
+       "dps": 513.01
+      },
+      {
+       "exercice": 2023,
+       "dps": 563.31
+      },
+      {
+       "exercice": 2022,
+       "dps": 1213.63
+      },
+      {
+       "exercice": 2021,
+       "dps": 1236.34
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2025,
+      "payout_pct": 51.14,
+      "dividendes_verses": 7930821000,
+      "resultat_net": 15508655000
+     },
+     "moyenne_pct": 73.3,
+     "exercices": [
+      {
+       "exercice": 2023,
+       "payout_pct": 107.72,
+       "dividendes_verses": 20846586000,
+       "resultat_net": 19351846000
+      },
+      {
+       "exercice": 2024,
+       "payout_pct": 61.0,
+       "dividendes_verses": 9675923000,
+       "resultat_net": 15861643000
+      },
+      {
+       "exercice": 2025,
+       "payout_pct": 51.14,
+       "dividendes_verses": 7930821000,
+       "resultat_net": 15508655000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": 38740600000,
+     "dividendes_verses": 7930821000,
+     "couverture_x": 4.88,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": true,
+     "couverture": true
+    },
+    "preuves_reunies": 3,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.88 % de rendement net, dividende de 441 FCFA par action mis en paiement le 29-juin-26 (source : BOC).",
+     "6 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "51 % du résultat versé en 2025 (moyenne 73 % sur 3 exercices).",
+     "dividende couvert 4.88 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "PRSC": {
@@ -3117,6 +5311,103 @@
     "plus_bas": 3400,
     "ecart_plus_bas_pct": 22.1,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 4.43,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 183.92,
+    "date_paiement": "23-oct.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 11,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": true,
+     "variations_recentes_pct": [
+      1.0,
+      13.3,
+      -18.5,
+      27.4,
+      467.3
+     ],
+     "baisses": 4,
+     "hausses": 6,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 209.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 207.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 182.7
+      },
+      {
+       "exercice": 2022,
+       "dps": 224.1
+      },
+      {
+       "exercice": 2021,
+       "dps": 175.86
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2022,
+      "payout_pct": 50.55,
+      "dividendes_verses": 1801000000,
+      "resultat_net": 3562811000
+     },
+     "moyenne_pct": 64.2,
+     "exercices": [
+      {
+       "exercice": 2020,
+       "payout_pct": 87.55,
+       "dividendes_verses": 1631000000,
+       "resultat_net": 1863000000
+      },
+      {
+       "exercice": 2021,
+       "payout_pct": 54.39,
+       "dividendes_verses": 1668000000,
+       "resultat_net": 3067000000
+      },
+      {
+       "exercice": 2022,
+       "payout_pct": 50.55,
+       "dividendes_verses": 1801000000,
+       "resultat_net": 3562811000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": true,
+     "couverture": false
+    },
+    "preuves_reunies": 2,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.43 % de rendement net, dividende de 184 FCFA par action mis en paiement le 23-oct.-26 (source : BOC).",
+     "11 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "51 % du résultat versé en 2022 (moyenne 64 % sur 3 exercices).",
+     "le dividende de l'exercice 2025 est publié, mais les états financiers de cet exercice ne sont pas encore extraits : le taux de distribution n'est calculable que jusqu'à 2022."
+    ],
+    "alertes": [
+     "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -3229,6 +5520,35 @@
     "ecart_plus_bas_pct": 94.5,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": null,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 23.04,
+    "date_paiement": "29-juil.-11",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "non_documentee",
+     "raison": "aucune distribution rattachée à un exercice dans l'historique collecté"
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "absente",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [],
+    "alertes": []
+   },
    "note": ""
   },
   "SCRC": {
@@ -3338,6 +5658,53 @@
     "plus_bas": 990,
     "ecart_plus_bas_pct": 117.2,
     "seances": 258
+   },
+   "revenu": {
+    "rendement_pct": 1.88,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 40.5,
+    "date_paiement": "20-août-21",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2020,
+     "annees_consecutives": 1,
+     "en_retard_sur_les_comptes": 5,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2020,
+       "dps": 18.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "1.88 % de rendement net, dividende de 40 FCFA par action mis en paiement le 20-août-21 (source : BOC).",
+     "1 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2020."
+    ],
+    "alertes": [
+     "aucune distribution documentée depuis 2020, soit 5 exercices de retard sur les comptes extraits",
+     "le dernier exercice payé (2020) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
    },
    "note": ""
   },
@@ -3453,6 +5820,102 @@
     "ecart_plus_bas_pct": 101.8,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 3.98,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 462,
+    "date_paiement": "16-sept.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 10,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      31.2,
+      -16.9,
+      7.0,
+      4.2,
+      28.0
+     ],
+     "baisses": 3,
+     "hausses": 6,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 525.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 400.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 481.5
+      },
+      {
+       "exercice": 2022,
+       "dps": 450.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 432.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2025,
+      "payout_pct": 61.23,
+      "dividendes_verses": 3600000000,
+      "resultat_net": 5879000000
+     },
+     "moyenne_pct": 91.4,
+     "exercices": [
+      {
+       "exercice": 2024,
+       "payout_pct": 121.62,
+       "dividendes_verses": 4815000000,
+       "resultat_net": 3959000000
+      },
+      {
+       "exercice": 2025,
+       "payout_pct": 61.23,
+       "dividendes_verses": 3600000000,
+       "resultat_net": 5879000000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": -35060000000,
+     "dividendes_verses": 3600000000,
+     "couverture_x": -9.74,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": true,
+     "couverture": false
+    },
+    "preuves_reunies": 2,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.98 % de rendement net, dividende de 462 FCFA par action mis en paiement le 16-sept.-26 (source : BOC).",
+     "10 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "61 % du résultat versé en 2025 (moyenne 91 % sur 2 exercices).",
+     "dividende couvert -9.74 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "le flux d'exploitation de 2025 ne couvre pas la distribution (-9.74 fois)",
+     "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "SDSC": {
@@ -3563,6 +6026,120 @@
     "plus_bas": 1400,
     "ecart_plus_bas_pct": 110.7,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 3.12,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 92,
+    "date_paiement": "29-août-25",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 8,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      0.0,
+      0.0,
+      0.0,
+      -29.2,
+      1344.4
+     ],
+     "baisses": 3,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 92.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 92.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 92.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 92.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 130.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2025,
+      "payout_pct": 637.99,
+      "dividendes_verses": 5008048000,
+      "resultat_net": 784970000
+     },
+     "moyenne_pct": 1606.7,
+     "exercices": [
+      {
+       "exercice": 2021,
+       "payout_pct": 34.1,
+       "dividendes_verses": 5722000000,
+       "resultat_net": 16780000000
+      },
+      {
+       "exercice": 2022,
+       "payout_pct": 50.64,
+       "dividendes_verses": 7152000000,
+       "resultat_net": 14124000000
+      },
+      {
+       "exercice": 2023,
+       "payout_pct": 49.86,
+       "dividendes_verses": 5008048000,
+       "resultat_net": 10044129000
+      },
+      {
+       "exercice": 2024,
+       "payout_pct": 7260.78,
+       "dividendes_verses": 5008048000,
+       "resultat_net": 68974000
+      },
+      {
+       "exercice": 2025,
+       "payout_pct": 637.99,
+       "dividendes_verses": 5008048000,
+       "resultat_net": 784970000
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2022,
+     "flux_operationnel": 16598000000,
+     "dividendes_verses": 7152000000,
+     "couverture_x": 2.32,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": true
+    },
+    "preuves_reunies": 2,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.12 % de rendement net, dividende de 92 FCFA par action mis en paiement le 29-août-25 (source : BOC).",
+     "8 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "638 % du résultat versé en 2025 (moyenne 1607 % sur 5 exercices).",
+     "dividende couvert 2.32 fois par le flux d'exploitation de 2022."
+    ],
+    "alertes": [
+     "distribution supérieure au bénéfice en 2025 : elle a été payée par autre chose que le résultat de l'exercice",
+     "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -3676,6 +6253,58 @@
     "ecart_plus_bas_pct": 99.3,
     "seances": 167
    },
+   "revenu": {
+    "rendement_pct": 0.94,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 14,
+    "date_paiement": "28-déc.-21",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2020,
+     "annees_consecutives": 1,
+     "en_retard_sur_les_comptes": 3,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2020,
+       "dps": 24.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 35.0
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "0.94 % de rendement net, dividende de 14 FCFA par action mis en paiement le 28-déc.-21 (source : BOC).",
+     "1 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2020.",
+     "≈ 35 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "aucune distribution documentée depuis 2020, soit 3 exercices de retard sur les comptes extraits",
+     "le dernier exercice payé (2020) précède le dernier exercice publié (2023) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
+   },
    "note": ""
   },
   "SGBC": {
@@ -3782,6 +6411,61 @@
     "plus_bas": 26210,
     "ecart_plus_bas_pct": 48.8,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 5.89,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 2298.75,
+    "date_paiement": "24-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      39.9
+     ],
+     "baisses": 0,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 2606.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 1863.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 70.5
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.89 % de rendement net, dividende de 2299 FCFA par action mis en paiement le 24-août-26 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 70 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": []
    },
    "note": ""
   },
@@ -3896,6 +6580,76 @@
     "ecart_plus_bas_pct": 98.2,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 3.94,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 85.07,
+    "date_paiement": "25-sept.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 5,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      13.0,
+      50.1,
+      7.5,
+      82.8
+     ],
+     "baisses": 0,
+     "hausses": 4,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 96.67
+      },
+      {
+       "exercice": 2024,
+       "dps": 85.56
+      },
+      {
+       "exercice": 2023,
+       "dps": 57.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 53.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 29.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 88.9
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.94 % de rendement net, dividende de 85 FCFA par action mis en paiement le 25-sept.-26 (source : BOC).",
+     "5 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 89 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": []
+   },
    "note": ""
   },
   "SIBC": {
@@ -4008,6 +6762,79 @@
     "ecart_plus_bas_pct": 56.4,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.35,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 374,
+    "date_paiement": "31-juil.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 10,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      13.3,
+      -24.2,
+      0.0,
+      22.2,
+      12.5
+     ],
+     "baisses": 2,
+     "hausses": 6,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 425.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 375.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 495.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 495.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 405.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 67.3
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.35 % de rendement net, dividende de 374 FCFA par action mis en paiement le 31-juil.-26 (source : BOC).",
+     "10 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 67 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "SICC": {
@@ -4063,6 +6890,35 @@
     "plus_bas": 3155,
     "ecart_plus_bas_pct": 166.2,
     "seances": 221
+   },
+   "revenu": {
+    "rendement_pct": null,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 1919,
+    "date_paiement": "25-sept.-00",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "non_documentee",
+     "raison": "aucune distribution rattachée à un exercice dans l'historique collecté"
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "absente",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [],
+    "alertes": []
    },
    "note": ""
   },
@@ -4175,6 +7031,52 @@
     "plus_bas": 655,
     "ecart_plus_bas_pct": 145.8,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": null,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 63,
+    "date_paiement": "29-sept.-17",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2016,
+     "annees_consecutives": 1,
+     "en_retard_sur_les_comptes": 9,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2016,
+       "dps": 630.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "1 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2016."
+    ],
+    "alertes": [
+     "aucune distribution documentée depuis 2016, soit 9 exercices de retard sur les comptes extraits",
+     "le dernier exercice payé (2016) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
    },
    "note": ""
   },
@@ -4289,6 +7191,61 @@
     "ecart_plus_bas_pct": 119.0,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.8,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 1871.76,
+    "date_paiement": "30-juil.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      74.3
+     ],
+     "baisses": 0,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 2127.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 1220.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 67.3
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.80 % de rendement net, dividende de 1872 FCFA par action mis en paiement le 30-juil.-26 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 67 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": []
+   },
    "note": ""
   },
   "SMBC": {
@@ -4401,6 +7358,68 @@
     "plus_bas": 9100,
     "ecart_plus_bas_pct": 59.4,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 4.85,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 704,
+    "date_paiement": "18-sept.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 3,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      14.3,
+      -35.2
+     ],
+     "baisses": 1,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 800.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 700.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 1080.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 42.0
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.85 % de rendement net, dividende de 704 FCFA par action mis en paiement le 18-sept.-26 (source : BOC).",
+     "3 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 42 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -4515,6 +7534,79 @@
     "ecart_plus_bas_pct": 71.1,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.17,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 1740,
+    "date_paiement": "26-mai-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 8,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      5.1,
+      5.1,
+      5.0,
+      7.1,
+      14.3
+     ],
+     "baisses": 1,
+     "hausses": 5,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 1740.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 1655.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 1575.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 1500.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 1400.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 42.1
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.17 % de rendement net, dividende de 1740 FCFA par action mis en paiement le 26-mai-26 (source : BOC).",
+     "8 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 42 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "1 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "SOGC": {
@@ -4626,6 +7718,79 @@
     "ecart_plus_bas_pct": 9.2,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 6.47,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 501.6,
+    "date_paiement": "6-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 11,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -5.0,
+      189.9,
+      -62.9,
+      3.0,
+      116.7
+     ],
+     "baisses": 4,
+     "hausses": 6,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 570.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 600.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 207.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 558.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 541.8
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 86.7
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "6.47 % de rendement net, dividende de 502 FCFA par action mis en paiement le 6-août-26 (source : BOC).",
+     "11 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 87 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "SPHC": {
@@ -4736,6 +7901,96 @@
     "ecart_plus_bas_pct": 13.1,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 5.66,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 430.32,
+    "date_paiement": "28-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 6,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      32.9,
+      467.9,
+      -78.0,
+      -19.5,
+      1727.0
+     ],
+     "baisses": 2,
+     "hausses": 3,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 489.0
+      },
+      {
+       "exercice": 2024,
+       "dps": 368.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 64.8
+      },
+      {
+       "exercice": 2022,
+       "dps": 294.3
+      },
+      {
+       "exercice": 2021,
+       "dps": 365.4
+      }
+     ]
+    },
+    "payout": {
+     "statut": "documentaire",
+     "dernier": {
+      "exercice": 2023,
+      "payout_pct": 229.91,
+      "dividendes_verses": 8357467635,
+      "resultat_net": 3635138559
+     },
+     "moyenne_pct": 229.9,
+     "exercices": [
+      {
+       "exercice": 2023,
+       "payout_pct": 229.91,
+       "dividendes_verses": 8357467635,
+       "resultat_net": 3635138559
+      }
+     ],
+     "base": "dividendes versés (tableau de financement) ÷ résultat net du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": 37612205466,
+     "dividendes_verses": 9405345840,
+     "couverture_x": 4.0,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "documentaire",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": true
+    },
+    "preuves_reunies": 2,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "5.66 % de rendement net, dividende de 430 FCFA par action mis en paiement le 28-août-26 (source : BOC).",
+     "6 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "230 % du résultat versé en 2023 (moyenne 230 % sur 1 exercices).",
+     "dividende couvert 4.00 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "distribution supérieure au bénéfice en 2023 : elle a été payée par autre chose que le résultat de l'exercice",
+     "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "STAC": {
@@ -4809,6 +8064,59 @@
     "plus_bas": 925,
     "ecart_plus_bas_pct": 113.5,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 3.35,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 66.15,
+    "date_paiement": "18-juil.-22",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2021,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 4,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      0.0
+     ],
+     "baisses": 0,
+     "hausses": 0,
+     "suite": [
+      {
+       "exercice": 2021,
+       "dps": 66.15
+      },
+      {
+       "exercice": 2020,
+       "dps": 66.15
+      }
+     ]
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "3.35 % de rendement net, dividende de 66 FCFA par action mis en paiement le 18-juil.-22 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2021."
+    ],
+    "alertes": [
+     "aucune distribution documentée depuis 2021, soit 4 exercices de retard sur les comptes extraits",
+     "le dernier exercice payé (2021) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
    },
    "note": ""
   },
@@ -4922,6 +8230,78 @@
     "ecart_plus_bas_pct": 12.4,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 8.07,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 1707.2,
+    "date_paiement": "13-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 5,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -28.1,
+      251.9,
+      22.5,
+      23.8
+     ],
+     "baisses": 1,
+     "hausses": 3,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 1707.2
+      },
+      {
+       "exercice": 2024,
+       "dps": 2375.0
+      },
+      {
+       "exercice": 2023,
+       "dps": 675.0
+      },
+      {
+       "exercice": 2022,
+       "dps": 551.0
+      },
+      {
+       "exercice": 2021,
+       "dps": 445.12
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 84.0
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "8.07 % de rendement net, dividende de 1707 FCFA par action mis en paiement le 13-août-26 (source : BOC).",
+     "5 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 84 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "1 baisse(s) de dividende sur les 4 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "TTLC": {
@@ -5029,6 +8409,85 @@
     "plus_bas": 2270,
     "ecart_plus_bas_pct": 27.5,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 4.83,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 139.77,
+    "date_paiement": "31-août-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 11,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -28.6,
+      11.4,
+      13.7,
+      10.2,
+      592.6
+     ],
+     "baisses": 3,
+     "hausses": 7,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 158.83
+      },
+      {
+       "exercice": 2024,
+       "dps": 222.36
+      },
+      {
+       "exercice": 2023,
+       "dps": 199.54
+      },
+      {
+       "exercice": 2022,
+       "dps": 175.53
+      },
+      {
+       "exercice": 2021,
+       "dps": 159.29
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 96.9
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": 10196000000,
+     "dividendes_verses": 14000000000,
+     "couverture_x": 0.73,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.83 % de rendement net, dividende de 140 FCFA par action mis en paiement le 31-août-26 (source : BOC).",
+     "11 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 97 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable).",
+     "dividende couvert 0.73 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "le flux d'exploitation de 2025 ne couvre pas la distribution (0.73 fois)",
+     "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
    },
    "note": ""
   },
@@ -5138,6 +8597,79 @@
     "ecart_plus_bas_pct": 57.4,
     "seances": 262
    },
+   "revenu": {
+    "rendement_pct": 4.77,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 176.65,
+    "date_paiement": "17-juil.-26",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2025,
+     "annees_consecutives": 11,
+     "en_retard_sur_les_comptes": 0,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      -20.6,
+      7.1,
+      -13.9,
+      28.7,
+      -16.2
+     ],
+     "baisses": 5,
+     "hausses": 4,
+     "suite": [
+      {
+       "exercice": 2025,
+       "dps": 176.65
+      },
+      {
+       "exercice": 2024,
+       "dps": 222.4
+      },
+      {
+       "exercice": 2023,
+       "dps": 207.58
+      },
+      {
+       "exercice": 2022,
+       "dps": 241.01
+      },
+      {
+       "exercice": 2021,
+       "dps": 187.3
+      }
+     ]
+    },
+    "payout": {
+     "statut": "implicite",
+     "dernier": {
+      "payout_pct": 84.8
+     },
+     "base": "rendement net publié au BOC × PER publié au BOC (identité dividende/bénéfice)",
+     "limite": "déduction : le rendement et le PER portent sur le dernier dividende publié et le dernier résultat retenu par la BRVM, qui ne sont pas toujours du même exercice"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": true,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 1,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "4.77 % de rendement net, dividende de 177 FCFA par action mis en paiement le 17-juil.-26 (source : BOC).",
+     "11 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2025.",
+     "≈ 85 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
+    ],
+    "alertes": [
+     "5 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
+    ]
+   },
    "note": ""
   },
   "UNLC": {
@@ -5215,6 +8747,35 @@
     "ecart_plus_bas_pct": 143.8,
     "seances": 238
    },
+   "revenu": {
+    "rendement_pct": null,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 1233,
+    "date_paiement": "9-juil.-12",
+    "rendement_en_retard": false,
+    "regularite": {
+     "statut": "non_documentee",
+     "raison": "aucune distribution rattachée à un exercice dans l'historique collecté"
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "non_calculable",
+     "raison": "flux d'exploitation et dividendes versés jamais réunis sur un même exercice extrait"
+    },
+    "preuve": "absente",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [],
+    "alertes": []
+   },
    "note": ""
   },
   "UNXC": {
@@ -5289,6 +8850,65 @@
     "plus_bas": 1250,
     "ecart_plus_bas_pct": 64.0,
     "seances": 262
+   },
+   "revenu": {
+    "rendement_pct": 2.96,
+    "rendement_source": "BOC — dernier dividende net publié, rapporté au cours du jour",
+    "dps_reference": 60.75,
+    "date_paiement": "29-juil.-22",
+    "rendement_en_retard": true,
+    "regularite": {
+     "statut": "documentee",
+     "dernier_exercice_paye": 2021,
+     "annees_consecutives": 2,
+     "en_retard_sur_les_comptes": 4,
+     "comptes_en_retard": false,
+     "variations_recentes_pct": [
+      237.5
+     ],
+     "baisses": 0,
+     "hausses": 1,
+     "suite": [
+      {
+       "exercice": 2021,
+       "dps": 60.75
+      },
+      {
+       "exercice": 2020,
+       "dps": 18.0
+      }
+     ]
+    },
+    "payout": {
+     "statut": "non_calculable",
+     "raison": "ni dividendes versés au tableau de financement, ni couple rendement/PER publié au BOC"
+    },
+    "couverture": {
+     "statut": "calcule",
+     "exercice": 2025,
+     "flux_operationnel": -8124064657,
+     "dividendes_verses": 8917685,
+     "couverture_x": -911.01,
+     "base": "flux de trésorerie d'exploitation ÷ dividendes versés, même exercice"
+    },
+    "preuve": "partielle",
+    "preuves": {
+     "regularite": false,
+     "financement": false,
+     "couverture": false
+    },
+    "preuves_reunies": 0,
+    "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
+    "points": [
+     "2.96 % de rendement net, dividende de 61 FCFA par action mis en paiement le 29-juil.-22 (source : BOC).",
+     "2 exercice(s) consécutif(s) avec distribution documentée, dernier payé : 2021.",
+     "dividende couvert -911.01 fois par le flux d'exploitation de 2025."
+    ],
+    "alertes": [
+     "aucune distribution documentée depuis 2021, soit 4 exercices de retard sur les comptes extraits",
+     "le flux d'exploitation de 2025 ne couvre pas la distribution (-911.01 fois)",
+     "le dernier exercice payé (2021) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
+    ]
    },
    "note": ""
   }
