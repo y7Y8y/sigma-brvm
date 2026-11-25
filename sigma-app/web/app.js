@@ -2165,6 +2165,8 @@ function renderAnalysisDecision() {
       </ul>
       <p class="source-line">Les fondamentaux restent conditionnels : seuls les piliers dont la série officielle est suffisante sont publiés en fiche.</p>`, { hint: "Filtres" })}
   </div>
+  ${topDuMoisCard(workingBudget)}
+  ${revueMarcheCard()}
   <article class="card section-space"><p class="eyebrow">Sélection à examiner — pas un classement d’achat</p><h2>${candidates.length} société(s) à examiner avec ${fmtFCFA(workingBudget)}${pocketPct ? ` <span class="pill">Objectif ${personal.profile?.horizon === "moyen" ? "moyen" : "long"} terme · ${fmtFCFA(pocketAmount)} réservés à la ${termButton("Poche d'apprentissage", "poche d'apprentissage")} (${fmtNum(pocketPct)} %) — argent réel séparé, pas simulation</span>` : ""}</h2>
     ${candidates.length ? `<ul class="pick-list">
       ${candidates.map(({ company, price, affordable }) => `<li class="pick-row">
@@ -2492,6 +2494,68 @@ function revuePositionsCard(kind) {
   </article>`;
 }
 
+/* ---------------------------------------------------------------------------
+   Ce qui ne tient plus — sur tout le marché, sans portefeuille.
+   La question « quoi revendre » ne dépend pas de ce que vous possédez : elle
+   dépend de l'état publié de chaque société. On note donc les 48, et l'écran
+   dit lesquelles réunissent plusieurs signaux de dégradation. Ce n'est pas une
+   liste de ventes : c'est la liste de ce qu'il ne faut plus garder par
+   habitude — y compris quand on n'en possède pas encore.
+--------------------------------------------------------------------------- */
+function signauxDeSortie(company) {
+  const v = verdictDe(company.ticker) || {};
+  const court = v.horizons?.court || {};
+  const moyen = v.horizons?.moyen || {};
+  const long = v.horizons?.long || {};
+  const rev = v.revenu || {};
+  const stats = company.history_stats || {};
+  const signaux = [];
+  // 1 · le prix a payé d'avance
+  if (court.ton === "cher") signaux.push({ cle: "prix_haut", poids: 2, texte: `cours au ${court.donnees?.percentile ?? "?"}ᵉ centile de sa propre fourchette : le prix a déjà payé quelque chose` });
+  if (moyen.ton === "cher") signaux.push({ cle: "per_cher", poids: 2, texte: `PER au ${moyen.donnees?.percentile ?? "?"}ᵉ centile de son propre passé : plus cher qu'à son habitude` });
+  // 2 · ce qui a été versé ne se renouvelle pas
+  if (rev.rendement_en_retard) signaux.push({ cle: "dividende_retard", poids: 3, texte: `dernier dividende rattaché à ${rev.regularite?.dernier_exercice_paye} : le rendement affiché décrit un versement passé` });
+  if (rev.payout?.statut === "documentaire" && rev.payout.dernier?.payout_pct > 100) signaux.push({ cle: "payout", poids: 3, texte: `distribution de ${fmtPct(rev.payout.dernier.payout_pct, 0, false)} du résultat en ${rev.payout.dernier.exercice} : payée par autre chose que le bénéfice` });
+  // 3 · l'entreprise se dégrade
+  if (long.ton === "fragile") signaux.push({ cle: "entreprise", poids: 3, texte: "résultats ou structure financière en dégradation sur les états officiels" });
+  // 4 · elle décroche pendant que le marché monte
+  const perf60 = stats.long_history?.performance_60_sessions_pct;
+  if (isNum(perf60)) {
+    const marché60 = marketPerformance(60);
+    if (isNum(marché60) && perf60 < -5 && perf60 < marché60 - 10) {
+      signaux.push({ cle: "decrochage", poids: 2, texte: `${fmtPct(perf60, 1)} sur 60 séances quand le marché fait ${fmtPct(marché60, 1)} : elle décroche, ce n'est pas le marché` });
+    }
+  }
+  // 5 · on ne peut pas en sortir
+  const liquidité = stats.median_traded_value_last_20_fcfa;
+  if (isNum(liquidité) && liquidité < 5_000_000) signaux.push({ cle: "liquidite", poids: 1, texte: `valeur médiane échangée ${fmtCompactFCFA(liquidité)} par séance : sortir prendra du temps et se paiera dans le carnet` });
+  const poids = signaux.reduce((n, x) => n + x.poids, 0);
+  return { ticker: company.ticker, nom: company.name, secteur: company.sector, signaux, poids };
+}
+
+function revueMarcheCard() {
+  const tous = COMPANIES.map(signauxDeSortie).filter(x => x.signaux.length);
+  const classes = tous.sort((a, b) => b.poids - a.poids || b.signaux.length - a.signaux.length);
+  const alerte = classes.filter(x => x.poids >= 6).slice(0, 6);
+  const surveille = classes.filter(x => x.poids >= 3 && x.poids < 6).slice(0, 6);
+  const avecPerCher = COMPANIES.filter(c => (verdictDe(c.ticker)?.horizons?.moyen?.ton === "cher")).length;
+  const avecPrixHaut = COMPANIES.filter(c => (verdictDe(c.ticker)?.horizons?.court?.ton === "cher")).length;
+  const ligne = x => `<li class="verdict-line">
+      <div class="verdict-horizon"><span class="verdict-titre"><button type="button" class="text-button ticker" data-open-company="${x.ticker}">${x.ticker}</button></span>
+        <span class="subtext">${escapeHtml(x.secteur)}</span></div>
+      <div class="verdict-body"><span class="verdict-ton ${x.poids >= 6 ? "fragile" : "cher"}">${x.signaux.length} signal(aux)</span>
+        <ul class="verdict-details">${x.signaux.map(y => `<li>${escapeHtml(y.texte)}</li>`).join("")}</ul>
+      </div></li>`;
+  return `<article class="card section-space">
+    <div class="event-row"><div><p class="eyebrow">Ce qui ne tient plus · tout le marché · BOC du ${fmtDate(latestBocDate())}</p><h2>Les sociétés qu'il ne faut plus garder par habitude</h2></div>
+      <span class="pill dark">${classes.length} société(s) avec au moins un signal</span></div>
+    <p class="muted">Cette revue ne regarde pas ce que vous possédez : elle part de l'état publié de chaque société. Un signal isolé ne suffit pas ; plusieurs signaux qui pointent dans le même sens, si. <strong>Ce n'est pas une liste de ventes</strong> — c'est la liste de ce qui mérite une relecture avant de garder, d'acheter, ou de renforcer.</p>
+    ${alerte.length ? `<h3 style="margin:16px 0 0">Signaux concordants — à relire en premier</h3><ul class="verdict-list">${alerte.map(ligne).join("")}</ul>` : '<p class="muted">Aucune société ne réunit aujourd’hui plusieurs signaux de dégradation.</p>'}
+    ${surveille.length ? `<h3 style="margin:18px 0 0">Un ou deux signaux — à surveiller</h3><ul class="verdict-list">${surveille.map(ligne).join("")}</ul>` : ""}
+    <p class="verdict-regle"><strong>Pourquoi ce n'est pas un conseil de vente :</strong> vendre a un coût que SIGMA ne connaît pas (les frais de votre SGI), et une baisse de cours n'est pas une dégradation d'entreprise. Trois raisons légitimes de garder malgré un signal — le dividende reste couvert, la cause est le marché et non la société, votre horizon couvre le cycle — ne sont pas vérifiables à votre place. ${avecPrixHaut} société(s) ont un cours dans le haut de leur fourchette, ${avecPerCher} un PER cher contre leur propre passé : ce sont des prix, pas des fautes.</p>
+  </article>`;
+}
+
 function renderPortfolio() {
   const host = $("#portfolioContent");
   if (!host) return;
@@ -2510,8 +2574,7 @@ function renderPortfolio() {
 
   host.innerHTML = `
   <div class="${kind === "virtuel" ? "portfolio-simulation" : ""}">
-    ${revuePositionsCard(kind)}
-    ${topDuMoisCard(Number(personal.profile?.monthlyBudget || personal.settings?.monthlyBudget || 0))}
+
     <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:16px">
       <div class="segmented" role="tablist" aria-label="Type de portefeuille">
         <button type="button" data-portfolio-kind="reel" class="${kind === "reel" ? "is-active" : ""}">● Réel — avis d’opéré SGI</button>

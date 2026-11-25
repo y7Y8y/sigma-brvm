@@ -37,10 +37,10 @@
   "societes": 48,
   "court_calcule": 47,
   "moyen_calcule": 42,
-  "long_calcule": 44,
+  "long_calcule": 45,
   "court_plein": 47,
   "moyen_plein": 39,
-  "long_plein": 40,
+  "long_plein": 41,
   "capitalisation_calculee": 3,
   "capitalisation_implicite": 35,
   "position_longue_calculee": 47,
@@ -427,14 +427,6 @@
    "etat": "absent",
    "raison": "moins de 30 séances de PER publié dans l'archive",
    "source": "archive BOC — bulletin officiel de la cote"
-  },
-  {
-   "ticker": "SICC",
-   "societe": "SICOR COTE D'IVOIRE",
-   "horizon": "long terme",
-   "etat": "absent",
-   "raison": "4 exercice(s) présents mais aucune grandeur exploitable (résultat net, fonds propres, flux ou dividende absents)",
-   "source": "états financiers officiels de l'émetteur"
   },
   {
    "ticker": "SICC",
@@ -1345,13 +1337,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "a_verifier",
+     "ton": "solide",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 36,520 M FCFA, contre 4,672 M en 2020 (+681.7 %, soit +50.9 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Résultat net 2025 : 36,520 M FCFA, contre 4,672 M en 2020 (+681.7 %, soit +50.9 % par an).",
       "Rentabilité des fonds propres : 30.3 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Fonds propres : 120,570 M FCFA fin 2025, contre 58,147 M fin 2019."
+      "Fonds propres : 120,570 M FCFA fin 2025, contre 62,819 M fin 2020."
      ],
      "exercices": [
       2019,
@@ -1574,13 +1566,14 @@
      "horizon": "long",
      "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 0.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Fonds propres : 17,770 M FCFA fin 2025, contre 14,791 M fin 2019.",
       "Flux d'exploitation 786 M FCFA, soit 3522 % du résultat net : le bénéfice se transforme en trésorerie.",
-      "Activité (chiffre d'affaires ou PNB) : +2.8 % entre 2019 et 2025."
+      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 50.8 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 4.9 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 3.1 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2019,
@@ -1814,13 +1807,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "a_verifier",
+     "ton": "solide",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 20,107 M FCFA, contre 13,312 M en 2020 (+51.0 %, soit +8.6 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Résultat net 2025 : 20,107 M FCFA, contre 13,312 M en 2020 (+51.0 %, soit +8.6 % par an).",
       "Rentabilité des fonds propres : 17.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Fonds propres : 117,507 M FCFA fin 2025, contre 85,833 M fin 2019."
+      "Fonds propres : 117,507 M FCFA fin 2025, contre 89,837 M fin 2020."
      ],
      "exercices": [
       2019,
@@ -2344,13 +2337,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "a_verifier",
+     "ton": "solide",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 35,540 M FCFA, contre 14,216 M en 2020 (+150.0 %, soit +20.1 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Résultat net 2025 : 35,540 M FCFA, contre 14,216 M en 2020 (+150.0 %, soit +20.1 % par an).",
       "Rentabilité des fonds propres : 27.9 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Fonds propres : 127,340 M FCFA fin 2025, contre 53,113 M fin 2019."
+      "Fonds propres : 127,340 M FCFA fin 2025, contre 60,329 M fin 2020."
      ],
      "exercices": [
       2019,
@@ -2853,11 +2846,11 @@
      "horizon": "long",
      "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 1.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Fonds propres : 36,064 M FCFA fin 2025, contre 35,824 M fin 2019."
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 12.2 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2019,
@@ -3392,12 +3385,12 @@
      "horizon": "long",
      "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 1,439 M FCFA, contre 1,167 M en 2020 (+23.4 %, soit +4.3 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Résultat net 2025 : 1,439 M FCFA, contre 1,167 M en 2020 (+23.4 %, soit +4.3 % par an).",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
       "Flux d'exploitation -820 M FCFA, soit -57 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
-      "Activité (chiffre d'affaires ou PNB) : +39.9 % entre 2019 et 2025."
+      "Activité (chiffre d'affaires ou PNB) : +12.5 % entre 2020 et 2025."
      ],
      "exercices": [
       2019,
@@ -3659,10 +3652,11 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "neutre",
+     "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
      ],
      "exercices": [
@@ -4193,7 +4187,7 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "fragile",
+     "ton": "a_verifier",
      "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 13,100 M FCFA, contre 17,183 M en 2020 (-23.8 %, soit -5.3 % par an).",
      "details": [
@@ -4484,13 +4478,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "a_verifier",
+     "ton": "solide",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 63,482 M FCFA, contre 30,018 M en 2020 (+111.5 %, soit +16.2 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Résultat net 2025 : 63,482 M FCFA, contre 30,018 M en 2020 (+111.5 %, soit +16.2 % par an).",
       "Rentabilité des fonds propres : 29.0 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Fonds propres : 218,573 M FCFA fin 2025, contre 120,089 M fin 2019."
+      "Fonds propres : 218,573 M FCFA fin 2025, contre 128,527 M fin 2020."
      ],
      "exercices": [
       2019,
@@ -4971,12 +4965,15 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "neutre",
+     "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
-      "Activité (chiffre d'affaires ou PNB) : -22.6 % entre 2021 et 2025."
+      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 20.0 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 6.0 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 39.9 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2021,
@@ -5453,10 +5450,11 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "fragile",
+     "ton": "a_verifier",
      "profondeur": "limitee",
-     "phrase": "Résultat net négatif en 2024 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Résultat net négatif en 2024 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
       "Fonds propres 2024 : absents des documents indexés — non substitués par zéro.",
       "Flux d'exploitation 554 M FCFA, soit -73 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
@@ -6965,14 +6963,15 @@
      "horizon": "long",
      "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 15,509 M FCFA, contre 19,352 M en 2023 (-19.9 %, soit -10.5 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Résultat net 2025 : 15,509 M FCFA, contre 19,352 M en 2023 (-19.9 %, soit -10.5 % par an).",
       "Rentabilité des fonds propres : 10.9 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Fonds propres : 142,639 M FCFA fin 2025, contre 65,680 M fin 2019.",
+      "Fonds propres : 142,639 M FCFA fin 2025, contre 128,875 M fin 2023.",
       "Flux d'exploitation 38,741 M FCFA, soit 250 % du résultat net : le bénéfice se transforme en trésorerie.",
-      "Activité (chiffre d'affaires ou PNB) : +89.0 % entre 2019 et 2025.",
-      "Dividendes versés 2025 : 7,931 M FCFA, soit 51 % du résultat net (valeur brute publiée -7,931 M ; convention de signe non unifiée entre sociétés)."
+      "Activité (chiffre d'affaires ou PNB) : -4.2 % entre 2023 et 2025.",
+      "Dividendes versés 2025 : 7,931 M FCFA, soit 51 % du résultat net (valeur brute publiée -7,931 M ; convention de signe non unifiée entre sociétés).",
+      "Comparaison refusée de part et d'autre de 2020→2023 : résultat net multiplié par 5.5 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2019,
@@ -7553,12 +7552,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "a_verifier",
+     "ton": "solide",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 701 M FCFA, contre 603 M en 2021 (+16.3 %, soit +3.8 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
-      "Rentabilité des fonds propres : 11.8 % en 2025 (résultat net / fonds propres de fin d'exercice)."
+      "Résultat net 2025 : 701 M FCFA, contre 603 M en 2021 (+16.3 %, soit +3.8 % par an).",
+      "Rentabilité des fonds propres : 11.8 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 5,916 M FCFA fin 2025, contre 6,195 M fin 2021."
      ],
      "exercices": [
       2019,
@@ -7775,11 +7775,13 @@
      "horizon": "long",
      "ton": "fragile",
      "profondeur": "pleine",
-     "phrase": "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+     "phrase": "Résultat net 2025 : -7,954 M FCFA, contre -6,860 M en 2021 (+15.9 %).",
      "details": [
+      "Résultat net 2025 : -7,954 M FCFA, contre -6,860 M en 2021 (+15.9 %).",
       "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
       "Rentabilité des fonds propres : -46.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Activité (chiffre d'affaires ou PNB) : +28.9 % entre 2020 et 2025."
+      "Fonds propres : 17,243 M FCFA fin 2025, contre 37,757 M fin 2021.",
+      "Activité (chiffre d'affaires ou PNB) : +28.9 % entre 2021 et 2025."
      ],
      "exercices": [
       2020,
@@ -8018,15 +8020,19 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "solide",
+     "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Résultat net 2025 : 5,879 M FCFA, contre 1 M en 2020 (+587800.0 %, soit +467.4 % par an).",
+     "phrase": "Résultat net 2025 : 5,879 M FCFA, contre 3,959 M en 2024 (+48.5 %, soit +48.5 % par an).",
      "details": [
-      "Résultat net 2025 : 5,879 M FCFA, contre 1 M en 2020 (+587800.0 %, soit +467.4 % par an).",
+      "Résultat net 2025 : 5,879 M FCFA, contre 3,959 M en 2024 (+48.5 %, soit +48.5 % par an).",
       "Rentabilité des fonds propres : 21.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 27,898 M FCFA fin 2025, contre 25,798 M fin 2024.",
       "Dette nette 71,900 M FCFA, soit 258 % des fonds propres : levier à surveiller le jour où les taux montent.",
       "Flux d'exploitation -35,060 M FCFA, soit -596 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
-      "Dividendes versés 2025 : 3,600 M FCFA, soit 61 % du résultat net (valeur brute publiée -3,600 M ; convention de signe non unifiée entre sociétés)."
+      "Activité (chiffre d'affaires ou PNB) : +10.0 % entre 2024 et 2025.",
+      "Dividendes versés 2025 : 3,600 M FCFA, soit 61 % du résultat net (valeur brute publiée -3,600 M ; convention de signe non unifiée entre sociétés).",
+      "Comparaison refusée de part et d'autre de 2020→2021 : résultat net multiplié par 5.2 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 659.8 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2020,
@@ -8296,12 +8302,15 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "neutre",
+     "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Rentabilité des fonds propres : 115.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 115.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Dividendes versés 2025 : 5,008 M FCFA, soit 638 % du résultat net (valeur brute publiée -5,008 M ; convention de signe non unifiée entre sociétés)."
+      "Dividendes versés 2025 : 5,008 M FCFA, soit 638 % du résultat net (valeur brute publiée -5,008 M ; convention de signe non unifiée entre sociétés).",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 145.6 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 11.4 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2020,
@@ -8610,14 +8619,15 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "solide",
+     "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Résultat net 2023 : 1,012 M FCFA, contre 690 M en 2019 (+46.6 %, soit +10.0 % par an).",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
-      "Résultat net 2023 : 1,012 M FCFA, contre 690 M en 2019 (+46.6 %, soit +10.0 % par an).",
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Fonds propres 2023 : absents des documents indexés — non substitués par zéro.",
       "Flux d'exploitation 484 M FCFA, soit 48 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
-      "Activité (chiffre d'affaires ou PNB) : +49.2 % entre 2019 et 2023."
+      "Comparaison refusée de part et d'autre de 2020→2021 : résultat net multiplié par 3.2 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 3.8 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2019,
@@ -8812,10 +8822,11 @@
      "horizon": "long",
      "ton": "solide",
      "profondeur": "pleine",
-     "phrase": "Résultat net 2025 : 101,228 M FCFA, contre 10,116 M en 2021 (+900.7 %, soit +77.9 % par an).",
+     "phrase": "Résultat net 2025 : 101,228 M FCFA, contre 97,230 M en 2022 (+4.1 %, soit +1.4 % par an).",
      "details": [
-      "Résultat net 2025 : 101,228 M FCFA, contre 10,116 M en 2021 (+900.7 %, soit +77.9 % par an).",
-      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+      "Résultat net 2025 : 101,228 M FCFA, contre 97,230 M en 2022 (+4.1 %, soit +1.4 % par an).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Comparaison refusée de part et d'autre de 2021→2022 : résultat net multiplié par 9.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2021,
@@ -9053,12 +9064,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "a_verifier",
+     "ton": "fragile",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 6,028 M FCFA, contre -4,858 M en 2020 (-224.1 %).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
-      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+      "Résultat net 2025 : 6,028 M FCFA, contre -4,858 M en 2020 (-224.1 %).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Activité (chiffre d'affaires ou PNB) : +92.9 % entre 2020 et 2025."
      ],
      "exercices": [
       2019,
@@ -9324,12 +9336,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "a_verifier",
+     "ton": "solide",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 55,623 M FCFA, contre 30,261 M en 2020 (+83.8 %, soit +12.9 % par an).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
-      "Rentabilité des fonds propres : 27.2 % en 2025 (résultat net / fonds propres de fin d'exercice)."
+      "Résultat net 2025 : 55,623 M FCFA, contre 30,261 M en 2020 (+83.8 %, soit +12.9 % par an).",
+      "Rentabilité des fonds propres : 27.2 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 204,765 M FCFA fin 2025, contre 116,767 M fin 2020."
      ],
      "exercices": [
       2019,
@@ -9548,10 +9561,23 @@
      "regle": "PER comparé à sa propre distribution historique"
     },
     "long": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "long",
-     "raison": "4 exercice(s) présents mais aucune grandeur exploitable (résultat net, fonds propres, flux ou dividende absents)",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "ton": "a_verifier",
+     "profondeur": "pleine",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
+     "details": [
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2025
+     ],
+     "paiements_dividendes": "0/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
     }
    },
    "capitalisation": {
@@ -9700,12 +9726,12 @@
      "horizon": "long",
      "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "phrase": "Résultat net 2025 : 179 M FCFA, contre -2,463 M en 2020 (-107.3 %).",
      "details": [
-      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Résultat net 2025 : 179 M FCFA, contre -2,463 M en 2020 (-107.3 %).",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
       "Flux d'exploitation 992 M FCFA, soit 553 % du résultat net : le bénéfice se transforme en trésorerie.",
-      "Activité (chiffre d'affaires ou PNB) : +40.5 % entre 2019 et 2025."
+      "Activité (chiffre d'affaires ou PNB) : +58.7 % entre 2020 et 2025."
      ],
      "exercices": [
       2019,
@@ -10673,7 +10699,7 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "fragile",
+     "ton": "a_verifier",
      "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 12,493 M FCFA, contre 14,728 M en 2021 (-15.2 %, soit -4.0 % par an).",
      "details": [
@@ -11177,8 +11203,9 @@
      "horizon": "long",
      "ton": "fragile",
      "profondeur": "pleine",
-     "phrase": "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+     "phrase": "Résultat net 2025 : -97 M FCFA, contre 2,321 M en 2020 (-104.2 %).",
      "details": [
+      "Résultat net 2025 : -97 M FCFA, contre 2,321 M en 2020 (-104.2 %).",
       "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
       "Flux d'exploitation -2,212 M FCFA, soit 2290 % du résultat net : le bénéfice se transforme en trésorerie."
@@ -11409,13 +11436,14 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "solide",
+     "ton": "fragile",
      "profondeur": "pleine",
-     "phrase": "Résultat net 2025 : 36,464 M FCFA, contre 8,543 M en 2020 (+326.8 %, soit +33.7 % par an).",
+     "phrase": "Résultat net 2025 : 36,464 M FCFA, contre 44,730 M en 2024 (-18.5 %, soit -18.5 % par an).",
      "details": [
-      "Résultat net 2025 : 36,464 M FCFA, contre 8,543 M en 2020 (+326.8 %, soit +33.7 % par an).",
+      "Résultat net 2025 : 36,464 M FCFA, contre 44,730 M en 2024 (-18.5 %, soit -18.5 % par an).",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
-      "Flux d'exploitation 18,472 M FCFA, soit 51 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier."
+      "Flux d'exploitation 18,472 M FCFA, soit 51 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 3.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
      ],
      "exercices": [
       2020,
@@ -11679,12 +11707,12 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "neutre",
+     "ton": "a_verifier",
      "profondeur": "pleine",
-     "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
-      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
-      "Activité (chiffre d'affaires ou PNB) : +41.5 % entre 2020 et 2025."
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
      ],
      "exercices": [
       2020,
@@ -11931,12 +11959,13 @@
     "long": {
      "statut": "calcule",
      "horizon": "long",
-     "ton": "solide",
+     "ton": "a_verifier",
      "profondeur": "limitee",
-     "phrase": "Résultat net 2025 : 6,147 M FCFA, contre 528 M en 2024 (+1064.1 %, soit +1064.1 % par an).",
+     "phrase": "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
      "details": [
-      "Résultat net 2025 : 6,147 M FCFA, contre 528 M en 2024 (+1064.1 %, soit +1064.1 % par an).",
+      "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 29.7 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 11.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
       "Lecture courte : 2 exercices seulement (2024 et 2025). Une trajectoire sur deux points est un début, pas une tendance."
      ],
      "exercices": [
