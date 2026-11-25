@@ -122,6 +122,9 @@ const RISK_REACTION_LABELS = {
 };
 
 let DATA = null;
+/* Verdicts pré-calculés (ingestion/verdict.py) : trois horizons par société.
+   Chargés à part pour que l'application reste utilisable si le fichier manque. */
+let VERDICTS = null;
 let COMPANIES = [];
 let BY_TICKER = new Map();
 let automaticStudyCache = { key: "", value: [] };
@@ -972,6 +975,7 @@ function renderHome() {
   // 1 · Ce mois-ci : la seule question qui demande (Peut-être) un geste.
   const monthly = computeMonthlyCandidates();
   const firstCandidate = monthly.candidates[0] || null;
+  const firstVerdict = firstCandidate ? verdictDe(firstCandidate.company.ticker) : null;
   const profileDone = !!personal.profile;
   const monthlyCard = `<article class="card">
       <div class="event-row"><div><p class="eyebrow">Votre mois en un coup d’œil</p><h2>Ce mois-ci</h2></div><span class="pill dark">Dernier BOC lu : ${fmtDate(latestBocDate())}</span></div>
@@ -983,6 +987,12 @@ function renderHome() {
         <div class="key-fact"><span class="metric-label">Sociétés à examiner</span><div class="metric-value">${monthly.candidates.length}</div><div class="subtext">Passent vos filtres ce mois-ci</div></div>
       </div>` : `<p><strong>Aucune société ne passe vos filtres ce mois-ci</strong> avec un budget de ${fmtFCFA(monthly.workingBudget)}. C’est une réponse valable : garder le versement en attente fait partie de la méthode. Vous pouvez aussi élargir un critère dans l’onglet Décision plutôt que forcer un achat.</p>`}
       ${profileDone ? "" : `<div class="notice" style="margin-top:12px"><p><strong>Préréglage non fait :</strong> ce bloc utilise un montant neutre. Deux minutes pour indiquer votre pays, votre SGI et votre versement réel — ensuite tout est automatique.</p></div>`}
+      ${firstVerdict ? `<ul class="verdict-list verdict-list-compact section-space">${["court", "moyen", "long"].map(h => {
+          const b = firstVerdict.horizons?.[h] || {};
+          const calcule = b.statut === "calcule";
+          const [ton, libelle] = TONS[b.ton] || TONS.neutre;
+          return `<li class="verdict-line ${calcule ? "" : "is-vide"}"><div class="verdict-horizon"><span class="verdict-titre">${HORIZONS[h].titre}</span></div><div class="verdict-body">${calcule ? `<span class="verdict-ton ${ton}">${libelle}</span>` : '<span class="verdict-ton vide">Série insuffisante</span>'}<p class="verdict-phrase">${escapeHtml(calcule ? b.phrase : (b.raison || "non calculable"))}</p></div></li>`;
+        }).join("")}</ul>` : ""}
       <div class="form-actions" style="margin-top:12px"><button type="button" class="button" data-decision-link="decision">Préparer la décision du mois</button>${firstCandidate ? `<button type="button" class="button button-secondary" data-open-company="${firstCandidate.company.ticker}">Ouvrir la fiche ${firstCandidate.company.ticker}</button>` : ""}${profileDone ? "" : `<button type="button" class="button button-secondary" data-open-onboarding>Faire le préréglage</button>`}</div>
       <p class="source-line">Liste de lecture préparée par des règles écrites — jamais un ordre d’achat.</p>
     </article>`;
@@ -1121,6 +1131,66 @@ function sortedCompanies() {
   else rows.sort((a, b) => a.name.localeCompare(b.name, "fr"));
   return rows;
 }
+/* ---------------------------------------------------------------------------
+   Verdict — la réponse, avant les preuves.
+   Trois horizons, trois règles écrites, zéro score composite. Un horizon dont
+   la série est absente est dit « non calculable » avec sa raison exacte.
+   Libellés choisis pour être une observation vérifiable, jamais une consigne.
+--------------------------------------------------------------------------- */
+const HORIZONS = {
+  court: { titre: "Court terme", sous: "séance · position du cours" },
+  moyen: { titre: "Moyen terme", sous: "6 à 18 mois · valorisation propre" },
+  long: { titre: "Long terme", sous: "3 ans et plus · entreprise" }
+};
+const TONS = {
+  cher: ["cher", "Prix haut pour elle"], bas: ["bas", "Prix bas pour elle"],
+  bon_marche: ["bas", "Moins cher qu'à son habitude"], moyen: ["milieu", "Dans son cours habituel"],
+  solide: ["solide", "Entreprise qui gagne"], fragile: ["fragile", "À vérifier"],
+  a_verifier: ["milieu", "Périmètre à vérifier"], neutre: ["milieu", "Lecture neutre"]
+};
+
+function verdictDe(ticker) {
+  return VERDICTS?.verdicts?.[ticker] || null;
+}
+
+function verdictCard(ticker, { compact = false } = {}) {
+  const v = verdictDe(ticker);
+  if (!v) {
+    return `<p class="source-line verdict-absent">Verdict non chargé : le fichier <span class="mono">data/verdicts.json</span> n'est pas disponible dans cette collecte. Les données brutes restent consultables ci-dessous.</p>`;
+  }
+  const lignes = ["court", "moyen", "long"].map(h => {
+    const b = v.horizons?.[h] || {};
+    const calcule = b.statut === "calcule";
+    const [ton, libelle] = TONS[b.ton] || TONS.neutre;
+    const principal = calcule ? b.phrase : `Non calculable — ${b.raison || "série absente"}`;
+    const details = compact ? [] : (b.details || []).slice(1);
+    return `<li class="verdict-line ${calcule ? "" : "is-vide"}">
+      <div class="verdict-horizon">
+        <span class="verdict-titre">${HORIZONS[h].titre}</span>
+        <span class="subtext">${HORIZONS[h].sous}</span>
+      </div>
+      <div class="verdict-body">
+        ${calcule ? `<span class="verdict-ton ${ton}">${libelle}</span>` : `<span class="verdict-ton vide">Série insuffisante</span>`}
+        <p class="verdict-phrase">${escapeHtml(principal)}</p>
+        ${details.length ? `<ul class="verdict-details">${details.map(d => `<li>${escapeHtml(String(d))}</li>`).join("")}</ul>` : ""}
+        ${b.regle ? `<p class="verdict-regle"><strong>Règle :</strong> ${escapeHtml(b.regle)}${b.invalidation ? ` · <strong>Ce qui l'invaliderait :</strong> ${escapeHtml(b.invalidation)}` : ""}</p>` : ""}
+      </div>
+    </li>`;
+  }).join("");
+  const cap = v.capitalisation || {};
+  return `<div class="verdict-head">
+      <div><p class="eyebrow">Verdict SIGMA · ${VERDICTS.archive_boc?.seances ?? 0} séances d'archive, ${VERDICTS.archive_boc?.du ? `du ${fmtDate(VERDICTS.archive_boc.du)}` : ""}</p>
+      <h2>${escapeHtml(v.nom)} — ce que disent les données</h2></div>
+      ${cap.statut === "calcule"
+        ? `<span class="pill">Capitalisation ${fmtCompactFCFA(cap.valeur_fcfa)}</span>`
+        : `<span class="pill" title="${escapeHtml(cap.raison || "")}">Capitalisation non calculable</span>`}
+    </div>
+    <ul class="verdict-list">${lignes}</ul>
+    ${v.capitalisation?.statut === "calcule"
+      ? `<p class="source-line">Capitalisation = ${fmtNum(cap.actions)} actions × ${fmtFCFA(v.cours)} (dernier cours publié). Nombre d'actions lu dans un document officiel.</p>`
+      : `<p class="source-line">Capitalisation non calculable : ${escapeHtml(cap.raison || "nombre d'actions absent")}. SIGMA ne la déduit pas d'un cours ni d'un bénéfice par action.</p>`}`;
+}
+
 function renderCompanies() {
   const host = $("#companiesGrid");
   if (!host) return;
@@ -1323,6 +1393,9 @@ function renderCompanyDetail() {
   const orderRefPrice = latestPrice(company).value;
   const orderDefaultQty = Math.max(1, calculateAffordable(orderWorkingBudget, orderRefPrice)?.shares || 1);
   const orderInitial = orderPrepMath(company, orderDefaultQty);
+  const quoteLabel = isNum(quote.close)
+    ? `Dernier cours publié ${fmtFCFA(quote.close)}${isNum(quote.variation_pct) ? ` (${fmtPct(quote.variation_pct, 2, true)})` : ""} — fin de séance, pas du temps réel.`
+    : "Cours publié non disponible dans cette collecte.";
   const facts = [];
   if (isNum(stats.traded_sessions_last_20)) facts.push(`Échangée sur ${stats.traded_sessions_last_20} des 20 dernières séances BOC lues ; valeur médiane négociée ${fmtCompactFCFA(stats.median_traded_value_last_20_fcfa)} par séance.`);
   if (isNum(stats.performance_20_sessions_pct)) facts.push(`Le cours de clôture BOC a varié de ${fmtPct(stats.performance_20_sessions_pct)} sur 20 séances (prix seuls, hors dividendes réinvestis).`);
@@ -1351,10 +1424,12 @@ function renderCompanyDetail() {
   host.innerHTML = `
     <div class="view-heading" style="margin-top:8px">
       <div><p class="eyebrow">${escapeHtml(company.sector)} · ${company.ticker}</p><h1 id="title-fiche">${escapeHtml(company.name)}</h1>
-      <p class="lead">L’essentiel, les chiffres officiels, puis les preuves — dans cet ordre.</p>${trackingBadges(company.ticker)}</div>
+      <p class="lead">${quoteLabel}</p>${trackingBadges(company.ticker)}</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="button button-secondary" data-toggle-watch="${company.ticker}">${isWatched(company.ticker) ? "★ Épinglée personnellement" : "☆ Épingler"}</button>
       <button type="button" class="button" data-journal-for="${company.ticker}">Brouillon de thèse automatique</button></div>
     </div>
+
+    <article class="card verdict-card section-space">${verdictCard(company.ticker)}</article>
 
     ${detailSummary}
 
@@ -2907,6 +2982,13 @@ async function init() {
     const response = await fetch("data/data.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     DATA = await response.json();
+    try {
+      const vr = await fetch("data/verdicts.json", { cache: "no-store" });
+      if (vr.ok) VERDICTS = await vr.json();
+    } catch (_) {
+      /* Sans verdicts, l'application fonctionne comme avant : aucun écran cassé. */
+      VERDICTS = null;
+    }
     COMPANIES = DATA.companies || [];
     BY_TICKER = new Map(COMPANIES.map(company => [company.ticker, company]));
     const datalist = $("#companySuggestions");

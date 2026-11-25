@@ -1,0 +1,4146 @@
+{
+ "schema_version": 1,
+ "source_donnees": "2026-10-22T21:20:37+00:00",
+ "archive_boc": {
+  "seances": 262,
+  "du": "2025-09-22",
+  "au": "2026-10-21"
+ },
+ "seuils": {
+  "fourchette_haut_percentile": 80.0,
+  "fourchette_bas_percentile": 20.0,
+  "per_cher_percentile": 80.0,
+  "per_bon_marche_percentile": 20.0,
+  "min_seances_per": 120,
+  "min_exercices": 3
+ },
+ "resume": {
+  "societes": 48,
+  "court_calcule": 47,
+  "moyen_calcule": 39,
+  "long_calcule": 40,
+  "capitalisation_calculee": 3,
+  "trois_horizons_complets": 34
+ },
+ "verdicts": {
+  "ABJC": {
+   "ticker": "ABJC",
+   "nom": "SERVAIR ABIDJAN COTE D'IVOIRE",
+   "secteur": "Consommation discrétionnaire",
+   "cours": 3080,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (13ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (13ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Sur 20 séances, le cours a baissé de 24.1 % (prix seuls, hors dividende).",
+      "Fourchette observée : 2,800 – 4,095 FCFA ; il reste 26.7 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 13.3,
+      "bas": 2800,
+      "haut": 4095,
+      "dernier": 3000,
+      "seances": 60,
+      "ecart_au_haut_pct": -26.7
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 24.6, au 55ᵉ centile de sa propre histoire (médiane 24.4). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 24.6, au 55ᵉ centile de sa propre histoire (médiane 24.4). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 19.7 (1ᵉʳ quartile) à 26.3 (3ᵉ quartile) ; extrêmes observés 12.9 à 33.6.",
+      "Sur l'archive, le cours a varié de +66.7 % : le PER a fait +89.8 %, le bénéfice implicite par action -12.2 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 24.6,
+      "mediane": 24.45,
+      "q1": 19.66,
+      "q3": 26.29,
+      "minimum": 12.86,
+      "maximum": 33.57,
+      "percentile": 55.3,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 1800,
+       "per": 12.96,
+       "benefice_implicite": 138.89
+      },
+      "fin": {
+       "cours": 3000,
+       "per": 24.6,
+       "benefice_implicite": 121.95
+      },
+      "variation_cours_pct": 66.7,
+      "variation_benefice_pct": -12.2,
+      "variation_per_pct": 89.8,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +66.7 % : le PER a fait +89.8 %, le bénéfice implicite par action -12.2 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 1,331 M FCFA, contre 670 M en 2021 (+98.7 %, soit +18.7 % par an).",
+     "details": [
+      "Résultat net 2025 : 1,331 M FCFA, contre 670 M en 2021 (+98.7 %, soit +18.7 % par an).",
+      "Rentabilité des fonds propres : 24.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 5,512 M FCFA fin 2025, contre 4,352 M fin 2021.",
+      "Flux d'exploitation 1,431 M FCFA, soit 108 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +58.7 % entre 2021 et 2025."
+     ],
+     "exercices": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "4/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BBGC": {
+   "ticker": "BBGC",
+   "nom": "BRIDGE BANK GROUP COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 9800,
+   "horizons": {
+    "court": {
+     "statut": "non_calculable",
+     "raison": "moins de 20 clôtures publiées dans la fenêtre de 60 séances",
+     "horizon": "court",
+     "regle": "position dans sa propre fourchette de 60 séances"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "0 exercice(s) d'états financiers extraits, il en faut 3",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BICB": {
+   "ticker": "BICB",
+   "nom": "BANQUE INTERNATIONALE POUR L’INDUSTRIE ET LE COMMERCE DU BENIN",
+   "secteur": "Services financiers",
+   "cours": 8500,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (53ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (53ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 7,500 – 10,790 FCFA ; il reste 21.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 53.3,
+      "bas": 7500,
+      "haut": 10790,
+      "dernier": 8500,
+      "seances": 60,
+      "ecart_au_haut_pct": -21.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 13.6, soit le 89ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 89 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 13.6, soit le 89ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 89 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 9.5 (1ᵉʳ quartile) à 10.7 (3ᵉ quartile) ; extrêmes observés 9.1 à 17.2.",
+      "Sur l'archive, le cours a varié de +68.3 % : le PER a fait +41.0 %, le bénéfice implicite par action +19.4 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 13.55,
+      "mediane": 9.9,
+      "q1": 9.52,
+      "q3": 10.66,
+      "minimum": 9.09,
+      "maximum": 17.2,
+      "percentile": 89.3,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 5050,
+       "per": 9.61,
+       "benefice_implicite": 525.49
+      },
+      "fin": {
+       "cours": 8500,
+       "per": 13.55,
+       "benefice_implicite": 627.31
+      },
+      "variation_cours_pct": 68.3,
+      "variation_benefice_pct": 19.4,
+      "variation_per_pct": 41.0,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +68.3 % : le PER a fait +41.0 %, le bénéfice implicite par action +19.4 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "neutre",
+     "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+     "details": [
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+     ],
+     "exercices": [
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "2/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BICC": {
+   "ticker": "BICC",
+   "nom": "BICI COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 30800,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (48ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (48ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 28,600 – 34,895 FCFA ; il reste 11.7 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 48.3,
+      "bas": 28600,
+      "haut": 34895,
+      "dernier": 30800,
+      "seances": 60,
+      "ecart_au_haut_pct": -11.7
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 14.1, au 76ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 14.1, au 76ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 12.3 (1ᵉʳ quartile) à 13.9 (3ᵉ quartile) ; extrêmes observés 10.2 à 17.1.",
+      "Sur l'archive, le cours a varié de +91.5 % : le bénéfice implicite par action a fait +39.2 %, le PER +37.6 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 14.06,
+      "mediane": 12.8,
+      "q1": 12.26,
+      "q3": 13.92,
+      "minimum": 10.22,
+      "maximum": 17.13,
+      "percentile": 75.6,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 16085,
+       "per": 10.22,
+       "benefice_implicite": 1573.87
+      },
+      "fin": {
+       "cours": 30800,
+       "per": 14.06,
+       "benefice_implicite": 2190.61
+      },
+      "variation_cours_pct": 91.5,
+      "variation_benefice_pct": 39.2,
+      "variation_per_pct": 37.6,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de +91.5 % : le bénéfice implicite par action a fait +39.2 %, le PER +37.6 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 30.3 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 120,570 M FCFA fin 2025, contre 58,147 M fin 2019."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "calcule",
+    "actions": 16666670,
+    "valeur_fcfa": 513333436000,
+    "base": "nombre d'actions lu dans un document officiel × dernier cours publié"
+   },
+   "note": ""
+  },
+  "BNBC": {
+   "ticker": "BNBC",
+   "nom": "BERNABE COTE D'IVOIRE",
+   "secteur": "Consommation discrétionnaire",
+   "cours": 1790,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 1,720 – 2,400 FCFA ; il reste 28.3 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 3.3,
+      "bas": 1720,
+      "haut": 2400,
+      "dernier": 1720,
+      "seances": 60,
+      "ecart_au_haut_pct": -28.3
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 0.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 17,770 M FCFA fin 2025, contre 14,791 M fin 2019.",
+      "Flux d'exploitation 786 M FCFA, soit 3522 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +2.8 % entre 2019 et 2025."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "1/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BOAB": {
+   "ticker": "BOAB",
+   "nom": "BANK OF AFRICA BENIN",
+   "secteur": "Services financiers",
+   "cours": 9025,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (33ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (33ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 8,520 – 10,350 FCFA ; il reste 12.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 33.3,
+      "bas": 8520,
+      "haut": 10350,
+      "dernier": 9090,
+      "seances": 60,
+      "ecart_au_haut_pct": -12.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 18.3, au 79ᵉ centile de sa propre histoire (médiane 16.0). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 18.3, au 79ᵉ centile de sa propre histoire (médiane 16.0). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 12.2 (1ᵉʳ quartile) à 18.1 (3ᵉ quartile) ; extrêmes observés 10.1 à 20.9.",
+      "Sur l'archive, le cours a varié de +83.8 % : le PER a fait +79.6 %, le bénéfice implicite par action +2.3 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 18.34,
+      "mediane": 15.99,
+      "q1": 12.18,
+      "q3": 18.05,
+      "minimum": 10.11,
+      "maximum": 20.88,
+      "percentile": 78.6,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 4945,
+       "per": 10.21,
+       "benefice_implicite": 484.33
+      },
+      "fin": {
+       "cours": 9090,
+       "per": 18.34,
+       "benefice_implicite": 495.64
+      },
+      "variation_cours_pct": 83.8,
+      "variation_benefice_pct": 2.3,
+      "variation_per_pct": 79.6,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +83.8 % : le PER a fait +79.6 %, le bénéfice implicite par action +2.3 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 17.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 117,507 M FCFA fin 2025, contre 85,833 M fin 2019."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BOABF": {
+   "ticker": "BOABF",
+   "nom": "BANK OF AFRICA BURKINA FASO",
+   "secteur": "Services financiers",
+   "cours": 7710,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (40ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (40ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 6,900 – 9,090 FCFA ; il reste 14.1 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 40.0,
+      "bas": 6900,
+      "haut": 9090,
+      "dernier": 7805,
+      "seances": 60,
+      "ecart_au_haut_pct": -14.1
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 17.8, soit le 86ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 86 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 17.8, soit le 86ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 86 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 7.8 (1ᵉʳ quartile) à 15.9 (3ᵉ quartile) ; extrêmes observés 6.8 à 20.8.",
+      "Sur l'archive, le cours a varié de +86.7 % : le PER a fait +117.6 %, le bénéfice implicite par action -14.2 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 17.84,
+      "mediane": 12.34,
+      "q1": 7.85,
+      "q3": 15.88,
+      "minimum": 6.77,
+      "maximum": 20.77,
+      "percentile": 86.3,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 4180,
+       "per": 8.2,
+       "benefice_implicite": 509.76
+      },
+      "fin": {
+       "cours": 7805,
+       "per": 17.84,
+       "benefice_implicite": 437.5
+      },
+      "variation_cours_pct": 86.7,
+      "variation_benefice_pct": -14.2,
+      "variation_per_pct": 117.6,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +86.7 % : le PER a fait +117.6 %, le bénéfice implicite par action -14.2 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 19,252 M FCFA, contre 17,608 M en 2020 (+9.3 %, soit +1.8 % par an).",
+     "details": [
+      "Résultat net 2025 : 19,252 M FCFA, contre 17,608 M en 2020 (+9.3 %, soit +1.8 % par an).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BOAC": {
+   "ticker": "BOAC",
+   "nom": "BANK OF AFRICA COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 11220,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (13ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (13ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 10,795 – 13,450 FCFA ; il reste 16.4 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 13.3,
+      "bas": 10795,
+      "haut": 13450,
+      "dernier": 11250,
+      "seances": 60,
+      "ecart_au_haut_pct": -16.4
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 12.7, soit le 80ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 80 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 12.7, soit le 80ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 80 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 9.1 (1ᵉʳ quartile) à 11.2 (3ᵉ quartile) ; extrêmes observés 8.6 à 15.1.",
+      "Sur l'archive, le cours a varié de +49.8 % : le PER a fait +35.1 %, le bénéfice implicite par action +10.9 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 12.66,
+      "mediane": 10.48,
+      "q1": 9.05,
+      "q3": 11.23,
+      "minimum": 8.61,
+      "maximum": 15.14,
+      "percentile": 80.2,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 7510,
+       "per": 9.37,
+       "benefice_implicite": 801.49
+      },
+      "fin": {
+       "cours": 11250,
+       "per": 12.66,
+       "benefice_implicite": 888.63
+      },
+      "variation_cours_pct": 49.8,
+      "variation_benefice_pct": 10.9,
+      "variation_per_pct": 35.1,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +49.8 % : le PER a fait +35.1 %, le bénéfice implicite par action +10.9 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 27.9 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 127,340 M FCFA fin 2025, contre 53,113 M fin 2019."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "4/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BOAM": {
+   "ticker": "BOAM",
+   "nom": "BANK OF AFRICA MALI",
+   "secteur": "Services financiers",
+   "cours": 5695,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (18ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (18ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 5,350 – 7,195 FCFA ; il reste 20.8 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 18.3,
+      "bas": 5350,
+      "haut": 7195,
+      "dernier": 5695,
+      "seances": 60,
+      "ecart_au_haut_pct": -20.8
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 14.1, au 77ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 14.1, au 77ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 11.8 (1ᵉʳ quartile) à 14.0 (3ᵉ quartile) ; extrêmes observés 10.3 à 17.8.",
+      "Sur l'archive, le cours a varié de +42.0 % : le bénéfice implicite par action a fait +21.4 %, le PER +17.0 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 14.11,
+      "mediane": 12.79,
+      "q1": 11.78,
+      "q3": 14.03,
+      "minimum": 10.35,
+      "maximum": 17.82,
+      "percentile": 77.1,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 4010,
+       "per": 12.06,
+       "benefice_implicite": 332.5
+      },
+      "fin": {
+       "cours": 5695,
+       "per": 14.11,
+       "benefice_implicite": 403.61
+      },
+      "variation_cours_pct": 42.0,
+      "variation_benefice_pct": 21.4,
+      "variation_per_pct": 17.0,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de +42.0 % : le bénéfice implicite par action a fait +21.4 %, le PER +17.0 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 11,081 M FCFA, contre 2,460 M en 2022 (+350.4 %, soit +65.1 % par an).",
+     "details": [
+      "Résultat net 2025 : 11,081 M FCFA, contre 2,460 M en 2022 (+350.4 %, soit +65.1 % par an).",
+      "Rentabilité des fonds propres : 22.2 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 49,820 M FCFA fin 2025, contre 34,542 M fin 2022."
+     ],
+     "exercices": [
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "3/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BOAN": {
+   "ticker": "BOAN",
+   "nom": "BANK OF AFRICA NIGER",
+   "secteur": "Services financiers",
+   "cours": 4700,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (13ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (13ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 4,475 – 5,645 FCFA ; il reste 15.3 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 13.3,
+      "bas": 4475,
+      "haut": 5645,
+      "dernier": 4780,
+      "seances": 60,
+      "ecart_au_haut_pct": -15.3
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 11.3, soit le 91ᵉ centile de ses 121 séances publiées. La société se paie plus cher qu'elle ne s'est payée 91 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 11.3, soit le 91ᵉ centile de ses 121 séances publiées. La société se paie plus cher qu'elle ne s'est payée 91 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 10.5 (1ᵉʳ quartile) à 10.9 (3ᵉ quartile) ; extrêmes observés 10.3 à 12.4.",
+      "Sur l'archive, le cours a varié de +87.5 % : le PER a fait +2191.8 %, le bénéfice implicite par action -91.8 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 11.35,
+      "mediane": 10.73,
+      "q1": 10.5,
+      "q3": 10.9,
+      "minimum": 10.31,
+      "maximum": 12.45,
+      "percentile": 90.9,
+      "seances": 121
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 2550,
+       "per": 10.6,
+       "benefice_implicite": 240.57
+      },
+      "fin": {
+       "cours": 4780,
+       "per": 242.93,
+       "benefice_implicite": 19.68
+      },
+      "variation_cours_pct": 87.5,
+      "variation_benefice_pct": -91.8,
+      "variation_per_pct": 2191.8,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +87.5 % : le PER a fait +2191.8 %, le bénéfice implicite par action -91.8 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 1.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 36,064 M FCFA fin 2025, contre 35,824 M fin 2019."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "4/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "BOAS": {
+   "ticker": "BOAS",
+   "nom": "BANK OF AFRICA SENEGAL",
+   "secteur": "Services financiers",
+   "cours": 8150,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (43ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (43ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 7,600 – 8,500 FCFA ; il reste 5.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 43.3,
+      "bas": 7600,
+      "haut": 8500,
+      "dernier": 8060,
+      "seances": 60,
+      "ecart_au_haut_pct": -5.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 13.2, soit le 87ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 13.2, soit le 87ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 10.0 (1ᵉʳ quartile) à 12.6 (3ᵉ quartile) ; extrêmes observés 9.3 à 14.0.",
+      "Sur l'archive, le cours a varié de +55.0 % : le PER a fait +41.4 %, le bénéfice implicite par action +9.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 13.25,
+      "mediane": 11.41,
+      "q1": 9.96,
+      "q3": 12.64,
+      "minimum": 9.28,
+      "maximum": 13.97,
+      "percentile": 87.0,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 5200,
+       "per": 9.37,
+       "benefice_implicite": 554.96
+      },
+      "fin": {
+       "cours": 8060,
+       "per": 13.25,
+       "benefice_implicite": 608.3
+      },
+      "variation_cours_pct": 55.0,
+      "variation_benefice_pct": 9.6,
+      "variation_per_pct": 41.4,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +55.0 % : le PER a fait +41.4 %, le bénéfice implicite par action +9.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 21,905 M FCFA, contre 7,667 M en 2020 (+185.7 %, soit +23.4 % par an).",
+     "details": [
+      "Résultat net 2025 : 21,905 M FCFA, contre 7,667 M en 2020 (+185.7 %, soit +23.4 % par an).",
+      "Rentabilité des fonds propres : 22.7 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 96,526 M FCFA fin 2025, contre 46,551 M fin 2020."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "CABC": {
+   "ticker": "CABC",
+   "nom": "SICABLE COTE D'IVOIRE",
+   "secteur": "Industriels",
+   "cours": 2985,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 2,990 – 3,705 FCFA ; il reste 19.3 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 1.7,
+      "bas": 2990,
+      "haut": 3705,
+      "dernier": 2990,
+      "seances": 60,
+      "ecart_au_haut_pct": -19.3
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 12.3, au 29ᵉ centile de sa propre histoire (médiane 14.3). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 12.3, au 29ᵉ centile de sa propre histoire (médiane 14.3). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 11.4 (1ᵉʳ quartile) à 15.3 (3ᵉ quartile) ; extrêmes observés 6.5 à 19.3.",
+      "Sur l'archive, le cours a varié de +112.8 % : le PER a fait +81.1 %, le bénéfice implicite par action +17.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 12.3,
+      "mediane": 14.31,
+      "q1": 11.41,
+      "q3": 15.27,
+      "minimum": 6.5,
+      "maximum": 19.33,
+      "percentile": 29.0,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 1405,
+       "per": 6.79,
+       "benefice_implicite": 206.92
+      },
+      "fin": {
+       "cours": 2990,
+       "per": 12.3,
+       "benefice_implicite": 243.09
+      },
+      "variation_cours_pct": 112.8,
+      "variation_benefice_pct": 17.5,
+      "variation_per_pct": 81.1,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +112.8 % : le PER a fait +81.1 %, le bénéfice implicite par action +17.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation -820 M FCFA, soit -57 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
+      "Activité (chiffre d'affaires ou PNB) : +39.9 % entre 2019 et 2025."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "4/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "CBIBF": {
+   "ticker": "CBIBF",
+   "nom": "CORIS BANK INTERNATIONAL BURKINA FASO",
+   "secteur": "Services financiers",
+   "cours": 30900,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (63ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (63ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 27,080 – 34,450 FCFA ; il reste 10.0 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 63.3,
+      "bas": 27080,
+      "haut": 34450,
+      "dernier": 31000,
+      "seances": 60,
+      "ecart_au_haut_pct": -10.0
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 15.2, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 15.2, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 7.2 (1ᵉʳ quartile) à 13.5 (3ᵉ quartile) ; extrêmes observés 6.5 à 16.8.",
+      "Sur l'archive, le cours a varié de +216.3 % : le PER a fait +131.7 %, le bénéfice implicite par action +36.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 15.15,
+      "mediane": 9.21,
+      "q1": 7.24,
+      "q3": 13.46,
+      "minimum": 6.54,
+      "maximum": 16.83,
+      "percentile": 91.6,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 9800,
+       "per": 6.54,
+       "benefice_implicite": 1498.47
+      },
+      "fin": {
+       "cours": 31000,
+       "per": 15.15,
+       "benefice_implicite": 2046.2
+      },
+      "variation_cours_pct": 216.3,
+      "variation_benefice_pct": 36.6,
+      "variation_per_pct": 131.7,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +216.3 % : le PER a fait +131.7 %, le bénéfice implicite par action +36.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "neutre",
+     "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+     "details": [
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+     ],
+     "exercices": [
+      2021,
+      2022,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "3/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "CFAC": {
+   "ticker": "CFAC",
+   "nom": "CFAO MOTORS COTE D'IVOIRE",
+   "secteur": "Consommation discrétionnaire",
+   "cours": 1435,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Sur 20 séances, le cours a baissé de 10.0 % (prix seuls, hors dividende).",
+      "Fourchette observée : 1,350 – 1,765 FCFA ; il reste 18.4 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 6.7,
+      "bas": 1350,
+      "haut": 1765,
+      "dernier": 1440,
+      "seances": 60,
+      "ecart_au_haut_pct": -18.4
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "bon_marche",
+     "phrase": "PER à 31.0, soit le 2ᵉ centile de ses 160 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+     "details": [
+      "PER à 31.0, soit le 2ᵉ centile de ses 160 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+      "Sa fourchette personnelle va de 36.2 (1ᵉʳ quartile) à 57.0 (3ᵉ quartile) ; extrêmes observés 29.1 à 59.9.",
+      "Sur l'archive, le cours a varié de +42.6 % : le bénéfice implicite par action a fait +79.3 %, le PER -20.5 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 31.03,
+      "mediane": 48.78,
+      "q1": 36.2,
+      "q3": 57,
+      "minimum": 29.09,
+      "maximum": 59.9,
+      "percentile": 2.5,
+      "seances": 160
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 1010,
+       "per": 39.03,
+       "benefice_implicite": 25.88
+      },
+      "fin": {
+       "cours": 1440,
+       "per": 31.03,
+       "benefice_implicite": 46.41
+      },
+      "variation_cours_pct": 42.6,
+      "variation_benefice_pct": 79.3,
+      "variation_per_pct": -20.5,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de +42.6 % : le bénéfice implicite par action a fait +79.3 %, le PER -20.5 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2024 : 4,693 M FCFA, contre 3,780 M en 2020 (+24.2 %, soit +5.6 % par an).",
+     "details": [
+      "Résultat net 2024 : 4,693 M FCFA, contre 3,780 M en 2020 (+24.2 %, soit +5.6 % par an).",
+      "Rentabilité des fonds propres : 24.1 % en 2024 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 19,453 M FCFA fin 2024, contre 23,392 M fin 2020.",
+      "Flux d'exploitation 7,091 M FCFA, soit 151 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Dividendes versés 2024 : 3,200 M FCFA, soit 68 % du résultat net (valeur brute publiée -3,200 M ; convention de signe non unifiée entre sociétés)."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "CIEC": {
+   "ticker": "CIEC",
+   "nom": "CIE COTE D'IVOIRE",
+   "secteur": "Services publics",
+   "cours": 4905,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (10ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (10ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Sur 20 séances, le cours a baissé de 20.6 % (prix seuls, hors dividende).",
+      "Fourchette observée : 4,995 – 7,400 FCFA ; il reste 32.4 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 10.0,
+      "bas": 4995,
+      "haut": 7400,
+      "dernier": 5000,
+      "seances": 60,
+      "ecart_au_haut_pct": -32.4
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 21.3, au 70ᵉ centile de sa propre histoire (médiane 17.7). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 21.3, au 70ᵉ centile de sa propre histoire (médiane 17.7). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 14.4 (1ᵉʳ quartile) à 22.2 (3ᵉ quartile) ; extrêmes observés 12.5 à 31.6.",
+      "Sur l'archive, le cours a varié de +109.6 % : le PER a fait +61.3 %, le bénéfice implicite par action +29.9 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 21.33,
+      "mediane": 17.73,
+      "q1": 14.36,
+      "q3": 22.18,
+      "minimum": 12.5,
+      "maximum": 31.57,
+      "percentile": 69.8,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 2385,
+       "per": 13.22,
+       "benefice_implicite": 180.41
+      },
+      "fin": {
+       "cours": 5000,
+       "per": 21.33,
+       "benefice_implicite": 234.41
+      },
+      "variation_cours_pct": 109.6,
+      "variation_benefice_pct": 29.9,
+      "variation_per_pct": 61.3,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +109.6 % : le PER a fait +61.3 %, le bénéfice implicite par action +29.9 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "fragile",
+     "phrase": "Résultat net 2025 : 13,100 M FCFA, contre 17,183 M en 2020 (-23.8 %, soit -5.3 % par an).",
+     "details": [
+      "Résultat net 2025 : 13,100 M FCFA, contre 17,183 M en 2020 (-23.8 %, soit -5.3 % par an).",
+      "Rentabilité des fonds propres : 30.4 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 43,024 M FCFA fin 2025, contre 37,533 M fin 2020.",
+      "Dette nette 18,455 M FCFA, soit 43 % des fonds propres : levier contenu.",
+      "Flux d'exploitation 43,912 M FCFA, soit 335 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +36.1 % entre 2020 et 2025.",
+      "Dividendes versés 2025 : 10,080 M FCFA, soit 77 % du résultat net (valeur brute publiée -10,080 M ; convention de signe non unifiée entre sociétés)."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "calcule",
+    "actions": 56000000,
+    "valeur_fcfa": 274680000000,
+    "base": "nombre d'actions lu dans un document officiel × dernier cours publié"
+   },
+   "note": ""
+  },
+  "ECOC": {
+   "ticker": "ECOC",
+   "nom": "ECOBANK COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 15950,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 15,900 – 17,725 FCFA ; il reste 10.3 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 3.3,
+      "bas": 15900,
+      "haut": 17725,
+      "dernier": 15900,
+      "seances": 60,
+      "ecart_au_haut_pct": -10.3
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "bon_marche",
+     "phrase": "PER à 13.8, soit le 14ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+     "details": [
+      "PER à 13.8, soit le 14ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+      "Sa fourchette personnelle va de 14.1 (1ᵉʳ quartile) à 15.3 (3ᵉ quartile) ; extrêmes observés 12.0 à 17.1.",
+      "Sur l'archive, le cours a varié de +27.0 % : le PER a fait +15.0 %, le bénéfice implicite par action +10.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 13.79,
+      "mediane": 14.57,
+      "q1": 14.08,
+      "q3": 15.34,
+      "minimum": 11.98,
+      "maximum": 17.05,
+      "percentile": 14.1,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 12515,
+       "per": 11.99,
+       "benefice_implicite": 1043.79
+      },
+      "fin": {
+       "cours": 15900,
+       "per": 13.79,
+       "benefice_implicite": 1153.01
+      },
+      "variation_cours_pct": 27.0,
+      "variation_benefice_pct": 10.5,
+      "variation_per_pct": 15.0,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +27.0 % : le PER a fait +15.0 %, le bénéfice implicite par action +10.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 29.0 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 218,573 M FCFA fin 2025, contre 120,089 M fin 2019."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "ETIT": {
+   "ticker": "ETIT",
+   "nom": "Ecobank Transnational Incorporated TOGO",
+   "secteur": "Services financiers",
+   "cours": 64,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 63 – 74 FCFA ; il reste 14.9 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 1.7,
+      "bas": 63,
+      "haut": 74,
+      "dernier": 63,
+      "seances": 60,
+      "ecart_au_haut_pct": -14.9
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 3.3, au 74ᵉ centile de sa propre histoire (médiane 1.6). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 3.3, au 74ᵉ centile de sa propre histoire (médiane 1.6). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 1.4 (1ᵉʳ quartile) à 3.4 (3ᵉ quartile) ; extrêmes observés 1.1 à 4.1.",
+      "Sur l'archive, le cours a varié de +250.0 % : le PER a fait +202.8 %, le bénéfice implicite par action +15.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 3.3,
+      "mediane": 1.62,
+      "q1": 1.39,
+      "q3": 3.35,
+      "minimum": 1.09,
+      "maximum": 4.08,
+      "percentile": 73.7,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 18,
+       "per": 1.09,
+       "benefice_implicite": 16.51
+      },
+      "fin": {
+       "cours": 63,
+       "per": 3.3,
+       "benefice_implicite": 19.09
+      },
+      "variation_cours_pct": 250.0,
+      "variation_benefice_pct": 15.6,
+      "variation_per_pct": 202.8,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +250.0 % : le PER a fait +202.8 %, le bénéfice implicite par action +15.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "0 exercice(s) d'états financiers extraits, il en faut 3",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "FTSC": {
+   "ticker": "FTSC",
+   "nom": "FILTISAC COTE D'IVOIRE",
+   "secteur": "Industriels",
+   "cours": 1800,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 1,800 – 2,190 FCFA ; il reste 17.8 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 5.0,
+      "bas": 1800,
+      "haut": 2190,
+      "dernier": 1800,
+      "seances": 60,
+      "ecart_au_haut_pct": -17.8
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 54.5, soit le 87ᵉ centile de ses 200 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 54.5, soit le 87ᵉ centile de ses 200 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 1.7 (1ᵉʳ quartile) à 2.1 (3ᵉ quartile) ; extrêmes observés 1.4 à 59.8.",
+      "Sur l'archive, le cours a varié de -60.9 % : le PER a fait +1461.0 %, le bénéfice implicite par action -97.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 54.48,
+      "mediane": 1.74,
+      "q1": 1.69,
+      "q3": 2.12,
+      "minimum": 1.45,
+      "maximum": 59.78,
+      "percentile": 87.0,
+      "seances": 200
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 4605,
+       "per": 3.49,
+       "benefice_implicite": 1319.48
+      },
+      "fin": {
+       "cours": 1800,
+       "per": 54.48,
+       "benefice_implicite": 33.04
+      },
+      "variation_cours_pct": -60.9,
+      "variation_benefice_pct": -97.5,
+      "variation_per_pct": 1461.0,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de -60.9 % : le PER a fait +1461.0 %, le bénéfice implicite par action -97.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "neutre",
+     "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+     "details": [
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Activité (chiffre d'affaires ou PNB) : -22.6 % entre 2021 et 2025."
+     ],
+     "exercices": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "2/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "LNBB": {
+   "ticker": "LNBB",
+   "nom": "LOTERIE NATIONALE DU BENIN",
+   "secteur": "Consommation discrétionnaire",
+   "cours": 3900,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (32ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (32ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 3,700 – 4,560 FCFA ; il reste 12.4 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 31.7,
+      "bas": 3700,
+      "haut": 4560,
+      "dernier": 3995,
+      "seances": 60,
+      "ecart_au_haut_pct": -12.4
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 17.3, au 74ᵉ centile de sa propre histoire (médiane 11.5). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 17.3, au 74ᵉ centile de sa propre histoire (médiane 11.5). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 10.9 (1ᵉʳ quartile) à 17.3 (3ᵉ quartile) ; extrêmes observés 10.3 à 19.7.",
+      "Sur l'archive, le cours a varié de -8.4 % : le PER a fait +42.3 %, le bénéfice implicite par action -35.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 17.29,
+      "mediane": 11.54,
+      "q1": 10.86,
+      "q3": 17.31,
+      "minimum": 10.31,
+      "maximum": 19.73,
+      "percentile": 74.0,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 4360,
+       "per": 12.15,
+       "benefice_implicite": 358.85
+      },
+      "fin": {
+       "cours": 3995,
+       "per": 17.29,
+       "benefice_implicite": 231.06
+      },
+      "variation_cours_pct": -8.4,
+      "variation_benefice_pct": -35.6,
+      "variation_per_pct": 42.3,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de -8.4 % : le PER a fait +42.3 %, le bénéfice implicite par action -35.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 4,622 M FCFA, contre 3,914 M en 2023 (+18.1 %, soit +8.7 % par an).",
+     "details": [
+      "Résultat net 2025 : 4,622 M FCFA, contre 3,914 M en 2023 (+18.1 %, soit +8.7 % par an).",
+      "Rentabilité des fonds propres : 21.1 % en 2025 (résultat net / fonds propres de fin d'exercice)."
+     ],
+     "exercices": [
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "2/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "NEIC": {
+   "ticker": "NEIC",
+   "nom": "NEI-CEDA COTE D'IVOIRE",
+   "secteur": "Consommation discrétionnaire",
+   "cours": 2130,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (8ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (8ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 2,090 – 3,000 FCFA ; il reste 29.0 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 8.3,
+      "bas": 2090,
+      "haut": 3000,
+      "dernier": 2130,
+      "seances": 60,
+      "ecart_au_haut_pct": -29.0
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 13.3, au 32ᵉ centile de sa propre histoire (médiane 14.0). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 13.3, au 32ᵉ centile de sa propre histoire (médiane 14.0). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 12.5 (1ᵉʳ quartile) à 14.7 (3ᵉ quartile) ; extrêmes observés 9.2 à 18.8.",
+      "Sur l'archive, le cours a varié de +44.9 % : le PER a fait +45.0 %, le bénéfice implicite par action -0.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 13.35,
+      "mediane": 13.98,
+      "q1": 12.54,
+      "q3": 14.73,
+      "minimum": 9.21,
+      "maximum": 18.8,
+      "percentile": 32.2,
+      "seances": 121
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 1470,
+       "per": 9.21,
+       "benefice_implicite": 159.61
+      },
+      "fin": {
+       "cours": 2130,
+       "per": 13.35,
+       "benefice_implicite": 159.55
+      },
+      "variation_cours_pct": 44.9,
+      "variation_benefice_pct": -0.0,
+      "variation_per_pct": 45.0,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +44.9 % : le PER a fait +45.0 %, le bénéfice implicite par action -0.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "NSBC": {
+   "ticker": "NSBC",
+   "nom": "NSIA BANQUE COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 20700,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 20,510 – 24,885 FCFA ; il reste 16.9 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 3.3,
+      "bas": 20510,
+      "haut": 24885,
+      "dernier": 20680,
+      "seances": 60,
+      "ecart_au_haut_pct": -16.9
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 12.6, au 73ᵉ centile de sa propre histoire (médiane 9.2). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 12.6, au 73ᵉ centile de sa propre histoire (médiane 9.2). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 7.8 (1ᵉʳ quartile) à 12.8 (3ᵉ quartile) ; extrêmes observés 7.1 à 15.1.",
+      "Sur l'archive, le cours a varié de +80.4 % : le PER a fait +68.8 %, le bénéfice implicite par action +6.8 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 12.56,
+      "mediane": 9.15,
+      "q1": 7.76,
+      "q3": 12.76,
+      "minimum": 7.13,
+      "maximum": 15.12,
+      "percentile": 72.9,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 11465,
+       "per": 7.44,
+       "benefice_implicite": 1540.99
+      },
+      "fin": {
+       "cours": 20680,
+       "per": 12.56,
+       "benefice_implicite": 1646.5
+      },
+      "variation_cours_pct": 80.4,
+      "variation_benefice_pct": 6.8,
+      "variation_per_pct": 68.8,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +80.4 % : le PER a fait +68.8 %, le bénéfice implicite par action +6.8 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "0 exercice(s) d'états financiers extraits, il en faut 3",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "NTLC": {
+   "ticker": "NTLC",
+   "nom": "NESTLE COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 14530,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 14,500 – 18,000 FCFA ; il reste 19.3 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 6.7,
+      "bas": 14500,
+      "haut": 18000,
+      "dernier": 14530,
+      "seances": 60,
+      "ecart_au_haut_pct": -19.3
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 17.4, au 66ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 17.4, au 66ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 14.1 (1ᵉʳ quartile) à 18.4 (3ᵉ quartile) ; extrêmes observés 12.5 à 21.6.",
+      "Sur l'archive, le cours a varié de +12.6 % : le PER a fait +10.9 %, le bénéfice implicite par action +1.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 17.4,
+      "mediane": 15.69,
+      "q1": 14.07,
+      "q3": 18.44,
+      "minimum": 12.46,
+      "maximum": 21.56,
+      "percentile": 66.4,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 12905,
+       "per": 15.69,
+       "benefice_implicite": 822.5
+      },
+      "fin": {
+       "cours": 14530,
+       "per": 17.4,
+       "benefice_implicite": 835.06
+      },
+      "variation_cours_pct": 12.6,
+      "variation_benefice_pct": 1.5,
+      "variation_per_pct": 10.9,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +12.6 % : le PER a fait +10.9 %, le bénéfice implicite par action +1.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "ONTBF": {
+   "ticker": "ONTBF",
+   "nom": "ONATEL BURKINA FASO",
+   "secteur": "Télécommunications",
+   "cours": 3090,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "cher",
+     "phrase": "Cours dans le haut de sa fourchette (98ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+     "details": [
+      "Cours dans le haut de sa fourchette (98ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+      "Fourchette observée : 2,760 – 3,115 FCFA ; il reste 1.0 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 98.3,
+      "bas": 2760,
+      "haut": 3115,
+      "dernier": 3085,
+      "seances": 60,
+      "ecart_au_haut_pct": -1.0
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 14.4, soit le 100ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 100 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 14.4, soit le 100ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 100 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 8.3 (1ᵉʳ quartile) à 13.3 (3ᵉ quartile) ; extrêmes observés 7.6 à 14.6.",
+      "Sur l'archive, le cours a varié de +34.1 % : le PER a fait +90.1 %, le bénéfice implicite par action -29.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 14.45,
+      "mediane": 11.1,
+      "q1": 8.26,
+      "q3": 13.35,
+      "minimum": 7.56,
+      "maximum": 14.59,
+      "percentile": 99.6,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 2300,
+       "per": 7.6,
+       "benefice_implicite": 302.63
+      },
+      "fin": {
+       "cours": 3085,
+       "per": 14.45,
+       "benefice_implicite": 213.49
+      },
+      "variation_cours_pct": 34.1,
+      "variation_benefice_pct": -29.5,
+      "variation_per_pct": 90.1,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +34.1 % : le PER a fait +90.1 %, le bénéfice implicite par action -29.5 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "fragile",
+     "phrase": "Résultat net 2025 : 15,887 M FCFA, contre 32,374 M en 2021 (-50.9 %, soit -16.3 % par an).",
+     "details": [
+      "Résultat net 2025 : 15,887 M FCFA, contre 32,374 M en 2021 (-50.9 %, soit -16.3 % par an).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+     ],
+     "exercices": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "ORAC": {
+   "ticker": "ORAC",
+   "nom": "ORANGE COTE D'IVOIRE",
+   "secteur": "Télécommunications",
+   "cours": 20090,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (32ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (32ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 16,725 – 22,500 FCFA ; il reste 11.6 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 31.7,
+      "bas": 16725,
+      "haut": 22500,
+      "dernier": 19900,
+      "seances": 60,
+      "ecart_au_haut_pct": -11.6
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 17.9, soit le 84ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 84 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 17.9, soit le 84ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 84 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 13.7 (1ᵉʳ quartile) à 15.0 (3ᵉ quartile) ; extrêmes observés 12.7 à 20.2.",
+      "Sur l'archive, le cours a varié de +37.2 % : le PER a fait +29.4 %, le bénéfice implicite par action +6.1 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 17.87,
+      "mediane": 14.09,
+      "q1": 13.71,
+      "q3": 14.99,
+      "minimum": 12.66,
+      "maximum": 20.2,
+      "percentile": 84.4,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 14500,
+       "per": 13.81,
+       "benefice_implicite": 1049.96
+      },
+      "fin": {
+       "cours": 19900,
+       "per": 17.87,
+       "benefice_implicite": 1113.6
+      },
+      "variation_cours_pct": 37.2,
+      "variation_benefice_pct": 6.1,
+      "variation_per_pct": 29.4,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +37.2 % : le PER a fait +29.4 %, le bénéfice implicite par action +6.1 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 167,800 M FCFA, contre 155,835 M en 2021 (+7.7 %, soit +1.9 % par an).",
+     "details": [
+      "Résultat net 2025 : 167,800 M FCFA, contre 155,835 M en 2021 (+7.7 %, soit +1.9 % par an).",
+      "Rentabilité des fonds propres : 23.7 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Dette nette 110,100 M FCFA, soit 16 % des fonds propres : levier contenu.",
+      "Flux d'exploitation 335,500 M FCFA, soit 200 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +24.0 % entre 2021 et 2025.",
+      "Dividendes versés 2025 : 192,500 M FCFA, soit 115 % du résultat net (valeur brute publiée -192,500 M ; convention de signe non unifiée entre sociétés)."
+     ],
+     "exercices": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "4/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "ORGT": {
+   "ticker": "ORGT",
+   "nom": "ORAGROUP TOGO",
+   "secteur": "Services financiers",
+   "cours": 2800,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 2,720 – 3,400 FCFA ; il reste 18.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 6.7,
+      "bas": 2720,
+      "haut": 3400,
+      "dernier": 2780,
+      "seances": 60,
+      "ecart_au_haut_pct": -18.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 21,643 M FCFA, contre 9,440 M en 2020 (+129.3 %, soit +18.1 % par an).",
+     "details": [
+      "Résultat net 2025 : 21,643 M FCFA, contre 9,440 M en 2020 (+129.3 %, soit +18.1 % par an).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation 288,054 M FCFA, soit 1331 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Dividendes versés 2025 : 436 M FCFA, soit 2 % du résultat net (valeur brute publiée -436 M ; convention de signe non unifiée entre sociétés)."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "0/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "PALC": {
+   "ticker": "PALC",
+   "nom": "PALM COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 7500,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 7,500 – 9,640 FCFA ; il reste 22.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 3.3,
+      "bas": 7500,
+      "haut": 9640,
+      "dernier": 7500,
+      "seances": 60,
+      "ecart_au_haut_pct": -22.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "bon_marche",
+     "phrase": "PER à 7.5, soit le 3ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+     "details": [
+      "PER à 7.5, soit le 3ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+      "Sa fourchette personnelle va de 7.9 (1ᵉʳ quartile) à 8.8 (3ᵉ quartile) ; extrêmes observés 6.8 à 9.6.",
+      "Sur l'archive, le cours a varié de -17.6 % : le PER a fait -15.7 %, le bénéfice implicite par action -2.3 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 7.48,
+      "mediane": 8.27,
+      "q1": 7.86,
+      "q3": 8.78,
+      "minimum": 6.81,
+      "maximum": 9.61,
+      "percentile": 3.1,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 9100,
+       "per": 8.87,
+       "benefice_implicite": 1025.93
+      },
+      "fin": {
+       "cours": 7500,
+       "per": 7.48,
+       "benefice_implicite": 1002.67
+      },
+      "variation_cours_pct": -17.6,
+      "variation_benefice_pct": -2.3,
+      "variation_per_pct": -15.7,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de -17.6 % : le PER a fait -15.7 %, le bénéfice implicite par action -2.3 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 10.9 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 142,639 M FCFA fin 2025, contre 65,680 M fin 2019.",
+      "Flux d'exploitation 38,741 M FCFA, soit 250 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +89.0 % entre 2019 et 2025.",
+      "Dividendes versés 2025 : 7,931 M FCFA, soit 51 % du résultat net (valeur brute publiée -7,931 M ; convention de signe non unifiée entre sociétés)."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "PRSC": {
+   "ticker": "PRSC",
+   "nom": "TRACTAFRIC MOTORS COTE D'IVOIRE",
+   "secteur": "Consommation discrétionnaire",
+   "cours": 3840,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (17ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (17ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 3,850 – 4,550 FCFA ; il reste 8.8 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 16.7,
+      "bas": 3850,
+      "haut": 4550,
+      "dernier": 4150,
+      "seances": 60,
+      "ecart_au_haut_pct": -8.8
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 17.9, au 42ᵉ centile de sa propre histoire (médiane 18.7). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 17.9, au 42ᵉ centile de sa propre histoire (médiane 18.7). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 16.9 (1ᵉʳ quartile) à 19.6 (3ᵉ quartile) ; extrêmes observés 10.2 à 24.0.",
+      "Sur l'archive, le cours a varié de +45.9 % : le PER a fait +44.6 %, le bénéfice implicite par action +0.8 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 17.95,
+      "mediane": 18.74,
+      "q1": 16.87,
+      "q3": 19.64,
+      "minimum": 10.17,
+      "maximum": 24,
+      "percentile": 41.6,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 2845,
+       "per": 12.41,
+       "benefice_implicite": 229.25
+      },
+      "fin": {
+       "cours": 4150,
+       "per": 17.95,
+       "benefice_implicite": 231.2
+      },
+      "variation_cours_pct": 45.9,
+      "variation_benefice_pct": 0.8,
+      "variation_per_pct": 44.6,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +45.9 % : le PER a fait +44.6 %, le bénéfice implicite par action +0.8 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2024 : 2,177 M FCFA, contre 1,863 M en 2020 (+16.9 %, soit +4.0 % par an).",
+     "details": [
+      "Résultat net 2024 : 2,177 M FCFA, contre 1,863 M en 2020 (+16.9 %, soit +4.0 % par an).",
+      "Fonds propres 2024 : absents des documents indexés — non substitués par zéro.",
+      "Activité (chiffre d'affaires ou PNB) : +45.7 % entre 2020 et 2024."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SAFC": {
+   "ticker": "SAFC",
+   "nom": "SAFCA COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 3820,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 3,800 – 6,200 FCFA ; il reste 37.3 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 5.0,
+      "bas": 3800,
+      "haut": 6200,
+      "dernier": 3890,
+      "seances": 60,
+      "ecart_au_haut_pct": -37.3
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 11.8 % en 2025 (résultat net / fonds propres de fin d'exercice)."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "0/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SCRC": {
+   "ticker": "SCRC",
+   "nom": "SUCRIVOIRE COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 2300,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Sur 20 séances, le cours a baissé de 26.0 % (prix seuls, hors dividende).",
+      "Fourchette observée : 2,120 – 3,800 FCFA ; il reste 43.4 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 5.0,
+      "bas": 2120,
+      "haut": 3800,
+      "dernier": 2150,
+      "seances": 60,
+      "ecart_au_haut_pct": -43.4
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 15.1, soit le 94ᵉ centile de ses 146 séances publiées. La société se paie plus cher qu'elle ne s'est payée 94 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 15.1, soit le 94ᵉ centile de ses 146 séances publiées. La société se paie plus cher qu'elle ne s'est payée 94 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 8.1 (1ᵉʳ quartile) à 11.6 (3ᵉ quartile) ; extrêmes observés 7.5 à 16.1.",
+      "Sur l'archive, le cours a varié de +52.3 % : le PER a fait +52.3 %, le bénéfice implicite par action +0.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 15.09,
+      "mediane": 9.5,
+      "q1": 8.1,
+      "q3": 11.61,
+      "minimum": 7.49,
+      "maximum": 16.08,
+      "percentile": 93.8,
+      "seances": 146
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 1310,
+       "per": 9.91,
+       "benefice_implicite": 132.19
+      },
+      "fin": {
+       "cours": 1995,
+       "per": 15.09,
+       "benefice_implicite": 132.21
+      },
+      "variation_cours_pct": 52.3,
+      "variation_benefice_pct": 0.0,
+      "variation_per_pct": 52.3,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +52.3 % : le PER a fait +52.3 %, le bénéfice implicite par action +0.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "fragile",
+     "phrase": "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+     "details": [
+      "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+      "Rentabilité des fonds propres : -46.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Activité (chiffre d'affaires ou PNB) : +28.9 % entre 2020 et 2025."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "0/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SDCC": {
+   "ticker": "SDCC",
+   "nom": "SODE COTE D'IVOIRE",
+   "secteur": "Services publics",
+   "cours": 11600,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 11,165 – 13,885 FCFA ; il reste 16.4 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 6.7,
+      "bas": 11165,
+      "haut": 13885,
+      "dernier": 11605,
+      "seances": 60,
+      "ecart_au_haut_pct": -16.4
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 17.8, au 67ᵉ centile de sa propre histoire (médiane 16.4). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 17.8, au 67ᵉ centile de sa propre histoire (médiane 16.4). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 13.9 (1ᵉʳ quartile) à 18.3 (3ᵉ quartile) ; extrêmes observés 11.1 à 21.2.",
+      "Sur l'archive, le cours a varié de +86.3 % : le bénéfice implicite par action a fait +48.5 %, le PER +25.4 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 17.76,
+      "mediane": 16.43,
+      "q1": 13.87,
+      "q3": 18.26,
+      "minimum": 11.1,
+      "maximum": 21.25,
+      "percentile": 66.8,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 6230,
+       "per": 14.16,
+       "benefice_implicite": 439.97
+      },
+      "fin": {
+       "cours": 11605,
+       "per": 17.76,
+       "benefice_implicite": 653.43
+      },
+      "variation_cours_pct": 86.3,
+      "variation_benefice_pct": 48.5,
+      "variation_per_pct": 25.4,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de +86.3 % : le bénéfice implicite par action a fait +48.5 %, le PER +25.4 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 5,879 M FCFA, contre 1 M en 2020 (+587800.0 %, soit +467.4 % par an).",
+     "details": [
+      "Résultat net 2025 : 5,879 M FCFA, contre 1 M en 2020 (+587800.0 %, soit +467.4 % par an).",
+      "Rentabilité des fonds propres : 21.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Dette nette 71,900 M FCFA, soit 258 % des fonds propres : levier à surveiller le jour où les taux montent.",
+      "Flux d'exploitation -35,060 M FCFA, soit -596 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
+      "Dividendes versés 2025 : 3,600 M FCFA, soit 61 % du résultat net (valeur brute publiée -3,600 M ; convention de signe non unifiée entre sociétés)."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SDSC": {
+   "ticker": "SDSC",
+   "nom": "AFRICA GLOBAL LOGISTICS COTE D'IVOIRE",
+   "secteur": "Industriels",
+   "cours": 2950,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (63ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (63ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 2,355 – 3,205 FCFA ; il reste 8.0 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 63.3,
+      "bas": 2355,
+      "haut": 3205,
+      "dernier": 2950,
+      "seances": 60,
+      "ecart_au_haut_pct": -8.0
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 7.0, soit le 96ᵉ centile de ses 207 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 7.0, soit le 96ᵉ centile de ses 207 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 3.9 (1ᵉʳ quartile) à 5.2 (3ᵉ quartile) ; extrêmes observés 3.6 à 7.3.",
+      "Sur l'archive, le cours a varié de +96.7 % : le PER a fait +5172.4 %, le bénéfice implicite par action -96.3 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 6.95,
+      "mediane": 4.41,
+      "q1": 3.85,
+      "q3": 5.17,
+      "minimum": 3.62,
+      "maximum": 7.29,
+      "percentile": 96.1,
+      "seances": 207
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 1500,
+       "per": 3.88,
+       "benefice_implicite": 386.6
+      },
+      "fin": {
+       "cours": 2950,
+       "per": 204.57,
+       "benefice_implicite": 14.42
+      },
+      "variation_cours_pct": 96.7,
+      "variation_benefice_pct": -96.3,
+      "variation_per_pct": 5172.4,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +96.7 % : le PER a fait +5172.4 %, le bénéfice implicite par action -96.3 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "neutre",
+     "phrase": "Rentabilité des fonds propres : 115.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+     "details": [
+      "Rentabilité des fonds propres : 115.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Dividendes versés 2025 : 5,008 M FCFA, soit 638 % du résultat net (valeur brute publiée -5,008 M ; convention de signe non unifiée entre sociétés)."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SEMC": {
+   "ticker": "SEMC",
+   "nom": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
+   "secteur": "Industriels",
+   "cours": 1495,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (37ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (37ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 1,350 – 1,600 FCFA ; il reste 6.6 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 36.7,
+      "bas": 1350,
+      "haut": 1600,
+      "dernier": 1495,
+      "seances": 60,
+      "ecart_au_haut_pct": -6.6
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 37.2, au 57ᵉ centile de sa propre histoire (médiane 37.2). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 37.2, au 57ᵉ centile de sa propre histoire (médiane 37.2). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 17.4 (1ᵉʳ quartile) à 39.1 (3ᵉ quartile) ; extrêmes observés 17.4 à 59.4.",
+      "Sur l'archive, le cours a varié de +99.3 % : le PER a fait +99.3 %, le bénéfice implicite par action +0.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 37.21,
+      "mediane": 37.21,
+      "q1": 17.42,
+      "q3": 39.08,
+      "minimum": 17.42,
+      "maximum": 59.36,
+      "percentile": 57.3,
+      "seances": 253
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 750,
+       "per": 18.67,
+       "benefice_implicite": 40.17
+      },
+      "fin": {
+       "cours": 1495,
+       "per": 37.21,
+       "benefice_implicite": 40.18
+      },
+      "variation_cours_pct": 99.3,
+      "variation_benefice_pct": 0.0,
+      "variation_per_pct": 99.3,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +99.3 % : le PER a fait +99.3 %, le bénéfice implicite par action +0.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2023 : 1,012 M FCFA, contre 690 M en 2019 (+46.6 %, soit +10.0 % par an).",
+     "details": [
+      "Résultat net 2023 : 1,012 M FCFA, contre 690 M en 2019 (+46.6 %, soit +10.0 % par an).",
+      "Fonds propres 2023 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation 484 M FCFA, soit 48 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
+      "Activité (chiffre d'affaires ou PNB) : +49.2 % entre 2019 et 2023."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+     ],
+     "paiements_dividendes": "0/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SGBC": {
+   "ticker": "SGBC",
+   "nom": "SOCIETE GENERALE COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 38900,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "cher",
+     "phrase": "Cours dans le haut de sa fourchette (85ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+     "details": [
+      "Cours dans le haut de sa fourchette (85ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+      "Fourchette observée : 37,800 – 40,000 FCFA ; il reste 2.5 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 85.0,
+      "bas": 37800,
+      "haut": 40000,
+      "dernier": 39000,
+      "seances": 60,
+      "ecart_au_haut_pct": -2.5
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 12.0, soit le 96ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 12.0, soit le 96ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 8.9 (1ᵉʳ quartile) à 11.7 (3ᵉ quartile) ; extrêmes observés 8.1 à 12.3.",
+      "Sur l'archive, le cours a varié de +44.4 % : le PER a fait +44.2 %, le bénéfice implicite par action +0.1 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 11.97,
+      "mediane": 10.68,
+      "q1": 8.91,
+      "q3": 11.71,
+      "minimum": 8.06,
+      "maximum": 12.28,
+      "percentile": 95.8,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 27005,
+       "per": 8.3,
+       "benefice_implicite": 3253.61
+      },
+      "fin": {
+       "cours": 39000,
+       "per": 11.97,
+       "benefice_implicite": 3258.15
+      },
+      "variation_cours_pct": 44.4,
+      "variation_benefice_pct": 0.1,
+      "variation_per_pct": 44.2,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +44.4 % : le PER a fait +44.2 %, le bénéfice implicite par action +0.1 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 101,228 M FCFA, contre 10,116 M en 2021 (+900.7 %, soit +77.9 % par an).",
+     "details": [
+      "Résultat net 2025 : 101,228 M FCFA, contre 10,116 M en 2021 (+900.7 %, soit +77.9 % par an).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+     ],
+     "exercices": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "4/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "calcule",
+    "actions": 31111110,
+    "valeur_fcfa": 1210222179000,
+    "base": "nombre d'actions lu dans un document officiel × dernier cours publié"
+   },
+   "note": ""
+  },
+  "SHEC": {
+   "ticker": "SHEC",
+   "nom": "VIVO ENERGY COTE D'IVOIRE",
+   "secteur": "Énergie",
+   "cours": 2190,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Sur 20 séances, le cours a baissé de 19.3 % (prix seuls, hors dividende).",
+      "Fourchette observée : 2,070 – 2,980 FCFA ; il reste 27.5 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 6.7,
+      "bas": 2070,
+      "haut": 2980,
+      "dernier": 2160,
+      "seances": 60,
+      "ecart_au_haut_pct": -27.5
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 22.6, au 55ᵉ centile de sa propre histoire (médiane 21.8). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 22.6, au 55ᵉ centile de sa propre histoire (médiane 21.8). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 18.2 (1ᵉʳ quartile) à 23.8 (3ᵉ quartile) ; extrêmes observés 12.8 à 31.1.",
+      "Sur l'archive, le cours a varié de +83.8 % : le PER a fait +63.2 %, le bénéfice implicite par action +12.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 22.57,
+      "mediane": 21.78,
+      "q1": 18.18,
+      "q3": 23.78,
+      "minimum": 12.83,
+      "maximum": 31.14,
+      "percentile": 55.3,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 1175,
+       "per": 13.83,
+       "benefice_implicite": 84.96
+      },
+      "fin": {
+       "cours": 2160,
+       "per": 22.57,
+       "benefice_implicite": 95.7
+      },
+      "variation_cours_pct": 83.8,
+      "variation_benefice_pct": 12.6,
+      "variation_per_pct": 63.2,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +83.8 % : le PER a fait +63.2 %, le bénéfice implicite par action +12.6 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SIBC": {
+   "ticker": "SIBC",
+   "nom": "SOCIETE IVOIRIENNE DE BANQUE COTE D'IVOIRE",
+   "secteur": "Services financiers",
+   "cours": 8605,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (3ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 8,510 – 9,500 FCFA ; il reste 9.5 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 3.3,
+      "bas": 8510,
+      "haut": 9500,
+      "dernier": 8600,
+      "seances": 60,
+      "ecart_au_haut_pct": -9.5
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 15.5, au 64ᵉ centile de sa propre histoire (médiane 13.7). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 15.5, au 64ᵉ centile de sa propre histoire (médiane 13.7). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 11.5 (1ᵉʳ quartile) à 15.9 (3ᵉ quartile) ; extrêmes observés 10.8 à 17.1.",
+      "Sur l'archive, le cours a varié de +50.7 % : le PER a fait +36.2 %, le bénéfice implicite par action +10.7 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 15.47,
+      "mediane": 13.69,
+      "q1": 11.48,
+      "q3": 15.93,
+      "minimum": 10.76,
+      "maximum": 17.09,
+      "percentile": 64.1,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 5705,
+       "per": 11.36,
+       "benefice_implicite": 502.2
+      },
+      "fin": {
+       "cours": 8600,
+       "per": 15.47,
+       "benefice_implicite": 555.91
+      },
+      "variation_cours_pct": 50.7,
+      "variation_benefice_pct": 10.7,
+      "variation_per_pct": 36.2,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +50.7 % : le PER a fait +36.2 %, le bénéfice implicite par action +10.7 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Rentabilité des fonds propres : 27.2 % en 2025 (résultat net / fonds propres de fin d'exercice)."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SICC": {
+   "ticker": "SICC",
+   "nom": "SICOR COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 8400,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "cher",
+     "phrase": "Cours dans le haut de sa fourchette (80ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+     "details": [
+      "Cours dans le haut de sa fourchette (80ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+      "Fourchette observée : 4,380 – 10,200 FCFA ; il reste 17.6 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 80.0,
+      "bas": 4380,
+      "haut": 10200,
+      "dernier": 8400,
+      "seances": 60,
+      "ecart_au_haut_pct": -17.6
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "4 exercice(s) présents mais aucune grandeur exploitable (résultat net, fonds propres, flux ou dividende absents)",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SIVC": {
+   "ticker": "SIVC",
+   "nom": "ERIUM COTE D’IVOIRE",
+   "secteur": "Industriels",
+   "cours": 1700,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Sur 20 séances, le cours a baissé de 19.5 % (prix seuls, hors dividende).",
+      "Fourchette observée : 1,610 – 2,430 FCFA ; il reste 33.7 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 1.7,
+      "bas": 1610,
+      "haut": 2430,
+      "dernier": 1610,
+      "seances": 60,
+      "ecart_au_haut_pct": -33.7
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "a_verifier",
+     "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+     "details": [
+      "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation 992 M FCFA, soit 553 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +40.5 % entre 2019 et 2025."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2025
+     ],
+     "paiements_dividendes": "0/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SLBC": {
+   "ticker": "SLBC",
+   "nom": "SOLIBRA COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 39000,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "cher",
+     "phrase": "Cours dans le haut de sa fourchette (95ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+     "details": [
+      "Cours dans le haut de sa fourchette (95ᵉ centile sur 60 séances). Payer aujourd'hui revient à payer le haut du parcours récent.",
+      "Fourchette observée : 36,900 – 39,690 FCFA ; il reste 1.8 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 95.0,
+      "bas": 36900,
+      "haut": 39690,
+      "dernier": 38990,
+      "seances": 60,
+      "ecart_au_haut_pct": -1.8
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 14.0, au 38ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 14.0, au 38ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 13.8 (1ᵉʳ quartile) à 22.2 (3ᵉ quartile) ; extrêmes observés 13.3 à 34.1.",
+      "Sur l'archive, le cours a varié de +108.8 % : le bénéfice implicite par action a fait +113.2 %, le PER -2.1 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 14.02,
+      "mediane": 15.67,
+      "q1": 13.79,
+      "q3": 22.21,
+      "minimum": 13.27,
+      "maximum": 34.12,
+      "percentile": 38.5,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 18675,
+       "per": 14.32,
+       "benefice_implicite": 1304.12
+      },
+      "fin": {
+       "cours": 38990,
+       "per": 14.02,
+       "benefice_implicite": 2781.03
+      },
+      "variation_cours_pct": 108.8,
+      "variation_benefice_pct": 113.2,
+      "variation_per_pct": -2.1,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de +108.8 % : le bénéfice implicite par action a fait +113.2 %, le PER -2.1 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 45,781 M FCFA, contre 17,520 M en 2020 (+161.3 %, soit +21.2 % par an).",
+     "details": [
+      "Résultat net 2025 : 45,781 M FCFA, contre 17,520 M en 2020 (+161.3 %, soit +21.2 % par an).",
+      "Rentabilité des fonds propres : 23.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 195,142 M FCFA fin 2025, contre 126,775 M fin 2020.",
+      "Activité (chiffre d'affaires ou PNB) : +64.9 % entre 2020 et 2025."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "3/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SMBC": {
+   "ticker": "SMBC",
+   "nom": "SMB COTE D'IVOIRE",
+   "secteur": "Énergie",
+   "cours": 14395,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (2ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 14,505 – 18,500 FCFA ; il reste 21.6 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 1.7,
+      "bas": 14505,
+      "haut": 18500,
+      "dernier": 14505,
+      "seances": 60,
+      "ecart_au_haut_pct": -21.6
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 8.7, au 28ᵉ centile de sa propre histoire (médiane 9.4). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 8.7, au 28ᵉ centile de sa propre histoire (médiane 9.4). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 8.6 (1ᵉʳ quartile) à 10.3 (3ᵉ quartile) ; extrêmes observés 6.9 à 12.6.",
+      "Sur l'archive, le cours a varié de +54.2 % : le bénéfice implicite par action a fait +50.3 %, le PER +2.6 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 8.65,
+      "mediane": 9.37,
+      "q1": 8.6,
+      "q3": 10.31,
+      "minimum": 6.86,
+      "maximum": 12.55,
+      "percentile": 27.5,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 9405,
+       "per": 8.43,
+       "benefice_implicite": 1115.66
+      },
+      "fin": {
+       "cours": 14505,
+       "per": 8.65,
+       "benefice_implicite": 1676.88
+      },
+      "variation_cours_pct": 54.2,
+      "variation_benefice_pct": 50.3,
+      "variation_per_pct": 2.6,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de +54.2 % : le bénéfice implicite par action a fait +50.3 %, le PER +2.6 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 13,075 M FCFA, contre 9,396 M en 2020 (+39.2 %, soit +6.8 % par an).",
+     "details": [
+      "Résultat net 2025 : 13,075 M FCFA, contre 9,396 M en 2020 (+39.2 %, soit +6.8 % par an).",
+      "Rentabilité des fonds propres : 30.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 42,913 M FCFA fin 2025, contre 20,139 M fin 2020.",
+      "Activité (chiffre d'affaires ou PNB) : +101.4 % entre 2020 et 2025."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "4/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SNTS": {
+   "ticker": "SNTS",
+   "nom": "SONATEL SENEGAL",
+   "secteur": "Télécommunications",
+   "cours": 42000,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (65ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (65ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 30,200 – 45,000 FCFA ; il reste 7.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 65.0,
+      "bas": 30200,
+      "haut": 45000,
+      "dernier": 41745,
+      "seances": 60,
+      "ecart_au_haut_pct": -7.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 10.1, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 10.1, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 6.6 (1ᵉʳ quartile) à 7.5 (3ᵉ quartile) ; extrêmes observés 6.2 à 10.9.",
+      "Sur l'archive, le cours a varié de +61.1 % : le PER a fait +53.3 %, le bénéfice implicite par action +5.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 10.09,
+      "mediane": 6.89,
+      "q1": 6.6,
+      "q3": 7.5,
+      "minimum": 6.2,
+      "maximum": 10.88,
+      "percentile": 92.0,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 25915,
+       "per": 6.58,
+       "benefice_implicite": 3938.45
+      },
+      "fin": {
+       "cours": 41745,
+       "per": 10.09,
+       "benefice_implicite": 4137.26
+      },
+      "variation_cours_pct": 61.1,
+      "variation_benefice_pct": 5.0,
+      "variation_per_pct": 53.3,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +61.1 % : le PER a fait +53.3 %, le bénéfice implicite par action +5.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 413,588 M FCFA, contre 278,912 M en 2022 (+48.3 %, soit +14.0 % par an).",
+     "details": [
+      "Résultat net 2025 : 413,588 M FCFA, contre 278,912 M en 2022 (+48.3 %, soit +14.0 % par an).",
+      "Rentabilité des fonds propres : 29.6 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 1,399,263 M FCFA fin 2025, contre 898,523 M fin 2022.",
+      "Dette nette -133,419 M FCFA, soit -10 % des fonds propres : levier contenu.",
+      "Flux d'exploitation 681,606 M FCFA, soit 165 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +32.2 % entre 2022 et 2025."
+     ],
+     "exercices": [
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SOGC": {
+   "ticker": "SOGC",
+   "nom": "SOGB COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 7600,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (17ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (17ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 7,300 – 8,875 FCFA ; il reste 12.7 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 16.7,
+      "bas": 7300,
+      "haut": 8875,
+      "dernier": 7750,
+      "seances": 60,
+      "ecart_au_haut_pct": -12.7
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 13.4, au 47ᵉ centile de sa propre histoire (médiane 13.6). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 13.4, au 47ᵉ centile de sa propre histoire (médiane 13.6). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 12.9 (1ᵉʳ quartile) à 14.3 (3ᵉ quartile) ; extrêmes observés 12.1 à 15.3.",
+      "Sur l'archive, le cours a varié de -1.8 % : le bénéfice implicite par action a fait -4.7 %, le PER +3.0 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 13.4,
+      "mediane": 13.57,
+      "q1": 12.93,
+      "q3": 14.27,
+      "minimum": 12.11,
+      "maximum": 15.35,
+      "percentile": 46.9,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 7895,
+       "per": 13.01,
+       "benefice_implicite": 606.84
+      },
+      "fin": {
+       "cours": 7750,
+       "per": 13.4,
+       "benefice_implicite": 578.36
+      },
+      "variation_cours_pct": -1.8,
+      "variation_benefice_pct": -4.7,
+      "variation_per_pct": 3.0,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de -1.8 % : le bénéfice implicite par action a fait -4.7 %, le PER +3.0 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "fragile",
+     "phrase": "Résultat net 2025 : 12,493 M FCFA, contre 14,728 M en 2021 (-15.2 %, soit -4.0 % par an).",
+     "details": [
+      "Résultat net 2025 : 12,493 M FCFA, contre 14,728 M en 2021 (-15.2 %, soit -4.0 % par an).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation 22,644 M FCFA, soit 181 % du résultat net : le bénéfice se transforme en trésorerie."
+     ],
+     "exercices": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "SPHC": {
+   "ticker": "SPHC",
+   "nom": "SAPH COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 7620,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (23ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (23ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 7,400 – 10,300 FCFA ; il reste 26.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 23.3,
+      "bas": 7400,
+      "haut": 10300,
+      "dernier": 7600,
+      "seances": 60,
+      "ecart_au_haut_pct": -26.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 7.8, au 30ᵉ centile de sa propre histoire (médiane 9.5). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 7.8, au 30ᵉ centile de sa propre histoire (médiane 9.5). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 7.7 (1ᵉʳ quartile) à 10.5 (3ᵉ quartile) ; extrêmes observés 6.9 à 11.7.",
+      "Sur l'archive, le cours a varié de +4.5 % : le bénéfice implicite par action a fait +32.9 %, le PER -21.4 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 7.78,
+      "mediane": 9.48,
+      "q1": 7.74,
+      "q3": 10.47,
+      "minimum": 6.88,
+      "maximum": 11.68,
+      "percentile": 30.5,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 7275,
+       "per": 9.9,
+       "benefice_implicite": 734.85
+      },
+      "fin": {
+       "cours": 7600,
+       "per": 7.78,
+       "benefice_implicite": 976.86
+      },
+      "variation_cours_pct": 4.5,
+      "variation_benefice_pct": 32.9,
+      "variation_per_pct": -21.4,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de +4.5 % : le bénéfice implicite par action a fait +32.9 %, le PER -21.4 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "neutre",
+     "phrase": "Activité (chiffre d'affaires ou PNB) : +114.6 % entre 2020 et 2025.",
+     "details": [
+      "Activité (chiffre d'affaires ou PNB) : +114.6 % entre 2020 et 2025."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "STAC": {
+   "ticker": "STAC",
+   "nom": "SETAO COTE D'IVOIRE",
+   "secteur": "Industriels",
+   "cours": 1935,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (5ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 1,895 – 2,850 FCFA ; il reste 30.7 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 5.0,
+      "bas": 1895,
+      "haut": 2850,
+      "dernier": 1975,
+      "seances": 60,
+      "ecart_au_haut_pct": -30.7
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "fragile",
+     "phrase": "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+     "details": [
+      "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation -2,212 M FCFA, soit 2290 % du résultat net : le bénéfice se transforme en trésorerie."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "1/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "STBC": {
+   "ticker": "STBC",
+   "nom": "SITAB COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 21300,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (7ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 20,895 – 25,000 FCFA ; il reste 15.4 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 6.7,
+      "bas": 20895,
+      "haut": 25000,
+      "dernier": 21150,
+      "seances": 60,
+      "ecart_au_haut_pct": -15.4
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 10.4, au 59ᵉ centile de sa propre histoire (médiane 8.6). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 10.4, au 59ᵉ centile de sa propre histoire (médiane 8.6). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 7.9 (1ᵉʳ quartile) à 10.8 (3ᵉ quartile) ; extrêmes observés 7.5 à 12.3.",
+      "Sur l'archive, le cours a varié de +10.2 % : le PER a fait +35.0 %, le bénéfice implicite par action -18.4 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 10.41,
+      "mediane": 8.63,
+      "q1": 7.94,
+      "q3": 10.83,
+      "minimum": 7.55,
+      "maximum": 12.31,
+      "percentile": 58.8,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 19200,
+       "per": 7.71,
+       "benefice_implicite": 2490.27
+      },
+      "fin": {
+       "cours": 21150,
+       "per": 10.41,
+       "benefice_implicite": 2031.7
+      },
+      "variation_cours_pct": 10.2,
+      "variation_benefice_pct": -18.4,
+      "variation_per_pct": 35.0,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +10.2 % : le PER a fait +35.0 %, le bénéfice implicite par action -18.4 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "solide",
+     "phrase": "Résultat net 2025 : 36,464 M FCFA, contre 8,543 M en 2020 (+326.8 %, soit +33.7 % par an).",
+     "details": [
+      "Résultat net 2025 : 36,464 M FCFA, contre 8,543 M en 2020 (+326.8 %, soit +33.7 % par an).",
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation 18,472 M FCFA, soit 51 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "TTLC": {
+   "ticker": "TTLC",
+   "nom": "TOTALENERGIES MARKETING COTE D'IVOIRE",
+   "secteur": "Énergie",
+   "cours": 2900,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (8ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (8ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Fourchette observée : 2,770 – 3,595 FCFA ; il reste 19.5 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 8.3,
+      "bas": 2770,
+      "haut": 3595,
+      "dernier": 2895,
+      "seances": 60,
+      "ecart_au_haut_pct": -19.5
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "moyen",
+     "phrase": "PER à 20.1, au 69ᵉ centile de sa propre histoire (médiane 19.1). La valorisation est dans son cours habituel.",
+     "details": [
+      "PER à 20.1, au 69ᵉ centile de sa propre histoire (médiane 19.1). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 16.1 (1ᵉʳ quartile) à 20.4 (3ᵉ quartile) ; extrêmes observés 15.2 à 24.9.",
+      "Sur l'archive, le cours a varié de +18.2 % : le PER a fait +21.9 %, le bénéfice implicite par action -3.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 20.06,
+      "mediane": 19.05,
+      "q1": 16.05,
+      "q3": 20.37,
+      "minimum": 15.25,
+      "maximum": 24.91,
+      "percentile": 69.1,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 2450,
+       "per": 16.46,
+       "benefice_implicite": 148.85
+      },
+      "fin": {
+       "cours": 2895,
+       "per": 20.06,
+       "benefice_implicite": 144.32
+      },
+      "variation_cours_pct": 18.2,
+      "variation_benefice_pct": -3.0,
+      "variation_per_pct": 21.9,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +18.2 % : le PER a fait +21.9 %, le bénéfice implicite par action -3.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "neutre",
+     "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+     "details": [
+      "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
+      "Activité (chiffre d'affaires ou PNB) : +41.5 % entre 2020 et 2025."
+     ],
+     "exercices": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "TTLS": {
+   "ticker": "TTLS",
+   "nom": "TOTALENERGIES MARKETING SENEGAL",
+   "secteur": "Énergie",
+   "cours": 3690,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (53ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (53ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Fourchette observée : 3,450 – 4,000 FCFA ; il reste 7.5 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 53.3,
+      "bas": 3450,
+      "haut": 4000,
+      "dernier": 3700,
+      "seances": 60,
+      "ecart_au_haut_pct": -7.5
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "calcule",
+     "horizon": "moyen",
+     "ton": "cher",
+     "phrase": "PER à 17.8, soit le 82ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 82 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "details": [
+      "PER à 17.8, soit le 82ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 82 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 11.6 (1ᵉʳ quartile) à 17.4 (3ᵉ quartile) ; extrêmes observés 10.7 à 21.6.",
+      "Sur l'archive, le cours a varié de +51.0 % : le PER a fait +59.0 %, le bénéfice implicite par action -5.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 17.78,
+      "mediane": 14.59,
+      "q1": 11.59,
+      "q3": 17.4,
+      "minimum": 10.72,
+      "maximum": 21.63,
+      "percentile": 82.1,
+      "seances": 262
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 2450,
+       "per": 11.18,
+       "benefice_implicite": 219.14
+      },
+      "fin": {
+       "cours": 3700,
+       "per": 17.78,
+       "benefice_implicite": 208.1
+      },
+      "variation_cours_pct": 51.0,
+      "variation_benefice_pct": -5.0,
+      "variation_per_pct": 59.0,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +51.0 % : le PER a fait +59.0 %, le bénéfice implicite par action -5.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "UNLC": {
+   "ticker": "UNLC",
+   "nom": "UNILEVER COTE D'IVOIRE",
+   "secteur": "Consommation de base",
+   "cours": 45000,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "bas",
+     "phrase": "Cours dans le bas de sa fourchette (10ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+     "details": [
+      "Cours dans le bas de sa fourchette (10ᵉ centile sur 60 séances). Le marché ne paie pas cher cette société par rapport à son propre parcours récent.",
+      "Sur 20 séances, le cours a baissé de 13.2 % (prix seuls, hors dividende).",
+      "Fourchette observée : 44,410 – 58,000 FCFA ; il reste 22.2 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 10.0,
+      "bas": 44410,
+      "haut": 58000,
+      "dernier": 45110,
+      "seances": 60,
+      "ecart_au_haut_pct": -22.2
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "calcule",
+     "horizon": "long",
+     "ton": "fragile",
+     "phrase": "Résultat net 2023 : 640 M FCFA, contre -21,857 M en 2019 (-102.9 %).",
+     "details": [
+      "Résultat net 2023 : 640 M FCFA, contre -21,857 M en 2019 (-102.9 %).",
+      "Rentabilité des fonds propres : -6.0 % en 2023 (résultat net / fonds propres de fin d'exercice).",
+      "Flux d'exploitation -402 M FCFA, soit -63 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
+      "Activité (chiffre d'affaires ou PNB) : -38.5 % entre 2019 et 2023."
+     ],
+     "exercices": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+     ],
+     "paiements_dividendes": "0/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  },
+  "UNXC": {
+   "ticker": "UNXC",
+   "nom": "UNIWAX COTE D'IVOIRE",
+   "secteur": "Consommation discrétionnaire",
+   "cours": 2050,
+   "horizons": {
+    "court": {
+     "statut": "calcule",
+     "horizon": "court",
+     "ton": "milieu",
+     "phrase": "Cours au milieu de sa fourchette (25ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+     "details": [
+      "Cours au milieu de sa fourchette (25ᵉ centile sur 60 séances) : pas de pression de prix dans un sens ou dans l'autre.",
+      "Sur 20 séances, le cours a baissé de 11.8 % (prix seuls, hors dividende).",
+      "Fourchette observée : 1,890 – 2,495 FCFA ; il reste 17.8 % sous le haut."
+     ],
+     "donnees": {
+      "percentile": 25.0,
+      "bas": 1890,
+      "haut": 2495,
+      "dernier": 2050,
+      "seances": 60,
+      "ecart_au_haut_pct": -17.8
+     },
+     "regle": "percentile du dernier cours dans ses 60 dernières clôtures publiées",
+     "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
+    },
+    "moyen": {
+     "statut": "non_calculable",
+     "horizon": "moyen",
+     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "regle": "PER comparé à sa propre distribution historique"
+    },
+    "long": {
+     "statut": "non_calculable",
+     "horizon": "long",
+     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
+     "regle": "états financiers officiels sur trois exercices ou plus"
+    }
+   },
+   "capitalisation": {
+    "statut": "non_calculable",
+    "raison": "nombre d'actions absent des documents indexés pour cette société"
+   },
+   "note": ""
+  }
+ }
+}
