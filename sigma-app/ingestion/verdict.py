@@ -1156,6 +1156,23 @@ def resume(verdicts: dict[str, Verdict]) -> dict:
         "revenu_absent": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuve") == "absente"),
         "rendement_calcule": sum(1 for v in verdicts.values() if (v.revenu or {}).get("rendement_pct") is not None),
         "revenu_trois_preuves": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuves_reunies") == 3),
+        # La cible honnête, comptée exactement : trois exercices de rentabilité
+        # réels, un moyen et un long terme de profondeur pleine. On ne compte
+        # pas « trois horizons calculés » — un horizon peut être calculé avec
+        # deux exercices et ne rien prouver.
+        "valorisables_3_exercices": sum(
+            1 for v in verdicts.values()
+            if v.horizons["moyen"].get("profondeur") == "pleine"
+            and v.horizons["long"].get("profondeur") == "pleine"
+            and len((v.entreprise or {}).get("exercices") or []) >= 3
+        ),
+        "valorisables_complets": sum(
+            1 for v in verdicts.values()
+            if v.horizons["moyen"].get("profondeur") == "pleine"
+            and v.horizons["long"].get("profondeur") == "pleine"
+            and len((v.entreprise or {}).get("exercices") or []) >= 3
+            and (v.revenu or {}).get("preuve") == "documentaire"
+        ),
         "trois_horizons_complets": sum(
             1 for v in verdicts.values()
             if all(v.horizons[h].get("statut") == "calcule" for h in ("court", "moyen", "long"))
