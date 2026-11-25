@@ -70,6 +70,10 @@ SEUIL_PERFIANCE_COURT = 10.0     # variation 20 séances qui mérite une explica
 #   PLEIN     — la série est assez longue pour une distribution complète ;
 #   LIMITE    — la série existe mais est courte : on répond, en le disant.
 # Un refus silencieux serait aussi trompeur qu'une affirmation sans base.
+# Un saut de cours n'est retenu comme événement que s'il a été payé : en dessous
+# de 5 M FCFA échangés, la variation d'une séance décrit un prix de passage.
+SEUIL_SAUT_VALEUR = 5_000_000
+
 PER_SEANCES_PLEIN = 120
 PER_SEANCES_LIMITE = 30          # en dessous, aucune lecture sérieuse n'est possible
 MIN_EXERCICES = 3                # exercices nécessaires pour une lecture long terme pleine
@@ -374,6 +378,178 @@ def lecture_long(company: dict) -> dict:
 # ── Assemblage ─────────────────────────────────────────────────────────────
 
 
+# ── Ce qui fait bouger un cours, et ce qu'on peut en anticiper ────────────
+
+def limites_variation(archive: dict) -> dict:
+    """Le plafond et le plancher de la BRVM, mesurés sur l'archive.
+
+    Sur 12 332 variations de séance, **aucune** ne dépasse 7,5 % : 67 tombent
+    exactement sur la borne. C'est une contrainte de cotation, pas une
+    convention de lecture, et elle change la nature du risque : sur une séance,
+    le pire perte possible est bornée.
+    """
+    champs = archive["row_fields"]
+    i = champs.index("variation_pct")
+    vals = [ligne[i] for s in archive["sessions"] for ligne in s["rows"].values()
+            if isinstance(ligne[i], (int, float))]
+    if not vals:
+        return {"statut": "non_calculable"}
+    extr = max(abs(v) for v in vals)
+    au_plafond = sum(1 for v in vals if abs(abs(v) - extr) < 0.001)
+    return {"statut": "calcule", "amplitude_max_pct": extr, "observations": len(vals),
+            "seances_au_plafond": au_plafond,
+            "note": ("amplitude maximale observée sur l'archive ; au-delà de la borne, la séance est close "
+                     "sur plafond ou plancher et le titre ne s'échange plus à ce prix")}
+
+
+def sauts(archive: dict, seuil: float = 5.0) -> dict:
+    """Combien de fois un cours a sauté de plus de 5 % en une séance, et pourquoi.
+
+    Ce n'est pas de la prévision : c'est le comptage de ce qui est déjà arrivé,
+    avec la valeur échangée au moment du saut. Un saut sur un titre qui échange
+    9 M FCFA n'est pas le même événement qu'un saut sur un titre qui échange
+    900 M : le premier se rejoue, le second est une information.
+    """
+    champs = archive["row_fields"]
+    iv, iq, ivol = champs.index("variation_pct"), champs.index("traded_value_fcfa"), champs.index("volume")
+    par_titre: dict[str, list] = {}
+    valeurs = []
+    for s in archive["sessions"]:
+        for t, ligne in s["rows"].items():
+            v = ligne[iv]
+            if isinstance(v, (int, float)) and abs(v) >= seuil:
+                valeurs.append(ligne[iq] or 0)
+                par_titre.setdefault(t, []).append({"date": s["date"], "variation_pct": v,
+                                                    "valeur_echangee": ligne[iq],
+                                                    "volume": ligne[ivol]})
+    if not valeurs:
+        return {"statut": "aucun_saut"}
+    valeurs.sort()
+    mediane = valeurs[len(valeurs) // 2]
+    return {"statut": "calcule", "seuil_pct": seuil, "nombre": sum(len(v) for v in par_titre.values()),
+            "titres": len(par_titre), "valeur_mediane_fcfa": mediane,
+            "part_sous_10m_pct": round(100 * sum(1 for v in valeurs if v < 10_000_000) / len(valeurs), 1),
+            "detail": {t: sorted(v, key=lambda x: x["date"], reverse=True)[:5] for t, v in par_titre.items()}}
+
+
+def reactions(company: dict, archive: dict) -> dict:
+    """Un saut de cours est-il suivi d'un retour, ou d'une continuation ?
+
+    Mesuré sur cette société, dans cette archive. Répond à la question réelle :
+    « après une chute, est-ce que ça remonte ? » — par un taux de retour observé,
+    jamais par une promesse. Deux séances de recul seulement : c'est une
+    description de ce qui s'est passé, pas un modèle.
+    """
+    champs = archive["row_fields"]
+    iv = champs.index("variation_pct")
+    seances = archive["sessions"]
+    historie = [(s["date"], s["rows"].get(company["ticker"])) for s in seances]
+    historie = [(d, r) for d, r in historie if r]
+    sorties = []
+    iq = champs.index("traded_value_fcfa")
+    for i, (date, ligne) in enumerate(historie[:-2]):
+        v = ligne[iv]
+        if not isinstance(v, (int, float)) or abs(v) < 5:
+            continue
+        # Un saut sur une séance à 200 000 FCFA échangés n'est pas un événement
+        # de marché : c'est un prix de passage. On ne compte que les sauts qui
+        # ont réellement été payés par quelqu'un.
+        if (ligne[iq] or 0) < SEUIL_SAUT_VALEUR:
+            continue
+        cloture = ligne[champs.index("close")]
+        ic = champs.index("close")
+        apres = [h[1][ic] for h in historie[i + 1:i + 3]]
+        if len(apres) < 2 or not cloture or not all(isinstance(x, (int, float)) and x for x in apres):
+            continue
+        var2 = (apres[-1] / cloture - 1) * 100
+        sorties.append({"date": date, "saut_pct": v, "deux_seances_apres_pct": round(var2, 2),
+                        "retour": (v < 0 and var2 > 0) or (v > 0 and var2 < 0)})
+    if len(sorties) < 3:
+        return {"statut": "non_calculable",
+                "raison": (f"{len(sorties)} saut(s) de plus de 5 % payé(s) plus de "
+                           f"{SEUIL_SAUT_VALEUR // 1_000_000} M FCFA observé(s) sur cette société : "
+                           "trop peu pour décrire une réaction")}
+    retours = sum(1 for s in sorties if s["retour"])
+    return {"statut": "calcule", "sauts": len(sorties),
+            "profondeur": "pleine" if len(sorties) >= 8 else "limitee",
+            "retours": retours, "taux_retour_pct": round(100 * retours / len(sorties), 1),
+            "recul": "deux séances", "exemples": sorties[-3:],
+            "regle": ("part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens "
+                      "opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut")}
+
+
+SEUIL_MOUVEMENT_PUBLICATION = 3.0   # en dessous, le bruit de séance domine
+MIN_PUBLICATIONS_PLEIN = 6
+
+
+def impacts_publications(company: dict, archive: dict, profondeur_jours: int = 365) -> dict:
+    """Une publication officielle a-t-elle réellement fait bouger le cours ?
+
+    Question posée : « une info la veille peut-elle faire chuter, et peut-on
+    l'anticiper ? » La partie « anticiper » est impossible — personne ne connaît
+    le contenu d'un communiqué avant sa publication. La partie mesurable est
+    celle-ci : sur cette société, quand un document officiel sort, le cours
+    bouge-t-il ? SIGMA relie chaque publication datée aux séances qui suivent et
+    compte les mouvements de plus de 5 % réellement payés.
+
+    Ce que ce chiffre ne dit pas : le sens du prochain mouvement.
+    """
+    champs = archive["row_fields"]
+    iv, iq = champs.index("variation_pct"), champs.index("traded_value_fcfa")
+    dates = [s["date"] for s in archive["sessions"]]
+    index = {d: i for i, d in enumerate(dates)}
+    ticker = company["ticker"]
+    seuil_date = (company.get("latest_boc_date") or dates[-1])
+    recentes = [n for n in (company.get("documents") or [])
+                if n.get("published_date") and n["published_date"] >= _il_y_a(seuil_date, profondeur_jours)]
+    sorties = []
+    for doc in sorted(recentes, key=lambda x: x["published_date"], reverse=True)[:12]:
+        i = index.get(doc["published_date"])
+        if i is None:
+            # publication tombée un jour sans séance : on cherche la séance suivante
+            suivantes = [j for j, d in enumerate(dates) if d >= doc["published_date"]]
+            if not suivantes:
+                continue
+            i = suivantes[0]
+        fenetre = archive["sessions"][i:i + 3]
+        mouvements = []
+        for s_ in fenetre:
+            ligne = s_["rows"].get(ticker)
+            if not ligne or not isinstance(ligne[iv], (int, float)):
+                continue
+            if abs(ligne[iv]) >= SEUIL_MOUVEMENT_PUBLICATION and (ligne[iq] or 0) >= SEUIL_SAUT_VALEUR:
+                mouvements.append({"date": s_["date"], "variation_pct": ligne[iv]})
+        sorties.append({"date": doc["published_date"], "type": doc.get("doc_type"),
+                        "label": (doc.get("label") or "")[:120],
+                        "mouvement": mouvements[0] if mouvements else None})
+    if not sorties:
+        return {"statut": "non_calculable",
+                "raison": f"aucune publication datée de cette société dans les {profondeur_jours} derniers jours du corpus"}
+    avec = sum(1 for x in sorties if x["mouvement"])
+    return {
+        "statut": "calcule",
+        "profondeur": "pleine" if len(sorties) >= MIN_PUBLICATIONS_PLEIN else "limitee",
+        "fenetre_jours": profondeur_jours,
+        "publications": len(sorties),
+        "avec_mouvement": avec,
+        "taux_mouvement_pct": round(100 * avec / len(sorties), 1),
+        "max_mouvement_pct": max((abs(x["mouvement"]["variation_pct"]) for x in sorties if x["mouvement"]), default=None),
+        "detail": sorties[:5],
+        "regle": (f"part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins "
+                  f"{SEUIL_MOUVEMENT_PUBLICATION:.0f} % réellement payé (plus de "
+                  f"{SEUIL_SAUT_VALEUR // 1_000_000} M FCFA échangés). Mesure du passé : elle documente la "
+                  "sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"),
+    }
+
+
+def _il_y_a(iso: str, jours: int) -> str:
+    from datetime import date, timedelta
+    try:
+        return (date.fromisoformat(iso) - timedelta(days=jours)).isoformat()
+    except ValueError:
+        return "0000-00-00"
+
+
 # ── Le revenu : ce qu'un actionnaire touche réellement ─────────────────────
 
 def _fig(exercice: dict, cle: str) -> float | None:
@@ -608,6 +784,7 @@ class Verdict:
     capitalisation: dict = field(default_factory=dict)
     position_longue: dict = field(default_factory=dict)
     revenu: dict = field(default_factory=dict)
+    variation: dict = field(default_factory=dict)
     note: str = ""
 
     def to_dict(self) -> dict:
@@ -621,6 +798,7 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
         for ticker, ligne in s["rows"].items():
             seances.setdefault(ticker, []).append(dict(zip(champs, ligne)))
 
+    limites = limites_variation(archive)
     verdicts: dict[str, Verdict] = {}
     for c in data["companies"]:
         t = c["ticker"]
@@ -641,6 +819,11 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
             v.horizons["moyen"]["details"].append(decomp["phrase"])
         v.horizons["long"] = lecture_long(c)
         v.revenu = revenu(c, v.cours)
+        v.variation = {
+            "limite_pct": limites["amplitude_max_pct"] if limites.get("statut") == "calcule" else None,
+            "reaction": reactions(c, archive),
+            "publications": impacts_publications(c, archive),
+        }
 
         # Capitalisation, trois niveaux de preuve distincts et jamais confondus :
         #   1. nombre d'actions lu dans un document officiel  → capitalisation directe ;
@@ -835,6 +1018,12 @@ def main() -> None:
                 "per_seances_limite": PER_SEANCES_LIMITE,
                 "min_exercices": MIN_EXERCICES,
                 "min_exercices_limite": MIN_EXERCICES_LIMITE,
+            },
+            # Les contraintes de marché, mesurées une fois et publiées à part :
+            # plafond/plancher observés, fréquence et taille des sauts.
+            "marche": {
+                "limites": limites_variation(archive),
+                "sauts": {k: v for k, v in sauts(archive).items() if k != "detail"},
             },
             "resume": resume(verdicts),
             "manques": manques(verdicts),
