@@ -618,6 +618,19 @@ td.num, th.num { white-space: nowrap; }
   .verdict-card .fold { margin-top: 10px; }
 }
 
+/* Fraîcheur — le bandeau ne crie que s'il y a une raison de crier.
+   Vert réservé : ici l'alerte est factuelle (la collecte ne décrit plus la
+   séance en cours), pas une appréciation de marché. */
+.freshness-banner {
+  display: block; margin: 0 0 14px; padding: 11px 14px; border-radius: 10px;
+  border: 1px solid #f0dfb8; background: var(--attention-bg); color: #6b4708;
+  font-size: var(--fs-small); line-height: 1.45;
+}
+.freshness-banner.is-alerte { border-color: #fecaca; background: var(--danger-bg); color: #7f1d1d; }
+.freshness-banner .subtext { display: block; margin-top: 4px; color: inherit; opacity: .85; }
+.freshness-banner .text-button { color: inherit; text-decoration: underline; font-size: var(--fs-small); }
+.notice.is-alerte { border-color: #fecaca; background: var(--danger-bg); color: #7f1d1d; }
+
 /* Le revenu — trois preuves séparées, jamais fondues en une note de qualité. */
 .revenu-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .revenu-head h2 { margin: 2px 0 0; }

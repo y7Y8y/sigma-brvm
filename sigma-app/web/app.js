@@ -929,15 +929,91 @@ function unreadAlertCount() {
   return generateAlerts().filter(alert => !personal.alertsRead.includes(alert.id)).length;
 }
 
+/* ---------------------------------------------------------------------------
+   Le temps réel — mesuré, pas promis.
+   SIGMA lit des publications officielles : le BOC est publié après la séance,
+   la cote BRVM est un instantané daté. « Temps réel » veut donc dire, ici, que
+   l'âge de chaque source est calculé au moment où l'écran s'ouvre, et que
+   l'écart avec l'instant présent est affiché en clair. Un utilisateur qui veut
+   du temps réel doit savoir à quelle heure remonte le dernier chiffre qu'il
+   lit — c'est la seule façon de ne pas confondre une photo et un direct.
+--------------------------------------------------------------------------- */
+const HORLOGE = { rafraichie: null };
+
+function ageSource(iso) {
+  if (!iso) return null;
+  const t = new Date(iso).getTime();
+  if (!Number.isFinite(t)) return null;
+  const minutes = Math.round((Date.now() - t) / 60000);
+  return { minutes, heures: minutes / 60, jours: minutes / 1440 };
+}
+
+function dureeLisible(minutes) {
+  if (minutes === null || minutes === undefined) return "date inconnue";
+  if (minutes < 1) return "à l'instant";
+  if (minutes < 60) return `il y a ${minutes} min`;
+  if (minutes < 48 * 60) return `il y a ${Math.round(minutes / 60)} h`;
+  return `il y a ${Math.round(minutes / 1440)} jour(s)`;
+}
+
+/* Séance suivante attendue, en heure d'Abidjan (UTC+0, comme la BRVM).
+   Ce n'est pas un calendrier de jours fériés : la BRVM n'en publie pas un
+   lisible, et l'inventer serait une donnée fabriquée. On annonce donc une
+   plage ouvrée avec sa limite explicite. */
+function prochaineSeance() {
+  const maintenant = new Date();
+  const heure = maintenant.getUTCHours() + maintenant.getUTCMinutes() / 60;
+  const jour = maintenant.getUTCDay();
+  let jours = 1;
+  if (jour >= 1 && jour <= 5 && heure < 15) return { quand: "aujourd'hui", texte: "clôture vers 15 h" };
+  while (jours < 8) {
+    const d = new Date(maintenant.getTime() + jours * 864e5);
+    if (d.getUTCDay() >= 1 && d.getUTCDay() <= 5) break;
+    jours += 1;
+  }
+  const cible = new Date(maintenant.getTime() + jours * 864e5);
+  return { quand: cible.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }), texte: "séance ouvrée, hors jours fériés" };
+}
+
+function etatFraicheur() {
+  const collecte = ageSource(DATA.generated_at);
+  const cote = ageSource(DATA.snapshot?.observed_at || DATA.generated_at);
+  const boc = ageSource((latestBocDate() || DATA.generated_at) + "T18:00:00Z");
+  const minutesCollecte = collecte?.minutes ?? null;
+  const prochaine = prochaineSeance();
+  // Trois états, pas deux : à jour, décalé, et franchement périmé.
+  const niveau = minutesCollecte === null ? "inconnu"
+    : minutesCollecte <= 24 * 60 ? "jour"
+      : minutesCollecte <= 96 * 60 ? "recul"
+        : "perime";
+  return {
+    collecte, cote, boc, prochaine, niveau,
+    libelle: niveau === "jour" ? "À jour" : niveau === "recul" ? "En recul" : niveau === "perime" ? "Périmé" : "Date inconnue",
+    phrase: minutesCollecte === null ? "La date de collecte est absente : l'âge des chiffres ne peut pas être calculé."
+      : niveau === "jour" ? `Dernière collecte ${dureeLisible(minutesCollecte)}. Prochaine séance : ${prochaine.quand}, ${prochaine.texte}.`
+        : niveau === "recul" ? `Dernière collecte ${dureeLisible(minutesCollecte)} : elle couvre une séance antérieure. Ce que vous lisez décrit ${fmtDate(latestBocDate())}, pas aujourd'hui.`
+          : `Dernière collecte ${dureeLisible(minutesCollecte)} : les chiffres affichés ne décrivent plus le marché actuel. Aucune lecture de marché n'est fiable avant une nouvelle collecte.`,
+  };
+}
+
 function renderFreshness() {
   const latest = latestBocDate();
-  $("#sidebarFreshness").innerHTML = `<span class="strong">${COMPANIES.length} sociétés</span><br>Instantané : ${escapeHtml(DATA.snapshot.source_updated_label || "date non précisée")}<br>Dernier BOC lu : ${fmtDate(latest)}<br>Collecte : ${fmtDateTime(DATA.generated_at)}`;
-  const generated = new Date(DATA.generated_at);
-  const ageHours = (Date.now() - generated.getTime()) / 36e5;
+  $("#sidebarFreshness").innerHTML = `<span class="strong">${COMPANIES.length} sociétés</span><br>Instantané : ${escapeHtml(DATA.snapshot.source_updated_label || "date non précisée")}<br>Dernier BOC lu : ${fmtDate(latest)}<br>Collecte : ${fmtDateTime(DATA.generated_at)}<br><span class="subtext">Âge calculé à l'ouverture de l'écran, pas à la collecte.</span>`;
+  const etat = etatFraicheur();
+  HORLOGE.rafraichie = new Date().toISOString();
+  document.title = etat.niveau === "perime" ? "SIGMA · données périmées" : "SIGMA · décision d'investissement";
   const pill = $("#freshnessPill");
-  pill.textContent = `BRVM · ${DATA.snapshot.session_status} · BOC ${fmtDate(latest)}`;
-  pill.classList.toggle("is-ok", ageHours <= 30);
-  pill.classList.toggle("is-stale", ageHours > 30);
+  pill.textContent = `${etat.libelle} · BOC ${fmtDate(latest)} · ${dureeLisible(etat.collecte?.minutes ?? null)}`;
+  pill.title = etat.phrase;
+  pill.classList.toggle("is-ok", etat.niveau === "jour");
+  pill.classList.toggle("is-stale", etat.niveau !== "jour");
+  const bandeau = $("#fraicheurBanner");
+  if (bandeau) {
+    const grave = etat.niveau === "perime" || etat.niveau === "inconnu";
+    bandeau.hidden = etat.niveau === "jour";
+    bandeau.className = `freshness-banner ${grave ? "is-alerte" : "is-recul"}`;
+    bandeau.innerHTML = `<strong>${etat.libelle}.</strong> ${escapeHtml(etat.phrase)} <span class="subtext">Le temps réel n'existe pas sur la BRVM en dehors de la séance : SIGMA date chaque chiffre plutôt que de faire semblant de le rafraîchir. <button type="button" class="text-button" data-open-completude>Voir ce qui manque</button></span>`;
+  }
   $("#homeSourceChip").textContent = `Sources : brvm.org · collecte du ${fmtDateTime(DATA.generated_at)}`;
   const bocLink = $("#latestBocLink");
   const latestDoc = DATA.boc_documents.find(doc => doc.parsed);
@@ -1077,7 +1153,9 @@ function renderMarket() {
   };
   rows = [...rows].sort(sorters[ui.marketSort] || sorters.alpha);
   const st = DATA.market_structure;
+  const etat = etatFraicheur();
   host.innerHTML = `
+    <div class="notice ${etat.niveau === "jour" ? "" : "is-alerte"}"><p><strong>${etat.libelle} · ${dureeLisible(etat.collecte?.minutes ?? null)}</strong> — ${escapeHtml(etat.phrase)} Une variation affichée ici est celle de la dernière séance close, jamais celle d'un cours en formation.</p></div>
     <div class="grid-3">
       ${DATA.snapshot.indices.map(index => `<article class="card kpi-card"><span class="kpi-label">${escapeHtml(index.name)}</span><div><div class="kpi-value">${fmtNum(index.level, 2)}</div><div class="kpi-sub">${variationPill(index.variation_pct)}</div></div></article>`).join("")}
     </div>
@@ -2581,6 +2659,7 @@ function renderCompletude() {
     host.innerHTML = `<div class="Empty-state">Le registre des manques n’est pas chargé : <span class="mono">data/verdicts.json</span> est absent de cette collecte.</div>`;
     return;
   }
+  renderHorloge();
   const r = VERDICTS.resume || {};
   const manques = VERDICTS.manques;
   const parHorizon = new Map();
@@ -2705,6 +2784,23 @@ function parcoursCard() {
       <p class="verdict-phrase">${texte}</p><p class="verdict-regle">${escapeHtml(source)}</p></div></li>`).join("")}</ul>
     ${!e.sgiChoisie || !e.grilleConnue ? `<div class="form-actions" style="margin-top:10px"><button type="button" class="button button-small" data-open-onboarding>Compléter</button></div>` : ""}
   </article>`;
+}
+
+/* L'horloge : chaque source, son âge, et l'écart avec l'instant de lecture.
+   Le calcul est refait à chaque appel — c'est le seul moyen d'être honnête
+   sur une donnée qui ne change pas entre deux ouvertures. */
+function renderHorloge() {
+  const etat = etatFraicheur();
+  const set = (id, texte) => { const el = $(`#${id}`); if (el) el.textContent = texte; };
+  const badge = $("#horlogeVerdict");
+  if (badge) {
+    badge.textContent = etat.libelle;
+    badge.className = `pill ${etat.niveau === "jour" ? "" : "red"}`;
+  }
+  set("horlogeCote", `${DATA.snapshot?.source_updated_label || "date non publiée"} — lue ${dureeLisible(etat.cote?.minutes ?? null)}. C'est une photo prise par la BRVM, pas un flux continu.`);
+  set("horlogeBoc", `Séance du ${fmtDate(latestBocDate())} — publiée ${dureeLisible(etat.boc?.minutes ?? null)}. Le BOC n'existe qu'après la clôture : aucun indicateur fondamental ne peut être plus frais que lui.`);
+  set("horlogeCollecte", `${fmtDateTime(DATA.generated_at)} — ${dureeLisible(etat.collecte?.minutes ?? null)}. C'est le fichier que vous lisez ; son âge est recalculé à l'ouverture de l'écran.`);
+  set("horlogeProchaine", `${etat.prochaine.quand} — ${etat.prochaine.texte}. SIGMA ne publie pas de calendrier de jours fériés : il n'en a pas de source officielle lisible.`);
 }
 
 function renderSettings() {
@@ -3109,6 +3205,7 @@ function bindStaticEvents() {
       showToast("Portefeuille réel : formulaire prérempli, mais rien n’est enregistré tant que vous n’avez pas confirmé l’avis d’opéré.");
       return;
     }
+    if (event.target.closest("[data-open-completude]")) { showView("completude"); return; }
     if (event.target.closest("[data-open-onboarding]")) { openOnboarding(); return; }
     const applyQuote = event.target.closest("[data-apply-quote]");
     if (applyQuote) {
