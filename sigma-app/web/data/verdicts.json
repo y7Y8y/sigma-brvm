@@ -44,6 +44,8 @@
   "capitalisation_calculee": 3,
   "capitalisation_implicite": 35,
   "position_longue_calculee": 47,
+  "roe_calcule": 32,
+  "roe_plein": 22,
   "revenu_documente": 10,
   "revenu_partiel": 34,
   "revenu_absent": 4,
@@ -75,6 +77,15 @@
    "etat": "absent",
    "raison": "0 exercice(s) d'états financiers extraits des documents indexés ; deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine",
    "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "BBGC",
+   "societe": "BRIDGE BANK GROUP COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "aucun exercice avec résultat et fonds propres ensemble",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
   },
   {
    "ticker": "BBGC",
@@ -141,6 +152,15 @@
   {
    "ticker": "BOABF",
    "societe": "BANK OF AFRICA BURKINA FASO",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "BOABF",
+   "societe": "BANK OF AFRICA BURKINA FASO",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -195,6 +215,15 @@
   {
    "ticker": "CBIBF",
    "societe": "CORIS BANK INTERNATIONAL BURKINA FASO",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "aucun exercice avec résultat et fonds propres ensemble",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "CBIBF",
+   "societe": "CORIS BANK INTERNATIONAL BURKINA FASO",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -230,6 +259,15 @@
   {
    "ticker": "ETIT",
    "societe": "Ecobank Transnational Incorporated TOGO",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "aucun exercice avec résultat et fonds propres ensemble",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "ETIT",
+   "societe": "Ecobank Transnational Incorporated TOGO",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -244,6 +282,15 @@
    "raison": "nombre d'actions absent des documents indexés",
    "source": "11 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 0 exercice(s) extraits",
    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "FTSC",
+   "societe": "FILTISAC COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
   },
   {
    "ticker": "FTSC",
@@ -274,6 +321,15 @@
   {
    "ticker": "NEIC",
    "societe": "NEI-CEDA COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "NEIC",
+   "societe": "NEI-CEDA COTE D'IVOIRE",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -300,6 +356,15 @@
   {
    "ticker": "NSBC",
    "societe": "NSIA BANQUE COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "aucun exercice avec résultat et fonds propres ensemble",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "NSBC",
+   "societe": "NSIA BANQUE COTE D'IVOIRE",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -322,6 +387,15 @@
    "etat": "limite",
    "raison": "lecture courte (2 exercices complets)",
    "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "NTLC",
+   "societe": "NESTLE COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
   },
   {
    "ticker": "NTLC",
@@ -387,6 +461,15 @@
   {
    "ticker": "SEMC",
    "societe": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "SEMC",
+   "societe": "EVIOSYS PACKAGING SIEM COTE D'IVOIRE",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -401,6 +484,15 @@
    "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
    "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
    "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "SHEC",
+   "societe": "VIVO ENERGY COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
   },
   {
    "ticker": "SHEC",
@@ -431,6 +523,15 @@
   {
    "ticker": "SICC",
    "societe": "SICOR COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "SICC",
+   "societe": "SICOR COTE D'IVOIRE",
    "horizon": "revenu",
    "etat": "absent",
    "raison": "preuves manquantes : régularité du dividende (3 exercices consécutifs) · financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -453,6 +554,15 @@
    "etat": "limite",
    "raison": "distribution courte (100 séances)",
    "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "SIVC",
+   "societe": "ERIUM COTE D’IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
   },
   {
    "ticker": "SIVC",
@@ -493,6 +603,15 @@
   {
    "ticker": "SOGC",
    "societe": "SOGB COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "SOGC",
+   "societe": "SOGB COTE D'IVOIRE",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
@@ -528,11 +647,29 @@
   {
    "ticker": "STBC",
    "societe": "SITAB COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
+  },
+  {
+   "ticker": "STBC",
+   "societe": "SITAB COTE D'IVOIRE",
    "horizon": "revenu",
    "etat": "limite",
    "raison": "preuves manquantes : financement par le bénéfice (dividendes versés ÷ résultat, ≤ 100 %) · couverture par le flux d'exploitation du même exercice",
    "source": "BOC (rendement) + tableau de financement des états financiers (dividendes versés, flux d'exploitation)",
    "deblocage": "extraire « dividendes versés » et le flux d'exploitation du tableau de financement pour le même exercice, et rattacher chaque avis de paiement à son exercice"
+  },
+  {
+   "ticker": "TTLC",
+   "societe": "TOTALENERGIES MARKETING COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "aucun exercice avec résultat et fonds propres ensemble",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
   },
   {
    "ticker": "TTLC",
@@ -576,6 +713,15 @@
    "etat": "absent",
    "raison": "moins de 30 séances de PER publié dans l'archive",
    "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "UNLC",
+   "societe": "UNILEVER COTE D'IVOIRE",
+   "horizon": "rentabilité",
+   "etat": "absent",
+   "raison": "fonds propres absents des états extraits pour tous les exercices",
+   "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+   "deblocage": "extraire la ligne capitaux propres du bilan de chaque exercice"
   },
   {
    "ticker": "UNLC",
@@ -814,6 +960,54 @@
      "le flux d'exploitation de 2024 ne couvre pas la distribution (-0.13 fois)"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2021,
+      "resultat_net": 670000000,
+      "fonds_propres": 4352000000,
+      "roe_pct": 15.4
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 1272000000,
+      "fonds_propres": 4924000000,
+      "roe_pct": 25.8
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 1358000000,
+      "fonds_propres": 5167000000,
+      "roe_pct": 26.3
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 1515000000,
+      "fonds_propres": 4182000000,
+      "roe_pct": 36.2
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 1331000000,
+      "fonds_propres": 5512000000,
+      "roe_pct": 24.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 1331000000,
+     "fonds_propres": 5512000000,
+     "roe_pct": 24.1
+    },
+    "moyenne_pct": 25.6,
+    "minimum_pct": 15.4,
+    "maximum_pct": 36.2,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -956,6 +1150,10 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "aucun exercice avec résultat et fonds propres ensemble"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -1180,6 +1378,36 @@
      "≈ 41 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2023,
+      "resultat_net": 27270000000,
+      "fonds_propres": 95569000000,
+      "roe_pct": 28.5
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 36237000000,
+      "fonds_propres": 135118000000,
+      "roe_pct": 26.8
+     }
+    ],
+    "dernier": {
+     "exercice": 2024,
+     "resultat_net": 36237000000,
+     "fonds_propres": 135118000000,
+     "roe_pct": 26.8
+    },
+    "moyenne_pct": 27.6,
+    "minimum_pct": 26.8,
+    "maximum_pct": 28.5,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -1447,6 +1675,57 @@
      "1 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": -3612000000,
+      "fonds_propres": 58147000000,
+      "roe_pct": -6.2
+     },
+     {
+      "exercice": 2020,
+      "resultat_net": 4672000000,
+      "fonds_propres": 62819000000,
+      "roe_pct": 7.4
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 9602977502,
+      "fonds_propres": 71522000000,
+      "roe_pct": 13.4
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 26226000000,
+      "fonds_propres": 99783000000,
+      "roe_pct": 26.3
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 36520000000,
+      "fonds_propres": 120570000000,
+      "roe_pct": 30.3
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 36520000000,
+     "fonds_propres": 120570000000,
+     "roe_pct": 30.3
+    },
+    "moyenne_pct": 14.2,
+    "minimum_pct": -6.2,
+    "maximum_pct": 30.3,
+    "exercices_negatifs": 1,
+    "exercices_sans_fonds_propres": [
+     2022,
+     2023
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -1659,6 +1938,66 @@
      "distribution déduite très supérieure au bénéfice (≈ 4452 %) : à confirmer au tableau de financement avant d'en faire un revenu récurrent",
      "le dernier exercice payé (2022) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": 423000000,
+      "fonds_propres": 14791000000,
+      "roe_pct": 2.9
+     },
+     {
+      "exercice": 2020,
+      "resultat_net": 630000000,
+      "fonds_propres": 15414000000,
+      "roe_pct": 4.1
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 1598214000,
+      "fonds_propres": 17009083000,
+      "roe_pct": 9.4
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 1809000000,
+      "fonds_propres": 18815000000,
+      "roe_pct": 9.6
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 35580771,
+      "fonds_propres": 17743296528,
+      "roe_pct": 0.2
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 7313440,
+      "fonds_propres": 17747635829,
+      "roe_pct": 0.0
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 22318122,
+      "fonds_propres": 17769953951,
+      "roe_pct": 0.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 22318122,
+     "fonds_propres": 17769953951,
+     "roe_pct": 0.1
+    },
+    "moyenne_pct": 3.8,
+    "minimum_pct": 0.0,
+    "maximum_pct": 9.6,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -1919,6 +2258,66 @@
     "alertes": [
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": 15001905606,
+      "fonds_propres": 85833358976,
+      "roe_pct": 17.5
+     },
+     {
+      "exercice": 2020,
+      "resultat_net": 13312371256,
+      "fonds_propres": 89836969716,
+      "roe_pct": 14.8
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 16663938680,
+      "fonds_propres": 97192147880,
+      "roe_pct": 17.1
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 19143162703,
+      "fonds_propres": 104674009283,
+      "roe_pct": 18.3
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 21528745870,
+      "fonds_propres": 112817609313,
+      "roe_pct": 19.1
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 19647175711,
+      "fonds_propres": 117396355692,
+      "roe_pct": 16.7
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 20107229743,
+      "fonds_propres": 117506988771,
+      "roe_pct": 17.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 20107229743,
+     "fonds_propres": 117506988771,
+     "roe_pct": 17.1
+    },
+    "moyenne_pct": 17.2,
+    "minimum_pct": 14.8,
+    "maximum_pct": 19.1,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -2187,6 +2586,10 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -2451,6 +2854,66 @@
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": 14382000000,
+      "fonds_propres": 53113000000,
+      "roe_pct": 27.1
+     },
+     {
+      "exercice": 2020,
+      "resultat_net": 14216000000,
+      "fonds_propres": 60329000000,
+      "roe_pct": 23.6
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 16638000000,
+      "fonds_propres": 69968000000,
+      "roe_pct": 23.8
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 20069000000,
+      "fonds_propres": 81726000000,
+      "roe_pct": 24.6
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 26075000000,
+      "fonds_propres": 95801000000,
+      "roe_pct": 27.2
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 32044000000,
+      "fonds_propres": 112644000000,
+      "roe_pct": 28.4
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 35540000000,
+      "fonds_propres": 127340000000,
+      "roe_pct": 27.9
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 35540000000,
+     "fonds_propres": 127340000000,
+     "roe_pct": 27.9
+    },
+    "moyenne_pct": 26.1,
+    "minimum_pct": 23.6,
+    "maximum_pct": 28.4,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -2696,6 +3159,48 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2022,
+      "resultat_net": 2460477481,
+      "fonds_propres": 34541828466,
+      "roe_pct": 7.1
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 5778294073,
+      "fonds_propres": 40197098666,
+      "roe_pct": 14.4
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 9123471904,
+      "fonds_propres": 46195155867,
+      "roe_pct": 19.7
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 11081189907,
+      "fonds_propres": 49820422180,
+      "roe_pct": 22.2
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 11081189907,
+     "fonds_propres": 49820422180,
+     "roe_pct": 22.2
+    },
+    "moyenne_pct": 15.9,
+    "minimum_pct": 7.1,
+    "maximum_pct": 22.2,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -2958,6 +3463,62 @@
      "le dernier exercice payé (2024) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu",
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": 8502650000,
+      "fonds_propres": 35823959061,
+      "roe_pct": 23.7
+     },
+     {
+      "exercice": 2020,
+      "resultat_net": 7420997114,
+      "fonds_propres": 37238966175,
+      "roe_pct": 19.9
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 10134089251,
+      "fonds_propres": 44172697398,
+      "roe_pct": 22.9
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 10076732131,
+      "fonds_propres": 45669476857,
+      "roe_pct": 22.1
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 5002000000,
+      "fonds_propres": 42156000000,
+      "roe_pct": 11.9
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 409000000,
+      "fonds_propres": 36064000000,
+      "roe_pct": 1.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 409000000,
+     "fonds_propres": 36064000000,
+     "roe_pct": 1.1
+    },
+    "moyenne_pct": 16.9,
+    "minimum_pct": 1.1,
+    "maximum_pct": 23.7,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2021
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -3233,6 +3794,60 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 7667000000,
+      "fonds_propres": 46551000000,
+      "roe_pct": 16.5
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 11070000000,
+      "fonds_propres": 53327000000,
+      "roe_pct": 20.8
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 15581000000,
+      "fonds_propres": 64615000000,
+      "roe_pct": 24.1
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 17022000000,
+      "fonds_propres": 76637000000,
+      "roe_pct": 22.2
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 19984000000,
+      "fonds_propres": 88621000000,
+      "roe_pct": 22.5
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 21905000000,
+      "fonds_propres": 96526000000,
+      "roe_pct": 22.7
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 21905000000,
+     "fonds_propres": 96526000000,
+     "roe_pct": 22.7
+    },
+    "moyenne_pct": 21.5,
+    "minimum_pct": 16.5,
+    "maximum_pct": 24.1,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -3496,6 +4111,45 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": 637951839,
+      "fonds_propres": 6063782358,
+      "roe_pct": 10.5
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 1429806646,
+      "fonds_propres": 7338064460,
+      "roe_pct": 19.5
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 1375096000,
+      "fonds_propres": 8039445600,
+      "roe_pct": 17.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2024,
+     "resultat_net": 1375096000,
+     "fonds_propres": 8039445600,
+     "roe_pct": 17.1
+    },
+    "moyenne_pct": 15.7,
+    "minimum_pct": 10.5,
+    "maximum_pct": 19.5,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2020,
+     2025
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -3746,6 +4400,10 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "aucun exercice avec résultat et fonds propres ensemble"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -4041,6 +4699,45 @@
     "alertes": [
      "7 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 3779508079,
+      "fonds_propres": 23392004981,
+      "roe_pct": 16.2
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 6710916633,
+      "fonds_propres": 25619459159,
+      "roe_pct": 26.2
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 4693479450,
+      "fonds_propres": 19452985667,
+      "roe_pct": 24.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2024,
+     "resultat_net": 4693479450,
+     "fonds_propres": 19452985667,
+     "roe_pct": 24.1
+    },
+    "moyenne_pct": 22.2,
+    "minimum_pct": 16.2,
+    "maximum_pct": 26.2,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2022,
+     2023
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -4340,6 +5037,60 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 17183000000,
+      "fonds_propres": 37533000000,
+      "roe_pct": 45.8
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 10511000000,
+      "fonds_propres": 37520000000,
+      "roe_pct": 28.0
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 10261000000,
+      "fonds_propres": 38422000000,
+      "roe_pct": 26.7
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 11485000000,
+      "fonds_propres": 40227000000,
+      "roe_pct": 28.6
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 10526000000,
+      "fonds_propres": 40037000000,
+      "roe_pct": 26.3
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 13100000000,
+      "fonds_propres": 43024000000,
+      "roe_pct": 30.4
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 13100000000,
+     "fonds_propres": 43024000000,
+     "roe_pct": 30.4
+    },
+    "moyenne_pct": 31.0,
+    "minimum_pct": 26.3,
+    "maximum_pct": 45.8,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -4591,6 +5342,66 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": 25365000000,
+      "fonds_propres": 120089000000,
+      "roe_pct": 21.1
+     },
+     {
+      "exercice": 2020,
+      "resultat_net": 30018000000,
+      "fonds_propres": 128527000000,
+      "roe_pct": 23.4
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 34304000000,
+      "fonds_propres": 144829000000,
+      "roe_pct": 23.7
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 44598000000,
+      "fonds_propres": 163719000000,
+      "roe_pct": 27.2
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 48071000000,
+      "fonds_propres": 199352000000,
+      "roe_pct": 24.1
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 57477000000,
+      "fonds_propres": 178208000000,
+      "roe_pct": 32.3
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 63482000000,
+      "fonds_propres": 218573000000,
+      "roe_pct": 29.0
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 63482000000,
+     "fonds_propres": 218573000000,
+     "roe_pct": 29.0
+    },
+    "moyenne_pct": 25.8,
+    "minimum_pct": 21.1,
+    "maximum_pct": 32.3,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -4802,6 +5613,10 @@
      "≈ 5 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "aucun exercice avec résultat et fonds propres ensemble"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -5064,6 +5879,10 @@
      "le dernier exercice payé (2024) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
    },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -5303,6 +6122,38 @@
      "1 baisse(s) de dividende sur les 1 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2024,
+      "resultat_net": 7176000000,
+      "fonds_propres": 23614741046,
+      "roe_pct": 30.4
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 4622243779,
+      "fonds_propres": 21953860132,
+      "roe_pct": 21.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 4622243779,
+     "fonds_propres": 21953860132,
+     "roe_pct": 21.1
+    },
+    "moyenne_pct": 25.8,
+    "minimum_pct": 21.1,
+    "maximum_pct": 30.4,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2023
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -5534,6 +6385,10 @@
     ],
     "alertes": []
    },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -5762,6 +6617,10 @@
     ],
     "alertes": []
    },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "aucun exercice avec résultat et fonds propres ensemble"
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -5980,6 +6839,10 @@
     "alertes": [
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -6237,6 +7100,45 @@
     "alertes": [
      "5 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2021,
+      "resultat_net": 32374022046,
+      "fonds_propres": 73174192425,
+      "roe_pct": 44.2
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 22372337396,
+      "fonds_propres": 63172382621,
+      "roe_pct": 35.4
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 21129276785,
+      "fonds_propres": 61929278606,
+      "roe_pct": 34.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2023,
+     "resultat_net": 21129276785,
+     "fonds_propres": 61929278606,
+     "roe_pct": 34.1
+    },
+    "moyenne_pct": 37.9,
+    "minimum_pct": 34.1,
+    "maximum_pct": 44.2,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2024,
+     2025
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -6522,6 +7424,45 @@
      "1 baisse(s) de dividende sur les 3 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2023,
+      "resultat_net": 154900000000,
+      "fonds_propres": 724000000000,
+      "roe_pct": 21.4
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 158200000000,
+      "fonds_propres": 713800000000,
+      "roe_pct": 22.2
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 167800000000,
+      "fonds_propres": 707800000000,
+      "roe_pct": 23.7
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 167800000000,
+     "fonds_propres": 707800000000,
+     "roe_pct": 23.7
+    },
+    "moyenne_pct": 22.4,
+    "minimum_pct": 21.4,
+    "maximum_pct": 23.7,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2021,
+     2022
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -6798,6 +7739,51 @@
      "aucune distribution documentée depuis 2019, soit 6 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2019) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 9440000000,
+      "fonds_propres": 105405000000,
+      "roe_pct": 9.0
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 19798000000,
+      "fonds_propres": 118895000000,
+      "roe_pct": 16.7
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 19199000000,
+      "fonds_propres": 115056000000,
+      "roe_pct": 16.7
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": -18186000000,
+      "fonds_propres": 94386000000,
+      "roe_pct": -19.3
+     }
+    ],
+    "dernier": {
+     "exercice": 2023,
+     "resultat_net": -18186000000,
+     "fonds_propres": 94386000000,
+     "roe_pct": -19.3
+    },
+    "moyenne_pct": 5.8,
+    "minimum_pct": -19.3,
+    "maximum_pct": 16.7,
+    "exercices_negatifs": 1,
+    "exercices_sans_fonds_propres": [
+     2024,
+     2025
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -7104,6 +8090,54 @@
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2019,
+      "resultat_net": -5562420807,
+      "fonds_propres": 65679615745,
+      "roe_pct": -8.5
+     },
+     {
+      "exercice": 2020,
+      "resultat_net": 3521647345,
+      "fonds_propres": 69201263090,
+      "roe_pct": 5.1
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 19351846000,
+      "fonds_propres": 128875431000,
+      "roe_pct": 15.0
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 15861643000,
+      "fonds_propres": 135061151000,
+      "roe_pct": 11.7
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 15508655000,
+      "fonds_propres": 142638984000,
+      "roe_pct": 10.9
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 15508655000,
+     "fonds_propres": 142638984000,
+     "roe_pct": 10.9
+    },
+    "moyenne_pct": 6.8,
+    "minimum_pct": -8.5,
+    "maximum_pct": 15.0,
+    "exercices_negatifs": 1,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -7398,6 +8432,40 @@
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 1863000000,
+      "fonds_propres": 8623000000,
+      "roe_pct": 21.6
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 3067000000,
+      "fonds_propres": 9837000000,
+      "roe_pct": 31.2
+     }
+    ],
+    "dernier": {
+     "exercice": 2021,
+     "resultat_net": 3067000000,
+     "fonds_propres": 9837000000,
+     "roe_pct": 31.2
+    },
+    "moyenne_pct": 26.4,
+    "minimum_pct": 21.6,
+    "maximum_pct": 31.2,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2022,
+     2023,
+     2024
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -7618,6 +8686,38 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2021,
+      "resultat_net": 603000000,
+      "fonds_propres": 6195000000,
+      "roe_pct": 9.7
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 701000000,
+      "fonds_propres": 5916000000,
+      "roe_pct": 11.8
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 701000000,
+     "fonds_propres": 5916000000,
+     "roe_pct": 11.8
+    },
+    "moyenne_pct": 10.8,
+    "minimum_pct": 9.7,
+    "maximum_pct": 11.8,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2019
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -7857,6 +8957,54 @@
      "aucune distribution documentée depuis 2020, soit 5 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2020) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2021,
+      "resultat_net": -6860314000,
+      "fonds_propres": 37757279000,
+      "roe_pct": -18.2
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": -8755668861,
+      "fonds_propres": 27687386488,
+      "roe_pct": -31.6
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": -10324162375,
+      "fonds_propres": 17363224113,
+      "roe_pct": -59.5
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 2590611302,
+      "fonds_propres": 24984680000,
+      "roe_pct": 10.4
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": -7953932000,
+      "fonds_propres": 17243172000,
+      "roe_pct": -46.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": -7953932000,
+     "fonds_propres": 17243172000,
+     "roe_pct": -46.1
+    },
+    "moyenne_pct": -29.0,
+    "minimum_pct": -59.5,
+    "maximum_pct": 10.4,
+    "exercices_negatifs": 4,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -8161,6 +9309,41 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2024,
+      "resultat_net": 3959000000,
+      "fonds_propres": 25798000000,
+      "roe_pct": 15.3
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 5879000000,
+      "fonds_propres": 27898000000,
+      "roe_pct": 21.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 5879000000,
+     "fonds_propres": 27898000000,
+     "roe_pct": 21.1
+    },
+    "moyenne_pct": 18.2,
+    "minimum_pct": 15.3,
+    "maximum_pct": 21.1,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2020,
+     2021,
+     2022,
+     2023
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -8457,6 +9640,40 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2021,
+      "resultat_net": 16780000000,
+      "fonds_propres": 136297000000,
+      "roe_pct": 12.3
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 784970000,
+      "fonds_propres": 679700000,
+      "roe_pct": 115.5
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 784970000,
+     "fonds_propres": 679700000,
+     "roe_pct": 115.5
+    },
+    "moyenne_pct": 63.9,
+    "minimum_pct": 12.3,
+    "maximum_pct": 115.5,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2022,
+     2023,
+     2024
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -8711,6 +9928,10 @@
      "le dernier exercice payé (2020) précède le dernier exercice publié (2023) : le taux décrit un versement passé, pas un revenu attendu"
     ]
    },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -8909,6 +10130,45 @@
      "≈ 70 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2022,
+      "resultat_net": 97230000000,
+      "fonds_propres": 403973000000,
+      "roe_pct": 24.1
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 74612000000,
+      "fonds_propres": 345011000000,
+      "roe_pct": 21.6
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 101352000000,
+      "fonds_propres": 403973000000,
+      "roe_pct": 25.1
+     }
+    ],
+    "dernier": {
+     "exercice": 2024,
+     "resultat_net": 101352000000,
+     "fonds_propres": 403973000000,
+     "roe_pct": 25.1
+    },
+    "moyenne_pct": 23.6,
+    "minimum_pct": 21.6,
+    "maximum_pct": 25.1,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2021,
+     2025
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -9173,6 +10433,10 @@
      "≈ 89 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -9449,6 +10713,62 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 30261000000,
+      "fonds_propres": 116767000000,
+      "roe_pct": 25.9
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 34031000000,
+      "fonds_propres": 130799000000,
+      "roe_pct": 26.0
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 40090000000,
+      "fonds_propres": 148389000000,
+      "roe_pct": 27.0
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 43513000000,
+      "fonds_propres": 164402000000,
+      "roe_pct": 26.5
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 50234000000,
+      "fonds_propres": 187136000000,
+      "roe_pct": 26.8
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 55623000000,
+      "fonds_propres": 204765000000,
+      "roe_pct": 27.2
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 55623000000,
+     "fonds_propres": 204765000000,
+     "roe_pct": 27.2
+    },
+    "moyenne_pct": 26.6,
+    "minimum_pct": 25.9,
+    "maximum_pct": 27.2,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2019
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -9623,6 +10943,10 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -9806,6 +11130,10 @@
      "aucune distribution documentée depuis 2016, soit 9 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2016) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -10061,6 +11389,54 @@
     ],
     "alertes": []
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 17520000000,
+      "fonds_propres": 126775000000,
+      "roe_pct": 13.8
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 22020000000,
+      "fonds_propres": 144022000000,
+      "roe_pct": 15.3
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 15078000000,
+      "fonds_propres": 152909000000,
+      "roe_pct": 9.9
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 21472000000,
+      "fonds_propres": 169443000000,
+      "roe_pct": 12.7
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 45781000000,
+      "fonds_propres": 195142000000,
+      "roe_pct": 23.5
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 45781000000,
+     "fonds_propres": 195142000000,
+     "roe_pct": 23.5
+    },
+    "moyenne_pct": 15.0,
+    "minimum_pct": 9.9,
+    "maximum_pct": 23.5,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -10303,6 +11679,60 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 9396000000,
+      "fonds_propres": 20139000000,
+      "roe_pct": 46.7
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 8623000000,
+      "fonds_propres": 21747000000,
+      "roe_pct": 39.7
+     },
+     {
+      "exercice": 2022,
+      "resultat_net": 9421000000,
+      "fonds_propres": 24932000000,
+      "roe_pct": 37.8
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 17255000000,
+      "fonds_propres": 35951000000,
+      "roe_pct": 48.0
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 8698000000,
+      "fonds_propres": 35294000000,
+      "roe_pct": 24.6
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 13075000000,
+      "fonds_propres": 42913000000,
+      "roe_pct": 30.5
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 13075000000,
+     "fonds_propres": 42913000000,
+     "roe_pct": 30.5
+    },
+    "moyenne_pct": 37.9,
+    "minimum_pct": 24.6,
+    "maximum_pct": 48.0,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -10554,6 +11984,48 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "pleine",
+    "exercices": [
+     {
+      "exercice": 2022,
+      "resultat_net": 278912390000,
+      "fonds_propres": 898523405000,
+      "roe_pct": 31.0
+     },
+     {
+      "exercice": 2023,
+      "resultat_net": 331748328000,
+      "fonds_propres": 1065723946000,
+      "roe_pct": 31.1
+     },
+     {
+      "exercice": 2024,
+      "resultat_net": 393662000000,
+      "fonds_propres": 1274638000000,
+      "roe_pct": 30.9
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": 413588000000,
+      "fonds_propres": 1399263000000,
+      "roe_pct": 29.6
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 413588000000,
+     "fonds_propres": 1399263000000,
+     "roe_pct": 29.6
+    },
+    "moyenne_pct": 30.6,
+    "minimum_pct": 29.6,
+    "maximum_pct": 31.1,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -10809,6 +12281,10 @@
     "alertes": [
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -11078,6 +12554,32 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2023,
+      "resultat_net": 3635138559,
+      "fonds_propres": 8649304155,
+      "roe_pct": 42.0
+     }
+    ],
+    "dernier": {
+     "exercice": 2023,
+     "resultat_net": 3635138559,
+     "fonds_propres": 8649304155,
+     "roe_pct": 42.0
+    },
+    "moyenne_pct": 42.0,
+    "minimum_pct": 42.0,
+    "maximum_pct": 42.0,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2020
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -11291,6 +12793,41 @@
      "aucune distribution documentée depuis 2021, soit 4 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2021) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2020,
+      "resultat_net": 2320633000,
+      "fonds_propres": 2845997000,
+      "roe_pct": 81.5
+     },
+     {
+      "exercice": 2021,
+      "resultat_net": 1119448000,
+      "fonds_propres": 2977605000,
+      "roe_pct": 37.6
+     }
+    ],
+    "dernier": {
+     "exercice": 2021,
+     "resultat_net": 1119448000,
+     "fonds_propres": 2977605000,
+     "roe_pct": 37.6
+    },
+    "moyenne_pct": 59.5,
+    "minimum_pct": 37.6,
+    "maximum_pct": 81.5,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,
@@ -11547,6 +13084,10 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 4 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -11821,6 +13362,10 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "aucun exercice avec résultat et fonds propres ensemble"
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -12068,6 +13613,32 @@
      "5 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2025,
+      "resultat_net": 6146527096,
+      "fonds_propres": 20718610077,
+      "roe_pct": 29.7
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": 6146527096,
+     "fonds_propres": 20718610077,
+     "roe_pct": 29.7
+    },
+    "moyenne_pct": 29.7,
+    "minimum_pct": 29.7,
+    "maximum_pct": 29.7,
+    "exercices_negatifs": 0,
+    "exercices_sans_fonds_propres": [
+     2024
+    ],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
+   },
    "variation": {
     "limite_pct": 7.5,
     "reaction": {
@@ -12223,6 +13794,10 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "entreprise": {
+    "statut": "non_calculable",
+    "raison": "fonds propres absents des états extraits pour tous les exercices"
    },
    "variation": {
     "limite_pct": 7.5,
@@ -12393,6 +13968,36 @@
      "le flux d'exploitation de 2025 ne couvre pas la distribution (-911.01 fois)",
      "le dernier exercice payé (2021) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "entreprise": {
+    "statut": "calcule",
+    "profondeur": "limitee",
+    "exercices": [
+     {
+      "exercice": 2024,
+      "resultat_net": -2188937902,
+      "fonds_propres": 15591475518,
+      "roe_pct": -14.0
+     },
+     {
+      "exercice": 2025,
+      "resultat_net": -624111470,
+      "fonds_propres": 24619180792,
+      "roe_pct": -2.5
+     }
+    ],
+    "dernier": {
+     "exercice": 2025,
+     "resultat_net": -624111470,
+     "fonds_propres": 24619180792,
+     "roe_pct": -2.5
+    },
+    "moyenne_pct": -8.2,
+    "minimum_pct": -14.0,
+    "maximum_pct": -2.5,
+    "exercices_negatifs": 2,
+    "exercices_sans_fonds_propres": [],
+    "regle": "résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. Ce n'est ni une note de qualité ni une prévision."
    },
    "variation": {
     "limite_pct": 7.5,

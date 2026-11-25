@@ -343,6 +343,44 @@ def ruptures(exercices: list[dict]) -> list[dict]:
     return sorties
 
 
+def roe_serie(company: dict) -> dict:
+    """Rentabilité des fonds propres, exercice par exercice — la mesure la plus
+    demandée par les praticiens (Fisher, Buffett, Dorsey) et la plus absente
+    d'un écran boursier ordinaire.
+
+    Une seule règle : le résultat net et les fonds propres doivent venir du
+    **même exercice**. Aucune moyenne, aucune reconstitution.
+    """
+    lignes, manquants = [], []
+    for e in serie(company):
+        rn, fp = _fig(e, "resultat_net"), _fig(e, "capitaux_propres")
+        if rn is None or not fp or fp <= 0:
+            if rn is not None:
+                manquants.append(e.get("exercice"))
+            continue
+        lignes.append({"exercice": e.get("exercice"), "resultat_net": rn,
+                       "fonds_propres": fp, "roe_pct": round(rn / fp * 100, 1)})
+    if not lignes:
+        return {"statut": "non_calculable",
+                "raison": ("fonds propres absents des états extraits pour tous les exercices"
+                           if manquants else "aucun exercice avec résultat et fonds propres ensemble")}
+    valeurs = [x["roe_pct"] for x in lignes]
+    sous_zero = sum(1 for v in valeurs if v < 0)
+    return {
+        "statut": "calcule",
+        "profondeur": "pleine" if len(lignes) >= MIN_EXERCICES else "limitee",
+        "exercices": lignes,
+        "dernier": lignes[-1],
+        "moyenne_pct": round(sum(valeurs) / len(valeurs), 1),
+        "minimum_pct": min(valeurs), "maximum_pct": max(valeurs),
+        "exercices_negatifs": sous_zero,
+        "exercices_sans_fonds_propres": manquants,
+        "regle": ("résultat net ÷ fonds propres de fin du même exercice. Au-dessus de 15 % sur trois exercices, "
+                  "l'entreprise crée de la valeur pour ses actionnaires ; sous 5 %, elle en détruit après inflation. "
+                  "Ce n'est ni une note de qualité ni une prévision."),
+    }
+
+
 def lecture_long(company: dict) -> dict:
     exercices = serie(company)
     if len(exercices) < MIN_EXERCICES_LIMITE:
@@ -380,7 +418,17 @@ def lecture_long(company: dict) -> dict:
     rn_d, rn_p = valeur(figs_d.get("resultat_net")), valeur(figs_p.get("resultat_net"))
     annee_p = (premier or {}).get("exercice")
     fp_d, fp_p = valeur(figs_d.get("capitaux_propres")), valeur(figs_p.get("capitaux_propres"))
+    # Une donnée absente n'est pas toujours irrécupérable : un total peut être
+    # reconstruit depuis ses composantes publiées. La règle est stricte —
+    # uniquement une somme additive exacte, jamais une estimation, et le fait
+    # que ce soit une somme est écrit à côté du chiffre.
     dettes_d = valeur(figs_d.get("dettes_financieres"))
+    dette_recomposee = False
+    if dettes_d is None:
+        haut = valeur(figs_d.get("dettes_financieres_non_courantes"))
+        courant = valeur(figs_d.get("dettes_financieres_courantes"))
+        if haut is not None and courant is not None:
+            dettes_d, dette_recomposee = haut + courant, True
     treso_d = valeur(figs_d.get("tresorerie_equivalents"))
     flux_d = valeur(figs_d.get("flux_tresorerie_operationnel"))
     ca_d, ca_p = valeur(figs_d.get("chiffre_affaires")), valeur(figs_p.get("chiffre_affaires"))
@@ -436,7 +484,10 @@ def lecture_long(company: dict) -> dict:
     if dettes_d is not None:
         dette_nette = dettes_d - (treso_d or 0)
         if fp_d:
-            points.append(f"Dette nette {dette_nette / 1e6:,.0f} M FCFA, soit {dette_nette / fp_d * 100:.0f} % des fonds propres : "
+            points.append(f"Dette nette {dette_nette / 1e6:,.0f} M FCFA"
+                          + (" (dont le total des dettes financières est la somme publiée des parts courante et non courante)"
+                             if dette_recomposee else "")
+                          + f", soit {dette_nette / fp_d * 100:.0f} % des fonds propres : "
                           + ("levier contenu." if dette_nette / fp_d < 1 else "levier à surveiller le jour où les taux montent."))
     if flux_d is not None and rn_d:
         points.append(f"Flux d'exploitation {flux_d / 1e6:,.0f} M FCFA, soit {flux_d / rn_d * 100:.0f} % du résultat net : "
@@ -894,6 +945,7 @@ class Verdict:
     capitalisation: dict = field(default_factory=dict)
     position_longue: dict = field(default_factory=dict)
     revenu: dict = field(default_factory=dict)
+    entreprise: dict = field(default_factory=dict)
     variation: dict = field(default_factory=dict)
     note: str = ""
 
@@ -929,6 +981,7 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
             v.horizons["moyen"]["details"].append(decomp["phrase"])
         v.horizons["long"] = lecture_long(c)
         v.revenu = revenu(c, v.cours)
+        v.entreprise = roe_serie(c)
         v.variation = {
             "limite_pct": limites["amplitude_max_pct"] if limites.get("statut") == "calcule" else None,
             "reaction": reactions(c, archive),
@@ -969,6 +1022,10 @@ def construire(data: dict, archive: dict) -> dict[str, Verdict]:
                 if valeur_rn:
                     rn_ref, rn_exercice = valeur_rn, e.get("exercice")
                     break
+            # (Un niveau 2 bis — résultat net ÷ BPA publié — donnerait un nombre
+            # d'actions déduit. Il n'est pas branché : le BOC collecté expose le
+            # PER mais pas le BPA, et l'ajouter au schéma de collecte est un
+            # chantier, pas une décision de lecture.)
             if isinstance(per_publie, (int, float)) and per_publie > 0 and rn_ref and rn_ref > 0:
                 v.capitalisation = {
                     "statut": "implicite",
@@ -1031,6 +1088,17 @@ def manques(verdicts: dict[str, Verdict]) -> list[dict]:
                 "source": ("archive BOC — bulletin officiel de la cote" if horizon in ("court", "moyen")
                            else "états financiers officiels de l'émetteur"),
             })
+        ent = v.entreprise or {}
+        if ent.get("statut") != "calcule":
+            taches.append({
+                "ticker": ticker, "societe": v.nom, "horizon": "rentabilité",
+                "etat": "absent",
+                "raison": ent.get("raison") or "aucun exercice ne réunit résultat net et fonds propres",
+                "source": "bilan et compte de résultat des états financiers officiels, même exercice",
+                "deblocage": ("les fonds propres sont présents dans le bilan : cette société a des états extraits "
+                              "sans la ligne « capitaux propres »" if ent.get("exercices_sans_fonds_propres")
+                              else "extraire la ligne capitaux propres du bilan de chaque exercice"),
+            })
         rev = v.revenu or {}
         if rev.get("preuve") != "documentaire":
             preuves = rev.get("preuves") or {}
@@ -1081,6 +1149,8 @@ def resume(verdicts: dict[str, Verdict]) -> dict:
         "capitalisation_calculee": sum(1 for v in verdicts.values() if v.capitalisation.get("statut") == "calcule"),
         "capitalisation_implicite": sum(1 for v in verdicts.values() if v.capitalisation.get("statut") == "implicite"),
         "position_longue_calculee": sum(1 for v in verdicts.values() if v.position_longue),
+        "roe_calcule": sum(1 for v in verdicts.values() if (v.entreprise or {}).get("statut") == "calcule"),
+        "roe_plein": sum(1 for v in verdicts.values() if (v.entreprise or {}).get("profondeur") == "pleine"),
         "revenu_documente": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuve") == "documentaire"),
         "revenu_partiel": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuve") == "partielle"),
         "revenu_absent": sum(1 for v in verdicts.values() if (v.revenu or {}).get("preuve") == "absente"),

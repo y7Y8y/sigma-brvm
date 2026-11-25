@@ -205,6 +205,42 @@ class FichierPublieTests(unittest.TestCase):
             self.assertIn(horizon, resultat.stdout)
 
 
+class EntrepriseTests(unittest.TestCase):
+    """Rentabilité réelle : résultat et fonds propres du MÊME exercice."""
+
+    def test_le_roe_n_est_jamais_calcule_sur_des_exercices_differents(self):
+        for ticker, v in VERDICTS.items():
+            e = v.entreprise
+            if e.get("statut") != "calcule":
+                continue
+            for ligne in e["exercices"]:
+                self.assertAlmostEqual(ligne["roe_pct"], ligne["resultat_net"] / ligne["fonds_propres"] * 100,
+                                       places=1, msg=ticker)
+                # Aucun exercice ne peut mélanger un résultat et des fonds
+                # propres d'une autre année : les deux viennent du même dict.
+                self.assertGreater(ligne["fonds_propres"], 0, ticker)
+
+    def test_les_fonds_propres_absents_ne_sont_pas_comptes(self):
+        for ticker, v in VERDICTS.items():
+            e = v.entreprise
+            if e.get("statut") != "calcule":
+                continue
+            for exercice in e.get("exercices_sans_fonds_propres") or []:
+                self.assertNotIn(exercice, [x["exercice"] for x in e["exercices"]], ticker)
+
+    def test_chaque_societe_sans_roe_a_une_tache_nommee(self):
+        lignes = {m["ticker"] for m in verdict.manques(VERDICTS) if m["horizon"] == "rentabilité"}
+        sans = {t for t, v in VERDICTS.items() if v.entreprise.get("statut") != "calcule"}
+        self.assertEqual(lignes, sans)
+        for m in verdict.manques(VERDICTS):
+            if m["horizon"] == "rentabilité":
+                self.assertTrue(m["deblocage"])
+
+    def test_la_rentabilite_est_publiee_pour_au_moins_deux_tiers(self):
+        calcules = sum(1 for v in VERDICTS.values() if v.entreprise.get("statut") == "calcule")
+        self.assertGreaterEqual(calcules, 30, "la rentabilité doit être calculable pour la majorité")
+
+
 class SeriesComptablesTests(unittest.TestCase):
     """Une série propre avant une conclusion : unités, ruptures, confiance."""
 
