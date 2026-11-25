@@ -74,6 +74,10 @@ SEUIL_PERFIANCE_COURT = 10.0     # variation 20 séances qui mérite une explica
 # de 5 M FCFA échangés, la variation d'une séance décrit un prix de passage.
 SEUIL_SAUT_VALEUR = 5_000_000
 
+# Au-delà de cinq exercices d'écart, comparer deux exercices revient souvent à
+# comparer deux périmètres comptables : la comparaison est refusée, pas nuancée.
+MAX_ECART_EXERCICES = 5
+
 PER_SEANCES_PLEIN = 120
 PER_SEANCES_LIMITE = 30          # en dessous, aucune lecture sérieuse n'est possible
 MIN_EXERCICES = 3                # exercices nécessaires pour une lecture long terme pleine
@@ -280,6 +284,34 @@ def valeur(figure: dict | None) -> float | None:
     return v if isinstance(v, (int, float)) else None
 
 
+def ruptures(exercices: list[dict]) -> list[dict]:
+    """Sauts invraisemblables d'un exercice au suivant.
+
+    Un résultat net qui est multiplié par dix en un an n'est presque jamais une
+    performance : c'est un changement de périmètre comptable ou une extraction
+    qui a pris la mauvaise ligne. Constaté sur cette collecte : SGBC 2021
+    (10 116 M) → 2022 (97 230 M), soit ×9,6 ; FTSC 2024 (18 595 M) → 2025
+    (466 M), soit ÷40. Comparer le dernier exercice à celui d'avant le saut
+    produirait « +900 % par an » ou « +204 % » : deux affirmations fausses
+    tirées de chiffres vrais.
+    """
+    sorties = []
+    for a, b in zip(exercices, exercices[1:]):
+        ra, rb = valeur((a.get("figures") or {}).get("resultat_net")), valeur((b.get("figures") or {}).get("resultat_net"))
+        if not ra or not rb or ra <= 0 or rb <= 0:
+            continue
+        if b.get("exercice", 0) - a.get("exercice", 0) > MAX_ECART_EXERCICES:
+            continue
+        ratio = rb / ra
+        if ratio > 3 or ratio < 1 / 3:
+            sorties.append({"de": a.get("exercice"), "a": b.get("exercice"),
+                            "ratio": round(ratio, 1) if ratio >= 1 else round(1 / ratio, 1),
+                            "sens": "hausse" if ratio >= 1 else "baisse",
+                            "raison": ("saut invraisemblable d'un exercice au suivant : périmètre comptable "
+                                       "différent ou extraction douteuse")})
+    return sorties
+
+
 def lecture_long(company: dict) -> dict:
     exercices = serie(company)
     if len(exercices) < MIN_EXERCICES_LIMITE:
@@ -290,10 +322,32 @@ def lecture_long(company: dict) -> dict:
                            f"deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine"),
                 "regle": "états financiers officiels, deux exercices minimum"}
     profondeur = "pleine" if len(exercices) >= MIN_EXERCICES else "limitee"
-    dernier, premier = exercices[-1], exercices[0]
-    figs_d, figs_p = dernier.get("figures") or {}, premier.get("figures") or {}
+    # Le premier exercice de la série est souvent une ruine d'extraction
+    # (2021 : résultat net seul, ou périmètre d'avant cession). Comparer le
+    # dernier au plus ancien produisait « SGBC +900,7 % par an » et
+    # « ONTBF −50,9 % » sur deux sociétés différentes dans le temps.
+    # On prend donc le plus ancien exercice **comparable** : au plus cinq
+    # exercices d'écart, et doté du même indicateur que le dernier.
+    dernier = exercices[-1]
+    annee_d = dernier.get("exercice") or 0
+    sauts = ruptures(exercices)
+    # La fenêtre de comparaison commence après la dernière rupture : comparer
+    # au-delà reviendrait à décrire deux sociétés différentes.
+    annee_plancher = max([x["a"] for x in sauts], default=0)
+    comparables = [e for e in exercices[:-1]
+                   if (e.get("figures") or {}).get("resultat_net")
+                   and (e.get("exercice") or 0) >= annee_plancher
+                   and annee_d - (e.get("exercice") or 0) <= MAX_ECART_EXERCICES]
+    # Un exercice comparable doit aussi partager une grandeur avec le dernier :
+    # une ligne de résultat net seule, sans activité ni bilan, est une lecture
+    # d'un chiffre isolé, pas d'une trajectoire.
+    riches = [e for e in comparables if len(e.get("figures") or {}) > 1]
+    premier = (riches or comparables or [None])[0]
+    figs_d = dernier.get("figures") or {}
+    figs_p = (premier or {}).get("figures") or {}
 
     rn_d, rn_p = valeur(figs_d.get("resultat_net")), valeur(figs_p.get("resultat_net"))
+    annee_p = (premier or {}).get("exercice")
     fp_d, fp_p = valeur(figs_d.get("capitaux_propres")), valeur(figs_p.get("capitaux_propres"))
     dettes_d = valeur(figs_d.get("dettes_financieres"))
     treso_d = valeur(figs_d.get("tresorerie_equivalents"))
@@ -302,30 +356,49 @@ def lecture_long(company: dict) -> dict:
 
     points = []
     ton = "neutre"
-    if rn_d is not None and rn_p is not None and rn_p != 0:
+    refus = [f"Comparaison refusée de part et d'autre de {saut['de']}→{saut['a']} : résultat net "
+             f"multiplié par {saut['ratio']} en un an ({saut['sens']}) — {saut['raison']}." for saut in sauts]
+    if premier is None:
+        points.append("Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.")
+    if rn_d is not None and rn_p not in (None, 0) and annee_p is not None:
         croissance = (rn_d / rn_p - 1) * 100
-        annees = max(1, (dernier.get("exercice") or 0) - (premier.get("exercice") or 0))
-        if annees > 5:
+        annees = max(1, (dernier.get("exercice") or 0) - (annee_p or 0))
+        if annees > MAX_ECART_EXERCICES:
             # 2021 → 2025 comparait deux sociétés différentes dans le temps :
             # changement de périmètre, cession, ou extraction incomplète.
             points.append(
-                f"Écart de {annees} exercices entre {premier.get('exercice')} et {dernier.get('exercice')} : "
+                f"Écart de {annees} exercices entre {annee_p} et {dernier.get('exercice')} : "
                 "la comparaison directe serait trompeuse (périmètre possiblement différent)."
             )
             ton = "a_verifier"
             croissance = None
         if croissance is not None:
             rythme = ((rn_d / rn_p) ** (1 / annees) - 1) * 100 if rn_d > 0 and rn_p > 0 else None
-            points.append(f"Résultat net {dernier.get('exercice')} : {rn_d / 1e6:,.0f} M FCFA, contre {rn_p / 1e6:,.0f} M en {premier.get('exercice')} ({croissance:+.1f} %"
+            points.append(f"Résultat net {dernier.get('exercice')} : {rn_d / 1e6:,.0f} M FCFA, contre {rn_p / 1e6:,.0f} M en {annee_p} ({croissance:+.1f} %"
                           + (f", soit {rythme:+.1f} % par an" if rythme is not None else "") + ").")
-            ton = "solide" if croissance > 0 else "fragile"
+            # Une hausse de résultat ne suffit pas à dire « solide » : il faut
+            # aussi que l'exploitation transforme ce résultat en trésorerie.
+            # Une baisse ne suffit pas à dire « fragile » si le flux tient.
+            flux_p = valeur(figs_p.get("flux_tresorerie_operationnel"))
+            qualite = (flux_d / rn_d) if (flux_d is not None and rn_d) else None
+            if croissance > 0 and (qualite is None or qualite >= 0.8):
+                ton = "solide"
+            elif croissance > 0 and qualite is not None:
+                ton = "a_verifier"   # résultat en hausse, trésorerie en retrait
+            elif croissance <= 0 and rn_d < 0:
+                ton = "fragile"
+            elif croissance <= -15 and (qualite is None or qualite < 1.2):
+                ton = "fragile"
+            else:
+                ton = "a_verifier"
+            del flux_p
     if rn_d is not None and rn_d < 0:
         points.append(f"Résultat net négatif en {dernier.get('exercice')} : la lecture long terme porte sur une entreprise qui perd de l'argent.")
         ton = "fragile"
     if fp_d and rn_d:
         points.append(f"Rentabilité des fonds propres : {rn_d / fp_d * 100:.1f} % en {dernier.get('exercice')} (résultat net / fonds propres de fin d'exercice).")
     if fp_d and fp_p:
-        points.append(f"Fonds propres : {fp_d / 1e6:,.0f} M FCFA fin {dernier.get('exercice')}, contre {fp_p / 1e6:,.0f} M fin {premier.get('exercice')}.")
+        points.append(f"Fonds propres : {fp_d / 1e6:,.0f} M FCFA fin {dernier.get('exercice')}, contre {fp_p / 1e6:,.0f} M fin {annee_p}.")
     elif fp_d is None:
         points.append(f"Fonds propres {dernier.get('exercice')} : absents des documents indexés — non substitués par zéro.")
     dette_nette = None
@@ -338,7 +411,7 @@ def lecture_long(company: dict) -> dict:
         points.append(f"Flux d'exploitation {flux_d / 1e6:,.0f} M FCFA, soit {flux_d / rn_d * 100:.0f} % du résultat net : "
                       + ("le bénéfice se transforme en trésorerie." if flux_d / rn_d >= 0.8 else "le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier."))
     if ca_d and ca_p and ca_p > 0:
-        points.append(f"Activité (chiffre d'affaires ou PNB) : {ca_d / ca_p * 100 - 100:+.1f} % entre {premier.get('exercice')} et {dernier.get('exercice')}.")
+        points.append(f"Activité (chiffre d'affaires ou PNB) : {ca_d / ca_p * 100 - 100:+.1f} % entre {annee_p} et {dernier.get('exercice')}.")
 
     # Le seul repère de « durabilité » que les données permettent sans BPA :
     # le dividende net publié rapporté au résultat net par action implicite.
@@ -357,6 +430,12 @@ def lecture_long(company: dict) -> dict:
             + f" (valeur brute publiée {div_d / 1e6:,.0f} M ; convention de signe non unifiée entre sociétés)."
         )
 
+    points.extend(refus)
+    if premier is None or (annee_p is not None and annee_d - annee_p < 1):
+        # Aucun exercice comparable : on ne peut ni confirmer ni infirmer une
+        # trajectoire. Le ton doit le dire, sinon « neutre » se lit comme un
+        # feu vert.
+        ton = "a_verifier" if points else ton
     if not points:
         return {"statut": "non_calculable", "horizon": "long",
                 "raison": f"{len(exercices)} exercice(s) présents mais aucune grandeur exploitable "

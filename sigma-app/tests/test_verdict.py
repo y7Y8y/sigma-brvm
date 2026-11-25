@@ -99,10 +99,33 @@ class CalculsTests(unittest.TestCase):
 
     def test_aucune_comparaison_entre_perimetres_eloignes(self):
         # ONTBF comparait 2021 à 2025 : deux sociétés différentes dans le temps.
-        for v in VERDICTS.values():
+        for ticker, v in VERDICTS.items():
             long = v.horizons["long"]
-            if long.get("ton") == "a_verifier":
-                self.assertTrue(any("périmètre" in str(d) for d in long.get("details", [])), v.ticker)
+            details = [str(d) for d in long.get("details", [])]
+            refus = [d for d in details if "Comparaison refusée" in d]
+            for d in refus:
+                self.assertIn("périmètre", d, ticker)
+            # Un refus n'interdit pas une comparaison valable plus proche
+            # (SGBC 2022→2025). Mais s'il ne reste AUCUNE comparaison, le ton
+            # ne peut pas être un feu vert.
+            comparaison_valable = any(d.startswith("Résultat net") for d in details)
+            if refus and not comparaison_valable:
+                self.assertEqual(long["ton"], "a_verifier", ticker)
+
+    def test_aucun_saut_invraisemblable_n_est_pris_pour_une_performance(self):
+        """SGBC ×9,6 en 2021→2022, FTSC ×20 en 2022→2023 : refus, pas récit."""
+        for ticker, v in VERDICTS.items():
+            long = v.horizons["long"]
+            texte = " ".join(str(d) for d in (long.get("details") or []))
+            if "Résultat net" in texte:
+                for motif in ("+900", "+204", "+2 000"):
+                    self.assertNotIn(motif, texte, ticker)
+
+    def test_la_fenetre_de_comparaison_s_arrete_a_la_derniere_rupture(self):
+        series = verdict.serie(DATA["companies"][[c["ticker"] for c in DATA["companies"]].index("SGBC")])
+        sauts = verdict.ruptures(series)
+        self.assertTrue(sauts, "SGBC doit porter la rupture 2021→2022")
+        self.assertEqual(sauts[-1]["a"], 2022)
 
 
 class FrontiereTests(unittest.TestCase):
