@@ -618,6 +618,13 @@ td.num, th.num { white-space: nowrap; }
   .verdict-card .fold { margin-top: 10px; }
 }
 
+/* Le revenu — trois preuves séparées, jamais fondues en une note de qualité. */
+.revenu-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.revenu-head h2 { margin: 2px 0 0; }
+.revenu-proof .verdict-titre { font-size: var(--fs-body); }
+.revenu-alertes { color: var(--attention); }
+.revenu-alertes li::marker { color: var(--attention); }
+
 /* ---------------------------------------------------------------------------
    Registre des manques — voir le trou, pas le masquer
 --------------------------------------------------------------------------- */

@@ -180,6 +180,78 @@ class FichierPublieTests(unittest.TestCase):
             self.assertIn(horizon, resultat.stdout)
 
 
+class RevenuTests(unittest.TestCase):
+    """Un rendement n'est pas un revenu : trois preuves, jamais une note."""
+
+    def test_le_rendement_vient_du_boc_et_de_lui_seul(self):
+        """Le tableau BRVM mêle brut et net : aucun montant d'une source à l'autre."""
+        for ticker, v in VERDICTS.items():
+            r = v.revenu
+            if r["rendement_pct"] is None:
+                continue
+            boc = DATA["companies"][[c["ticker"] for c in DATA["companies"]].index(ticker)]
+            self.assertEqual(r["rendement_pct"], boc["latest_boc"]["net_dividend_yield_pct"], ticker)
+
+    def test_aucun_rendement_n_est_calcule_sur_un_dividende_d_une_autre_source(self):
+        for ticker, v in VERDICTS.items():
+            r = v.revenu
+            if r["rendement_pct"] is None or not v.cours:
+                continue
+            # Un rendement recalculé depuis le tableau de paiement donnerait un
+            # écart de 12 à 14 % dans les cas bruts : on vérifie que le chiffre
+            # publié est repris tel quel, pas reconstruit.
+            self.assertEqual(r["rendement_source"].startswith("BOC"), True, ticker)
+
+    def test_les_trois_preuves_sont_independantes_et_comptees(self):
+        for ticker, v in VERDICTS.items():
+            r = v.revenu
+            p = r["preuves"]
+            self.assertEqual(set(p), {"regularite", "financement", "couverture"}, ticker)
+            self.assertEqual(r["preuves_reunies"], sum(1 for x in p.values() if x), ticker)
+            self.assertIn(r["preuve"], {"documentaire", "partielle", "absente"}, ticker)
+
+    def test_aucune_preuve_n_est_accorde_par_defaut(self):
+        """Une preuve « tenue » doit s'appuyer sur un chiffre publié, pas sur une absence."""
+        for ticker, v in VERDICTS.items():
+            r = v.revenu
+            if r["preuves"]["regularite"]:
+                self.assertGreaterEqual(r["regularite"]["annees_consecutives"], 3, ticker)
+            if r["preuves"]["financement"]:
+                self.assertEqual(r["payout"]["statut"], "documentaire", ticker)
+                self.assertLessEqual(r["payout"]["dernier"]["payout_pct"], 100, ticker)
+            if r["preuves"]["couverture"]:
+                self.assertEqual(r["couverture"]["statut"], "calcule", ticker)
+                self.assertGreaterEqual(r["couverture"]["couverture_x"], 1, ticker)
+
+    def test_un_dividende_non_renouvele_est_signale(self):
+        """Le cas SIVC : un versement de 2016 ne fait pas un revenu de 2026."""
+        for ticker, v in VERDICTS.items():
+            r = v.revenu
+            reg = r["regularite"]
+            if reg.get("statut") == "documentee" and reg.get("en_retard_sur_les_comptes"):
+                self.assertTrue(r["rendement_en_retard"], ticker)
+                self.assertTrue(any("versement passé" in a for a in r["alertes"]), ticker)
+
+    def test_un_rendement_hors_norme_porte_un_avertissement(self):
+        for ticker, v in VERDICTS.items():
+            r = v.revenu
+            if (r["rendement_pct"] or 0) > 20 and r["preuves_reunies"] < 3:
+                self.assertTrue(any("hors norme" in a or "très supérieure" in a for a in r["alertes"]), ticker)
+
+    def test_aucune_formule_de_conseil_dans_le_revenu(self):
+        for v in VERDICTS.values():
+            texte = verdict.normalize_texte(" ".join(v.revenu["points"] + v.revenu["alertes"]))
+            for interdit in INTERDITS:
+                self.assertIsNone(re.search(interdit, texte), f"{interdit} dans le revenu")
+
+    def test_le_registre_compte_les_trous_de_revenu(self):
+        lignes = [m for m in verdict.manques(VERDICTS) if m["horizon"] == "revenu"]
+        incompletes = [t for t, v in VERDICTS.items() if v.revenu["preuve"] != "documentaire"]
+        self.assertEqual(len(lignes), len(incompletes))
+        for ligne in lignes:
+            self.assertTrue(ligne["deblocage"], ligne)
+
+
 class RegistreManquesTests(unittest.TestCase):
     """« Je ne veux rien de partiel » : le registre doit être complet et honnête."""
 
