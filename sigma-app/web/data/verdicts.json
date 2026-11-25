@@ -16,6 +16,23 @@
   "min_exercices": 3,
   "min_exercices_limite": 2
  },
+ "marche": {
+  "limites": {
+   "statut": "calcule",
+   "amplitude_max_pct": 7.5,
+   "observations": 12332,
+   "seances_au_plafond": 67,
+   "note": "amplitude maximale observée sur l'archive ; au-delà de la borne, la séance est close sur plafond ou plancher et le titre ne s'échange plus à ce prix"
+  },
+  "sauts": {
+   "statut": "calcule",
+   "seuil_pct": 5.0,
+   "nombre": 1316,
+   "titres": 48,
+   "valeur_mediane_fcfa": 15043250,
+   "part_sous_10m_pct": 39.4
+  }
+ },
  "resume": {
   "societes": 48,
   "court_calcule": 47,
@@ -805,6 +822,86 @@
      "le flux d'exploitation de 2024 ne couvre pas la distribution (-0.13 fois)"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 33,
+     "profondeur": "pleine",
+     "retours": 9,
+     "taux_retour_pct": 27.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-08-24",
+       "saut_pct": 7.46,
+       "deux_seances_apres_pct": 2.5,
+       "retour": false
+      },
+      {
+       "date": "2026-10-01",
+       "saut_pct": -7.42,
+       "deux_seances_apres_pct": -3.26,
+       "retour": false
+      },
+      {
+       "date": "2026-10-05",
+       "saut_pct": -5.71,
+       "deux_seances_apres_pct": -0.15,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 3,
+     "taux_mouvement_pct": 50.0,
+     "max_mouvement_pct": 3.42,
+     "detail": [
+      {
+       "date": "2026-10-16",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 servair abidjan ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-10-16",
+       "type": "activite_semestrielle",
+       "label": "Attestation des commissaires aux comptes sur le rapport dactivites 1er semestre 2026 servair abidjan ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-10-16",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3e trimestre 2026 servair abidjan ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-27",
+       "type": "etats_financiers",
+       "label": "Etats financiers ifrs exercice 2025 servair abidjan ci",
+       "mouvement": {
+        "date": "2026-04-27",
+        "variation_pct": 3.42
+       }
+      },
+      {
+       "date": "2026-04-27",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 servair abidjan ci",
+       "mouvement": {
+        "date": "2026-04-27",
+        "variation_pct": 3.42
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "BBGC": {
@@ -867,6 +964,68 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 3,
+     "profondeur": "limitee",
+     "retours": 1,
+     "taux_retour_pct": 33.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-25",
+       "saut_pct": 7.44,
+       "deux_seances_apres_pct": 15.46,
+       "retour": false
+      },
+      {
+       "date": "2026-09-28",
+       "saut_pct": 7.44,
+       "deux_seances_apres_pct": 7.46,
+       "retour": false
+      },
+      {
+       "date": "2026-09-29",
+       "saut_pct": 7.46,
+       "deux_seances_apres_pct": -2.22,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 2,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.44,
+     "detail": [
+      {
+       "date": "2026-09-24",
+       "type": "activite_semestrielle",
+       "label": "Rapport des commissaires aux comptes 1er semestre 2026 bridge bank group ci",
+       "mouvement": {
+        "date": "2026-09-25",
+        "variation_pct": 7.44
+       }
+      },
+      {
+       "date": "2026-09-24",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 bridge bank group ci",
+       "mouvement": {
+        "date": "2026-09-25",
+        "variation_pct": 7.44
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -1029,6 +1188,89 @@
      "≈ 41 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 10,
+     "profondeur": "pleine",
+     "retours": 3,
+     "taux_retour_pct": 30.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.46,
+       "deux_seances_apres_pct": -0.58,
+       "retour": false
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": -7.48,
+       "deux_seances_apres_pct": 7.45,
+       "retour": true
+      },
+      {
+       "date": "2026-09-25",
+       "saut_pct": 7.45,
+       "deux_seances_apres_pct": 0.59,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 7,
+     "avec_mouvement": 5,
+     "taux_mouvement_pct": 71.4,
+     "max_mouvement_pct": 7.5,
+     "detail": [
+      {
+       "date": "2026-09-21",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites et etats financiers ifrs 1er semestre 2026 biic bn",
+       "mouvement": {
+        "date": "2026-09-22",
+        "variation_pct": -7.5
+       }
+      },
+      {
+       "date": "2026-07-22",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 biic bn",
+       "mouvement": {
+        "date": "2026-07-23",
+        "variation_pct": 7.43
+       }
+      },
+      {
+       "date": "2026-06-19",
+       "type": "etats_financiers",
+       "label": "Rapport dactivites annuel et etats financiers ifrs exercice 2025 biic",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-19",
+       "type": "etats_financiers",
+       "label": "Rapport des commissaires aux comptes sur les etats financiers annuels exercice 2025 biic",
+       "mouvement": null
+      },
+      {
+       "date": "2025-12-04",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 biic bn",
+       "mouvement": {
+        "date": "2025-12-04",
+        "variation_pct": 3.4
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -1213,6 +1455,86 @@
      "1 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 8,
+     "profondeur": "pleine",
+     "retours": 5,
+     "taux_retour_pct": 62.5,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-29",
+       "saut_pct": 7.37,
+       "deux_seances_apres_pct": -3.14,
+       "retour": true
+      },
+      {
+       "date": "2026-09-30",
+       "saut_pct": -6.56,
+       "deux_seances_apres_pct": -3.99,
+       "retour": false
+      },
+      {
+       "date": "2026-10-05",
+       "saut_pct": -7.38,
+       "deux_seances_apres_pct": 0.62,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 3,
+     "taux_mouvement_pct": 50.0,
+     "max_mouvement_pct": 5.46,
+     "detail": [
+      {
+       "date": "2026-10-13",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 bici ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 bici ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-17",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 bici ci",
+       "mouvement": {
+        "date": "2026-04-20",
+        "variation_pct": 5.46
+       }
+      },
+      {
+       "date": "2026-04-17",
+       "type": "rapport_activites_annuel",
+       "label": "Rapport dactivites annuel exercice 2025 bici ci",
+       "mouvement": {
+        "date": "2026-04-20",
+        "variation_pct": 5.46
+       }
+      },
+      {
+       "date": "2025-10-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 bici ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "BNBC": {
@@ -1344,6 +1666,80 @@
      "distribution déduite très supérieure au bénéfice (≈ 4452 %) : à confirmer au tableau de financement avant d'en faire un revenu récurrent",
      "le dernier exercice payé (2022) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 21,
+     "profondeur": "pleine",
+     "retours": 9,
+     "taux_retour_pct": 42.9,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-02",
+       "saut_pct": -7.5,
+       "deux_seances_apres_pct": -2.03,
+       "retour": false
+      },
+      {
+       "date": "2026-09-14",
+       "saut_pct": 7.49,
+       "deux_seances_apres_pct": -8.28,
+       "retour": true
+      },
+      {
+       "date": "2026-10-05",
+       "saut_pct": -7.18,
+       "deux_seances_apres_pct": 7.73,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 50.0,
+     "max_mouvement_pct": 7.48,
+     "detail": [
+      {
+       "date": "2026-04-30",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 bernabe ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 bernabe ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 bernabe ci",
+       "mouvement": {
+        "date": "2025-11-04",
+        "variation_pct": -7.48
+       }
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 bernabe ci",
+       "mouvement": {
+        "date": "2025-11-04",
+        "variation_pct": -7.48
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -1531,6 +1927,89 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 7,
+     "profondeur": "limitee",
+     "retours": 2,
+     "taux_retour_pct": 28.6,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-03-10",
+       "saut_pct": 6.74,
+       "deux_seances_apres_pct": -1.31,
+       "retour": true
+      },
+      {
+       "date": "2026-08-18",
+       "saut_pct": 6.82,
+       "deux_seances_apres_pct": 1.06,
+       "retour": false
+      },
+      {
+       "date": "2026-08-21",
+       "saut_pct": 5.11,
+       "deux_seances_apres_pct": 3.66,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 3,
+     "taux_mouvement_pct": 60.0,
+     "max_mouvement_pct": 7.5,
+     "detail": [
+      {
+       "date": "2026-07-23",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 boa bn",
+       "mouvement": null
+      },
+      {
+       "date": "2026-05-04",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 boa benin",
+       "mouvement": {
+        "date": "2026-05-05",
+        "variation_pct": 3.29
+       }
+      },
+      {
+       "date": "2026-04-15",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 boa bn",
+       "mouvement": {
+        "date": "2026-04-15",
+        "variation_pct": 3.38
+       }
+      },
+      {
+       "date": "2025-12-05",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 boa bn",
+       "mouvement": {
+        "date": "2025-12-05",
+        "variation_pct": 7.5
+       }
+      },
+      {
+       "date": "2025-10-29",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 boa bn",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "BOABF": {
@@ -1714,6 +2193,83 @@
     "alertes": [
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 11,
+     "profondeur": "pleine",
+     "retours": 5,
+     "taux_retour_pct": 45.5,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-08-27",
+       "saut_pct": 5.7,
+       "deux_seances_apres_pct": -3.19,
+       "retour": true
+      },
+      {
+       "date": "2026-09-22",
+       "saut_pct": -5.06,
+       "deux_seances_apres_pct": 7.36,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 7.43,
+       "deux_seances_apres_pct": 4.4,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 33.3,
+     "max_mouvement_pct": 4.76,
+     "detail": [
+      {
+       "date": "2026-08-05",
+       "type": "activite_semestrielle",
+       "label": "Etats financiers 1er semestre 2026 boa bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-08-05",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 boa bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 boa bf",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": -3.36
+       }
+      },
+      {
+       "date": "2026-03-23",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 boa bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-03-23",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivite deuxieme semestre 2025 boa bf",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -1902,6 +2458,80 @@
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 4,
+     "profondeur": "limitee",
+     "retours": 2,
+     "taux_retour_pct": 50.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-07-27",
+       "saut_pct": 5.83,
+       "deux_seances_apres_pct": 3.71,
+       "retour": false
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -5.26,
+       "deux_seances_apres_pct": 7.36,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 6.2,
+       "deux_seances_apres_pct": 0.26,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 16.7,
+     "max_mouvement_pct": 4.35,
+     "detail": [
+      {
+       "date": "2026-10-01",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 boa ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-10-01",
+       "type": "etats_financiers_intermediaires",
+       "label": "Rapport dexamen limite des etats financiers 1er semestre 2026 boa ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-12",
+       "type": "etats_financiers",
+       "label": "Rapport des commissaires aux comptes et etats financiers annuels exercice 2025 boa ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-01",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 boa ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-12-01",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 boa ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "BOAM": {
@@ -2073,6 +2703,80 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 12,
+     "profondeur": "pleine",
+     "retours": 4,
+     "taux_retour_pct": 33.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.45,
+       "deux_seances_apres_pct": 14.99,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 7.5,
+       "deux_seances_apres_pct": 6.21,
+       "retour": false
+      },
+      {
+       "date": "2026-09-25",
+       "saut_pct": 6.97,
+       "deux_seances_apres_pct": -4.69,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 50.0,
+     "max_mouvement_pct": 7.46,
+     "detail": [
+      {
+       "date": "2026-09-23",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 boa mali",
+       "mouvement": {
+        "date": "2026-09-23",
+        "variation_pct": -7.45
+       }
+      },
+      {
+       "date": "2026-06-23",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 boa mali",
+       "mouvement": {
+        "date": "2026-06-24",
+        "variation_pct": 7.46
+       }
+      },
+      {
+       "date": "2026-03-24",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 boa ml",
+       "mouvement": null
+      },
+      {
+       "date": "2025-11-10",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 boa ml",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -2262,6 +2966,95 @@
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 24,
+     "profondeur": "pleine",
+     "retours": 11,
+     "taux_retour_pct": 45.8,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-28",
+       "saut_pct": 7.41,
+       "deux_seances_apres_pct": -3.81,
+       "retour": true
+      },
+      {
+       "date": "2026-10-01",
+       "saut_pct": -5.66,
+       "deux_seances_apres_pct": -2.0,
+       "retour": false
+      },
+      {
+       "date": "2026-10-12",
+       "saut_pct": -6.48,
+       "deux_seances_apres_pct": 7.15,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 8,
+     "avec_mouvement": 7,
+     "taux_mouvement_pct": 87.5,
+     "max_mouvement_pct": 7.32,
+     "detail": [
+      {
+       "date": "2026-09-25",
+       "type": "activite_semestrielle",
+       "label": "Attestation des commissaires aux comptes et rapport dactivites 1er semestre 2026 boa niger",
+       "mouvement": {
+        "date": "2026-09-25",
+        "variation_pct": 7.32
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 boa ng",
+       "mouvement": {
+        "date": "2026-04-30",
+        "variation_pct": 3.24
+       }
+      },
+      {
+       "date": "2026-04-29",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 2eme semestre 2025 boa ng",
+       "mouvement": {
+        "date": "2026-04-30",
+        "variation_pct": 3.24
+       }
+      },
+      {
+       "date": "2026-04-01",
+       "type": "etats_financiers",
+       "label": "Rapport des commissaires aux comptes sur les etats financiers annuels exercice 2025 boa ng",
+       "mouvement": {
+        "date": "2026-04-01",
+        "variation_pct": 3.05
+       }
+      },
+      {
+       "date": "2026-04-01",
+       "type": "autre",
+       "label": "Rapport des cac sur les conventions reglementees et les credits accordes aux dirigeants de la banque exercice 2025 boa n",
+       "mouvement": {
+        "date": "2026-04-01",
+        "variation_pct": 3.05
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "BOAS": {
@@ -2446,6 +3239,83 @@
     "alertes": [
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 3,
+     "profondeur": "limitee",
+     "retours": 2,
+     "taux_retour_pct": 66.7,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-03-02",
+       "saut_pct": 6.06,
+       "deux_seances_apres_pct": -2.29,
+       "retour": true
+      },
+      {
+       "date": "2026-03-04",
+       "saut_pct": -5,
+       "deux_seances_apres_pct": -3.51,
+       "retour": false
+      },
+      {
+       "date": "2026-08-24",
+       "saut_pct": 6.25,
+       "deux_seances_apres_pct": -0.65,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 33.3,
+     "max_mouvement_pct": 4.26,
+     "detail": [
+      {
+       "date": "2026-10-21",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3e trimestre 2026 boa sn",
+       "mouvement": null
+      },
+      {
+       "date": "2026-09-21",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 boa sn",
+       "mouvement": {
+        "date": "2026-09-23",
+        "variation_pct": -4.26
+       }
+      },
+      {
+       "date": "2026-04-22",
+       "type": "activite_trimestrielle",
+       "label": "Etats financiers 1er trimestre 2026 boa sn",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-22",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 boa sn",
+       "mouvement": null
+      },
+      {
+       "date": "2026-03-17",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 boa sn",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -2633,6 +3503,89 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 27,
+     "profondeur": "pleine",
+     "retours": 6,
+     "taux_retour_pct": 22.2,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-06-30",
+       "saut_pct": 7.4,
+       "deux_seances_apres_pct": 0.0,
+       "retour": false
+      },
+      {
+       "date": "2026-07-01",
+       "saut_pct": -6.89,
+       "deux_seances_apres_pct": 7.28,
+       "retour": true
+      },
+      {
+       "date": "2026-07-07",
+       "saut_pct": -7.46,
+       "deux_seances_apres_pct": -3.73,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 3,
+     "taux_mouvement_pct": 60.0,
+     "max_mouvement_pct": 7.5,
+     "detail": [
+      {
+       "date": "2026-04-20",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 sicable ci",
+       "mouvement": {
+        "date": "2026-04-21",
+        "variation_pct": -7.5
+       }
+      },
+      {
+       "date": "2026-03-11",
+       "type": "etats_financiers",
+       "label": "Etats financiers ifrs exercice 2025 sicable ci",
+       "mouvement": {
+        "date": "2026-03-11",
+        "variation_pct": -7.4
+       }
+      },
+      {
+       "date": "2026-03-10",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 sicable ci",
+       "mouvement": {
+        "date": "2026-03-11",
+        "variation_pct": -7.4
+       }
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 sicable ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 sicable ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "CBIBF": {
@@ -2799,6 +3752,92 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 21,
+     "profondeur": "pleine",
+     "retours": 7,
+     "taux_retour_pct": 33.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.5,
+       "deux_seances_apres_pct": 9.85,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 5.67,
+       "deux_seances_apres_pct": 7.23,
+       "retour": false
+      },
+      {
+       "date": "2026-09-30",
+       "saut_pct": -7.48,
+       "deux_seances_apres_pct": 4.62,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 4,
+     "taux_mouvement_pct": 66.7,
+     "max_mouvement_pct": 7.49,
+     "detail": [
+      {
+       "date": "2026-08-31",
+       "type": "etats_financiers_intermediaires",
+       "label": "Rapport dexamen limite des cac sur les etats financiers au 30 juin 2026 coris bank international bf",
+       "mouvement": {
+        "date": "2026-09-01",
+        "variation_pct": 3.29
+       }
+      },
+      {
+       "date": "2026-08-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 coris bank international bf",
+       "mouvement": {
+        "date": "2026-09-01",
+        "variation_pct": 3.29
+       }
+      },
+      {
+       "date": "2026-07-07",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 coris bank international bf",
+       "mouvement": {
+        "date": "2026-07-08",
+        "variation_pct": 7.49
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 coris bank international bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-23",
+       "type": "rapport_activites_annuel",
+       "label": "Rapport dactivites annuel exercice 2025 coris bank international bf",
+       "mouvement": {
+        "date": "2026-04-23",
+        "variation_pct": 5.17
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -3008,6 +4047,77 @@
     "alertes": [
      "7 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 41,
+     "profondeur": "pleine",
+     "retours": 18,
+     "taux_retour_pct": 43.9,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-07-20",
+       "saut_pct": 6.25,
+       "deux_seances_apres_pct": -0.29,
+       "retour": true
+      },
+      {
+       "date": "2026-07-21",
+       "saut_pct": -5.59,
+       "deux_seances_apres_pct": 5.61,
+       "retour": true
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.5,
+       "deux_seances_apres_pct": 5.07,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 3,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.08,
+     "detail": [
+      {
+       "date": "2026-07-13",
+       "type": "rapport_annuel",
+       "label": "Rapport annuel exercice 2025 cfao motors ci",
+       "mouvement": {
+        "date": "2026-07-14",
+        "variation_pct": 3.55
+       }
+      },
+      {
+       "date": "2025-12-22",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 cfao motors ci",
+       "mouvement": {
+        "date": "2025-12-23",
+        "variation_pct": -3.45
+       }
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 cfao motors ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": 7.08
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -3236,6 +4346,71 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 21,
+     "profondeur": "pleine",
+     "retours": 7,
+     "taux_retour_pct": 33.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-08-20",
+       "saut_pct": 5.19,
+       "deux_seances_apres_pct": -3.06,
+       "retour": true
+      },
+      {
+       "date": "2026-09-07",
+       "saut_pct": 5.67,
+       "deux_seances_apres_pct": 4.52,
+       "retour": false
+      },
+      {
+       "date": "2026-09-22",
+       "saut_pct": -6.25,
+       "deux_seances_apres_pct": -2.38,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 33.3,
+     "max_mouvement_pct": 4.32,
+     "detail": [
+      {
+       "date": "2026-05-20",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada et ifrs exercice 2025 cie ci",
+       "mouvement": {
+        "date": "2026-05-20",
+        "variation_pct": 4.32
+       }
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 cie ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_semestrielle",
+       "label": "Attestation des commissaires aux comptes et rapport dactivites 1er semestre 2025 cie ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "ECOC": {
@@ -3422,6 +4597,77 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 8,
+     "profondeur": "pleine",
+     "retours": 6,
+     "taux_retour_pct": 75.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-05-22",
+       "saut_pct": 5.03,
+       "deux_seances_apres_pct": 0.0,
+       "retour": false
+      },
+      {
+       "date": "2026-08-18",
+       "saut_pct": 5.5,
+       "deux_seances_apres_pct": -0.18,
+       "retour": true
+      },
+      {
+       "date": "2026-09-10",
+       "saut_pct": -5.06,
+       "deux_seances_apres_pct": 1.79,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 25.0,
+     "max_mouvement_pct": 5.06,
+     "detail": [
+      {
+       "date": "2026-09-09",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 ecobank ci",
+       "mouvement": {
+        "date": "2026-09-10",
+        "variation_pct": -5.06
+       }
+      },
+      {
+       "date": "2026-04-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 ecobank ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-14",
+       "type": "etats_financiers",
+       "label": "Rapport dactivites et etats financiers exercice 2025 ecobank ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-28",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 ecobank ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "ETIT": {
@@ -3562,6 +4808,95 @@
      "≈ 5 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 42,
+     "profondeur": "pleine",
+     "retours": 12,
+     "taux_retour_pct": 28.6,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-08-12",
+       "saut_pct": -5.8,
+       "deux_seances_apres_pct": 4.62,
+       "retour": true
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.25,
+       "deux_seances_apres_pct": 7.81,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 6.25,
+       "deux_seances_apres_pct": 1.47,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 6,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.25,
+     "detail": [
+      {
+       "date": "2026-07-29",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 eti tg",
+       "mouvement": {
+        "date": "2026-07-29",
+        "variation_pct": -7.25
+       }
+      },
+      {
+       "date": "2026-07-29",
+       "type": "activite_semestrielle",
+       "label": "Rapport dexamen limite sur les informations financieres intermediaires 1er semestre 2026 eti tg",
+       "mouvement": {
+        "date": "2026-07-29",
+        "variation_pct": -7.25
+       }
+      },
+      {
+       "date": "2026-04-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 eti tg",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 3.45
+       }
+      },
+      {
+       "date": "2026-04-13",
+       "type": "etats_financiers",
+       "label": "Etats financiers ifrs exercice 2025 eti tg",
+       "mouvement": {
+        "date": "2026-04-14",
+        "variation_pct": -5.88
+       }
+      },
+      {
+       "date": "2026-04-13",
+       "type": "etats_financiers",
+       "label": "Rapport des commissaires aux comptes sur les etats financiers annuels exercice 2025 eti tg",
+       "mouvement": {
+        "date": "2026-04-14",
+        "variation_pct": -5.88
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -3732,6 +5067,80 @@
      "le dernier exercice payé (2024) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 36,
+     "profondeur": "pleine",
+     "retours": 13,
+     "taux_retour_pct": 36.1,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-22",
+       "saut_pct": -6.83,
+       "deux_seances_apres_pct": 4.71,
+       "retour": true
+      },
+      {
+       "date": "2026-10-05",
+       "saut_pct": -6.57,
+       "deux_seances_apres_pct": 6.49,
+       "retour": true
+      },
+      {
+       "date": "2026-10-08",
+       "saut_pct": -5.08,
+       "deux_seances_apres_pct": -0.53,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 50.0,
+     "max_mouvement_pct": 7.5,
+     "detail": [
+      {
+       "date": "2026-06-10",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 filtisac ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-10",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 filtisac ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 filtisac ci",
+       "mouvement": {
+        "date": "2025-10-31",
+        "variation_pct": -7.5
+       }
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 filtisac ci",
+       "mouvement": {
+        "date": "2025-10-31",
+        "variation_pct": -7.5
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "LNBB": {
@@ -3897,6 +5306,80 @@
      "1 baisse(s) de dividende sur les 1 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 12,
+     "profondeur": "pleine",
+     "retours": 8,
+     "taux_retour_pct": 66.7,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-08",
+       "saut_pct": 5.13,
+       "deux_seances_apres_pct": -3.66,
+       "retour": true
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.5,
+       "deux_seances_apres_pct": 7.57,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 7.43,
+       "deux_seances_apres_pct": -2.01,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 50.0,
+     "max_mouvement_pct": 3.51,
+     "detail": [
+      {
+       "date": "2026-07-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites et rapport dexamen limite des cacs 1er semestre 2026 lnb bn",
+       "mouvement": {
+        "date": "2026-08-04",
+        "variation_pct": -3.51
+       }
+      },
+      {
+       "date": "2026-05-07",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 lnb bn",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 lnb bn",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-27",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 lnb bn",
+       "mouvement": {
+        "date": "2025-10-27",
+        "variation_pct": -3.5
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "NEIC": {
@@ -4052,6 +5535,77 @@
      "le dividende de l'exercice 2025 est publié, mais les états financiers de cet exercice ne sont pas encore extraits."
     ],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 30,
+     "profondeur": "pleine",
+     "retours": 11,
+     "taux_retour_pct": 36.7,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-09",
+       "saut_pct": -7.39,
+       "deux_seances_apres_pct": 4.56,
+       "retour": true
+      },
+      {
+       "date": "2026-09-10",
+       "saut_pct": 7.41,
+       "deux_seances_apres_pct": 0.71,
+       "retour": false
+      },
+      {
+       "date": "2026-09-22",
+       "saut_pct": -5.35,
+       "deux_seances_apres_pct": 4.35,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 3,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.34,
+     "detail": [
+      {
+       "date": "2026-04-23",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 nei ceda ci",
+       "mouvement": {
+        "date": "2026-04-23",
+        "variation_pct": 7.3
+       }
+      },
+      {
+       "date": "2026-04-23",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 nei ceda ci",
+       "mouvement": {
+        "date": "2026-04-23",
+        "variation_pct": 7.3
+       }
+      },
+      {
+       "date": "2025-11-04",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 nei ceda ci",
+       "mouvement": {
+        "date": "2025-11-04",
+        "variation_pct": 7.34
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -4209,6 +5763,42 @@
      "≈ 41 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 17,
+     "profondeur": "pleine",
+     "retours": 10,
+     "taux_retour_pct": 58.8,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-07",
+       "saut_pct": 7.49,
+       "deux_seances_apres_pct": -1.75,
+       "retour": true
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.49,
+       "deux_seances_apres_pct": 8.1,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 5.12,
+       "deux_seances_apres_pct": 2.42,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "non_calculable",
+     "raison": "aucune publication datée de cette société dans les 365 derniers jours du corpus"
+    }
    },
    "note": ""
   },
@@ -4393,6 +5983,80 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 20,
+     "profondeur": "pleine",
+     "retours": 10,
+     "taux_retour_pct": 50.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-08",
+       "saut_pct": -6.11,
+       "deux_seances_apres_pct": -1.18,
+       "retour": false
+      },
+      {
+       "date": "2026-09-25",
+       "saut_pct": 5.52,
+       "deux_seances_apres_pct": 0.65,
+       "retour": false
+      },
+      {
+       "date": "2026-10-16",
+       "saut_pct": -5.16,
+       "deux_seances_apres_pct": -1.36,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 50.0,
+     "max_mouvement_pct": 5.5,
+     "detail": [
+      {
+       "date": "2026-04-30",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 nestle ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 nestle ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 nestle ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": 5.5
+       }
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 nestle ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": 5.5
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "ONTBF": {
@@ -4575,6 +6239,80 @@
     "alertes": [
      "5 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 10,
+     "profondeur": "pleine",
+     "retours": 8,
+     "taux_retour_pct": 80.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-25",
+       "saut_pct": 7.25,
+       "deux_seances_apres_pct": -0.34,
+       "retour": true
+      },
+      {
+       "date": "2026-10-07",
+       "saut_pct": -5.94,
+       "deux_seances_apres_pct": 8.48,
+       "retour": true
+      },
+      {
+       "date": "2026-10-08",
+       "saut_pct": 6.32,
+       "deux_seances_apres_pct": 1.87,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 16.7,
+     "max_mouvement_pct": 3.6,
+     "detail": [
+      {
+       "date": "2026-10-01",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites et attestation des commissaires aux comptes 1er semestre 2026 onatel bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-11",
+       "type": "etats_financiers_approuves",
+       "label": "Etats financiers approuves exercice 2025 onatel bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-11",
+       "type": "autre",
+       "label": "Rapport de gestion exercice 2025 onatel bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 onatel bf",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-09",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 onatel bf",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -4786,6 +6524,83 @@
      "1 baisse(s) de dividende sur les 3 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 7,
+     "profondeur": "limitee",
+     "retours": 3,
+     "taux_retour_pct": 42.9,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-24",
+       "saut_pct": 5.15,
+       "deux_seances_apres_pct": 0.23,
+       "retour": false
+      },
+      {
+       "date": "2026-10-06",
+       "saut_pct": 7.49,
+       "deux_seances_apres_pct": 2.81,
+       "retour": false
+      },
+      {
+       "date": "2026-10-14",
+       "saut_pct": -6.37,
+       "deux_seances_apres_pct": 0.46,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 9,
+     "avec_mouvement": 4,
+     "taux_mouvement_pct": 44.4,
+     "max_mouvement_pct": 6.93,
+     "detail": [
+      {
+       "date": "2026-10-08",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 orange ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-10-08",
+       "type": "activite_semestrielle",
+       "label": "Attestation des commissaires aux comptes sur le rapport dactivites 1er semestre 2026 orange ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-08",
+       "type": "etats_financiers_approuves",
+       "label": "Etats financiers approuves exercice 2025 orange ci",
+       "mouvement": {
+        "date": "2026-06-08",
+        "variation_pct": -3.64
+       }
+      },
+      {
+       "date": "2026-05-20",
+       "type": "rapport_annuel",
+       "label": "Rapport annuel integre exercice 2025 orange ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 orange ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "ORGT": {
@@ -4985,6 +6800,95 @@
      "aucune distribution documentée depuis 2019, soit 6 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2019) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 25,
+     "profondeur": "pleine",
+     "retours": 7,
+     "taux_retour_pct": 28.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-23",
+       "saut_pct": -6.67,
+       "deux_seances_apres_pct": 8.93,
+       "retour": true
+      },
+      {
+       "date": "2026-09-25",
+       "saut_pct": 5.72,
+       "deux_seances_apres_pct": -1.64,
+       "retour": true
+      },
+      {
+       "date": "2026-10-12",
+       "saut_pct": -6,
+       "deux_seances_apres_pct": -0.35,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 5,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 6.92,
+     "detail": [
+      {
+       "date": "2026-10-09",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 oragroup tg",
+       "mouvement": {
+        "date": "2026-10-09",
+        "variation_pct": 3.81
+       }
+      },
+      {
+       "date": "2026-05-04",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 oragroup tg",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 6.92
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "rapport_activites_annuel",
+       "label": "Rapport dactivites annuel exercice 2025 oragroup tg",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 6.92
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 oragroup tg 0",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 6.92
+       }
+      },
+      {
+       "date": "2025-10-22",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 oragroup tg",
+       "mouvement": {
+        "date": "2025-10-23",
+        "variation_pct": 4.55
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -5201,6 +7105,92 @@
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 12,
+     "profondeur": "pleine",
+     "retours": 4,
+     "taux_retour_pct": 33.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-06-05",
+       "saut_pct": 7.49,
+       "deux_seances_apres_pct": 5.21,
+       "retour": false
+      },
+      {
+       "date": "2026-06-26",
+       "saut_pct": 6.02,
+       "deux_seances_apres_pct": -1.14,
+       "retour": true
+      },
+      {
+       "date": "2026-10-08",
+       "saut_pct": -7.46,
+       "deux_seances_apres_pct": 0.0,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 4,
+     "taux_mouvement_pct": 80.0,
+     "max_mouvement_pct": 7.47,
+     "detail": [
+      {
+       "date": "2026-10-07",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 palm ci",
+       "mouvement": {
+        "date": "2026-10-08",
+        "variation_pct": -7.46
+       }
+      },
+      {
+       "date": "2026-10-07",
+       "type": "activite_semestrielle",
+       "label": "Attestation des commissaires aux comptes sur le rapport dactivites 1er semestre 2026 palm ci",
+       "mouvement": {
+        "date": "2026-10-08",
+        "variation_pct": -7.46
+       }
+      },
+      {
+       "date": "2026-04-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 palm ci",
+       "mouvement": {
+        "date": "2026-04-30",
+        "variation_pct": -7.47
+       }
+      },
+      {
+       "date": "2026-03-23",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 palm ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 palm ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": -7.45
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "PRSC": {
@@ -5409,6 +7399,86 @@
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 21,
+     "profondeur": "pleine",
+     "retours": 5,
+     "taux_retour_pct": 23.8,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-05-22",
+       "saut_pct": 7.4,
+       "deux_seances_apres_pct": 5.34,
+       "retour": false
+      },
+      {
+       "date": "2026-06-17",
+       "saut_pct": 7.43,
+       "deux_seances_apres_pct": 6.58,
+       "retour": false
+      },
+      {
+       "date": "2026-06-18",
+       "saut_pct": 7.48,
+       "deux_seances_apres_pct": -0.95,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 4,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.49,
+     "detail": [
+      {
+       "date": "2026-04-30",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 tractafric motors ci",
+       "mouvement": {
+        "date": "2026-05-05",
+        "variation_pct": -7.4
+       }
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_semestrielle",
+       "label": "Etats financiers 1er semestre 2025 tractafric motors ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": 7.49
+       }
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_trimestrielle",
+       "label": "Etats financiers 3eme trimestre 2025 tractafric motors ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": 7.49
+       }
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 tractafric motors ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": 7.49
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "SAFC": {
@@ -5548,6 +7618,86 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 80,
+     "profondeur": "pleine",
+     "retours": 32,
+     "taux_retour_pct": 40.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.44,
+       "deux_seances_apres_pct": 8.04,
+       "retour": true
+      },
+      {
+       "date": "2026-09-28",
+       "saut_pct": 7.44,
+       "deux_seances_apres_pct": -0.54,
+       "retour": true
+      },
+      {
+       "date": "2026-10-08",
+       "saut_pct": -5.7,
+       "deux_seances_apres_pct": 2.35,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 7,
+     "avec_mouvement": 4,
+     "taux_mouvement_pct": 57.1,
+     "max_mouvement_pct": 7.46,
+     "detail": [
+      {
+       "date": "2026-09-03",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 2eme trimestre 2026 safca ci",
+       "mouvement": {
+        "date": "2026-09-03",
+        "variation_pct": -3.41
+       }
+      },
+      {
+       "date": "2026-07-03",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 4e trimestre 2024 safca ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-07-03",
+       "type": "etats_financiers",
+       "label": "Rapport des commissaires aux comptes sur les etats financiers exercice 2024 safca ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-09",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 safca ci annule et remplace le precedent",
+       "mouvement": null
+      },
+      {
+       "date": "2026-06-02",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 safca ci",
+       "mouvement": {
+        "date": "2026-06-02",
+        "variation_pct": 7.37
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -5705,6 +7855,95 @@
      "aucune distribution documentée depuis 2020, soit 5 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2020) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 40,
+     "profondeur": "pleine",
+     "retours": 17,
+     "taux_retour_pct": 42.5,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-25",
+       "saut_pct": 7.27,
+       "deux_seances_apres_pct": -4.84,
+       "retour": true
+      },
+      {
+       "date": "2026-10-08",
+       "saut_pct": -7.04,
+       "deux_seances_apres_pct": -2.19,
+       "retour": false
+      },
+      {
+       "date": "2026-10-19",
+       "saut_pct": -5.29,
+       "deux_seances_apres_pct": 0.0,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 5,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.29,
+     "detail": [
+      {
+       "date": "2026-09-21",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 sucrivoire ci",
+       "mouvement": {
+        "date": "2026-09-22",
+        "variation_pct": -5.83
+       }
+      },
+      {
+       "date": "2026-05-18",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 sucrivoire ci annule et remplace le precedent",
+       "mouvement": {
+        "date": "2026-05-18",
+        "variation_pct": -6.67
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "etats_financiers",
+       "label": "Etats financiers ifrs exercice 2025 sucrivoire ci 0",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 7.29
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 sucrivoire ci",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 7.29
+       }
+      },
+      {
+       "date": "2025-11-03",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 sucrivoire ci",
+       "mouvement": {
+        "date": "2025-11-03",
+        "variation_pct": -3.86
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -5915,6 +8154,74 @@
      "le flux d'exploitation de 2025 ne couvre pas la distribution (-9.74 fois)",
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 14,
+     "profondeur": "pleine",
+     "retours": 5,
+     "taux_retour_pct": 35.7,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-18",
+       "saut_pct": -7.48,
+       "deux_seances_apres_pct": -3.4,
+       "retour": false
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.42,
+       "deux_seances_apres_pct": 6.58,
+       "retour": true
+      },
+      {
+       "date": "2026-09-24",
+       "saut_pct": 6.67,
+       "deux_seances_apres_pct": 4.53,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 66.7,
+     "max_mouvement_pct": 7.45,
+     "detail": [
+      {
+       "date": "2026-04-27",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 sodeci",
+       "mouvement": {
+        "date": "2026-04-28",
+        "variation_pct": 7.45
+       }
+      },
+      {
+       "date": "2026-04-27",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 sodeci",
+       "mouvement": {
+        "date": "2026-04-28",
+        "variation_pct": 7.45
+       }
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 sode ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -6141,6 +8448,95 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 28,
+     "profondeur": "pleine",
+     "retours": 14,
+     "taux_retour_pct": 50.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-03",
+       "saut_pct": 5.62,
+       "deux_seances_apres_pct": 0.32,
+       "retour": false
+      },
+      {
+       "date": "2026-09-28",
+       "saut_pct": 6.72,
+       "deux_seances_apres_pct": -2.58,
+       "retour": true
+      },
+      {
+       "date": "2026-10-16",
+       "saut_pct": -6.36,
+       "deux_seances_apres_pct": 4.53,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 6,
+     "avec_mouvement": 6,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.45,
+     "detail": [
+      {
+       "date": "2026-10-05",
+       "type": "etats_financiers",
+       "label": "Attestation des commissaires aux comptes etats financiers exercice 2025 africa glogal logistics ci",
+       "mouvement": {
+        "date": "2026-10-05",
+        "variation_pct": 3.73
+       }
+      },
+      {
+       "date": "2026-09-17",
+       "type": "etats_financiers",
+       "label": "Rapport des commissaires aux comptes sur les etats financiers africa global logistics ci",
+       "mouvement": {
+        "date": "2026-09-17",
+        "variation_pct": -3.08
+       }
+      },
+      {
+       "date": "2026-09-17",
+       "type": "etats_financiers",
+       "label": "Etats financiers certifies exercice 2025 africa global logistics ci",
+       "mouvement": {
+        "date": "2026-09-17",
+        "variation_pct": -3.08
+       }
+      },
+      {
+       "date": "2026-08-03",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 africa global logistics ci",
+       "mouvement": {
+        "date": "2026-08-04",
+        "variation_pct": -7.45
+       }
+      },
+      {
+       "date": "2025-12-05",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 africa global logistics ci",
+       "mouvement": {
+        "date": "2025-12-08",
+        "variation_pct": -3.45
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "SEMC": {
@@ -6305,6 +8701,42 @@
      "le dernier exercice payé (2020) précède le dernier exercice publié (2023) : le taux décrit un versement passé, pas un revenu attendu"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 43,
+     "profondeur": "pleine",
+     "retours": 16,
+     "taux_retour_pct": 37.2,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-07-30",
+       "saut_pct": 5.26,
+       "deux_seances_apres_pct": -1.33,
+       "retour": true
+      },
+      {
+       "date": "2026-08-18",
+       "saut_pct": 7.43,
+       "deux_seances_apres_pct": 0.0,
+       "retour": false
+      },
+      {
+       "date": "2026-09-04",
+       "saut_pct": 5.33,
+       "deux_seances_apres_pct": -5.06,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "non_calculable",
+     "raison": "aucune publication datée de cette société dans les 365 derniers jours du corpus"
+    }
+   },
    "note": ""
   },
   "SGBC": {
@@ -6466,6 +8898,86 @@
      "≈ 70 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 5,
+     "profondeur": "limitee",
+     "retours": 4,
+     "taux_retour_pct": 80.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-02-26",
+       "saut_pct": 6.37,
+       "deux_seances_apres_pct": -1.33,
+       "retour": true
+      },
+      {
+       "date": "2026-04-21",
+       "saut_pct": 6.52,
+       "deux_seances_apres_pct": 0.11,
+       "retour": false
+      },
+      {
+       "date": "2026-07-03",
+       "saut_pct": -5.1,
+       "deux_seances_apres_pct": 5.41,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 40.0,
+     "max_mouvement_pct": 6.52,
+     "detail": [
+      {
+       "date": "2026-08-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 societe generale ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 societe generale ci",
+       "mouvement": {
+        "date": "2026-04-30",
+        "variation_pct": 3.32
+       }
+      },
+      {
+       "date": "2026-04-21",
+       "type": "etats_financiers",
+       "label": "Rapport dactivites annuel et etats financiers exercice 2025 societe generale ci annule et remplace le precedent",
+       "mouvement": {
+        "date": "2026-04-21",
+        "variation_pct": 6.52
+       }
+      },
+      {
+       "date": "2026-04-16",
+       "type": "etats_financiers",
+       "label": "Rapport dactivites annuel et etats financiers exercice 2025 societe generale ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 societe generale ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -6649,6 +9161,95 @@
      "≈ 89 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 20,
+     "profondeur": "pleine",
+     "retours": 8,
+     "taux_retour_pct": 40.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-18",
+       "saut_pct": -7.38,
+       "deux_seances_apres_pct": -3.08,
+       "retour": false
+      },
+      {
+       "date": "2026-09-22",
+       "saut_pct": -7.44,
+       "deux_seances_apres_pct": -7.48,
+       "retour": false
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.48,
+       "deux_seances_apres_pct": -2.22,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 5,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.5,
+     "detail": [
+      {
+       "date": "2026-07-20",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 2eme trimestre 2026 vivo energy ci",
+       "mouvement": {
+        "date": "2026-07-20",
+        "variation_pct": -3.88
+       }
+      },
+      {
+       "date": "2026-06-03",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 vivo energy",
+       "mouvement": {
+        "date": "2026-06-03",
+        "variation_pct": 4.75
+       }
+      },
+      {
+       "date": "2026-05-05",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivite 4eme trimestre 2025 et du 1er trimestre 2026 vivo energy ci",
+       "mouvement": {
+        "date": "2026-05-05",
+        "variation_pct": -7.5
+       }
+      },
+      {
+       "date": "2026-05-05",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivite 4eme trimestre 2025 et du 1er trimestre 2026 vivo energy ci 0",
+       "mouvement": {
+        "date": "2026-05-05",
+        "variation_pct": -7.5
+       }
+      },
+      {
+       "date": "2025-11-20",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 vivo energy ci",
+       "mouvement": {
+        "date": "2025-11-20",
+        "variation_pct": 7.25
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -6835,6 +9436,83 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 4,
+     "profondeur": "limitee",
+     "retours": 2,
+     "taux_retour_pct": 50.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-05-29",
+       "saut_pct": 5,
+       "deux_seances_apres_pct": 7.02,
+       "retour": false
+      },
+      {
+       "date": "2026-08-04",
+       "saut_pct": 5.68,
+       "deux_seances_apres_pct": 0.0,
+       "retour": false
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.35,
+       "deux_seances_apres_pct": 5.76,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 20.0,
+     "max_mouvement_pct": 3.53,
+     "detail": [
+      {
+       "date": "2026-09-28",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 sib ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-09-28",
+       "type": "activite_semestrielle",
+       "label": "Attestation des commissaires aux comptes 1er semestre 2026 sib ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-05-06",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 sib ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-21",
+       "type": "etats_financiers",
+       "label": "Rapport dactivites annuel et etats financiers exercice 2025 sib ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 sib ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": -3.53
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "SICC": {
@@ -6919,6 +9597,31 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "non_calculable",
+     "raison": "0 saut(s) de plus de 5 % payé(s) plus de 5 M FCFA observé(s) sur cette société : trop peu pour décrire une réaction"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 1,
+     "avec_mouvement": 0,
+     "taux_mouvement_pct": 0.0,
+     "max_mouvement_pct": null,
+     "detail": [
+      {
+       "date": "2026-06-12",
+       "type": "etats_financiers",
+       "label": "Rapport dactivites annuel et etats financiers exercice 2025 sicor ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -7077,6 +9780,92 @@
      "aucune distribution documentée depuis 2016, soit 9 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2016) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 49,
+     "profondeur": "pleine",
+     "retours": 21,
+     "taux_retour_pct": 42.9,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-14",
+       "saut_pct": -5.63,
+       "deux_seances_apres_pct": 0.22,
+       "retour": true
+      },
+      {
+       "date": "2026-09-21",
+       "saut_pct": -6.67,
+       "deux_seances_apres_pct": -1.48,
+       "retour": false
+      },
+      {
+       "date": "2026-09-30",
+       "saut_pct": -6.54,
+       "deux_seances_apres_pct": -0.25,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 8,
+     "avec_mouvement": 7,
+     "taux_mouvement_pct": 87.5,
+     "max_mouvement_pct": 7.32,
+     "detail": [
+      {
+       "date": "2026-06-26",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 erium ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-01-30",
+       "type": "activite_semestrielle",
+       "label": "Attestation des commissaires aux comptes sur le rapport dactivites 1er semestre 2025 erium ci",
+       "mouvement": {
+        "date": "2026-01-30",
+        "variation_pct": 4.88
+       }
+      },
+      {
+       "date": "2025-12-31",
+       "type": "autre",
+       "label": "Erium ci resultat 3t2025 annule et remplace le precedent publie",
+       "mouvement": {
+        "date": "2025-12-31",
+        "variation_pct": 5.33
+       }
+      },
+      {
+       "date": "2025-12-30",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 erium ci",
+       "mouvement": {
+        "date": "2025-12-30",
+        "variation_pct": -6.25
+       }
+      },
+      {
+       "date": "2025-12-19",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2025 erium ci ex air liquide ci",
+       "mouvement": {
+        "date": "2025-12-19",
+        "variation_pct": 7.32
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -7245,6 +10034,74 @@
      "≈ 67 % du bénéfice, déduit du rendement et du PER publiés (pas un chiffre comptable)."
     ],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 17,
+     "profondeur": "pleine",
+     "retours": 5,
+     "taux_retour_pct": 29.4,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-03-09",
+       "saut_pct": 7.49,
+       "deux_seances_apres_pct": 2.92,
+       "retour": false
+      },
+      {
+       "date": "2026-05-04",
+       "saut_pct": 5.23,
+       "deux_seances_apres_pct": 0.27,
+       "retour": false
+      },
+      {
+       "date": "2026-07-30",
+       "saut_pct": 5.28,
+       "deux_seances_apres_pct": -5.01,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 66.7,
+     "max_mouvement_pct": 7.49,
+     "detail": [
+      {
+       "date": "2026-05-19",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 solibra ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 solibra ci",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 5.23
+       }
+      },
+      {
+       "date": "2025-10-28",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 solibra ci",
+       "mouvement": {
+        "date": "2025-10-31",
+        "variation_pct": 7.49
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -7420,6 +10277,71 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 2 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 11,
+     "profondeur": "pleine",
+     "retours": 4,
+     "taux_retour_pct": 36.4,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-23",
+       "saut_pct": -7.48,
+       "deux_seances_apres_pct": 7.48,
+       "retour": true
+      },
+      {
+       "date": "2026-09-25",
+       "saut_pct": 7.48,
+       "deux_seances_apres_pct": 4.36,
+       "retour": false
+      },
+      {
+       "date": "2026-10-06",
+       "saut_pct": -5.85,
+       "deux_seances_apres_pct": -0.62,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 33.3,
+     "max_mouvement_pct": 3.07,
+     "detail": [
+      {
+       "date": "2026-05-12",
+       "type": "etats_financiers",
+       "label": "Etats financiers et projet daffectation du resultat exercice 2025 smb ci",
+       "mouvement": {
+        "date": "2026-05-13",
+        "variation_pct": -3.07
+       }
+      },
+      {
+       "date": "2025-10-29",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 smb ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 smb ci",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -7607,6 +10529,77 @@
      "1 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 6,
+     "profondeur": "limitee",
+     "retours": 5,
+     "taux_retour_pct": 83.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-08-21",
+       "saut_pct": 7.5,
+       "deux_seances_apres_pct": -6.44,
+       "retour": true
+      },
+      {
+       "date": "2026-08-26",
+       "saut_pct": -5.21,
+       "deux_seances_apres_pct": 6.07,
+       "retour": true
+      },
+      {
+       "date": "2026-09-18",
+       "saut_pct": 7.49,
+       "deux_seances_apres_pct": -0.49,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 25.0,
+     "max_mouvement_pct": 3.62,
+     "detail": [
+      {
+       "date": "2026-07-24",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 sonatel sn",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-17",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 sonatel sn",
+       "mouvement": {
+        "date": "2026-04-17",
+        "variation_pct": 3.62
+       }
+      },
+      {
+       "date": "2026-02-16",
+       "type": "etats_financiers",
+       "label": "Etats financiers 2025 et attestation des cac sonatel sn",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 sonatel sn",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "SOGC": {
@@ -7790,6 +10783,74 @@
     "alertes": [
      "4 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 12,
+     "profondeur": "pleine",
+     "retours": 7,
+     "taux_retour_pct": 58.3,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-07",
+       "saut_pct": -7.5,
+       "deux_seances_apres_pct": -4.18,
+       "retour": false
+      },
+      {
+       "date": "2026-09-08",
+       "saut_pct": -5.41,
+       "deux_seances_apres_pct": 3.96,
+       "retour": true
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -6.41,
+       "deux_seances_apres_pct": 8.22,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 2,
+     "taux_mouvement_pct": 66.7,
+     "max_mouvement_pct": 3.83,
+     "detail": [
+      {
+       "date": "2026-04-22",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 sogb ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-10-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 sogb ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": -3.83
+       }
+      },
+      {
+       "date": "2025-10-28",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 sogb ci",
+       "mouvement": {
+        "date": "2025-10-30",
+        "variation_pct": -3.83
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -7991,6 +11052,92 @@
      "2 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 19,
+     "profondeur": "pleine",
+     "retours": 11,
+     "taux_retour_pct": 57.9,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-07",
+       "saut_pct": -7.49,
+       "deux_seances_apres_pct": -14.36,
+       "retour": false
+      },
+      {
+       "date": "2026-09-08",
+       "saut_pct": -7.45,
+       "deux_seances_apres_pct": -6.06,
+       "retour": false
+      },
+      {
+       "date": "2026-09-09",
+       "saut_pct": -7.46,
+       "deux_seances_apres_pct": 4.6,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 5,
+     "avec_mouvement": 4,
+     "taux_mouvement_pct": 80.0,
+     "max_mouvement_pct": 7.49,
+     "detail": [
+      {
+       "date": "2026-10-13",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3e trimestre 2026 saph ci",
+       "mouvement": {
+        "date": "2026-10-14",
+        "variation_pct": -4.37
+       }
+      },
+      {
+       "date": "2026-09-04",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites et attestation des cac sur le rapport dactivites 1er semestre 2026 saph ci",
+       "mouvement": {
+        "date": "2026-09-07",
+        "variation_pct": -7.49
+       }
+      },
+      {
+       "date": "2026-04-29",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 saph ci",
+       "mouvement": {
+        "date": "2026-04-30",
+        "variation_pct": -7.48
+       }
+      },
+      {
+       "date": "2026-03-18",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 saph ci",
+       "mouvement": null
+      },
+      {
+       "date": "2025-11-03",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 saph ci",
+       "mouvement": {
+        "date": "2025-11-04",
+        "variation_pct": -3.98
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "STAC": {
@@ -8117,6 +11264,77 @@
      "aucune distribution documentée depuis 2021, soit 4 exercices de retard sur les comptes extraits",
      "le dernier exercice payé (2021) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 53,
+     "profondeur": "pleine",
+     "retours": 25,
+     "taux_retour_pct": 47.2,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-28",
+       "saut_pct": 7.43,
+       "deux_seances_apres_pct": 2.68,
+       "retour": false
+      },
+      {
+       "date": "2026-10-01",
+       "saut_pct": -6.52,
+       "deux_seances_apres_pct": -2.33,
+       "retour": false
+      },
+      {
+       "date": "2026-10-16",
+       "saut_pct": 6.56,
+       "deux_seances_apres_pct": -6.65,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 3,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.43,
+     "detail": [
+      {
+       "date": "2026-04-13",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 setao ci",
+       "mouvement": {
+        "date": "2026-04-14",
+        "variation_pct": -7.43
+       }
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 setao ci",
+       "mouvement": {
+        "date": "2025-11-03",
+        "variation_pct": -7.2
+       }
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 setao ci",
+       "mouvement": {
+        "date": "2025-11-03",
+        "variation_pct": -7.2
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -8301,6 +11519,92 @@
     "alertes": [
      "1 baisse(s) de dividende sur les 4 dernières variations : la politique n'est pas une rente fixe"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 9,
+     "profondeur": "pleine",
+     "retours": 7,
+     "taux_retour_pct": 77.8,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-08-26",
+       "saut_pct": -7.4,
+       "deux_seances_apres_pct": 5.4,
+       "retour": true
+      },
+      {
+       "date": "2026-08-27",
+       "saut_pct": 7,
+       "deux_seances_apres_pct": -0.84,
+       "retour": true
+      },
+      {
+       "date": "2026-09-17",
+       "saut_pct": 5.12,
+       "deux_seances_apres_pct": -2.14,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "pleine",
+     "fenetre_jours": 365,
+     "publications": 8,
+     "avec_mouvement": 5,
+     "taux_mouvement_pct": 62.5,
+     "max_mouvement_pct": 7.49,
+     "detail": [
+      {
+       "date": "2026-08-17",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 2eme trimestre 2026 sitab ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-07-15",
+       "type": "rapport_annuel",
+       "label": "Rapport annuel exercice 2025 sitab ci",
+       "mouvement": {
+        "date": "2026-07-15",
+        "variation_pct": -4.92
+       }
+      },
+      {
+       "date": "2026-06-25",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 sitab ci annule et remplace le precedent",
+       "mouvement": {
+        "date": "2026-06-26",
+        "variation_pct": 7.49
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 sitab ci",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 4.03
+       }
+      },
+      {
+       "date": "2026-04-30",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 sitab ci 0",
+       "mouvement": {
+        "date": "2026-05-04",
+        "variation_pct": 4.03
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   },
@@ -8489,6 +11793,71 @@
      "3 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 19,
+     "profondeur": "pleine",
+     "retours": 12,
+     "taux_retour_pct": 63.2,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-09-07",
+       "saut_pct": -5.04,
+       "deux_seances_apres_pct": 2.97,
+       "retour": true
+      },
+      {
+       "date": "2026-10-01",
+       "saut_pct": -5.94,
+       "deux_seances_apres_pct": 0.5,
+       "retour": true
+      },
+      {
+       "date": "2026-10-13",
+       "saut_pct": 6.83,
+       "deux_seances_apres_pct": -6.4,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 3,
+     "avec_mouvement": 1,
+     "taux_mouvement_pct": 33.3,
+     "max_mouvement_pct": 5.56,
+     "detail": [
+      {
+       "date": "2026-06-01",
+       "type": "etats_financiers_approuves",
+       "label": "Etats financiers approuves exercice 2025 totalenergies marketing ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-04-22",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 1er trimestre 2026 totalenergies marketing ci",
+       "mouvement": null
+      },
+      {
+       "date": "2026-03-31",
+       "type": "etats_financiers",
+       "label": "Etats financiers syscohada exercice 2025 totalenergies marketing ci",
+       "mouvement": {
+        "date": "2026-04-01",
+        "variation_pct": -5.56
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "TTLS": {
@@ -8670,6 +12039,56 @@
      "5 baisse(s) de dividende sur les 5 dernières variations : la politique n'est pas une rente fixe"
     ]
    },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 10,
+     "profondeur": "pleine",
+     "retours": 5,
+     "taux_retour_pct": 50.0,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-07-15",
+       "saut_pct": -7.43,
+       "deux_seances_apres_pct": -2.8,
+       "retour": false
+      },
+      {
+       "date": "2026-08-20",
+       "saut_pct": 7.16,
+       "deux_seances_apres_pct": -2.9,
+       "retour": true
+      },
+      {
+       "date": "2026-10-08",
+       "saut_pct": 5.26,
+       "deux_seances_apres_pct": -5.13,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 1,
+     "avec_mouvement": 0,
+     "taux_mouvement_pct": 0.0,
+     "max_mouvement_pct": null,
+     "detail": [
+      {
+       "date": "2026-06-15",
+       "type": "rapport_activites_annuel",
+       "label": "Rapport dactivites annuel exercice 2025 totalenergies marketing sn",
+       "mouvement": null
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
+   },
    "note": ""
   },
   "UNLC": {
@@ -8775,6 +12194,42 @@
     "regle": "Un rendement ne devient un revenu que si trois preuves tiennent ensemble : le dividende est renouvelé (3 exercices consécutifs), financé par le bénéfice (≤ 100 % du résultat), et payé par l'exploitation (flux ≥ distribution). Trois preuves sur trois : revenu établi. Aucune : rendement à ne pas considérer comme un revenu.",
     "points": [],
     "alertes": []
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 9,
+     "profondeur": "pleine",
+     "retours": 5,
+     "taux_retour_pct": 55.6,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-03-18",
+       "saut_pct": -7.49,
+       "deux_seances_apres_pct": -11.68,
+       "retour": false
+      },
+      {
+       "date": "2026-07-03",
+       "saut_pct": -7.49,
+       "deux_seances_apres_pct": 4.55,
+       "retour": true
+      },
+      {
+       "date": "2026-09-16",
+       "saut_pct": -7.5,
+       "deux_seances_apres_pct": 6.84,
+       "retour": true
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "non_calculable",
+     "raison": "aucune publication datée de cette société dans les 365 derniers jours du corpus"
+    }
    },
    "note": ""
   },
@@ -8909,6 +12364,86 @@
      "le flux d'exploitation de 2025 ne couvre pas la distribution (-911.01 fois)",
      "le dernier exercice payé (2021) précède le dernier exercice publié (2025) : le taux décrit un versement passé, pas un revenu attendu"
     ]
+   },
+   "variation": {
+    "limite_pct": 7.5,
+    "reaction": {
+     "statut": "calcule",
+     "sauts": 51,
+     "profondeur": "pleine",
+     "retours": 20,
+     "taux_retour_pct": 39.2,
+     "recul": "deux séances",
+     "exemples": [
+      {
+       "date": "2026-08-19",
+       "saut_pct": 7.3,
+       "deux_seances_apres_pct": 1.65,
+       "retour": false
+      },
+      {
+       "date": "2026-09-23",
+       "saut_pct": -5.38,
+       "deux_seances_apres_pct": 6.82,
+       "retour": true
+      },
+      {
+       "date": "2026-09-25",
+       "saut_pct": 6.82,
+       "deux_seances_apres_pct": 4.04,
+       "retour": false
+      }
+     ],
+     "regle": "part des sauts de plus de 5 % suivis, deux séances plus tard, d'un mouvement de sens opposé. Mesure rétrospective sur cette archive : elle ne prédit pas le prochain saut"
+    },
+    "publications": {
+     "statut": "calcule",
+     "profondeur": "limitee",
+     "fenetre_jours": 365,
+     "publications": 4,
+     "avec_mouvement": 4,
+     "taux_mouvement_pct": 100.0,
+     "max_mouvement_pct": 7.38,
+     "detail": [
+      {
+       "date": "2026-07-13",
+       "type": "etats_financiers",
+       "label": "Etats financiers exercice 2025 uniwax ci",
+       "mouvement": {
+        "date": "2026-07-14",
+        "variation_pct": 7.29
+       }
+      },
+      {
+       "date": "2026-07-13",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2026 uniwax ci",
+       "mouvement": {
+        "date": "2026-07-14",
+        "variation_pct": 7.29
+       }
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_trimestrielle",
+       "label": "Rapport dactivites 3eme trimestre 2025 uniwax ci",
+       "mouvement": {
+        "date": "2025-10-31",
+        "variation_pct": -7.38
+       }
+      },
+      {
+       "date": "2025-10-31",
+       "type": "activite_semestrielle",
+       "label": "Rapport dactivites 1er semestre 2025 uniwax ci",
+       "mouvement": {
+        "date": "2025-10-31",
+        "variation_pct": -7.38
+       }
+      }
+     ],
+     "regle": "part des publications officielles suivies, dans les trois séances, d'un mouvement d'au moins 3 % réellement payé (plus de 5 M FCFA échangés). Mesure du passé : elle documente la sensibilité de ce titre à l'information, elle ne dit pas ce que dira la prochaine publication"
+    }
    },
    "note": ""
   }

@@ -180,6 +180,60 @@ class FichierPublieTests(unittest.TestCase):
             self.assertIn(horizon, resultat.stdout)
 
 
+class MarcheEtVariationTests(unittest.TestCase):
+    """Prévoir un saut est impossible ; mesurer ce qui est arrivé ne l'est pas."""
+
+    def setUp(self):
+        self.marche = verdict.limites_variation(ARCHIVE)
+        self.sauts = verdict.sauts(ARCHIVE)
+
+    def test_l_amplitude_maximale_est_bornee_et_mesuree(self):
+        self.assertEqual(self.marche["statut"], "calcule")
+        # Constat sur l'archive : aucune variation ne dépasse 7,5 %.
+        self.assertLessEqual(self.marche["amplitude_max_pct"], 7.5)
+        self.assertGreater(self.marche["observations"], 10000)
+
+    def test_les_sauts_sont_comptes_avec_leur_valeur_echangee(self):
+        self.assertEqual(self.sauts["statut"], "calcule")
+        self.assertGreater(self.sauts["nombre"], 0)
+        # Une part importante des sauts se produit sur des échanges minuscules :
+        # c'est ce qui distingue un événement d'un prix de passage.
+        self.assertGreater(self.sauts["part_sous_10m_pct"], 0)
+
+    def test_la_reaction_apres_saut_est_une_mesure_pas_une_promesse(self):
+        for ticker, v in VERDICTS.items():
+            r = v.variation["reaction"]
+            if r["statut"] != "calcule":
+                self.assertIn("raison", r, ticker)
+                continue
+            self.assertGreaterEqual(r["sauts"], 3, ticker)
+            self.assertIn("ne prédit pas", r["regle"], ticker)
+            self.assertLessEqual(r["taux_retour_pct"], 100, ticker)
+
+    def test_les_publications_suivies_sont_des_publications_reelles(self):
+        for ticker, v in VERDICTS.items():
+            p = v.variation["publications"]
+            if p["statut"] != "calcule":
+                continue
+            # Le détail est tronqué à cinq lignes : il ne peut jamais en
+            # contenir plus que le total, et chaque mouvement listé est daté.
+            self.assertLessEqual(sum(1 for d in p["detail"] if d["mouvement"]), p["avec_mouvement"], ticker)
+            for ligne in p["detail"]:
+                self.assertTrue(ligne["date"], ticker)
+            self.assertLessEqual(p["avec_mouvement"], p["publications"], ticker)
+            self.assertIn("ne dit pas ce que dira", p["regle"], ticker)
+
+    def test_un_saut_non_paye_n_est_jamais_compte(self):
+        """Le seuil de valeur échangée protège contre les prix de passage."""
+        self.assertGreaterEqual(verdict.SEUIL_SAUT_VALEUR, 1_000_000)
+
+    def test_le_marche_publie_est_celui_du_code(self):
+        publie = json.loads((WEB / "data" / "verdicts.json").read_text(encoding="utf-8"))
+        self.assertIn("marche", publie)
+        self.assertEqual(publie["marche"]["limites"]["amplitude_max_pct"], self.marche["amplitude_max_pct"])
+        self.assertEqual(publie["marche"]["sauts"]["nombre"], self.sauts["nombre"])
+
+
 class RevenuTests(unittest.TestCase):
     """Un rendement n'est pas un revenu : trois preuves, jamais une note."""
 

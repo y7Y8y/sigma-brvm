@@ -1325,6 +1325,42 @@ function revenuCard(ticker, { compact = false } = {}) {
     <p class="verdict-regle"><strong>Règle :</strong> ${escapeHtml(r.regle || "")}</p>`;
 }
 
+/* Ce qui fait bouger ce titre — trois mesures du passé, et une phrase sur ce
+   qu'on ne peut pas anticiper. Placé dans la fiche, sous le revenu. */
+function variationCard(ticker) {
+  const v = verdictDe(ticker);
+  const m = VERDICTS?.marche || {};
+  const var_ = v?.variation;
+  if (!var_) return "";
+  const reaction = var_.reaction || {};
+  const pubs = var_.publications || {};
+  return `<div class="event-row"><div><p class="eyebrow">Ce qui fait bouger ce titre</p><h2>Le risque, mesuré</h2></div>
+      <span class="pill dark">${isNum(m.sauts?.nombre) ? `${fmtNum(m.sauts.nombre)} sauts sur ${fmtNum(m.limites?.observations)} variations` : "mesures de marché"}</span></div>
+    <ul class="verdict-list">
+      <li class="verdict-line">
+        <div class="verdict-horizon"><span class="verdict-titre">Amplitude maximale</span><span class="subtext">une séance</span></div>
+        <div class="verdict-body"><span class="verdict-ton solide">${fmtPct(m.limites?.amplitude_max_pct, 1, false)}</span>
+          <p class="verdict-phrase">Aucune variation n'a dépassé ${fmtPct(m.limites?.amplitude_max_pct, 1, false)} sur ${fmtNum(m.limites?.observations || 0)} observations : le pire cas d'une séance est borné par la cotation, pas par la chance.</p>
+          <p class="verdict-regle">${escapeHtml(m.limites?.note || "")}</p></div>
+      </li>
+      <li class="verdict-line ${reaction.statut === "calcule" ? "" : "is-vide"}">
+        <div class="verdict-horizon"><span class="verdict-titre">Retour après un saut</span><span class="subtext">deux séances plus tard</span></div>
+        <div class="verdict-body">
+          ${reaction.statut === "calcule" ? `<span class="verdict-ton ${reaction.taux_retour_pct >= 60 ? "solide" : "milieu"}">${fmtPct(reaction.taux_retour_pct, 0, false)}</span>
+            <p class="verdict-phrase">Sur ${reaction.sauts} saut(s) de plus de 5 % payés, ${reaction.retours} se sont accompagnés d'un mouvement de sens opposé dans les deux séances suivantes.</p>` : `<span class="verdict-ton vide">Non mesurable</span><p class="verdict-phrase">${escapeHtml(reaction.raison || "pas assez de sauts réellement payés")}</p>`}
+          <p class="verdict-regle">${escapeHtml(reaction.regle || "")}</p></div>
+      </li>
+      <li class="verdict-line ${pubs.statut === "calcule" ? "" : "is-vide"}">
+        <div class="verdict-horizon"><span class="verdict-titre">Réaction aux publications</span><span class="subtext">trois séances</span></div>
+        <div class="verdict-body">
+          ${pubs.statut === "calcule" ? `<span class="verdict-ton ${pubs.taux_mouvement_pct >= 50 ? "cher" : "milieu"}">${fmtPct(pubs.taux_mouvement_pct, 0, false)}</span>
+            <p class="verdict-phrase">${pubs.avec_mouvement} publication(s) sur ${pubs.publications} ont été suivies d'un mouvement d'au moins 3 % réellement payé${isNum(pubs.max_mouvement_pct) ? ` (le plus fort : ${fmtPct(pubs.max_mouvement_pct, 1, false)})` : ""}.</p>
+            <p class="verdict-regle">${pubs.profondeur === "limitee" ? "Moins de six publications dans la fenêtre : lecture limitée. " : ""}${escapeHtml(pubs.regle || "")}</p>` : `<span class="verdict-ton vide">Non mesurable</span><p class="verdict-phrase">${escapeHtml(pubs.raison || "aucune publication datée dans la fenêtre")}</p>`}</div>
+      </li>
+    </ul>
+    <p class="verdict-regle"><strong>Ce que ces chiffres ne disent pas :</strong> le sens de la prochaine publication. Le contenu d'un communiqué n'existe pas avant sa diffusion ; ce qui est mesurable, c'est la sensibilité du titre à l'information — et le fait que la perte d'une séance est bornée, pas la perte d'un mois.</p>`;
+}
+
 function renderCompanies() {
   const host = $("#companiesGrid");
   if (!host) return;
@@ -1566,6 +1602,8 @@ function renderCompanyDetail() {
     <article class="card verdict-card section-space">${verdictCard(company.ticker)}</article>
 
     <article class="card verdict-card section-space">${revenuCard(company.ticker)}</article>
+
+    <article class="card verdict-card section-space">${variationCard(company.ticker)}</article>
 
     ${detailSummary}
 
@@ -2344,6 +2382,116 @@ function suggestedTransactionPrefill(prefill, kind) {
     source: prefill?.source || "Préparation automatique au dernier cours publié"
   };
 }
+/* ---------------------------------------------------------------------------
+   Le mois : cinq sociétés à examiner dans le budget, et ce qui, dans ce que
+   vous détenez, mérite une relecture. Deux fonctions distinctes, jamais
+   fusionnées : examiner n'est pas acheter, relire n'est pas vendre.
+   Le budget est une contrainte réelle : une action SGBC à 38 900 FCFA ne
+   rentre pas dans 50 000 FCFA, quel que soit son score.
+--------------------------------------------------------------------------- */
+function topDuMois(budget, { limite = 5 } = {}) {
+  const radar = computeRadar();
+  const tous = radar.scored;
+  const eligibles = [];
+  const tropChers = [];
+  for (const entry of tous) {
+    const prix = latestPrice(entry.company).value;
+    if (!isNum(prix)) continue;
+    const part = budget > 0 ? (prix / budget) * 100 : null;
+    const ligne = { ...entry, prix, partBudgetPct: part, actionsPossibles: budget > 0 ? Math.floor(budget / prix) : 0 };
+    (budget > 0 && prix > budget ? tropChers : eligibles).push(ligne);
+  }
+  // Diversification : deux lignes du même secteur au maximum dans cinq.
+  const retenues = [], reportees = [], parSecteur = new Map();
+  for (const ligne of eligibles) {
+    const n = parSecteur.get(ligne.company.sector) || 0;
+    if (retenues.length < limite && n < 2) { retenues.push(ligne); parSecteur.set(ligne.company.sector, n + 1); }
+    else reportees.push(ligne);
+  }
+  return { retenues, reportees, tropChers, total: tous.length, budget };
+}
+
+function topDuMoisCard(budget) {
+  if (!(budget > 0)) {
+    return `<article class="card section-space">
+      <p class="eyebrow">Le mois</p><h2>Combien mettez-vous ce mois-ci ?</h2>
+      <p class="muted">Le budget n'est pas un détail : il décide quelles sociétés sont matériellement accessibles. Sans montant, aucune liste ne serait honnête.</p>
+      <div class="form-actions" style="margin-top:10px"><button type="button" class="button" data-view-link="decision">Indiquer le versement</button></div>
+    </article>`;
+  }
+  const { retenues, reportees, tropChers, total } = topDuMois(budget);
+  if (!retenues.length) {
+    return `<article class="card section-space">
+      <p class="eyebrow">Le mois · budget ${fmtFCFA(budget)}</p><h2>Aucune société ne tient dans ce budget</h2>
+      <p class="muted">${tropChers.length} société(s) passent les règles mais leur cours dépasse le versement. Ce n'est pas une impasse : mettre de côté deux mois, ou viser une valeur moins chère, sont deux décisions différentes — et SIGMA ne tranchera pas à votre place.</p>
+      ${tropChers.length ? `<ul class="verdict-details">${tropChers.slice(0, 5).map(x => `<li>${x.company.ticker} — ${fmtFCFA(x.prix)} par action (${fmtPct(x.partBudgetPct, 0, false)} du versement)</li>`).join("")}</ul>` : ""}
+    </article>`;
+  }
+  const rangs = retenues.map((x, i) => {
+    const v = verdictDe(x.company.ticker) || {};
+    const court = v.horizons?.court || {};
+    const moyen = v.horizons?.moyen || {};
+    const rev = v.revenu || {};
+    return `<li class="verdict-line top-row">
+      <div class="verdict-horizon"><span class="verdict-titre">${i + 1} · <button type="button" class="text-button ticker" data-open-company="${x.company.ticker}">${x.company.ticker}</button></span>
+        <span class="subtext">${escapeHtml(x.company.sector)}</span></div>
+      <div class="verdict-body">
+        <p class="verdict-phrase">${fmtFCFA(x.prix)} par action · <strong>${x.actionsPossibles} action(s)</strong> dans ${fmtFCFA(budget)} (${fmtPct(x.partBudgetPct, 0, false)} du versement)</p>
+        <p class="verdict-regle">${escapeHtml(moyen.phrase || "Valorisation non calculable")} ${isNum(rev.rendement_pct) ? `· rendement ${fmtPct(rev.rendement_pct, 2, false)}, ${rev.preuves_reunies}/3 preuves` : "· rendement non publié"}${court.phrase ? ` · ${escapeHtml(court.phrase)}` : ""}</p>
+      </div></li>`;
+  }).join("");
+  return `<article class="card section-space">
+    <div class="event-row"><div><p class="eyebrow">Le mois · budget ${fmtFCFA(budget)} · BOC du ${fmtDate(latestBocDate())}</p><h2>Cinq sociétés à examiner d'abord</h2></div>
+      <span class="pill dark">${retenues.length} retenues / ${total} classées</span></div>
+    <p class="muted">Ordre d'<strong>étude</strong> produit par des règles écrites : échangeabilité, PER publié et dividende récent (Radar), puis contrainte de budget et plafond de deux valeurs par secteur. Aucune de ces lignes n'est un ordre d'achat — chacune dit aussi ce qui la rendrait chère.</p>
+    <ul class="verdict-list">${rangs}</ul>
+    ${reportees.length ? `<p class="source-line">${reportees.length} autre(s) société(s) passent les règles mais sont hors des cinq : report sectoriel ou rang inférieur. <button type="button" class="text-button" data-decision-link="radar">Voir le classement complet</button></p>` : ""}
+    ${tropChers.length ? `<p class="source-line">${tropChers.length} société(s) écartée(s) par le prix seul : ${tropChers.slice(0, 3).map(x => `${x.company.ticker} (${fmtFCFA(x.prix)})`).join(", ")}${tropChers.length > 3 ? "…" : ""}.</p>` : ""}
+  </article>`;
+}
+
+/* Ce qui, dans vos lignes, demande une relecture — et pourquoi ce n'est pas une
+   consigne de vente. Trois signaux calculables sur les données disponibles :
+   prix haut dans sa propre fourchette, PER cher par rapport à son passé,
+   dividende qui n'a pas été renouvelé. Aucun ne dit « vendez » ; tous disent
+   « relisez avant de garder par habitude ». */
+function revuePositions(kind) {
+  const { holdings } = computePortfolio(kind);
+  const lignes = holdings.map(h => {
+    const v = verdictDe(h.ticker) || {};
+    const court = v.horizons?.court || {};
+    const moyen = v.horizons?.moyen || {};
+    const rev = v.revenu || {};
+    const signaux = [];
+    if (court.ton === "cher") signaux.push({ gravite: 2, texte: `cours dans le haut de sa propre fourchette (${court.donnees?.percentile ?? "?"}ᵉ centile)` });
+    if (moyen.ton === "cher") signaux.push({ gravite: 2, texte: `PER cher par rapport à son propre passé (percentile ${moyen.donnees?.percentile ?? "?"})` });
+    if (rev.rendement_en_retard) signaux.push({ gravite: 3, texte: `rendement adossé à un dividende de ${rev.regularite?.dernier_exercice_paye}, non renouvelé depuis` });
+    if (rev.payout?.statut === "documentaire" && rev.payout.dernier?.payout_pct > 100) signaux.push({ gravite: 3, texte: `distribution supérieure au bénéfice en ${rev.payout.dernier.exercice}` });
+    if (v.horizons?.long?.ton === "fragile") signaux.push({ gravite: 3, texte: "résultats ou structure financière en dégradation" });
+    return { ...h, v, signaux: signaux.sort((a, b) => b.gravite - a.gravite) };
+  }).sort((a, b) => (b.signaux[0]?.gravite || 0) - (a.signaux[0]?.gravite || 0));
+  return lignes;
+}
+
+function revuePositionsCard(kind) {
+  const lignes = revuePositions(kind);
+  if (!lignes.length) return "";
+  const aRelire = lignes.filter(l => l.signaux.length);
+  return `<article class="card section-space">
+    <div class="event-row"><div><p class="eyebrow">Ce que vous détenez · ${aRelire.length} ligne(s) à relire</p><h2>Avant de garder par habitude</h2></div>
+      <span class="pill ${aRelire.length ? "dark" : ""}">${lignes.length} position(s)</span></div>
+    ${aRelire.length ? `<ul class="verdict-list">${aRelire.map(l => `<li class="verdict-line">
+      <div class="verdict-horizon"><span class="verdict-titre"><button type="button" class="text-button ticker" data-open-company="${l.ticker}">${l.ticker}</button></span>
+        <span class="subtext">${fmtNum(l.qty)} action(s) · ${fmtFCFA(Math.round(l.latent || 0))} latent</span></div>
+      <div class="verdict-body"><span class="verdict-ton ${l.signaux[0].gravite >= 3 ? "fragile" : "cher"}">À relire</span>
+        <ul class="verdict-details">${l.signaux.map(x => `<li>${escapeHtml(x.texte)}</li>`).join("")}</ul>
+      </div></li>`).join("")}</ul>
+    <p class="verdict-regle"><strong>Ce que SIGMA ne fait pas :</strong> dire « vendez ». Il nomme ce qui a changé depuis l'achat. Trois raisons possibles de garder malgré tout : le dividende attendu reste couvert, la baisse vient du marché et non de l'entreprise, ou votre horizon couvre le cycle. Aucune n'est vérifiable à votre place. La vente a aussi un coût : les frais de votre SGI, que SIGMA ne connaît pas.</p>`
+    : `<p class="muted">Aucune de vos lignes ne présente aujourd'hui de signal de relecture : pas de cours au plus haut de sa fourchette, pas de PER cher par rapport à son passé, pas de dividende non renouvelé. Ce n'est pas une garantie — seulement l'absence de ces trois signaux dans les données collectées.</p>`}
+    <p class="source-line">Signaux calculés au BOC du ${fmtDate(latestBocDate())}, sur les seules données collectées. Un signal absent peut simplement être une donnée manquante : la fiche dit laquelle.</p>
+  </article>`;
+}
+
 function renderPortfolio() {
   const host = $("#portfolioContent");
   if (!host) return;
@@ -2362,6 +2510,8 @@ function renderPortfolio() {
 
   host.innerHTML = `
   <div class="${kind === "virtuel" ? "portfolio-simulation" : ""}">
+    ${revuePositionsCard(kind)}
+    ${topDuMoisCard(Number(personal.profile?.monthlyBudget || personal.settings?.monthlyBudget || 0))}
     <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:16px">
       <div class="segmented" role="tablist" aria-label="Type de portefeuille">
         <button type="button" data-portfolio-kind="reel" class="${kind === "reel" ? "is-active" : ""}">● Réel — avis d’opéré SGI</button>
