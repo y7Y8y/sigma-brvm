@@ -1368,6 +1368,31 @@ function variationCard(ticker) {
     <p class="verdict-regle"><strong>Ce que ces chiffres ne disent pas :</strong> le sens de la prochaine publication. Le contenu d'un communiqué n'existe pas avant sa diffusion ; ce qui est mesurable, c'est la sensibilité du titre à l'information — et le fait que la perte d'une séance est bornée, pas la perte d'un mois.</p>`;
 }
 
+/* Ce que l'entreprise produit sur ses propres fonds — la mesure que tout
+   praticien regarde en premier, et qui manquait à l'écran. */
+function entrepriseCard(ticker) {
+  const v = verdictDe(ticker);
+  const e = v?.entreprise;
+  if (!e) return "";
+  if (e.statut !== "calcule") {
+    return `<div class="event-row"><div><p class="eyebrow">L'entreprise, pas le cours</p><h2>Rentabilité des fonds propres</h2></div>
+      <span class="pill dark">Non calculable</span></div>
+      <p class="verdict-phrase">${escapeHtml(e.raison || "aucun exercice ne réunit résultat net et fonds propres")}.</p>
+      <p class="verdict-regle"><strong>Ce que cela coûte :</strong> sans fonds propres, impossible de dire si l'entreprise crée de la valeur avec l'argent qu'elle garde. Le résultat net seul ne le dit pas.</p>`;
+  }
+  const lignes = e.exercices.map(x => `<li class="verdict-line">
+      <div class="verdict-horizon"><span class="verdict-titre">${x.exercice}</span></div>
+      <div class="verdict-body"><span class="verdict-ton ${x.roe_pct >= 15 ? "solide" : x.roe_pct >= 5 ? "milieu" : "fragile"}">${fmtPct(x.roe_pct, 1, false)}</span>
+        <p class="verdict-phrase">${fmtCompactFCFA(x.resultat_net)} de résultat sur ${fmtCompactFCFA(x.fonds_propres)} de fonds propres.</p>
+      </div></li>`).join("");
+  return `<div class="event-row"><div><p class="eyebrow">L'entreprise, pas le cours · ${e.exercices.length} exercice(s)</p><h2>Rentabilité des fonds propres ${fmtPct(e.dernier.roe_pct, 1, false)}</h2></div>
+      <span class="pill ${e.profondeur === "pleine" ? "" : "dark"}">Moyenne ${fmtPct(e.moyenne_pct, 1, false)}</span></div>
+    <ul class="verdict-list">${lignes}</ul>
+    ${e.exercices_negatifs ? `<div class="notice"><p><strong>${e.exercices_negatifs} exercice(s) à rentabilité négative</strong> sur la période : le capital a été consommé, pas seulement moins bien rémunéré.</p></div>` : ""}
+    ${e.exercices_sans_fonds_propres?.length ? `<p class="source-line">Fonds propres absents pour ${e.exercices_sans_fonds_propres.join(", ")} : ces exercices ne sont pas comptés, ils ne sont pas remplacés par zéro.</p>` : ""}
+    <p class="verdict-regle"><strong>Règle :</strong> ${escapeHtml(e.regle)}</p>`;
+}
+
 function renderCompanies() {
   const host = $("#companiesGrid");
   if (!host) return;
@@ -1607,6 +1632,8 @@ function renderCompanyDetail() {
     </div>
 
     <article class="card verdict-card section-space">${verdictCard(company.ticker)}</article>
+
+    <article class="card verdict-card section-space">${entrepriseCard(company.ticker)}</article>
 
     <article class="card verdict-card section-space">${revenuCard(company.ticker)}</article>
 
@@ -2910,9 +2937,52 @@ function renderCompletude() {
         ${jauge("Capitalisation — actions vérifiées", r.capitalisation_calculee ?? 0, r.capitalisation_implicite ?? 0, r.societes)}
         ${jauge("Prix face à son cycle de 120 séances", r.position_longue_calculee ?? 0, 0, r.societes)}
         ${jauge("Revenu — trois preuves réunies", r.revenu_trois_preuves ?? 0, (r.revenu_documente ?? 0) - (r.revenu_trois_preuves ?? 0), r.societes)}
+        ${jauge("Rentabilité des fonds propres", r.roe_plein ?? 0, (r.roe_calcule ?? 0) - (r.roe_plein ?? 0), r.societes)}
       </div>
       <p class="source-line">Le revenu est compté à part : ${r.rendement_calcule ?? 0}/48 sociétés ont un rendement publié au BOC, ${r.revenu_documente ?? 0} ont un dossier documentaire complet, mais ${r.revenu_trois_preuves ?? 0} seulement réunissent les trois preuves (dividende renouvelé, financé par le bénéfice, payé par l'exploitation). Un rendement affiché sans ses preuves n'est pas un revenu — c'est un versement passé.</p>
     </article>
+    ${(() => {
+      // Un registre de manques n'a de valeur que s'il dit quoi faire. On
+      // regroupe donc par **réparation**, pas par horizon : une action, un
+      // nombre de sociétés, ce que ça débloque.
+      const reparations = [
+        { cle: "fonds_propres", titre: "Lire les fonds propres dans le bilan",
+          filtre: m => m.horizon === "rentabilité",
+          promesse: "débloque la rentabilité des fonds propres — la mesure qui dit si l'entreprise crée de la valeur",
+          prix: "48 bilans, 1 ligne chacun" },
+        { cle: "flux", titre: "Extraire « dividendes versés » et le flux d'exploitation",
+          filtre: m => m.horizon === "revenu",
+          promesse: "transforme un rendement affiché en revenu vérifié (aujourd'hui 3 sociétés sur 48)",
+          prix: "tableau de financement, 2 lignes par exercice" },
+        { cle: "actions", titre: "Inscrire le nombre d'actions au registre",
+          filtre: m => m.horizon === "capitalisation",
+          promesse: "rend la capitalisation vérifiée au lieu de déduite, et permet le BPA comparable",
+          prix: "48 notes de capital" },
+        { cle: "per", titre: "Obtenir un PER publié au BOC",
+          filtre: m => m.horizon === "moyen terme",
+          promesse: "ouvre la lecture de valorisation (percentile propre)",
+          prix: "sociétés sans bénéfice par action positif : il faut d'abord le résultat" },
+        { cle: "exercices", titre: "Compléter les exercices comptables",
+          filtre: m => m.horizon === "long terme",
+          promesse: "permet une trajectoire au lieu d'un point",
+          prix: "2 à 3 états financiers par société concernée" },
+        { cle: "historique", titre: "Étendre l'archive de prix au-delà d'un an",
+          filtre: m => m.horizon === "court terme",
+          promesse: "un cycle de marché complet au lieu de 262 séances",
+          prix: "BOC quotidiens : environ 250 séances par an" },
+      ].map(r => ({ ...r, lignes: manques.filter(r.filtre) })).filter(r => r.lignes.length);
+      const societes = r => new Set(r.lignes.map(m => m.ticker)).size;
+      return `<article class="card section-space">
+        <div class="event-row"><div><p class="eyebrow">À réparer · ${manques.length} points, ${reparations.length} chantiers</p><h2>Ce qui manque, rangé par ce qu'il faut faire</h2></div>
+          <span class="pill dark">${manques.filter(m => m.etat === "absent").length} absent(s) · ${manques.filter(m => m.etat === "limite").length} limité(s)</span></div>
+        <p class="muted">Un manque n'est pas une fatalité : c'est une tâche. Chaque ligne dit ce qu'on répare, combien de sociétés cela débloque, et ce que cela change à la lecture.</p>
+        <ul class="verdict-list">${reparations.map(r => `<li class="verdict-line">
+          <div class="verdict-horizon"><span class="verdict-titre">${escapeHtml(r.titre)}</span><span class="subtext">${societes(r)} société(s) · ${r.lignes.length} point(s)</span></div>
+          <div class="verdict-body"><p class="verdict-phrase">${escapeHtml(r.promesse)}.</p>
+            <p class="verdict-regle"><strong>Ce que ça demande :</strong> ${escapeHtml(r.prix)}.</p></div>
+        </li>`).join("")}</ul>
+      </article>`;
+    })()}
     ${[...parHorizon.entries()].sort((a, b) => b[1].length - a[1].length).map(([horizon, liste]) => {
       // 66 lignes dépliées faisaient 4 243 mots dans l'écran : personne ne lit
       // 66 lignes de manques. On regroupe par société — une société, un titre,
