@@ -1571,9 +1571,9 @@
       "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 0.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
       "Flux d'exploitation 786 M FCFA, soit 3522 % du résultat net : le bénéfice se transforme en trésorerie.",
-      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 50.8 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
-      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 4.9 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
-      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 3.1 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 50.8 en un an (baisse) — saut invraisemblable d'un exercice au suivant : unité différente (en millions de FCFA → FCFA (états de synthèse SYSCOHADA codés)).",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 4.9 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent.",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 3.1 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent."
      ],
      "exercices": [
       2019,
@@ -2850,7 +2850,7 @@
      "details": [
       "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 1.1 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 12.2 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 12.2 en un an (baisse) — saut invraisemblable d'un exercice au suivant : chiffre non recoupé : exercice 2024 (extraction_unique)."
      ],
      "exercices": [
       2019,
@@ -4971,9 +4971,9 @@
      "details": [
       "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
-      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 20.0 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
-      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 6.0 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
-      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 39.9 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 20.0 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent.",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 6.0 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent.",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 39.9 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent."
      ],
      "exercices": [
       2021,
@@ -6971,7 +6971,7 @@
       "Flux d'exploitation 38,741 M FCFA, soit 250 % du résultat net : le bénéfice se transforme en trésorerie.",
       "Activité (chiffre d'affaires ou PNB) : -4.2 % entre 2023 et 2025.",
       "Dividendes versés 2025 : 7,931 M FCFA, soit 51 % du résultat net (valeur brute publiée -7,931 M ; convention de signe non unifiée entre sociétés).",
-      "Comparaison refusée de part et d'autre de 2020→2023 : résultat net multiplié par 5.5 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2020→2023 : résultat net multiplié par 5.5 en un an (hausse) — saut invraisemblable d'un exercice au suivant : unité différente (FCFA (états de synthèse SYSCOHADA codés) → en milliers de FCFA)."
      ],
      "exercices": [
       2019,
@@ -8031,8 +8031,8 @@
       "Flux d'exploitation -35,060 M FCFA, soit -596 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
       "Activité (chiffre d'affaires ou PNB) : +10.0 % entre 2024 et 2025.",
       "Dividendes versés 2025 : 3,600 M FCFA, soit 61 % du résultat net (valeur brute publiée -3,600 M ; convention de signe non unifiée entre sociétés).",
-      "Comparaison refusée de part et d'autre de 2020→2021 : résultat net multiplié par 5.2 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
-      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 659.8 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2020→2021 : résultat net multiplié par 5.2 en un an (hausse) — saut invraisemblable d'un exercice au suivant : chiffre non recoupé : exercice 2020 (extraction_unique).",
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 659.8 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent."
      ],
      "exercices": [
       2020,
@@ -8309,8 +8309,8 @@
       "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 115.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
       "Dividendes versés 2025 : 5,008 M FCFA, soit 638 % du résultat net (valeur brute publiée -5,008 M ; convention de signe non unifiée entre sociétés).",
-      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 145.6 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
-      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 11.4 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 145.6 en un an (baisse) — saut invraisemblable d'un exercice au suivant : chiffre non recoupé : exercice 2023 (extraction_unique).",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 11.4 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent."
      ],
      "exercices": [
       2020,
@@ -8626,8 +8626,8 @@
       "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Fonds propres 2023 : absents des documents indexés — non substitués par zéro.",
       "Flux d'exploitation 484 M FCFA, soit 48 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
-      "Comparaison refusée de part et d'autre de 2020→2021 : résultat net multiplié par 3.2 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
-      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 3.8 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2020→2021 : résultat net multiplié par 3.2 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent.",
+      "Comparaison refusée de part et d'autre de 2022→2023 : résultat net multiplié par 3.8 en un an (baisse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent."
      ],
      "exercices": [
       2019,
@@ -8826,7 +8826,7 @@
      "details": [
       "Résultat net 2025 : 101,228 M FCFA, contre 97,230 M en 2022 (+4.1 %, soit +1.4 % par an).",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
-      "Comparaison refusée de part et d'autre de 2021→2022 : résultat net multiplié par 9.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2021→2022 : résultat net multiplié par 9.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : unité différente (en FCFA → en millions de FCFA) ; chiffre non recoupé : exercice 2021 (extraction_unique)."
      ],
      "exercices": [
       2021,
@@ -11443,7 +11443,7 @@
       "Résultat net 2025 : 36,464 M FCFA, contre 44,730 M en 2024 (-18.5 %, soit -18.5 % par an).",
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
       "Flux d'exploitation 18,472 M FCFA, soit 51 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
-      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 3.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse."
+      "Comparaison refusée de part et d'autre de 2023→2024 : résultat net multiplié par 3.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable probablement différent."
      ],
      "exercices": [
       2020,
@@ -11965,7 +11965,7 @@
      "details": [
       "Aucun exercice antérieur comparable dans la fenêtre : la trajectoire n'est pas établie.",
       "Rentabilité des fonds propres : 29.7 % en 2025 (résultat net / fonds propres de fin d'exercice).",
-      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 11.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : périmètre comptable différent ou extraction douteuse.",
+      "Comparaison refusée de part et d'autre de 2024→2025 : résultat net multiplié par 11.6 en un an (hausse) — saut invraisemblable d'un exercice au suivant : unité différente (en millions de FCFA → FCFA (états de synthèse SYSCOHADA codés)).",
       "Lecture courte : 2 exercices seulement (2024 et 2025). Une trajectoire sur deux points est un début, pas une tendance."
      ],
      "exercices": [

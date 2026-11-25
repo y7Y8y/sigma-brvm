@@ -405,7 +405,6 @@ function dividendHistoryLabel(company) {
 const RADAR_RULES = {
   minTradedSessions: 15,
   minMedianTradedValue: 5000000,
-  maxPer: 25,
   weights: { liquidity: 35, valuation: 35, yield: 30 },
   selectionSize: 8,
   maxPerSector: 3
@@ -524,9 +523,13 @@ function computeRadar() {
     if ((stats.median_traded_value_last_20_fcfa ?? 0) < rules.minMedianTradedValue) {
       reasons.push(`valeur médiane échangée ${fmtCompactFCFA(stats.median_traded_value_last_20_fcfa)} par séance (minimum ${fmtCompactFCFA(rules.minMedianTradedValue)})`);
     }
+    // Correction du 28/10 : un plafond de PER fixe (25) excluait neuf sociétés
+    // — dont toute la branche industrielle, dont la médiane de PER est de 54,5.
+    // « Cher dans l'absolu » n'est pas un motif d'exclusion : c'est un drapeau
+    // à l'écran et un poids plus faible. Seule l'absence de PER exclut, parce
+    // qu'on ne peut pas lire la valorisation sans bénéfice.
     if (!isNum(boc.per) || boc.per <= 0) reasons.push("PER non publié au BOC (bénéfice par action négatif ou non communiqué)");
-    else if (boc.per > rules.maxPer) reasons.push(`PER publié au BOC de ${fmtRatio(boc.per)} (plafond Radar ${rules.maxPer})`);
-    if (!yieldInfo.usable) reasons.push(`dividende écarté : ${yieldInfo.reason}`);
+    if (!yieldInfo.usable) reasons.push(`aucun dividende récent exploitable : ${yieldInfo.reason}`);
     if (reasons.length) { rejected.push({ company, reasons }); continue; }
     eligibleRaw.push({ company, price, yieldInfo });
   }
@@ -556,6 +559,10 @@ function computeRadar() {
     }
     if (isNum(stats.performance_20_sessions_pct) && stats.performance_20_sessions_pct >= 15) {
       flags.push({ tone: "amber", text: `Cours en hausse de ${fmtPct(stats.performance_20_sessions_pct)} sur 20 séances : le prix a déjà intégré une partie de l'optimisme.` });
+    }
+    const perSecteur = sectorMedian("per", entry.company.sector);
+    if (isNum(boc.per) && isNum(perSecteur) && boc.per > perSecteur * 1.5) {
+      flags.push({ tone: "amber", text: `PER ${fmtRatio(boc.per)} contre une médiane de ${fmtRatio(perSecteur)} dans son secteur : payé plus cher que ses pairs — à justifier par la croissance, pas par l'habitude.` });
     }
     const dividendHist = entry.company.dividend_history || {};
     if (isNum(dividendHist.paid_last_5_fiscal_years) && dividendHist.paid_last_5_fiscal_years < 3) {
@@ -1873,7 +1880,7 @@ function renderAnalysisRadar() {
     <p class="muted">Mêmes règles pour les ${COMPANIES.length} sociétés cotées. Le Radar ordonne votre lecture — il ne recommande rien.</p>
     ${fold("Les trois règles appliquées — et pourquoi celles-ci", `    <div class="grid-3" style="margin:14px 0">
       <div class="key-fact"><span class="metric-label">Règle 1 — ${termButton("Liquidité", "Échangeabilité")}</span><div class="metric-value is-compact">≥ ${rules.minTradedSessions}/20 séances et ≥ ${fmtCompactFCFA(rules.minMedianTradedValue)} médiane</div><div class="subtext">Un versement de 100 000 à 300 000 FCFA doit rester une fraction raisonnable des échanges d'une séance type.</div></div>
-      <div class="key-fact"><span class="metric-label">Règle 2 — ${termButton("Valorisation", "Valorisation publiée")}</span><div class="metric-value is-compact">${termButton("PER")} BOC présent, entre 0 et ${rules.maxPer}</div><div class="subtext">Un PER absent signale souvent un ${termButton("Bénéfice net par action", "bénéfice par action")} négatif ou non communiqué : hors premier tri, pas hors étude définitive.</div></div>
+      <div class="key-fact"><span class="metric-label">Règle 2 — ${termButton("Valorisation", "Valorisation publiée")}</span><div class="metric-value is-compact">${termButton("PER")} BOC présent</div><div class="subtext">Un PER absent signale souvent un ${termButton("Bénéfice net par action", "bénéfice par action")} négatif ou non communiqué : hors premier tri, pas hors étude définitive. Un PER élevé n'exclut plus depuis le 28/10 : il devient un drapeau rouge et pèse moins dans le classement.</div></div>
       <div class="key-fact"><span class="metric-label">Règle 3 — ${termButton("Dividende", "Dividende documenté")}</span><div class="metric-value is-compact">Rendement &gt; 0, ≤ 15 %, &lt; 18 mois</div><div class="subtext">Les rendements extrêmes ou anciens sont écartés. L’historique BRVM par exercice est ensuite affiché pour distinguer une distribution régulière d’un paiement isolé ; il ne remplace pas le ${termButton("Taux de distribution", "taux de distribution")}.</div></div>
     </div>
     <p class="source-line">Notation des éligibles : rangs parmi les éligibles — ${termButton("Liquidité")} ${rules.weights.liquidity} pts, ${termButton("Valorisation", "Valorisation relative")} ${rules.weights.valuation} pts, ${termButton("Rendement net", "Rendement")} ${rules.weights.yield} pts. Sélection limitée à ${rules.maxPerSector} sociétés par secteur pour éviter une liste mono-sectorielle.</p>
@@ -2290,7 +2297,7 @@ function renderDecision() {
   const documentsHost = $("#decisionDocuments");
   if (documentsHost) documentsHost.hidden = ui.analysisTab !== "donnees";
   if (ui.analysisTab === "donnees") renderReports();
-  host.innerHTML = ui.analysisTab === "examiner" ? renderAnalysisRadar() + renderAnalysisDeclines()
+  host.innerHTML = ui.analysisTab === "examiner" ? renderAnalysisRadar() + methodeCard() + renderAnalysisDeclines()
     : ui.analysisTab === "donnees"
       ? `<p class="muted">Ce que SIGMA sait, en trois blocs : ouvrez seulement celui dont vous avez besoin. Les repères ci-dessous résument le marché sans ouvrir les tableaux.</p>
         <div class="grid-4 section-space">
@@ -2906,20 +2913,34 @@ function renderCompletude() {
       </div>
       <p class="source-line">Le revenu est compté à part : ${r.rendement_calcule ?? 0}/48 sociétés ont un rendement publié au BOC, ${r.revenu_documente ?? 0} ont un dossier documentaire complet, mais ${r.revenu_trois_preuves ?? 0} seulement réunissent les trois preuves (dividende renouvelé, financé par le bénéfice, payé par l'exploitation). Un rendement affiché sans ses preuves n'est pas un revenu — c'est un versement passé.</p>
     </article>
-    ${[...parHorizon.entries()].sort((a, b) => b[1].length - a[1].length).map(([horizon, liste]) => `
-      <article class="card section-space">
-        <div class="event-row"><div><p class="eyebrow">${escapeHtml(horizon)}</p><h2>${liste.length} société(s) à compléter</h2></div>
-        <span class="pill">${liste.filter(m => m.etat === "absent").length} absent(s) · ${liste.filter(m => m.etat === "limite").length} limité(s)</span></div>
-        <ul class="manque-list">
-          ${liste.map(m => `<li class="manque-row">
-            <div><button type="button" class="text-button ticker" data-open-company="${m.ticker}">${m.ticker}</button>
-              <span class="subtext">${escapeHtml(m.societe)}</span></div>
-            <div><span class="pill ${m.etat === "absent" ? "red" : "amber"}">${m.etat === "absent" ? "Absent" : "Limité"}</span>
-              <p class="manque-raison">${escapeHtml(m.raison || "")}</p>
-              <p class="subtext"><strong>Source :</strong> ${escapeHtml(m.source || "—")}${m.deblocage ? ` · <strong>Déblocage :</strong> ${escapeHtml(m.deblocage)}` : ""}</p></div>
-          </li>`).join("")}
-        </ul>
-      </article>`).join("")}`;
+    ${[...parHorizon.entries()].sort((a, b) => b[1].length - a[1].length).map(([horizon, liste]) => {
+      // 66 lignes dépliées faisaient 4 243 mots dans l'écran : personne ne lit
+      // 66 lignes de manques. On regroupe par société — une société, un titre,
+      // les raisons en dessous — et on plie chaque horizon.
+      const parSociete = new Map();
+      for (const m of liste) {
+        if (!parSociete.has(m.ticker)) parSociete.set(m.ticker, { ticker: m.ticker, societe: m.societe, etats: [], raisons: [], sources: [], deblocages: [] });
+        const g = parSociete.get(m.ticker);
+        g.etats.push(m.etat);
+        if (m.raison && !g.raisons.includes(m.raison)) g.raisons.push(m.raison);
+        if (m.source && !g.sources.includes(m.source)) g.sources.push(m.source);
+        if (m.deblocage && !g.deblocages.includes(m.deblocage)) g.deblocages.push(m.deblocage);
+      }
+      const groupes = [...parSociete.values()];
+      const absentes = groupes.filter(g => g.etats.every(e => e === "absent")).length;
+      const corps = `<ul class="manque-list">${groupes.map(g => `<li class="manque-row">
+          <div><button type="button" class="text-button ticker" data-open-company="${g.ticker}">${g.ticker}</button>
+            <span class="subtext">${escapeHtml(g.societe)}</span>
+            <div><span class="pill ${absentes && g.etats.every(e => e === "absent") ? "red" : "amber"}">${g.etats.every(e => e === "absent") ? "Absent" : g.etats.includes("absent") ? "Partiel" : "Limité"}</span></div></div>
+          <div><p class="manque-raison">${escapeHtml(g.raisons.join(" · "))}</p>
+            <p class="subtext"><strong>Source :</strong> ${escapeHtml(g.sources.join(" · ") || "—")}${g.deblocages.length ? ` · <strong>Déblocage :</strong> ${escapeHtml(g.deblocages.join(" · "))}` : ""}</p></div>
+        </li>`).join("")}</ul>`;
+      return `<article class="card section-space">
+        <div class="event-row"><div><p class="eyebrow">${escapeHtml(horizon)}</p><h2>${groupes.length} société(s) à compléter</h2></div>
+        <span class="pill">${absentes} sans aucune donnée · ${groupes.length - absentes} partielle(s)</span></div>
+        ${fold(`${groupes.length} société(s) — raison, source et déblocage ligne par ligne`, corps, { hint: "Détail" })}
+      </article>`;
+    }).join("")}`;
 }
 
 /* ---------------------------------------------------------------------------
@@ -3014,6 +3035,89 @@ function renderHorloge() {
   set("horlogeBoc", `Séance du ${fmtDate(latestBocDate())} — publiée ${dureeLisible(etat.boc?.minutes ?? null)}. Le BOC n'existe qu'après la clôture : aucun indicateur fondamental ne peut être plus frais que lui.`);
   set("horlogeCollecte", `${fmtDateTime(DATA.generated_at)} — ${dureeLisible(etat.collecte?.minutes ?? null)}. C'est le fichier que vous lisez ; son âge est recalculé à l'ouverture de l'écran.`);
   set("horlogeProchaine", `${etat.prochaine.quand} — ${etat.prochaine.texte}. SIGMA ne publie pas de calendrier de jours fériés : il n'en a pas de source officielle lisible.`);
+}
+
+/* ---------------------------------------------------------------------------
+   La méthode, confrontée à ce que SIGMA sait faire.
+   Ce n'est pas une bibliographie : chaque pratique est mise en face d'un
+   calcul réellement présent dans l'application, ou de son absence assumée.
+   Le tri est celui de la littérature d'investissement sérieuse (Graham,
+   Fisher, Buffett, Lynch, Greenblatt, Fama-French, Dalio, Bogle, Marks,
+   Dreman, Dorsey), pas d'une liste de « tips ».
+--------------------------------------------------------------------------- */
+const METHODES = [
+  { nom: "Marge de sécurité et prix contre valeur", qui: "Graham, Buffett",
+    attend: "un écart chiffré entre ce que la société vaut et ce qu'elle coûte",
+    sigma: "PER comparé à **son propre** passé (percentile sur 262 séances), prix dans sa propre fourchette",
+    etat: "partiel",
+    manque: "la valeur intrinsèque suppose de projeter les bénéfices : SIGMA ne projette pas, il situe le prix payé par rapport à son histoire" },
+  { nom: "Qualité de l'entreprise avant le prix", qui: "Fisher, Buffett, Dorsey",
+    attend: "rentabilité des fonds propres, régularité, endettement, transformation du bénéfice en trésorerie",
+    sigma: "ROE, flux d'exploitation ÷ résultat, dette nette ÷ fonds propres, dividende couvert",
+    etat: "partiel",
+    manque: "pas d'avantage concurrentiel mesurable, pas de croissance future : l'analyse reste comptable et rétrospective" },
+  { nom: "Croissance à un prix raisonnable", qui: "Lynch, Greenblatt",
+    attend: "confronter la croissance passée au multiple payé",
+    sigma: "croissance du résultat net sur 3 exercices comparables, face au PER",
+    etat: "partiel",
+    manque: "SIGMA refuse désormais les sauts invraisemblables de série (10 sociétés) : la croissance n'est publiée que sur une fenêtre propre" },
+  { nom: "Régularité du dividende", qui: "Bogle, investisseurs de revenu",
+    attend: "un dividende renouvelé, financé par le bénéfice et couvert par la trésorerie",
+    sigma: "trois preuves séparées ; 3 sociétés les réunissent sur 48",
+    etat: "limite",
+    manque: "« dividendes versés » n'est extrait que pour 11 sociétés : la couverture par le flux ne peut pas être calculée ailleurs" },
+  { nom: "Coût et fiscalité", qui: "Bogle, Fama",
+    attend: "les frais et l'impôt expliquent une grande part du résultat final",
+    sigma: "frais SGI calculés depuis votre grille, si vous la saisissez",
+    etat: "limite",
+    manque: "aucune source officielle unifiée de fiscalité UEMOA : SIGMA ne publie aucun taux d'imposition" },
+  { nom: "Diversification et corrélations", qui: "Markowitz, Fama-French",
+    attend: "répartir le risque entre des actifs qui ne bougent pas ensemble",
+    sigma: "plafond de deux valeurs par secteur dans le top 5, poids des lignes",
+    etat: "partiel",
+    manque: "pas de matrice de corrélations : avec 262 séances et un marché à 48 valeurs, elle serait instable — elle est donc absente" },
+  { nom: "Cycle et régime de marché", qui: "Dalio, Marks",
+    attend: "situer la valorisation globale par rapport à sa moyenne longue",
+    sigma: "position du cours face à sa moyenne de 120 séances, distance au plus haut annuel",
+    etat: "limite",
+    manque: "l'archive couvre **un an** (262 séances) : aucun cycle complet, aucun repère à cinq ans" },
+  { nom: "Contrarian : acheter ce que les autres fuient", qui: "Dreman, Marks",
+    attend: "repérer la sous-évaluation créée par la peur",
+    sigma: "percentile bas dans sa fourchette, PER sous son propre historique",
+    etat: "partiel",
+    manque: "pas de sentiment de marché, pas de couverture analystes, pas de flux étrangers : la peur ne se mesure pas avec ces données" },
+  { nom: "Timing et prévision des chutes", qui: "aucune école sérieuse",
+    attend: "prévoir un mouvement de cours avant l'information",
+    sigma: "amplitude maximale mesurée (7,5 %), retour après saut, réaction aux publications",
+    etat: "refus",
+    manque: "SIGMA mesure la sensibilité d'un titre à l'information ; il ne prédit pas le contenu d'un communiqué et ne prétend pas le faire" },
+];
+
+const ETATS_METHODE = {
+  couvert: ["solide", "Couvert"],
+  partiel: ["milieu", "Partiel"],
+  limite: ["cher", "Limité par les données"],
+  refus: ["fragile", "Refusé volontairement"]
+};
+
+function methodeCard() {
+  const compte = cle => METHODES.filter(m => m.etat === cle).length;
+  const ligne = m => {
+    const [ton, libelle] = ETATS_METHODE[m.etat] || ETATS_METHODE.partiel;
+    return `<li class="verdict-line">
+      <div class="verdict-horizon"><span class="verdict-titre">${escapeHtml(m.nom)}</span><span class="subtext">${escapeHtml(m.qui)}</span></div>
+      <div class="verdict-body"><span class="verdict-ton ${ton}">${libelle}</span>
+        <p class="verdict-phrase"><strong>Ce que la méthode demande :</strong> ${escapeHtml(m.attend)}.</p>
+        <p class="verdict-regle"><strong>Ce que SIGMA fait :</strong> ${m.sigma.replace(/\*\*(.+?)\*\*/g, "<em>$1</em>")}.</p>
+        <p class="verdict-regle"><strong>Ce qui manque :</strong> ${escapeHtml(m.manque)}.</p>
+      </div></li>`;
+  };
+  return `<article class="card section-space">
+    <div class="event-row"><div><p class="eyebrow">Méthode · neuf pratiques reconnues, confrontées au code</p><h2>Ce que les investisseurs qui durent font — et ce que SIGMA en fait</h2></div>
+      <span class="pill dark">${compte("couvert")} couvertes · ${compte("partiel")} partielles · ${compte("limite")} limitées · ${compte("refus")} refusée</span></div>
+    <p class="muted">Aucune de ces pratiques ne promet un gain : elles réduisent le nombre de décisions prises au hasard. La dernière ligne est là pour être explicite — prévoir une chute avant l'information n'appartient à aucune école sérieuse, et SIGMA ne le fera pas.</p>
+    ${fold("Les neuf pratiques, une par une", `<ul class="verdict-list">${METHODES.map(ligne).join("")}</ul>`, { hint: "Détail", open: false })}
+  </article>`;
 }
 
 function renderSettings() {
