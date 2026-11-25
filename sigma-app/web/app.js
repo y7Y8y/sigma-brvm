@@ -2938,6 +2938,7 @@ function renderCompletude() {
         ${jauge("Prix face à son cycle de 120 séances", r.position_longue_calculee ?? 0, 0, r.societes)}
         ${jauge("Revenu — trois preuves réunies", r.revenu_trois_preuves ?? 0, (r.revenu_documente ?? 0) - (r.revenu_trois_preuves ?? 0), r.societes)}
         ${jauge("Rentabilité des fonds propres", r.roe_plein ?? 0, (r.roe_calcule ?? 0) - (r.roe_plein ?? 0), r.societes)}
+        ${jauge("Valorisables sur trois exercices", r.valorisables_3_exercices ?? 0, 0, 35)}
       </div>
       <p class="source-line">Le revenu est compté à part : ${r.rendement_calcule ?? 0}/48 sociétés ont un rendement publié au BOC, ${r.revenu_documente ?? 0} ont un dossier documentaire complet, mais ${r.revenu_trois_preuves ?? 0} seulement réunissent les trois preuves (dividende renouvelé, financé par le bénéfice, payé par l'exploitation). Un rendement affiché sans ses preuves n'est pas un revenu — c'est un versement passé.</p>
     </article>
