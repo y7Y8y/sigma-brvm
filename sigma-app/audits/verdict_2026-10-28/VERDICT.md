@@ -57,19 +57,68 @@ Exemple, SNTS : résultat net 413 588 M FCFA en 2025 contre 278 912 M en 2022
 positive (−133 419 M de dette nette, soit −10 % des fonds propres), flux
 d'exploitation à 165 % du résultat.
 
-## Couverture réelle, mesurée
+## Couverture réelle, mesurée — et chaque trou nommé
 
-| Capacité | Sociétés servies |
-|---|---:|
-| Court terme calculé | **47 / 48** |
-| Moyen terme calculé | **39 / 48** |
-| Long terme calculé | **40 / 48** |
-| **Trois horizons complets** | **34 / 48** |
-| Capitalisation calculée | 3 / 48 |
+Le 28/10, la réponse « 34 sociétés sur 48 » a été refusée : *« je ne veux rien
+de partiel »*. La réponse n'est pas de promettre 48 partout, c'est de **séparer
+deux qualités de réponse** et de nommer chaque manque.
 
-Le dernier chiffre est le verrou déjà connu : le nombre d'actions n'est prouvé
-que pour trois sociétés. Le module **refuse de le déduire** d'un cours ou d'un
-BPA.
+Deux seuils par horizon, publiés dans `verdicts.json` :
+
+- **plein** — la règle tourne sur assez d'observations pour être un centile :
+  120 séances de PER, 3 exercices comptables.
+- **limité** — la règle tourne sur moins, la réponse est **livrée avec sa
+  réserve** : 30 séances de PER, 2 exercices. L'écran écrit alors « le rang est
+  indicatif, pas un centile établi », ou « une trajectoire sur deux points est
+  un début, pas une tendance ».
+
+Sous le seuil limité, le module refuse. Il ne devine pas.
+
+| Capacité | Calculée | Dont pleine |
+|---|---:|---:|
+| Court terme | **47 / 48** | 47 |
+| Moyen terme | **42 / 48** | 39 |
+| Long terme | **44 / 48** | 40 |
+| Capitalisation | **3 vérifiées + 35 déduites** | 3 |
+| Prix face à son cycle (120 séances) | **47 / 48** | 47 |
+| **Trois horizons lisibles** | **40 / 48** | — |
+
+### La capitalisation déduite, et pourquoi elle est permise
+
+Le verrou était le nombre d'actions. Il existe une identité qui le contourne
+sans le violer :
+
+    capitalisation = PER publié au BOC × résultat net de l'exercice de référence
+
+Contrôle sur les deux seuls cas où les deux chemins existent :
+
+| Société | Actions × cours | PER × résultat | Résultat publié | Écart |
+|---|---:|---:|---:|---:|
+| SGBC | 1 213,33 Md | 101 365 M | 101 228 M | **0,14 %** |
+| CIEC | 280,00 Md | 13 127 M | 13 100 M | **0,20 %** |
+
+Le statut publié est `implicite`, la limite est écrite à côté du chiffre
+(« déduction, pas un nombre d'actions vérifié »), et **aucun champ
+`actions`** n'est produit par cette voie — le test le vérifie. Le seul chemin
+vers 48/48 *vérifiées* reste le registre du nombre d'actions au BOC.
+
+### Le registre : 28 manques, chacun avec sa sortie
+
+`manques()` ne rédige rien à la main : il **dérive** la liste des verdicts. Une
+ligne dit la société, l'horizon, `absent` ou `limite`, la raison, la source
+attendue et ce qui débloquerait. Publié dans `verdicts.json`, affiché dans la
+vue **Ce qui manque** (5 jauges + liste par horizon).
+
+| Horizon | Manques | Irréductibles aujourd'hui |
+|---|---:|---|
+| Capitalisation | 10 | NSBC (0 document indexé), BBGC (2 documents sans états financiers) |
+| Moyen terme | 9 | STAC, SICC, UNXC (**aucun PER publié** au BOC), UNLC (1 seul) |
+| Long terme | 8 | BBGC et NSBC (0 exercice), NEIC/NTLC/TTLS/UNXC (2), SICC (4 exercices sans grandeur exploitable) |
+| Court terme | 1 | BBGC — **19 séances** de cotation depuis le 24/09/2026 |
+
+Ces trous-là ne se comblent pas par du calcul : ils demandent une publication
+qui n'existe pas. Les autres se comblent en ajoutant les documents au corpus.
+La différence entre les deux est écrite dans la colonne `deblocage`.
 
 ## Trois pièges de données trouvés en construisant ce module
 
@@ -90,7 +139,7 @@ observations vérifiables : « Prix haut pour elle », « Moins cher qu'à son
 habitude », « Entreprise qui gagne », « Série insuffisante ». Chaque ligne
 publie **sa règle** et **ce qui l'invaliderait**.
 
-`tests/test_verdict.py` (16 tests) refuse les formules interdites (« achetez »,
+`tests/test_verdict.py` (21 tests sur le verdict) refuse les formules interdites (« achetez »,
 « nous recommandons », « objectif de cours », « signal d'achat », « il faut
 vendre », « opportunité d'achat ») et vérifie que la décomposition reconstitue
 exactement le cours, que la distribution du PER est bien celle de la société,
@@ -98,7 +147,7 @@ et qu'aucune absence n'est remplacée par un zéro.
 
 ## Vérifications
 
-`pytest` : **243 tests passés**. Rendu jsdom : verdict à 3 lignes sur l'accueil
-et sur la fiche, **0 erreur JavaScript**, 9 vues intactes. Le fichier publié est
+`pytest` : **248 tests passés**. Rendu jsdom : verdict à 3 lignes sur l'accueil
+et sur la fiche, **0 erreur JavaScript**, 9 vues intactes, dont la vue « Ce qui manque » (5 jauges, 28 lignes, 0 erreur). Le fichier publié est
 comparé au module à chaque exécution des tests : s'il diverge, la suite échoue
 et demande de relancer `ingestion/verdict.py --out`.

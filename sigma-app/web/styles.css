@@ -617,3 +617,23 @@ td.num, th.num { white-space: nowrap; }
   .verdict-regle { display: none; }
   .verdict-card .fold { margin-top: 10px; }
 }
+
+/* ---------------------------------------------------------------------------
+   Registre des manques — voir le trou, pas le masquer
+--------------------------------------------------------------------------- */
+.jauge { display: grid; gap: 6px; min-width: 0; }
+.jauge-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.jauge-label { font-size: var(--fs-small); color: var(--text-secondary); font-weight: 620; }
+.jauge-valeur { font-size: var(--fs-subtitle); font-weight: 700; color: var(--text-strong); font-variant-numeric: tabular-nums; }
+.jauge .bar-track { height: 7px; }
+.jauge .source-line { margin-top: 2px; }
+.manque-list { list-style: none; margin: 12px 0 0; padding: 0; border-top: 1px solid var(--border); }
+.manque-row {
+  display: grid; grid-template-columns: minmax(150px, 210px) minmax(0, 1fr);
+  gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: start;
+}
+.manque-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.manque-raison { margin: 5px 0 3px; font-size: var(--fs-small); color: var(--text); line-height: 1.45; }
+@media (max-width: 920px) {
+  .manque-row { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+}

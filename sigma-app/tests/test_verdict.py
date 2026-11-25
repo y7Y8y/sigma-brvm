@@ -80,7 +80,11 @@ class CalculsTests(unittest.TestCase):
                 continue
             self.assertLessEqual(d["q1"], d["mediane"], ticker)
             self.assertLessEqual(d["mediane"], d["q3"], ticker)
-            self.assertGreaterEqual(d["seances"], verdict.MIN_SEANCES_PER, ticker)
+            self.assertGreaterEqual(d["seances"], verdict.PER_SEANCES_LIMITE, ticker)
+            if d["seances"] < verdict.PER_SEANCES_PLEIN:
+                # Une distribution courte est admise, jamais silencieuse.
+                self.assertEqual(d.get("profondeur"), "limitee", ticker)
+                self.assertEqual(v.horizons["moyen"].get("profondeur"), "limitee", ticker)
 
     def test_la_decomposition_reconstitue_le_cours(self):
         # cours = bénéfice implicite × PER : la décomposition doit être exacte,
@@ -127,13 +131,30 @@ class CouvertureTests(unittest.TestCase):
         self.assertGreaterEqual(r["trois_horizons_complets"], 30, f"trop peu de verdicts complets : {r}")
         self.assertLess(r["trois_horizons_complets"], r["societes"], "tout ne peut pas être complet : le dire")
 
-    def test_la_capitalisation_n_est_jamais_deduite(self):
+    def test_la_capitalisation_a_trois_niveaux_jamais_confondus(self):
+        """Directe (actions lues), implicite (identité PER × résultat), absente."""
         for ticker, v in VERDICTS.items():
-            if v.capitalisation.get("statut") == "calcule":
-                self.assertTrue(v.capitalisation.get("actions"), ticker)
-                self.assertIn("document", v.capitalisation.get("base", ""), ticker)
+            cap = v.capitalisation
+            statut = cap.get("statut")
+            if statut == "calcule":
+                self.assertTrue(cap.get("actions"), ticker)
+                self.assertIn("document", cap.get("base", ""), ticker)
+            elif statut == "implicite":
+                # L'identité doit être vérifiable à partir des champs publiés.
+                self.assertAlmostEqual(
+                    cap["valeur_fcfa"] / (cap["per_publie"] * cap["resultat_net"]), 1.0, places=6, msg=ticker)
+                self.assertIn("identité", cap.get("base", ""), ticker)
+                self.assertTrue(cap.get("limite"), f"{ticker} : une déduction doit dire sa limite")
             else:
-                self.assertIn("nombre d'actions", v.capitalisation.get("raison", ""), ticker)
+                self.assertEqual(statut, "non_calculable", ticker)
+                self.assertIn("nombre d'actions", cap.get("raison", ""), ticker)
+                self.assertIn("deblocage", cap, f"{ticker} : un trou sans déblocage n'aide personne")
+
+    def test_une_capitalisation_deduite_ne_produit_jamais_un_nombre_d_actions(self):
+        # Le verrou reste le verrou : aucun champ « actions » sur une déduction.
+        for ticker, v in VERDICTS.items():
+            if v.capitalisation.get("statut") == "implicite":
+                self.assertNotIn("actions", v.capitalisation, ticker)
 
 
 class FichierPublieTests(unittest.TestCase):
@@ -147,7 +168,8 @@ class FichierPublieTests(unittest.TestCase):
     def test_les_seuils_publies_sont_ceux_du_code(self):
         publie = json.loads((WEB / "data" / "verdicts.json").read_text(encoding="utf-8"))
         self.assertEqual(publie["seuils"]["per_cher_percentile"], verdict.SEUIL_PER_CHER)
-        self.assertEqual(publie["seuils"]["min_seances_per"], verdict.MIN_SEANCES_PER)
+        self.assertEqual(publie["seuils"]["per_seances_plein"], verdict.PER_SEANCES_PLEIN)
+        self.assertEqual(publie["seuils"]["per_seances_limite"], verdict.PER_SEANCES_LIMITE)
 
     def test_le_module_s_execute_en_ligne_de_commande(self):
         resultat = subprocess.run([sys.executable, str(RACINE / "ingestion" / "verdict.py"), "SNTS"],
@@ -156,6 +178,45 @@ class FichierPublieTests(unittest.TestCase):
         self.assertIn("SNTS", resultat.stdout)
         for horizon in ("COURT", "MOYEN", "LONG"):
             self.assertIn(horizon, resultat.stdout)
+
+
+class RegistreManquesTests(unittest.TestCase):
+    """« Je ne veux rien de partiel » : le registre doit être complet et honnête."""
+
+    def setUp(self):
+        self.manques = verdict.manques(VERDICTS)
+        self.resume = verdict.resume(VERDICTS)
+
+    def test_chaque_manque_nomme_une_source(self):
+        for m in self.manques:
+            self.assertTrue(m.get("source"), m)
+            self.assertTrue(m.get("raison"), m)
+
+    def test_le_registre_couvre_toutes_les_societes_incompletes(self):
+        incompletes = {t for t, v in VERDICTS.items()
+                       if any(v.horizons[h].get("statut") != "calcule"
+                              or v.horizons[h].get("profondeur", "pleine") != "pleine"
+                              for h in ("court", "moyen", "long"))}
+        couvertes = {m["ticker"] for m in self.manques if m["horizon"] != "capitalisation"}
+        self.assertTrue(incompletes.issubset(couvertes),
+                        f"sociétés incomplètes sans ligne de registre : {sorted(incompletes - couvertes)}")
+
+    def test_le_compte_du_registre_est_publie(self):
+        publie = json.loads((WEB / "data" / "verdicts.json").read_text(encoding="utf-8"))
+        self.assertIn("manques", publie)
+        self.assertEqual(len(publie["manques"]), len(self.manques))
+
+    def test_aucun_manque_invente(self):
+        # Une ligne « limite » doit correspondre à un horizon réellement calculé.
+        for m in self.manques:
+            if m["etat"] != "limite":
+                continue
+            horizon = {"court terme": "court", "moyen terme": "moyen", "long terme": "long"}.get(m["horizon"])
+            if horizon is None:
+                continue
+            v = VERDICTS[m["ticker"]]
+            self.assertEqual(v.horizons[horizon].get("statut"), "calcule", m)
+            self.assertEqual(v.horizons[horizon].get("profondeur"), "limitee", m)
 
 
 class EcranTests(unittest.TestCase):

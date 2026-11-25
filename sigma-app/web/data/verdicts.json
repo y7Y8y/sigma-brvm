@@ -11,17 +11,260 @@
   "fourchette_bas_percentile": 20.0,
   "per_cher_percentile": 80.0,
   "per_bon_marche_percentile": 20.0,
-  "min_seances_per": 120,
-  "min_exercices": 3
+  "per_seances_plein": 120,
+  "per_seances_limite": 30,
+  "min_exercices": 3,
+  "min_exercices_limite": 2
  },
  "resume": {
   "societes": 48,
   "court_calcule": 47,
-  "moyen_calcule": 39,
-  "long_calcule": 40,
+  "moyen_calcule": 42,
+  "long_calcule": 44,
+  "court_plein": 47,
+  "moyen_plein": 39,
+  "long_plein": 40,
   "capitalisation_calculee": 3,
-  "trois_horizons_complets": 34
+  "capitalisation_implicite": 35,
+  "position_longue_calculee": 47,
+  "trois_horizons_complets": 40
  },
+ "manques": [
+  {
+   "ticker": "BBGC",
+   "societe": "BRIDGE BANK GROUP COTE D'IVOIRE",
+   "horizon": "court terme",
+   "etat": "absent",
+   "raison": "moins de 20 clôtures publiées dans la fenêtre de 60 séances",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "BBGC",
+   "societe": "BRIDGE BANK GROUP COTE D'IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "absent",
+   "raison": "moins de 30 séances de PER publié dans l'archive",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "BBGC",
+   "societe": "BRIDGE BANK GROUP COTE D'IVOIRE",
+   "horizon": "long terme",
+   "etat": "absent",
+   "raison": "0 exercice(s) d'états financiers extraits des documents indexés ; deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "BBGC",
+   "societe": "BRIDGE BANK GROUP COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "2 document(s) indexé(s), aucun état financier publié (activite_semestrielle)",
+   "deblocage": "attendre ou retrouver la publication des états financiers de l'exercice"
+  },
+  {
+   "ticker": "BNBC",
+   "societe": "BERNABE COTE D'IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "absent",
+   "raison": "moins de 30 séances de PER publié dans l'archive",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "CBIBF",
+   "societe": "CORIS BANK INTERNATIONAL BURKINA FASO",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "3 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 4 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "ETIT",
+   "societe": "Ecobank Transnational Incorporated TOGO",
+   "horizon": "long terme",
+   "etat": "absent",
+   "raison": "0 exercice(s) d'états financiers extraits des documents indexés ; deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "ETIT",
+   "societe": "Ecobank Transnational Incorporated TOGO",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "11 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 0 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "NEIC",
+   "societe": "NEI-CEDA COTE D'IVOIRE",
+   "horizon": "long terme",
+   "etat": "limite",
+   "raison": "lecture courte (2 exercices complets)",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "NEIC",
+   "societe": "NEI-CEDA COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "6 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 2 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "NSBC",
+   "societe": "NSIA BANQUE COTE D'IVOIRE",
+   "horizon": "long terme",
+   "etat": "absent",
+   "raison": "0 exercice(s) d'états financiers extraits des documents indexés ; deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "NSBC",
+   "societe": "NSIA BANQUE COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "aucun document émetteur indexé pour cette société dans la collecte",
+   "deblocage": "indexer ses publications officielles sur brvm.org, puis ses états financiers"
+  },
+  {
+   "ticker": "NTLC",
+   "societe": "NESTLE COTE D'IVOIRE",
+   "horizon": "long terme",
+   "etat": "limite",
+   "raison": "lecture courte (2 exercices complets)",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "ORGT",
+   "societe": "ORAGROUP TOGO",
+   "horizon": "moyen terme",
+   "etat": "limite",
+   "raison": "distribution courte (116 séances)",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "SAFC",
+   "societe": "SAFCA COTE D'IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "limite",
+   "raison": "distribution courte (67 séances)",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "SCRC",
+   "societe": "SUCRIVOIRE COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "18 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 6 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "SICC",
+   "societe": "SICOR COTE D'IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "absent",
+   "raison": "moins de 30 séances de PER publié dans l'archive",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "SICC",
+   "societe": "SICOR COTE D'IVOIRE",
+   "horizon": "long terme",
+   "etat": "absent",
+   "raison": "4 exercice(s) présents mais aucune grandeur exploitable (résultat net, fonds propres, flux ou dividende absents)",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "SICC",
+   "societe": "SICOR COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "10 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 4 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "SIVC",
+   "societe": "ERIUM COTE D’IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "limite",
+   "raison": "distribution courte (100 séances)",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "STAC",
+   "societe": "SETAO COTE D'IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "absent",
+   "raison": "moins de 30 séances de PER publié dans l'archive",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "STAC",
+   "societe": "SETAO COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "6 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 7 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "TTLC",
+   "societe": "TOTALENERGIES MARKETING COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "14 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 6 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  },
+  {
+   "ticker": "TTLS",
+   "societe": "TOTALENERGIES MARKETING SENEGAL",
+   "horizon": "long terme",
+   "etat": "limite",
+   "raison": "lecture courte (2 exercices complets)",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "UNLC",
+   "societe": "UNILEVER COTE D'IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "absent",
+   "raison": "moins de 30 séances de PER publié dans l'archive",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "UNXC",
+   "societe": "UNIWAX COTE D'IVOIRE",
+   "horizon": "moyen terme",
+   "etat": "absent",
+   "raison": "moins de 30 séances de PER publié dans l'archive",
+   "source": "archive BOC — bulletin officiel de la cote"
+  },
+  {
+   "ticker": "UNXC",
+   "societe": "UNIWAX COTE D'IVOIRE",
+   "horizon": "long terme",
+   "etat": "limite",
+   "raison": "lecture courte (2 exercices complets)",
+   "source": "états financiers officiels de l'émetteur"
+  },
+  {
+   "ticker": "UNXC",
+   "societe": "UNIWAX COTE D'IVOIRE",
+   "horizon": "capitalisation",
+   "etat": "absent",
+   "raison": "nombre d'actions absent des documents indexés",
+   "source": "12 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 2 exercice(s) extraits",
+   "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+  }
+ ],
  "verdicts": {
   "ABJC": {
    "ticker": "ABJC",
@@ -55,6 +298,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 24.6, au 55ᵉ centile de sa propre histoire (médiane 24.4). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 24.6, au 55ᵉ centile de sa propre histoire (médiane 24.4). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 19.7 (1ᵉʳ quartile) à 26.3 (3ᵉ quartile) ; extrêmes observés 12.9 à 33.6.",
@@ -68,7 +312,8 @@
       "minimum": 12.86,
       "maximum": 33.57,
       "percentile": 55.3,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -94,6 +339,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 1,331 M FCFA, contre 670 M en 2021 (+98.7 %, soit +18.7 % par an).",
      "details": [
       "Résultat net 2025 : 1,331 M FCFA, contre 670 M en 2021 (+98.7 %, soit +18.7 % par an).",
@@ -115,8 +361,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 32742600000,
+    "per_publie": 24.6,
+    "resultat_net": 1331000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 3313.88,
+    "ecart_moyenne_pct": -9.5,
+    "plus_haut": 4095,
+    "ecart_plus_haut_pct": -26.7,
+    "plus_bas": 1805,
+    "ecart_plus_bas_pct": 66.2,
+    "seances": 262
    },
    "note": ""
   },
@@ -135,20 +395,23 @@
     "moyen": {
      "statut": "non_calculable",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "raison": "moins de 30 séances de PER publié dans l'archive",
      "regle": "PER comparé à sa propre distribution historique"
     },
     "long": {
      "statut": "non_calculable",
      "horizon": "long",
-     "raison": "0 exercice(s) d'états financiers extraits, il en faut 3",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "raison": "0 exercice(s) d'états financiers extraits des documents indexés ; deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine",
+     "regle": "états financiers officiels, deux exercices minimum"
     }
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "2 document(s) indexé(s), aucun état financier publié (activite_semestrielle)",
+    "deblocage": "attendre ou retrouver la publication des états financiers de l'exercice"
    },
+   "position_longue": {},
    "note": ""
   },
   "BICB": {
@@ -182,6 +445,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 13.6, soit le 89ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 89 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 13.6, soit le 89ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 89 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 9.5 (1ᵉʳ quartile) à 10.7 (3ᵉ quartile) ; extrêmes observés 9.1 à 17.2.",
@@ -195,7 +459,8 @@
       "minimum": 9.09,
       "maximum": 17.2,
       "percentile": 89.3,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -221,6 +486,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "neutre",
+     "profondeur": "pleine",
      "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
      "details": [
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
@@ -236,8 +502,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 491011350000,
+    "per_publie": 13.55,
+    "resultat_net": 36237000000,
+    "exercice": 2024,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2024. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 7261.25,
+    "ecart_moyenne_pct": 17.1,
+    "plus_haut": 10790,
+    "ecart_plus_haut_pct": -21.2,
+    "plus_bas": 4850,
+    "ecart_plus_bas_pct": 75.3,
+    "seances": 262
    },
    "note": ""
   },
@@ -272,6 +552,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 14.1, au 76ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 14.1, au 76ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 12.3 (1ᵉʳ quartile) à 13.9 (3ᵉ quartile) ; extrêmes observés 10.2 à 17.1.",
@@ -285,7 +566,8 @@
       "minimum": 10.22,
       "maximum": 17.13,
       "percentile": 75.6,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -311,6 +593,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -336,6 +619,15 @@
     "actions": 16666670,
     "valeur_fcfa": 513333436000,
     "base": "nombre d'actions lu dans un document officiel × dernier cours publié"
+   },
+   "position_longue": {
+    "moyenne_120": 29195.0,
+    "ecart_moyenne_pct": 5.5,
+    "plus_haut": 34895,
+    "ecart_plus_haut_pct": -11.7,
+    "plus_bas": 17380,
+    "ecart_plus_bas_pct": 77.2,
+    "seances": 262
    },
    "note": ""
   },
@@ -368,13 +660,14 @@
     "moyen": {
      "statut": "non_calculable",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "raison": "moins de 30 séances de PER publié dans l'archive",
      "regle": "PER comparé à sa propre distribution historique"
     },
     "long": {
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -398,8 +691,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 11393178100,
+    "per_publie": 510.49,
+    "resultat_net": 22318122,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 1869.12,
+    "ecart_moyenne_pct": -8.0,
+    "plus_haut": 2400,
+    "ecart_plus_haut_pct": -28.3,
+    "plus_bas": 1260,
+    "ecart_plus_bas_pct": 36.5,
+    "seances": 262
    },
    "note": ""
   },
@@ -434,6 +741,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 18.3, au 79ᵉ centile de sa propre histoire (médiane 16.0). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 18.3, au 79ᵉ centile de sa propre histoire (médiane 16.0). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 12.2 (1ᵉʳ quartile) à 18.1 (3ᵉ quartile) ; extrêmes observés 10.1 à 20.9.",
@@ -447,7 +755,8 @@
       "minimum": 10.11,
       "maximum": 20.88,
       "percentile": 78.6,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -473,6 +782,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -494,8 +804,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 368766593487,
+    "per_publie": 18.34,
+    "resultat_net": 20107229743,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 9176.17,
+    "ecart_moyenne_pct": -0.9,
+    "plus_haut": 10350,
+    "ecart_plus_haut_pct": -12.2,
+    "plus_bas": 4895,
+    "ecart_plus_bas_pct": 85.7,
+    "seances": 262
    },
    "note": ""
   },
@@ -530,6 +854,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 17.8, soit le 86ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 86 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 17.8, soit le 86ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 86 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 7.8 (1ᵉʳ quartile) à 15.9 (3ᵉ quartile) ; extrêmes observés 6.8 à 20.8.",
@@ -543,7 +868,8 @@
       "minimum": 6.77,
       "maximum": 20.77,
       "percentile": 86.3,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -569,6 +895,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 19,252 M FCFA, contre 17,608 M en 2020 (+9.3 %, soit +1.8 % par an).",
      "details": [
       "Résultat net 2025 : 19,252 M FCFA, contre 17,608 M en 2020 (+9.3 %, soit +1.8 % par an).",
@@ -588,8 +915,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 343455950472,
+    "per_publie": 17.84,
+    "resultat_net": 19252015161,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 6878.21,
+    "ecart_moyenne_pct": 13.5,
+    "plus_haut": 9090,
+    "ecart_plus_haut_pct": -14.1,
+    "plus_bas": 3450,
+    "ecart_plus_bas_pct": 126.2,
+    "seances": 262
    },
    "note": ""
   },
@@ -624,6 +965,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 12.7, soit le 80ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 80 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 12.7, soit le 80ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 80 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 9.1 (1ᵉʳ quartile) à 11.2 (3ᵉ quartile) ; extrêmes observés 8.6 à 15.1.",
@@ -637,7 +979,8 @@
       "minimum": 8.61,
       "maximum": 15.14,
       "percentile": 80.2,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -663,6 +1006,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -684,8 +1028,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 449936400000,
+    "per_publie": 12.66,
+    "resultat_net": 35540000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 10525.29,
+    "ecart_moyenne_pct": 6.9,
+    "plus_haut": 13450,
+    "ecart_plus_haut_pct": -16.4,
+    "plus_bas": 6900,
+    "ecart_plus_bas_pct": 63.0,
+    "seances": 262
    },
    "note": ""
   },
@@ -720,6 +1078,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 14.1, au 77ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 14.1, au 77ᵉ centile de sa propre histoire (médiane 12.8). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 11.8 (1ᵉʳ quartile) à 14.0 (3ᵉ quartile) ; extrêmes observés 10.3 à 17.8.",
@@ -733,7 +1092,8 @@
       "minimum": 10.35,
       "maximum": 17.82,
       "percentile": 77.1,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -759,6 +1119,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 11,081 M FCFA, contre 2,460 M en 2022 (+350.4 %, soit +65.1 % par an).",
      "details": [
       "Résultat net 2025 : 11,081 M FCFA, contre 2,460 M en 2022 (+350.4 %, soit +65.1 % par an).",
@@ -777,8 +1138,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 156355589588,
+    "per_publie": 14.11,
+    "resultat_net": 11081189907,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 5576.33,
+    "ecart_moyenne_pct": 2.1,
+    "plus_haut": 7195,
+    "ecart_plus_haut_pct": -20.8,
+    "plus_bas": 3440,
+    "ecart_plus_bas_pct": 65.6,
+    "seances": 262
    },
    "note": ""
   },
@@ -813,6 +1188,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 11.3, soit le 91ᵉ centile de ses 121 séances publiées. La société se paie plus cher qu'elle ne s'est payée 91 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 11.3, soit le 91ᵉ centile de ses 121 séances publiées. La société se paie plus cher qu'elle ne s'est payée 91 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 10.5 (1ᵉʳ quartile) à 10.9 (3ᵉ quartile) ; extrêmes observés 10.3 à 12.4.",
@@ -826,7 +1202,8 @@
       "minimum": 10.31,
       "maximum": 12.45,
       "percentile": 90.9,
-      "seances": 121
+      "seances": 121,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -852,6 +1229,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -873,8 +1251,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 99358370000,
+    "per_publie": 242.93,
+    "resultat_net": 409000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 4594.67,
+    "ecart_moyenne_pct": 4.0,
+    "plus_haut": 5645,
+    "ecart_plus_haut_pct": -15.3,
+    "plus_bas": 2480,
+    "ecart_plus_bas_pct": 92.7,
+    "seances": 262
    },
    "note": ""
   },
@@ -909,6 +1301,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 13.2, soit le 87ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 13.2, soit le 87ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 10.0 (1ᵉʳ quartile) à 12.6 (3ᵉ quartile) ; extrêmes observés 9.3 à 14.0.",
@@ -922,7 +1315,8 @@
       "minimum": 9.28,
       "maximum": 13.97,
       "percentile": 87.0,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -948,6 +1342,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 21,905 M FCFA, contre 7,667 M en 2020 (+185.7 %, soit +23.4 % par an).",
      "details": [
       "Résultat net 2025 : 21,905 M FCFA, contre 7,667 M en 2020 (+185.7 %, soit +23.4 % par an).",
@@ -968,8 +1363,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 290241250000,
+    "per_publie": 13.25,
+    "resultat_net": 21905000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 7735.96,
+    "ecart_moyenne_pct": 4.2,
+    "plus_haut": 8500,
+    "ecart_plus_haut_pct": -5.2,
+    "plus_bas": 5150,
+    "ecart_plus_bas_pct": 56.5,
+    "seances": 262
    },
    "note": ""
   },
@@ -1004,6 +1413,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 12.3, au 29ᵉ centile de sa propre histoire (médiane 14.3). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 12.3, au 29ᵉ centile de sa propre histoire (médiane 14.3). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 11.4 (1ᵉʳ quartile) à 15.3 (3ᵉ quartile) ; extrêmes observés 6.5 à 19.3.",
@@ -1017,7 +1427,8 @@
       "minimum": 6.5,
       "maximum": 19.33,
       "percentile": 29.0,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1043,6 +1454,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -1063,8 +1475,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 17705530200,
+    "per_publie": 12.3,
+    "resultat_net": 1439474000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 3611.75,
+    "ecart_moyenne_pct": -17.2,
+    "plus_haut": 4500,
+    "ecart_plus_haut_pct": -33.6,
+    "plus_bas": 1695,
+    "ecart_plus_bas_pct": 76.4,
+    "seances": 262
    },
    "note": ""
   },
@@ -1099,6 +1525,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 15.2, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 15.2, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 7.2 (1ᵉʳ quartile) à 13.5 (3ᵉ quartile) ; extrêmes observés 6.5 à 16.8.",
@@ -1112,7 +1539,8 @@
       "minimum": 6.54,
       "maximum": 16.83,
       "percentile": 91.6,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1138,6 +1566,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "neutre",
+     "profondeur": "pleine",
      "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
      "details": [
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro."
@@ -1155,7 +1584,18 @@
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "3 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 4 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 26389.71,
+    "ecart_moyenne_pct": 17.5,
+    "plus_haut": 34450,
+    "ecart_plus_haut_pct": -10.0,
+    "plus_bas": 9890,
+    "ecart_plus_bas_pct": 213.4,
+    "seances": 262
    },
    "note": ""
   },
@@ -1191,6 +1631,7 @@
      "horizon": "moyen",
      "ton": "bon_marche",
      "phrase": "PER à 31.0, soit le 2ᵉ centile de ses 160 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+     "profondeur": "pleine",
      "details": [
       "PER à 31.0, soit le 2ᵉ centile de ses 160 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
       "Sa fourchette personnelle va de 36.2 (1ᵉʳ quartile) à 57.0 (3ᵉ quartile) ; extrêmes observés 29.1 à 59.9.",
@@ -1204,7 +1645,8 @@
       "minimum": 29.09,
       "maximum": 59.9,
       "percentile": 2.5,
-      "seances": 160
+      "seances": 160,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1230,6 +1672,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2024 : 4,693 M FCFA, contre 3,780 M en 2020 (+24.2 %, soit +5.6 % par an).",
      "details": [
       "Résultat net 2024 : 4,693 M FCFA, contre 3,780 M en 2020 (+24.2 %, soit +5.6 % par an).",
@@ -1251,8 +1694,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 145638667334,
+    "per_publie": 31.03,
+    "resultat_net": 4693479450,
+    "exercice": 2024,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2024. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 1603.5,
+    "ecart_moyenne_pct": -10.2,
+    "plus_haut": 2495,
+    "ecart_plus_haut_pct": -42.3,
+    "plus_bas": 1250,
+    "ecart_plus_bas_pct": 15.2,
+    "seances": 262
    },
    "note": ""
   },
@@ -1288,6 +1745,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 21.3, au 70ᵉ centile de sa propre histoire (médiane 17.7). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 21.3, au 70ᵉ centile de sa propre histoire (médiane 17.7). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 14.4 (1ᵉʳ quartile) à 22.2 (3ᵉ quartile) ; extrêmes observés 12.5 à 31.6.",
@@ -1301,7 +1759,8 @@
       "minimum": 12.5,
       "maximum": 31.57,
       "percentile": 69.8,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1327,6 +1786,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "fragile",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 13,100 M FCFA, contre 17,183 M en 2020 (-23.8 %, soit -5.3 % par an).",
      "details": [
       "Résultat net 2025 : 13,100 M FCFA, contre 17,183 M en 2020 (-23.8 %, soit -5.3 % par an).",
@@ -1355,6 +1815,15 @@
     "actions": 56000000,
     "valeur_fcfa": 274680000000,
     "base": "nombre d'actions lu dans un document officiel × dernier cours publié"
+   },
+   "position_longue": {
+    "moyenne_120": 5340.04,
+    "ecart_moyenne_pct": -6.4,
+    "plus_haut": 7400,
+    "ecart_plus_haut_pct": -32.4,
+    "plus_bas": 2255,
+    "ecart_plus_bas_pct": 121.7,
+    "seances": 262
    },
    "note": ""
   },
@@ -1389,6 +1858,7 @@
      "horizon": "moyen",
      "ton": "bon_marche",
      "phrase": "PER à 13.8, soit le 14ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+     "profondeur": "pleine",
      "details": [
       "PER à 13.8, soit le 14ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
       "Sa fourchette personnelle va de 14.1 (1ᵉʳ quartile) à 15.3 (3ᵉ quartile) ; extrêmes observés 12.0 à 17.1.",
@@ -1402,7 +1872,8 @@
       "minimum": 11.98,
       "maximum": 17.05,
       "percentile": 14.1,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1428,6 +1899,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -1449,8 +1921,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 875416780000,
+    "per_publie": 13.79,
+    "resultat_net": 63482000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 16519.58,
+    "ecart_moyenne_pct": -3.8,
+    "plus_haut": 17800,
+    "ecart_plus_haut_pct": -10.7,
+    "plus_bas": 13150,
+    "ecart_plus_bas_pct": 20.9,
+    "seances": 262
    },
    "note": ""
   },
@@ -1485,6 +1971,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 3.3, au 74ᵉ centile de sa propre histoire (médiane 1.6). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 3.3, au 74ᵉ centile de sa propre histoire (médiane 1.6). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 1.4 (1ᵉʳ quartile) à 3.4 (3ᵉ quartile) ; extrêmes observés 1.1 à 4.1.",
@@ -1498,7 +1985,8 @@
       "minimum": 1.09,
       "maximum": 4.08,
       "percentile": 73.7,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1523,13 +2011,24 @@
     "long": {
      "statut": "non_calculable",
      "horizon": "long",
-     "raison": "0 exercice(s) d'états financiers extraits, il en faut 3",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "raison": "0 exercice(s) d'états financiers extraits des documents indexés ; deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine",
+     "regle": "états financiers officiels, deux exercices minimum"
     }
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "11 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 0 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 54.14,
+    "ecart_moyenne_pct": 16.4,
+    "plus_haut": 78,
+    "ecart_plus_haut_pct": -19.2,
+    "plus_bas": 19,
+    "ecart_plus_bas_pct": 231.6,
+    "seances": 262
    },
    "note": ""
   },
@@ -1564,6 +2063,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 54.5, soit le 87ᵉ centile de ses 200 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 54.5, soit le 87ᵉ centile de ses 200 séances publiées. La société se paie plus cher qu'elle ne s'est payée 87 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 1.7 (1ᵉʳ quartile) à 2.1 (3ᵉ quartile) ; extrêmes observés 1.4 à 59.8.",
@@ -1577,7 +2077,8 @@
       "minimum": 1.45,
       "maximum": 59.78,
       "percentile": 87.0,
-      "seances": 200
+      "seances": 200,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1603,6 +2104,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "neutre",
+     "profondeur": "pleine",
      "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
      "details": [
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
@@ -1621,8 +2123,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 25386644880,
+    "per_publie": 54.48,
+    "resultat_net": 465981000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 2088.21,
+    "ecart_moyenne_pct": -13.8,
+    "plus_haut": 3095,
+    "ecart_plus_haut_pct": -41.8,
+    "plus_bas": 1800,
+    "ecart_plus_bas_pct": 0.0,
+    "seances": 262
    },
    "note": ""
   },
@@ -1657,6 +2173,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 17.3, au 74ᵉ centile de sa propre histoire (médiane 11.5). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 17.3, au 74ᵉ centile de sa propre histoire (médiane 11.5). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 10.9 (1ᵉʳ quartile) à 17.3 (3ᵉ quartile) ; extrêmes observés 10.3 à 19.7.",
@@ -1670,7 +2187,8 @@
       "minimum": 10.31,
       "maximum": 19.73,
       "percentile": 74.0,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1696,6 +2214,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 4,622 M FCFA, contre 3,914 M en 2023 (+18.1 %, soit +8.7 % par an).",
      "details": [
       "Résultat net 2025 : 4,622 M FCFA, contre 3,914 M en 2023 (+18.1 %, soit +8.7 % par an).",
@@ -1712,8 +2231,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 79918594939,
+    "per_publie": 17.29,
+    "resultat_net": 4622243779,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 4055.62,
+    "ecart_moyenne_pct": -1.5,
+    "plus_haut": 4560,
+    "ecart_plus_haut_pct": -12.4,
+    "plus_bas": 3700,
+    "ecart_plus_bas_pct": 8.0,
+    "seances": 262
    },
    "note": ""
   },
@@ -1748,6 +2281,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 13.3, au 32ᵉ centile de sa propre histoire (médiane 14.0). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 13.3, au 32ᵉ centile de sa propre histoire (médiane 14.0). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 12.5 (1ᵉʳ quartile) à 14.7 (3ᵉ quartile) ; extrêmes observés 9.2 à 18.8.",
@@ -1761,7 +2295,8 @@
       "minimum": 9.21,
       "maximum": 18.8,
       "percentile": 32.2,
-      "seances": 121
+      "seances": 121,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1784,15 +2319,40 @@
      }
     },
     "long": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "long",
-     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "ton": "fragile",
+     "profondeur": "limitee",
+     "phrase": "Résultat net négatif en 2024 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+     "details": [
+      "Résultat net négatif en 2024 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+      "Fonds propres 2024 : absents des documents indexés — non substitués par zéro.",
+      "Flux d'exploitation 554 M FCFA, soit -73 % du résultat net : le bénéfice ne se transforme pas entièrement en trésorerie — à comprendre avant de s'y fier.",
+      "Lecture courte : 2 exercices seulement (2023 et 2024). Une trajectoire sur deux points est un début, pas une tendance."
+     ],
+     "exercices": [
+      2023,
+      2024
+     ],
+     "paiements_dividendes": "3/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
     }
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "6 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 2 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 2249.21,
+    "ecart_moyenne_pct": -5.3,
+    "plus_haut": 3000,
+    "ecart_plus_haut_pct": -29.0,
+    "plus_bas": 670,
+    "ecart_plus_bas_pct": 217.9,
+    "seances": 262
    },
    "note": ""
   },
@@ -1827,6 +2387,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 12.6, au 73ᵉ centile de sa propre histoire (médiane 9.2). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 12.6, au 73ᵉ centile de sa propre histoire (médiane 9.2). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 7.8 (1ᵉʳ quartile) à 12.8 (3ᵉ quartile) ; extrêmes observés 7.1 à 15.1.",
@@ -1840,7 +2401,8 @@
       "minimum": 7.13,
       "maximum": 15.12,
       "percentile": 72.9,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1865,13 +2427,24 @@
     "long": {
      "statut": "non_calculable",
      "horizon": "long",
-     "raison": "0 exercice(s) d'états financiers extraits, il en faut 3",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "raison": "0 exercice(s) d'états financiers extraits des documents indexés ; deux exercices au minimum sont nécessaires pour comparer, trois pour une lecture pleine",
+     "regle": "états financiers officiels, deux exercices minimum"
     }
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "aucun document émetteur indexé pour cette société dans la collecte",
+    "deblocage": "indexer ses publications officielles sur brvm.org, puis ses états financiers"
+   },
+   "position_longue": {
+    "moyenne_120": 20644.88,
+    "ecart_moyenne_pct": 0.2,
+    "plus_haut": 24885,
+    "ecart_plus_haut_pct": -16.9,
+    "plus_bas": 11000,
+    "ecart_plus_bas_pct": 88.0,
+    "seances": 262
    },
    "note": ""
   },
@@ -1906,6 +2479,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 17.4, au 66ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 17.4, au 66ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 14.1 (1ᵉʳ quartile) à 18.4 (3ᵉ quartile) ; extrêmes observés 12.5 à 21.6.",
@@ -1919,7 +2493,8 @@
       "minimum": 12.46,
       "maximum": 21.56,
       "percentile": 66.4,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -1942,15 +2517,43 @@
      }
     },
     "long": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "long",
-     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "ton": "solide",
+     "profondeur": "limitee",
+     "phrase": "Résultat net 2024 : 18,150 M FCFA, contre 16,557 M en 2023 (+9.6 %, soit +9.6 % par an).",
+     "details": [
+      "Résultat net 2024 : 18,150 M FCFA, contre 16,557 M en 2023 (+9.6 %, soit +9.6 % par an).",
+      "Fonds propres 2024 : absents des documents indexés — non substitués par zéro.",
+      "Activité (chiffre d'affaires ou PNB) : +8.1 % entre 2023 et 2024.",
+      "Lecture courte : 2 exercices seulement (2023 et 2024). Une trajectoire sur deux points est un début, pas une tendance."
+     ],
+     "exercices": [
+      2023,
+      2024
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 315809427314,
+    "per_publie": 17.4,
+    "resultat_net": 18149967087,
+    "exercice": 2024,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2024. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 15137.79,
+    "ecart_moyenne_pct": -4.0,
+    "plus_haut": 18000,
+    "ecart_plus_haut_pct": -19.3,
+    "plus_bas": 10250,
+    "ecart_plus_bas_pct": 41.8,
+    "seances": 262
    },
    "note": ""
   },
@@ -1985,6 +2588,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 14.4, soit le 100ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 100 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 14.4, soit le 100ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 100 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 8.3 (1ᵉʳ quartile) à 13.3 (3ᵉ quartile) ; extrêmes observés 7.6 à 14.6.",
@@ -1998,7 +2602,8 @@
       "minimum": 7.56,
       "maximum": 14.59,
       "percentile": 99.6,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2024,6 +2629,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "fragile",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 15,887 M FCFA, contre 32,374 M en 2021 (-50.9 %, soit -16.3 % par an).",
      "details": [
       "Résultat net 2025 : 15,887 M FCFA, contre 32,374 M en 2021 (-50.9 %, soit -16.3 % par an).",
@@ -2042,8 +2648,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 229566010646,
+    "per_publie": 14.45,
+    "resultat_net": 15886921152,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 2853.54,
+    "ecart_moyenne_pct": 8.1,
+    "plus_haut": 3115,
+    "ecart_plus_haut_pct": -1.0,
+    "plus_bas": 2370,
+    "ecart_plus_bas_pct": 30.2,
+    "seances": 262
    },
    "note": ""
   },
@@ -2078,6 +2698,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 17.9, soit le 84ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 84 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 17.9, soit le 84ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 84 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 13.7 (1ᵉʳ quartile) à 15.0 (3ᵉ quartile) ; extrêmes observés 12.7 à 20.2.",
@@ -2091,7 +2712,8 @@
       "minimum": 12.66,
       "maximum": 20.2,
       "percentile": 84.4,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2117,6 +2739,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 167,800 M FCFA, contre 155,835 M en 2021 (+7.7 %, soit +1.9 % par an).",
      "details": [
       "Résultat net 2025 : 167,800 M FCFA, contre 155,835 M en 2021 (+7.7 %, soit +1.9 % par an).",
@@ -2139,8 +2762,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 2998586000000,
+    "per_publie": 17.87,
+    "resultat_net": 167800000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 18082.46,
+    "ecart_moyenne_pct": 10.1,
+    "plus_haut": 22500,
+    "ecart_plus_haut_pct": -11.6,
+    "plus_bas": 14000,
+    "ecart_plus_bas_pct": 42.1,
+    "seances": 262
    },
    "note": ""
   },
@@ -2171,15 +2808,53 @@
      "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
     },
     "moyen": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
-     "regle": "PER comparé à sa propre distribution historique"
+     "ton": "moyen",
+     "phrase": "PER à 8.9, au 44ᵉ centile de sa propre histoire (médiane 9.0). La valorisation est dans son cours habituel.",
+     "profondeur": "limitee",
+     "details": [
+      "PER à 8.9, au 44ᵉ centile de sa propre histoire (médiane 9.0). La valorisation est dans son cours habituel.",
+      "Sa fourchette personnelle va de 8.6 (1ᵉʳ quartile) à 10.0 (3ᵉ quartile) ; extrêmes observés 7.8 à 11.2.",
+      "Distribution courte (116 séances publiées sur 120 attendues) : le rang est indicatif, pas un centile établi.",
+      "Sur l'archive, le cours a varié de -14.5 % : le PER a fait -14.4 %, le bénéfice implicite par action -0.1 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 8.92,
+      "mediane": 9.04,
+      "q1": 8.63,
+      "q3": 10.02,
+      "minimum": 7.81,
+      "maximum": 11.15,
+      "percentile": 44.0,
+      "seances": 116,
+      "profondeur": "limitee"
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 3250,
+       "per": 10.42,
+       "benefice_implicite": 311.9
+      },
+      "fin": {
+       "cours": 2780,
+       "per": 8.92,
+       "benefice_implicite": 311.66
+      },
+      "variation_cours_pct": -14.5,
+      "variation_benefice_pct": -0.1,
+      "variation_per_pct": -14.4,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de -14.5 % : le PER a fait -14.4 %, le bénéfice implicite par action -0.1 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
     },
     "long": {
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 21,643 M FCFA, contre 9,440 M en 2020 (+129.3 %, soit +18.1 % par an).",
      "details": [
       "Résultat net 2025 : 21,643 M FCFA, contre 9,440 M en 2020 (+129.3 %, soit +18.1 % par an).",
@@ -2201,8 +2876,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 193055560000,
+    "per_publie": 8.92,
+    "resultat_net": 21643000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 2911.25,
+    "ecart_moyenne_pct": -4.5,
+    "plus_haut": 3995,
+    "ecart_plus_haut_pct": -30.4,
+    "plus_bas": 2385,
+    "ecart_plus_bas_pct": 16.6,
+    "seances": 262
    },
    "note": ""
   },
@@ -2237,6 +2926,7 @@
      "horizon": "moyen",
      "ton": "bon_marche",
      "phrase": "PER à 7.5, soit le 3ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
+     "profondeur": "pleine",
      "details": [
       "PER à 7.5, soit le 3ᵉ centile de ses 262 séances publiées. Le marché la paie moins cher qu'à son habitude. Un prix bas peut venir du bénéfice autant que du cours : cette phrase ne tranche pas.",
       "Sa fourchette personnelle va de 7.9 (1ᵉʳ quartile) à 8.8 (3ᵉ quartile) ; extrêmes observés 6.8 à 9.6.",
@@ -2250,7 +2940,8 @@
       "minimum": 6.81,
       "maximum": 9.61,
       "percentile": 3.1,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2276,6 +2967,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -2298,8 +2990,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 116004739400,
+    "per_publie": 7.48,
+    "resultat_net": 15508655000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 8456.38,
+    "ecart_moyenne_pct": -11.3,
+    "plus_haut": 9700,
+    "ecart_plus_haut_pct": -22.7,
+    "plus_bas": 6990,
+    "ecart_plus_bas_pct": 7.3,
+    "seances": 262
    },
    "note": ""
   },
@@ -2334,6 +3040,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 17.9, au 42ᵉ centile de sa propre histoire (médiane 18.7). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 17.9, au 42ᵉ centile de sa propre histoire (médiane 18.7). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 16.9 (1ᵉʳ quartile) à 19.6 (3ᵉ quartile) ; extrêmes observés 10.2 à 24.0.",
@@ -2347,7 +3054,8 @@
       "minimum": 10.17,
       "maximum": 24,
       "percentile": 41.6,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2373,6 +3081,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2024 : 2,177 M FCFA, contre 1,863 M en 2020 (+16.9 %, soit +4.0 % par an).",
      "details": [
       "Résultat net 2024 : 2,177 M FCFA, contre 1,863 M en 2020 (+16.9 %, soit +4.0 % par an).",
@@ -2392,8 +3101,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 39081888800,
+    "per_publie": 17.95,
+    "resultat_net": 2177264000,
+    "exercice": 2024,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2024. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 4336.0,
+    "ecart_moyenne_pct": -4.3,
+    "plus_haut": 5500,
+    "ecart_plus_haut_pct": -24.5,
+    "plus_bas": 3400,
+    "ecart_plus_bas_pct": 22.1,
+    "seances": 262
    },
    "note": ""
   },
@@ -2424,15 +3147,53 @@
      "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
     },
     "moyen": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
-     "regle": "PER comparé à sa propre distribution historique"
+     "ton": "cher",
+     "phrase": "PER à 57.8, soit le 94ᵉ centile de ses 67 séances publiées. La société se paie plus cher qu'elle ne s'est payée 94 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "limitee",
+     "details": [
+      "PER à 57.8, soit le 94ᵉ centile de ses 67 séances publiées. La société se paie plus cher qu'elle ne s'est payée 94 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 43.0 (1ᵉʳ quartile) à 53.0 (3ᵉ quartile) ; extrêmes observés 38.7 à 59.4.",
+      "Distribution courte (67 séances publiées sur 120 attendues) : le rang est indicatif, pas un centile établi.",
+      "Sur l'archive, le cours a varié de -29.3 % : le bénéfice implicite par action a fait -31.6 %, le PER +3.3 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     ],
+     "donnees": {
+      "actuel": 57.8,
+      "mediane": 48.3,
+      "q1": 42.97,
+      "q3": 53.05,
+      "minimum": 38.69,
+      "maximum": 59.42,
+      "percentile": 94.0,
+      "seances": 67,
+      "profondeur": "limitee"
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 5505,
+       "per": 63.76,
+       "benefice_implicite": 86.34
+      },
+      "fin": {
+       "cours": 3890,
+       "per": 65.87,
+       "benefice_implicite": 59.06
+      },
+      "variation_cours_pct": -29.3,
+      "variation_benefice_pct": -31.6,
+      "variation_per_pct": 3.3,
+      "moteur": "benefice",
+      "phrase": "Sur l'archive, le cours a varié de -29.3 % : le bénéfice implicite par action a fait -31.6 %, le PER +3.3 %. C'est l'entreprise qui a porté le mouvement, pas le multiple."
+     }
     },
     "long": {
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -2451,8 +3212,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 46174870000,
+    "per_publie": 65.87,
+    "resultat_net": 701000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 4533.04,
+    "ecart_moyenne_pct": -14.2,
+    "plus_haut": 7555,
+    "ecart_plus_haut_pct": -48.5,
+    "plus_bas": 2000,
+    "ecart_plus_bas_pct": 94.5,
+    "seances": 262
    },
    "note": ""
   },
@@ -2488,6 +3263,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 15.1, soit le 94ᵉ centile de ses 146 séances publiées. La société se paie plus cher qu'elle ne s'est payée 94 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 15.1, soit le 94ᵉ centile de ses 146 séances publiées. La société se paie plus cher qu'elle ne s'est payée 94 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 8.1 (1ᵉʳ quartile) à 11.6 (3ᵉ quartile) ; extrêmes observés 7.5 à 16.1.",
@@ -2501,7 +3277,8 @@
       "minimum": 7.49,
       "maximum": 16.08,
       "percentile": 93.8,
-      "seances": 146
+      "seances": 146,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2527,6 +3304,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "fragile",
+     "profondeur": "pleine",
      "phrase": "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
      "details": [
       "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
@@ -2548,7 +3326,18 @@
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "18 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 6 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 3007.71,
+    "ecart_moyenne_pct": -28.5,
+    "plus_haut": 3920,
+    "ecart_plus_haut_pct": -45.2,
+    "plus_bas": 990,
+    "ecart_plus_bas_pct": 117.2,
+    "seances": 258
    },
    "note": ""
   },
@@ -2583,6 +3372,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 17.8, au 67ᵉ centile de sa propre histoire (médiane 16.4). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 17.8, au 67ᵉ centile de sa propre histoire (médiane 16.4). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 13.9 (1ᵉʳ quartile) à 18.3 (3ᵉ quartile) ; extrêmes observés 11.1 à 21.2.",
@@ -2596,7 +3386,8 @@
       "minimum": 11.1,
       "maximum": 21.25,
       "percentile": 66.8,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2622,6 +3413,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 5,879 M FCFA, contre 1 M en 2020 (+587800.0 %, soit +467.4 % par an).",
      "details": [
       "Résultat net 2025 : 5,879 M FCFA, contre 1 M en 2020 (+587800.0 %, soit +467.4 % par an).",
@@ -2644,8 +3436,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 104411040000,
+    "per_publie": 17.76,
+    "resultat_net": 5879000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 11753.25,
+    "ecart_moyenne_pct": -1.3,
+    "plus_haut": 13885,
+    "ecart_plus_haut_pct": -16.4,
+    "plus_bas": 5750,
+    "ecart_plus_bas_pct": 101.8,
+    "seances": 262
    },
    "note": ""
   },
@@ -2680,6 +3486,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 7.0, soit le 96ᵉ centile de ses 207 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 7.0, soit le 96ᵉ centile de ses 207 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 3.9 (1ᵉʳ quartile) à 5.2 (3ᵉ quartile) ; extrêmes observés 3.6 à 7.3.",
@@ -2693,7 +3500,8 @@
       "minimum": 3.62,
       "maximum": 7.29,
       "percentile": 96.1,
-      "seances": 207
+      "seances": 207,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2719,6 +3527,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "neutre",
+     "profondeur": "pleine",
      "phrase": "Rentabilité des fonds propres : 115.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
      "details": [
       "Rentabilité des fonds propres : 115.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
@@ -2738,8 +3547,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 160581312900,
+    "per_publie": 204.57,
+    "resultat_net": 784970000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 2498.54,
+    "ecart_moyenne_pct": 18.1,
+    "plus_haut": 3205,
+    "ecart_plus_haut_pct": -8.0,
+    "plus_bas": 1400,
+    "ecart_plus_bas_pct": 110.7,
+    "seances": 262
    },
    "note": ""
   },
@@ -2774,6 +3597,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 37.2, au 57ᵉ centile de sa propre histoire (médiane 37.2). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 37.2, au 57ᵉ centile de sa propre histoire (médiane 37.2). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 17.4 (1ᵉʳ quartile) à 39.1 (3ᵉ quartile) ; extrêmes observés 17.4 à 59.4.",
@@ -2787,7 +3611,8 @@
       "minimum": 17.42,
       "maximum": 59.36,
       "percentile": 57.3,
-      "seances": 253
+      "seances": 253,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2813,6 +3638,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2023 : 1,012 M FCFA, contre 690 M en 2019 (+46.6 %, soit +10.0 % par an).",
      "details": [
       "Résultat net 2023 : 1,012 M FCFA, contre 690 M en 2019 (+46.6 %, soit +10.0 % par an).",
@@ -2833,8 +3659,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 37658571350,
+    "per_publie": 37.21,
+    "resultat_net": 1012055129,
+    "exercice": 2023,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2023. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 1602.62,
+    "ecart_moyenne_pct": -6.7,
+    "plus_haut": 2715,
+    "ecart_plus_haut_pct": -44.9,
+    "plus_bas": 750,
+    "ecart_plus_bas_pct": 99.3,
+    "seances": 167
    },
    "note": ""
   },
@@ -2869,6 +3709,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 12.0, soit le 96ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 12.0, soit le 96ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 96 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 8.9 (1ᵉʳ quartile) à 11.7 (3ᵉ quartile) ; extrêmes observés 8.1 à 12.3.",
@@ -2882,7 +3723,8 @@
       "minimum": 8.06,
       "maximum": 12.28,
       "percentile": 95.8,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -2908,6 +3750,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 101,228 M FCFA, contre 10,116 M en 2021 (+900.7 %, soit +77.9 % par an).",
      "details": [
       "Résultat net 2025 : 101,228 M FCFA, contre 10,116 M en 2021 (+900.7 %, soit +77.9 % par an).",
@@ -2930,6 +3773,15 @@
     "actions": 31111110,
     "valeur_fcfa": 1210222179000,
     "base": "nombre d'actions lu dans un document officiel × dernier cours publié"
+   },
+   "position_longue": {
+    "moyenne_120": 37927.67,
+    "ecart_moyenne_pct": 2.8,
+    "plus_haut": 40000,
+    "ecart_plus_haut_pct": -2.5,
+    "plus_bas": 26210,
+    "ecart_plus_bas_pct": 48.8,
+    "seances": 262
    },
    "note": ""
   },
@@ -2965,6 +3817,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 22.6, au 55ᵉ centile de sa propre histoire (médiane 21.8). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 22.6, au 55ᵉ centile de sa propre histoire (médiane 21.8). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 18.2 (1ᵉʳ quartile) à 23.8 (3ᵉ quartile) ; extrêmes observés 12.8 à 31.1.",
@@ -2978,7 +3831,8 @@
       "minimum": 12.83,
       "maximum": 31.14,
       "percentile": 55.3,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3004,6 +3858,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -3024,8 +3879,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 136054802872,
+    "per_publie": 22.57,
+    "resultat_net": 6028125958,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 2226.96,
+    "ecart_moyenne_pct": -3.0,
+    "plus_haut": 2980,
+    "ecart_plus_haut_pct": -27.5,
+    "plus_bas": 1090,
+    "ecart_plus_bas_pct": 98.2,
+    "seances": 262
    },
    "note": ""
   },
@@ -3060,6 +3929,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 15.5, au 64ᵉ centile de sa propre histoire (médiane 13.7). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 15.5, au 64ᵉ centile de sa propre histoire (médiane 13.7). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 11.5 (1ᵉʳ quartile) à 15.9 (3ᵉ quartile) ; extrêmes observés 10.8 à 17.1.",
@@ -3073,7 +3943,8 @@
       "minimum": 10.76,
       "maximum": 17.09,
       "percentile": 64.1,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3099,6 +3970,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -3119,8 +3991,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 860487810000,
+    "per_publie": 15.47,
+    "resultat_net": 55623000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 8687.25,
+    "ecart_moyenne_pct": -1.0,
+    "plus_haut": 9500,
+    "ecart_plus_haut_pct": -9.5,
+    "plus_bas": 5500,
+    "ecart_plus_bas_pct": 56.4,
+    "seances": 262
    },
    "note": ""
   },
@@ -3153,7 +4039,7 @@
     "moyen": {
      "statut": "non_calculable",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "raison": "moins de 30 séances de PER publié dans l'archive",
      "regle": "PER comparé à sa propre distribution historique"
     },
     "long": {
@@ -3165,7 +4051,18 @@
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "10 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 4 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 5509.92,
+    "ecart_moyenne_pct": 52.5,
+    "plus_haut": 10200,
+    "ecart_plus_haut_pct": -17.6,
+    "plus_bas": 3155,
+    "ecart_plus_bas_pct": 166.2,
+    "seances": 221
    },
    "note": ""
   },
@@ -3197,15 +4094,53 @@
      "invalidation": "une clôture hors de la fourchette, ou un détachement de dividende, rend la lecture obsolète"
     },
     "moyen": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
-     "regle": "PER comparé à sa propre distribution historique"
+     "ton": "cher",
+     "phrase": "PER à 56.6, soit le 98ᵉ centile de ses 100 séances publiées. La société se paie plus cher qu'elle ne s'est payée 98 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "limitee",
+     "details": [
+      "PER à 56.6, soit le 98ᵉ centile de ses 100 séances publiées. La société se paie plus cher qu'elle ne s'est payée 98 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+      "Sa fourchette personnelle va de 6.7 (1ᵉʳ quartile) à 39.3 (3ᵉ quartile) ; extrêmes observés 6.1 à 59.1.",
+      "Distribution courte (100 séances publiées sur 120 attendues) : le rang est indicatif, pas un centile établi.",
+      "Sur l'archive, le cours a varié de +133.3 % : le PER a fait +1065.4 %, le bénéfice implicite par action -80.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     ],
+     "donnees": {
+      "actuel": 56.65,
+      "mediane": 6.97,
+      "q1": 6.73,
+      "q3": 39.27,
+      "minimum": 6.14,
+      "maximum": 59.08,
+      "percentile": 98.0,
+      "seances": 100,
+      "profondeur": "limitee"
+     },
+     "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
+     "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
+     "decomposition": {
+      "debut": {
+       "cours": 690,
+       "per": 6.73,
+       "benefice_implicite": 102.53
+      },
+      "fin": {
+       "cours": 1610,
+       "per": 78.43,
+       "benefice_implicite": 20.53
+      },
+      "variation_cours_pct": 133.3,
+      "variation_benefice_pct": -80.0,
+      "variation_per_pct": 1065.4,
+      "moteur": "multiple",
+      "phrase": "Sur l'archive, le cours a varié de +133.3 % : le PER a fait +1065.4 %, le bénéfice implicite par action -80.0 %. C'est le prix payé pour le même bénéfice qui a porté le mouvement."
+     }
     },
     "long": {
      "statut": "calcule",
      "horizon": "long",
      "ton": "a_verifier",
+     "profondeur": "pleine",
      "phrase": "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
      "details": [
       "Écart de 6 exercices entre 2019 et 2025 : la comparaison directe serait trompeuse (périmètre possiblement différent).",
@@ -3224,8 +4159,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 14061972107,
+    "per_publie": 78.43,
+    "resultat_net": 179293282,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 2397.54,
+    "ecart_moyenne_pct": -32.8,
+    "plus_haut": 3215,
+    "ecart_plus_haut_pct": -49.9,
+    "plus_bas": 655,
+    "ecart_plus_bas_pct": 145.8,
+    "seances": 262
    },
    "note": ""
   },
@@ -3260,6 +4209,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 14.0, au 38ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 14.0, au 38ᵉ centile de sa propre histoire (médiane 15.7). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 13.8 (1ᵉʳ quartile) à 22.2 (3ᵉ quartile) ; extrêmes observés 13.3 à 34.1.",
@@ -3273,7 +4223,8 @@
       "minimum": 13.27,
       "maximum": 34.12,
       "percentile": 38.5,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3299,6 +4250,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 45,781 M FCFA, contre 17,520 M en 2020 (+161.3 %, soit +21.2 % par an).",
      "details": [
       "Résultat net 2025 : 45,781 M FCFA, contre 17,520 M en 2020 (+161.3 %, soit +21.2 % par an).",
@@ -3320,8 +4272,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 641849620000,
+    "per_publie": 14.02,
+    "resultat_net": 45781000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 38177.79,
+    "ecart_moyenne_pct": 2.1,
+    "plus_haut": 44505,
+    "ecart_plus_haut_pct": -12.4,
+    "plus_bas": 17800,
+    "ecart_plus_bas_pct": 119.0,
+    "seances": 262
    },
    "note": ""
   },
@@ -3356,6 +4322,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 8.7, au 28ᵉ centile de sa propre histoire (médiane 9.4). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 8.7, au 28ᵉ centile de sa propre histoire (médiane 9.4). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 8.6 (1ᵉʳ quartile) à 10.3 (3ᵉ quartile) ; extrêmes observés 6.9 à 12.6.",
@@ -3369,7 +4336,8 @@
       "minimum": 6.86,
       "maximum": 12.55,
       "percentile": 27.5,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3395,6 +4363,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 13,075 M FCFA, contre 9,396 M en 2020 (+39.2 %, soit +6.8 % par an).",
      "details": [
       "Résultat net 2025 : 13,075 M FCFA, contre 9,396 M en 2020 (+39.2 %, soit +6.8 % par an).",
@@ -3416,8 +4385,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 113098750000,
+    "per_publie": 8.65,
+    "resultat_net": 13075000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 15580.54,
+    "ecart_moyenne_pct": -6.9,
+    "plus_haut": 18500,
+    "ecart_plus_haut_pct": -21.6,
+    "plus_bas": 9100,
+    "ecart_plus_bas_pct": 59.4,
+    "seances": 262
    },
    "note": ""
   },
@@ -3452,6 +4435,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 10.1, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 10.1, soit le 92ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 92 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 6.6 (1ᵉʳ quartile) à 7.5 (3ᵉ quartile) ; extrêmes observés 6.2 à 10.9.",
@@ -3465,7 +4449,8 @@
       "minimum": 6.2,
       "maximum": 10.88,
       "percentile": 92.0,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3491,6 +4476,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 413,588 M FCFA, contre 278,912 M en 2022 (+48.3 %, soit +14.0 % par an).",
      "details": [
       "Résultat net 2025 : 413,588 M FCFA, contre 278,912 M en 2022 (+48.3 %, soit +14.0 % par an).",
@@ -3512,8 +4498,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 4173102920000,
+    "per_publie": 10.09,
+    "resultat_net": 413588000000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 33774.5,
+    "ecart_moyenne_pct": 23.6,
+    "plus_haut": 45000,
+    "ecart_plus_haut_pct": -7.2,
+    "plus_bas": 24400,
+    "ecart_plus_bas_pct": 71.1,
+    "seances": 262
    },
    "note": ""
   },
@@ -3548,6 +4548,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 13.4, au 47ᵉ centile de sa propre histoire (médiane 13.6). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 13.4, au 47ᵉ centile de sa propre histoire (médiane 13.6). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 12.9 (1ᵉʳ quartile) à 14.3 (3ᵉ quartile) ; extrêmes observés 12.1 à 15.3.",
@@ -3561,7 +4562,8 @@
       "minimum": 12.11,
       "maximum": 15.35,
       "percentile": 46.9,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3587,6 +4589,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "fragile",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 12,493 M FCFA, contre 14,728 M en 2021 (-15.2 %, soit -4.0 % par an).",
      "details": [
       "Résultat net 2025 : 12,493 M FCFA, contre 14,728 M en 2021 (-15.2 %, soit -4.0 % par an).",
@@ -3606,8 +4609,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 167401148200,
+    "per_publie": 13.4,
+    "resultat_net": 12492623000,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 7992.62,
+    "ecart_moyenne_pct": -3.0,
+    "plus_haut": 9000,
+    "ecart_plus_haut_pct": -13.9,
+    "plus_bas": 7100,
+    "ecart_plus_bas_pct": 9.2,
+    "seances": 262
    },
    "note": ""
   },
@@ -3642,6 +4659,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 7.8, au 30ᵉ centile de sa propre histoire (médiane 9.5). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 7.8, au 30ᵉ centile de sa propre histoire (médiane 9.5). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 7.7 (1ᵉʳ quartile) à 10.5 (3ᵉ quartile) ; extrêmes observés 6.9 à 11.7.",
@@ -3655,7 +4673,8 @@
       "minimum": 6.88,
       "maximum": 11.68,
       "percentile": 30.5,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3681,6 +4700,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "neutre",
+     "profondeur": "pleine",
      "phrase": "Activité (chiffre d'affaires ou PNB) : +114.6 % entre 2020 et 2025.",
      "details": [
       "Activité (chiffre d'affaires ou PNB) : +114.6 % entre 2020 et 2025."
@@ -3699,8 +4719,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 28281377989,
+    "per_publie": 7.78,
+    "resultat_net": 3635138559,
+    "exercice": 2023,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2023. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 7805.71,
+    "ecart_moyenne_pct": -2.6,
+    "plus_haut": 10300,
+    "ecart_plus_haut_pct": -26.2,
+    "plus_bas": 6720,
+    "ecart_plus_bas_pct": 13.1,
+    "seances": 262
    },
    "note": ""
   },
@@ -3733,13 +4767,14 @@
     "moyen": {
      "statut": "non_calculable",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "raison": "moins de 30 séances de PER publié dans l'archive",
      "regle": "PER comparé à sa propre distribution historique"
     },
     "long": {
      "statut": "calcule",
      "horizon": "long",
      "ton": "fragile",
+     "profondeur": "pleine",
      "phrase": "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
      "details": [
       "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
@@ -3762,7 +4797,18 @@
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "6 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 7 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 2774.04,
+    "ecart_moyenne_pct": -28.8,
+    "plus_haut": 3895,
+    "ecart_plus_haut_pct": -49.3,
+    "plus_bas": 925,
+    "ecart_plus_bas_pct": 113.5,
+    "seances": 262
    },
    "note": ""
   },
@@ -3797,6 +4843,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 10.4, au 59ᵉ centile de sa propre histoire (médiane 8.6). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 10.4, au 59ᵉ centile de sa propre histoire (médiane 8.6). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 7.9 (1ᵉʳ quartile) à 10.8 (3ᵉ quartile) ; extrêmes observés 7.5 à 12.3.",
@@ -3810,7 +4857,8 @@
       "minimum": 7.55,
       "maximum": 12.31,
       "percentile": 58.8,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3836,6 +4884,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "solide",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2025 : 36,464 M FCFA, contre 8,543 M en 2020 (+326.8 %, soit +33.7 % par an).",
      "details": [
       "Résultat net 2025 : 36,464 M FCFA, contre 8,543 M en 2020 (+326.8 %, soit +33.7 % par an).",
@@ -3856,8 +4905,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 379586246464,
+    "per_publie": 10.41,
+    "resultat_net": 36463616375,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 22282.79,
+    "ecart_moyenne_pct": -5.1,
+    "plus_haut": 25000,
+    "ecart_plus_haut_pct": -15.4,
+    "plus_bas": 18820,
+    "ecart_plus_bas_pct": 12.4,
+    "seances": 262
    },
    "note": ""
   },
@@ -3892,6 +4955,7 @@
      "horizon": "moyen",
      "ton": "moyen",
      "phrase": "PER à 20.1, au 69ᵉ centile de sa propre histoire (médiane 19.1). La valorisation est dans son cours habituel.",
+     "profondeur": "pleine",
      "details": [
       "PER à 20.1, au 69ᵉ centile de sa propre histoire (médiane 19.1). La valorisation est dans son cours habituel.",
       "Sa fourchette personnelle va de 16.1 (1ᵉʳ quartile) à 20.4 (3ᵉ quartile) ; extrêmes observés 15.2 à 24.9.",
@@ -3905,7 +4969,8 @@
       "minimum": 15.25,
       "maximum": 24.91,
       "percentile": 69.1,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -3931,6 +4996,7 @@
      "statut": "calcule",
      "horizon": "long",
      "ton": "neutre",
+     "profondeur": "pleine",
      "phrase": "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
      "details": [
       "Fonds propres 2025 : absents des documents indexés — non substitués par zéro.",
@@ -3951,7 +5017,18 @@
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "14 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 6 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 3000.21,
+    "ecart_moyenne_pct": -3.5,
+    "plus_haut": 3595,
+    "ecart_plus_haut_pct": -19.5,
+    "plus_bas": 2270,
+    "ecart_plus_bas_pct": 27.5,
+    "seances": 262
    },
    "note": ""
   },
@@ -3986,6 +5063,7 @@
      "horizon": "moyen",
      "ton": "cher",
      "phrase": "PER à 17.8, soit le 82ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 82 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
+     "profondeur": "pleine",
      "details": [
       "PER à 17.8, soit le 82ᵉ centile de ses 262 séances publiées. La société se paie plus cher qu'elle ne s'est payée 82 fois sur 100 — ce n'est pas un prix anormal, c'est un prix haut pour elle.",
       "Sa fourchette personnelle va de 11.6 (1ᵉʳ quartile) à 17.4 (3ᵉ quartile) ; extrêmes observés 10.7 à 21.6.",
@@ -3999,7 +5077,8 @@
       "minimum": 10.72,
       "maximum": 21.63,
       "percentile": 82.1,
-      "seances": 262
+      "seances": 262,
+      "profondeur": "pleine"
      },
      "regle": "PER publié au BOC, comparé à sa propre distribution sur l'archive (aucun seuil de marché)",
      "invalidation": "une publication de résultats qui change le bénéfice, ou une opération sur le capital, déplace toute la distribution",
@@ -4022,15 +5101,42 @@
      }
     },
     "long": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "long",
-     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "ton": "solide",
+     "profondeur": "limitee",
+     "phrase": "Résultat net 2025 : 6,147 M FCFA, contre 528 M en 2024 (+1064.1 %, soit +1064.1 % par an).",
+     "details": [
+      "Résultat net 2025 : 6,147 M FCFA, contre 528 M en 2024 (+1064.1 %, soit +1064.1 % par an).",
+      "Rentabilité des fonds propres : 29.7 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Lecture courte : 2 exercices seulement (2024 et 2025). Une trajectoire sur deux points est un début, pas une tendance."
+     ],
+     "exercices": [
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "5/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 109285251767,
+    "per_publie": 17.78,
+    "resultat_net": 6146527096,
+    "exercice": 2025,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2025. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 3624.12,
+    "ecart_moyenne_pct": 2.1,
+    "plus_haut": 4500,
+    "ecart_plus_haut_pct": -17.8,
+    "plus_bas": 2350,
+    "ecart_plus_bas_pct": 57.4,
+    "seances": 262
    },
    "note": ""
   },
@@ -4064,13 +5170,14 @@
     "moyen": {
      "statut": "non_calculable",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "raison": "moins de 30 séances de PER publié dans l'archive",
      "regle": "PER comparé à sa propre distribution historique"
     },
     "long": {
      "statut": "calcule",
      "horizon": "long",
      "ton": "fragile",
+     "profondeur": "pleine",
      "phrase": "Résultat net 2023 : 640 M FCFA, contre -21,857 M en 2019 (-102.9 %).",
      "details": [
       "Résultat net 2023 : 640 M FCFA, contre -21,857 M en 2019 (-102.9 %).",
@@ -4091,8 +5198,22 @@
     }
    },
    "capitalisation": {
-    "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "statut": "implicite",
+    "valeur_fcfa": 414264634442,
+    "per_publie": 646.95,
+    "resultat_net": 640334855,
+    "exercice": 2023,
+    "base": "déduite de l'identité capitalisation = PER publié au BOC × résultat net de l'exercice 2023. Contrôlée à 0,14 % et 0,20 % sur les deux sociétés où le nombre d'actions est prouvé.",
+    "limite": "déduction, pas un nombre d'actions vérifié : elle suit le résultat retenu par la BRVM"
+   },
+   "position_longue": {
+    "moyenne_120": 54069.88,
+    "ecart_moyenne_pct": -16.6,
+    "plus_haut": 85500,
+    "ecart_plus_haut_pct": -47.2,
+    "plus_bas": 18500,
+    "ecart_plus_bas_pct": 143.8,
+    "seances": 238
    },
    "note": ""
   },
@@ -4126,19 +5247,48 @@
     "moyen": {
      "statut": "non_calculable",
      "horizon": "moyen",
-     "raison": "moins de 120 séances de PER publié dans l'archive",
+     "raison": "moins de 30 séances de PER publié dans l'archive",
      "regle": "PER comparé à sa propre distribution historique"
     },
     "long": {
-     "statut": "non_calculable",
+     "statut": "calcule",
      "horizon": "long",
-     "raison": "2 exercice(s) d'états financiers extraits, il en faut 3",
-     "regle": "états financiers officiels sur trois exercices ou plus"
+     "ton": "fragile",
+     "profondeur": "limitee",
+     "phrase": "Résultat net 2025 : -624 M FCFA, contre -2,189 M en 2024 (-71.5 %).",
+     "details": [
+      "Résultat net 2025 : -624 M FCFA, contre -2,189 M en 2024 (-71.5 %).",
+      "Résultat net négatif en 2025 : la lecture long terme porte sur une entreprise qui perd de l'argent.",
+      "Rentabilité des fonds propres : -2.5 % en 2025 (résultat net / fonds propres de fin d'exercice).",
+      "Fonds propres : 24,619 M FCFA fin 2025, contre 15,591 M fin 2024.",
+      "Flux d'exploitation -8,124 M FCFA, soit 1302 % du résultat net : le bénéfice se transforme en trésorerie.",
+      "Activité (chiffre d'affaires ou PNB) : +6.2 % entre 2024 et 2025.",
+      "Dividendes versés 2025 : 9 M FCFA (valeur brute publiée -9 M ; convention de signe non unifiée entre sociétés).",
+      "Lecture courte : 2 exercices seulement (2024 et 2025). Une trajectoire sur deux points est un début, pas une tendance."
+     ],
+     "exercices": [
+      2024,
+      2025
+     ],
+     "paiements_dividendes": "1/5 derniers exercices",
+     "regle": "états financiers officiels : résultat, fonds propres, dette nette, flux, dividende — prix ignoré",
+     "invalidation": "un changement de périmètre comptable, une opération sur le capital, ou un exercice déficitaire"
     }
    },
    "capitalisation": {
     "statut": "non_calculable",
-    "raison": "nombre d'actions absent des documents indexés pour cette société"
+    "raison": "nombre d'actions absent des documents indexés",
+    "origine": "12 état(s) financier(s) indexé(s) mais le nombre d'actions n'a été lu dans aucun ; 2 exercice(s) extraits",
+    "deblocage": "lire le nombre d'actions sur la page « capital » du rapport annuel, puis l'inscrire au registre"
+   },
+   "position_longue": {
+    "moyenne_120": 2017.75,
+    "ecart_moyenne_pct": 1.6,
+    "plus_haut": 2495,
+    "ecart_plus_haut_pct": -17.8,
+    "plus_bas": 1250,
+    "ecart_plus_bas_pct": 64.0,
+    "seances": 262
    },
    "note": ""
   }
