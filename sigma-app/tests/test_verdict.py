@@ -104,7 +104,9 @@ class CalculsTests(unittest.TestCase):
             details = [str(d) for d in long.get("details", [])]
             refus = [d for d in details if "Comparaison refusée" in d]
             for d in refus:
-                self.assertIn("périmètre", d, ticker)
+                # Le refus doit dire sa cause : unité, chiffre non recoupé, ou
+                # périmètre comptable. « Saut invraisemblable » seul ne suffit pas.
+                self.assertTrue(any(x in d for x in ("périmètre", "unité", "non recoupé")), f"{ticker} : {d}")
             # Un refus n'interdit pas une comparaison valable plus proche
             # (SGBC 2022→2025). Mais s'il ne reste AUCUNE comparaison, le ton
             # ne peut pas être un feu vert.
@@ -201,6 +203,46 @@ class FichierPublieTests(unittest.TestCase):
         self.assertIn("SNTS", resultat.stdout)
         for horizon in ("COURT", "MOYEN", "LONG"):
             self.assertIn(horizon, resultat.stdout)
+
+
+class SeriesComptablesTests(unittest.TestCase):
+    """Une série propre avant une conclusion : unités, ruptures, confiance."""
+
+    def test_chaque_rupture_dit_sa_cause(self):
+        for ticker, v in VERDICTS.items():
+            for d in v.horizons["long"].get("details") or []:
+                if "Comparaison refusée" in str(d):
+                    self.assertTrue(any(x in str(d) for x in ("unité", "non recoupé", "périmètre")), ticker)
+
+    def test_l_unite_est_lue_pour_chaque_chiffre(self):
+        # 24 changements d'unité entre deux exercices dans la collecte : une
+        # série ne peut pas mélanger « en FCFA » et « en milliards » sans le dire.
+        changements = 0
+        for c in DATA["companies"]:
+            series = c["fundamentals"]["series"]
+            for a, b in zip(series, series[1:]):
+                ua = ((a.get("figures") or {}).get("resultat_net") or {}).get("unit_label")
+                ub = ((b.get("figures") or {}).get("resultat_net") or {}).get("unit_label")
+                if ua and ub and ua != ub:
+                    changements += 1
+        self.assertGreater(changements, 0)
+        self.assertEqual(changements, sum(
+            1 for c in DATA["companies"]
+            for a, b in zip(c["fundamentals"]["series"], c["fundamentals"]["series"][1:])
+            if ((a.get("figures") or {}).get("resultat_net") or {}).get("unit_label")
+            and ((b.get("figures") or {}).get("resultat_net") or {}).get("unit_label")
+            and ((a.get("figures") or {}).get("resultat_net") or {}).get("unit_label")
+            != ((b.get("figures") or {}).get("resultat_net") or {}).get("unit_label")))
+
+    def test_la_serie_est_triee_et_sans_trou_d_exercice(self):
+        for ticker, v in VERDICTS.items():
+            exercices = v.horizons["long"].get("exercices") or []
+            self.assertEqual(exercices, sorted(exercices), ticker)
+
+    def test_un_chiffre_non_recoupe_est_signale_comme_tel(self):
+        series = verdict.serie(DATA["companies"][[c["ticker"] for c in DATA["companies"]].index("SGBC")])
+        causes = " ".join(str(x) for x in verdict.ruptures(series))
+        self.assertIn("unité", causes)
 
 
 class MarcheEtVariationTests(unittest.TestCase):

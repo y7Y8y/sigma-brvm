@@ -284,6 +284,20 @@ def valeur(figure: dict | None) -> float | None:
     return v if isinstance(v, (int, float)) else None
 
 
+def unite_fcfa(figure: dict | None) -> str | None:
+    """L'unité réellement utilisée par le document pour ce chiffre.
+
+    Piste de l'audit du 28/10 sur les « sauts » de série : 24 changements
+    d'unité entre deux exercices consécutifs dans la collecte. Ils ne sont pas
+    une erreur de conversion (les valeurs sont bien multipliées par 1 000 ou
+    1 000 000), mais ils changent la lecture : deux chiffres de la même série
+    n'ont pas été lus dans la même échelle, et une rupture peut venir de là.
+    """
+    if not figure:
+        return None
+    return figure.get("unit_label")
+
+
 def ruptures(exercices: list[dict]) -> list[dict]:
     """Sauts invraisemblables d'un exercice au suivant.
 
@@ -304,11 +318,28 @@ def ruptures(exercices: list[dict]) -> list[dict]:
             continue
         ratio = rb / ra
         if ratio > 3 or ratio < 1 / 3:
+            fa = (a.get("figures") or {}).get("resultat_net") or {}
+            fb = (b.get("figures") or {}).get("resultat_net") or {}
+            ua, ub = unite_fcfa(fa), unite_fcfa(fb)
+            # Ce qui explique une rupture, par ordre de probabilité observée :
+            # 1. l'unité change (24 cas mesurés : milliers ↔ millions ↔ FCFA) ;
+            # 2. le chiffre n'est pas recoupé dans son document ;
+            # 3. c'est un vrai changement de périmètre.
+            causes = []
+            if ua and ub and ua != ub:
+                causes.append(f"unité différente ({ua} → {ub})")
+            faibles = [f"exercice {e.get('exercice')} ({f.get('confidence')})"
+                       for e, f in ((a, fa), (b, fb))
+                       if f.get("confidence") in (None, "extraction_unique", "extraction_automatique_a_confirmer")]
+            if faibles:
+                causes.append("chiffre non recoupé : " + ", ".join(faibles))
+            if not causes:
+                causes.append("périmètre comptable probablement différent")
             sorties.append({"de": a.get("exercice"), "a": b.get("exercice"),
                             "ratio": round(ratio, 1) if ratio >= 1 else round(1 / ratio, 1),
                             "sens": "hausse" if ratio >= 1 else "baisse",
-                            "raison": ("saut invraisemblable d'un exercice au suivant : périmètre comptable "
-                                       "différent ou extraction douteuse")})
+                            "unites": [ua, ub], "causes": causes,
+                            "raison": "saut invraisemblable d'un exercice au suivant : " + " ; ".join(causes)})
     return sorties
 
 

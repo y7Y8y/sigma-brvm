@@ -16,7 +16,7 @@
      version » côté page, jamais de cache-first.
 */
 
-const VERSION = "sigma-pwa-v7";
+const VERSION = "sigma-pwa-v8";
 const CACHE_COQUE = `${VERSION}-coque`;
 const CACHE_DONNEES = `${VERSION}-donnees`;
 
