@@ -572,3 +572,48 @@ td.num, th.num { white-space: nowrap; }
 .summary-title { font-size: var(--fs-title); }
 .figure-inline { font-size: var(--fs-subtitle); font-weight: 700; color: var(--text-strong); }
 .score-total-suffix { font-size: var(--fs-small); font-weight: 600; color: var(--text-secondary); }
+
+/* ---------------------------------------------------------------------------
+   Verdict — trois horizons, trois règles, aucun score composite
+   Remplace l'empilement d'indicateurs par la réponse que l'utilisateur pose :
+   quoi faire de son argent, sur quel horizon, et pourquoi.
+--------------------------------------------------------------------------- */
+.verdict-card { padding: 18px 18px 14px; }
+.verdict-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.verdict-head h2 { margin: 2px 0 0; }
+.verdict-list { list-style: none; margin: 14px 0 0; padding: 0; border-top: 1px solid var(--border); }
+.verdict-line {
+  display: grid; grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
+  gap: 18px; padding: 13px 0; border-bottom: 1px solid var(--border); align-items: start;
+}
+.verdict-list-compact .verdict-line { grid-template-columns: minmax(110px, 130px) minmax(0, 1fr); gap: 12px; padding: 10px 0; }
+.verdict-line:last-child { border-bottom: 0; padding-bottom: 0; }
+.verdict-horizon { display: grid; gap: 1px; min-width: 0; }
+.verdict-titre { font-size: var(--fs-subtitle); font-weight: 660; color: var(--text-strong); letter-spacing: -0.01em; }
+.verdict-body { min-width: 0; }
+.verdict-ton {
+  display: inline-flex; align-items: center; border-radius: 999px; padding: 2px 9px;
+  font-size: var(--fs-micro); font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  border: 1px solid var(--border-strong); color: var(--text-secondary); background: #fff;
+}
+/* Le vert et le rouge restent réservés : un prix haut n'est ni une faute ni un
+   danger, c'est une observation. Seuls « entreprise qui gagne » et « fragile »
+   portent une couleur de rôle. */
+.verdict-ton.cher, .verdict-ton.bas { color: var(--attention); border-color: #f0dfb8; background: var(--attention-bg); }
+.verdict-ton.solide { color: var(--positive); border-color: #cdece0; background: var(--positive-bg); }
+.verdict-ton.fragile { color: var(--danger); border-color: #fecaca; background: var(--danger-bg); }
+.verdict-ton.vide { color: var(--text-secondary); border-style: dashed; }
+.verdict-phrase { margin: 6px 0 0; font-size: var(--fs-body); line-height: 1.5; color: var(--text); }
+.verdict-details { margin: 7px 0 0; padding-left: 17px; color: var(--text-secondary); font-size: var(--fs-small); line-height: 1.5; }
+.verdict-details li + li { margin-top: 3px; }
+.verdict-regle { margin: 8px 0 0; font-size: var(--fs-small); color: var(--text-secondary); line-height: 1.45; }
+.verdict-line.is-vide .verdict-phrase { color: var(--text-secondary); }
+.verdict-absent { margin: 0; }
+
+@media (max-width: 920px) {
+  .verdict-line, .verdict-list-compact .verdict-line { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .verdict-horizon { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .verdict-titre { font-size: var(--fs-body); }
+  .verdict-regle { display: none; }
+  .verdict-card .fold { margin-top: 10px; }
+}
