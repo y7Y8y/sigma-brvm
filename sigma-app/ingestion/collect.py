@@ -5793,12 +5793,32 @@ def collect_fundamentals(session: requests.Session, companies: list[dict[str, An
         "figures_capital_supplemented": 0,
         "companies_with_capital_supplement": 0,
     }
+    # La lecture des documents est la seule étape réellement non bornée : cinq
+    # exercices, jusqu'à six candidats par exercice, avec OCR de repli sur des
+    # scans de 24 pages. Une collecte qui la laisse courir ne publie jamais.
+    # On la borne par le budget, et on reprend là où on s'est arrêté au run
+    # suivant : le cache PDF/OCR étant persistant, un document lu n'est jamais
+    # relu.
+    documents_sautes: list[str] = []
     for company in companies:
         docs = docs_by_ticker.get(company["ticker"], [])
         company["documents"] = docs
         counts["documents_indexed"] += len(docs)
         if docs:
             counts["companies_with_documents"] += 1
+        if budget_depasse(marge=60):
+            # On laisse la fiche en « indexé, non extrait » : c'est un état
+            # explicite, pas un zéro. Le run suivant reprendra ces sociétés.
+            documents_sautes.append(company["ticker"])
+            company["fundamentals"] = {
+                "status": "documents_indexes_extraction_reprise_au_prochain_run",
+                "figures": {}, "series": [], "data_confidence": None,
+                "notes": [
+                    "Extraction non tentée : budget de temps atteint. Les documents sont indexés "
+                    "et seront lus au prochain passage ; ce n'est pas une absence de données."
+                ],
+            }
+            continue
         annual_candidates = [
             d for d in docs
             if d["doc_type"] in ANNUAL_DOC_PRIORITY
@@ -6293,6 +6313,14 @@ def collect_fundamentals(session: requests.Session, companies: list[dict[str, An
                 "Aucun agrégat annuel n'a passé les contrôles d'extraction."
             ]
         company["fundamentals"] = fundamentals
+    if documents_sautes:
+        counts["documents_reprise_prochain_run"] = len(documents_sautes)
+        warnings.append(
+            f"Extraction comptable reportée au prochain passage pour {len(documents_sautes)} société(s) "
+            f"(budget de temps) : {', '.join(documents_sautes[:8])}"
+            + ("…" if len(documents_sautes) > 8 else "")
+        )
+        log_progress(f"documents — extraction reportée pour {len(documents_sautes)} société(s)")
     return counts, warnings
 
 
