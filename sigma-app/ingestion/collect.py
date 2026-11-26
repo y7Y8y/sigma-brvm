@@ -228,6 +228,72 @@ def parse_french_long_date(value: str) -> str | None:
     return f"{int(match.group(3)):04d}-{month:02d}-{int(match.group(1)):02d}"
 
 
+# ---------------------------------------------------------------------------
+# Budget de temps — une collecte doit rendre ce qu'elle a appris avant d'être
+# coupée. Le plafond du job n'est pas un budget : dépassé, il ne reste rien.
+# ---------------------------------------------------------------------------
+RUN_STARTED = time.monotonic()
+RUN_ETAPES: list[dict[str, Any]] = []
+
+
+def budget_minutes() -> float:
+    """Budget internalisé, lu dans l'environnement, 0 = pas de limite."""
+    try:
+        return float(os.environ.get("SIGMA_BUDGET_MIN", "0") or 0)
+    except ValueError:
+        return 0.0
+
+
+def minutes_ecoulees() -> float:
+    return (time.monotonic() - RUN_STARTED) / 60
+
+
+def budget_restant() -> float | None:
+    total = budget_minutes()
+    if total <= 0:
+        return None
+    return total - minutes_ecoulees()
+
+
+def budget_depasse(marge: float = 0.0) -> bool:
+    restant = budget_restant()
+    return restant is not None and restant <= marge
+
+
+def etape_mesuree(nom: str, fonction, *args, **kwargs):
+    """Exécute une étape en enregistrant sa durée réelle, quoi qu'il arrive."""
+    debut = time.monotonic()
+    log_progress(f"début — {nom}")
+    try:
+        resultat = fonction(*args, **kwargs)
+        return resultat
+    finally:
+        duree = time.monotonic() - debut
+        RUN_ETAPES.append({"etape": nom, "minutes": round(duree / 60, 2)})
+        log_progress(f"fin — {nom} ({duree / 60:.1f} min, {minutes_ecoulees():.0f} min écoulées au total)")
+
+
+def ecrire_rapport_run(chemin: Path, données: dict[str, Any] | None = None) -> Path:
+    """Rapport lisible dans le dépôt : le journal d'un runner n'est pas lisible
+    depuis l'extérieur, un fichier committé l'est."""
+    chemin.parent.mkdir(parents=True, exist_ok=True)
+    lignes = [
+        f"# Rapport de collecte — {datetime.now(ZoneInfo('Africa/Abidjan')).strftime('%Y-%m-%d %H:%M')} (Abidjan)",
+        "",
+        f"Budget : {budget_minutes():.0f} min · écoulé : {minutes_ecoulees():.1f} min",
+        "",
+        "| Étape | Minutes |",
+        "|---|---:|",
+    ]
+    for etape_item in RUN_ETAPES:
+        lignes.append(f"| {etape_item['etape']} | {etape_item['minutes']:.2f} |")
+    if données:
+        lignes += ["", "## Résultat", ""]
+        lignes += [f"- **{cle}** : {valeur}" for cle, valeur in données.items()]
+    chemin.write_text("\n".join(lignes) + "\n", encoding="utf-8")
+    return chemin
+
+
 def make_session() -> requests.Session:
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "fr-FR,fr;q=0.9"})
@@ -7838,8 +7904,29 @@ def build_dataset(
         else Empty_boc_archive()
     )
     archive_history = boc_archive_history(merged_archive)
-    report_pages = scrape_report_pages(session)
-    etape(f"index des rapports — {len(report_pages)} page(s) d'index lues")
+    # L'archive est écrite ici : à partir de ce point, tout ce qui suit est un
+    # enrichissement. Si le budget est épuisé, on rend ce qu'on a au lieu de
+    # tout perdre.
+    archive_ecrite = False
+    if boc_archive_count > 0:
+        merged_archive["updated_at"] = datetime.now(ZoneInfo("Africa/Abidjan")).isoformat(timespec="seconds")
+        write_boc_archive(archive_path, merged_archive)
+        archive_ecrite = True
+        log_progress(
+            f"archive BOC écrite — {merged_archive.get('sessions_count')} séances "
+            f"({merged_archive.get('first_date')} → {merged_archive.get('last_date')})"
+        )
+
+    # Bascule unique : les enrichissements coûteux ne démarrent pas si le
+    # budget est proche de la fin. 45 min de marge = écrire data.json, régénérer
+    # les verdicts et publier.
+    enrichir = not budget_depasse(marge=45)
+    if not enrichir:
+        log_progress(f"budget atteint ({minutes_ecoulees():.0f} min) — enrichissements ignorés, "
+                     f"publication de ce qui est acquis (archive BOC + marché)")
+    report_pages = scrape_report_pages(session) if enrichir else []
+    if enrichir:
+        etape(f"index des rapports — {len(report_pages)} page(s) d'index lues")
 
     if len(snapshot["quotes"]) < 35:
         raise ValueError(f"Contrôle bloquant : {len(snapshot['quotes'])} cours seulement dans l'instantané officiel.")
@@ -7899,7 +7986,7 @@ def build_dataset(
 
     log_progress("annuaire des SGI…")
     try:
-        sgis = scrape_sgis(session)
+        sgis = scrape_sgis(session) if enrichir else []
         print(f"[SIGMA] SGI de l'annuaire officiel : {len(sgis)}", file=sys.stderr)
     except Exception as exc:  # annuaire indisponible : ne bloque pas les données de marché
         sgis = []
@@ -7918,12 +8005,17 @@ def build_dataset(
             warnings.append(f"Tarifs SGI homologués indisponibles ({exc}).")
             print(f"[SIGMA] Tarifs SGI ignorés : {exc}", file=sys.stderr)
 
-    log_progress(f"documents émetteurs — lecture des PDF de {len(report_pages)} page(s) d'index…")
-    fundamentals_counts, fundamentals_warnings = collect_fundamentals(
-        session, companies, report_pages, cache_dir / "reports"
-    )
-    etape(f"documents émetteurs — {fundamentals_counts['documents_indexed']} indexé(s), "
-          f"{fundamentals_counts['companies_with_figures']} société(s) avec chiffres")
+    if enrichir:
+        log_progress(f"documents émetteurs — lecture des PDF de {len(report_pages)} page(s) d'index…")
+        fundamentals_counts, fundamentals_warnings = collect_fundamentals(
+            session, companies, report_pages, cache_dir / "reports"
+        )
+        etape(f"documents émetteurs — {fundamentals_counts['documents_indexed']} indexé(s), "
+              f"{fundamentals_counts['companies_with_figures']} société(s) avec chiffres")
+    else:
+        fundamentals_counts, fundamentals_warnings = {
+            "documents_indexed": 0, "companies_with_documents": 0, "companies_with_figures": 0,
+        }, ["Enrichissement comptable sauté : budget de temps atteint avant lecture des documents."]
     warnings.extend(fundamentals_warnings)
     print(
         f"[SIGMA] Documents émetteurs indexés : {fundamentals_counts['documents_indexed']} "
@@ -7941,7 +8033,10 @@ def build_dataset(
 
     log_progress("contexte macro (BCEAO, UMOA)…")
     macro_reference_date = datetime.now(ZoneInfo("Africa/Abidjan")).date().isoformat()
-    macro_context, macro_warnings = collect_macro_context(session, macro_reference_date)
+    if enrichir:
+        macro_context, macro_warnings = collect_macro_context(session, macro_reference_date)
+    else:
+        macro_context, macro_warnings = {}, ["Contexte macro sauté : budget de temps atteint."]
     warnings.extend(macro_warnings)
     calendar_events = build_calendar_events(macro_reference_date, dividends, macro_context, companies)
     print(
@@ -7952,14 +8047,8 @@ def build_dataset(
     )
 
     generated_at = datetime.now(ZoneInfo("Africa/Abidjan")).isoformat(timespec="seconds")
-    if boc_archive_count > 0:
-        merged_archive["updated_at"] = generated_at
-        write_boc_archive(archive_path, merged_archive)
-        print(
-            f"[SIGMA] Archive BOC longue : {merged_archive['sessions_count']} séances "
-            f"({merged_archive['first_date']} → {merged_archive['last_date']}) dans {archive_path}",
-            file=sys.stderr,
-        )
+    # (L'archive a déjà été écrite juste après la lecture des BOC : elle est
+    # acquise même si la suite échoue.)
     return {
         "schema_version": 1,
         "generated_at": generated_at,
@@ -8197,16 +8286,39 @@ def main() -> int:
     parser.add_argument("--cache-dir", type=Path, default=Path("/tmp/sigma-boc-cache"))
     args = parser.parse_args()
 
-    dataset = build_dataset(
-        args.boc_count,
-        args.cache_dir,
-        boc_archive_count=args.boc_archive_count,
-        boc_archive_path=args.boc_archive_output,
-    )
+    try:
+        dataset = etape_mesuree(
+            "collecte complète",
+            build_dataset,
+            args.boc_count,
+            args.cache_dir,
+            boc_archive_count=args.boc_archive_count,
+            boc_archive_path=args.boc_archive_output,
+        )
+    except BaseException as exc:  # budget atteint, réseau, contrôle bloquant
+        rapport = ecrire_rapport_run(
+            Path(__file__).resolve().parents[1] / "audits" / "collecte" / f"{date.today().isoformat()}.md",
+            {"statut": "interrompu", "cause": f"{type(exc).__name__}: {exc}",
+             "minutes_ecoulees": f"{minutes_ecoulees():.1f}"},
+        )
+        print(f"[SIGMA] Collecte interrompue — rapport : {rapport}", flush=True)
+        raise
     args.output.parent.mkdir(parents=True, exist_ok=True)
     tmp_output = args.output.with_suffix(".json.tmp")
     tmp_output.write_text(json.dumps(dataset, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp_output.replace(args.output)
+    ecrire_rapport_run(
+        Path(__file__).resolve().parents[1] / "audits" / "collecte" / f"{date.today().isoformat()}.md",
+        {
+            "statut": "terminée",
+            "sociétés": len(dataset["companies"]),
+            "BOC récents": dataset["coverage"]["boc_sessions"],
+            "séances archivées": dataset["coverage"].get("boc_archive_sessions", 0),
+            "documents indexés": dataset["coverage"].get("documents_indexed", "—"),
+            "avertissements": len(dataset["quality_warnings"]),
+            "minutes_écoulées": f"{minutes_ecoulees():.1f}",
+        },
+    )
     print(
         f"[SIGMA] Données publiées : {args.output} — "
         f"{len(dataset['companies'])} sociétés, {dataset['coverage']['boc_sessions']} BOC récents, "

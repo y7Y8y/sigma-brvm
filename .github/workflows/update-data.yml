@@ -84,6 +84,11 @@ jobs:
         # Le journal est horodaté étape par étape : si la collecte touche le
         # plafond, on sait quelle étape a coûté le temps et combien de BOC ont
         # été lus. Sans cela, la seule information est « annulé ».
+        env:
+          # Budget internalisé : la collecte s'arrête d'elle-même et publie son
+          # acquis avant le plafond dur du job (350 min). 300 laisse le temps
+          # d'écrire les données, de régénérer les verdicts et de pousser.
+          SIGMA_BUDGET_MIN: "300"
         run: |
           python -u sigma-app/ingestion/collect.py \
             --boc-count "${{ github.event.inputs.boc_count || 30 }}" \
@@ -105,6 +110,6 @@ jobs:
           fi
           git config user.name "sigma-data-bot"
           git config user.email "sigma-data-bot@users.noreply.github.com"
-          git add sigma-app/web/data/
+          git add sigma-app/web/data/ sigma-app/audits/collecte/
           git commit -m "data: collecte BRVM officielle et verdicts régénérés"
           git push
