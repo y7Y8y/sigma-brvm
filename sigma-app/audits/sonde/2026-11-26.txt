@@ -1,0 +1,20 @@
+1 · Les sources repondent-elles ?
+  cours        OK            1.1 s        52 Ko  https://www.brvm.org/fr/cours-actions/0
+  dividendes   OK            0.2 s        58 Ko  https://www.brvm.org/fr/esv/paiement-de-dividendes
+  index BOC    OK            0.2 s        44 Ko  https://www.brvm.org/fr/bulletins-officiels-de-la-cote
+  rapports     OK            0.2 s        53 Ko  https://www.brvm.org/fr/rapports-societes-cotees
+
+2 · Jusqu'ou remonte l'index des BOC ?
+  11 BOC indexes
+  du 2025-12-31 au 2026-11-25
+
+3 · Debit reel sur un BOC (fixe la duree d'une archive longue)
+  BOC recent   OK            1.1 s       942 Ko  https://www.brvm.org/sites/default/files/boc_20261125_2.pdf
+  PDF valide en 1.1 s → 26 min pour 1 500 seances (5 ans)
+
+4 · Le motif d'URL ancien remonte-t-il loin ?
+  il y a ~13 mois (2025-10-31) : HTTP 200 · PDF
+  il y a ~25 mois (2024-11-06) : HTTP 200 · PDF
+  il y a ~37 mois (2023-11-10) : HTTP 404
+
+Sonde terminee. Aucune donnee ecrite.
