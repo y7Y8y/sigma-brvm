@@ -7839,6 +7839,7 @@ def build_dataset(
     )
     archive_history = boc_archive_history(merged_archive)
     report_pages = scrape_report_pages(session)
+    etape(f"index des rapports — {len(report_pages)} page(s) d'index lues")
 
     if len(snapshot["quotes"]) < 35:
         raise ValueError(f"Contrôle bloquant : {len(snapshot['quotes'])} cours seulement dans l'instantané officiel.")
@@ -7896,6 +7897,7 @@ def build_dataset(
     warnings.extend(news_warnings)
     print(f"[SIGMA] Actualités collectées : {len(news_items)}", file=sys.stderr)
 
+    log_progress("annuaire des SGI…")
     try:
         sgis = scrape_sgis(session)
         print(f"[SIGMA] SGI de l'annuaire officiel : {len(sgis)}", file=sys.stderr)
@@ -7916,9 +7918,12 @@ def build_dataset(
             warnings.append(f"Tarifs SGI homologués indisponibles ({exc}).")
             print(f"[SIGMA] Tarifs SGI ignorés : {exc}", file=sys.stderr)
 
+    log_progress(f"documents émetteurs — lecture des PDF de {len(report_pages)} page(s) d'index…")
     fundamentals_counts, fundamentals_warnings = collect_fundamentals(
         session, companies, report_pages, cache_dir / "reports"
     )
+    etape(f"documents émetteurs — {fundamentals_counts['documents_indexed']} indexé(s), "
+          f"{fundamentals_counts['companies_with_figures']} société(s) avec chiffres")
     warnings.extend(fundamentals_warnings)
     print(
         f"[SIGMA] Documents émetteurs indexés : {fundamentals_counts['documents_indexed']} "
@@ -7934,6 +7939,7 @@ def build_dataset(
         file=sys.stderr,
     )
 
+    log_progress("contexte macro (BCEAO, UMOA)…")
     macro_reference_date = datetime.now(ZoneInfo("Africa/Abidjan")).date().isoformat()
     macro_context, macro_warnings = collect_macro_context(session, macro_reference_date)
     warnings.extend(macro_warnings)

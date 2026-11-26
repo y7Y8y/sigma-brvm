@@ -87,7 +87,10 @@ jobs:
           python sigma-app/ingestion/verdict.py --out sigma-app/web/data/verdicts.json
           python sigma-app/ingestion/trajectoire.py || echo "trajectoire : pas de régénération"
       - name: Publier uniquement si les données ont changé
-        if: ${{ github.event.inputs.mode != 'probe' }}
+        # `always()` : une collecte qui a écrit l'archive puis échoue plus loin
+        # (documents, réseau) doit quand même publier ce qu'elle a acquis. Sans
+        # cela, un échec tardif jette des heures de lecture.
+        if: ${{ always() && github.event.inputs.mode != 'probe' }}
         run: |
           if git diff --quiet -- sigma-app/web/data/; then
             echo "Aucun changement de données."

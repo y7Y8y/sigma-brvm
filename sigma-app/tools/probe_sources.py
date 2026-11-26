@@ -16,6 +16,7 @@ from __future__ import annotations
 import re
 import time
 from datetime import date, timedelta
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
@@ -89,6 +90,47 @@ def main() -> int:
             print(f"  il y a ~{mois} mois ({sonde}) : HTTP {tete.status_code}{' · PDF' if pdf else ''}", flush=True)
         except Exception as exc:
             print(f"  il y a ~{mois} mois ({sonde}) : echec {type(exc).__name__}", flush=True)
+
+    print("\n5 · Autres motifs d'URL pour remonter plus loin (suffixes)", flush=True)
+    for mois in (37, 49, 61):
+        sonde = aujourdhui - timedelta(days=30 * mois)
+        while sonde.weekday() >= 5:
+            sonde -= timedelta(days=1)
+        trouves = []
+        for suffixe in ("_2", "_1", "_3", ""):
+            url = f"{BASE}/sites/default/files/boc_{sonde.strftime('%Y%m%d')}{suffixe}.pdf"
+            try:
+                tete = session.head(url, timeout=30, allow_redirects=True)
+                if tete.status_code == 200 and "pdf" in tete.headers.get("content-type", "").lower():
+                    trouves.append(suffixe or "(sans suffixe)")
+            except Exception:
+                pass
+        print(f"  il y a ~{mois} mois ({sonde}) : {', '.join(trouves) if trouves else 'aucun motif'}", flush=True)
+
+    print("\n6 · Cout d'extraction d'un BOC (c'est lui qui fixe la duree reelle)", flush=True)
+    if dates:
+        import sys as _sys
+        _sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        import io as _io
+        import pdfplumber
+        jour = dates[-1]
+        url = f"{BASE}/sites/default/files/boc_{jour.replace('-', '')}_2.pdf"
+        r = session.get(url, timeout=60)
+        if r.ok and r.content[:4] == b"%PDF":
+            for libelle, pages in (("10 premieres pages", 10), ("20 premieres pages", 20)):
+                debut = time.monotonic()
+                with pdfplumber.open(_io.BytesIO(r.content)) as pdf:
+                    total = len(pdf.pages)
+                    for page in pdf.pages[:pages]:
+                        _ = page.extract_text() or ""
+                duree = time.monotonic() - debut
+                print(f"  {libelle} ({min(pages, total)}/{total} pages) : {duree:.1f} s", flush=True)
+            debut = time.monotonic()
+            with pdfplumber.open(_io.BytesIO(r.content)) as pdf:
+                _ = [pg.extract_text() or "" for pg in pdf.pages]
+            duree = time.monotonic() - debut
+            print(f"  document entier ({total} pages) : {duree:.1f} s "
+                  f"→ {duree * 500 / 60:.0f} min pour 500 seances", flush=True)
 
     print("\nSonde terminee. Aucune donnee ecrite.", flush=True)
     return 0
