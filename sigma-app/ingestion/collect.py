@@ -234,6 +234,17 @@ def make_session() -> requests.Session:
     return session
 
 
+def log_progress(message: str) -> None:
+    """Une collecte qui dure des heures doit dire où elle en est.
+
+    Sans cela, la seule information disponible après un dépassement de plafond
+    est « annulé » : on ne sait ni quelle étape a coûté le temps, ni combien de
+    documents ont été lus. Horodaté en heure d'Abidjan, non tamponné.
+    """
+    stamp = datetime.now(ZoneInfo("Africa/Abidjan")).strftime("%H:%M:%S")
+    print(f"[SIGMA {stamp}] {message}", flush=True)
+
+
 def fetch(session: requests.Session, url: str, *, binary: bool = False) -> bytes | str:
     last_error: Exception | None = None
     for attempt in range(3):
@@ -7792,9 +7803,16 @@ def build_dataset(
     boc_archive_path: Path | None = None,
 ) -> dict[str, Any]:
     session = make_session()
-    snapshot = scrape_latest_snapshot(session)
-    sector_map = scrape_sector_map(session)
-    dividends = scrape_dividends(session)
+    started = time.monotonic()
+
+    def etape(nom: str, valeur=None):
+        log_progress(f"{nom} — {time.monotonic() - started:.0f} s écoulées")
+        return valeur
+
+    log_progress("début de la collecte")
+    snapshot = etape("cours (instantané) lu", scrape_latest_snapshot(session))
+    sector_map = etape("secteurs lus", scrape_sector_map(session))
+    dividends = etape("dividendes lus", scrape_dividends(session))
     archive_path = boc_archive_path or (
         Path(__file__).resolve().parents[1] / "web" / "data" / "boc_archive.json"
     )
@@ -7808,7 +7826,10 @@ def build_dataset(
     )
     boc_docs_limit = max(boc_count, boc_archive_count if needs_boc_backfill else 0)
     boc_docs, indexed_boc_docs = scrape_boc_links(session, boc_docs_limit)
+    etape(f"index BOC — {len(boc_docs)} document(s) à lire, backfill={needs_boc_backfill}")
+    log_progress(f"lecture de {len(boc_docs)} BOC (téléchargement puis extraction, l'étape la plus longue)…")
     fetched_history = load_boc_history(session, boc_docs, cache_dir)
+    etape(f"BOC lus — {len(fetched_history)} séance(s) extraite(s) sur {len(boc_docs)} tentée(s)")
     history = fetched_history[-boc_count:] if boc_count > 0 else fetched_history
     archive_updated_at = datetime.now(ZoneInfo("Africa/Abidjan")).isoformat(timespec="seconds")
     merged_archive = (
