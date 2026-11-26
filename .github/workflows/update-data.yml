@@ -2,6 +2,18 @@ name: SIGMA — collecte BRVM quotidienne
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "daily = collecte complète · probe = diagnostic 2 min, sans écrire"
+        type: choice
+        options: [daily, probe]
+        default: daily
+      boc_count:
+        description: "BOC récents à relire (daily)"
+        default: "30"
+      boc_archive_count:
+        description: "Profondeur d'archive visée, en séances (daily)"
+        default: "260"
   schedule:
     # 18:20 UTC = 18:20 à Abidjan, après clôture. Lun–ven.
     - cron: "20 18 * * 1-5"
@@ -18,7 +30,9 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    # Une collecte coupée à 4 h n'écrit rien du tout : c'est ce qui a laissé
+    # les données figées. Le plafond utile d'un job est de 6 h.
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -43,16 +57,25 @@ jobs:
         run: pip install -r sigma-app/requirements.txt
       - name: Tester les parseurs et calculs
         run: python -m unittest discover -s sigma-app/tests -v
+      - name: Sonde des sources (mode probe) — joignabilité, débit, profondeur
+        if: ${{ github.event.inputs.mode == 'probe' }}
+        run: python sigma-app/tools/probe_sources.py
       - name: Collecter les sources officielles BRVM
-        # Première exécution : backfill de l'archive BOC longue (objectif 260 séances).
-        # Ensuite, l'archive persistante du dépôt évite de relire tout l'historique :
-        # la collecte quotidienne fusionne surtout les 30 BOC récents.
-        run: python sigma-app/ingestion/collect.py --boc-count 30 --boc-archive-count 260
+        if: ${{ github.event.inputs.mode != 'probe' }}
+        # Le journal est horodaté étape par étape : si la collecte touche le
+        # plafond, on sait quelle étape a coûté le temps et combien de BOC ont
+        # été lus. Sans cela, la seule information est « annulé ».
+        run: |
+          python -u sigma-app/ingestion/collect.py \
+            --boc-count "${{ github.event.inputs.boc_count || 30 }}" \
+            --boc-archive-count "${{ github.event.inputs.boc_archive_count || 260 }}"
       - name: Régénérer les verdicts depuis les données fraîches
+        if: ${{ github.event.inputs.mode != 'probe' }}
         run: |
           python sigma-app/ingestion/verdict.py --out sigma-app/web/data/verdicts.json
           python sigma-app/ingestion/trajectoire.py || echo "trajectoire : pas de régénération"
       - name: Publier uniquement si les données ont changé
+        if: ${{ github.event.inputs.mode != 'probe' }}
         run: |
           if git diff --quiet -- sigma-app/web/data/; then
             echo "Aucun changement de données."
