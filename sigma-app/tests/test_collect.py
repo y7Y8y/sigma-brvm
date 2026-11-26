@@ -2657,3 +2657,57 @@ class PilotRegressionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class BudgetDeTempsTests(unittest.TestCase):
+    """Une collecte doit rendre ce qu'elle a acquis avant d'être coupée.
+
+    Le 26/11, une collecte a tourné 4 h puis a été annulée : aucune écriture,
+    aucune mesure. Le budget internalisé remplace le plafond subi.
+    """
+
+    def setUp(self):
+        import importlib
+
+        self.collect = importlib.import_module("ingestion.collect")
+
+    def test_budget_absent_ne_bloque_rien(self):
+        import os
+
+        os.environ.pop("SIGMA_BUDGET_MIN", None)
+        self.assertIsNone(self.collect.budget_restant())
+        self.assertFalse(self.collect.budget_depasse())
+
+    def test_budget_depasse_est_detecte_avec_marge(self):
+        import os
+
+        os.environ["SIGMA_BUDGET_MIN"] = "0.0001"
+        try:
+            # La marge est le temps qu'il faut pour écrire et publier : un
+            # budget déjà consommé doit être détecté avant d'entamer une étape.
+            self.assertTrue(self.collect.budget_depasse(marge=1))
+            self.assertLess(self.collect.budget_restant(), 1)
+        finally:
+            os.environ.pop("SIGMA_BUDGET_MIN", None)
+
+    def test_chaque_etape_est_chronometree_meme_en_echec(self):
+        def echoue():
+            raise RuntimeError("panne réseau")
+
+        with self.assertRaises(RuntimeError):
+            self.collect.etape_mesuree("étape qui échoue", echoue)
+        noms = [e["etape"] for e in self.collect.RUN_ETAPES]
+        self.assertIn("étape qui échoue", noms)
+
+    def test_le_rapport_de_run_est_ecrit_meme_interrompu(self):
+        import tempfile
+        from pathlib import Path
+
+        self.collect.RUN_ETAPES.append({"etape": "BOC lus", "minutes": 12.5})
+        with tempfile.TemporaryDirectory() as tmp:
+            chemin = self.collect.ecrire_rapport_run(
+                Path(tmp) / "rapport.md", {"statut": "interrompu", "cause": "budget"}
+            )
+            texte = chemin.read_text(encoding="utf-8")
+        self.assertIn("BOC lus", texte)
+        self.assertIn("12.50", texte)
+        self.assertIn("interrompu", texte)
