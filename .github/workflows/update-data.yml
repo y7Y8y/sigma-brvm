@@ -59,7 +59,19 @@ jobs:
         run: python -m unittest discover -s sigma-app/tests -v
       - name: Sonde des sources (mode probe) — joignabilité, débit, profondeur
         if: ${{ github.event.inputs.mode == 'probe' }}
-        run: python sigma-app/tools/probe_sources.py
+        # Le journal d'un job n'est pas lisible depuis l'extérieur du runner :
+        # la sonde écrit donc son rapport dans le dépôt, où il est lisible.
+        run: |
+          mkdir -p sigma-app/audits/sonde
+          python sigma-app/tools/probe_sources.py | tee "sigma-app/audits/sonde/$(date -u +%Y-%m-%d).txt"
+      - name: Publier le rapport de sonde
+        if: ${{ always() && github.event.inputs.mode == 'probe' }}
+        run: |
+          git config user.name "sigma-data-bot"
+          git config user.email "sigma-data-bot@users.noreply.github.com"
+          git add sigma-app/audits/sonde/ || true
+          git commit -m "sonde: mesures des sources officielles" || echo "rien à publier"
+          git push || echo "push impossible (branche protégée ou rien à pousser)"
       - name: Collecter les sources officielles BRVM
         if: ${{ github.event.inputs.mode != 'probe' }}
         # Le journal est horodaté étape par étape : si la collecte touche le
