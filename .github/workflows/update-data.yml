@@ -46,13 +46,20 @@ jobs:
           tesseract --version
           pdftoppm -v
           magick -version
-      - name: Restaurer le cache OCR par empreinte PDF
+      - name: Restaurer les PDF déjà lus et le cache OCR
+        # Les BOC sont téléchargés puis extraits à chaque exécution, et les
+        # documents émetteurs passent par OCR en repli (24 pages à 300 dpi par
+        # document). Sans persistance, chaque run repaie tout : c'est ce qui a
+        # fait dépasser 4 h. La clé change à chaque run, la restauration est
+        # incrémentale : on repart du cache le plus récent.
         uses: actions/cache@v4
         with:
-          path: /tmp/sigma-boc-cache/reports/ocr
-          key: sigma-ocr-${{ runner.os }}-${{ github.run_id }}
+          path: |
+            /tmp/sigma-boc-cache
+            /tmp/sigma-reports-cache
+          key: sigma-cache-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
-            sigma-ocr-${{ runner.os }}-
+            sigma-cache-${{ runner.os }}-
       - name: Installer les dépendances de collecte
         run: pip install -r sigma-app/requirements.txt
       - name: Tester les parseurs et calculs
