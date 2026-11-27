@@ -2666,9 +2666,16 @@ class BudgetDeTempsTests(unittest.TestCase):
     """
 
     def setUp(self):
-        import importlib
+        # Le module est chargé par son chemin : les tests tournent aussi bien
+        # depuis sigma-app/ (pytest) que depuis la racine du dépôt (le workflow
+        # lance unittest discover -s sigma-app/tests).
+        import importlib.util
+        from pathlib import Path
 
-        self.collect = importlib.import_module("ingestion.collect")
+        chemin = Path(__file__).resolve().parents[1] / "ingestion" / "collect.py"
+        spec = importlib.util.spec_from_file_location("sigma_collect_budget", chemin)
+        self.collect = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.collect)
 
     def test_budget_absent_ne_bloque_rien(self):
         import os
